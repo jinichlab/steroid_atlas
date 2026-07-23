@@ -10,8 +10,8 @@ An interactive UMAP atlas of steroid- and bile-acid-metabolizing enzymes and the
 ## Quick start
 
 ```bash
-git clone https://github.com/<org>/steroid-atlas.git
-cd steroid-atlas
+git clone https://github.com/jinichlab/steroid_atlas.git
+cd steroid_atlas
 pip install -r requirements.txt
 ./app/run.sh
 ```
