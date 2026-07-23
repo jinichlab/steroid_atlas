@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+.env
+.env.*
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Backup files (from audit passes; kept locally, not pushed)
+*.bak
+*.bak[0-9]*
+*.OLD.csv
+*.PRE_*.csv
+
+# ProtT5 embedding caches (large; regenerable from FASTAs)
+*.h5
+
+# Temp + logs
+*.tmp
+*.log
+/tmp/
+
+# Ad-hoc analysis outputs
+*_report.tsv
+*_report.json

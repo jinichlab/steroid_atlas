@@ -1,0 +1,23 @@
+# Core data
+pandas>=2.0
+numpy>=1.24
+
+# Interactive notebook
+marimo>=0.9
+
+# Chart + structure rendering
+altair>=5.0
+vega-datasets  # optional, for testing altair
+
+# Chemistry
+rdkit>=2023.9
+
+# Protein embedding + projection (only needed if regenerating embeddings)
+torch>=2.0
+transformers>=4.30
+sentencepiece
+protobuf
+h5py>=3.0
+
+# HTTP for the literature audit pipeline
+# (urllib is stdlib; requests is not required)
