@@ -3,13 +3,13 @@
 ## Corpus construction
 
 1. **Seed set**: Query Rhea + UniProt for reactions involving steroid ChEBI IDs (the "Rhea steroid-reaction query"). Extract all UniProt accessions that catalyze at least one such reaction.
-2. **Dedup**: Remove exact-sequence duplicates. Original set was 37,391 entries; dedup pass removed 1,547 duplicates → **35,834 unique protein sequences**.
+2. **Dedup**: Remove exact-sequence duplicates. Original set was 36,877 entries; dedup pass removed 1,528 duplicates → **35,349 unique protein sequences**.
 3. **Small-molecule catalog**: For every ChEBI substrate/product from the Rhea query, keep the compound + SMILES + canonical name → **681 small molecules**.
 
 ## Embedding + UMAP
 
 - **ProtT5 embeddings**: Compute per-residue embeddings via `Rostlab/prot_t5_xl_half_uniref50-enc`, mean-pool over the sequence → 1024-d per-protein vector.
-- **UMAP**: Fit 2D UMAP (n_neighbors=15, min_dist=0.1) on the 37,391 × 1024 matrix. **The UMAP reducer was not pickled**, so new entries can't be `.transform()`ed; instead, they are placed via **cosine-nearest-neighbor** in ProtT5 space, inheriting the neighbor's UMAP coordinates plus a small Gaussian jitter (σ=0.15). This is a faithful substitute because UMAP preserves the local cosine k-NN structure it was built from.
+- **UMAP**: Fit 2D UMAP (n_neighbors=15, min_dist=0.1) on the 36,877 × 1024 matrix. **The UMAP reducer was not pickled**, so new entries can't be `.transform()`ed; instead, they are placed via **cosine-nearest-neighbor** in ProtT5 space, inheriting the neighbor's UMAP coordinates plus a small Gaussian jitter (σ=0.15). This is a faithful substitute because UMAP preserves the local cosine k-NN structure it was built from.
 - **HDBSCAN**: Cluster the 2D UMAP with default parameters → cluster IDs stored in the `cluster` column.
 
 ## Literature-recruited entries

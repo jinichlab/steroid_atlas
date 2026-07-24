@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.2.0 — 2026-07-24 — Scope tightening
+
+- **Dropped 485 legacy bulk-curated entries** that were off-scope for the atlas's steroid-metabolism focus. These came from three earlier bulk-curation sources: 374 ChEBI cross-references (mostly animal transporters and vertebrate P450s), 65 PDB structural cross-references (mostly Human signaling proteins with a bound sterol in their crystal), 40 manual curation entries (mostly Human nuclear receptors), and 6 composite-source entries. None had specific paper-level provenance and all diluted the metabolic/enzymatic focus of the atlas.
+- Atlas now: **35,349 unique protein sequences** (was 35,834), still with **15 literature-recruited STAR entries** fully preserved.
+- Methods narrative simplified to two automated evidence sources (Rhea-catalytic + UniProt steroid-binding) plus the literature audit.
+- Data dictionary in `data/README.md` reflects the current 21-column schema (dropped `uniprot_url` / `alphafold_url`, which are trivially derivable from the accession).
+
 ## v0.1.0 — 2026-07-23 — Initial public release
 
 ### Literature audit pass

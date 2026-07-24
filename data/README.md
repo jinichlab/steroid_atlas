@@ -2,7 +2,7 @@
 
 Three CSVs form the atlas. Every row is human-readable and traceable back to a paper or public database.
 
-## `proteins.csv` — 35,834 rows × 23 columns
+## `proteins.csv` — 35,349 rows × 21 columns
 
 One row per protein sequence. Deduplicated (no identical sequences repeated).
 
@@ -28,8 +28,6 @@ One row per protein sequence. Deduplicated (no identical sequences repeated).
 | `annotation` | Human-readable annotation citing the paper |
 | `sequence_source` | Where the sequence was fetched from + evidence trail |
 | `identifier_type` | UniProt / RefSeq_WP / Locus_Tag / NCBI_Genome |
-| `uniprot_url` | Direct UniProt page (may 404 for non-UniProt accessions) |
-| `alphafold_url` | Direct AlphaFold page (only meaningful for UniProt accessions) |
 
 ## `molecules.csv` — 681 rows × 10 columns
 

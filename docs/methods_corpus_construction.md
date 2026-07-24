@@ -1,6 +1,6 @@
 # Methods — Steroid-interacting protein corpus construction
 
-The atlas draws steroid-interacting proteins from **five complementary evidence sources**, each independently defined. The union is deduplicated by UniProt accession, ProtT5-embedded, 2D-UMAP projected, and deduplicated a second time by exact sequence identity.
+The atlas draws steroid-interacting proteins from **two complementary evidence sources** — Rhea-catalogued steroid-catalyzing reactions and UniProt-annotated steroid-binding proteins — augmented with a small set of literature-recruited entries from a targeted paper audit. The union is deduplicated by UniProt accession, ProtT5-embedded, 2D-UMAP projected, and deduplicated a second time by exact sequence identity.
 
 ## 1. Sterane substructure classifier — chemistry filter
 
@@ -113,29 +113,11 @@ Captures proteins with annotated steroid-binding function that may not catalyze 
 
 → **2,746 binding entries.**
 
-### Source C — ChEBI cross-referenced proteins without a Rhea reaction
-
-UniProt entries whose CC line cross-references a steroid ChEBI from §1 but which are not linked to any Rhea reaction. These are proteins with documented steroid interactions in UniProt (from published biochemistry or structural evidence) whose reactions are not represented in the Rhea catalog.
-
-→ **407 entries.**
-
-### Source D — PDB structural evidence
-
-UniProt entries with a PDB cross-reference where the co-crystallized ligand is a steroid ChEBI from §1. Captures proteins whose steroid interaction is established by a solved structure but not by a Rhea reaction annotation.
-
-→ **65 entries.**
-
-### Source E — Expert manual curation
-
-Hand-selected entries added by expert review of the literature — steroid-related proteins where automated cross-references miss the connection (fusion proteins, orphan enzymes, recently reannotated entries).
-
-→ **42 entries.**
-
 ### Union
 
-The five sources are unioned by UniProt accession, with duplicates collapsed. Any entry appearing in Source A takes precedence for source labeling, followed by B → C → D → E for provenance clarity.
+The two automated sources are unioned by UniProt accession, with duplicates collapsed.
 
-→ **37,391 unique UniProt accessions.**
+→ **36,877 unique UniProt accessions.**
 
 ## 3. Sequence embedding
 
@@ -145,7 +127,7 @@ Compute: single GPU, 20 CPU threads, 50 GB RAM.
 
 ## 4. Dimensionality reduction + clustering
 
-- **UMAP** (n_neighbors=15, min_dist=0.1, 2D output) fit on the 37,391 × 1,024 ProtT5 matrix.
+- **UMAP** (n_neighbors=15, min_dist=0.1, 2D output) fit on the 36,877 × 1,024 ProtT5 matrix.
 - **HDBSCAN** clustering on the 2D UMAP output produces cluster labels.
 
 ## 5. Exact-sequence deduplication
@@ -166,20 +148,17 @@ Full provenance is in `data/literature_recruited_proteins.csv`.
 
 ## Final atlas
 
-**35,834 protein sequences** (final after literature audit removed one incorrectly attributed entry).
+**35,349 protein sequences** (final after literature audit removed one incorrectly attributed entry).
 
 ## Corpus composition by evidence source
 
 | Source | Entries | % of union |
 |---|---:|---:|
-| A. Steroid-catalyzing (Rhea) | 34,131 | 91.3% |
-| B. Steroid-binding (UniProt KW/GO) | 2,746 | 7.3% |
-| C. ChEBI cross-reference (no Rhea) | 407 | 1.1% |
-| D. PDB structural evidence | 65 | 0.2% |
-| E. Expert manual curation | 42 | 0.1% |
-| **Union (dedup by accession)** | **37,391** | 100% |
-| After exact-sequence dedup | 35,835 | |
-| After literature audit | **35,834** | |
+| A. Steroid-catalyzing (Rhea) | 34,131 | 92.6% |
+| B. Steroid-binding (UniProt KW-0754 / GO:0005496) | 2,746 | 7.4% |
+| **Union (dedup by accession)** | **36,877** | 100% |
+| After exact-sequence dedup | 35,349 | |
+| After literature audit (+15 STARs) | **35,349** | |
 
 ## Data sources cited
 
