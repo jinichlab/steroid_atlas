@@ -2,29 +2,101 @@
 
 The atlas draws steroid-interacting proteins from **five complementary evidence sources**, each independently defined. The union is deduplicated by UniProt accession, ProtT5-embedded, 2D-UMAP projected, and deduplicated a second time by exact sequence identity.
 
-## 1. Sterane substructure classifier
+## 1. Sterane substructure classifier — chemistry filter
 
-The chemistry backbone. Every ChEBI compound and every candidate Rhea reaction is filtered through the same RDKit-based **sterane substructure query**:
+Every candidate steroid compound is identified by an **RDKit substructure match against a sterane backbone**. The classifier is intentionally permissive so it catches modified steroids (bile acids, sulfates, glucuronides, N-containing steroid alkaloids, oxidized/reduced ring variants) rather than only exact carbon skeletons.
 
-- **Sterane query:** SMILES `C1CCC2CCC3C4CCCC4CCC3C2C1` — the 4-fused-ring steroid backbone, all single bonds, no heteroatoms.
-- **Molecule pre-processing before matching**: RDKit is used to (i) de-aromatize every atom and bond, (ii) replace all N, O, S atoms with C, and (iii) reduce every bond to a single bond. This is deliberately permissive — it lets the sterane query match steroid derivatives with heteroatom substitutions (bile acids with hydroxyls, steroid sulfates, N-containing steroid alkaloids, and other modified steroid analogs) that would otherwise fail an exact match on the pure-carbon skeleton.
-- **Match:** RDKit `HasSubstructMatch(sterane_core, useChirality=False)`.
+**Query molecule** — the fully-saturated sterane core, all single bonds, no heteroatoms:
 
-Applied to every ChEBI participant in the Rhea chemistry catalog (14,173 unique ChEBI SMILES) this classifier identified **875 steroid ChEBIs**.
+```
+SMILES: C1CCC2CCC3C4CCCC4CCC3C2C1
+```
+
+This is the 4-fused-ring backbone (6-6-6-5 cyclopentanoperhydrophenanthrene) shared by every steroid.
+
+**Pre-processing applied to each candidate compound before matching.** For each ChEBI SMILES we build an RDKit `Mol` object and then normalize it in three steps:
+
+1. **De-aromatize every atom and bond** — steroid rings in some ChEBI records are drawn aromatic (e.g., estrone's A ring). The query is fully saturated, so aromaticity would prevent a match.
+2. **Replace every N, O, S atom with C** — bile acids carry hydroxyls, steroid sulfates carry sulfate esters, steroid alkaloids carry ring nitrogens. Substituting heteroatoms with carbon lets the query recognize these as *"same skeleton, different substituents"* rather than rejecting them for atomic-identity mismatch.
+3. **Reduce every non-single bond to a single bond** — double bonds in specific ring positions (e.g., Δ4-3-ketosteroids) would prevent an exact match to the fully-saturated query.
+
+**Match call**: `mol_modified.HasSubstructMatch(sterane_core, useChirality=False)`. Ignoring chirality is intentional — the classifier is a "does this molecule contain a steroid skeleton?" filter, not a stereochemistry check.
+
+**Applied to Rhea's chemistry catalog**: the `rhea-chebi-smiles.tsv` bulk file lists every ChEBI compound appearing as a participant in any Rhea reaction, together with its canonical SMILES.
+
+| Input | Count |
+|---|---:|
+| Total ChEBI participants in Rhea | 14,173 |
+| After sterane substructure filter | **875 steroid ChEBIs** |
+
+The 875 steroid ChEBIs are exported to `steroid_chebis.tsv` for downstream reaction matching.
 
 ## 2. Protein evidence sources
 
 ### Source A — Steroid-catalyzing enzymes via Rhea
 
-Every Rhea reaction (36,014 total) is parsed at the reactant + product SMILES level and its constituent molecules are canonicalized with RDKit. Reactions with ≥1 molecule matching the steroid ChEBI catalog from §1 are retained.
+Rhea is an expert-curated database of biochemical reactions where every reaction is written as a reaction SMILES built from ChEBI components. The path from "steroid ChEBI" → "steroid-catalyzing enzyme" has four sub-steps:
 
-- **2,210 steroid Rhea reactions** (expanded to **4,420 IDs** across the four reaction directions: master, LR, RL, BI)
-- Intersected with the full `rhea2uniprot_sprot` + `rhea2uniprot_trembl` mappings from Rhea's bulk TSVs
-- **95,322 candidate UniProt accessions** whose annotated Rhea reactions include at least one steroid participant
-- UniProt metadata fetched via the REST bulk-accessions endpoint (batches of 300, retry on 429/5xx)
-- Filtered to `annotation_score ≥ 4` (UniProt curated-quality threshold — 4 or 5 stars)
+**Step A1 — Identify steroid reactions.** The `rhea-reaction-smiles.tsv` bulk file lists every Rhea reaction ID together with its reaction SMILES in `reactants>>products` form. Each reaction SMILES is:
 
-→ **34,131 catalytic entries.**
+1. Split on `>>` to get the reactant side and product side
+2. Each side split on `.` to get individual molecule SMILES
+3. Each molecule canonicalized with RDKit (`Chem.MolToSmiles(mol, canonical=True, isomericSmiles=False)`)
+4. Canonical SMILES compared against the canonicalized steroid ChEBI SMILES from §1
+
+A reaction is retained if at least one of its molecules (reactant or product) matches a steroid ChEBI.
+
+| Input | Count |
+|---|---:|
+| Total Rhea reactions | 36,014 |
+| Reactions with ≥1 steroid participant | **2,210** |
+
+**Step A2 — Expand across reaction directions.** Every Rhea reaction has up to four IDs registered in `rhea-directions.tsv`: `MASTER` (undirected), `LR` (left-to-right), `RL` (right-to-left), and `BI` (bidirectional). Downstream Rhea→UniProt mappings can reference any of these IDs, so we expand the 2,210 reactions into the full set of direction-IDs any of them can carry.
+
+| Input | Count |
+|---|---:|
+| Master IDs (unique reactions) | 2,210 |
+| Expanded to all 4 directions | **4,420 IDs** |
+
+**Step A3 — Map Rhea → UniProt.** Rhea ships two bulk protein mapping files:
+
+- `rhea2uniprot_sprot.tsv` — Swiss-Prot reviewed entries (higher quality)
+- `rhea2uniprot_trembl.tsv.gz` — TrEMBL unreviewed entries (larger coverage)
+
+Both are filtered to rows whose Rhea ID is in the 4,420-ID steroid set from step A2:
+
+| Source | Rows matching steroid Rhea | Notes |
+|---|---:|---|
+| Swiss-Prot (`rhea2uniprot_sprot`) | 8,791 | curated |
+| TrEMBL (`rhea2uniprot_trembl`) | 586,934 | auto-annotated |
+| Union of unique UniProt accessions | **95,322** | one row per accession |
+
+**Step A4 — Fetch metadata + quality filter.** For each of the 95,322 candidate accessions we retrieve full metadata from the UniProt REST bulk endpoint:
+
+- **Endpoint**: `https://rest.uniprot.org/uniprotkb/accessions`
+- **Batch size**: 300 accessions per request (URL-length constrained)
+- **Fields**: `accession, id, protein_name, gene_names, organism_name, length, sequence, annotation_score, rhea`
+- **Format**: TSV
+- **Retry policy**: on HTTP 429, 500, 502, 503, 504 → exponential backoff (2, 4, 6, 8 s), max 4 attempts
+
+Metadata rows are accumulated across all batches (incremental save to `steroid_uniprot_metadata.tsv` every 50 batches for crash recovery).
+
+The final filter is **`annotation_score ≥ 4`** — UniProt's curated-quality score, on a 1-5 scale. Levels 4 and 5 correspond to "high" or "highest" evidence (multiple experimental references, curator review, or complete Swiss-Prot annotation). This filter is the main reason the TrEMBL half of the raw union (586,934 rows → mostly auto-annotated homology hypotheses) collapses down: only a small fraction of TrEMBL entries score ≥ 4.
+
+Each retained protein is then augmented with **per-protein steroid annotations**:
+
+- `Steroid_Rhea_numeric` — the specific Rhea IDs (of its full reaction set) that involve a steroid
+- `Steroid_ChEBI_grouped` — the ChEBI IDs of the steroid participants in those reactions, grouped by reaction
+- `Steroid_SMILES_grouped` — the corresponding SMILES
+
+So every row carries not just "this enzyme touches a steroid" but "this enzyme catalyzes reactions R1, R2, R3, in which steroid ChEBIs C1, C2 appear."
+
+| Result | Count |
+|---|---:|
+| Candidate accessions (before quality filter) | 95,322 |
+| **After `annotation_score ≥ 4` filter** | **34,131** |
+
+Source A contributes 91.3% of the atlas.
 
 ### Source B — Annotated steroid-binding proteins
 
