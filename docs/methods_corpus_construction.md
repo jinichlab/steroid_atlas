@@ -4,7 +4,7 @@ The atlas draws steroid-interacting proteins from **two complementary evidence s
 
 ## 1. Sterane substructure classifier — chemistry filter
 
-Every candidate steroid compound is identified by an **RDKit substructure match against a sterane backbone**. The classifier is intentionally permissive so it catches modified steroids (bile acids, sulfates, glucuronides, N-containing steroid alkaloids, oxidized/reduced ring variants) rather than only exact carbon skeletons.
+Steroids were operationally defined as any compound bearing the classical 4-fused-ring **cyclopentanoperhydrophenanthrene (sterane)** backbone. This is the 17-carbon skeleton shared by every steroid, comprising three cyclohexane rings and one cyclopentane in a 6-6-6-5 fusion.
 
 **Query molecule** — the fully-saturated sterane core, all single bonds, no heteroatoms:
 
@@ -12,13 +12,11 @@ Every candidate steroid compound is identified by an **RDKit substructure match 
 SMILES: C1CCC2CCC3C4CCCC4CCC3C2C1
 ```
 
-This is the 4-fused-ring backbone (6-6-6-5 cyclopentanoperhydrophenanthrene) shared by every steroid.
+Because the filter also needs to capture synthetic aza- and oxa-steroid analogs (e.g., finasteride) whose ring heteroatoms substitute for backbone carbons, each candidate ChEBI SMILES was normalized by RDKit before substructure matching:
 
-**Pre-processing applied to each candidate compound before matching.** For each ChEBI SMILES we build an RDKit `Mol` object and then normalize it in three steps:
-
-1. **De-aromatize every atom and bond** — steroid rings in some ChEBI records are drawn aromatic (e.g., estrone's A ring). The query is fully saturated, so aromaticity would prevent a match.
-2. **Replace every N, O, S atom with C** — bile acids carry hydroxyls, steroid sulfates carry sulfate esters, steroid alkaloids carry ring nitrogens. Substituting heteroatoms with carbon lets the query recognize these as *"same skeleton, different substituents"* rather than rejecting them for atomic-identity mismatch.
-3. **Reduce every non-single bond to a single bond** — double bonds in specific ring positions (e.g., Δ4-3-ketosteroids) would prevent an exact match to the fully-saturated query.
+1. **De-aromatize every atom and bond** — steroid rings in some ChEBI records are drawn aromatic (e.g., estrone's A ring); the query is fully saturated, so aromaticity would prevent a match.
+2. **Replace every N, O, S atom with C** — recognizes ring-heteroatom analogs (aza-, oxa-, thia-steroids) as members of the same structural class rather than rejecting them for atomic-identity mismatch.
+3. **Reduce every non-single bond to a single bond** — double bonds in specific ring positions (e.g., Δ4-3-ketosteroids) would otherwise prevent an exact match to the fully-saturated query.
 
 **Match call**: `mol_modified.HasSubstructMatch(sterane_core, useChirality=False)`. Ignoring chirality is intentional — the classifier is a "does this molecule contain a steroid skeleton?" filter, not a stereochemistry check.
 
