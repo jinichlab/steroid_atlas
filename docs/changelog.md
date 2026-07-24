@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.1 — 2026-07-24 — Alkaloid cleanup
+
+Dropped 4 benzo[c]phenanthridine alkaloids (sanguinarine, dihydrosanguinarine, chelirubine, dihydrochelirubine — `CHEBI:17183`, `CHEBI:17209`, `CHEBI:17031`, `CHEBI:17789`) from `molecules.csv`. These plant secondary metabolites were captured by the permissive sterane substructure filter (their pentacyclic ring system matches sterane after N→C substitution) but are not steroids by any standard biochemical definition. None had associated proteins.
+
+Small-molecule atlas: 681 → **677 unique molecules**.
+
 ## v0.2.0 — 2026-07-24 — Scope tightening
 
 - **Dropped 485 legacy bulk-curated entries** that were off-scope for the atlas's steroid-metabolism focus. These came from three earlier bulk-curation sources: 374 ChEBI cross-references (mostly animal transporters and vertebrate P450s), 65 PDB structural cross-references (mostly Human signaling proteins with a bound sterol in their crystal), 40 manual curation entries (mostly Human nuclear receptors), and 6 composite-source entries. None had specific paper-level provenance and all diluted the metabolic/enzymatic focus of the atlas.

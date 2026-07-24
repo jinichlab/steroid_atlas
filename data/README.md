@@ -29,7 +29,7 @@ One row per protein sequence. Deduplicated (no identical sequences repeated).
 | `sequence_source` | Where the sequence was fetched from + evidence trail |
 | `identifier_type` | UniProt / RefSeq_WP / Locus_Tag / NCBI_Genome |
 
-## `molecules.csv` — 681 rows × 10 columns
+## `molecules.csv` — 677 rows × 10 columns
 
 One row per steroid/bile-acid small molecule.
 

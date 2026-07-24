@@ -3,7 +3,7 @@
 An interactive UMAP atlas of steroid- and bile-acid-metabolizing enzymes and their small-molecule substrates, curated from public databases (UniProt, Rhea, ChEBI, NCBI RefSeq) and augmented with hand-audited literature recruitments from recent papers.
 
 - **35,349 protein sequences** (deduplicated) with ProtT5 embeddings + 2D UMAP + HDBSCAN clusters
-- **681 small molecules** with SMILES, verified ChEBI IDs, RDKit-drawn structures
+- **677 small molecules** with SMILES, verified ChEBI IDs, RDKit-drawn structures
 - **15 literature-recruited proteins** from 5 audited papers, each with full evidence-based provenance
 - **Interactive visualizer** built on [marimo](https://marimo.io) + Altair + RDKit
 
@@ -30,7 +30,7 @@ steroid-atlas/
 │
 ├── data/                                  # canonical data — all CSVs
 │   ├── proteins.csv                       # 35,349 rows × 21 cols
-│   ├── molecules.csv                      # 681 rows × 10 cols
+│   ├── molecules.csv                      # 677 rows × 10 cols
 │   ├── natural_synthetic_steroids.csv     # 2,889 rows × 7 cols
 │   ├── literature_recruited_proteins.csv  # 15 rows × 12 cols — provenance
 │   ├── literature_recruited_proteins.md   # human-readable version

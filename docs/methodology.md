@@ -4,7 +4,7 @@
 
 1. **Seed set**: Query Rhea + UniProt for reactions involving steroid ChEBI IDs (the "Rhea steroid-reaction query"). Extract all UniProt accessions that catalyze at least one such reaction.
 2. **Dedup**: Remove exact-sequence duplicates. Original set was 36,877 entries; dedup pass removed 1,528 duplicates → **35,349 unique protein sequences**.
-3. **Small-molecule catalog**: For every ChEBI substrate/product from the Rhea query, keep the compound + SMILES + canonical name → **681 small molecules**.
+3. **Small-molecule catalog**: For every ChEBI substrate/product from the Rhea query, keep the compound + SMILES + canonical name → **677 small molecules**.
 
 ## Embedding + UMAP
 
