@@ -1,0 +1,18 @@
+Compound: (24S)-24-hydroxycholesterol 3-linoleoate
+ChEBI ID: CHEBI:82875
+PubChem CID: 86289967
+
+== Chemical properties ==
+IUPAC Name: [(3S,8S,9S,10R,13R,14S,17R)-17-[(2R,5S)-5-hydroxy-6-methylheptan-2-yl]-10,13-dimethyl-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl] (9Z,12Z)-octadeca-9,12-dienoate
+Molecular Formula: C45H76O3
+Molecular Weight: 665.1
+SMILES: CCCCC/C=C\C/C=C\CCCCCCCC(=O)O[C@H]1CC[C@@]2([C@H]3CC[C@]4([C@H]([C@@H]3CC=C2C1)CC[C@@H]4[C@H](C)CC[C@@H](C(C)C)O)C)C
+InChI: InChI=1S/C45H76O3/c1-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-43(47)48-37-29-31-44(5)36(33-37)24-25-38-40-27-26-39(45(40,6)32-30-41(38)44)35(4)23-28-42(46)34(2)3/h11-12,14-15,24,34-35,37-42,46H,7-10,13,16-23,25-33H2,1-6H3/b12-11-,15-14-/t35-,37+,38+,39-,40+,41+,42+,44+,45-/m1/s1
+InChIKey: MATQTXQZPPLBEJ-KTBYLDBTSA-N
+XLogP: 14.4
+TPSA: 46.5
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A sterol ester that is the 3-linoleoyl derivative of (24<i>S</i>)-24-hydroxycholesterol.

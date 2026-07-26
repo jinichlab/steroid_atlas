@@ -1,0 +1,40 @@
+Compound: 11alpha,17beta-Dihydroxyandrost-4-en-3-one
+ChEBI ID: CHEBI:79808
+PubChem CID: 11954152
+
+== Chemical properties ==
+IUPAC Name: (8S,9S,10R,11R,13S,14S,17S)-11,17-dihydroxy-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C19H28O3
+Molecular Weight: 304.4
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@@H](C[C@]4([C@H]3CC[C@@H]4O)C)O
+InChI: InChI=1S/C19H28O3/c1-18-8-7-12(20)9-11(18)3-4-13-14-5-6-16(22)19(14,2)10-15(21)17(13)18/h9,13-17,21-22H,3-8,10H2,1-2H3/t13-,14-,15+,16-,17+,18-,19-/m0/s1
+InChIKey: YQDZGFAYWGWSJK-RUOITVIXSA-N
+XLogP: 2.2
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+11alpha,17beta-Dihydroxyandrost-4-en-3-one is a 3-hydroxy steroid. It has a role as an androgen.
+
+== Literature on 11alpha,17beta-Dihydroxyandrost-4-en-3-one ==
+
+[PMID 41090402] Measurement of 11-Oxo-androgens, A Novel Biomarker, in Females with Clinical Signs of Premature Adrenarche
+2026
+ObjectiveEndocrine findings in premature adrenarche have been characterized by elevated dehydroepiandrosterone (DHEA) DHEA-sulfate (DHEA-S) levels in the past.MethodsWe reviewed female patients, aged 4 to 8 years, with premature adrenarche who were seen at a single center between 2019 and 2023. Data were collected on the traditional androgens (DHEA and DHEA-S) and novel 11-oxo-androgens, which were measured using liquid chromatography/tandem mass spectrometry assays in commercial laboratories (Lab Corp).ResultsThe study included 44 girls. The majority, 89% of patients from the youngest group (4-5 years olds), presented with apocrine odor as the only symptom of premature adrenarche. We have demonstrated that DHEA and DHEA-S levels were within the normal range in many girls with premature adrenarche, whereas 11-oxo-androgens, particularly 11-hydroxyandrostenedione and 11-beta-hydroxytestosterone, were elevated. Out of those with normal DHEA-S, 75% had elevated 11-hydroxyandrostenedione, and 77.8% of those patients with normal DHEA had the same elevated oxo-androgen. Moreover, advanced bone age greater than 1 year compared to chronological age was positively associated with 11-ketotestosterone [Spearman rho=0.32, 95% confidence interval (CI): 0.01-0.57, p=0.0429] and 11β-hydroxy testosterone (Spearman rho=0.32, 95% CI: 0.01-0.58, p=0.0395).ConclusionWe propose that 11-oxo-androgens are a more sensitive steroid to be measured when premature adrenarche is suspected.
+
+[PMID 39038449] Obesity Is Associated with Increased 11-Oxyandrogen Serum Concentrations during Puberty
+2026
+IntroductionWhile the influence of various factors on classical androgen synthesis in children and adolescents and its impact on puberty has been widely investigated, there appear to be gaps and contradictory findings regarding the association of overweight and obesity with the synthesis of adrenal-derived 11-oxygenated androgen (11-OA) serum levels. With this study, we aimed to examine how overweight and obesity affect 11-OA serum levels during puberty in a large cohort of children and adolescents.MethodsOur cohort comprised 1,054 healthy children aged 6-19 years providing serum samples at a total of 1,734 visits. Liquid chromatography-tandem mass spectrometry was used to quantify 11-ketotestosterone (11-KT), 11-ketoandrostendione (11-KA4), 11-β-hydroxytestosterone (11-OHT), 11-β-hydroxyandrostendione (11-OHA4), testosterone, androstenedione, and DHEAS. In addition, we assessed BMI-SDSs, skinfold thicknesses, and Tanner stages. The significance level α was set to α = 0.05.ResultsIncreases in 11-KT, 11-KA4, 11-OHT, and 11-OHA4 levels were observed in boys and girls during puberty. 11-KT (β = 0.2, p ConclusionWe found increasing 11-OA serum levels throughout all Tanner stages. 11-OAs were observed to be associated with BMI and skinfold thickness, suggesting that overweight and obesity may be associated with pubertal alterations in 11-OA serum levels.
+
+[PMID 4092434] Validation of radioimmunoassay systems for the measurement of 11-keto- and 11 beta-hydroxytestosterone in teleost blood
+1985
+Highly specific antisera for 11-keto- and 11 beta-hydroxytestosterone have been raised in sheep. Assay systems for the simultaneous measurement of 11-ketotestosterone, 11 beta-hydroxytestosterone, testosterone, progesterone and estradiol-17 beta were validated for Ictalurus nebulosus plasma and Carassius auratus serum. In males of both species 11-ketotestosterone and testosterone were the major steroids detected. In females, testosterone and estradiol-17 beta were the predominant steroids measured. Data from samples taken at different stages of the annual cycle suggest that seasonal fluctuations in gonadal steroid secretion occur in I. nebulosus and C. auratus.
+
+[PMID 24479850] In vitro metabolism of testosterone in the horse liver and involvement of equine CYPs 3A89, 3A94 and 3A95
+2014
+Testosterone (TES) 6-β-hydroxylation is a significant metabolic step in the biotransformation of TES in human liver microsomes and reflects cytochrome P450 (CYP) 3A4/5 specific metabolic activity. Several CYP3A enzymes have been annotated in the horse genome, but functional characterization is missing. This descriptive study investigates TES metabolism in the horse liver in vitro and the qualitative contribution of three CYP3A isoforms of the horse. Metabolism of TES was investigated by using equine hepatocyte primary cultures and liver microsomes. Chemical inhibitors were used to determine the CYPs involved in TES biotransformation in equine microsomes. Single CYPs 3A89, 3A94, and 3A95, recombinantly expressed in V79 hamster lung fibroblasts, were incubated with TES and the fluorescent metabolite 7-benzyloxy-4-trifluoromethylcoumarin (BFC). The effect of ketoconazole and troleandomycin was evaluated on single CYPs. Testosterone metabolites were analyzed by HPLC and confirmed by GC/MS. In hepatocyte primary cultures, the most abundant metabolite was androstenedione (AS), whereas in liver microsomes, 6-β-hydroxytestosterone showed the largest peak. Formation of 6-β-hydroxytestosterone and 11-β-hydroxytestosterone in liver microsomes was inhibited by ketoconazole, troleandomycin, and quercetin. Equine recombinant CYP3A95 catalyzed 11-β-hydroxylation of testosterone (TES). Metabolism of BFC was significantly inhibited by ketoconazole in CYP3A95, whereas troleandomycin affected the activities of CYP3A94 and CYP3A95. Both inhibitors had no significant effect on CYP3A89. Metabolic reactions and effects of inhibitors differed between the equine CYP3A isoforms investigated. This has to be considered in future in vitro studies.
+
+[PMID 3760788] The measurement of 11 beta, 17 beta-dihydroxy-4-androsten-3-one (11 beta-hydroxytestosterone) by radioimmunoassay in human plasma
+1986
+A radioimmunoassay (RIA) is described for the measurement of 11 beta,17 beta-dihydroxy-4-androsten-3-one (11 beta-hydroxytestosterone) in human plasma. The reliability criteria of the new RIA were similar to those of other steroid hormone radioimmunoassays. The mean plasma 11 beta,17 beta-dihydroxy-4-androsten-3-one level for healthy young subjects was 1.31 +/- 0.32 nmol/l (means +/- SD) in males and 1.19 +/- 0.35 nmol/l in females at 8 a.m.; during the night, there was a marked decrease, and at 11 p.m. the recorded values were 0.41 +/- 0.15 nmol/l and 0.46 +/- 0.14 nmol/l, respectively. During the corticotropin stimulation test, 11 beta,17 beta-dihydroxy-4-androsten-3-one increased from 1.03 +/- 0.33 nmol/l to 1.31 +/- 0.41 nmol/l, while in dexamethasone suppression tests a decrease from 2.04 +/- 0.82 nmol/l to 0.25 +/- 0.05 nmol/l was seen. In contrast, chorionic gonadotropin administration on 3 consecutive days did not influence plasma concentrations of 11 beta,17 beta-dihydroxy-4-androsten-3-one.

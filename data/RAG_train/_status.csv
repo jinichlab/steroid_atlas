@@ -1,0 +1,587 @@
+chebi_id,name,cid,status,n_papers,chars,has_definition
+CHEBI:732,5beta-dihydrocortisol,164838,own_literature,5,10802,True
+CHEBI:763,algestone,11687,own_literature,5,12795,True
+CHEBI:776,16alpha-hydroxyestrone,115116,own_literature,5,9875,True
+CHEBI:799,"3,17-dioxoandrost-4-en-19-al",92854,no_literature,0,715,True
+CHEBI:1156,2-hydroxyestrone,440623,own_literature,5,9181,True
+CHEBI:1189,2-methoxyestrone,440624,own_literature,5,9129,True
+CHEBI:1294,"(20R,22R)-20,22-dihydroxycholesterol",6453841,own_literature,5,9986,True
+CHEBI:1301,(22S)-22-hydroxycholesterol,168038,own_literature,5,7346,True
+CHEBI:1307,24-methylenecycloartanol,94204,own_literature,5,8116,True
+CHEBI:1624,3-oxo-5beta-steroid,439810,own_literature,1,2775,True
+CHEBI:1712,3alpha-hydroxy-5beta-pregnan-20-one,31402,own_literature,1,1454,True
+CHEBI:1722,3beta-hydroxy-Delta(5)-steroid,,own_literature,5,9534,True
+CHEBI:1949,4alpha-methylzymosterol,22212495,own_literature,5,8283,True
+CHEBI:2150,5beta-dihydrotestosterone,11302,own_literature,5,7679,True
+CHEBI:2288,"7alpha,12alpha-dihydroxy-5beta-cholestan-3-one",5284271,no_literature,0,902,True
+CHEBI:2290,7alpha-hydroxy-5beta-cholestan-3-one,5284270,no_literature,0,856,True
+CHEBI:2495,adrenosterone,223997,own_literature,5,8029,True
+CHEBI:2710,"androst-5-ene-3beta,17beta-diol",10634,own_literature,5,9265,True
+CHEBI:2938,avenacoside B,71581002,own_literature,5,9874,True
+CHEBI:3663,cholesteryl palmitate,246520,own_literature,5,9218,True
+CHEBI:4629,diosgenin,99474,own_literature,5,10505,True
+CHEBI:4648,hop-22(29)-ene,92155,own_literature,5,7843,True
+CHEBI:6570,lupeol,259846,own_literature,5,8714,True
+CHEBI:7466,nandrolone,9904,own_literature,5,8917,True
+CHEBI:8387,Pregnanediol,219833,own_literature,5,6997,True
+CHEBI:8588,protodioscin,441891,own_literature,5,10333,True
+CHEBI:9407,taurochenodeoxycholate,9548902,own_literature,5,9584,True
+CHEBI:9595,tigogenin,99516,own_literature,5,6374,True
+CHEBI:11867,3-oxo-5beta-cholanate,9548901,own_literature,2,3028,True
+CHEBI:11893,"3alpha,12alpha-dihydroxy-7-oxo-5beta-cholanate",9548790,own_literature,1,1508,True
+CHEBI:11901,"3alpha,7alpha-dihydroxy-12-oxo-5beta-cholanate",9548900,no_literature,0,877,True
+CHEBI:11909,3beta-hydroxy-5alpha-pregnan-20-one,92787,own_literature,4,10053,True
+CHEBI:13610,3beta-hydroxysterol ester,,no_literature,0,221,True
+CHEBI:15574,nuatigenin,440453,own_literature,5,9299,True
+CHEBI:15575,nuatigenin 3-beta-D-glucopyranoside,440517,parent_literature,3,5877,True
+CHEBI:15579,(25S)-5beta-spirostan-3beta-yl beta-D-glucoside,440454,own_literature,4,7515,True
+CHEBI:15755,"3alpha,7alpha,12beta-trihydroxy-5beta-cholanate",9548607,no_literature,0,942,True
+CHEBI:15826,16alpha-hydroxyprogesterone,243761,parent_literature,3,5708,True
+CHEBI:15889,sterol,1107,own_literature,5,9449,True
+CHEBI:15994,"5alpha-androstane-3,17-dione",222865,no_literature,0,674,True
+CHEBI:16032,androsterone,5879,own_literature,5,10546,True
+CHEBI:16074,5beta-cholestan-3-one,92132,own_literature,5,8412,True
+CHEBI:16113,cholesterol,5997,own_literature,1,1934,True
+CHEBI:16175,cholest-4-en-3-one,91477,own_literature,5,8088,True
+CHEBI:16229,3beta-hydroxy-5beta-pregnan-20-one,228491,own_literature,5,8205,True
+CHEBI:16290,"5alpha-cholesta-7,24-dien-3beta-ol",5459827,parent_literature,3,3197,True
+CHEBI:16418,"(20S)-17,20-dihydroxypregn-4-en-3-one",440368,no_literature,0,760,True
+CHEBI:16422,"androst-4-ene-3,17-dione",6128,own_literature,5,9278,True
+CHEBI:16455,"4,4-dimethyl-5alpha-cholest-7-en-3beta-ol",5460076,no_literature,0,871,True
+CHEBI:16469,17beta-estradiol,5757,own_literature,5,9879,True
+CHEBI:16485,18-hydroxycorticosterone,11222,own_literature,1,3216,True
+CHEBI:16495,4alpha-methyllathosterone,440345,no_literature,0,800,True
+CHEBI:16496,"5beta-cholestane-3alpha,7alpha,12alpha-triol",160520,own_literature,5,6855,True
+CHEBI:16521,lanosterol,246983,own_literature,5,10159,True
+CHEBI:16581,pregnenolone,8955,no_literature,0,771,True
+CHEBI:16587,20-hydroxyecdysone,5459840,own_literature,5,8891,True
+CHEBI:16608,5alpha-cholest-8-en-3beta-ol,101770,own_literature,5,9386,True
+CHEBI:16653,cycloeucalenol,101690,no_literature,0,872,True
+CHEBI:16688,ecdysone,19212,own_literature,5,9980,True
+CHEBI:16784,6beta-hydroxy-17beta-estradiol,440168,parent_literature,3,6914,True
+CHEBI:16827,corticosterone,5753,own_literature,5,8914,True
+CHEBI:16933,ergosterol,444679,own_literature,5,8874,True
+CHEBI:16962,cortisone,222786,own_literature,5,10810,True
+CHEBI:16973,11-deoxycorticosterone,6166,own_literature,5,9456,True
+CHEBI:17002,cholesteryl ester,,own_literature,5,8528,True
+CHEBI:17026,progesterone,5994,own_literature,5,9636,True
+CHEBI:17030,cycloartenol,92110,own_literature,5,10451,True
+CHEBI:17038,fecosterol,440371,own_literature,5,10435,True
+CHEBI:17168,5alpha-cholest-7-en-3beta-ol,65728,own_literature,5,9574,True
+CHEBI:17179,taurolithocholate,9548567,own_literature,5,10482,True
+CHEBI:17252,17alpha-hydroxyprogesterone,6238,own_literature,5,9335,True
+CHEBI:17263,estrone,5870,own_literature,5,8223,True
+CHEBI:17347,testosterone,6013,own_literature,5,10186,True
+CHEBI:17495,cholesteryl beta-D-glucoside,440145,own_literature,5,9539,True
+CHEBI:17500,7alpha-hydroxycholesterol,107722,own_literature,3,5177,True
+CHEBI:17650,cortisol,5754,own_literature,5,10685,True
+CHEBI:17703,26-hydroxycholesterol,99470,no_literature,0,811,True
+CHEBI:17737,desmosterol,439577,own_literature,5,9349,True
+CHEBI:17759,"cholesta-5,7-dien-3beta-ol",439423,own_literature,5,9642,True
+CHEBI:17791,obtusifoliol,390622,own_literature,5,9076,True
+CHEBI:17813,"4,4-dimethyl-5alpha-cholesta-8,14,24-trien-3beta-ol",443212,own_literature,5,9431,True
+CHEBI:17899,7alpha-hydroxycholest-4-en-3-one,123743,own_literature,1,2967,True
+CHEBI:18011,"androstane-3alpha,17beta-diol",11957457,own_literature,5,9340,True
+CHEBI:18093,"17,21-dihydroxy-5beta-pregnane-3,11,20-trione",65554,own_literature,1,2906,True
+CHEBI:18249,"ergosta-5,7,22,24(28)-tetraen-3beta-ol",11090531,own_literature,5,7271,True
+CHEBI:18252,zymosterol,92746,own_literature,5,10539,True
+CHEBI:18364,14-demethyllanosterol,165609,own_literature,1,1870,True
+CHEBI:18378,4alpha-methyl-5alpha-cholest-7-en-3beta-ol,160482,own_literature,5,11596,True
+CHEBI:18533,5alpha-campestan-3-one,16061343,own_literature,2,3384,True
+CHEBI:18534,campest-4-en-3-one,11988279,own_literature,5,6406,True
+CHEBI:19168,17-oxo steroid,4226429,own_literature,5,5694,True
+CHEBI:19290,"2,22,25-trideoxyecdysone",15942885,own_literature,5,9960,True
+CHEBI:19566,2-deoxyecdysone,13939876,own_literature,5,9109,True
+CHEBI:20000,3-dehydroteasterone,14353979,own_literature,5,9495,True
+CHEBI:20156,3-oxo-Delta(1) steroid,,no_literature,0,152,True
+CHEBI:20710,3-dehydro-6-deoxoteasterone,16061345,own_literature,5,7673,True
+CHEBI:20712,6-deoxocastasterone,13870433,own_literature,5,7987,True
+CHEBI:20714,6-deoxycathasterone,16061344,own_literature,5,9743,True
+CHEBI:20716,6-deoxoteasterone,11144580,own_literature,5,7813,True
+CHEBI:20747,6-oxocampestanol,16061347,own_literature,4,6079,True
+CHEBI:20760,6alpha-hydroxycastasterone,15542699,own_literature,4,7239,True
+CHEBI:23051,castasterone,133534,own_literature,5,8287,True
+CHEBI:23057,cathasterone,15341086,own_literature,5,7957,True
+CHEBI:23614,deoxycholate,9548661,own_literature,5,10019,True
+CHEBI:23929,episterol,5283662,own_literature,5,10190,True
+CHEBI:26863,teasterone,13475125,own_literature,5,7546,True
+CHEBI:27576,"19-hydroxyandrost-4-ene-3,17-dione",252379,no_literature,0,789,True
+CHEBI:27582,"16alpha-hydroxyandrost-4-ene-3,17-dione",440574,no_literature,0,851,True
+CHEBI:27584,aldosterone,5839,own_literature,5,10018,True
+CHEBI:27693,sitosterol,222284,own_literature,5,9728,True
+CHEBI:27771,16alpha-hydroxydehydroepiandrosterone,102030,own_literature,5,10233,True
+CHEBI:27910,7-dehydrodesmosterol,440558,own_literature,5,10091,True
+CHEBI:27967,"11beta-hydroxyandrost-4-ene-3,17-dione",94141,no_literature,0,840,True
+CHEBI:27974,estriol,5756,own_literature,5,10992,True
+CHEBI:28047,"5beta-cholestane-3alpha,7alpha-diol",3080603,own_literature,1,1588,True
+CHEBI:28082,"5alpha-cholestane-3beta,5,6beta-triol",91498,parent_literature,3,3234,True
+CHEBI:28113,"24,25-dihydrolanosterol",440560,own_literature,5,9036,True
+CHEBI:28164,cholesterol beta-epoxide,108109,own_literature,5,9525,True
+CHEBI:28324,11-deoxycortisol,440707,no_literature,0,774,True
+CHEBI:28453,(20S)-20-hydroxypregn-4-en-3-one,8956,own_literature,5,9937,True
+CHEBI:28477,"7alpha,12alpha-dihydroxycholest-4-en-3-one",3081958,no_literature,0,975,True
+CHEBI:28623,campesterol,173183,own_literature,5,11316,True
+CHEBI:28689,dehydroepiandrosterone,5881,own_literature,5,9264,True
+CHEBI:28744,2-hydroxy-17beta-estradiol,247304,own_literature,5,9139,True
+CHEBI:28750,17alpha-hydroxypregnenolone,91451,own_literature,1,2123,True
+CHEBI:28824,stigmasterol,5280794,own_literature,5,9913,True
+CHEBI:28952,"5alpha-pregnane-3,20-dione",92810,own_literature,5,10120,True
+CHEBI:28955,2-methoxy-17beta-estradiol,66414,own_literature,5,9625,True
+CHEBI:29107,24-methylidenelophenol,5283640,own_literature,5,10991,True
+CHEBI:29744,lithocholate,5460318,own_literature,5,10445,True
+CHEBI:29746,glycocholate,5460316,own_literature,5,10700,True
+CHEBI:30154,"5beta-pregnane-3,20-dione",92745,no_literature,0,755,True
+CHEBI:33203,(Z)-24-ethylidenelophenol,9548595,own_literature,5,8996,True
+CHEBI:34133,11-oxotestosterone,5282365,own_literature,5,9299,True
+CHEBI:34134,11-Ketoandrosterone,102029,no_literature,0,625,False
+CHEBI:34172,16alpha-hydroxytestosterone,65545,no_literature,0,800,True
+CHEBI:34310,(24S)-24-hydroxycholesterol,121948,own_literature,5,11352,True
+CHEBI:34461,5-alpha-THDOC,101771,own_literature,5,8606,False
+CHEBI:34463,"5alpha-Androstane-3,11,17-trione",11185733,own_literature,1,2130,False
+CHEBI:34477,6beta-hydroxytestosterone,65543,no_literature,0,763,True
+CHEBI:34584,boldenone,13308,own_literature,5,8588,True
+CHEBI:35341,steroid,139082353,own_literature,5,9188,True
+CHEBI:35343,17beta-hydroxy steroid,68208519,own_literature,5,7006,True
+CHEBI:35349,7beta-hydroxy steroid,,no_literature,0,160,True
+CHEBI:36234,chenodeoxycholate,9548590,own_literature,5,11296,True
+CHEBI:36252,glycochenodeoxycholate,9548796,own_literature,5,11607,True
+CHEBI:36257,taurocholate,9548794,own_literature,5,8970,True
+CHEBI:36261,taurodeoxycholate,9548793,own_literature,5,9767,True
+CHEBI:36484,hopan-22-ol,164874,own_literature,5,9076,True
+CHEBI:36799,campestanol,119394,own_literature,5,11113,True
+CHEBI:36835,3alpha-hydroxy steroid,439900,own_literature,5,7759,True
+CHEBI:37424,sterol 3-beta-D-glucoside,440070,no_literature,0,773,True
+CHEBI:37623,"7alpha,25-dihydroxycholesterol",11954197,parent_literature,3,6153,True
+CHEBI:37640,"(24S)-7alpha,24-dihydroxycholesterol",11954196,no_literature,0,857,True
+CHEBI:40799,"androsta-1,4-diene-3,17-dione",13472,own_literature,5,8458,True
+CHEBI:41509,cholesteryl linoleate,5287939,own_literature,5,10574,True
+CHEBI:41633,"24(S),25-epoxycholesterol",3247059,no_literature,0,999,True
+CHEBI:42977,25-hydroxycholesterol,65094,own_literature,5,12569,True
+CHEBI:42989,7beta-hydroxycholesterol,473141,own_literature,5,8030,True
+CHEBI:46898,cholesteryl oleate,5283632,own_literature,5,10298,True
+CHEBI:47787,11-oxo steroid,,own_literature,3,2330,True
+CHEBI:47788,3-oxo steroid,439594,own_literature,5,8939,True
+CHEBI:47789,7-oxo steroid,,own_literature,3,5239,True
+CHEBI:47907,3-oxo-Delta(5)-steroid,,own_literature,5,7529,True
+CHEBI:47909,3-oxo-Delta(4) steroid,439274,own_literature,4,6164,True
+CHEBI:48939,"(25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetrol",24771793,own_literature,5,5994,True
+CHEBI:48940,"(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al",24771792,own_literature,3,4454,True
+CHEBI:50169,brexanolone,92786,own_literature,5,8402,True
+CHEBI:50593,3-dehydro-4-methylzymosterol,24906328,no_literature,0,865,True
+CHEBI:52320,ergosteryl ester,6436903,own_literature,5,8916,True
+CHEBI:52386,zymosterone,22298942,own_literature,5,9423,True
+CHEBI:52394,lanosteryl ester,,no_literature,0,204,True
+CHEBI:52972,"ergosta-5,7,24(28)-trien-3beta-ol",10894570,no_literature,0,835,True
+CHEBI:52973,ergosteryl 3-beta-D-glucoside,44176397,no_literature,0,974,True
+CHEBI:57373,choloyl-CoA(4-),45266600,no_literature,0,1486,True
+CHEBI:57529,17alpha-estradiol 3-glucosiduronate,46878390,no_literature,0,941,True
+CHEBI:57905,dehydroepiandrosterone sulfate(1-),20057076,own_literature,5,8081,True
+CHEBI:58301,taurolithocholic acid sulfate(2-),25200609,no_literature,0,990,True
+CHEBI:58387,3beta-hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carboxylate,21145105,no_literature,0,1011,True
+CHEBI:58507,"3alpha,7alpha,12alpha-trihydroxy-24-oxo-5beta-cholestan-26-oyl-CoA(4-)",45266665,no_literature,0,1634,True
+CHEBI:58677,"(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oyl-CoA(4-)",45266721,no_literature,0,1624,True
+CHEBI:58734,"(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate",45266747,no_literature,0,932,True
+CHEBI:58803,"7alpha,12alpha-dihydroxy-3-oxochol-4-en-24-oate",20848972,no_literature,0,851,True
+CHEBI:58804,"12alpha-hydroxy-3-oxochola-4,6-dien-24-oate",20848947,no_literature,0,818,True
+CHEBI:58810,deoxycholoyl-CoA(4-),46224560,no_literature,0,1481,True
+CHEBI:58874,taurohyocholate,25244361,own_literature,5,9476,True
+CHEBI:58875,hyodeoxycholate,11870241,own_literature,5,9575,True
+CHEBI:58877,glycochenodeoxycholate 7-sulfate(2-),25245393,own_literature,5,9492,True
+CHEBI:59411,"(5alpha,22S,24R)-22-hydroxyergostan-3-one",46878488,no_literature,0,915,True
+CHEBI:59418,15beta-hydroxyprogesterone,23239834,own_literature,1,1975,True
+CHEBI:59714,Delta(1)-dihydrotestosterone,236666,own_literature,1,2584,True
+CHEBI:59807,"(24R,25R)-3alpha,7alpha,12alpha,24-tetrahydroxy-5beta-cholestan-26-oyl-CoA(4-)",46878574,no_literature,0,1644,True
+CHEBI:59879,"(24E)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholest-24-en-26-oyl-CoA(4-)",46878544,no_literature,0,1621,True
+CHEBI:60007,sulfoglycolithocholate(2-),25203187,own_literature,5,11014,True
+CHEBI:60008,glycolithocholate,25201677,own_literature,5,10713,True
+CHEBI:60050,estrone 3-sulfate(1-),20056857,parent_literature,3,7483,True
+CHEBI:61313,C21-steroid,12547,own_literature,5,10545,True
+CHEBI:62117,6beta-hydroxyprogesterone,200149,own_literature,5,6949,True
+CHEBI:62416,dammarenediol-II,10895555,no_literature,0,925,True
+CHEBI:62456,cucurbitadienol,14543446,no_literature,0,907,True
+CHEBI:62457,"(17Z)-protosta-17(20),24-dien-3beta-ol",53239772,own_literature,5,7488,True
+CHEBI:62735,"lupan-3beta,20-diol",10003607,own_literature,4,4067,True
+CHEBI:62845,4-hydroxy-17beta-estradiol,5282360,own_literature,5,11237,True
+CHEBI:62989,chenodeoxycholoyl-CoA(4-),53477637,no_literature,0,1501,True
+CHEBI:63641,"9alpha-hydroxyandrosta-1,4-diene-3,17-dione",241544,no_literature,0,798,True
+CHEBI:63837,"pregn-5-ene-3,20-dione",150901,no_literature,0,804,True
+CHEBI:63838,"(24S)-7alpha,24-dihydroxycholest-4-en-3-one",56927970,no_literature,0,848,True
+CHEBI:63906,cholest-5-en-3-one,9908107,no_literature,0,840,True
+CHEBI:64294,7-ketocholesterol,91474,own_literature,5,6958,True
+CHEBI:64925,4beta-methylzymosterol-4alpha-carboxylate,57339293,no_literature,0,961,True
+CHEBI:67987,ginsenoside Rg1,441923,own_literature,5,10414,True
+CHEBI:67988,ginsenoside Rd,11679800,own_literature,5,10036,True
+CHEBI:67991,(20S)-ginsenoside Rg3,9918693,own_literature,5,9950,True
+CHEBI:68383,stigmasterol 3-O-beta-D-glucoside,6602508,no_literature,0,1148,True
+CHEBI:70315,eburicol,9803310,own_literature,5,9105,True
+CHEBI:71002,"20,22-dihydrodigoxin",70679118,own_literature,1,3196,True
+CHEBI:71004,"20,22-dihydrodigoxigenin",94291,own_literature,3,6537,True
+CHEBI:71541,(25S)-Delta(4)-dafachronate,70698394,own_literature,2,4653,True
+CHEBI:71542,(25S)-Delta(7)-dafachronate,70698395,no_literature,0,932,True
+CHEBI:71550,lathosterone,15081535,own_literature,5,8544,True
+CHEBI:71567,(25S)-cholestenoate,40579074,no_literature,0,916,True
+CHEBI:72330,(22S)-22-hydroxycampest-4-en-3-one,15341631,no_literature,0,879,True
+CHEBI:72331,(22S)-22-hydroxycampesterol,15341628,own_literature,5,8454,True
+CHEBI:74020,diosgenin 3-O-beta-D-glucoside,11827970,own_literature,5,9172,True
+CHEBI:74026,26-desglucoprotodioscin,71581120,no_literature,0,1311,True
+CHEBI:75931,26-desglucoavenacoside B,71768106,own_literature,1,3286,True
+CHEBI:75950,(20S)-protopanaxadiol,11213350,own_literature,2,4548,True
+CHEBI:75951,protopanaxatriol,11468733,own_literature,5,9828,True
+CHEBI:76592,"(25R)-7alpha,26-dihydroxycholesterol",15907756,own_literature,1,3233,True
+CHEBI:77145,ginsenoside F2,9918692,own_literature,5,10343,True
+CHEBI:77146,ginsenoside C-K,9852086,own_literature,5,8523,True
+CHEBI:77147,(20S)-ginsenoside Rh2,119307,own_literature,5,10105,True
+CHEBI:77150,ginsenoside F1,9809542,no_literature,0,1309,True
+CHEBI:77154,ginsenoside Rc,12855889,no_literature,0,1897,True
+CHEBI:77166,"3-oxo-Delta(1),Delta(4)-steroid",,no_literature,0,197,True
+CHEBI:78594,5alpha-pregan-20beta-ol-3-one,22211699,no_literature,0,801,True
+CHEBI:78595,21-dehydrocortisol,225755,own_literature,3,4818,True
+CHEBI:78596,21-dehydrocortisone,331383,no_literature,0,822,True
+CHEBI:78600,11-dehydrocorticosterone,5311364,own_literature,1,1397,True
+CHEBI:78601,"11,21-dioxoprogesterone",86289598,no_literature,0,802,True
+CHEBI:78603,3beta-hydroxy-7-oxo-5beta-cholan-24-oate,86289599,no_literature,0,928,True
+CHEBI:78604,ursodeoxycholate,11870240,own_literature,5,10778,True
+CHEBI:78605,7-oxolithocholate,20848976,own_literature,5,7473,True
+CHEBI:78904,"4,4-dimethyl-8,14-cholestadien-3beta-ol",167817,own_literature,5,9742,True
+CHEBI:79808,"11alpha,17beta-Dihydroxyandrost-4-en-3-one",11954152,own_literature,5,7791,True
+CHEBI:79834,"3beta-hydroxy-5alpha-androstane-7,17-dione",11954160,no_literature,0,758,True
+CHEBI:80401,"(22R,23R)-22,23-dihydroxycampesterol",23724681,own_literature,1,2328,True
+CHEBI:80402,"(22R,23R)-22,23-dihydroxycampest-4-en-3-one",46173813,no_literature,0,939,True
+CHEBI:80530,"2,22-dideoxyecdysone",14017685,own_literature,3,6285,True
+CHEBI:81013,"7alpha,25-dihydroxy-4-cholesten-3-one",5284267,no_literature,0,865,True
+CHEBI:81467,7alpha-hydroxypregnenolone,9967418,no_literature,0,798,True
+CHEBI:81468,5alpha-dihydrodeoxycorticosterone,6451493,own_literature,5,10940,True
+CHEBI:81471,7alpha-hydroxydehydroepiandrosterone,65517,own_literature,5,9045,True
+CHEBI:82750,cholesteryl stearate,118246,own_literature,4,9040,True
+CHEBI:82751,cholesteryl arachidonate,6479222,own_literature,5,12479,True
+CHEBI:82869,(24S)-24-hydroxycholesterol ester,,no_literature,0,188,True
+CHEBI:82875,(24S)-24-hydroxycholesterol 3-linoleoate,86289967,no_literature,0,1007,True
+CHEBI:82961,17beta-estradiol 17-glucosiduronate,443090,own_literature,2,3438,True
+CHEBI:82982,glycodeoxycholate,25203316,own_literature,5,9416,True
+CHEBI:83025,2alpha-hydroxytestosterone,14311666,own_literature,5,9073,True
+CHEBI:83777,"3-oxo-23,24-bisnorchol-4-en-22-oate",86290136,own_literature,4,9790,True
+CHEBI:83783,(25S)-3beta-hydroxy-5-cholesten-26-oyl-CoA(4-),86290137,no_literature,0,1546,True
+CHEBI:83792,"3-oxo-23,24-bisnorchol-4-en-22-oyl-CoA(4-)",90658487,own_literature,1,3561,True
+CHEBI:83793,"3-oxo-23,24-bisnorchola-1,4-dien-22-oyl-CoA(4-)",90658772,own_literature,2,5415,True
+CHEBI:83819,(25S)-3-oxocholest-4-en-26-oyl-CoA(4-),86290149,no_literature,0,1520,True
+CHEBI:83860,(25S)-26-hydroxycholest-4-en-3-one,66932809,no_literature,0,820,True
+CHEBI:83862,(25R)-3-ketocholest-4-en-26-al,86290155,no_literature,0,793,True
+CHEBI:83865,"androst-5-ene-3,17-dione",160531,no_literature,0,698,True
+CHEBI:84145,3beta-hydroxycholest-5-en-26-al,53975001,own_literature,5,7035,True
+CHEBI:84323,cholesteryl palmitoleate,13828666,own_literature,5,10093,True
+CHEBI:84341,cholesteryl linolenate,6436907,own_literature,5,10661,True
+CHEBI:84346,"cholesteryl all-cis-icosa-8,11,14-trienoate",14274976,own_literature,5,9150,True
+CHEBI:84969,"cholesteryl (5Z,8Z,11Z,14Z,17Z-eicosapentaenoate)",10372299,own_literature,5,10067,True
+CHEBI:85547,"9alpha-hydroxy-3-oxo-23,24-bisnorchola-1,4-dien-22-oyl-CoA(4-)",90658321,no_literature,0,1530,True
+CHEBI:85548,"9alpha-hydroxy-3-oxo-23,24-bisnorchol-4-en-22-oyl-CoA(4-)",90659333,no_literature,0,1513,True
+CHEBI:85549,"9alpha-hydroxyandrost-4-en-3,17-dione",10425017,own_literature,5,10075,True
+CHEBI:85550,"9alpha-hydroxy-3-oxo-23,24-bisnorchol-4-en-22-oate",90658865,no_literature,0,912,True
+CHEBI:85551,"3-oxo-23,24-bisnorchola-1,4-dien-22-oate(1-)",90657838,own_literature,2,4791,True
+CHEBI:85553,"9alpha-hydroxy-3-oxo-23,24-bisnorchola-1,4-dien-22-oate(1-)",91825645,no_literature,0,932,True
+CHEBI:85778,4beta-hydroxycholesterol,3247060,own_literature,2,5207,True
+CHEBI:85779,"4beta,7alpha-dihydroxycholesterol",57066358,no_literature,0,864,True
+CHEBI:85809,"5alpha-androstane-3beta,6alpha,17beta-triol",170796,no_literature,0,837,True
+CHEBI:85810,"androst-5-ene-3beta,7alpha,17beta-triol",25108320,no_literature,0,797,True
+CHEBI:85816,"(3beta,5alpha,7alpha)-3,7-dihydroxyandrostan-17-one",9815044,own_literature,5,9375,True
+CHEBI:85899,4-pregnen-3beta-ol-20-one,12838303,no_literature,0,755,True
+CHEBI:86014,"3,22-dioxochol-4-en-24-oyl-CoA(4-)",90658756,no_literature,0,1480,True
+CHEBI:86018,3beta-hydroxychol-5-en-24-oyl-CoA(4-),90658305,no_literature,0,1475,True
+CHEBI:86020,"20-methyl-3-oxopregna-4,17-dien-21-oyl-CoA(4-)",91825732,no_literature,0,1466,True
+CHEBI:86028,17-hydroxy-3-oxopregn-4-en-20-carboxy-CoA(4-),91825734,no_literature,0,1473,True
+CHEBI:86037,"3beta-hydroxychola-5,22-dien-24-oyl-CoA(4-)",91825736,no_literature,0,1511,True
+CHEBI:86074,"(24S,25)-dihydroxycholesterol",69331086,no_literature,0,862,True
+CHEBI:86087,"4beta,24S-dihydroxycholesterol",91825743,no_literature,0,878,True
+CHEBI:86113,"(25R)-4beta,26-dihydroxycholesterol",91825745,no_literature,0,918,True
+CHEBI:86115,"(25R)-3beta,4beta-dihydroxycholest-5-en-26-al",91825746,no_literature,0,921,True
+CHEBI:86116,"(25R)-3beta,4beta-dihydroxycholest-5-en-26-oate(1-)",91825747,no_literature,0,995,True
+CHEBI:86131,"5alpha-cholesta-8,14-dien-3beta-ol",14035714,no_literature,0,788,True
+CHEBI:86145,"(7alpha,22R)-dihydroxycholesterol",128674,no_literature,0,876,True
+CHEBI:86146,"(24S,25)-epoxy-7alpha-hydroxycholesterol",10549853,no_literature,0,896,True
+CHEBI:86165,"(24S,25S)-cholest-5-en-3beta,24,26-triol",91825749,no_literature,0,932,True
+CHEBI:86381,5beta-dihydrocorticosterone,21145110,no_literature,0,801,True
+CHEBI:86389,5beta-dihydroaldosterone,21151226,no_literature,0,813,True
+CHEBI:86412,3-oxochol-4-en-24-oyl-CoA(4-),90657746,no_literature,0,1452,True
+CHEBI:86414,"3-oxocholesta-4,24-dien-26-oyl-CoA(4-)",90658267,no_literature,0,1513,True
+CHEBI:86570,(5alpha)-cholestan-3beta-ol,6665,own_literature,5,9770,True
+CHEBI:87044,"4,4-dimethyl-5alpha-cholest-8-en-3beta-ol",12070223,own_literature,1,2626,True
+CHEBI:87047,3beta-hydroxy-4beta-methyl-5alpha-cholest-8-ene-4alpha-carboxylate,91826592,no_literature,0,999,True
+CHEBI:87050,4alpha-methyl-5alpha-cholest-8-en-3-one,44263323,no_literature,0,816,True
+CHEBI:87051,4alpha-methyl-5alpha-cholest-8-en-3beta-ol,6452640,own_literature,2,3895,True
+CHEBI:87055,3beta-hydroxy-5alpha-cholest-8-ene-4alpha-carboxylate,91826593,no_literature,0,971,True
+CHEBI:87056,5alpha-cholest-8-en-3-one,44263324,no_literature,0,765,True
+CHEBI:87057,"lanost-8-ene-3beta,30-diol",15698821,no_literature,0,847,True
+CHEBI:87060,3beta-hydroxylanost-8-en-32-al,15698824,own_literature,1,2294,True
+CHEBI:87287,4beta-methylzymosterol-4-carbaldehyde,22298937,no_literature,0,878,True
+CHEBI:87289,4alpha-hydroxymethyl-4beta-methylzymosterol,22298936,no_literature,0,887,True
+CHEBI:87333,17beta-hydroxy-5beta-estran-3-one,21634212,no_literature,0,755,True
+CHEBI:87438,lithocholyl-CoA(4-),91828269,no_literature,0,1468,True
+CHEBI:87476,"(25R)-7alpha,26-dihydroxycholest-4-en-3-one",11144200,own_literature,1,2788,True
+CHEBI:87538,16alpha-hydroxydehydroepiandrosterone 3-sulfate(1-),20848950,own_literature,2,4932,True
+CHEBI:87571,"6beta-hydroxyandrost-4-ene-3,17-dione",65544,no_literature,0,754,True
+CHEBI:87593,15alpha-hydroxyestradiol,66418,own_literature,5,7294,True
+CHEBI:87598,7alpha-hydroxyestradiol,259693,no_literature,0,715,True
+CHEBI:87602,4-hydroxyestrone,9971251,own_literature,5,9018,True
+CHEBI:87605,6alpha-hydroxyestrone,21122975,no_literature,0,709,True
+CHEBI:87618,15alpha-hydroxyestrone,22295806,no_literature,0,709,True
+CHEBI:87653,"(25R)-3beta,26-dihydroxycholest-5-en-7-one",52931520,no_literature,0,921,True
+CHEBI:87677,(25R)-3beta-hydroxycholest-5-en-7-one-26-al,91828281,no_literature,0,890,True
+CHEBI:87678,(25R)-3beta-hydroxycholest-5-en-7-one-26-oate,91828282,no_literature,0,972,True
+CHEBI:87731,7alpha-hydroxy-3-oxo-5beta-cholan-24-oate,20848987,no_literature,0,932,True
+CHEBI:87734,12alpha-hydroxy-3-oxo-5beta-cholan-24-oate,91828305,parent_literature,1,3865,True
+CHEBI:87736,"7alpha,12alpha-dihydroxy-3-oxo-5beta-cholan-24-oate",20849399,no_literature,0,974,True
+CHEBI:87747,7alpha-hydroxy-3-oxochol-4-en-24-oate,91972240,parent_literature,2,4781,True
+CHEBI:87748,"3-oxochola-4,6-dien-24-oate",20848979,no_literature,0,861,True
+CHEBI:87841,"4-pregnen-20,21-diol-3-one",11987811,own_literature,3,4469,True
+CHEBI:88752,"cholesteryl (5Z,8Z,11Z)-icosatrienoate",134160259,no_literature,0,1095,True
+CHEBI:88756,cholesteryl gamma-linolenate,14274970,no_literature,0,1044,True
+CHEBI:88768,(11Z-octadecenoyl)-cholesterol,53477793,no_literature,0,914,True
+CHEBI:89213,18-oxocortisol,44263344,own_literature,5,9996,True
+CHEBI:89268,2-hydroxyestradiol 3-methyl ether,13267935,own_literature,1,2225,True
+CHEBI:89455,18-hydroxycortisol,44263343,own_literature,5,9954,True
+CHEBI:131146,dihydroouabain,6852401,own_literature,5,9311,True
+CHEBI:132020,S-choloyl-4'-phosphopantetheine(2-),119058176,no_literature,0,1213,True
+CHEBI:132021,"S-(3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oyl)-4'-phosphopantetheine(2-)",119058178,no_literature,0,1325,True
+CHEBI:132028,tauroursodeoxycholate,51397976,own_literature,5,11426,True
+CHEBI:132030,glycoursodeoxycholate,25796450,own_literature,5,10515,True
+CHEBI:132358,1alpha-hydroxytestosterone,23256526,own_literature,1,2684,True
+CHEBI:132977,"7alpha,12alpha-dihydroxy-3-oxochol-4-en-24-oyl-CoA(4-)",121596240,no_literature,0,1564,True
+CHEBI:132978,"12alpha-hydroxy-3-oxochola-4,6-dien-24-oyl-CoA(4-)",121596242,no_literature,0,1533,True
+CHEBI:133000,pregnenolone sulfate(1-),20112068,own_literature,2,3421,True
+CHEBI:133003,androsterone sulfate(1-),21123756,parent_literature,3,7269,True
+CHEBI:133105,"(3alpha,5alpha,17beta)-3-hydroxyandrostan-17-yl sulfate(1-)",121596225,no_literature,0,924,True
+CHEBI:133519,"5alpha-androstane-3alpha,17beta-diol 17-glucosiduronate",122164834,no_literature,0,1026,True
+CHEBI:133661,hyocholate,20849047,own_literature,5,10659,True
+CHEBI:133742,17alpha-hydroxypregnenolone 3-sulfate(1-),122198226,no_literature,0,851,True
+CHEBI:133778,"1alpha-hydroxyandrost-4-ene-3,17-dione",122198241,no_literature,0,787,True
+CHEBI:133930,"5alpha-androst-1-ene-3,17-dione",11196935,own_literature,5,11308,True
+CHEBI:133940,lithocholate sulfate(2-),122391354,own_literature,5,7961,True
+CHEBI:136566,(24S)-hydroxycholesterol 24-sulfate(1-),126456480,no_literature,0,931,True
+CHEBI:136567,(24S)-hydroxycholesterol 3-sulfate(1-),126456481,no_literature,0,929,True
+CHEBI:136568,"(24S)-hydroxycholesterol 3,24-disulfate(2-)",126456482,no_literature,0,983,True
+CHEBI:136579,cholesterol sulfate(1-),5200198,own_literature,1,3041,True
+CHEBI:136582,17beta-estradiol 3-sulfate(1-),71434364,no_literature,0,793,True
+CHEBI:136634,estrone 3-O-(beta-D-glucuronide)(1-),40473222,no_literature,0,1000,True
+CHEBI:136635,16alpha-hydroxyestrone 3-O-(beta-D-glucuronide)(1-),126456492,no_literature,0,1051,True
+CHEBI:136636,16alpha-hydroxyestrone 16-O-(beta-D-glucuronide)(1-),126456494,no_literature,0,1053,True
+CHEBI:136639,testosterone 17-O-(beta-D-glucuronide)(1-),126456495,no_literature,0,1040,True
+CHEBI:136649,estriol 3-O-(beta-D-glucuronide)(1-),91896478,no_literature,0,1035,True
+CHEBI:136650,estriol 16-O-(beta-D-glucuronide)(1-),126456500,no_literature,0,1038,True
+CHEBI:136698,3-oxochenodeoxycholoyl-CoA(4-),122706168,no_literature,0,1496,True
+CHEBI:136700,3-oxocholoyl-CoA(4-),126843486,no_literature,0,1502,True
+CHEBI:136701,3-oxodeoxycholoyl-CoA(4-),126843488,no_literature,0,1484,True
+CHEBI:136703,3-oxocholan-24-oyl-CoA(4-),126843490,no_literature,0,1452,True
+CHEBI:136759,"(22E)-3-oxochola-4,22-dien-24-oyl-CoA(4-)",90658407,no_literature,0,1511,True
+CHEBI:136883,17-epiestriol 17-O-(beta-D-glucuronide)(1-),126843464,no_literature,0,1049,True
+CHEBI:136899,chenodeoxycholic acid 24-O-(beta-D-glucuronide)(1-),71776683,no_literature,0,1180,True
+CHEBI:136901,deoxycholic acid 24-O-(beta-D-glucuronide)(1-),126843476,no_literature,0,1172,True
+CHEBI:136902,lithocholic acid 24-O-(beta-D-glucuronide)(1-),126843478,no_literature,0,1145,True
+CHEBI:136903,hyodeoxycholic acid 24-O-(beta-D-glucuronide)(1-),126843479,no_literature,0,1177,True
+CHEBI:136904,hyocholic acid 24-O-(beta-D-glucuronide)(1-),126843481,no_literature,0,1185,True
+CHEBI:136905,hyodeoxycholate 6-O-(beta-D-glucuronide)(2-),126843483,no_literature,0,1197,True
+CHEBI:136906,hyocholate 6-O-(beta-D-glucuronide)(2-),126843484,no_literature,0,1209,True
+CHEBI:136914,5alpha-dihydrotestosterone 17-O-(beta-D-glucuronide)(1-),129011083,no_literature,0,1081,True
+CHEBI:136916,5alpha-dihydrotestosterone 17-O-[beta-D-glucuronosyl-(1->2)-glucuronide](2-),129011084,no_literature,0,1309,True
+CHEBI:136931,2-hydroxy-17beta-estradiol 3-O-(beta-D-glucuronide)(1-),129011086,no_literature,0,1059,True
+CHEBI:136933,2-hydroxy-17beta-estradiol 2-O-(beta-D-glucuronide)(1-),129011087,no_literature,0,1059,True
+CHEBI:136936,4-hydroxy-17beta-estradiol 3-O-(beta-D-glucuronide)(1-),129011088,no_literature,0,1066,True
+CHEBI:136937,4-hydroxy-17beta-estradiol 4-O-(beta-D-glucuronide)(1-),129011089,no_literature,0,1066,True
+CHEBI:136965,lithocholate 3-O-(beta-D-glucuronide)(2-),129011091,no_literature,0,1157,True
+CHEBI:136966,3beta-hydroxysteroid-4alpha-carboxylate,146035867,no_literature,0,837,True
+CHEBI:136967,2-hydroxyestrone 3-O-(beta-D-glucuronide)(1-),129011092,no_literature,0,1034,True
+CHEBI:136969,4-hydroxyestrone 3-O-(beta-D-glucuronide)(1-),129011095,no_literature,0,1035,True
+CHEBI:136970,4-hydroxyestrone 4-O-(beta-D-glucuronide)(1-),129011096,no_literature,0,1032,True
+CHEBI:136971,2-methoxyestrone 3-O-(beta-D-glucuronide)(1-),129011098,no_literature,0,1038,True
+CHEBI:136972,4-methoxyestrone,194066,own_literature,5,10913,True
+CHEBI:136973,4-methoxyestrone 3-O-(beta-D-glucuronide)(1-),129011099,no_literature,0,1045,True
+CHEBI:136974,2-methoxy-17beta-estradiol 3-O-(beta-D-glucuronide)(1-),129011101,no_literature,0,1070,True
+CHEBI:136975,4-methoxy-17beta-estradiol,68578,own_literature,5,10779,True
+CHEBI:136976,4-methoxy-17beta-estradiol 3-O-(beta-D-glucuronide)(1-),129011102,no_literature,0,1077,True
+CHEBI:136980,2-hydroxy-3-O-methyl estrone,13831793,no_literature,0,762,True
+CHEBI:136982,5alpha-dihydrotestosterone sulfate(1-),21123132,parent_literature,1,3099,True
+CHEBI:137031,19-hydroxy-5alpha-dihydrotestosterone,257409,own_literature,1,2516,True
+CHEBI:137032,19-oxo-5alpha-dihydrotestosterone,129011069,no_literature,0,784,True
+CHEBI:137037,18-hydroxy-5alpha-dihydrotestosterone,129011070,no_literature,0,789,True
+CHEBI:137046,"6beta,16alpha,17alpha-trihydroxyprogesterone",129011071,no_literature,0,881,True
+CHEBI:137049,"16alpha,17alpha-dihydroxypregnenolone",102041888,no_literature,0,836,True
+CHEBI:137053,"(24Z),26-hydroxydesmosterol",69762915,own_literature,1,1513,True
+CHEBI:137057,"cholesta-5,7-dien-3beta,25-diol",9908983,own_literature,2,3654,True
+CHEBI:137061,"cholesta-5,7-dien-3beta,24S-diol",56940691,no_literature,0,872,True
+CHEBI:137062,7-oxo-5alpha-cholestan-3beta-ol,10386423,no_literature,0,843,True
+CHEBI:137063,"cholestanol 7alpha,8alpha-epoxide",129011073,no_literature,0,877,True
+CHEBI:137110,17beta-hydroxy-5alpha-estr-1(10)-en-3-one,129011074,no_literature,0,955,True
+CHEBI:137412,"cholesteryl (11Z,14Z,17Z)-icosatrienoate",129626645,no_literature,0,1087,True
+CHEBI:137668,beta-muricholoyl-CoA(4-),129626814,no_literature,0,1506,True
+CHEBI:137687,(24S)-hydroxycholestanol,129626817,no_literature,0,845,True
+CHEBI:137688,(25R)-26-hydroxycholestanol,102574038,no_literature,0,891,True
+CHEBI:137724,7-oxotaurolithocholate,129626818,no_literature,0,986,True
+CHEBI:137789,"7,12-dioxolithocholate",129626819,no_literature,0,908,True
+CHEBI:137818,7-oxoglycolithocholate,129626820,no_literature,0,956,True
+CHEBI:137820,7-oxotaurodeoxycholate,129626821,no_literature,0,1015,True
+CHEBI:137824,7-oxoglycodeoxycholate,129626822,no_literature,0,985,True
+CHEBI:137881,"3,7,12-trioxo-5beta-cholan-24-oate",11869222,own_literature,5,7156,True
+CHEBI:137882,"7beta-hydroxy-3,12-dioxo-5beta-cholanate",129626823,no_literature,0,970,True
+CHEBI:138029,14alpha-methyl steroid,,no_literature,0,127,True
+CHEBI:138031,Delta(14) steroid,,no_literature,0,144,True
+CHEBI:138130,Delta(7)-sterol,,own_literature,5,7473,True
+CHEBI:138131,"Delta(5),Delta(7)-sterol",,no_literature,0,152,True
+CHEBI:138141,17alpha-hydroxy-C21-steroid,129626755,no_literature,0,929,True
+CHEBI:138589,pneumocysterol,6440614,own_literature,5,8803,True
+CHEBI:138972,11alpha-hydroxycucurbitadienol,131801253,own_literature,1,2779,True
+CHEBI:138973,11-oxocucurbitadienol,131801254,own_literature,1,2705,True
+CHEBI:138974,mogrol,14525327,own_literature,5,9570,True
+CHEBI:138975,mogroside IE,101135271,no_literature,0,1084,True
+CHEBI:139269,6beta-hydroxycortisone,53674638,no_literature,0,1081,True
+CHEBI:139271,6beta-hydroxycortisol,6852390,own_literature,5,9629,True
+CHEBI:139311,20beta-dihydrocortisol,12150498,own_literature,5,7155,True
+CHEBI:140634,"3-oxochol-4,6-dien-24-oyl-CoA(4-)",122706504,no_literature,0,1421,True
+CHEBI:140636,7alpha-hydroxy-3-oxochol-4-en-24-oyl-CoA(4-),122706220,no_literature,0,1522,True
+CHEBI:141179,17beta-hydroxy-5-androsten-3-one,11987715,own_literature,1,1867,True
+CHEBI:142484,(20S)-20-O-(beta-D-glucosyl)-3-hydroxydammarene,132574557,own_literature,5,11143,True
+CHEBI:142487,(20S)-ginsenoside Rh1,12855920,own_literature,5,9867,True
+CHEBI:142610,chenodeoxycholate-3-O-beta-D-glucoside(1-),135563666,no_literature,0,1120,True
+CHEBI:142611,lithocholate-3-O-beta-D-glucoside(1-),135563783,parent_literature,3,7524,True
+CHEBI:142850,"3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylate",102515460,no_literature,0,1013,True
+CHEBI:142915,cycloeucalenone,21594790,own_literature,5,8928,True
+CHEBI:142916,"4alpha-carboxy-4beta,14alpha-dimethyl-9beta,19-cyclo-5alpha-ergost-24(24(1))-en-3beta-ol(1-)",137333860,no_literature,0,988,True
+CHEBI:143563,"3beta-hydroxy-4,4-dimethylsteroid",146035862,no_literature,0,690,True
+CHEBI:143566,3beta-hydroxy-4beta-hydroxymethyl-4alpha-methylsteroid,146035863,no_literature,0,786,True
+CHEBI:143568,3beta-hydroxy-4beta-formyl-4alpha-methylsteroid,146035864,no_literature,0,773,True
+CHEBI:143569,3beta-hydroxy-4alpha-methylsteroid-4beta-carboxylate,146035865,no_literature,0,807,True
+CHEBI:143570,4alpha-methyl-3-oxosteroid,146035866,no_literature,0,666,True
+CHEBI:143575,4alpha-carboxyzymosterol(1-),90659076,no_literature,0,926,True
+CHEBI:145042,solasodine 3-beta-D-glucoside(1+),139291713,no_literature,0,1090,True
+CHEBI:145043,solasodine(1+),40720158,own_literature,5,7075,True
+CHEBI:145198,Mogroside II-E,24721558,no_literature,0,1214,True
+CHEBI:145789,dihydroouabagenin,145864751,no_literature,0,868,True
+CHEBI:145795,digoxin(1-),145864752,own_literature,5,10266,True
+CHEBI:145796,digitoxin(1-),145864721,own_literature,5,9823,True
+CHEBI:145797,digoxigenin(1-),145864754,own_literature,2,5122,True
+CHEBI:145798,ouabain(1-),145864756,own_literature,5,8988,True
+CHEBI:145799,ouabagenin(1-),145864758,own_literature,1,2908,True
+CHEBI:145943,4alpha-carboxy-5alpha-cholest-7-en-3beta-ol(1-),145944489,no_literature,0,950,True
+CHEBI:147380,ecdysone 22-phosphate(2-),90657769,own_literature,5,7273,True
+CHEBI:147382,20-hydroxyecdysone 22-phosphate(2-),146026573,parent_literature,2,3942,True
+CHEBI:147386,2-deoxyecdysone 22-phosphate(2-),90658875,parent_literature,3,5633,True
+CHEBI:152049,CE 18:1(7Z),146672295,no_literature,0,774,False
+CHEBI:166681,"4,4-Dimethyl-14a-formyl-5alpha-cholesta-8,24-dien-3beta-ol",21121725,own_literature,1,2581,False
+CHEBI:166806,32-Hydroxylanosterol,22298935,own_literature,1,2501,False
+CHEBI:166912,taurochenodeoxycholate 3-sulfate,155289465,own_literature,5,8664,True
+CHEBI:166996,solanidine(1+),25244262,no_literature,0,874,True
+CHEBI:166997,gamma-chaconine(1+),154586040,parent_literature,3,6733,True
+CHEBI:166998,tomatidine 3-O-beta-D-glucopyranoside(1+),155289489,parent_literature,3,5754,True
+CHEBI:166999,tomatidine(1+),155289490,parent_literature,3,5448,True
+CHEBI:169972,"5beta-cholestane-3alpha,7alpha,25-triol",5284197,own_literature,5,7950,True
+CHEBI:169973,"5beta-cholestane-3alpha,7alpha,12alpha,25-tetrol",5284211,own_literature,2,5355,True
+CHEBI:172392,cholate 7-sulfate(2-),155920191,no_literature,0,984,True
+CHEBI:172393,glycocholate 7-sulfate(2-),155920192,parent_literature,3,6285,True
+CHEBI:172394,taurocholate 7-sulfate(2-),155920193,no_literature,0,1068,True
+CHEBI:172395,chenodeoxycholate 7-sulfate(2-),155920195,no_literature,0,978,True
+CHEBI:172396,taurochenodeoxycholate 7-sulfate(2-),155920196,own_literature,4,8484,True
+CHEBI:172398,alpha-muricholate 7-sulfate(2-),155920197,no_literature,0,1001,True
+CHEBI:174650,19-Oxo-deoxycorticosterone,173380,own_literature,4,6455,False
+CHEBI:176901,14alpha-hydroxymethyl steroid,134822640,no_literature,0,651,True
+CHEBI:176902,14alpha-formyl steroid,134822641,no_literature,0,674,True
+CHEBI:178023,26-hydroxylanosterol,69619365,own_literature,2,3354,True
+CHEBI:178024,26-oxolanosterol,156587284,no_literature,0,817,True
+CHEBI:178025,"3beta-hydroxy-lanosta-8, 24-dien-26-oate",156587285,parent_literature,3,7715,True
+CHEBI:178093,17beta-estradiol 3-O-(3-sulfo-beta-D-glucuronide)(2-),156613053,no_literature,0,1103,True
+CHEBI:178094,17beta-estradiol 3-O-(3-sulfo-beta-D-glucuronide) 17-sulfate(3-),156613050,no_literature,0,1169,True
+CHEBI:178095,17beta-estradiol 3-O-(beta-D-glucuronide) 17-sulfate (2-),156613059,no_literature,0,1103,True
+CHEBI:178096,17beta-estradiol 17-O-(3-sulfo-beta-D-glucuronide)(2-),156613056,no_literature,0,1105,True
+CHEBI:178097,estriol 3-O-(3-sulfo-beta-D-glucuronide)(2-),156613040,no_literature,0,1112,True
+CHEBI:178098,estriol 16-O-(3-sulfo-beta-D-glucuronide)(2-),156613027,no_literature,0,1114,True
+CHEBI:178099,estriol 17-O-(3-sulfo-beta-D-glucuronide)(2-),156613046,no_literature,0,1114,True
+CHEBI:178101,estrone 3-O-(3-sulfo-beta-D-glucuronide)(2-),156613037,no_literature,0,1077,True
+CHEBI:178102,"5beta-pregnane 3alpha,20alpha-diol 3-O-(beta-D-glucuronide)(1-)",156613039,parent_literature,3,5824,True
+CHEBI:178103,"5beta-pregnane 3alpha,20alpha-diol 3-O-(3-sulfo-beta-D-glucuronide)(2-)",156613029,parent_literature,3,5922,True
+CHEBI:178104,testosterone 17-O-(3-sulfo-beta-D-glucuronide)(2-),156613033,no_literature,0,1116,True
+CHEBI:178105,dehydroepiandrosterone 3-O-(beta-D-glucuronide)(1-),156613058,no_literature,0,1056,True
+CHEBI:178106,dehydroepiandrosterone 3-O-(3-sulfo-beta-D-glucuronide)(2-),156613042,no_literature,0,1140,True
+CHEBI:178107,"5beta-androstane-3alpha,17alpha-diol-11-one-17beta-carboxylate 3-O-(beta-D-glucuronide)(2-)",156613044,parent_literature,3,7207,True
+CHEBI:178108,"5beta-androstane-3alpha,17alpha-diol-11-one-17beta-carboxylate 3-O-(3-sulfo-beta-D-glucuronide)(3-)",156613031,parent_literature,3,7302,True
+CHEBI:178197,etiocholan-3alpha-ol-17-one 3-O-(beta-D-glucuronide)(1-),156613055,no_literature,0,1072,True
+CHEBI:178198,etiocholan-3alpha-ol-17-one 3-O-(3-sulfo-beta-D-glucuronide)(2-),156613035,no_literature,0,1158,True
+CHEBI:183368,7beta-hydroxydehydroepiandrosterone,22245198,no_literature,0,736,True
+CHEBI:183806,7beta-hydroxypregnenolone,10131679,own_literature,3,5457,True
+CHEBI:183807,7-ketopregnenolone,134972,own_literature,3,5767,True
+CHEBI:183808,7-ketodehydroepiandrosterone,193313,own_literature,5,10586,True
+CHEBI:183809,7beta-hydroxyepiandrosterone,9836181,own_literature,4,7473,True
+CHEBI:187980,(22S)-hydroxysitosterol,52931403,no_literature,0,868,True
+CHEBI:188465,"(5alpha,22S)-22-hydroxycholestan-3beta-ol",71357400,parent_literature,3,5304,True
+CHEBI:188495,6alpha-hydroxytyphasterol,102515372,no_literature,0,990,True
+CHEBI:188496,3-dehydro-6alpha-hydroxyteasterone,102515138,no_literature,0,976,True
+CHEBI:188919,a C27-steroid,10202,own_literature,1,2399,False
+CHEBI:188920,a (22S)-22-hydroxy C27-steroid,162422384,no_literature,0,640,False
+CHEBI:188921,C28-steroid,528828,own_literature,4,5403,False
+CHEBI:188922,(22S)-22-hydroxy C28-steroid,162422385,no_literature,0,651,False
+CHEBI:188923,C29-steroid,313279,own_literature,1,1598,False
+CHEBI:188924,(22S)-22-hydroxy C29-steroid,162422386,no_literature,0,661,False
+CHEBI:188985,6-deoxo-28-norteasterone,102023287,own_literature,2,4413,True
+CHEBI:188987,6alpha-hydroxy-28-norteasterone,162422393,no_literature,0,971,True
+CHEBI:188988,28-norteasterone,131865289,own_literature,3,5911,True
+CHEBI:188989,3-dehydro-6-deoxo-28-norteasterone,102023288,own_literature,1,2098,True
+CHEBI:188990,3-dehydro-6alpha-hydroxy-28-norteasterone,162422394,no_literature,0,980,True
+CHEBI:188991,6-dehydro-28-norteasterone,162422395,no_literature,0,911,True
+CHEBI:188995,6-deoxo-28-norcastasterone,101682290,own_literature,2,4466,True
+CHEBI:188996,6alpha-hydroxy-28-norcastasterone,162422397,no_literature,0,1020,True
+CHEBI:188997,28-norcastasterone,13982110,own_literature,5,8311,True
+CHEBI:189050,20beta-dihydrocorticosterone,92855825,no_literature,0,817,True
+CHEBI:189066,cholesteryl beta-D-galactoside,11613669,own_literature,5,8094,True
+CHEBI:189067,cholesteryl beta-D-xyloside,162422402,own_literature,2,4409,True
+CHEBI:190287,androstenediol 3-sulfate(1-),21120399,parent_literature,3,5651,True
+CHEBI:190469,17beta-estradiol 17-sulfate(1-),21114896,own_literature,1,2757,True
+CHEBI:190485,epitestosterone sulfate(1-),163358904,parent_literature,3,5800,True
+CHEBI:191405,tauronorcholate(1-),163358944,own_literature,2,3103,False
+CHEBI:191407,taurohyodeoxycholate(1-),163358931,own_literature,5,9554,True
+CHEBI:191859,"5alpha-androstane-3alpha,17beta-diol 3-glucosiduronate(1-)",163358936,no_literature,0,1055,True
+CHEBI:191938,"(16S,22S)-dihydroxycholesterol",91013295,own_literature,1,2134,True
+CHEBI:192383,3-oxo-chol-4-ene-(22R)-hydroxy-24-oyl-CoA(4-),164575939,no_literature,0,1502,True
+CHEBI:194328,32-hydroxyeburicol,168007609,parent_literature,3,6440,True
+CHEBI:194329,32-ketoeburicol,168007565,parent_literature,3,6427,True
+CHEBI:194330,"4,4,24-trimethyl-5alpha-cholesta-8,14,24(28)-triene-3beta-ol",168007676,parent_literature,3,6557,True
+CHEBI:195166,18-hydroxydeoxycorticosterone,64970,own_literature,5,8404,True
+CHEBI:195167,19-hydroxy-11-deoxycorticosterone,164961,own_literature,5,8216,True
+CHEBI:195179,18-hydroxy-11-deoxycortisol,3082415,own_literature,3,5234,True
+CHEBI:195610,3beta-hydroxy-5-cholenoate(1-),20848924,no_literature,0,709,False
+CHEBI:195614,3beta-sulfo-5-cholenoate(2-),168475446,no_literature,0,749,False
+CHEBI:195622,3alpha-sulfodeoxycholate(2-),168475447,own_literature,1,2860,True
+CHEBI:195624,3alpha-sulfoglycodeoxycholate(2-),168475448,own_literature,1,3591,True
+CHEBI:195625,3alpha-sulfotaurodeoxycholate(2-),168475449,parent_literature,3,6599,True
+CHEBI:228908,Siamenoside I,71307460,no_literature,0,1538,True
+CHEBI:229709,N-choloyl-L-alpha-amino acid anion,,no_literature,0,167,True
+CHEBI:229710,L-alanocholate,171037395,own_literature,4,6900,False
+CHEBI:229711,L-serocholate,171037396,own_literature,5,9650,False
+CHEBI:229712,L-histidocholate,171037397,own_literature,5,8071,False
+CHEBI:229713,L-arginocholate,171037398,no_literature,0,896,False
+CHEBI:229714,L-phenylalanocholate,171037399,own_literature,5,10337,False
+CHEBI:229949,"(24S)-24,25-epoxycucurbitadienol",171037431,parent_literature,3,6286,True
+CHEBI:229950,"(24R)-24,25-dihydroxycucurbitadienol",171037432,parent_literature,3,5049,True
+CHEBI:229951,mogroside I-A1,101135270,own_literature,5,10650,True
+CHEBI:229952,mogroside IIIA,24720988,parent_literature,3,7602,True
+CHEBI:229958,mogroside IVA,101207514,no_literature,0,1524,True
+CHEBI:229959,mogroside V,24721270,own_literature,5,10571,True
+CHEBI:229960,mogroside IIA,138911437,own_literature,5,11417,True
+CHEBI:229961,mogroside III-C3(1->6),44423069,own_literature,2,4010,True
+CHEBI:230511,mogroside III-A1,125126167,own_literature,2,4663,True
+CHEBI:230512,isomogroside IV,162702234,no_literature,0,1544,True
+CHEBI:230513,isomogroside V,87753664,no_literature,0,1696,True
+CHEBI:230514,mogroside IV,131636951,no_literature,0,1529,True
+CHEBI:232043,mogroside IIA1,102086511,own_literature,5,10375,True
+CHEBI:232044,mogroside IIIE,102350789,own_literature,1,2737,True
+CHEBI:232052,mogroside VI,101552120,own_literature,3,8697,True
+CHEBI:232471,isomotiol,14167345,own_literature,2,4109,True
+CHEBI:232472,2alpha-hydroxyisomotiol,172429301,parent_literature,2,4379,True
+CHEBI:232474,3-O-(beta-D-glucopyranosyl)-isomotiol,172429303,no_literature,0,890,False
+CHEBI:232475,3-O-(beta-D-glucopyranosyl)-2alpha-hydroxyisomotiol,172429304,no_literature,0,1043,True
+CHEBI:232477,3-O-(beta-D-glucopyranosyl)-2alpha-acetoxyisomotiol,172429305,no_literature,0,1069,True
+CHEBI:232481,19beta-hydroxyisomotiol,172429311,no_literature,0,736,False
+CHEBI:232482,"2alpha,19beta-dihydroxyisomotiol",172429312,no_literature,0,881,True
+CHEBI:232483,2alpha-hydroxyismotiol-19-one,172429313,no_literature,0,871,True
+CHEBI:232767,22-deoxyecdysone,21124802,own_literature,3,5904,True
+CHEBI:233653,12-dehydrodeoxycholate(1-),21140256,no_literature,0,723,False
+CHEBI:234448,11-oxo-5alpha-dihydrotestosterone,11197479,own_literature,5,12081,True
+CHEBI:234449,"11-keto-5alpha-androstane-3alpha,17beta-diol",10125601,no_literature,0,825,True
+CHEBI:234456,cholyl-L-tryptophan(1-),176454291,no_literature,0,968,True
+CHEBI:234529,ursodeoxycholate 3-sulfate(2-),176454319,own_literature,1,1823,True
+CHEBI:234531,glycoursodeoxycholate 3-sulfate(2-),176454321,parent_literature,3,7204,True
+CHEBI:282234,dihydrodigitoxin,45266921,own_literature,5,7136,True

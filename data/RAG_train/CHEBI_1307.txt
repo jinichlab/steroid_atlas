@@ -1,0 +1,40 @@
+Compound: 24-methylenecycloartanol
+ChEBI ID: CHEBI:1307
+PubChem CID: 94204
+
+== Chemical properties ==
+IUPAC Name: (1S,3R,6S,8R,11S,12S,15R,16R)-7,7,12,16-tetramethyl-15-[(2R)-6-methyl-5-methylideneheptan-2-yl]pentacyclo[9.7.0.01,3.03,8.012,16]octadecan-6-ol
+Molecular Formula: C31H52O
+Molecular Weight: 440.7
+SMILES: C[C@H](CCC(=C)C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CC[C@@H](C5(C)C)O)C)C
+InChI: InChI=1S/C31H52O/c1-20(2)21(3)9-10-22(4)23-13-15-29(8)25-12-11-24-27(5,6)26(32)14-16-30(24)19-31(25,30)18-17-28(23,29)7/h20,22-26,32H,3,9-19H2,1-2,4-8H3/t22-,23-,24+,25+,26+,28-,29+,30-,31+/m1/s1
+InChIKey: BDHQMRXFDYJGII-UEBIAWITSA-N
+XLogP: 10.3
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A pentacyclic triterpenoid that is (9β)-24-methylene-9,19-cyclolanostane which carries a hydroxy group at position 3β. It is isolated from several plant species including <em>Euphorbia</em>, <em>Epidendrum</em>, <em>Psychotria</em> and <em>Sideritis</em>.
+
+== Literature on 24-methylenecycloartanol ==
+
+[PMID 41601963] Network pharmacology-based identification of potential drug targets and bioactive compounds in <i>Lycii Fructus</i> (Gouqizi) for the therapeutics of Parkinson's disease
+2025
+IntroductionParkinson's disease (PD) is a common neurodegenerative disease characterized by the loss of dopaminergic neurons without any curable treatment. Various traditional Chinese medicines have been employed to manage the progression of PD. Lycii Fructus has demonstrated promising therapeutic potential in neurological disorders; however, the exact molecular mechanisms and specific bioactive compounds responsible for its effects remain unclear. The current study investigates the potential targets and binding potential of Lycii Fructus compounds against PD using bioinformatics approaches.MethodsCommon disease and drug targets were retrieved and analyzed using protein-protein interactions and Cytoscape networks. Gene ontology enrichment analyses and KEGG pathway analyses were performed on the targets, followed by docking analyses to determine the binding potential of the compounds against these targets. Pharmacokinetic predictions and molecular dynamic simulations were performed to calculate the drug-likeness of compounds and extract the structural and residual fluctuations of top binding complexes, respectively.ResultsThe network pharmacology approach has identified AKT1, IL-1β, TNF, IL-6, and MAOB as key targets of PD. KEGG pathway analysis has shown that the 'pathway of neurodegeneration-multiple diseases' and 'dopaminergic synapses' are significant pathways of selected targets. Molecular docking studies have shown that the compounds cycloartenol, 24-methylenecycloartenol, lupeol acetate, 24-ethylcholesta-5,22-dienol, and 4α-methyl-24-ethylcholesta-7,24-dienol exhibited better binding potential against the scrutinized targets. AKT1 with 24-ethylcholesta-5,22-dienol (-11.5 kcal/mol), TNF with 4α-methyl-24-ethylcholesta-7,24-dienol (-10 kcal/mol), and MAOB with 24-ethylcholesta-5,22-dienol (-9.7 kcal/mol) exhibited a promising binding potential. The ADMET analysis of the selected five compounds reflects the potential of the drug candidate for effective PD therapies, as these compounds have a high drug-likeness score (0.76-0.78) and low drug-induced Neurotoxicity (ConclusionRMSD analysis of the top docked complexes showed that AKT1 - 24-ethylcholesta-5,22-dienol and MAOB-24-ethylcsecrholesta-5,22-dienol remained stable, whereas 4alpha-methyl-24-ethylcholesta-7,24-dienol exhibited fluctuations with TNF over 100 nanoseconds. These findings indicate that Lycii Fructus extracted compounds have high potential for targeting PD targets; further in vitro and in vivo experiments are necessary to assess their effectiveness in managing PD progression.
+
+[PMID 32584888] Antidiabetes constituents, cycloartenol and 24-methylenecycloartanol, from Ficus krishnae
+2020
+Ficus krishnae stem bark and leaves are used for diabetes treatment in traditional medicines. Stem bark of F. krishnae was sequentially extracted with hexane, methanol and water, and these extracts were tested for their antihyperglyceamic activity by oral glucose tolerance test (OGTT) in overnight fasted glucose loaded normal rats. Hexane extract showed significant glucose lowering activity in OGTT, and the triterpene alcohols (cycloartenol+24-methylenecycloartanol) (CA+24-MCA) were isolated together from it by activity guided isolation and characterized by NMR and mass spectroscopy. The ratio of the chemical constituents CA and 24-MCA in (CA+24-MCA) was determined as 2.27:1.00 by chemical derivatization and gas chromatographic quantification. (CA+24-MCA) in high fat diet-streptozotocin induced type II diabetic rats showed significant antidiabetes activity at 1 mg/kg and ameliorated derailed blood glucose and other serum biochemical parameters. Cytoprotective activity of (CA+24-MCA) from glucose toxicity was evaluated in cultured RIN-5F cells by MTT assay and fluorescent microscopy. (CA+24-MCA) in in vitro studies showed enhanced cell viability in RIN-5F cells and significant protection of beta cells from glucose toxicity. Both in in vivo and in vitro studies (CA+24-MCA) showed enhancement in insulin release from the beta cells. In short term toxicity studies in mice (CA+24-MCA) did not show any conspicuous toxic symptoms. The combination of the phytosterols (CA+24-MCA) obtained through activity guided isolation of the stem bark of F. krishnae showed significant activity, and therefore is a promising candidate for new generation antidiabetes drug development.
+
+[PMID 25860110] Quantum chemical study of the isomerization of 24-methylenecycloartanol, a potential marker of olive oil refining
+2015
+Quantum chemical calculations on the isomerization of 24-methylenecycloartanol are described. An energetically viable mechanism, with a rate-determining protonation step, is proposed. This rearrangement may find applicability in tests for determining if an olive oil has been refined.
+
+[PMID 36409205] Tirucallane-type triterpenoid from the stem bark of <i>Chisocheton lasiocarpus</i> and its cytotoxic activity against MCF-7 breast cancer cells
+2023
+Chisocarpene A (1) is a new tirucallane-type triterpenoid together with odoratone (2) and 24-methylenecycloartanol (3), isolated from the stem bark of Chisocheton lasiocarpus. The chemical structures of compounds 1-3 were elucidated through a detailed analysis of their spectroscopic data (IR, MS, 1 D, and 2 D NMR). The isolated compounds were evaluated for cytotoxic activity against the MCF-7 breast cancer cell line using a resazurin-based assay. Compound 1 showed the most potent activity (IC50 26.56 ± 1.01 µM) and was two-fold more active than the positive control.
+
+[PMID 38263853] A new acylated triterpene glycoside and cytotoxic constituents from &lt;i&gt;Dolichandrone serrulata&lt;/i&gt; (Wall. ex DC.) Seem
+2025
+In this study, a new acylated triterpene glycoside, 3α-O-stearoyl-28-[2'-stearoyl-α-l-arabinopyranosyl]-olean-12-en-28-oic acid (1), was isolated from the flowers of Dolichandrone serrulata. In addition to this compound, eleven known compounds were also isolated, including a related pentacyclic triterpenoid: ursolic acid (2), two cycloartane triterpenoids: 24-methylenecycloartanol (3) and 24-methylenecycloartane-3,28-diol (4), three cyclohexylethane derivatives: (-)-rengyolone (5), (-)-cleroindicin C (6) and (-)-cleroindicin D (7), an iridoid: 6-O-trans-feruloyl catalpol (8), two phenylethanoid glycosides: salidroside (9) and verbascoside (10), and two steroids: β-sitosterol (11) and β-sitosterol-3-O-β-d-glucopyranoside (12). The chemical structures of these compounds were determined by analysing their HRMS and NMR spectroscopic data. Additionally, their cytotoxic activities against NH22, HCT116, MCF7, MDA-MB-231, and HeLa cell lines were evaluated for all the compounds. Ursolic acid exhibited moderate cytotoxic activity against all cancer cell lines tested, particularly against HN22, MDA-MB-231, MCF-7, and HCT116 cells with IC50 values of approximately 19-34 µM.

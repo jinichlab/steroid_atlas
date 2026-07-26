@@ -1,0 +1,5 @@
+Compound: Delta(5),Delta(7)-sterol
+ChEBI ID: CHEBI:138131
+
+== ChEBI definition ==
+Any sterol containing two double bonds between positions 5-6 and 7-8.

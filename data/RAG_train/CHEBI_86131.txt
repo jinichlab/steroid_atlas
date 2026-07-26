@@ -1,0 +1,18 @@
+Compound: 5alpha-cholesta-8,14-dien-3beta-ol
+ChEBI ID: CHEBI:86131
+PubChem CID: 14035714
+
+== Chemical properties ==
+IUPAC Name: (3S,5S,10S,13R,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,5,6,7,11,12,16,17-decahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C27H44O
+Molecular Weight: 384.6
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC=C2[C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4)O)C)C
+InChI: InChI=1S/C27H44O/c1-18(2)7-6-8-19(3)23-11-12-24-22-10-9-20-17-21(28)13-15-26(20,4)25(22)14-16-27(23,24)5/h12,18-21,23,28H,6-11,13-17H2,1-5H3/t19-,20+,21+,23-,26+,27-/m1/s1
+InChIKey: AWBZPJQUWZBRII-CXDHQSPESA-N
+XLogP: 7.4
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A 3β-sterol that is 5α-cholestane-3β-ol having double bonds at the 8,9- and 14,15- positions.

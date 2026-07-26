@@ -1,0 +1,24 @@
+Compound: 3-oxo-5beta-steroid
+ChEBI ID: CHEBI:1624
+PubChem CID: 439810
+
+== Chemical properties ==
+IUPAC Name: (5R)-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C19H30O
+Molecular Weight: 274.4
+SMILES: CC12CCCC1C3CC[C@@H]4CC(=O)CCC4(C3CC2)C
+InChI: InChI=1S/C19H30O/c1-18-9-3-4-16(18)15-6-5-13-12-14(20)7-11-19(13,2)17(15)8-10-18/h13,15-17H,3-12H2,1-2H3/t13-,15?,16?,17?,18?,19?/m1/s1
+InChIKey: VMNRNUNYBVFVQI-OCUVBNDUSA-N
+XLogP: 5.5
+TPSA: 17.1
+H-Bond Donors: 0
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+Any 3-oxo steroid that has β- configuration at position 5.
+
+== Literature on 3-oxo-5beta-steroid ==
+
+[PMID 9307009] Comparative anatomy of the aldo-keto reductase superfamily
+1997
+The aldo-keto reductases metabolize a wide range of substrates and are potential drug targets. This protein superfamily includes aldose reductases, aldehyde reductases, hydroxysteroid dehydrogenases and dihydrodiol dehydrogenases. By combining multiple sequence alignments with known three-dimensional structures and the results of site-directed mutagenesis studies, we have developed a structure/function analysis of this superfamily. Our studies suggest that the (alpha/beta)8-barrel fold provides a common scaffold for an NAD(P)(H)-dependent catalytic activity, with substrate specificity determined by variation of loops on the C-terminal side of the barrel. All the aldo-keto reductases are dependent on nicotinamide cofactors for catalysis and retain a similar cofactor binding site, even among proteins with less than 30% amino acid sequence identity. Likewise, the aldo-keto reductase active site is highly conserved. However, our alignments indicate that variation ofa single residue in the active site may alter the reaction mechanism from carbonyl oxidoreduction to carbon-carbon double-bond reduction, as in the 3-oxo-5beta-steroid 4-dehydrogenases (Delta4-3-ketosteroid 5beta-reductases) of the superfamily. Comparison of the proposed substrate binding pocket suggests residues 54 and 118, near the active site, as possible discriminators between sugar and steroid substrates. In addition, sequence alignment and subsequent homology modelling of mouse liver 17beta-hydroxysteroid dehydrogenase and rat ovary 20alpha-hydroxysteroid dehydrogenase indicate that three loops on the C-terminal side of the barrel play potential roles in determining the positional and stereo-specificity of the hydroxysteroid dehydrogenases. Finally, we propose that the aldo-keto reductase superfamily may represent an example of divergent evolution from an ancestral multifunctional oxidoreductase and an example of convergent evolution to the same active-site constellation as the short-chain dehydrogenase/reductase superfamily.

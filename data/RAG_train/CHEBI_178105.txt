@@ -1,0 +1,18 @@
+Compound: dehydroepiandrosterone 3-O-(beta-D-glucuronide)(1-)
+ChEBI ID: CHEBI:178105
+PubChem CID: 156613058
+
+== Chemical properties ==
+IUPAC Name: (2S,3S,4S,5R,6R)-6-[[(3S,8R,9S,10R,13S,14S)-10,13-dimethyl-17-oxo-1,2,3,4,7,8,9,11,12,14,15,16-dodecahydrocyclopenta[a]phenanthren-3-yl]oxy]-3,4,5-trihydroxyoxane-2-carboxylate
+Molecular Formula: C25H35O8-
+Molecular Weight: 463.5
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CC=C4[C@@]3(CC[C@@H](C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)[O-])O)O)O)C
+InChI: InChI=1S/C25H36O8/c1-24-9-7-13(32-23-20(29)18(27)19(28)21(33-23)22(30)31)11-12(24)3-4-14-15-5-6-17(26)25(15,2)10-8-16(14)24/h3,13-16,18-21,23,27-29H,4-11H2,1-2H3,(H,30,31)/p-1/t13-,14-,15-,16-,18-,19-,20+,21-,23+,24-,25-/m0/s1
+InChIKey: GLONBVCUAVPJFV-PCDHEYSGSA-M
+XLogP: 2.5
+TPSA: 136
+H-Bond Donors: 3
+H-Bond Acceptors: 8
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of dehydroepiandrosterone 3-<em>O</em>-(β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic group; major species at pH 7.3.

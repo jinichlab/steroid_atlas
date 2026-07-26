@@ -1,0 +1,18 @@
+Compound: 19-hydroxyandrost-4-ene-3,17-dione
+ChEBI ID: CHEBI:27576
+PubChem CID: 252379
+
+== Chemical properties ==
+IUPAC Name: (8R,9S,10S,13S,14S)-10-(hydroxymethyl)-13-methyl-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthrene-3,17-dione
+Molecular Formula: C19H26O3
+Molecular Weight: 302.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CCC4=CC(=O)CC[C@]34CO
+InChI: InChI=1S/C19H26O3/c1-18-8-7-16-14(15(18)4-5-17(18)22)3-2-12-10-13(21)6-9-19(12,16)11-20/h10,14-16,20H,2-9,11H2,1H3/t14-,15-,16-,18-,19+/m0/s1
+InChIKey: XGUHPTGEXRHMQQ-BGJMDTOESA-N
+XLogP: 1.5
+TPSA: 54.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+19-hydroxyandrost-4-ene-3,17-dione is a 17-oxo steroid, a 19-hydroxy steroid, a 3-oxo steroid and an androstanoid. It has a role as a mouse metabolite.

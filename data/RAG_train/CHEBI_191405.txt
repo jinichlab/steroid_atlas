@@ -1,0 +1,25 @@
+Compound: tauronorcholate(1-)
+ChEBI ID: CHEBI:191405
+PubChem CID: 163358944
+
+== Chemical properties ==
+IUPAC Name: 2-[[(3R)-3-[(3R,5S,7R,8R,9S,10S,12S,13R,14S,17R)-3,7,12-trihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]butanoyl]amino]ethanesulfonate
+Molecular Formula: C25H42NO7S-
+Molecular Weight: 500.7
+SMILES: C[C@H](CC(=O)NCCS(=O)(=O)[O-])[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)O)C
+InChI: InChI=1S/C25H43NO7S/c1-14(10-22(30)26-8-9-34(31,32)33)17-4-5-18-23-19(13-21(29)25(17,18)3)24(2)7-6-16(27)11-15(24)12-20(23)28/h14-21,23,27-29H,4-13H2,1-3H3,(H,26,30)(H,31,32,33)/p-1/t14-,15+,16-,17-,18+,19+,20-,21+,23+,24+,25-/m1/s1
+InChIKey: FLCYLDUFOVBENV-SRNOMOOLSA-M
+XLogP: 1.8
+TPSA: 155
+H-Bond Donors: 4
+H-Bond Acceptors: 7
+
+== Literature on tauronorcholate(1-) ==
+
+[PMID 6537046] Inability of cholylglycine hydrolase to cleave the amide bond of tauronorcholic acid
+1984
+High pressure liquid chromatography, glass capillary gas chromatography and liquid secondary ion mass spectrometry have been used to demonstrate that the amide bond of the taurine conjugate of norcholic acid, a homolog of cholic acid which contains one less methylene group in the side chain, cannot be hydrolyzed enzymatically by cholylglycine hydrolase. Conventional alkaline hydrolysis cleaved the amide bond of both taurocholate and tauronorcholate, producing the free acids. Treatment with cholylglycine hydrolase yielded the free acid for taurocholate but failed to affect tauronorcholate, which was recovered quantitatively.
+
+[PMID 6626163] The role of conjugation reactions in enhancing biliary secretion of bile acids
+1983
+Shortening the five-carbon carboxylic acid side chain of cholic acid by one methylene group gave rise to a bile acid (norcholate) that was not a substrate for the bile acid-conjugating enzymes. The metabolism and biliary secretion of norcholate in intact liver was examined in the isolated perfused rat liver system. When rat livers were perfused with 14-20 microM solutions of norcholate for 10 min, norcholate was found in the unconjugated form in liver, venous effluent and bile. Neither tauronorcholate nor glyconorcholate was detectable by high-pressure liquid chromatography or fast-atom-bombardment mass spectrometry. The kinetics of hepatic uptake and biliary secretion of norcholate was compared with that for cholate, taurocholate and chemically synthesized tauronorcholate. The latter three bile acids were completely cleared from the perfusate and efficiently secreted into the bile. However, norcholate was incompletely extracted from the perfusate, and this was shown to be at least partially due to its relatively lower rate of hepatic uptake. Furthermore, the rate of norcholate secretion into bile was greatly reduced relative to the secretion of cholate or chemically synthesized tauronorcholate, even though the concentration of norcholate in the liver was comparatively high. These data demonstrate that the conjugation of bile acids greatly facilitates their secretion into bile.

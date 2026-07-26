@@ -1,0 +1,18 @@
+Compound: 7-oxotaurodeoxycholate
+ChEBI ID: CHEBI:137820
+PubChem CID: 129626821
+
+== Chemical properties ==
+IUPAC Name: 2-[[(4R)-4-[(3R,5S,8R,9S,10S,12S,13R,14S,17R)-3,12-dihydroxy-10,13-dimethyl-7-oxo-1,2,3,4,5,6,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]pentanoyl]amino]ethanesulfonate
+Molecular Formula: C26H42NO7S-
+Molecular Weight: 512.7
+SMILES: C[C@H](CCC(=O)NCCS(=O)(=O)[O-])[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2C(=O)C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)C
+InChI: InChI=1S/C26H43NO7S/c1-15(4-7-23(31)27-10-11-35(32,33)34)18-5-6-19-24-20(14-22(30)26(18,19)3)25(2)9-8-17(28)12-16(25)13-21(24)29/h15-20,22,24,28,30H,4-14H2,1-3H3,(H,27,31)(H,32,33,34)/p-1/t15-,16+,17-,18-,19+,20+,22+,24+,25+,26-/m1/s1
+InChIKey: VXWYZDSFMHCNQA-UUGCEIAESA-M
+XLogP: 1.8
+TPSA: 152
+H-Bond Donors: 3
+H-Bond Acceptors: 7
+
+== ChEBI definition ==
+A cholanic acid conjugate anion that is the conjugate base of 7-oxotaurodeoxycholic acid, obtained by deprotonation of the sulfonic acid group; major species at pH 7.3.

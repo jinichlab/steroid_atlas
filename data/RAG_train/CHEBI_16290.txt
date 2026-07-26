@@ -1,0 +1,33 @@
+Compound: 5alpha-cholesta-7,24-dien-3beta-ol
+ChEBI ID: CHEBI:16290
+PubChem CID: 5459827
+
+== Chemical properties ==
+IUPAC Name: (3S,5S,9R,10S,13R,14R,17R)-10,13-dimethyl-17-[(2R)-6-methylhept-5-en-2-yl]-2,3,4,5,6,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C27H44O
+Molecular Weight: 384.6
+SMILES: C[C@H](CCC=C(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CC[C@@H]4[C@@]3(CC[C@@H](C4)O)C)C
+InChI: InChI=1S/C27H44O/c1-18(2)7-6-8-19(3)23-11-12-24-22-10-9-20-17-21(28)13-15-26(20,4)25(22)14-16-27(23,24)5/h7,10,19-21,23-25,28H,6,8-9,11-17H2,1-5H3/t19-,20+,21+,23-,24+,25+,26+,27-/m1/s1
+InChIKey: PKEPPDGGTSZLBL-SKCNUYALSA-N
+XLogP: 7.8
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+5alpha-cholesta-7,24-dien-3beta-ol is a 3beta-sterol. It has a role as a mouse metabolite and a human metabolite. It derives from a hydride of a 5alpha-cholestane.
+
+--- RELATED COMPOUND: 5alpha-cholestane ---
+No literature found for 5alpha-cholesta-7,24-dien-3beta-ol itself. 5alpha-cholesta-7,24-dien-3beta-ol derives from 5alpha-cholestane; the abstracts below are about 5alpha-cholestane.
+
+[PMID 16620894] Short synthesis of 16beta-hydroxy-5alpha-cholestane-3,6-dione a novel cytotoxic marine oxysterol
+2006
+The first and short synthesis of 16beta-hydroxy-5alpha-cholestane-3,6-dione 1 a metabolite from marine algae, has been achieved in six steps from readily available diosgenin 5. Selective deoxygenation of primary alcohol of triol 6 has been accomplished in one step using Et(3)SiH and catalytic amount of B(C(6)F(5))(3) to produce compound 9 in high yield. Oxidation of 11 with PCC, allowed the introduction of 3,6-ene-dione functionality, and further catalytic hydrogenation and deprotection furnished the 3,6-diketo steroid 1.
+
+[PMID 12606002] Synthesis and antiviral activity of sulfated and acetylated derivatives of 2beta,3alpha-dihydroxy-5alpha-cholestane
+2003
+Five new steroid sulfates, sodium 2beta,3alpha-dihydroxy-5alpha-cholestane 3-sulfate (6), sodium 2beta,3alpha-dihydroxy-5alpha-cholestane 2-sulfate (7), disodium 2beta,3alpha-dihydroxy-5alpha-cholestane disulfate (8), sodium 3alpha-acetoxy-2beta-hydroxy-5alpha-cholestane 2-sulfate (12), and sodium 2beta-acetoxy-3alpha-hydroxy-5alpha-cholestane 3-sulfate (13), have been synthesized starting from 3beta-hydroxy-5alpha-cholestane (1). The synthetic steroids were completely characterized by one-dimensional and two-dimensional NMR and FABMS spectra. Sulfation was performed using triethylamine-sulfur trioxide complex in dimethylformamide as the sulfating agent. The sulfated steroids were comparatively evaluated for their inhibitory effect on the replication of herpes simplex virus type 2 (HSV-2). Compounds 7 and 8 were the most effective in their inhibitory action against HSV-2. The disulfated steroid 8 also proved to be active against DEN-2 and JV.
+
+[PMID 11086730] 16Beta-hydroxy-5alpha-cholestane-3,6-dione, a novel cytotoxic oxysterol from the red alga Jania rubens
+2000
+A new cytotoxic oxysterol, 16beta-hydroxy-5alpha-cholestane-3,6-dione was isolated from the red alga Jania rubens. Its structure was established by spectroscopic method. The ID50 value was 0.5 microg/mL.

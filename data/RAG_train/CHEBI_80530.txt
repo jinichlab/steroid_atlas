@@ -1,0 +1,32 @@
+Compound: 2,22-dideoxyecdysone
+ChEBI ID: CHEBI:80530
+PubChem CID: 14017685
+
+== Chemical properties ==
+IUPAC Name: (3S,5R,9R,10R,13R,14S,17R)-3,14-dihydroxy-17-[(2R)-6-hydroxy-6-methylheptan-2-yl]-10,13-dimethyl-2,3,4,5,9,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-6-one
+Molecular Formula: C27H44O4
+Molecular Weight: 432.6
+SMILES: C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@]2([C@@]1(CC[C@H]3C2=CC(=O)[C@H]4[C@@]3(CC[C@@H](C4)O)C)C)O
+InChI: InChI=1S/C27H44O4/c1-17(7-6-11-24(2,3)30)19-10-14-27(31)21-16-23(29)22-15-18(28)8-12-25(22,4)20(21)9-13-26(19,27)5/h16-20,22,28,30-31H,6-15H2,1-5H3/t17-,18+,19-,20+,22+,25-,26-,27-/m1/s1
+InChIKey: CRCTVUFFBCIURJ-DJHAZVFJSA-N
+XLogP: 3.8
+TPSA: 77.8
+H-Bond Donors: 3
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+A 3β-hydroxy steroid that is 5β-cholestane containing a double bond between positions 7 and 8, and substituted by an oxo group at position 6 and by hydroxy groups at the 3β, 14α, and 25 positions.
+
+== Literature on 2,22-dideoxyecdysone ==
+
+[PMID 16345130] Profiling of ecdysteroids in complex biological samples using liquid chromatography/ion trap mass spectrometry
+2006
+A sensitive method using high-performance liquid chromatography coupled to a mass spectrometer with electrospray ionization source (HPLC/ESI-MS) was developed for detection of ecdysteroids in biological samples. We report here for the first time that ecdysteroids can be classified into three groups based on ESI full-scan mass spectra: group 1 (ecdysone (E), 2-deoxyecdysone (2dE), 2,22-dideoxyecdysone (3beta5beta-KT), and 3alpha5alpha[H]-dihydroxycholest-7-en-6-one (3alpha5alpha-KD)), in which loss of one molecule of water from the protonated molecular ion ([M+H](+)) represents the dominant ion; group 2 (20-hydroxyecdysone (20E), makisterone A (MakA), 3beta5beta-KD, and 3beta5alpha-KD), in which [M+H](+) is a major ion but some water loss is observed; and group 3 (muristerone A (MurA) and ponasterone A (PonA)), in which [M+H](+) is the dominant ion with no water loss observed. Based on the analytical procedure in combination with structural information from the group classification and with the application of source-induced dissociation, we identified free ecdysteroids in biological samples: 20,26-dihydroxyecdysone and ecdysonic acid in the larval hemolymph, and the progressive metabolism of 26-hydroxyecdysone (26E) to 3alpha-26E from day-1 to day-3 embryos of the tobacco hornworm Manduca sexta.
+
+[PMID 15350618] Phantom encodes the 25-hydroxylase of Drosophila melanogaster and Bombyx mori: a P450 enzyme critical in ecdysone biosynthesis
+2004
+We have reported recently the identification and characterization of the last three mitochondrial cytochrome P450 enzymes (CYP) controlling the biosynthesis of 20-hydroxyecdysone, the molting hormone of insects. These are encoded by the following genes: disembodied (dib, Cyp302a1, the 22-hydroxylase); shadow (sad, Cyp315a1, the 2-hydroxylase); and shade (shd, Cyp314a1, the 20-hydroxylase). Employing similar gene identification and transfection techniques and subsequent biochemical analysis of the expressed enzymatic activity, we report the identity of the Drosophila gene phantom (phm), located at 17D1 of the X chromosome, as encoding the microsomal 25-hydroxylase (Cyp306a1). Similar analysis following differential display-based gene identification has also resulted in the characterization of the corresponding 25-hydroxylase gene in Bombyx mori. Confirmation of 2,22,25-trideoxyecdysone (3beta,5beta-ketodiol) conversion to 2,22-dideoxyecdysone (3beta,5beta-ketotriol) mediated by either Phm enzyme employed LC, MS and definitive NMR analysis. In situ developmental gene analysis, in addition to northern, western and RT-PCR techniques during Drosophila embryonic, larval and adult development, are consistent with this identification. That is, strong expression of phm is restricted to the prothoracic gland cells of the Drosophila larval ring gland, where it undergoes dramatic changes in expression, and in the adult ovary, but also in the embryonic epidermis. During the last larval-larval transition in Bombyx, a similar expression pattern in the prothoracic gland is observed, but as in Drosophila, slight expression is also present in other tissues, suggesting a possible additional role for the phantom enzyme.
+
+[PMID 10561604] Biotransformations of putative phytoecdysteroid biosynthetic precursors in tissue cultures of Polypodium vulgare
+1999
+Incubation of calli and prothalli of Polypodium vulgare with different tritium-labelled ecdysteroids has led to modification of some previous assumptions about the biosynthesis of ecdysteroids in plants. Thus, 25-deoxy-20-hydroxyecdysone was transformed efficiently in both tissues into 20-hydroxyecdysone (20E), but no 25-deoxyecdysteroids such as pterosterone and inokosterone were formed. Likewise, incubation of 2-deoxyecdysone (2dE) produced exclusively ecdysone (E) and 20E, indicating a high 2-hydroxylase activity in both tissues, despite calli not producing phytoecdysteroids. This 2-hydroxylation was also evident in the transformation of 2,22-dideoxyecdysone (2,22dE) into 22-deoxyecdysone (22dE). Different ecdysteroids that do not occur in P. vulgare were formed in the incubation of 3-dehydro-2,22,25-trideoxyecdysone (3D2,22,25dE) by 3alpha-reduction and 3beta-reduction and 25-hydroxylation processes. The fact that 22,25-dideoxyecdysone and 22dE were the only 2-hydroxylated products formed in this case suggests that only compounds bearing a 3beta-hydroxyl group are substrates for the 2-hydroxylase. Surprisingly, 22-hydroxylation was never observed with either 2,22dE or 3D2,22,25dE, raising the possibility that it could occur at an early step in the biosynthetic pathway. In this respect, labelled 22R-hydroxycholesterol was efficiently converted into E and 20E, whereas 22S-hydroxycholesterol was not transformed into ecdysteroids, because of its unsuitable configuration at C22. Finally, the conversion of 25-hydroxycholesterol into E and 20E was greatly enhanced after thermal treatment of prothalli which induces the release of previously stored ecdysteroids. Thus, P. vulgare prothalli and calli appear to be particularly suitable models for the study of ecdysteroid biosynthesis and its regulation in plants.

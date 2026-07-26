@@ -1,0 +1,18 @@
+Compound: 3beta-hydroxy-5alpha-androstane-7,17-dione
+ChEBI ID: CHEBI:79834
+PubChem CID: 11954160
+
+== Chemical properties ==
+IUPAC Name: (3S,5R,8R,9S,10S,13S,14S)-3-hydroxy-10,13-dimethyl-2,3,4,5,6,8,9,11,12,14,15,16-dodecahydro-1H-cyclopenta[a]phenanthrene-7,17-dione
+Molecular Formula: C19H28O3
+Molecular Weight: 304.4
+SMILES: C[C@]12CC[C@@H](C[C@@H]1CC(=O)[C@@H]3[C@@H]2CC[C@]4([C@H]3CCC4=O)C)O
+InChI: InChI=1S/C19H28O3/c1-18-7-5-12(20)9-11(18)10-15(21)17-13-3-4-16(22)19(13,2)8-6-14(17)18/h11-14,17,20H,3-10H2,1-2H3/t11-,12+,13+,14+,17+,18+,19+/m1/s1
+InChIKey: ONVVZSHYQMOXLN-ZVMDJWLLSA-N
+XLogP: 2.2
+TPSA: 54.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+An androstanoid that is epiandrosterone substituted by an oxo group at position 7.

@@ -1,0 +1,33 @@
+Compound: epitestosterone sulfate(1-)
+ChEBI ID: CHEBI:190485
+PubChem CID: 163358904
+
+== Chemical properties ==
+IUPAC Name: [(8R,9S,10R,13S,14S,17R)-10,13-dimethyl-3-oxo-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-17-yl] sulfate
+Molecular Formula: C19H27O5S-
+Molecular Weight: 367.5
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@H]2OS(=O)(=O)[O-])CCC4=CC(=O)CC[C@]34C
+InChI: InChI=1S/C19H28O5S/c1-18-9-7-13(20)11-12(18)3-4-14-15-5-6-17(24-25(21,22)23)19(15,2)10-8-16(14)18/h11,14-17H,3-10H2,1-2H3,(H,21,22,23)/p-1/t14-,15-,16-,17+,18-,19-/m0/s1
+InChIKey: WAQBISPOEAOCOG-KZYORJDKSA-M
+XLogP: 2.9
+TPSA: 91.9
+H-Bond Donors: 0
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+Epitestosterone sulfate(1-) is a steroid sulfate and an androstane conjugate. It is a conjugate base of an Epitestosterone sulfate.
+
+--- RELATED COMPOUND: Epitestosterone sulfate ---
+No literature found for epitestosterone sulfate(1-) itself. epitestosterone sulfate(1-) is the conjugate base of Epitestosterone sulfate; the abstracts below are about Epitestosterone sulfate.
+
+[PMID 38508572] Biomarkers identification in follicular fluid in relation to live birth in in vitro fertilization of women with polycystic ovary syndrome in different subtypes by using UPLC-MS method
+2024
+BackgroundPolycystic ovary syndrome (PCOS) is a common infertility disorder which affects reproductive-aged women. However, metabolic change profiles of follicular fluid (FF) in lean and obese women diagnosed with and without PCOS remains unclear.Methods95 infertile women were divided into four subgroups: LC (lean control), OC (overweight control), LP (lean PCOS), and OP (overweight PCOS). The FF samples were collected during oocyte retrieval and assayed by ultra-performance liquid chromatography coupled with mass spectrometry (UPLC-MS) metabolomics.ResultsA total of 236 metabolites were identified by metabolic analysis. The pathway enrichment analysis revealed that the glycerophospholipid metabolism (impact = 0.11182), ether lipid metabolism (impact = 0.14458), and primary bile acid biosynthesis (impact = 0.03267) were related to metabolic pathway between PCOS and control. Correlation analyses showed that epitestosterone sulfate was found positively correlated with fertilization rate in PCOS, while falcarindione, lucidone C. and notoginsenoside I was found to be negatively correlated. The combined four biomarkers including lucidone C, epitestosterone sulfate, falcarindione, and notoginsenoside I was better in predicting live birth rate, with AUC of 0.779.ConclusionThe follicular fluid of women with PCOS showed unique metabolic characteristics. Our study provides better identification of PCOS follicular fluid metabolic dynamics, which may serve as potential biomarkers of live birth.
+
+[PMID 38012839] Evaluation of sulfate metabolites as markers of topical testosterone administration in Caucasian and Asian populations
+2024
+Sulfate metabolites of endogenous anabolic androgenic steroids (EAAS) have been shown to prolong the detection times compared with the conventional urinary markers of the steroid profile for oral and intramuscular administrations of testosterone (T). In this work, the sensitivity of sulfate EAAS markers for the detection of T gel administration has been evaluated in six Caucasian and six Asian male volunteers. Fourteen sulfate metabolites were measured in basal and post-administration samples after multiple doses of T gel (100 mg/day, three consecutive days), and the detection times based on individual thresholds for each volunteer were evaluated. Sulfate concentrations did not show adequate sensitivity, but the results of sulfate ratios were much more promising. Androsterone sulfate/testosterone sulfate (A-S/T-S), epiandrosterone sulfate/epitestosterone sulfate (epiA-S/E-S), epiA-S/T-S, and etiocholanolone sulfate/epitestosterone sulfate (Etio-S/E-S) provided the most consistent detectability for all volunteers and populations, with detection times ranging from 60 to 96 h since the first dose. Additional ratios improved detectability to up to 7 days, but only in particular volunteers. In general, sensitivity was similar to or better than the conventional testosterone/epitestosterone ratio (T/E) of the steroid profile, which further reinforces the conclusion that sulfate EAAS metabolites can be a good complement for the current steroid profile.
+
+[PMID 33864421] Re-evaluation of combined ((ES/EG)/(TS/TG)) ratio as a marker of testosterone intake in men
+2021
+To detect doping with pseudo-endogenous anabolic steroids in sports, a urinary steroid profile with glucuronidated plus unconjugated androgens is used. In addition to analyze androgen glucuronide metabolites, it can be of interest to also include sulfate metabolites in the urinary steroid profile. The combined ratios of epitestosterone sulfate/epitestosterone glucuronide to the ratios of testosterone sulfate/testosterone glucuronide ((ES/EG)/(TS/TG)) have previously been investigated as a complementary biomarker for testosterone doping. In this restudy, the aim was to evaluate this biomarker in a larger study sample population. A single dose of 500-mg testosterone enanthate was administered to 54 healthy male volunteers. Urine was collected prior to (Day 0) administration and throughout 15 days and analyzed for the sulfate and glucuronide conjugates of testosterone and epitestosterone. The results show that the combined ratio increased to a larger extent than the traditional T/E ratio in all subjects. This increase was independent on UGT2B17 gene polymorphism. Moreover, a delayed peak of the combined ratio was observed in ~60% of the participants. The results confirm that complementary analyses of the sulfate metabolites may be a useful approach to detect testosterone doping in men.

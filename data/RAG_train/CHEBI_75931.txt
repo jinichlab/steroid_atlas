@@ -1,0 +1,24 @@
+Compound: 26-desglucoavenacoside B
+ChEBI ID: CHEBI:75931
+PubChem CID: 71768106
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,4R,5R,6S)-2-[(2R,3R,4S,5S,6R)-5-[(2S,3R,4S,5R,6R)-3,5-dihydroxy-6-(hydroxymethyl)-4-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyoxan-2-yl]oxy-4-hydroxy-6-(hydroxymethyl)-2-[(1S,2S,4S,5'S,6S,7S,8R,9S,12S,13R,16S)-5'-(hydroxymethyl)-5',7,9,13-tetramethylspiro[5-oxapentacyclo[10.8.0.02,9.04,8.013,18]icos-18-ene-6,2'-oxolane]-16-yl]oxyoxan-3-yl]oxy-6-methyloxane-3,4,5-triol
+Molecular Formula: C51H82O23
+Molecular Weight: 1063.2
+SMILES: C[C@H]1[C@H]2[C@H](C[C@@H]3[C@@]2(CC[C@H]4[C@H]3CC=C5[C@@]4(CC[C@@H](C5)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O[C@H]7[C@@H]([C@H]([C@@H]([C@H](O7)CO)O)O[C@H]8[C@@H]([C@H]([C@@H]([C@H](O8)CO)O)O)O)O)O)O[C@H]9[C@@H]([C@@H]([C@H]([C@@H](O9)C)O)O)O)C)C)O[C@]11CC[C@@](O1)(C)CO
+InChI: InChI=1S/C51H82O23/c1-20-31-27(73-51(20)13-12-48(3,19-55)74-51)15-26-24-7-6-22-14-23(8-10-49(22,4)25(24)9-11-50(26,31)5)66-47-43(72-44-37(61)35(59)32(56)21(2)65-44)39(63)41(30(18-54)69-47)70-46-40(64)42(34(58)29(17-53)68-46)71-45-38(62)36(60)33(57)28(16-52)67-45/h6,20-21,23-47,52-64H,7-19H2,1-5H3/t20-,21-,23-,24+,25-,26-,27-,28+,29+,30+,31-,32-,33+,34+,35+,36-,37+,38+,39-,40+,41+,42-,43+,44-,45-,46-,47+,48-,49-,50-,51-/m0/s1
+InChIKey: LULJIKDTCPPZPH-LIBRINKRSA-N
+XLogP: -2
+TPSA: 355
+H-Bond Donors: 13
+H-Bond Acceptors: 23
+
+== ChEBI definition ==
+A steroid saponin that is avenacoside B lacking the 26-<em>O</em>-glucosyl residue.
+
+== Literature on 26-desglucoavenacoside B ==
+
+[PMID 28579031] The antiparasitic activity of avenacosides against intestinal nematodes
+2017
+Avena sativa L., 1753 (Poaceae) is used as feed for livestock and as a crop rotation agent. The purpose of the study was to examine the molecular mechanisms behind the antihelminth activity of the oat saponins avenacoside B (AveB) and 26-desglucoavenacoside B (26DGAveB) by evaluating their effect on Heligmosomoides bakeri, a parasitic nematode of mice. The avenacosides AveB and 26DGAveB were separated and purified from A. sativa green leaves, and their mycotoxic activity was confirmed against the fungus Trichoderma harzianum. The anti-nematode activity of the avenacosides was measured by egg hatching assay. In the surviving L3 larvae exposed to avenacosides, the expression of CED-9, a protein of the apoptosis pathway, was identified by Western blotting. The protein profile of L3 larvae was monitored by High Performance Liquid Chromatography (HPLC). The action of saponins on glycoprotein pump (Pgp) activity in L3 larvae was compared to that of the pump blocker Verapamil (VPL). A mouse model was used to measure the infectivity of L3 larvae exposed to AveB and 26DGAveB, and the outcome of the immune response. Both compounds induced morphological changes in larvae and blocked Pgp activity; however, only 26DGAveB provoked expression of CED-9. The infected mice displayed changes in the molecular pattern of larval proteins and enhanced IL-4 production, indicating that avenacosides reduced the infectivity of H. bakeri larvae. In avenacosides, the residue without glucose at the C26 position demonstrated greater anti-nematode activity. Our findings indicate that A. sativa compounds are natural products with anti-parasitic activity.

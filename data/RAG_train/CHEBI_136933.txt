@@ -1,0 +1,18 @@
+Compound: 2-hydroxy-17beta-estradiol 2-O-(beta-D-glucuronide)(1-)
+ChEBI ID: CHEBI:136933
+PubChem CID: 129011087
+
+== Chemical properties ==
+IUPAC Name: (2S,3S,4S,5R,6S)-6-[[(8R,9S,13S,14S,17S)-3,17-dihydroxy-13-methyl-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthren-2-yl]oxy]-3,4,5-trihydroxyoxane-2-carboxylate
+Molecular Formula: C24H31O9-
+Molecular Weight: 463.5
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=C(C=C34)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)[O-])O)O)O)O
+InChI: InChI=1S/C24H32O9/c1-24-7-6-11-12(14(24)4-5-17(24)26)3-2-10-8-15(25)16(9-13(10)11)32-23-20(29)18(27)19(28)21(33-23)22(30)31/h8-9,11-12,14,17-21,23,25-29H,2-7H2,1H3,(H,30,31)/p-1/t11-,12+,14-,17-,18-,19-,20+,21-,23+,24-/m0/s1
+InChIKey: JWRIQYSRJXLEHG-OBRRSLBQSA-M
+XLogP: 2.7
+TPSA: 160
+H-Bond Donors: 5
+H-Bond Acceptors: 9
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of 2-hydroxy-17β-estradiol 2-<em>O</em>-(β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic acid function; major species at pH 7.3.

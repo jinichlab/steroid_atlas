@@ -1,0 +1,33 @@
+Compound: glycocholate 7-sulfate(2-)
+ChEBI ID: CHEBI:172393
+PubChem CID: 155920192
+
+== Chemical properties ==
+IUPAC Name: 2-[[(4R)-4-[(3R,5S,7R,8R,9S,10S,12S,13R,14S,17R)-3,12-dihydroxy-10,13-dimethyl-7-sulfonatooxy-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoyl]amino]acetate
+Molecular Formula: C26H41NO9S-2
+Molecular Weight: 543.7
+SMILES: C[C@H](CCC(=O)NCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)OS(=O)(=O)[O-])O)C
+InChI: InChI=1S/C26H43NO9S/c1-14(4-7-22(30)27-13-23(31)32)17-5-6-18-24-19(12-21(29)26(17,18)3)25(2)9-8-16(28)10-15(25)11-20(24)36-37(33,34)35/h14-21,24,28-29H,4-13H2,1-3H3,(H,27,30)(H,31,32)(H,33,34,35)/p-2/t14-,15+,16-,17-,18+,19+,20-,21+,24+,25+,26-/m1/s1
+InChIKey: BJPPZTDOLXZUSK-FRVQLJSFSA-L
+XLogP: 3.1
+TPSA: 185
+H-Bond Donors: 3
+H-Bond Acceptors: 9
+
+== ChEBI definition ==
+Glycocholate 7-sulfate(2-) is a steroid sulfate oxoanion. It is functionally related to a glycocholate.
+
+--- RELATED COMPOUND: glycocholate ---
+No literature found for glycocholate 7-sulfate(2-) itself. glycocholate 7-sulfate(2-) is functionally related to glycocholate; the abstracts below are about glycocholate.
+
+[PMID 39244070] Sodium glycocholate liposome encapsulated semaglutide increases oral bioavailability by promoting intestinal absorption
+2024
+The aim of this study was to prepare sodium glycocholate liposomes (SGC-Lip) encapsulating semaglutide (Sml) to improve oral bioavailability and better exert hypoglycemic effect. In this paper, SGC-Lip was prepared by reverse-phase evaporation method with particle size around 140 nm, potential around -27 mV, rounded morphology and better stability. The hypoglycemic and intestinal uptake effects of SGC-Lip and cholesterol-containing liposomes (CH-Lip) were comparatively investigated in rats, and the oral safety of SGC-Lip was examined by cytotoxicity assay. The results indicate that SGC-Lip can achieve a hypoglycemic effect of 40% of the initial value within 12 hours, and the AAC0-12h is approximately six times that of CH-Lip without sodium glycocholate. The results of the cytotoxicity tests indicate that SGC-Lip has good oral safety. SGC-Lip enhances the absorption of semaglutide in the small intestinal villi via an apical sodium-dependent bile acid transporter (ASBT)-mediated pathway with the highest penetration at the ileal site. In summary, the oral bioavailability of semaglutide can be improved by encapsulating semaglutide in SGC-Lip and utilizing the stabilizing and permeation-promoting effects of SGC on liposomes.
+
+[PMID 38971200] Specific intermolecular interaction with sodium glycocholate generates the co-amorphous system showing higher physical stability and aqueous solubility of Y<sub>5</sub> receptor antagonist of neuropeptide Y, a brick dust molecule
+2024
+Drugs with poor water and lipid solubility are termed "brick dust." We previously successfully developed a co-amorphous system of a novel neuropeptide Y5 receptor antagonist (AntiY5R), a brick dust molecule, using sodium taurocholate (NaTC) as a co-former. However, the maximum improvement in AntiY5R dissolution by the co-amorphous system was only approximately 10 times greater than that of the crystals. Therefore, in the current study, other bile salts, including sodium cholate (NaC), sodium chenodeoxycholate (NaCC), and sodium glycocholate (NaGC), were examined as co-formers to further improve AntiY5R dissolution. NaC, NaCC, and NaGC have glass transition temperatures above 150°C. All three co-amorphous systems prepared successfully retained the amorphous form of AntiY5R for 3 months at 40°C, but the co-amorphous system with NaGC (AntiY5R-NaGC; 1:9 molar ratio) provided the highest improvement in AntiY5R dissolution, which was approximately 50 times greater than that of the crystals. Possible intermolecular interactions via the glycine moiety of NaGC more than the other bile salts would contribute to the highest dissolution enhancement with AntiY5R-NaGC. Thus, NaGC would be a promising co-former for formulating stable co-amorphous systems to enhance the dissolution behavior of brick dust molecules.
+
+[PMID 42359897] Two-Step Enzymatic Approach to Improve the Physicochemical and Functional Properties of Dietary Fiber From Corn Bran
+2026
+Corn bran (CB), a major by-product of corn starch processing, represents an abundant and low-cost source of dietary fiber (DF). In this study, crude dietary fiber (CDF) was prepared from CB through a multienzyme pretreatment. The structural, physicochemical, and functional properties of soluble (SDF) and insoluble dietary fiber (IDF) obtained after cellulase and xylanase modification were investigated. Compositional analyses verified the substantial removal of starch, fat, and protein by the first-step enzyme treatment and an approximately 5% increase in total DF content. Scanning electron microscopy (SEM), Fourier-transformed infrared spectroscopy (FTIR), and thermogravimetric analysis (TGA) indicated that the enzymatic treatment altered the morphology, chemical structure, and thermal properties of CDF. IDF displayed a high oil-holding capacity (OHC) of (3.71 g/g) but limited swelling capacity (SC), while SDF exhibited significantly improved binding capacities for glucose and cholesterol in vitro (15.34 and 50.80 mg/g, respectively). Moreover, all fiber samples demonstrated greater binding capacity for sodium taurocholate compared with sodium cholate and sodium glycocholate, highlighting their potential for bile acid interaction. Overall, the two-step enzymatic approach proved effective in tailoring the physicochemical properties of CB-derived DFs, providing a sustainable and promising strategy for producing high-value functional ingredients from agricultural by-products with applications as value-added ingredients in food products. PRACTICAL APPLICATIONS: Corn bran dietary fiber produced by two-step enzymatic modification showed improved functional properties, including enhanced water solubility and in vitro binding capacities for glucose, cholesterol, and bile salts. This approach may help convert corn bran, an abundant starch-processing by-product, into value-added dietary fiber ingredients for use in functional and health-oriented food formulations.

@@ -1,0 +1,18 @@
+Compound: estriol 16-O-(beta-D-glucuronide)(1-)
+ChEBI ID: CHEBI:136650
+PubChem CID: 126456500
+
+== Chemical properties ==
+IUPAC Name: (2S,3S,4S,5R,6R)-6-[[(8R,9S,13S,14S,16R,17R)-3,17-dihydroxy-13-methyl-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthren-16-yl]oxy]-3,4,5-trihydroxyoxane-2-carboxylate
+Molecular Formula: C24H31O9-
+Molecular Weight: 463.5
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1C[C@H]([C@@H]2O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)[O-])O)O)O)CCC5=C3C=CC(=C5)O
+InChI: InChI=1S/C24H32O9/c1-24-7-6-13-12-5-3-11(25)8-10(12)2-4-14(13)15(24)9-16(21(24)29)32-23-19(28)17(26)18(27)20(33-23)22(30)31/h3,5,8,13-21,23,25-29H,2,4,6-7,9H2,1H3,(H,30,31)/p-1/t13-,14-,15+,16-,17+,18+,19-,20+,21+,23-,24+/m1/s1
+InChIKey: FQYGGFDZJFIDPU-JRSYHJKYSA-M
+XLogP: 1.8
+TPSA: 160
+H-Bond Donors: 5
+H-Bond Acceptors: 9
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of estriol 16-<em>O</em>-(β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic acid function; major species at pH 7.3.

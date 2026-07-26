@@ -1,0 +1,18 @@
+Compound: isomogroside IV
+ChEBI ID: CHEBI:230512
+PubChem CID: 162702234
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,4S,5S,6R)-2-[(2R,3S,4R,5R,6R)-6-[[(3S,8S,9R,10R,11R,13R,14S,17R)-17-[(2R,5R)-5-[(2S,3R,4S,5S,6R)-4,5-dihydroxy-6-(hydroxymethyl)-3-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyoxan-2-yl]oxy-6-hydroxy-6-methylheptan-2-yl]-11-hydroxy-4,4,9,13,14-pentamethyl-2,3,7,8,10,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-3-yl]oxy]-4,5-dihydroxy-2-(hydroxymethyl)oxan-3-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol
+Molecular Formula: C54H92O24
+Molecular Weight: 1125.3
+SMILES: C[C@H](CC[C@H](C(C)(C)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)[C@H]3CC[C@@]4([C@@]3(C[C@H]([C@@]5([C@H]4CC=C6[C@H]5CC[C@@H](C6(C)C)O[C@H]7[C@@H]([C@H]([C@@H]([C@H](O7)CO)O[C@H]8[C@@H]([C@H]([C@@H]([C@H](O8)CO)O)O)O)O)O)C)O)C)C
+InChI: InChI=1S/C54H92O24/c1-22(9-13-33(51(4,5)70)76-49-45(39(65)36(62)28(20-57)73-49)78-48-42(68)38(64)35(61)27(19-56)72-48)23-15-16-52(6)30-12-10-24-25(54(30,8)31(59)17-53(23,52)7)11-14-32(50(24,2)3)75-46-43(69)40(66)44(29(21-58)74-46)77-47-41(67)37(63)34(60)26(18-55)71-47/h10,22-23,25-49,55-70H,9,11-21H2,1-8H3/t22-,23-,25-,26-,27-,28-,29-,30+,31-,32+,33-,34-,35-,36-,37+,38+,39+,40-,41-,42-,43-,44-,45-,46+,47+,48+,49+,52+,53-,54+/m1/s1
+InChIKey: UOQVEOGXAPHEIO-AEKMPLQXSA-N
+XLogP: -1.5
+TPSA: 398
+H-Bond Donors: 16
+H-Bond Acceptors: 24
+
+== ChEBI definition ==
+Isomogroside IV is a mogroside and a beta-D-glucoside. It has a role as a plant metabolite.

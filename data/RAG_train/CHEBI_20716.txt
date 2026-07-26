@@ -1,0 +1,40 @@
+Compound: 6-deoxoteasterone
+ChEBI ID: CHEBI:20716
+PubChem CID: 11144580
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,4R,5S)-2-[(3S,5S,8R,9S,10S,13S,14S,17R)-3-hydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]-5,6-dimethylheptane-3,4-diol
+Molecular Formula: C28H50O3
+Molecular Weight: 434.7
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CC[C@@H](C4)O)C)C)[C@H]([C@@H]([C@@H](C)C(C)C)O)O
+InChI: InChI=1S/C28H50O3/c1-16(2)17(3)25(30)26(31)18(4)22-9-10-23-21-8-7-19-15-20(29)11-13-27(19,5)24(21)12-14-28(22,23)6/h16-26,29-31H,7-15H2,1-6H3/t17-,18-,19-,20-,21-,22+,23-,24-,25+,26+,27-,28+/m0/s1
+InChIKey: WPHVOXMMNSLJSF-GUOPQYDVSA-N
+XLogP: 7.3
+TPSA: 60.7
+H-Bond Donors: 3
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 3β-hydroxy steroid that is teasterone lacking the oxo substituent at position 6.
+
+== Literature on 6-deoxoteasterone ==
+
+[PMID 32146811] Establishment of Biosynthetic Pathways To Generate Castasterone as the Biologically Active Brassinosteroid in <i>Brachypodium distachyon</i>
+2020
+Gas chromatography-mass spectrometry (GC-MS) analysis revealed that castasterone and its biosynthetic precursors are found in Brachypodium distachyon. In vitro conversion experiments with crude enzyme solutions prepared from B. distachyon demonstrated the presence of the following biosynthetic sequences: campesterol → campesta-4-en-3-one → campesta-3-one → campestanol → 6-deoxocathasterone → 6-deoxoteasterone → teasterone ↔ 3-dehydroteasterone ↔ typhasterol → castasterone. campesterol → 22-hydroxycampesterol → 22-hydroxy-campesta-4-en-3-one → 22-hydroxy-campesta-3-one → 6-deoxo-3-dehydroteasterone → 3-dehydroteasterone. 6-deoxoteasterone ↔ 6-deoxo-3-dehydroteasterone ↔ 6-deoxotyphasterol → 6-deoxocastasterone → castasterone. This shows that there are campestanol-dependent and campestanol-independent pathway in B. distachyon that synthesize 24-methylated brassinosteroids (BRs). Biochemical analysis of BRs biosynthetic enzymes confirmed that BdDET2, BdCYP90B1, BdCYP90A1, BdCYP90D2, and BdCYP85A1 are orthologous to BR 5α-reductase, BR C-22 hydroxylase, BR C-3 oxidase, BR C-23 hydroxylase, and BR C-6 oxidase, respectively. Brassinolide was not identified in B. distachyon. Additionally, B. distachyon crude enzyme solutions could not catalyze the conversion of castasterone to brassinolide, and the gene encoding an ortholog of CYP85A2 (a brassinolide synthase) was not found in B. distachyon. These results strongly suggest that the end product for brassinosteroid biosynthesis which controls the growth and development of B. distachyon is not brassinolide but rather castasterone.
+
+[PMID 22846333] Rice CYP90D2 and CYP90D3 catalyze C-23 hydroxylation of brassinosteroids in vitro
+2012
+Brassinosteroids are biosynthesized from campesterol via several cytochrome P450 (P450)-catalyzed oxidative reactions. We report the biochemical characterization of two brassinosteroid-biosynthetic P450s from rice: CYP90D2 and CYP90D3. A rice dwarf mutant, ebisu dwarf (d2), which contains a defective copy of CYP90D2, is known to be a brassinosteroid-deficient mutant, and CYP90D2 has been considered to act as a C-3 dehydrogenase. However, in vitro biochemical assays using baculovirus/insect cell-produced proteins revealed that both CYP90D2 and CYP90D3 catalyze C-23 hydroxylation of various 22-hydroxylated brassinosteroids, but with markedly different catalytic efficiencies. Both enzymes preferentially convert (22S,24R)-22-hydroxyergost-4-en-3-one, (22S,24R)-22-hydroxy-5α-ergostan-3-one, and 3-epi-6-deoxocathasterone to the corresponding 23-hydroxylated products, but are less active in the conversion of (22S)-22-hydroxycampesterol and 6-deoxocathasterone, in vitro. Consistently, the levels of 23-hydroxylated products of these intermediates, namely, 6-deoxoteasterone, 3-dehydro-6-deoxoteasterone, and 6-deoxotyphasterol were decreased in d2 mutants. These results indicate that CYP90D2 and CYP90D3 can act as brassinosteroid C-23 hydroxylases in rice.
+
+[PMID 17138693] C-23 hydroxylation by Arabidopsis CYP90C1 and CYP90D1 reveals a novel shortcut in brassinosteroid biosynthesis
+2006
+Brassinosteroids (BRs) are biosynthesized from campesterol via several cytochrome P450 (P450)-catalyzed oxidative reactions. We report the functional characterization of two BR-biosynthetic P450s from Arabidopsis thaliana: CYP90C1/ROTUNDIFOLIA3 and CYP90D1. The cyp90c1 cyp90d1 double mutant exhibits the characteristic BR-deficient dwarf phenotype, although the individual mutants do not display this phenotype. These data suggest redundant roles for these P450s. In vitro biochemical assays using insect cell-expressed proteins revealed that both CYP90C1 and CYP90D1 catalyze C-23 hydroxylation of various 22-hydroxylated BRs with markedly different catalytic efficiencies. Both enzymes preferentially convert 3-epi-6-deoxocathasterone, (22S,24R)-22-hydroxy-5alpha-ergostan-3-one, and (22S,24R)-22-hydroxyergost-4-en-3-one to 23-hydroxylated products, whereas they are less active on 6-deoxocathasterone. Likewise, cyp90c1 cyp90d1 plants were deficient in 23-hydroxylated BRs, and in feeding experiments using exogenously supplied intermediates, only 23-hydroxylated BRs rescued the growth deficiency of the cyp90c1 cyp90d1 mutant. Thus, CYP90C1 and CYP90D1 are redundant BR C-23 hydroxylases. Moreover, their preferential substrates are present in the endogenous Arabidopsis BR pool. Based on these results, we propose C-23 hydroxylation shortcuts that bypass campestanol, 6-deoxocathasterone, and 6-deoxoteasterone and lead directly from (22S,24R)-22-hydroxy-5alpha-ergostan-3-one and 3-epi-6-deoxocathasterone to 3-dehydro-6-deoxoteasterone and 6-deoxotyphasterol.
+
+[PMID 19535168] Isolation and characterization of brassinosteroids from algal cultures of Chlorella vulgaris Beijerinck (Trebouxiophyceae)
+2009
+The brassinosteroids (BRs) occur ubiquitously in the plant kingdom. The occurrence of BRs has been demonstrated in almost every part of higher plants, such as pollen, flower buds, fruits, seeds, vascular cambium, leaves, shoots and roots. In this study, BRs were isolated and identified in the culture of wild-type Chlorella vulgaris. Seven BRs, including teasterone, typhasterol, 6-deoxoteasterone, 6-deoxotyphasterol, 6-deoxocastasterone, castasterone and brassinolide, were identified by GC-MS. All compounds belong to the BR biosynthetic pathway. The results suggest that early and late C6 oxidation pathways are operating in C. vulgaris. This study represents the first isolation of BRs from C. vulgaris cultures.
+
+[PMID 14615594] A rice brassinosteroid-deficient mutant, ebisu dwarf (d2), is caused by a loss of function of a new member of cytochrome P450
+2003
+We characterized a rice dwarf mutant, ebisu dwarf (d2). It showed the pleiotropic abnormal phenotype similar to that of the rice brassinosteroid (BR)-insensitive mutant, d61. The dwarf phenotype of d2 was rescued by exogenous brassinolide treatment. The accumulation profile of BR intermediates in the d2 mutants confirmed that these plants are deficient in late BR biosynthesis. We cloned the D2 gene by map-based cloning. The D2 gene encoded a novel cytochrome P450 classified in CYP90D that is highly similar to the reported BR synthesis enzymes. Introduction of the wild D2 gene into d2-1 rescued the abnormal phenotype of the mutants. In feeding experiments, 3-dehydro-6-deoxoteasterone, 3-dehydroteasterone, and brassinolide effectively caused the lamina joints of the d2 plants to bend, whereas more upstream compounds did not cause bending. Based on these results, we conclude that D2/CYP90D2 catalyzes the steps from 6-deoxoteasterone to 3-dehydro-6-deoxoteasterone and from teasterone to 3-dehydroteasterone in the late BR biosynthesis pathway.

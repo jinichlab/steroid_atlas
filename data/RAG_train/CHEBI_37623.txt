@@ -1,0 +1,33 @@
+Compound: 7alpha,25-dihydroxycholesterol
+ChEBI ID: CHEBI:37623
+PubChem CID: 11954197
+
+== Chemical properties ==
+IUPAC Name: (3S,7S,8S,9S,10R,13R,14S,17R)-17-[(2R)-6-hydroxy-6-methylheptan-2-yl]-10,13-dimethyl-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene-3,7-diol
+Molecular Formula: C27H46O3
+Molecular Weight: 418.7
+SMILES: C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@@H](C=C4[C@@]3(CC[C@@H](C4)O)C)O)C
+InChI: InChI=1S/C27H46O3/c1-17(7-6-12-25(2,3)30)20-8-9-21-24-22(11-14-27(20,21)5)26(4)13-10-19(28)15-18(26)16-23(24)29/h16-17,19-24,28-30H,6-15H2,1-5H3/t17-,19+,20-,21+,22+,23-,24+,26+,27-/m1/s1
+InChIKey: BQMSKLCEWBSPPY-IKVTXIKFSA-N
+XLogP: 5.7
+TPSA: 60.7
+H-Bond Donors: 3
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+7alpha,25-dihydroxycholesterol is a 3beta-hydroxy-Delta(5)-steroid, a 7alpha-hydroxy steroid, a 25-hydroxy steroid and an oxysterol. It has a role as a human metabolite. It is functionally related to a cholesterol.
+
+--- RELATED COMPOUND: cholesterol ---
+No literature found for 7alpha,25-dihydroxycholesterol itself. 7alpha,25-dihydroxycholesterol is functionally related to cholesterol; the abstracts below are about cholesterol.
+
+[PMID 42295026] Cholesterol and Cholesterol-Derived Molecules Differentially Modulate Neuronal Kv7.2/7.3 Channels
+2026
+Kv7 potassium channels generate slowly activating, non-inactivating outward potassium currents and are critical regulators of cellular excitability. While cholesterol is known to modulate multiple ion channels, its concentration-dependent effects and the influence of cholesterol-derived molecules on Kv7 channels remain insufficiently characterized. In this study, we investigated the effects of cholesterol and cholesterol-derived molecules, including steroid hormones and chemically modified imidazolium-based cholesterol derivatives (CHIMs) on Kv7.2/7.3 channels heterologously expressed in HEK293FT cells using conventional whole-cell patch-clamp recordings. Application of high cholesterol concentrations (1 mM) significantly reduced Kv7.2/7.3 current amplitudes over a wide range of potentials without changing voltage-dependent current characteristics. CHIMs also reduced currents, whereas a fluorescent derivative, CHIM-L-NBD, unexpectedly enhanced Kv7.2/7.3 currents. In contrast, the NBD moiety alone had no effect. Progesterone and 17β-estradiol inhibition of Kv7.2/7.3 currents was most evident at strongly depolarized potentials. For progesterone this was associated with a change in the slope of the activation curve. These findings demonstrate that Kv7.2/7.3 channels respond differentially to structural modifications of cholesterol and to steroid hormones thereby suggesting that different cholesterol-derived molecules may serve as tool compounds with potentially opposing modulatory effects on Kv7.2/7.3 channels.
+
+[PMID 27809441] Fetal and Neonatal Cholesterol Metabolism
+2000
+Cholesterol is critical during in utero and early post-partum development as it is a structural component of every cell membrane, it is involved with numerous signaling events, and it is the precursor for key steroid hormones. Embryos, fetuses, and neonates have two sources of cholesterol, endogenous and exogenous. In the embryo and fetus, endogenous cholesterol comes from de novo synthesis and exogenous cholesterol originates in the maternal circulation when maternal cholesterol-carrying lipoproteins are taken up from the maternal circulation by the placenta or yolk sac, processed, and transported across cells to the embryo or fetus. In the neonate, endogenous cholesterol is synthesized de novo whereas exogenous cholesterol is derived from the diet. Changes in maternal metabolism (diabetes or obesity) or adverse pregnancy outcomes (preterm births or preeclampsia) can impact both the endogenous and exogenous sources of cholesterol, leading to aberrant sterol metabolism during critical times of development. In this chapter, we examine embryo/fetal and neonatal cholesterol metabolism in complicated and uncomplicated pregnancies. Identification of cholesterol abnormalities during this critical time of growth could identify infants in need of immediate treatments, mostly due to genetic disorders, and infants that could be at long-term risk of metabolic conditions due to altered maternal metabolism. For complete coverage of all related areas of Endocrinology, please visit our on-line FREE web-text, WWW.ENDOTEXT.ORG.
+
+[PMID 42196333] Cholesterol in Mitochondrial Diseases-Friend or Foe?
+2026
+Serving as central signalling organelles and hubs of metabolism, mitochondria are essential for cellular homeostasis. Mitochondrial disease can arise from mutations to nuclear or mitochondrial DNA, which result in disruptions to normal mitochondrial function. This generates a suite of rare disorders which are multi-system and often fatal. Variable tissue distribution of mitochondria, alongside a high degree of heterogeneity in associated phenotype, has resulted in an inadequate understanding and characterisation of mitochondrial disease. Addressing this issue is therefore crucial for better clinical management and patient outcomes. Cholesterol dyshomeostasis is a potential pathological hallmark of numerous mitochondrial diseases. Cholesterol is an essential lipid and bioactive compound involved in numerous mitochondrial and cellular processes. A growing number of studies have reported perturbations to cholesterol biosynthesis, cholesterol import, and cholesterol ratios in cell and animal models and individuals with mitochondrial disease, suggesting it could be a unifying feature of these disparate and variable disorders. This review summarises the current experimental evidence for the role of cholesterol dyshomeostasis in mitochondrial disease. It will further discuss reports of statin intolerance, generally attributed to off-target action on mitochondrial structures, in the context of this evidence. Ultimately, the necessity of further integrative clinical and experimental studies exploring the potential of cholesterol dyshomeostasis as a pathological hallmark of mitochondrial disease will be highlighted.

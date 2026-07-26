@@ -1,0 +1,40 @@
+Compound: solasodine(1+)
+ChEBI ID: CHEBI:145043
+PubChem CID: 40720158
+
+== Chemical properties ==
+IUPAC Name: (1S,2S,4S,5'R,6R,7S,8R,9S,12S,13R,16S)-5',7,9,13-tetramethylspiro[5-oxapentacyclo[10.8.0.02,9.04,8.013,18]icos-18-ene-6,2'-piperidin-1-ium]-16-ol
+Molecular Formula: C27H44NO2+
+Molecular Weight: 414.6
+SMILES: C[C@@H]1CC[C@@]2([C@H]([C@H]3[C@@H](O2)C[C@@H]4[C@@]3(CC[C@H]5[C@H]4CC=C6[C@@]5(CC[C@@H](C6)O)C)C)C)[NH2+]C1
+InChI: InChI=1S/C27H43NO2/c1-16-7-12-27(28-15-16)17(2)24-23(30-27)14-22-20-6-5-18-13-19(29)8-10-25(18,3)21(20)9-11-26(22,24)4/h5,16-17,19-24,28-29H,6-15H2,1-4H3/p+1/t16-,17+,19+,20-,21+,22+,23+,24+,25+,26+,27-/m1/s1
+InChIKey: KWVISVAMQJWJSZ-VKROHFNGSA-O
+XLogP: 5.4
+TPSA: 46.1
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A secondary ammonium ion resulting from the protonation of the amino group of solasodine. The major species at pH 7.3.
+
+== Literature on solasodine(1+) ==
+
+[PMID 39535293] Solasodine Downregulates ABCB1 Overexpression in Multidrug Resistant Cancer Cells Via Inhibiting Nrf2/Keap1 Signaling Pathway
+2025
+Multidrug-resistant (MDR) cancer cells maintain redox homeostasis to eliminate oxidative stress-mediated cell death. This study explores the effects of solasodine on regulating P-glycoprotein (P-gp) expression through the Nrf2/Keap1 signaling pathway and oxidative stress-induced sensitization of drug-resistant cancer cells to chemotherapeutics. Initially, the oxidative stress indicators such as intracellular ROS generation, the levels of 8-hydroxy-2-deoxyguanosine (8-OHdG) and gamma-H2AX (γ-H2AX) in the KBChR-8-5 drug-resistant cells were measured. Additionally, the protein expression levels of Nuclear factor erythroid 2-related factor 2 (Nrf-2), Kelch-like ECH-associated protein 1 (Keap1), and ATP Binding Cassette Subfamily B Member 1 (ABCB1)/P-gp were measured at various concentrations of solasodine (1, 5, & 10 µM) through immunofluorescence and western blot analysis. The antioxidant activities in the KBChR-8-5 cells were assessed using established protocols. In this investigation, the treatment with solasodine and doxorubicin combination showed a notable increase in intracellular ROS generation in KBChR-8-5 cells. Furthermore, this combination treatment led to enhanced nuclear condensation, elevated levels of 8-OHdG, and increased γ-H2AX foci formation in the KBChR-8-5 cells. Solasodine treatment effectively inhibited the nuclear translocation of Nrf2 and activation of the ABCB1 gene, consequently preventing overexpression of P-gp in KBChR-8-5 cells. Additionally, the combination therapy increased the lipid peroxidation levels while simultaneously reducing the activities of antioxidant enzymes such as superoxide dismutase (SOD), catalase (CAT), glutathione peroxidase (GPx), and the levels of glutathione (GSH). These results demonstrated that solasodine disrupts redox balance, and overcomes drug resistance by downregulating P-gp via regulating Nrf2/Keap1 signaling pathway in MDR cancer cells.
+
+[PMID 30614239] Revision of the Structure of N, O-Diacetylsolasodine. Unusual Epimerization at the Spiro Carbon Atom during Acetylation of Solasodine
+2019
+The steroidal alkaloid solasodine (1) undergoes inversion of configuration at the C-22 spiro atom when treated with acetic anhydride-pyridine at ambient temperature. The basic solvolysis of the N, O-diacetyl derivative (2) reverses the reaction, yielding the starting solasodine (1). The mechanisms of both processes (acetylation and deacetylation) were studied in terms of possible reaction pathways.
+
+[PMID 36084726] Orally administered solasodine, a steroidal glycoalkaloid, suppresses ovalbumin-induced exaggerated Th2-immune response in rat model of bronchial asthma
+2022
+Bronchial asthma is a chronic lung disorder, that affects an estimated 262 million people worldwide, thereby, causing a large socio-economic burden. Drug molecules from natural sources have exhibited a good promise in providing an alternative therapy in many chronic ailments. Solasodine, a glycoalkaloid has received an immense interest due to its large pharmacological and industrial value, however, its usefulness in asthma control has not been investigated till date. In this work, solasodine was tested for its ability to reverse several characteristics of bronchial asthma induced by intraperitoneal injection of ovalbumin (OVA) and aluminium hydroxide in experimental rats. Treating asthmatic animals with solasodine (1 mg/kg b.w. or 10 mg/kg b.w.) or dexamethasone (2.5 mg/kg b.w.) reversed OVA-induced airway hyperresponsiveness, infiltration of inflammatory cells and histamine levels in the airways. Furthermore, as compared to OVA-control rats, allergen-induced elevated levels of IgE, nitrites, nitric oxide, and pro-inflammatory mediators, including TNF-α, IL-1β, LTD-4, and Th2-cytokines, particularly, IL-4, IL-5 were remarkably reduced in both bronchoalveolar lavage fluid and blood. These findings are supported by significant protection offered by various treatments against OVA-induced airway inflammation and mast cell degranulation in mesenteric tissues. Further, In-silico molecular docking studies performed to determine inhibitory potential of solasodine at IL-4 and IL-5, demonstrated strong affinity of phytocompound for these receptors than observed with antagonists previously reported. Results of current study imply that solasodine has therapeutic promise in allergic asthma, presumably due to its ability to prevent mast cell degranulation and consequent generation of histamine and Th2-associated cytokines in airways.
+
+[PMID 20706906] Antinociceptive activity of steroid alkaloids isolated from Solanum trilobatum Linn
+2010
+Solasodine (1) was isolated for the first time from the roots of Solanum trilobatum Linn., a member of the Solanaceae, and assessed for its presumed antinociceptive activity using several experimental murine models, viz. the writhing, formalin, and hot plate tests. When used at doses of 2, 4, and 8 mg/kg, this steroidal alkaloid caused a significant and dose-dependent decrease in the nociception induced by an intraperitoneal injection of acetic acid (p < 0.001). It also led to a significant reduction of the painful sensation caused by formalin in both phases of the formalin test (p < 0.001). Furthermore, the alkaloid produced a significant increase in the reaction time in the hot plate test (p < 0.001). These results suggest that solasodine elicited antinociceptive activity through both central and peripheral mechanisms.
+
+[PMID 17256731] Efficient synthesis of solasodine, O-acetylsolasodine, and soladulcidine as anticancer steroidal alkaloids
+2007
+An efficient synthesis of the steroidal alkaloids solasodine (1), O-acetylsolasodine (2), and soladulcidine (3) starting from easily available diosgenin and tigogenin in five or six steps (overall yield 25, 24, and 28%, resp.) is described. Moreover, our synthetic route provides a selective modification at C(3) of 1 and related compounds in order to carry out lead optimization on these natural antitumor steroidal alkaloids.

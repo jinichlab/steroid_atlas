@@ -1,0 +1,18 @@
+Compound: 20-methyl-3-oxopregna-4,17-dien-21-oyl-CoA(4-)
+ChEBI ID: CHEBI:86020
+PubChem CID: 91825732
+
+== Chemical properties ==
+IUPAC Name: [(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-2-[[[[(3R)-4-[[3-[2-[(2Z)-2-[(8R,9S,10R,13S,14S)-10,13-dimethyl-3-oxo-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthren-17-ylidene]propanoyl]sulfanylethylamino]-3-oxopropyl]amino]-3-hydroxy-2,2-dimethyl-4-oxobutoxy]-oxidophosphoryl]oxy-oxidophosphoryl]oxymethyl]-4-hydroxyoxolan-3-yl] phosphate
+Molecular Formula: C43H60N7O18P3S-4
+Molecular Weight: 1088.0
+SMILES: C/C(=C/1\CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C)/C(=O)SCCNC(=O)CCNC(=O)[C@@H](C(C)(C)COP(=O)([O-])OP(=O)([O-])OC[C@@H]5[C@H]([C@H]([C@@H](O5)N6C=NC7=C(N=CN=C76)N)O)OP(=O)([O-])[O-])O
+InChI: InChI=1S/C43H64N7O18P3S/c1-23(27-8-9-28-26-7-6-24-18-25(51)10-13-42(24,4)29(26)11-14-43(27,28)5)40(56)72-17-16-45-31(52)12-15-46-38(55)35(54)41(2,3)20-65-71(62,63)68-70(60,61)64-19-30-34(67-69(57,58)59)33(53)39(66-30)50-22-49-32-36(44)47-21-48-37(32)50/h18,21-22,26,28-30,33-35,39,53-54H,6-17,19-20H2,1-5H3,(H,45,52)(H,46,55)(H,60,61)(H,62,63)(H2,44,47,48)(H2,57,58,59)/p-4/b27-23-/t26-,28-,29-,30+,33+,34+,35-,39+,42-,43+/m0/s1
+InChIKey: UCGYLLKGKGOQIG-ZDAGCFGESA-J
+XLogP: -1.6
+TPSA: 417
+H-Bond Donors: 5
+H-Bond Acceptors: 23
+
+== ChEBI definition ==
+An acyl-CoA(4−) obtained by deprotonation of the phosphate and diphosphate OH groups of 20-methyl-3-oxopregna-4,17-dien-21-oyl-CoA; major species at pH 7.3.

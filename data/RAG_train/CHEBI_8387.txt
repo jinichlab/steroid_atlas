@@ -1,0 +1,40 @@
+Compound: Pregnanediol
+ChEBI ID: CHEBI:8387
+PubChem CID: 219833
+
+== Chemical properties ==
+IUPAC Name: (3R,5R,8R,9S,10S,13S,14S,17S)-17-[(1S)-1-hydroxyethyl]-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C21H36O2
+Molecular Weight: 320.5
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@H]4[C@@]3(CC[C@H](C4)O)C)C)O
+InChI: InChI=1S/C21H36O2/c1-13(22)17-6-7-18-16-5-4-14-12-15(23)8-10-20(14,2)19(16)9-11-21(17,18)3/h13-19,22-23H,4-12H2,1-3H3/t13-,14+,15+,16-,17+,18-,19-,20-,21+/m0/s1
+InChIKey: YWYQTGBBEZQBGO-BERLURQNSA-N
+XLogP: 5.2
+TPSA: 40.5
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+Pregnanediol is a corticosteroid hormone. It is a tautomer of a 5beta-pregnane-3beta,20alpha-diol.
+
+== Literature on Pregnanediol ==
+
+[PMID 42415352] Diol-Induced Lignin Stabilization Facilitates Softwood Saccharification
+2026
+Lignocellulose pretreatments for enhancing the cellulose accessibility have been widely investigated, and most of them pursue high delignification and hemicellulose removal at elevated conditions, which at the same time cause severe nonproductive adsorption between the enzyme and the condensed residual lignin, this is especially common for softwood. In this study, the highly lignified softwood was selected as the feedstock, and a series of diol-assisted deep eutectic solvent (DES) systems were established to modify the lignin structure and alleviate the inhibition of lignin on enzymatic saccharification process. Compared with conventional organic acid DES, the residual lignin in the diol-DES solid showed abundant etherified tails in the lignin sidechains, leading to reduced lignin adsorption to enzyme. The mechanism for the lignin modification and saccharification enhancement was elucidated by GPC, 2D HSQC NMR, 31P NMR, hydrophobicity, and the Langmuir adsorption isotherm. The diol-modified residual lignin in the recovered solid possessed a specific β-O-4 structure (24.9-36.4/100Ar) with higher aliphatic OH content and lower hydrophobicity, which reduced its nonproductive adsorption to cellulase, thus significantly enhancing Pinus massoniana's cellulose saccharification from 31.2% to 90.0%.
+
+[PMID 42136943] Diol-enhanced natural deep eutectic solvents for efficient poplar pretreatment
+2026
+Natural deep eutectic solvents (NDESs) are promising biomass pretreatment media, but their industrial application is often hindered by high viscosity. To address this limitation, diol-enhanced ternary DESs (TDESs) were prepared by incorporating 1,4-butanediol (1,4-BDO) or ethylene glycol (EG) into a choline chloride (ChCl) and 3,4-dihydroxybenzoic acid (DHBA) system. The applied TDESs maintained a liquid state at room temperature and had significantly reduced viscosity compared to the binary DES (BDES). In addition, the applied diols increased lignin solubility and suppressed lignin condensation by intercepting reactive carbocation intermediates. As a result, the recovered lignins from diol-induced TDES pretreatments showed better preservation of β-O-4 linkages and reduced condensation, improving their potential for downstream valorization. The diol-assisted DES systems showed a synergistic effect from the reduced viscosity, enhanced lignin solubility, and suppression of unwanted condensation, resulting in more effective biomass pretreatment performance, including the enhanced delignification and higher enzymatic digestibility compared to BDES. The 1,4-BDO-enhanced DES was also successfully applied to DHBA-enriched transgenic poplar, highlighting its potential for the processing of engineered biomass feedstocks.
+
+[PMID 41766208] Chemoproteomic Identification of ALDOA as the Glycolytic Target of α-Cembratriene-4,6-diol in Lung Cancer Cells
+2026
+Tobacco (Nicotiana tabacum L.) is a globally important economic crop and a rich source of bioactive cembratriene-4,6-diol (CBT-diol). The unique macrocyclic scaffold of these compounds has prompted an extensive study of its bioactivity. Although CBT-diol has known antitumor activity, its specific molecular targets remain unclear, hindering the translational development of tobacco-based therapeutics. In this study, we identified ALDOA as the direct target of tobacco-derived α-CBT-diol against A549 lung cancer cells. Using activity-based proteomics and target validation methods, we show that α-CBT-diol binds to the ALDOA catalytic site with high affinity (Kd = 12.4 μM) and inhibits its activity. Definitively, studies in ALDOA-knockout cells confirmed that α-CBT-diol inhibits ALDOA activity, thereby suppressing tumor glycolysis and growth by reducing glucose uptake and lactate production. To the best of our knowledge, α-CBT-diol represents the first identified member of the tobacco cembranoid class that exerts antitumor effects by targeting ALDOA.
+
+[PMID 41808637] Chiral biphenanthrene-diol-based lanthanide cubanes
+2026
+Using chiral 4,4'-biphenanthrene-3,3'-diol as ligands, we constructed two pairs of enantiomers of Ln4 cubane clusters: R/S-Dy4 and R/S-Er4. Their enantiopure nature is confirmed by single-crystal structures and mirrored circular dichroism (CD) spectra. Magnetic studies reveal that R/S-Er4 exhibit field-induced single-molecule magnet (SMM) behaviour.
+
+[PMID 41967453] Development and validation of an LC-MS/MS assay for serum 5α-androstane-3α, 17β-diol 17-glucuronide with enhanced interference resolution
+2026
+5α-androstane-3α,17β-diol 17-glucuronide (3α-diol G) is a testosterone metabolite and an important biomarker of hormonal dysregulation, including polycystic ovary syndrome (PCOS) and virilizing syndromes in women such as idiopathic hirsutism. While immunoassay kits are commonly used for its quantification in clinical laboratories, these methods are prone to interference due to the structural similarity among steroidal compounds. In this study, we developed and validated a robust LC-MS/MS method for the quantification of 3α-diol G in human serum. Extraction was performed using a μelution SPE approach, allowing the achievement of a suitable LLOQ (0.140 ng/mL) with a low sample volume (100 μL). The chromatographic method successfully separated major known interferences, including glucuronidated androsterone (ADT-G) and etiocholanolone (Etio-G), and resolved unknown coeluting compounds that could otherwise lead to overestimation. Additionally, monitoring the transitions of the most common phospholipid showed no interference from these species. Method validation followed CLSI recommendations, assessing imprecision, accuracy, linearity, limit of quantification, carryover, and stability. The routine analysis incorporated a system suitability protocol based on ion ratio monitoring to detect potential coeluting interferences prior to batch analysis. This work highlights the importance of chromatographic separation and ion ratio monitoring in steroid analysis and provides a reliable alternative to immunoassay-based quantification of 3α-diol G.

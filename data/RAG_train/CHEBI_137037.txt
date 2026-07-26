@@ -1,0 +1,18 @@
+Compound: 18-hydroxy-5alpha-dihydrotestosterone
+ChEBI ID: CHEBI:137037
+PubChem CID: 129011070
+
+== Chemical properties ==
+IUPAC Name: (5S,8R,9S,10S,13S,14S,17S)-17-hydroxy-13-(hydroxymethyl)-10-methyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C19H30O3
+Molecular Weight: 306.4
+SMILES: C[C@]12CCC(=O)C[C@@H]1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@@H]4O)CO
+InChI: InChI=1S/C19H30O3/c1-18-8-6-13(21)10-12(18)2-3-14-15(18)7-9-19(11-20)16(14)4-5-17(19)22/h12,14-17,20,22H,2-11H2,1H3/t12-,14+,15-,16-,17-,18-,19+/m0/s1
+InChIKey: JZIBJMFPRNIDRR-SGDLSELDSA-N
+XLogP: 3
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+An androstanoid that is 5α-dihydrotestosterone carrying an additional hydroxy susbstituent at position 18.

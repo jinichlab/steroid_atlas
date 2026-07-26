@@ -1,0 +1,18 @@
+Compound: ginsenoside Rc
+ChEBI ID: CHEBI:77154
+PubChem CID: 12855889
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,4S,5S,6R)-2-[(2R,3R,4S,5S,6R)-2-[[(3S,5R,8R,9R,10R,12R,13R,14R,17S)-17-[(2S)-2-[(2S,3R,4S,5S,6R)-6-[[(2R,3R,4R,5S)-3,4-dihydroxy-5-(hydroxymethyl)oxolan-2-yl]oxymethyl]-3,4,5-trihydroxyoxan-2-yl]oxy-6-methylhept-5-en-2-yl]-12-hydroxy-4,4,8,10,14-pentamethyl-2,3,5,6,7,9,11,12,13,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl]oxy]-4,5-dihydroxy-6-(hydroxymethyl)oxan-3-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol
+Molecular Formula: C53H90O22
+Molecular Weight: 1079.3
+SMILES: CC(=CCC[C@@](C)([C@H]1CC[C@@]2([C@@H]1[C@@H](C[C@H]3[C@]2(CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)C)C)O)C)O[C@H]7[C@@H]([C@H]([C@@H]([C@H](O7)CO[C@H]8[C@@H]([C@H]([C@@H](O8)CO)O)O)O)O)O)C
+InChI: InChI=1S/C53H90O22/c1-23(2)10-9-14-53(8,75-47-43(67)39(63)37(61)29(72-47)22-68-45-41(65)36(60)28(21-56)69-45)24-11-16-52(7)33(24)25(57)18-31-50(5)15-13-32(49(3,4)30(50)12-17-51(31,52)6)73-48-44(40(64)35(59)27(20-55)71-48)74-46-42(66)38(62)34(58)26(19-54)70-46/h10,24-48,54-67H,9,11-22H2,1-8H3/t24-,25+,26+,27+,28-,29+,30-,31+,32-,33-,34+,35+,36-,37+,38-,39-,40-,41+,42+,43+,44+,45+,46-,47-,48-,50-,51+,52+,53-/m0/s1
+InChIKey: JDCPEKQWFDWQLI-LUQKBWBOSA-N
+XLogP: 0.9
+TPSA: 357
+H-Bond Donors: 14
+H-Bond Acceptors: 22
+
+== ChEBI definition ==
+A ginsenoside found in <em>Panax ginseng</em> that is dammarane which is substituted by hydroxy groups at the 3β, 12β and 20 <em>pro</em>-<i>S</i> positions, in which the hydroxy groups at positions 3 and 20 have been converted to the corresponding β-<small>D</small>-glucopyranosyl-(1→2)-β-<small>D</small>-glucopyranoside and α-<small>L</small>-arabinofuranosyl-(1→6)-β-<small>D</small>-glucopyranoside respectively, and in which a double bond has been introduced at the 24-25 position.

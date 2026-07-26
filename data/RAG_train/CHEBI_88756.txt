@@ -1,0 +1,18 @@
+Compound: cholesteryl gamma-linolenate
+ChEBI ID: CHEBI:88756
+PubChem CID: 14274970
+
+== Chemical properties ==
+IUPAC Name: [(3S,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl] (6Z,9Z,12Z)-octadeca-6,9,12-trienoate
+Molecular Formula: C45H74O2
+Molecular Weight: 647.1
+SMILES: CCCCC/C=C\C/C=C\C/C=C\CCCCC(=O)O[C@H]1CC[C@@]2([C@H]3CC[C@]4([C@H]([C@@H]3CC=C2C1)CC[C@@H]4[C@H](C)CCCC(C)C)C)C
+InChI: InChI=1S/C45H74O2/c1-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-25-43(46)47-38-30-32-44(5)37(34-38)26-27-39-41-29-28-40(36(4)24-22-23-35(2)3)45(41,6)33-31-42(39)44/h11-12,14-15,17-18,26,35-36,38-42H,7-10,13,16,19-25,27-34H2,1-6H3/b12-11-,15-14-,18-17-/t36-,38+,39+,40-,41+,42+,44+,45-/m1/s1
+InChIKey: GOHHVMNZYOLIPQ-AEYUOTALSA-N
+XLogP: 15.2
+TPSA: 26.3
+H-Bond Donors: 0
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A cholesteryl octadecatrienoate obtained by formal condensation of the carboxy group of γ-linolenic acid with the hydroxy group of cholesterol.

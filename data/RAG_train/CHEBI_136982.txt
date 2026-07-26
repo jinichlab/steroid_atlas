@@ -1,0 +1,25 @@
+Compound: 5alpha-dihydrotestosterone sulfate(1-)
+ChEBI ID: CHEBI:136982
+PubChem CID: 21123132
+
+== Chemical properties ==
+IUPAC Name: [(5S,8R,9S,10S,13S,14S,17S)-10,13-dimethyl-3-oxo-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl] sulfate
+Molecular Formula: C19H29O5S-
+Molecular Weight: 369.5
+SMILES: C[C@]12CCC(=O)C[C@@H]1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@@H]4OS(=O)(=O)[O-])C
+InChI: InChI=1S/C19H30O5S/c1-18-9-7-13(20)11-12(18)3-4-14-15-5-6-17(24-25(21,22)23)19(15,2)10-8-16(14)18/h12,14-17H,3-11H2,1-2H3,(H,21,22,23)/p-1/t12-,14-,15-,16-,17-,18-,19-/m0/s1
+InChIKey: KYVPWJSGFKNNLD-ABEVXSGRSA-M
+XLogP: 3.2
+TPSA: 91.9
+H-Bond Donors: 0
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A steroid sulfate oxoanion that is the conjugate base of 5α-dihydrotestosterone sulfate, obtained by deprotonation of the sulfo group; major species at pH 7.3.
+
+--- RELATED COMPOUND: 5α-dihydrotestosterone sulfate ---
+No literature found for 5alpha-dihydrotestosterone sulfate(1-) itself. 5alpha-dihydrotestosterone sulfate(1-) is the conjugate base of 5α-dihydrotestosterone sulfate; the abstracts below are about 5α-dihydrotestosterone sulfate.
+
+[PMID 28951227] Transport of steroid 3-sulfates and steroid 17-sulfates by the sodium-dependent organic anion transporter SOAT (SLC10A6)
+2018
+The sodium-dependent organic anion transporter SOAT/Soat shows highly specific transport activity for sulfated steroids. SOAT substrates identified so far include dehydroepiandrosterone sulfate, 16α-hydroxydehydroepiandrosterone sulfate, estrone-3-sulfate, pregnenolone sulfate, 17β-estradiol-3-sulfate, and androstenediol sulfate. Apart from these compounds, many other sulfated steroids occur in mammals. Therefore, we aimed to expand the substrate spectrum of SOAT and analyzed the SOAT-mediated transport of eight different sulfated steroids by combining in vitro transport experiments in SOAT-transfected HEK293 cells with LC-MS/MS analytics of cell lysates. In addition, we aimed to better understand the structural requirements for SOAT substrates and so selected structural pairs varying only at specific positions: 3α/3β-sulfate, 17α/17β-sulfate, mono-sulfate/di-sulfate, and 17α-hydroxylation. We found significant and sodium-dependent SOAT-mediated transport of 17α-hydroxypregnenolone sulfate, 17β-estradiol-17-sulfate, androsterone sulfate, epiandrosterone sulfate, testosterone sulfate, epitestosterone sulfate, and 5α-dihydrotestosterone sulfate. However, 17β-estradiol-3,17-disulfate was not transported by SOAT.In conclusionSOAT substrates from the group of sulfated steroids are characterized by a planar and lipophilic steroid backbone in trans-trans-trans conformation of the rings and a negatively charged mono-sulfate group at positions 3' or 17' with flexibility for α- or β- orientation. Furthermore, 5α-reduction, 16α-hydroxylation, and 17α-hydroxylation are acceptable for SOAT substrate recognition, whereas addition of a second negatively charged sulfate group seems to abolish substrate binding to SOAT, and so 17β-estradiol-3,17-disulfate is not transported by SOAT.

@@ -1,0 +1,32 @@
+Compound: 4-pregnen-20,21-diol-3-one
+ChEBI ID: CHEBI:87841
+PubChem CID: 11987811
+
+== Chemical properties ==
+IUPAC Name: (8S,9S,10R,13S,14S,17S)-17-(1,2-dihydroxyethyl)-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C21H32O3
+Molecular Weight: 332.5
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2C(CO)O)CCC4=CC(=O)CC[C@]34C
+InChI: InChI=1S/C21H32O3/c1-20-9-7-14(23)11-13(20)3-4-15-16-5-6-18(19(24)12-22)21(16,2)10-8-17(15)20/h11,15-19,22,24H,3-10,12H2,1-2H3/t15-,16-,17-,18+,19?,20-,21-/m0/s1
+InChIKey: ZCFUAGVJMSGCHS-FYGMKCHKSA-N
+XLogP: 3.1
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 3-oxo Δ<small><sup>4</small></sup>-steroid that is pregn-4-en-3-one carrying two hydroxy substituents at positions 20 and 21.
+
+== Literature on 4-pregnen-20,21-diol-3-one ==
+
+[PMID 18035825] Biocatalytic synthesis of 4-pregnen-20,21-diol-3-one, a selective inhibitor of human 5alpha-reductase type II
+2007
+Biocatalysis, the conversion of substrates into valuable products by the use of enzymes, has some striking advantages in comparison to standard organic chemistry for drug synthesis. By biocatalysis, substrates that contain several identical reactive groups at different positions can be converted with high regio-selectivity and enantio-selectivity. In this study, an E. coli isolate (E132) was identified which was able to convert the steroid desoxycorticosterone into the product 4-pregnen-20,21-diol-3-one in real terms. The product was purified from the cell culture supernatant by HPLC and its structure was demonstrated by mass spectrometry and NMR spectroscopy. It was tested on inhibition of human 5alpha-reductases type I and type II. At a concentration of 10 microM, inhibition was 49.0% for type I and 81.8% for type II, whereas there was no inhibition of human aromatase (CYP19) at 20 microM and human 17alpha-hydroxylase-C17,20-lyase (CYP17) at 2.5 microM detectable. The IC50 value of 4-pregnen-20,21-diol-3-one for human 5alpha-reductase type II was determined to be 1.56 microM.
+
+[PMID 24509771] Escherichia coli kduD encodes an oxidoreductase that converts both sugar and steroid substrates
+2014
+A previously unidentified oxidoreductase from Escherichia coli catalyzes the regioselective reduction of eukaryotic steroid hormone 11-deoxycorticosterone (11-DOC) to the valuable bioactive product 4-pregnen-20,21-diol-3-one. In nature, a reduction of C-20 carbonyl of C21 steroids is catalyzed by diverse NAD(P)H-dependent oxidoreductases. Enzymes that possess 20-ketosteroid reductase activity, however, have never before been described in E. coli. Our present study aimed to identify and characterize the E. coli enzyme which possesses 20-ketosteroid reductase activity against eukaryotic steroid hormone 11-DOC. We partially purified the enzyme from E. coli DH5α using protein chromatography techniques. Mass spectrometry revealed the presence of three NADH-specific oxidoreductases in the sample. The genes encoding these oxidoreductases were cloned and overexpressed in E. coli UT5600 (DE3). Only the overexpression of 2-dehydro-3-deoxy-D-gluconate 5-dehydrogenase (KduD) encoded by kduD gene enabled the whole-cell biotransformation of 11-DOC. A 6xHis-tagged version of KduD was purified to homogeneity and found to reduce several eukaryotic steroid hormones and catalyze the conversion of novel sugar substrates. KduD from E. coli is therefore a promiscuous enzyme that has a predicted role in sugar conversion in vivo but can be used for the production of valuable bioactive 20-hydroxysteroids.
+
+[PMID 7078164] 18-substituted steroids--9[1]. Studies on the stability of aldosterone in dilute alkali
+1982
+In the presence of dilute alkali at room temperature aldosterone undergoes rearrangement to form an isomeric compound identified as 11 beta, 18;18,21-diepoxy-20,21-dihydroxypregn-4-en-3-one. The presence of dissolved oxygen causes simultaneous degradation to form 11 beta, 18-epoxy-18-hydroxy-3-oxo-17(beta H)-androst-4-ene-17 alpha-carboxylic acid. Under similar alkaline conditions at reflux temperature in aqueous methanol aldosterone undergoes rearrangement to form (20S)-20,21-dihydroxy-3-oxo-pregn-4-eno-18,11 beta-lactone accompanied by an intramolecular aldol type condensation to form 11 beta, 21-dihydroxy-18,21-cyclopregna-4,18(21)-diene-3,20-dione. Identical products were formed from 17-isoaldosterone. The mechanisms of these reactions are discussed.

@@ -1,0 +1,9 @@
+{
+  "chebi_id": "CHEBI:16113",
+  "name": "cholesterol",
+  "cid": 5997,
+  "status": "own_literature",
+  "n_papers": 1,
+  "chars": 1934,
+  "has_definition": true
+}

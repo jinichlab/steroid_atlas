@@ -1,0 +1,28 @@
+Compound: 16alpha-hydroxydehydroepiandrosterone 3-sulfate(1-)
+ChEBI ID: CHEBI:87538
+PubChem CID: 20848950
+
+== Chemical properties ==
+IUPAC Name: [(3S,8R,9S,10R,13S,14S,16R)-16-hydroxy-10,13-dimethyl-17-oxo-1,2,3,4,7,8,9,11,12,14,15,16-dodecahydrocyclopenta[a]phenanthren-3-yl] sulfate
+Molecular Formula: C19H27O6S-
+Molecular Weight: 383.5
+SMILES: C[C@]12CC[C@@H](CC1=CC[C@@H]3[C@@H]2CC[C@]4([C@H]3C[C@H](C4=O)O)C)OS(=O)(=O)[O-]
+InChI: InChI=1S/C19H28O6S/c1-18-7-5-12(25-26(22,23)24)9-11(18)3-4-13-14(18)6-8-19(2)15(13)10-16(20)17(19)21/h3,12-16,20H,4-10H2,1-2H3,(H,22,23,24)/p-1/t12-,13+,14-,15-,16+,18-,19-/m0/s1
+InChIKey: ALBNSVAJDFJRKQ-DNKQKWOHSA-M
+XLogP: 2.2
+TPSA: 112
+H-Bond Donors: 1
+H-Bond Acceptors: 6
+
+== ChEBI definition ==
+A steroid sulfate oxoanion that is the conjugate base of 16α-hydroxydehydroepiandrosterone 3-sulfate, arising from deprotonation of the sulfate OH group; major species at pH 7.3.
+
+== Literature on 16alpha-hydroxydehydroepiandrosterone 3-sulfate(1-) ==
+
+[PMID 39707561] Causal association between metabolites and age-related macular degeneration: a bidirectional two-sample mendelian randomization study
+2024
+BackgroundAge-related macular degeneration (AMD) is the leading cause of visual impairment in the elderly population. Accumulating evidence has revealed the possible association between metabolites and AMD. This study aimed to assess the effect of plasma metabolites on AMD and its two subtypes using a bidirectional two-sample Mendelian randomization approach.MethodsThe causality between plasma metabolites and AMD was assessed by a bidirectional two-sample Mendelian randomization (MR) analysis using the genome-wide association studies (GWAS) summary statistics of 1400 genetically determined metabolites (GDMs) and AMD. For this MR analysis, inverse variance weighted (IVW) was used as the primary method, with weighted median, MR-Egger, weighted mode, and simple mode as supplementary methods to examine the causality. MR-Egger intercept, Cochran's Q, and MR-PRESSO test were employed to evaluate possible pleiotropy and heterogeneity.ResultsThe results of IVW showed significant causal associations between 13 GDMs and AMD. 1-stearoyl-GPE (18:0), androstenediol (3β,17β) monosulfate, stearoyl sphingomyelin (d18:1/18:0), xylose, and X-11,850 exhibited a protective effect on AMD, while gulonate and mannonate increased the risk of AMD. 1-stearoyl-GPE (18:0) and X-11,850 exhibited protective effects on dry AMD. DHEAS, 1-stearoyl-GPE (18:0), 5α-androstan-3β,17β-diol disulfate, xylose, androstenediol (3β,17β) monosulfate, and N2-acetyl, N6, N6-dimethyllysine exhibited a protective effect on wet AMD, while succinimide, 16a-hydroxy DHEA 3-sulfate, and X-13,553 increased the risk of wet AMD. Horizontal pleiotropy and heterogeneity did not distort the causal estimates. In the reverse MR analysis, AMD reduced the androstenediol (3β,17β) monosulfate level, and increased the stearoyl sphingomyelin(d18:1/18:0) level.ConclusionThis study supported the effect of plasma metabolites on AMD, providing novel insights for clinical diagnosis and prevention strategy.
+
+[PMID 29325144] A Metabolomics Analysis of Body Mass Index and Postmenopausal Breast Cancer Risk
+2018
+BackgroundElevated body mass index (BMI) is associated with increased risk of postmenopausal breast cancer. The underlying mechanisms, however, remain elusive.MethodsIn a nested case-control study of 621 postmenopausal breast cancer case participants and 621 matched control participants, we measured 617 metabolites in prediagnostic serum. We calculated partial Pearson correlations between metabolites and BMI, and then evaluated BMI-associated metabolites (Bonferroni-corrected α level for 617 statistical tests = P ResultsOf 67 BMI-associated metabolites, two were independently associated with invasive breast cancer risk: 16a-hydroxy-DHEA-3-sulfate (OR = 1.65, 95% confidence interval [CI] = 1.22 to 2.22) and 3-methylglutarylcarnitine (OR = 1.67, 95% CI = 1.21 to 2.30). Four metabolites were independently associated with estrogen receptor-positive (ER+) breast cancer risk: 16a-hydroxy-DHEA-3-sulfate (OR = 1.84, 95% CI = 1.27 to 2.67), 3-methylglutarylcarnitine (OR = 1.91, 95% CI = 1.23 to 2.96), allo-isoleucine (OR = 1.76, 95% CI = 1.23 to 2.51), and 2-methylbutyrylcarnitine (OR = 1.89, 95% CI = 1.22 to 2.91). In a model without metabolites, each 5 kg/m2 increase in BMI was associated with a 14% higher risk of breast cancer (OR = 1.14, 95% CI = 1.01 to 1.28), but adding 16a-hydroxy-DHEA-3-sulfate and 3-methylglutarylcarnitine weakened this association (OR = 1.06, 95% CI = 0.93 to 1.20), with the logOR attenuating by 57.6% (95% CI = 21.8% to 100.0+%).ConclusionThese four metabolites may signal metabolic pathways that contribute to breast carcinogenesis and that underlie the association of BMI with increased postmenopausal breast cancer risk. These findings warrant further replication efforts.

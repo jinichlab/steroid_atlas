@@ -1,0 +1,25 @@
+Compound: 12alpha-hydroxy-3-oxo-5beta-cholan-24-oate
+ChEBI ID: CHEBI:87734
+PubChem CID: 91828305
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(5R,8R,9S,10S,12S,13R,14S,17R)-12-hydroxy-10,13-dimethyl-3-oxo-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H37O4-
+Molecular Weight: 389.5
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2CC[C@H]4[C@@]3(CCC(=O)C4)C)O)C
+InChI: InChI=1S/C24H38O4/c1-14(4-9-22(27)28)18-7-8-19-17-6-5-15-12-16(25)10-11-23(15,2)20(17)13-21(26)24(18,19)3/h14-15,17-21,26H,4-13H2,1-3H3,(H,27,28)/p-1/t14-,15-,17+,18-,19+,20+,21+,23+,24-/m1/s1
+InChIKey: WMUMZOAFCDOTRW-OVEHVULHSA-M
+XLogP: 5.2
+TPSA: 77.4
+H-Bond Donors: 1
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+A bile acid anion that is the conjugate base of 12α-hydroxy-3-oxo-5β-cholan-24-oic acid, obtained by deprotonation of the carboxy group; major species at pH 7.3.
+
+--- RELATED COMPOUND: 12α-hydroxy-3-oxo-5β-cholan-24-oic acid ---
+No literature found for 12alpha-hydroxy-3-oxo-5beta-cholan-24-oate itself. 12alpha-hydroxy-3-oxo-5beta-cholan-24-oate is the conjugate base of 12α-hydroxy-3-oxo-5β-cholan-24-oic acid; the abstracts below are about 12α-hydroxy-3-oxo-5β-cholan-24-oic acid.
+
+[PMID 29907951] Analysis of human C24 bile acids metabolome in serum and urine based on enzyme digestion of conjugated bile acids and LC-MS determination of unconjugated bile acids
+2018
+Host-gut microbiota metabolic interactions are closely associated with health and disease. A manifestation of such co-metabolism is the vast structural diversity of bile acids (BAs) involving both oxidative stereochemistry and conjugation. Herein, we describe the development and validation of a LC-MS-based method for the analysis of human C24 BA metabolome in serum and urine. The method has high throughput covering the discrimination of oxidative stereochemistry of unconjugated species in a 15-min analytical cycle. The validated quantitative performance provided an indirect way to ascertain the conjugation patterns of BAs via enzyme-digestion protocols that incorporated the enzymes, sulfatase, β-glucuronidase, and choloylglycine hydrolase. Application of the method has led to the detection of at least 70 unconjugated BAs including 27 known species and 43 newly found species in the post-prandial serum and urine samples from 7 nonalcoholic steatohepatitis patients and 13 healthy volunteers. Newly identified unconjugated BAs included 3α, 12β-dihydroxy-5β-cholan-24-oic acid, 12α-hydroxy-3-oxo-5β-cholan-24-oic acid, and 3α, 7α, 12β-trihydroxy-5β-cholan-24-oic acid. High-definition negative fragment spectra of the other major unknown species were acquired to facilitate future identification endeavors. An extensive conjugation pattern is the major reason for the "invisibility" of the newly found BAs to other common analytical methods. Metabolomic analysis of the total unconjugated BA profile in combination with analysis of their conjugation patterns and urinary excretion tendencies have provided substantial insights into the interconnected roles of host and gut microbiota in maintaining BA homeostasis. It was proposed that the urinary total BA profile may serve as an ideal footprint for the functional status of the host-gut microbial BA co-metabolism. In summary, this work provided a powerful tool for human C24 BA metabolome analysis that bridges the gap between GC-MS techniques in the past age and LC-MS techniques currently prevailing in biomedical researches. Further applications of the present method in clinical, translational research, and other biomedical explorations will continue to boost the construction of a host-gut microbial co-metabolism network of BAs and thus facilitate the decryption of BA-mediated host-gut microbiota crosstalk in health and diseases. Graphical abstract ᅟ.

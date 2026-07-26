@@ -1,0 +1,18 @@
+Compound: 1alpha-hydroxyandrost-4-ene-3,17-dione
+ChEBI ID: CHEBI:133778
+PubChem CID: 122198241
+
+== Chemical properties ==
+IUPAC Name: (1S,8R,9S,10R,13S,14S)-1-hydroxy-10,13-dimethyl-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthrene-3,17-dione
+Molecular Formula: C19H26O3
+Molecular Weight: 302.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CCC4=CC(=O)C[C@@H]([C@]34C)O
+InChI: InChI=1S/C19H26O3/c1-18-8-7-15-13(14(18)5-6-16(18)21)4-3-11-9-12(20)10-17(22)19(11,15)2/h9,13-15,17,22H,3-8,10H2,1-2H3/t13-,14-,15-,17-,18-,19-/m0/s1
+InChIKey: JVRABWKGNATXPC-HQRJMKCBSA-N
+XLogP: 1.8
+TPSA: 54.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+An androstanoid that is androst-4-ene-3,17-dione in which the hydrogen at the 1α position has been replaced by a hydroxy group.

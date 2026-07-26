@@ -1,0 +1,33 @@
+Compound: 19-Oxo-deoxycorticosterone
+ChEBI ID: CHEBI:174650
+PubChem CID: 173380
+
+== Chemical properties ==
+IUPAC Name: (8S,9S,10S,13S,14S,17S)-17-(2-hydroxyacetyl)-13-methyl-3-oxo-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthrene-10-carbaldehyde
+Molecular Formula: C21H28O4
+Molecular Weight: 344.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2C(=O)CO)CCC4=CC(=O)CC[C@]34C=O
+InChI: InChI=1S/C21H28O4/c1-20-8-7-17-15(16(20)4-5-18(20)19(25)11-22)3-2-13-10-14(24)6-9-21(13,17)12-23/h10,12,15-18,22H,2-9,11H2,1H3/t15-,16-,17-,18+,20-,21+/m0/s1
+InChIKey: PDNIPWXQYQYCSU-ZOCXKQACSA-N
+XLogP: 2
+TPSA: 71.4
+H-Bond Donors: 1
+H-Bond Acceptors: 4
+
+== Literature on 19-Oxo-deoxycorticosterone ==
+
+[PMID 29099997] Early Metabolome Profiling and Prognostic Value in Paraquat-Poisoned Patients: Based on Ultraperformance Liquid Chromatography Coupled To Quadrupole Time-of-Flight Mass Spectrometry
+2017
+Paraquat (PQ) has caused countless deaths throughout the world. There remains no effective treatment for PQ poisoning. Here we study the blood metabolome of PQ-poisoned patients using ultraperformance liquid chromatography coupled to quadrupole time-of-flight mass spectrometry (UPLC/Q-TOF MS). Patients were divided into groups according to blood PQ concentration. Healthy subjects served as controls. Metabolic features were statistically analyzed using multivariate pattern-recognition techniques to identify the most important metabolites. Selected metabolites were further compared with a series of clinical indexes to assess the prognostic value. PQ-poisoned patients showed substantial differences compared with healthy subjects. Based on variable of importance in the project (VIP) values and statistical analysis, 17 metabolites were selected and identified. These metabolites well-classified low PQ-poisoned patients, high PQ-poisoned patients, and healthy subjects, which was better than that of a complete blood count (CBC). Among the 17 metabolites, 20:3/18:1-PC (PC), LPA (0:0/16:0) (LPA), 19-oxo-deoxycorticosterone (19-oxo-DOC), and eicosapentaenoic acid (EPA) had prognostic value. In particular, EPA was the most sensitive one. Besides, the levels of EPA was correlated with LPA and 19-oxo-DOC. If EPA was excessively consumed, then prognosis was poor. In conclusion, the serum metabolome is substantially perturbed by PQ poisoning. EPA is the most important biomarker in early PQ poisoning.
+
+[PMID 6745168] Further studies of the mineralocorticoid activity of 19-oxo-deoxycorticosterone
+1984
+Antinatriuretic and kaliuretic activities of 19-oxo-deoxycorticosterone (19-oxo-DOC) were measured in male adrenalectomized rats and compared with those of aldosterone. No significant effects of 19-oxo-DOC or aldosterone were observed in the lag period (i.e. the first hour post injection). In the subsequent 2 h, rats injected with 25 micrograms 19-oxo-DOC excreted less than half the sodium and more than twice the potassium compared to rats injected with vehicle alone. Overall mineralocorticoid activity (based on changes in urinary Na+/K+), antinatriuretic activity (based on changes in urinary Na+/creatinine) and kaliuretic activity (based on changes in urinary K+/creatinine) of 19-oxo-DOC were all in the range of 1:100th-1:200th that of aldosterone. These results are not in agreement with a recent report suggesting that 19-oxo-DOC possesses antinatriuretic activity but no kaliuretic activity.
+
+[PMID 7056205] Identification of 19-hydroxydeoxycorticosterone, 19-oxo-deoxycorticosterone, and 19-oic-deoxycorticosterone as products of deoxycorticosterone metabolism by rat adrenals
+1982
+The formation of 19-hydroxydeoxycorticosterone (19,21-dihydroxy-4-pregnen-3,20-dione), 19-oxo-deoxycorticosterone (21-hydroxy-4-pregnen-3,19,20-trione), and 19-oic-deoxycorticosterone (19-oic-21-hydroxy-4-pregnen-3,20-dione) from precursor deoxycorticosterone by adrenal glands obtained from intact rats and from rats undergoing adrenal regeneration was demonstrated. These metabolites were isopolar with corresponding authentic steroid standards on thin layer chromatography, gas chromatography, and high pressure liquid chromatography. They were further characterized by either mass spectrometry or gas chromatography-mass spectrometry. Therefore, rat adrenals have the enzymes required to convert deoxycorticosterone to 19-hydroxydeoxycorticosterone, 19-oxo-deoxycorticosterone, and 19-oic-deoxycorticosterone; however, rat adrenals do not convert deoxycorticosterone or any of the oxygenated metabolites to 19-nor-deoxycorticosterone (21-hydroxy-19-nor-4-pregnen-3,20-dione). It is possible, however, that 19-nor-deoxycorticosterone is formed at peripheral sites from the oxygenated deoxycorticosterone precursors.
+
+[PMID 1814021] Comparison of the mineralocorticoid activity of 19-oxygenated and 19-nor derivatives of deoxycorticosterone
+1991
+19-Nordeoxycorticosterone (19-nor-DOC) is a mineralocorticoid with several unresolved physiologic questions. First, is 19-nor-DOC synthesized in the kidney from a circulating adrenocortical precursor (19-oicdeoxycorticosterone [19-oic-DOC] or 19-oxodeoxycorticosterone [19-oxo-DOC])? Second, does 19-nor-DOC, synthesized in the kidney, have mineralocorticoid activity or is it excreted in the urine without biologic activity? To answer this question, we administered two of the putative 19-nor-DOC precursors (19-oxo-DOC and 19-oic-DOC) to adrenalectomized rats and measured the formation of 19-nor-DOC and bioactivity as the urinary Na+ to K+ ratio. Each of the 10-microgram steroid treatments produced an elevation of urinary-free 19-nor-DOC (0 to 2 hours), whereas at the 1-micrograms dose only 19-oic-DOCA produced an increased UF 19-nor-DOC. None of the treatments led to an increase of conjugated 19-nor-DOC except 10 microgram 19-oic-DOCA. Increased mineralocorticoid activity (decreased urinary Na+ to K+ ratio) was produced by aldosterone, 1 and 10 micrograms 19-nor-DOC, and 10 micrograms 19-oic-DOCA over the same time period. An anti-mineralocorticoid effect (increased urinary Na+ to K+ ratio) was produced by 1 microgram 19-oxo-DOC. Urinary-free 19-nor-DOC, but not conjugated 19-nor-DOC, correlated with the urinary mineralocorticoid effect (decreased Na+ to K+ ratio). These data support the contention that 19-oic-DOC is the circulating 19-nor-DOC precursor and that, at least at the higher dose, it has a mineralocorticoid action on the kidney.(ABSTRACT TRUNCATED AT 250 WORDS)

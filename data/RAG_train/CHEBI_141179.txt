@@ -1,0 +1,24 @@
+Compound: 17beta-hydroxy-5-androsten-3-one
+ChEBI ID: CHEBI:141179
+PubChem CID: 11987715
+
+== Chemical properties ==
+IUPAC Name: (8R,9S,10R,13S,14S,17S)-17-hydroxy-10,13-dimethyl-1,2,4,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C19H28O2
+Molecular Weight: 288.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CC=C4[C@@]3(CCC(=O)C4)C
+InChI: InChI=1S/C19H28O2/c1-18-9-7-13(20)11-12(18)3-4-14-15-5-6-17(21)19(15,2)10-8-16(14)18/h3,14-17,21H,4-11H2,1-2H3/t14-,15-,16-,17-,18-,19-/m0/s1
+InChIKey: SEDRVEWTPRTLOZ-DYKIIFRCSA-N
+XLogP: 3.2
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+An androstanoid having a double bond at C-5, an oxo group at C-3 and a hydroxy group with β-configuration at C-17.
+
+== Literature on 17beta-hydroxy-5-androsten-3-one ==
+
+[PMID 136165] Cyanoketone-induced inhibition of adrenal 3beta-hydroxy-delta5-steroid oxidoreductase activity in female and male rats in vitro
+1976
+The inhibition of adrenal 3beta-hydroxy-delta5-steroid oxidoreductase activity was studied in vitro 24 h after a single injection of 2alpha-cyano-4,4, 17alpha-trimethyl-5-androsten-17beta-ol-3-one (cyanoketone) to adult castrated female and male rats. The inhibition of conversion of dehydroepiandrosterone to androstenedione was about 80% as compared to adult castrated control rats treated with vehicle only. The conversion of pregnenolone to progesterone and 5alpha-pregnane-3,20-dione was also inhibited by about 80% in both sexes. The activity of 3beta-hydroxy-delta5-steroid oxidoreductase was greater both in cyanoketone-treated and control female rats as compared to the corresponding male rats. It is concluded that the previously observed sex differences in response to cyanoketone in vivo are not due to a lower affinity of male adrenal 3beta-hydroxy-delta5-steroid oxidoreductase to cyanoketone.

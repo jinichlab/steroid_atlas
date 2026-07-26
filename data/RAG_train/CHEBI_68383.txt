@@ -1,0 +1,18 @@
+Compound: stigmasterol 3-O-beta-D-glucoside
+ChEBI ID: CHEBI:68383
+PubChem CID: 6602508
+
+== Chemical properties ==
+IUPAC Name: (2R,3R,4S,5S,6R)-2-[[(3S,8S,9S,10R,13R,14S,17R)-17-[(E,2R,5S)-5-ethyl-6-methylhept-3-en-2-yl]-10,13-dimethyl-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl]oxy]-6-(hydroxymethyl)oxane-3,4,5-triol
+Molecular Formula: C35H58O6
+Molecular Weight: 574.8
+SMILES: CC[C@H](/C=C/[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)C)C)C(C)C
+InChI: InChI=1S/C35H58O6/c1-7-22(20(2)3)9-8-21(4)26-12-13-27-25-11-10-23-18-24(14-16-34(23,5)28(25)15-17-35(26,27)6)40-33-32(39)31(38)30(37)29(19-36)41-33/h8-10,20-22,24-33,36-39H,7,11-19H2,1-6H3/b9-8+/t21-,22-,24+,25+,26-,27+,28+,29-,30-,31+,32-,33-,34+,35-/m1/s1
+InChIKey: VWDLOXMZIGUBKM-AUGXRQBFSA-N
+XLogP: 7
+TPSA: 99.4
+H-Bond Donors: 4
+H-Bond Acceptors: 6
+
+== ChEBI definition ==
+A  steroid saponin that is (3β,22<i>E</i>)-stigmasta-5,22-dien-3-ol attached to a β-<small>D</small>-glucopyranosyl residue at position 3 via a glycosidic linkage. It is isolated from   <em>Symplocos lancifolia</em>.

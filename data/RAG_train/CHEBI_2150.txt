@@ -1,0 +1,40 @@
+Compound: 5beta-dihydrotestosterone
+ChEBI ID: CHEBI:2150
+PubChem CID: 11302
+
+== Chemical properties ==
+IUPAC Name: (5R,8R,9S,10S,13S,14S,17S)-17-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C19H30O2
+Molecular Weight: 290.4
+SMILES: C[C@]12CCC(=O)C[C@H]1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@@H]4O)C
+InChI: InChI=1S/C19H30O2/c1-18-9-7-13(20)11-12(18)3-4-14-15-5-6-17(21)19(15,2)10-8-16(14)18/h12,14-17,21H,3-11H2,1-2H3/t12-,14+,15+,16+,17+,18+,19+/m1/s1
+InChIKey: NVKAWKQGWWIWPM-MISPCMORSA-N
+XLogP: 3.7
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A 17β-hydroxyandrostan-3-one that has β- configuration at position 5. It is a metabolite of testosterone.
+
+== Literature on 5beta-dihydrotestosterone ==
+
+[PMID 12441187] The vasodepressor effect of androgens in pithed rats: potential role of calcium channels
+2002
+Estrogens induce vasodilatation and/or hypotension in several experimental models, probably by a blockade of calcium currents. However, very little is known about the potential cardiovascular effects of androgens. We have previously shown that 5 beta-reduced androgens are more potent vasorelaxants than their precursors (delta 4-3 keto), 5-reduced progestins and 17beta-estradiol. The present study set out to investigate if this vasorelaxant effect of 5-reduced androgens is operative in vivo in the analysis of the potential vasodepressor effect of these compounds in vagosympathectomized, pithed rats. After increasing diastolic blood pressure (DBP) by a continuous infusion of norepinephrine (0.059 micromol x kg(-1)min(-1)), i.v. bolus injections of 3 alpha-hydroxy-5 beta-androstan-17-one (etiocholanolone), 5 beta-dihydrotestosterone (5 beta-DHT), and its isomer 5 alpha-dihydrotestosterone (5 alpha-DHT) (5-25 micromol x kg(-1) each) produced, separately, dose-dependent vasodepressor responses. These responses were biphasic: an immediate fall in DBP (reaching the nadir within 1.7 min) was followed by a further slow decrease that reached a maximum between 80 and 100 min after steroid administration. The order of potency of androgens in decreasing DBP was: 5 beta-DHT>5 alpha-DHT=etiocholanolone for the short-lasting response and 5 alpha-DHT>5 beta-DHT>or=etiocholanolone for the longer lasting response. Importantly, the same doses of these compounds produced no significant changes in heart rate. Moreover, 5 beta-DHT significantly antagonized the vasopressor responses to methyl 1,4-dihydro-2,6-dimethyl-3-nitro-4-(2-trifluromethylphenyl)-pyridine-5-carboxylate (Bay K 8644) with a blocking profile similar to that of nifedipine (NIF). This finding suggests that a blockade of voltage-operated calcium channels may be involved in androgen-induced hypotension.
+
+[PMID 8321087] Effects of androgens on isolated rat uterus
+1993
+The 5 alpha- and 5 beta-dihydrotestosterone (DHT) androgens relax KCl-induced tonic contraction in rat uterus, in a dose-dependent way. The 5 alpha and 5 beta-DHT relaxing effect is counteracted by CaCl2 (0.1-10 mM). The 5 alpha-DHT, but not the 5 beta-DHT, effect was reduced by cycloheximide (10 micrograms/ml) and by actinomycin D (5 micrograms/ml). Flutamide at 10(-6) M shifted the effect of 5 alpha-DHT to the right. However, other doses of flutamide or cyproterone acetate did not modify the effect of both androgens. We suggest a non-genomic effect of 5 alpha-DHT and 5 beta-DHT in rat uterus contraction but that intracellular and genomic actions play a part in the relaxing effect of 5 alpha-DHT.
+
+[PMID 6735145] The effect of 5 alpha-dihydrotestosterone and 5 beta-dihydrotestosterone on erythropoiesis of the newt, Triturus cristatus carnifex (Laur.)
+1984
+The erythropoietic effects of 5 alpha-dihydrotestosterone (5 alpha-DHT) and 5 beta-dihydrotestosterone (5 beta-DHT) were compared in the newt, Triturus cristatus carnifex (Laur.). In normal animals, 5 beta-DHT was more active than 5 alpha-DHT in increasing the number of circulating erythrocytes. In animals rendered completely anemic, only 5 beta-DHT was effective. The biochemical parameters of delta-aminolevulinic acid synthase and delta-aminolevulinic acid dehydratase of new basophilic erythroblasts, and incorporation of labeled glycine into heme and globin of new polychromatic erythroblasts were enhanced by 5 beta-DHT. The results are discussed with reference to a direct erythropoietin-independent action of 5 beta-DHT on erythroid stem cells.
+
+[PMID 9658336] Regulation of aromatase, 5 alpha- and 5 beta-reductase in primary cell cultures of developing zebra finch telencephalon
+1998
+Sex steroids act on the developing and adult telencephalon of songbirds to organize and activate the neural circuits required for the learning and production of song. Presumably, the availability of active androgens and estrogens to steroid-sensitive neural circuits controlling song is modulated by the local expression of androgen-metabolizing enzymes. Two enzymes, 5 alpha- and 5 beta-reductase, are expressed widely in the songbird telencephalon, as they are in the telencephalons of other avian species. These enzymes convert circulating testosterone (T) into the active and inactive metabolites, 5 alpha- and 5 beta-dihydrotestosterone (DHT), respectively. A third enzyme, aromatase, converts T into estradiol (E2) and is expressed at unusually high levels in several regions of the songbird telencephalon. In many tissues, including the brain, the regulation of expression of one or more of these enzymes can be a critical feature of their ability to control the production of active sex steroids. We have used primary cell cultures to examine factors that might regulate the expression of these enzymes in developing zebra finch telencephalon. Cultures were treated for 0-72 h with sex steroids (T, E2, 5 alpha-DHT, and 5 beta-DHT) or with dibutyryl cAMP. Afterward, activities of aromatase, 5 alpha- and 5 beta-reductase were determined or total RNA was extracted for Northern analysis. Treatments with cAMP increased both aromatase activity and aromatase mRNA levels by 220%. E2 significantly reduced aromatase activity by an average 65%, whereas 5 alpha- and 5 beta-DHT had no effect on aromatase activity. Compared to untreated controls, E2 treatment decreased aromatase mRNA levels by 56%. None of these treatments consistently affected either 5 alpha- and 5 beta-reductase activities. These results suggest that telencephalic E2 may regulate its own synthesis by repression of aromatase expression, whereas factors that upregulate cAMP in the telencephalon can increase the local concentrations of E2.
+
+[PMID 7193953] Induction of anovulatory sterility by neonatal treatment with 5 beta-dihydrotestosterone in female rats
+1981
+Wistar female rats were injected with testosterone (T) or 5 beta-dihydrotestosterone (5 beta-DHT) for the first 5 days of life. Neonatal treatment with 1 mg of T resulted in anovulatory persistent oestrous syndrome in 100% of the animals. In the females injected with 1 mg of 5 beta-DHT, 74% of the treated rats became sterile at 120 days of age. In addition, 0.5 mg 5 beta-DHT was also effective in inducing anovulatory persistent oestrus; the incidence of sterility was 10 and 80% at 60 and 120 days of age, respectively. When daily dose of 5 beta-DHT was reduced to 0.1 mg, however, only 33% of the rats resulted in sterility. These results suggest that the free form of T and non-aromatizable androgen, 5 beta-DHT, can permanently suppress the development of female type of neuroendocrine regulation. The possible participation of the process other than the central aromatization in androgenization will be discussed.

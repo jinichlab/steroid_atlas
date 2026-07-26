@@ -1,0 +1,32 @@
+Compound: 22-deoxyecdysone
+ChEBI ID: CHEBI:232767
+PubChem CID: 21124802
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,5R,9R,10R,13R,14S,17R)-2,3,14-trihydroxy-17-[(2R)-6-hydroxy-6-methylheptan-2-yl]-10,13-dimethyl-2,3,4,5,9,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-6-one
+Molecular Formula: C27H44O5
+Molecular Weight: 448.6
+SMILES: C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@]2([C@@]1(CC[C@H]3C2=CC(=O)[C@H]4[C@@]3(C[C@@H]([C@@H](C4)O)O)C)C)O
+InChI: InChI=1S/C27H44O5/c1-16(7-6-10-24(2,3)31)17-9-12-27(32)19-13-21(28)20-14-22(29)23(30)15-25(20,4)18(19)8-11-26(17,27)5/h13,16-18,20,22-23,29-32H,6-12,14-15H2,1-5H3/t16-,17-,18+,20+,22-,23+,25-,26-,27-/m1/s1
+InChIKey: KMHXXYXMOIOEMU-BXVOCSMGSA-N
+XLogP: 2.8
+TPSA: 98
+H-Bond Donors: 4
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A 3β-hydroxy steroid that is ecdysone in which the hydroxy group at position 22 is replaced by a hydrogen.
+
+== Literature on 22-deoxyecdysone ==
+
+[PMID 12177427] Molecular and biochemical characterization of two P450 enzymes in the ecdysteroidogenic pathway of Drosophila melanogaster
+2002
+Five different enzymatic activities, catalyzed by both microsomal and mitochondrial cytochrome P450 monooxygenases (CYPs), are strongly implicated in the biosynthesis of ecdysone (E) from cholesterol. However, none of these enzymes have been characterized completely. The present data show that the wild-type genes of two members of the Halloween family of embryonic lethals, disembodied (dib) and shadow (sad), code for mitochondrial cytochromes P450 that mediate the last two hydroxylation reactions in the ecdysteroidogenic pathway in Drosophila, namely the C22- and C2-hydroxylases. When sad (CYP315A1) is transfected into Drosophila S2 cells, the cells metabolize 2-deoxyecdysone (2dE) to E and the [3H]ketotriol (2,22-dideoxyecdysone) to 22-deoxyecdysone. In contrast, dib (CYP302A1) is responsible for the conversion of the [3H]ketotriol to [3H]2dE. When cells are transfected with both dib and sad, they metabolize the [3H]ketotriol to [3H]E in high yield. The expression of sad and dib is concentrated within the individual segments of the developing epidermis when there is a surge of ecdysteroid midway through embryogenesis. This result occurs before the ring gland has developed and suggests that the embryonic epidermis is a site of ecdysteroid biosynthesis. This pattern then diminishes, and, during late embryogenesis, expression of both genes is concentrated in the prothoracic gland cells of the developing ring gland. Expression of dib and sad continues to be localized in this endocrine compartment during larval development, being maximal in both the late second and third instar larvae, about the time of the premolt peaks in the ecdysteroid titer.
+
+[PMID 10561604] Biotransformations of putative phytoecdysteroid biosynthetic precursors in tissue cultures of Polypodium vulgare
+1999
+Incubation of calli and prothalli of Polypodium vulgare with different tritium-labelled ecdysteroids has led to modification of some previous assumptions about the biosynthesis of ecdysteroids in plants. Thus, 25-deoxy-20-hydroxyecdysone was transformed efficiently in both tissues into 20-hydroxyecdysone (20E), but no 25-deoxyecdysteroids such as pterosterone and inokosterone were formed. Likewise, incubation of 2-deoxyecdysone (2dE) produced exclusively ecdysone (E) and 20E, indicating a high 2-hydroxylase activity in both tissues, despite calli not producing phytoecdysteroids. This 2-hydroxylation was also evident in the transformation of 2,22-dideoxyecdysone (2,22dE) into 22-deoxyecdysone (22dE). Different ecdysteroids that do not occur in P. vulgare were formed in the incubation of 3-dehydro-2,22,25-trideoxyecdysone (3D2,22,25dE) by 3alpha-reduction and 3beta-reduction and 25-hydroxylation processes. The fact that 22,25-dideoxyecdysone and 22dE were the only 2-hydroxylated products formed in this case suggests that only compounds bearing a 3beta-hydroxyl group are substrates for the 2-hydroxylase. Surprisingly, 22-hydroxylation was never observed with either 2,22dE or 3D2,22,25dE, raising the possibility that it could occur at an early step in the biosynthetic pathway. In this respect, labelled 22R-hydroxycholesterol was efficiently converted into E and 20E, whereas 22S-hydroxycholesterol was not transformed into ecdysteroids, because of its unsuitable configuration at C22. Finally, the conversion of 25-hydroxycholesterol into E and 20E was greatly enhanced after thermal treatment of prothalli which induces the release of previously stored ecdysteroids. Thus, P. vulgare prothalli and calli appear to be particularly suitable models for the study of ecdysteroid biosynthesis and its regulation in plants.
+
+[PMID 27520328] Isolation and identification of the metabolites of 22,25-dideoxyecdysone from cockroach fat body cultures
+1978
+Hydroxylation and conjugation were the principal pathways of metabolism of 22,25-dideoxyecdysone in cockroach fat body cultures. The major metabolite isolated and identified was the tetrahydroxy steroid 22-deoxyecdysone; other exdysteroids isolated, in order of decreasing quantities, were 22-deoxy-26-hydroxyecdysone, 22,25-dideoxy-26-hydroxyecdysone, and 22-deoxy-20-hydroxyecdysone. Cockroach fat body from late-instar nymphs appears to lack the mechanism for hydroxylating at C-22. Radioanalyses of the material obtained from enzymic hydrolysis of the conjugate fraction showed 65, 15 and 20% of tetraols, pentaols, and unhydrolyzed conjugates respectively, and no 22,25-dideoxyecdysone. An azasteroid and two nonsteroidal amines that effectively inhibit the activity of 22,25-dideoxyecdysone in the cockroach leg regenerate-fat body culture system enhanced the metabolism of 22,25-dideoxyecdysone, decreased the quantity of the pentaol fraction present, and caused an increase or accumulation of the tetraol and conjugate fractions in the fat body culture system.

@@ -1,0 +1,24 @@
+Compound: 15beta-hydroxyprogesterone
+ChEBI ID: CHEBI:59418
+PubChem CID: 23239834
+
+== Chemical properties ==
+IUPAC Name: (8R,9S,10R,13S,14S,15R,17S)-17-acetyl-15-hydroxy-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C21H30O3
+Molecular Weight: 330.5
+SMILES: CC(=O)[C@H]1C[C@H]([C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C)O
+InChI: InChI=1S/C21H30O3/c1-12(22)17-11-18(24)19-15-5-4-13-10-14(23)6-8-20(13,2)16(15)7-9-21(17,19)3/h10,15-19,24H,4-9,11H2,1-3H3/t15-,16+,17-,18-,19-,20+,21-/m1/s1
+InChIKey: LEWIUXKKQXGQRR-XCEZYFHXSA-N
+XLogP: 2.7
+TPSA: 54.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+Progesterone in which the hydrogen at the 15β position is substituted by a hydroxy group.
+
+== Literature on 15beta-hydroxyprogesterone ==
+
+[PMID 15178459] Identification of monohydroxy progesterones produced by CYP106A2 using comparative HPLC and electrospray ionisation collision-induced dissociation mass spectrometry
+2004
+Two previously uncharacterised products, produced by recombinant CYP106A2 of Bacillus megaterium ATCC 13368 using progesterone as substrate, were identified. For this purpose a combination of comparative HPLC and electrospray ionisation collision induced dissociation mass spectrometry (ESI CID MS) was established and applied for rapid identification of the steroids, which were identified as 11alpha-hydroxyprogesterone and 9alpha-hydroxyprogesterone. The pharmaceutical relevance of these steroids is discussed. Furthermore, the hydroxylation activity was quantified for all monohydroxylation products (15beta-hydroxyprogesterone, 6beta-hydroxyprogesterone, 11alpha-hydroxyprogesterone, and 9alpha-hydroxyprogesterone). The V(max) values for 15beta-hydroxyprogesterone, 6beta-hydroxyprogesterone, 11alpha-hydroxyprogesterone, and 9alpha-hydroxyprogesterone were determined as 337.3+/-43.7, 22.3+/-0.9, 17.5+/-0.9, and 6.5+/-0.3nmol product/min/nmol CYP106A2, respectively.

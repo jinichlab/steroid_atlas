@@ -1,0 +1,18 @@
+Compound: 5beta-pregnane-3,20-dione
+ChEBI ID: CHEBI:30154
+PubChem CID: 92745
+
+== Chemical properties ==
+IUPAC Name: (5R,8R,9S,10S,13S,14S,17S)-17-acetyl-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C21H32O2
+Molecular Weight: 316.5
+SMILES: CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@H]4[C@@]3(CCC(=O)C4)C)C
+InChI: InChI=1S/C21H32O2/c1-13(22)17-6-7-18-16-5-4-14-12-15(23)8-10-20(14,2)19(16)9-11-21(17,18)3/h14,16-19H,4-12H2,1-3H3/t14-,16+,17-,18+,19+,20+,21-/m1/s1
+InChIKey: XMRPGKVKISIQBV-XWOJZHJZSA-N
+XLogP: 4.4
+TPSA: 34.1
+H-Bond Donors: 0
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A C<small><sub>21</sub></small>-steroid that is 5β-pregnane with oxo groups at positions 3 and 20.

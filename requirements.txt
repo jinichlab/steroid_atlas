@@ -22,3 +22,6 @@ h5py>=3.0
 
 # HTTP for the literature audit pipeline
 # (urllib is stdlib; requests is not required)
+
+#FAISS for RAG train
+faiss-cpu

@@ -1,0 +1,28 @@
+Compound: 3-oxo-5beta-cholanate
+ChEBI ID: CHEBI:11867
+PubChem CID: 9548901
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(5R,8R,9S,10S,13R,14S,17R)-10,13-dimethyl-3-oxo-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H37O3-
+Molecular Weight: 373.5
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@H]4[C@@]3(CCC(=O)C4)C)C
+InChI: InChI=1S/C24H38O3/c1-15(4-9-22(26)27)19-7-8-20-18-6-5-16-14-17(25)10-12-23(16,2)21(18)11-13-24(19,20)3/h15-16,18-21H,4-14H2,1-3H3,(H,26,27)/p-1/t15-,16-,18+,19-,20+,21+,23+,24-/m1/s1
+InChIKey: KIQFUORWRVZTHT-OPTMKGCMSA-M
+XLogP: 6.5
+TPSA: 57.2
+H-Bond Donors: 0
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+3-oxo-5beta-cholanate is a bile acid anion. It is a conjugate base of a 3-oxo-5beta-cholanic acid.
+
+== Literature on 3-oxo-5beta-cholanate ==
+
+[PMID 3458705] 3 beta-Hydroxysteroid dehydrogenase of Ruminococcus sp. from human intestinal bacteria
+1986
+Ruminococcus sp. PO1-3 obtained from human intestinal flora is able to reduce dehydrocholate as well as 3-ketoglycyrrhetinate. From this bacterium dehydrocholate- and 3-ketoglycyrrhetinate-reducing activities were purified one thousand-fold together with 3-ketocholanate-reducing and 3-beta-hydroxyglycyrrhetinate (glycyrrhetic acid) oxidizing activities by means of Matrex Red A, Sephadex G-200 and Octyl-Sepharose column chromatography. The purified enzyme catalyzed the reduction of dehydrocholic acid to 3 beta-hydroxy-7,12-diketocholanic acid and of 3-ketocholanic acid to 3 beta-hydroxycholanic acid. Studies on substrate specificity revealed that the enzyme had absolute specificity for the beta-configuration of a hydroxyl group at the 3 position of bile acid and steroids having no double bond in the A/B ring. This enzyme was neither beta-hydroxysteroid dehydrogenase [EC 1.1.1.51] nor 3 beta-hydroxy-delta 5-steroid dehydrogenase [EC 1.1.1.145], but a novel type of enzyme, defined as 3 beta-hydroxysteroid dehydrogenase.
+
+[PMID 7129365] Stereospecific reduction of 3- and 7-oxo groups of oxocholanic acids in isolated perfused rat liver
+1982
+The metabolism of 3- and 7-oxo groups of oxocholanic acids was studied in isolated perfused rat liver. The metabolites in bile were determined enzymatically using 3 alpha- and 7 alpha-hydroxysteroid dehydrogenases. The 3-oxo group of all the oxocholanic acids tested (dehydrocholate, glycodehydrocholate, taurodehydrocholate, 3,7-dioxocholanate, 3,12-dioxocholanate and tauro-7,12-dihydroxy-3-oxocholanate) was reduced stereospecifically to 3 alpha-hydroxy metabolites. On the other hand the 7-oxo group was excreted partially unchanged (30% of the dose) and partially as 7 alpha-hydroxy metabolites (6-10% of the dose). The remainder of the 7-oxo group was concluded to have been reduced to 7 beta-hydroxy metabolites. These results indicate that the 7-oxo group of oxocholanic acids is reduced predominantly to 7 beta-hydroxy metabolites in rats rather than to 7 alpha-hydroxy metabolites as found in man.

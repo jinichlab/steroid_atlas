@@ -1,0 +1,32 @@
+Compound: 21-dehydrocortisol
+ChEBI ID: CHEBI:78595
+PubChem CID: 225755
+
+== Chemical properties ==
+IUPAC Name: 2-[(8S,9S,10R,11S,13S,14S,17R)-11,17-dihydroxy-10,13-dimethyl-3-oxo-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthren-17-yl]-2-oxoacetaldehyde
+Molecular Formula: C21H28O5
+Molecular Weight: 360.4
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)C=O)O)C)O
+InChI: InChI=1S/C21H28O5/c1-19-7-5-13(23)9-12(19)3-4-14-15-6-8-21(26,17(25)11-22)20(15,2)10-16(24)18(14)19/h9,11,14-16,18,24,26H,3-8,10H2,1-2H3/t14-,15-,16-,18+,19-,20-,21-/m0/s1
+InChIKey: JIELFMXLFHFDRT-VWUMJDOOSA-N
+XLogP: 1.9
+TPSA: 91.7
+H-Bond Donors: 2
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A C<small><sub>21</sub></small>-steroid that is cortisol in which the 21-hydroxy group has been oxidised to the corresponding aldehyde.
+
+== Literature on 21-dehydrocortisol ==
+
+[PMID 170263] The stereospecificity of the enzymic reduction of 21-dehydrocortisol by NADH
+1975
+(21R)-[21-3H]cortisol and (21S)-[21-3H]cortisol were synthesized by reduction of 21-dehydrocortisol by NADH in the presence of 21-hydroxysteroid dehydrogenase. The stereochemistry at carbon 21 was established after cleaving the side chain and oxidizing the resulting two epimers of tritiated glycolate with glycolate oxidase of known (2-pro-S) stereospecificity. From the distribution of radioactivity in the water and glyoxylate produced in this reaction, it was concluded that the reaction of 21-dehydrocortisol with (4S)-[4-3H]NADH catalyzed by 21-hydroxysteroid dehydrogenase results in a transfer of tritium from the 4S position of the nucleotide to form (21S)-[21-3H]cortisol, and that (21R)-[21-3H]cortisol resulted from the enzyme-catalyzed reduction of 21-dehydro[21-3H]cortisol with NADH. Nuclear magnetic resonance studies on both epimers at position 21 of [21-2H]cortisol and of [21-2H]cortisone prepared enzymically identify the transferring 21-pro-S hydrogen as the relatively downfield of the two 21-hydrogen atoms.
+
+[PMID 7098476] Oxidation of cortisol to hydroxy acid metabolites by liver cytosol
+1982
+Cytosols (post-microsomal supernatants) prepared from rat, hamster and mouse livers oxidized cortisol to 11 beta, 17, 20-trihydroxy-3-oxo-pregn-4-en-21-oic acids. Mouse liver enzymes yielded over 90% 20 alpha-hydroxy epimer from cortisol, 21-dehydrocortisol (11 alpha, 17-dihydroxy-3,20-dioxo-pregn-4-en-21-aldehyde), and 20 alpha-isocortisol (11 alpha, 17, 20 alpha-trihydroxy-3-oxo-pregn-4-en-21-aldehyde). The 20 beta-epimer of isocortisol yielded both 20 alpha- and 20 beta-hydroxy acid. Rat and hamster liver cytosols converted, 21-dehydrocortisol and 20 alpha-isocortisol to both 20 alpha and 20 beta-hydroxy acids, with the former predominant. The hamster enzyme oxidized 20 beta-isocortisol mainly to the 20 beta-hydroxy acid. The results support our conclusion that both 17 alpha-hydroxy and 17-deoxy corticosteroids are oxidized to hydroxy acids by similar pathways and that isosteroids are obligatory intermediates.
+
+[PMID 7439163] Induction of plasma proangiotensin by steroid hormones in nephrectomized rats
+1980
+The response of plasma proangiotensin to various steroids was studied in bilaterally nephrectomized rats. In male animals, estradiol and testosterone increased the proangiotensin level up to 250% and 180% respectively. In female animals, both hormones lead to an increase of proangiotensin up to 220% of the controls, when given at optimal dose. The dose dependence on estradiol and testosterone was about the same in male rats, whereas in female animals the formation of proangiotensin was stimulated by much lower doses of estradiol as compared to testosterone. Adrenalectomy plus nephrectomy reduced the proangiotensin level to 20-30% of the value measured in animals nephrectomized only. Cortisol caused a rapid increase of plasma proangiotensin up to 1000% in adrenalectomized animals. Independent from the adrenal state, the amounts of cortisol necessary to induce proangiotensin were very low as compared to the dose response of other proteins, biosynthesis of which is regulated by cortisol. 21-Dehydrocortisol and aldosterone induced proangiotensin with the same efficiency as cortisol, whereas several other chemically related steroids were less active or inactive. Comparing the biological activity of the various steroids tested, it has to be concluded that the delta 4-ene-3-one structure of ring A, the 11 beta-OH group of ring C and the carbonyl group at C-20 of the ketol side-chain of cortisol are very important with respect to proangiotensin induction. The response of proangiotensin to cortisol, 21-dehydrocortisol and aldosterone could be inhibited by actinomocin D and cycloheximide, whereas the effects of estradiol and testosterone could be reversed by cycloheximide only.

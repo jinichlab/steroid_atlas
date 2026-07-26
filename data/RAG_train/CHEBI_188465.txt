@@ -1,0 +1,33 @@
+Compound: (5alpha,22S)-22-hydroxycholestan-3beta-ol
+ChEBI ID: CHEBI:188465
+PubChem CID: 71357400
+
+== Chemical properties ==
+IUPAC Name: (3S,5S,8R,9S,10S,13S,14S,17R)-17-[(2S,3S)-3-hydroxy-6-methylheptan-2-yl]-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C27H48O2
+Molecular Weight: 404.7
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CC[C@@H](C4)O)C)C)[C@H](CCC(C)C)O
+InChI: InChI=1S/C27H48O2/c1-17(2)6-11-25(29)18(3)22-9-10-23-21-8-7-19-16-20(28)12-14-26(19,4)24(21)13-15-27(22,23)5/h17-25,28-29H,6-16H2,1-5H3/t18-,19-,20-,21-,22+,23-,24-,25-,26-,27+/m0/s1
+InChIKey: IPYACDRNRIVGLI-DMUCZSEVSA-N
+XLogP: 7.8
+TPSA: 40.5
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+(5alpha,22S)-22-hydroxycholestan-3beta-ol is a 3beta-hydroxy steroid, a 22-hydroxy steroid and an oxysterol. It is functionally related to a (5alpha)-cholestan-3beta-ol.
+
+--- RELATED COMPOUND: (5alpha)-cholestan-3beta-ol ---
+No literature found for (5alpha,22S)-22-hydroxycholestan-3beta-ol itself. (5alpha,22S)-22-hydroxycholestan-3beta-ol is functionally related to (5alpha)-cholestan-3beta-ol; the abstracts below are about (5alpha)-cholestan-3beta-ol.
+
+[PMID 19462039] 4Alpha-bromo-5alpha-cholestan-3beta-ol and nor-5alpha-cholestan-3beta-ol derivatives-stereoselective synthesis and hormonal activity in Caenorhabditis elegans
+2009
+We describe the stereoselective synthesis of 4alpha-bromo-5alpha-cholestan-3beta-ol, 21-nor-5alpha-cholestan-3beta-ol, 27-nor-5alpha-cholestan-3beta-ol and 21,27-bisnor-5alpha-cholestan-3beta-ol. In order to clarify the in vivo metabolism of cholesterol, these compounds have been used for feeding experiments in Caenorhabditis elegans. Our preliminary results provide important insights into the metabolism of cholesterol in worms.
+
+[PMID 10094114] Campestanol (24-methyl-5alpha-cholestan-3beta-ol) absorption and distribution in New Zealand White rabbits: effect of dietary sitostanol
+1999
+Campestanol (24-methyl-5alpha-cholestan-3beta-ol) is a naturally occurring plant stanol, structurally similar to cholesterol (5-cholesten-3beta-ol) and widely distributed in vegetable oils consumed in human diets. We measured the absorption and turnover of campestanol by the plasma dual-isotope ratio method and mathematical analysis of specific activity versus time decay curves after simultaneous oral and intravenous pulse-labeling with [3alpha-3H]- and [23-14C]-labeled campestanol, respectively, in New Zealand White (NZW) rabbits: six fed chow and six fed chow with 125 mg/d campestanol and 175 mg/d sitostanol (24-ethyl-5alpha-cholestan-3beta-ol). Plasma concentrations increased insignificantly from 0.08+/-0.01 to 0.09+/-0.01 mg/dL with dietary stanols. The percent campestanol absorption measured by the plasma dual-isotope ratio method after the rabbits were fasted for 6 hours yielded the percent absorption in the absence of competing intestinal sterols and stanols and declined insignificantly from 11.6%+/-3.5% in controls to 8.1%+/-3.7% in the treated rabbit groups. In contrast, the turnover, which measured actual absorption averaged over 24 hours, increased from 0.12+/-0.05 to 0.37+/-0.05 mg/d (P < .05) with campestanol and sitostanol added to the diet. However, the actual percent absorption declined from 3% to 0.3% of dietary intake with the campestanol and sitostanol-enriched diet. Campestanol pool sizes, although remaining small, increased slightly from 1.1+/-0.4 to 2.5+/-1.5 mg. The removal constant (KA) from pool A (MA) did not change significantly with added dietary campestanol and sitostanol (KA= -0.040+/-0.005 v -0.037+/-0.007 d(-1)). The results demonstrate small campestanol plasma concentrations and body pools even when the rabbits consumed substantial amounts because (1) intestinal absorption was limited and (2) was further reduced by competing dietary sitostanol, and (3) campestanol was removed rapidly from the body. Thus, campestanol, which shares the same basic structure and intestinal absorption pathway with cholesterol, does not accumulate when fed, and may be incorporated into the diet to block cholesterol absorption.
+
+[PMID 16233402] Purification and some properties of cholesterol oxidase stable in detergents from gamma-proteobacterium Y-134
+2003
+Cholesterol oxidase (CHO) with high stability in detergents was found from an isolated strain, Y-134, belonging to the gamma-subclass of Proteobacteria. CHO production reached its maximum by incubation at 30 degrees C for 12 d. It was purified from cell-free extract prepared by mixing the cells with 0.4% Triton X-100. The absorption spectrum of the purified enzyme exhibited maxima at 274 and 410 nm, and a shoulder at 330 nm. The molecular mass was 115 kDa with two identical subunits of 58 kDa. The enzyme oxidized cholest-5-en-3beta-ol (cholesterol) and 5alpha-cholestan-3beta-ol (dihydrocholesterol) at a high reaction rate, and the K(m) value for cholesterol was 65 microM. The stability of the enzyme was higher than other CHOs in nonionic detergents with high values of hydrophilelipophile balance (HLB) such as Triton X-450 and sodium cholate. NH2-terminal sequence analysis showed a high similarity to CHO from Burkholderia cepacia, but not to CHOs from Streptomyces or Brevibacterium.

@@ -1,0 +1,40 @@
+Compound: (17Z)-protosta-17(20),24-dien-3beta-ol
+ChEBI ID: CHEBI:62457
+PubChem CID: 53239772
+
+== Chemical properties ==
+IUPAC Name: (3S,5R,8S,9S,10R,13S,14S,17Z)-4,4,8,10,14-pentamethyl-17-(6-methylhept-5-en-2-ylidene)-1,2,3,5,6,7,9,11,12,13,15,16-dodecahydrocyclopenta[a]phenanthren-3-ol
+Molecular Formula: C30H50O
+Molecular Weight: 426.7
+SMILES: CC(=CCC/C(=C\1/CC[C@]2([C@H]1CC[C@@H]3[C@@]2(CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C)/C)C
+InChI: InChI=1S/C30H50O/c1-20(2)10-9-11-21(3)22-14-18-29(7)23(22)12-13-25-28(6)17-16-26(31)27(4,5)24(28)15-19-30(25,29)8/h10,23-26,31H,9,11-19H2,1-8H3/b22-21-/t23-,24-,25-,26-,28-,29-,30-/m0/s1
+InChIKey: CKYVHRSYUPJCLG-PTZNGALWSA-N
+XLogP: 9.3
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A 3β-hydroxy steroid having an <em>ent</em>-dammarane skeleton with a double bond at C-24 and a <i>Z</i>-double bond at C-17(20).
+
+== Literature on (17Z)-protosta-17(20),24-dien-3beta-ol ==
+
+[PMID 42106134] Single-site amino acid residue mutation reshapes the characteristics of double bond positions for protostadienol-type triterpenols
+2026
+Protostadienol-type tetracyclic triterpenes, characterized by a rare chair-boat-chair (C-B-C) cyclized sterol-type backbone, serve as high-value pharmaceutical precursors due to their positionally isomeric double bonds. Plant derived-protostane triterpenoids have different skeletons at the double bond positions from fungal protostane triterpenoids. The characteristic mechanisms of double bond positions for the two types of protostane-type triterpenols remain unknown. Our previous research has shown that T726 in AoPDS is the key residue for plant protostadienol synthase, and mutating at this site can reshape the function of the other four-ring C-B-C type OSC enzymes, producing plant protostadienol. In this study, we constructed an F726 saturation mutagenesis library based on AoCAS. Strikingly, the F726 N mutant simultaneously produced both Δ13(17) and Δ17(20)-protostadienols. Mechanistic studies identified N726 as a general base deprotonating the protosteryl cation to yield divergent products. Homologous mutations X →N in other types of C-B-C OSCs revealed consistent functional reshaping results for the hybrid product of two double bond positions. This work achieves the first reprogramming of a plant OSC to produce fungal-specific Δ17(20)-protostadienol, overcoming natural biosynthetic constraints. Our findings establish a basis for precise triterpenoid biosynthesis and efficient pharmaceutical precursor preparation.
+
+[PMID 19216560] Protostadienol biosynthesis and metabolism in the pathogenic fungus Aspergillus fumigatus
+2009
+Details of the fungal biosynthetic pathway to helvolic acid and other fusidane antibiotics remain obscure. During product characterization of oxidosqualene cyclases in Aspergillus fumigatus, we found the long-sought cyclase that makes (17Z)-protosta-17(20),24-dien-3beta-ol, the precursor of helvolic acid. We then identified a gene cluster encoding the pathway to helvolic acid, which is controlled by a transcription regulator (LaeA) associated with fungal virulence. Evidence regarding the evolutionary origin and taxonomic distribution of fusidane biosynthesis is also presented.
+
+[PMID 19951700] Protostadienol synthase from Aspergillus fumigatus: functional conversion into lanosterol synthase
+2010
+Oxidosqualene:protostadienol cyclase (OSPC) from the fungus Aspergillus fumigatus, catalyzes the cyclization of (3S)-2,3-oxidosqualene into protosta-17(20)Z,24-dien-3beta-ol which is the precursor of the steroidal antibiotic helvolic acid. To shed light on the structure-function relationship between OSPC and oxidosqualene:lanosterol cyclase (OSLC), we constructed an OSPC mutant in which the C-terminal residues (702)APPGGMR(708) were replaced with (702)NKSCAIS(708), as in human OSLC. As a result, the mutant no longer produced the protostadienol, but instead efficiently produced a 1:1 mixture of lanosterol and parkeol. This is the first report of the functional conversion of OSPC into OSLC, which resulted in a 14-fold decrease in the V(max)/K(M) value, whereas the binding affinity for the substrate did not change significantly. Homology modeling suggested that stabilization of the C-20 protosteryl cation by the active-site Phe701 through cation-pi interactions is important for the product outcome between protostadienol and lanosterol.
+
+[PMID 19415934] Biosynthesis of steroidal antibiotic fusidanes: functional analysis of oxidosqualene cyclase and subsequent tailoring enzymes from Aspergillus fumigatus
+2009
+Three putative oxidosqualene cyclase (OSC) genes exist in the genome of the fungus Aspergillus fumigatus that produces a steroidal antibiotic, helvolic acid. One of these genes, Afu4g14770, designated AfuOSC3, is clustered with genes of cytochrome P450 monooxygenases (P450s), a short-chain dehydrogenase/reductase (SDR), and acyltransferases, which presumably function in triterpene tailoring steps, suggesting that this gene cluster codes for helvolic acid biosynthesis. AfuOSC3 was PCR amplified from A. fumigatus IFO8866 genomic DNA and expressed in yeast. The yeast transformant accumulated protosta-17(20)Z,24-dien-3beta-ol, an established precursor for helvolic acid. Its structural isomer, (20R)-protosta-13(17),24-dien-3beta-ol, was also isolated from the transformed yeast. To further identify the function of triterpene tailoring enzymes, four P450 genes (CYP5081A1-D1) and a SDR gene (AfuSDR1) in the cluster were each coexpressed with AfuOSC3 in yeast. As a result, coexpression of AfuSDR1 gave a 3-keto derivative of protostadienol. On the other hand, coexpression with CYP5081A1 gave protosta-17(20)Z,24-diene-3beta,29-diol and protosta-17(20)Z,24-dien-3beta-ol-29-oic acid. These metabolites are in well accord with the oxidative modification involved in helvolic acid biosynthesis. AfuSDR1 and CYP5081A1 presumably function together to catalyze demethylation of C-29 methyl group. These results provided a firm ground for identification of the present gene cluster to be involved in helvolic acid biosynthesis.
+
+[PMID 34072640] Identification of an Oxidosqualene Cyclase Gene Involved in Steroidal Triterpenoid Biosynthesis in <i>Cordyceps farinosa</i>
+2021
+Various fungi including Cordyceps farinosa, an entomopathogenic fungus, can produce steroidal triterpenoids. Protostadienol (protosta-17(20)Z,24-dien-3β-ol) is a precursor of steroidal triterpenoid compounds. To identify oxidosqualene cyclase (OSC) gene candidates involved in triterpenoid biosynthesis, genome mining was performed using Illumina sequencing platform. In the sequence database, two OSC genes, CfaOSC1 and CfaOSC2, in the genome of C. farinosa were identified. Predicted amino-acid sequences of CfaOSC2 shared 66% similarities with protostadienol synthase (OSPC) of Aspergillus fumigatus. Phylogenetic analysis showed a clear grouping of CfaOSC2 in the OSPC clade. Function of CfaOSC2 was examined using a yeast INVSc1 heterologous expression system to endogenously synthesize 2,3-oxidosqualene. GC-MS analysis indicated that CfaOSC2 produced protosta-13(17),24-dien-3β-ol and protostadienol at a 5:95 ratio. Our results demonstrate that CfaOSC2 is a multifunctional triterpene synthase yielding a predominant protostadienol together with a minor triterpenoid. These results will facilitate a greater understanding of biosynthetic mechanisms underlying steroidal triterpenoid biosynthesis in C. farinosa and other fungi.

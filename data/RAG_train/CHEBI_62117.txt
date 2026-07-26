@@ -1,0 +1,40 @@
+Compound: 6beta-hydroxyprogesterone
+ChEBI ID: CHEBI:62117
+PubChem CID: 200149
+
+== Chemical properties ==
+IUPAC Name: (6R,8S,9S,10R,13S,14S,17S)-17-acetyl-6-hydroxy-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C21H30O3
+Molecular Weight: 330.5
+SMILES: CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2C[C@H](C4=CC(=O)CC[C@]34C)O)C
+InChI: InChI=1S/C21H30O3/c1-12(22)15-4-5-16-14-11-19(24)18-10-13(23)6-8-21(18,3)17(14)7-9-20(15,16)2/h10,14-17,19,24H,4-9,11H2,1-3H3/t14-,15+,16-,17-,19+,20+,21+/m0/s1
+InChIKey: PWCLWZOSAFOXFL-CXICGXRGSA-N
+XLogP: 2.6
+TPSA: 54.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 3-oxo-Δ<small><sup>4</small></sup>-steroid that is progesterone in which the hydrogen at the 6β-position is substituted by a hydroxy group.
+
+== Literature on 6beta-hydroxyprogesterone ==
+
+[PMID 15178459] Identification of monohydroxy progesterones produced by CYP106A2 using comparative HPLC and electrospray ionisation collision-induced dissociation mass spectrometry
+2004
+Two previously uncharacterised products, produced by recombinant CYP106A2 of Bacillus megaterium ATCC 13368 using progesterone as substrate, were identified. For this purpose a combination of comparative HPLC and electrospray ionisation collision induced dissociation mass spectrometry (ESI CID MS) was established and applied for rapid identification of the steroids, which were identified as 11alpha-hydroxyprogesterone and 9alpha-hydroxyprogesterone. The pharmaceutical relevance of these steroids is discussed. Furthermore, the hydroxylation activity was quantified for all monohydroxylation products (15beta-hydroxyprogesterone, 6beta-hydroxyprogesterone, 11alpha-hydroxyprogesterone, and 9alpha-hydroxyprogesterone). The V(max) values for 15beta-hydroxyprogesterone, 6beta-hydroxyprogesterone, 11alpha-hydroxyprogesterone, and 9alpha-hydroxyprogesterone were determined as 337.3+/-43.7, 22.3+/-0.9, 17.5+/-0.9, and 6.5+/-0.3nmol product/min/nmol CYP106A2, respectively.
+
+[PMID 11129951] Cytochrome P450 3A9 catalyzes the metabolism of progesterone and other steroid hormones
+2000
+The catalytic requirements and the role of P450 3A9, a female-specific isoform of CYP3A from rat brain, in the metabolism of several steroid hormones were studied using recombinant P450 3A9 protein. The optimal steroid hormone hydroxylase activities of P450 3A9 required cholate but not cytochrome b5. P450 3A9 was active in the hydroxylation reactions of testosterone, androstenedione, progesterone and dehydroepiandrosterone (DHEA). No activity of P450 3A9 toward cortisol was detectable under our reconstitution conditions. Among all the steroid hormones examined, female-specific P450 3A9 seemed to catalyze most efficiently the metabolism of progesterone, one of the major female hormones, to form three mono-hydroxylated products, 6beta-, 16alpha-, and 21-hydroxyprogesterone. Our data also showed that P450 3A9 can catalyze the formation of a dihydroxy product, 4-pregnen-6beta, 21-diol-3, 20-dione, from progesterone with a turnover number, 1.3 nmol/min/nmol P450. Based on the Vmax/Km values for P450 3A9 using either 21-hydroxprogesterone or 6beta-hydroxyprogesterone as a substrate, 4-pregnen-6beta, 21-diol-3, 20-dione may be formed either by 6beta-hydroxylation of 21-hydroxprogesterone or 21-hydroxylation of 6beta-hydroxyprogesterone. As a major isoform of CYP3A expressed in rat brain, the activities of P450 3A9 toward two major neurosteroids, progesterone and DHEA suggested a possible role for P450 3A9 in the metabolism of neurosteroids.
+
+[PMID 11738559] Studies on Bacillus stearothermophilus. Part 1. Transformation of progesterone to a new metabolite 9,10-seco-4-pregnene-3,9,20-trione
+2001
+When Bacillus stearothermophilus, a thermophilic bacterium isolated from the Kuwaiti desert, was incubated with exogenous progesterone for 24 h, three monohydroxylated metabolites were produced. 20alpha-Hydroxyprogesterone was the major metabolite produced in 60.8 relative percentage yield. The other two monohydroxylated metabolites were identified as 6beta-hydroxyprogesterone and the rare 6alpha-hydroxyprogesterone in 21.0 and 13.6 relative percentage yields, respectively. A new metabolite 9,10-seco-4-pregnene-3,9,20-trione was isolated in 3.7 relative percentage yield. All metabolites were purified by preparative TLC and HPLC followed by their identification using 1H, 13C NMR and other spectroscopic data.
+
+[PMID 9877217] Progesterone 6-hydroxylation is catalysed by cytochrome P-450 in the moderate thermophile Bacillus thermoglucosidasius strain 12060
+1998
+The moderate thermophile, Bacillus thermoglucosidasius, transforms progesterone into four metabolites. These are 6alpha- and 6beta-hydroxyprogesterone, androstenedione and testosterone. This is the first report of bacterial 6alpha-hydroxylation of steroids. The identity of the progesterone metabolites shows that there are three major types of transforming activity in this organism; C-17-C-20 lyase that cleaves the pregnane side chain of the substrate, C-17 oxidoreductase that interconverts the metabolites androstenedione and testosterone, and 6-hydroxylation. 6-hydroxylation activity was purified virtually to homogeneity and was shown to be catalysed by a cytochrome P-450 monooxygenase enzyme. This is the first report of a thermostable cytochrome P-450.
+
+[PMID 10995741] Self-augmentation effect of male-specific products on sexually differentiated progesterone metabolism in adult male rat liver microsomes
+2001
+It is well known that several 3-keto-4-ene steroids such as progesterone and testosterone are metabolized in a gender-specific or -predominant manner by adult rat liver microsomes. In the male, these steroids are primarily metabolized into two oxidized (16alpha-hydroxyl and 6beta-hydroxyl) products mainly by the respective, male-specific cytochrome P450 subforms, CYP2C11 and CYP3A2, while they are primarily metabolized into the 5alpha-reduced products by female-predominant 5alpha-reductase in the female. These sexually differentiated enzyme activities are largely regulated at the transcription level under endocrine control. In the present study, we show that unlabeled 16alpha-hydroxyprogesterone and 6beta-hydroxyprogesterone inhibited the 5alpha-reductive [(3)H]progesterone metabolism by adult male rat liver microsomes without significantly inhibiting the CYP2C11 and CYP3A2 activities producing themselves, whereas 3alpha-hydroxy-5alpha-pregnan-20-one and 5alpha-pregnane-3,20-dione not only stimulated the 5alpha-reductive metabolism producing themselves but also inhibited the male-specific oxidative metabolism. This finding compels us to propose a novel hypothesis that adult male rat liver microsomes may possess a self-augmentation system regulated by the male-specific products on sexually differentiated steroid metabolism, besides regulation by gene expressions of the related enzymes.

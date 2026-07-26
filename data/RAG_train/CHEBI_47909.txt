@@ -1,0 +1,36 @@
+Compound: 3-oxo-Delta(4) steroid
+ChEBI ID: CHEBI:47909
+PubChem CID: 439274
+
+== Chemical properties ==
+IUPAC Name: 10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C19H28O
+Molecular Weight: 272.4
+SMILES: CC12CCCC1C3CCC4=CC(=O)CCC4(C3CC2)C
+InChI: InChI=1S/C19H28O/c1-18-9-3-4-16(18)15-6-5-13-12-14(20)7-11-19(13,2)17(15)8-10-18/h12,15-17H,3-11H2,1-2H3
+InChIKey: MSEZLHAVPJYYIQ-UHFFFAOYSA-N
+XLogP: 4.9
+TPSA: 17.1
+H-Bond Donors: 0
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A 3-oxo steroid conjugated to a C=C double bond at the α,β position.
+
+== Literature on 3-oxo-Delta(4) steroid ==
+
+[PMID 9625335] Diagnosis of the first Japanese patient with 3-oxo-delta4-steroid 5beta-reductase deficiency by use of immunoblot analysis
+1998
+UnlabelledA 3-oxo-delta4-steroid 5beta-reductase (5beta-reductase) deficiency is difficult to diagnose because severe liver damage can result in a similar pattern of metabolite excretion. We investigated the usefulness of immunoblot analysis for diagnosis of 5beta-reductase deficiency and quantitatively analysed urinary bile acids by gas chromatography-mass spectrometry in a 5-month-old Japanese boy with severe neonatal cholestasis associated with hypertyrosinaemia. A liver sample was examined by immunoblot analysis using monoclonal antibodies against 5beta-reductase. Urinary 3-oxo-delta4 bile acids accounted for 88.3% of total bile acids, 5alpha-bile acids for 0.9%, and primary bile acids for 9.1%. Immunoblot analysis of the liver tissue showed an indistinct band of 5beta-reductase.ConclusionsThese findings suggest that this patient had a secondary 5beta-reductase deficiency due to severe liver damage, even though 3-oxo-delta4 bile acids constituted more than 70% of total urinary bile acids. However, the patient may possibly have had an inherited 5beta-reductase deficiency.
+
+[PMID 19175828] SRD5B1 gene analysis needed for the accurate diagnosis of primary 3-oxo-Delta4-steroid 5beta-reductase deficiency
+2009
+Background and aimWe encounter hyper-3-oxo-Delta(4) bile aciduria in patients with severe cholestatic liver disease or fulminant liver failure during the neonatal period. However, simply by bile acid analysis, it is difficult to distinguish hyper-3-oxo-Delta(4) bile aciduria from primary 3-oxo-Delta(4)-steroid 5beta-reductase deficiency.MethodsTo determine whether 3-oxo-Delta(4)-steroid 5beta-reductase (SRD5B1) gene analysis is required for the accurate diagnosis of 3-oxo-Delta(4)-steroid 5beta-reductase deficiency, we evaluated the laboratory data, bile acid analysis and SRD5B1 gene analysis from six patients with hyper-3-oxo-Delta(4) bile aciduria.ResultsBased upon the results, four patients who had developed neonatal liver failure were diagnosed as having neonatal hemochromatosis. Two patients with chronic cholestasis were diagnosed as having primary 3-oxo-Delta(4)-steroid 5beta-reductase deficiency by SRD5B1 gene analysis. The SRD5B1 gene in these two patients had a heterozygous mutation, G737A (Gly 223 Glu) in one patient and C217T (Arg 50 stop) in the other.ConclusionsBased upon our limited data, we conclude that SDR5B1 gene analysis is required for the accurate diagnosis of 3-oxo-Delta(4)-steroid 5beta-reductase deficiency. Moreover, we think that it is important to elucidate whether there is a heterozygous or a compound heterozygous mutation of the SRD5B1 gene in our two patients.
+
+[PMID 9514540] Urinary 7alpha-hydroxy-3-oxochol-4-en-24-oic and 3-oxochola-4,6-dien-24-oic acids in infants with cholestasis
+1998
+Background/aimsUrinary 3-oxo-delta4 bile acids have been detected in infants who ultimately died of liver disease. We used qualitative and quantitative methods to compare urinary 3-oxo-delta4 bile acids in liver disease, determining their composition and evaluating the prognostic implication in patients of various ages with various liver diseases.MethodsGas chromatography-mass spectrometry was used to measure 3-oxo-delta4 bile acids in the urine of patients and healthy controls.ResultsPatients with a deficiency of 3-oxo-delta4-steroid 5beta-reductase and acute hepatic failure exhibited a significantly higher percentage of 3-oxo-delta4 bile acids in total bile acids in urine than the healthy controls or other patient groups, including those with neonatal cholestasis or biliary atresia (pConclusionsOur results indicate that an increase in the 7alpha-hydroxy-3-oxochol-4-en-24-oic acid and 3-oxochola-4,6-dien-24-oic acid in the urine of patients with hepatobiliary disease indicates a poor prognosis.
+
+[PMID 9200514] Determination of 3-oxo-delta4- and 3-oxo-delta4,6-bile acids and related compounds in biological fluids of infants with cholestasis by gas chromatography-mass spectrometry
+1997
+A method has been developed for the determination of 3-oxo-delta4- and 3-oxo-delta4,6-bile acids and related bile acids in biological fluids of infants by gas chromatography-mass spectrometry (GC-MS) of the methyl ester-dimethylethylsilyl ether-methoxime derivatives. The 7alpha-hydroxylated 3-oxo-delta4-bile acids were partially dehydrated to give the 3-oxo-delta4,6-bile acids by trimethylsilyl or dimethylethylsilyl derivatization and other pretreatments under acidic or alkaline conditions for GC-MS analysis. To prevent dehydration, the 3-oxo-delta4-bile acids were derivatized to the oximes by treatment with O-methylhydroxylamine prior to pretreatments such as solid-phase extraction, enzymatic solvolysis and hydrolysis of the conjugates, and silylation with dimethylethylsilylimidazole. Calibration curves for the bile acids were linear over a range of 5-250 ng and the detection limit was 100 pg for each 3-oxo-delta4-bile acid. Recoveries of the bile acids and their glycine and taurine conjugates from bile acid-free urine and serum ranged from 94.2 to 105.9% of their added amounts. The bile acids in urine and serum of four patients with severe cholestatic liver disease were measured by the analytical method, and the 3-oxo-delta4-bile acids were determined to be the major bile acids (59-68%) in the urines associated with 3-oxo-delta4-steroid 5beta-reductase deficiency or dysfunction.

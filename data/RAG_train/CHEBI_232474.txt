@@ -1,0 +1,15 @@
+Compound: 3-O-(beta-D-glucopyranosyl)-isomotiol
+ChEBI ID: CHEBI:232474
+PubChem CID: 172429303
+
+== Chemical properties ==
+IUPAC Name: (2R,3R,4S,5S,6R)-2-[[(3R,3aR,5aS,7aR,9S,11aS,13aS,13bR)-3a,5a,8,8,11a,13a-hexamethyl-3-propan-2-yl-1,2,3,4,5,6,7,7a,9,10,11,12,13,13b-tetradecahydrocyclopenta[a]chrysen-9-yl]oxy]-6-(hydroxymethyl)oxane-3,4,5-triol
+Molecular Formula: C36H60O6
+Molecular Weight: 588.9
+SMILES: CC(C)[C@H]1CC[C@@H]2[C@@]1(CC[C@]3([C@]2(CCC4=C3CC[C@@H]5[C@@]4(CC[C@@H](C5(C)C)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)C)C)C)C
+InChI: InChI=1S/C36H60O6/c1-20(2)21-9-12-26-34(21,6)17-18-35(7)23-10-11-25-32(3,4)27(14-15-33(25,5)22(23)13-16-36(26,35)8)42-31-30(40)29(39)28(38)24(19-37)41-31/h20-21,24-31,37-40H,9-19H2,1-8H3/t21-,24-,25+,26-,27+,28-,29+,30-,31+,33-,34-,35-,36+/m1/s1
+InChIKey: LVHPZNOIRZPLHW-SKFYXBMVSA-N
+XLogP: 7.1
+TPSA: 99.4
+H-Bond Donors: 4
+H-Bond Acceptors: 6

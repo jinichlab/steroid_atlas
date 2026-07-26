@@ -1,0 +1,21 @@
+Compound: C29-steroid
+ChEBI ID: CHEBI:188923
+PubChem CID: 313279
+
+== Chemical properties ==
+IUPAC Name: 17-(5-ethyl-6-methylheptan-2-yl)-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthrene
+Molecular Formula: C29H52
+Molecular Weight: 400.7
+SMILES: CCC(CCC(C)C1CCC2C1(CCC3C2CCC4C3(CCCC4)C)C)C(C)C
+InChI: InChI=1S/C29H52/c1-7-22(20(2)3)12-11-21(4)25-15-16-26-24-14-13-23-10-8-9-18-28(23,5)27(24)17-19-29(25,26)6/h20-27H,7-19H2,1-6H3
+InChIKey: GKBHKNPLNHLYHT-UHFFFAOYSA-N
+XLogP: 11.9
+TPSA: 0
+H-Bond Donors: 0
+H-Bond Acceptors: 0
+
+== Literature on C29-steroid ==
+
+[PMID 15499938] Combination of gas chromatography-mass spectrometry and mass spectral deconvolution for structural elucidation of an unusual C29-steroid detected in a complex sedimentary matrix
+2004
+A complex sedimentary sample from the Monterey Formation (CA, USA) has been submitted to GC-MS analysis followed by mass spectral deconvolution using Automated Mass Spectral Deconvolution and Identification System (AMDIS). Adjusting the parameters of the software allowed for the extraction of the spectrum of an unusual steroidal hydrocarbon coeluting with the major compound of the chromatogram. Following a careful interpretation of the "extracted" mass spectrum, the structure of the unknown has been postulated to be the 4,14-dimethylcholestane (DMC). Possible origins of this rare steroid are briefly discussed. Thus, application of AMDIS appears to be particularly suitable for the GC-MS analysis of natural complex mixtures characterized by a high number of analytes present in low amounts.

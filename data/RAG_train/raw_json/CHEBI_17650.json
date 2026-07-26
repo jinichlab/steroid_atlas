@@ -1,0 +1,9 @@
+{
+  "chebi_id": "CHEBI:17650",
+  "name": "cortisol",
+  "cid": 5754,
+  "status": "own_literature",
+  "n_papers": 5,
+  "chars": 10685,
+  "has_definition": true
+}

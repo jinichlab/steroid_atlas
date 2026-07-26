@@ -1,0 +1,15 @@
+Compound: 11-Ketoandrosterone
+ChEBI ID: CHEBI:34134
+PubChem CID: 102029
+
+== Chemical properties ==
+IUPAC Name: (3R,5S,8S,9S,10S,13S,14S)-3-hydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,12,14,15,16-dodecahydro-1H-cyclopenta[a]phenanthrene-11,17-dione
+Molecular Formula: C19H28O3
+Molecular Weight: 304.4
+SMILES: C[C@]12CC[C@H](C[C@@H]1CC[C@@H]3[C@@H]2C(=O)C[C@]4([C@H]3CCC4=O)C)O
+InChI: InChI=1S/C19H28O3/c1-18-8-7-12(20)9-11(18)3-4-13-14-5-6-16(22)19(14,2)10-15(21)17(13)18/h11-14,17,20H,3-10H2,1-2H3/t11-,12+,13-,14-,17+,18-,19-/m0/s1
+InChIKey: IUNYGQONJQTULL-UFTZPVOZSA-N
+XLogP: 2.4
+TPSA: 54.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3

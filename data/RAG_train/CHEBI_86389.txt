@@ -1,0 +1,18 @@
+Compound: 5beta-dihydroaldosterone
+ChEBI ID: CHEBI:86389
+PubChem CID: 21151226
+
+== Chemical properties ==
+IUPAC Name: (5R,8S,9S,10S,11S,13R,14S,17S)-11-hydroxy-17-(2-hydroxyacetyl)-10-methyl-3-oxo-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthrene-13-carbaldehyde
+Molecular Formula: C21H30O5
+Molecular Weight: 362.5
+SMILES: C[C@]12CCC(=O)C[C@H]1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@H]4C(=O)CO)C=O)O
+InChI: InChI=1S/C21H30O5/c1-20-7-6-13(24)8-12(20)2-3-14-15-4-5-16(18(26)10-22)21(15,11-23)9-17(25)19(14)20/h11-12,14-17,19,22,25H,2-10H2,1H3/t12-,14+,15+,16-,17+,19-,20+,21-/m1/s1
+InChIKey: IIBOWSHDTFRYKU-HLQMJBJHSA-N
+XLogP: 1.1
+TPSA: 91.7
+H-Bond Donors: 2
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A 3-oxo-5β-steroid formed from aldosterone by reduction across the C4-C5 double bond.

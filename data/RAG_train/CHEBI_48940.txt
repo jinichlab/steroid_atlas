@@ -1,0 +1,32 @@
+Compound: (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al
+ChEBI ID: CHEBI:48940
+PubChem CID: 24771792
+
+== Chemical properties ==
+IUPAC Name: (2R,6R)-2-methyl-6-[(3R,5S,7R,8R,9S,10S,12S,13R,14S,17R)-3,7,12-trihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]heptanal
+Molecular Formula: C27H46O4
+Molecular Weight: 434.7
+SMILES: C[C@H](CCC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)O)C)C=O
+InChI: InChI=1S/C27H46O4/c1-16(15-28)6-5-7-17(2)20-8-9-21-25-22(14-24(31)27(20,21)4)26(3)11-10-19(29)12-18(26)13-23(25)30/h15-25,29-31H,5-14H2,1-4H3/t16-,17-,18+,19-,20-,21+,22+,23-,24+,25+,26+,27-/m1/s1
+InChIKey: USFJGINJGUIFSY-IUFSEJPUSA-N
+XLogP: 5.2
+TPSA: 77.8
+H-Bond Donors: 3
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+The (25<i>R</i>)-diastereomer of 3α,7α,12α-trihydroxy-5β-cholestan-26-al.
+
+== Literature on (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al ==
+
+[PMID 7222148] Synthesis of biological precursors of cholic acid II
+1981
+This paper describes the partial syntheses of 3 alpha, 7 alpha, 12 alpha-trihydroxy-5 beta-cholestan-26-al, 7 alpha, 12 alpha, 26-trihydroxy-5 beta-cholestan-3-one and 7 alpha, 12 alpha-dihydroxy-3-oxo-5 beta-cholestan-26-al via Ag2CO3/Celite oxidation of 5 beta-cholestane-3 alpha, 7 alpha, 12 alpha, 26-tetrol. These bile alcohols were resolved by analytical and preparative TLC, characterized by gas-liquid chromatography and mass spectrometry. These compounds will be useful to delineate further the mechanism of oxidation of 5 beta-cholestane-3 alpha, 7 alpha, 12 alpha, 25-tetrol on the pathway to cholic acid.
+
+[PMID 4046909] Myotonic dystrophy
+1985
+Myotonic dystrophy (MYD) has been localized to chromosome 19. Like other hereditary diseases with a genetic locus assigned to chromosome 19, MYD is a genetically inherited autosomal dominant disease. It is speculated that such a genetic pattern may express the characteristics of chromosome 19. We previously proposed that abnormalities of bile acid metabolism play a pathogenetic role in MYD, in which deoxycholic acid acts as a maternal factor in association with the onset of congenital MYD. Increased gamma-glutamyl-transpeptidase (gamma GTP) (probably hydrophobic deoxycholate-solubilized gamma GTP instead of hydrophilic papain-solubilized gamma GTP) in MYD may be related to the abnormalities of bile acid metabolism. Muscle wasting in MYD may be explained by these abnormalities as well. The resemblances between common metabolism of bile acids and alcohol and between common changes in MYD and alcoholic myopathy may lend support to a hypothesis that 5 beta-cholestane-3 alpha, 7 alpha, 12 alpha, 26-tetrol dehydrogenase and 3 alpha, 7 alpha, 12 alpha-trihydroxy-5 beta-cholestan-26-al dehydrogenase activities are impaired in MYD.
+
+[PMID 6338006] Physiological function and kinetic mechanism of human liver alcohol dehydrogenase as 5 beta-cholestane-3 alpha,7 alpha,12 alpha,26-tetrol dehydrogenase
+1983
+To test whether human liver alcohol dehydrogenase (alcohol:NAD+ oxidoreductase, EC 1.1.1.1) plays a role in the metabolism of cholesterol in man or not, a major isozyme of human liver alcohol dehydrogenase, beta 2 beta 2, was purified from homozygous atypical human livers, measuring both liver acetaldehyde reductase activity and that of 3 alpha,7 alpha,12 alpha-trihydroxy-5 beta-cholestan-26-al reductase (5 beta-cholestane-3 alpha,7 alpha,12 alpha,26-tetraol:NAD+ 26-oxidoreductase, EC 1.1.1.161) in the course of purification, and it was found that both enzyme activities were accompanied with each other at any step. Both enzyme activities of the highly purified isozyme, beta 2 beta 2, were inhibited by a chelating agent, 1,10-phenanthroline, for Zn which resides in the active site of the enzyme, the pKiapp value of which was 4.1 for both activities. They were also inhibited by a known competitive inhibitor, isobutyramide, in the same fashion and the Ki values calculated from both activities were the same (2.0 mM). From these results it was suggested that both enzyme activities are catalyzed by the same active site of the same enzyme protein. Kinetic studies of 5 beta-cholestane-3 alpha,7 alpha,12 alpha,26-tetrol dehydrogenase have shown that neither Theorell-Chance mechanism nor simple Ordered Bi Bi mechanism holds in the reaction; instead a mechanism which is asymmetric in both directions is operative.

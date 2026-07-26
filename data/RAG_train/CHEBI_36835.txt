@@ -1,0 +1,40 @@
+Compound: 3alpha-hydroxy steroid
+ChEBI ID: CHEBI:36835
+PubChem CID: 439900
+
+== Chemical properties ==
+IUPAC Name: (3R)-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C19H32O
+Molecular Weight: 276.5
+SMILES: CC12CCCC1C3CCC4C[C@@H](CCC4(C3CC2)C)O
+InChI: InChI=1S/C19H32O/c1-18-9-3-4-16(18)15-6-5-13-12-14(20)7-11-19(13,2)17(15)8-10-18/h13-17,20H,3-12H2,1-2H3/t13?,14-,15?,16?,17?,18?,19?/m1/s1
+InChIKey: DJTOLSNIKJIDFF-SJURODHESA-N
+XLogP: 5.9
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A 3-hydroxy steroid in which the 3-hydroxy substituent is in the α-position.
+
+== Literature on 3alpha-hydroxy steroid ==
+
+[PMID 19683506] Interactions across the interface contribute the stability of homodimeric 3alpha-hydroxysteroid dehydrogenase/carbonyl reductase
+2009
+The dimerization of 3alpha-hydroxysteroid dehydrogenase/carbonyl reductase was studied by interrupting the salt bridge interactions between D249 and R167 in the dimeric interface. Substitution of alanine, lysine and serine for D249 decreased catalytic efficiency 30, 1400 and 1.4-fold, and lowered the melting temperature 6.9, 5.4 and 7.6 degrees C, respectively. The mutated enzymes have the dimeric species but the equilibrium between monomer and dimer for these mutants varies from each other, implying that these residues might contribute differently to the dimer stability. Thermal and urea-induced unfolding profiles for wild-type and mutant enzymes appeared as a two-state transition and three-state transition, respectively. In addition, mutation on D249 breaks the salt bridges and causes different effects on the loss of enzymatic activity for D249A, D249K and D249S mutants in the urea-induced unfolding profiles. Hence, D249 at the dimeric interface in 3alpha-HSD/CR is essential for conformational stability, oligomeric integrity and enzymatic activity.
+
+[PMID 19853671] Contributions of active site residues to cofactor binding and catalysis of 3alpha-hydroxysteroid dehydrogenase/carbonyl reductase
+2010
+3alpha-Hydroxysteroid dehydrogenase/carbonyl reductase reversely catalyzes the oxidation of androsterone with NAD(+) to form androstanedione and NADH. In this study, we investigated the function of active site residues N86, Y155, and K159 in NADH binding and catalysis in the reduction of androstanedione, using site-directed mutagenesis, steady-state kinetics, fluorescence quenching, and anisotropy measurements. The N86A, Y155F, and K159A mutant enzymes decreased the catalytic constant by 37- to 220-fold and increased the dissociation constant by 3- to 75-fold, respectively. Binding of NADH with wild-type and mutant enzymes caused different levels of fluorescence resonance energy transfer, implying a different orientation of nicotinamide ring versus W173. In addition, the enzyme-bound NADH decreased the fluorescence anisotropy value in the order WT>N86A>Y155F>K159A, indicating an increase in the mobility of the bound NADH for the mutants. Data suggest that hydrogen bonding with the hydroxyl group of nicotinamide ribose by K159 and Y155 is important to maintain the orientation of NADH and contributes greatly to the transition-state binding energy to facilitate the catalysis. N86 is important for stabilizing the position of K159. Substitution of alanine for N86 has a minor effect on NADH binding through K159, resulting in a slight increase in the mobility of the bound NADH and decreases in affinity and catalytic constant.
+
+[PMID 15567156] An enzymatic cycling method for the determination of serum total bile acids with recombinant 3alpha-hydroxysteroid dehydrogenase
+2005
+A highly sensitive enzymatic cycling method was developed for the serum total bile acids assay. We constructed a prokaryotic expression system to prepare the recombinant 3alpha-hydroxysteroid dehydrogenase in place of the natural enzyme and for the first time used it in the total bile acids assay. The production rate of thio-NADH correlated with the bile acids concentration and was measured by the change of absorbance at 405/660 nm. The enzymatic cycling method could detect 0.22 micromol/L total bile acids in serum. Within-run and between-run imprecisions were 1.2-3.7% and 2.3-4.8%, respectively. The calibration curve for total bile acids in serum was linear between 0.5 and 180 micromol/L. This method was free from interference by bilirubin, hemoglobin, ascorbate, and lactate dehydrogenase. In conclusion, serum total bile acids could be measured by the enzymatic cycling method with recombinant 3alpha-hydroxysteroid dehydrogenase as the tool enzyme.
+
+[PMID 18006320] Electronic effects of para-substitution on acetophenones in the reaction of rat liver 3alpha-hydroxysteroid dehydrogenase
+2008
+Stereoselective reductive metabolism of various p-substituted acetophenone derivatives was studied using isolated rat liver 3alpha-hydroxysteroid dehydrogenase (3alpha-HSD). Kinetic experiments were performed and analyzed by measuring the products by HPLC using a chiral column. The results demonstrated that the presence of an electron-withdrawing substituent on the benzene ring plays an important role in determining the reduction rate in the syntheses of various (S)-alcohols from their corresponding carbonyl compounds. A plot of log {(V(max)/K(m))X/(V(max)/K(m))H} versus the substituent parameter (pi, sigma(para), Es) shows an increasing rate mainly for electron-withdrawing substituents, with a correlation coefficient (r(2)) of 0.97 which was obtained for triplicate data that were significant at the p<0.0001 level. With this in mind, new drugs can be designed that exploit this reduction pathway by introducing an electron-withdrawing group adjacent to the reduction site when a reduction reaction is desired, or by adding an electron-donating group when minimization of the reduction pathway is desired.
+
+[PMID 15841157] [Isolation and identification of Comamonas testosteroni: cloning and overexpression of 3alpha-hydroxysteroid dehydrogenase in E.coli]
+2005
+ObjectiveTo isolate and identify 3alpha-hydroxysteroid dehydrogenase (3alpha-HSD) producing Comamonas testosteroni from soil, and to clone and overexpress 3alpha-HSD in E.coli.MethodsSamples of pond mud were inoculated into cultural medium with androsterone as sole carbon source. The primary identification was performed according to the morphological observation, biochemical reaction and cultural characterization. To further identify the bacteria, a couple of primers were designed according to the 3alpha-HSD gene of Comamonas testosteroni. An 800 bp fragment containing 3alpha-HSD gene was obtained by PCR amplification. Then the PCR products were inserted into plasmids pET-15b to construct recombinant plasmids pET-15b. Afterwards the host bacteria containing recombinant plasmids pET-15b with proper orientation grew with isopropyl-beta-D-thioglactopyranoside (IPTG) induction.ResultsThe isolated bacteria which could use androsterone as the sole carbon source had 85% consistency with Comamonas testosteroni. After 5 hours of IPTG induction, a recombinant protein about 29 x10(3) with enzyme activity was overexpressed in the host bacteria E.coli. BL21(DE3) pLysS. This protein could catalyze the dehydrogenization reaction of androsterone (3alpha-hydroxysteroid).ConclusionA strain of Gramjnegative 3alpha-HSD producing Comamonas testosteroni was isolated from pond mud, and recombinant 3alpha-HSD with enzyme activity was overexpressed in E.coli. This work laid good foundation for the purification of recombinant 3alpha-HSD by metal chelate chromatography, and also for the construction of an enzymatic cycling method to measure serum total bile acids with recombinant 3alpha-HSD as the tool enzyme.

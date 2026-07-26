@@ -1,0 +1,18 @@
+Compound: S-(3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oyl)-4'-phosphopantetheine(2-)
+ChEBI ID: CHEBI:132021
+PubChem CID: 119058178
+
+== Chemical properties ==
+IUPAC Name: [(3R)-3-hydroxy-2,2-dimethyl-4-[[3-[2-[(6R)-2-methyl-6-[(3R,5S,7R,8R,9S,10S,12S,13R,14S,17R)-3,7,12-trihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]heptanoyl]sulfanylethylamino]-3-oxopropyl]amino]-4-oxobutyl] phosphate
+Molecular Formula: C38H65N2O11PS-2
+Molecular Weight: 789.0
+SMILES: C[C@H](CCCC(C)C(=O)SCCNC(=O)CCNC(=O)[C@@H](C(C)(C)COP(=O)([O-])[O-])O)[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)O)C
+InChI: InChI=1S/C38H67N2O11PS/c1-22(26-10-11-27-32-28(20-30(43)38(26,27)6)37(5)14-12-25(41)18-24(37)19-29(32)42)8-7-9-23(2)35(47)53-17-16-39-31(44)13-15-40-34(46)33(45)36(3,4)21-51-52(48,49)50/h22-30,32-33,41-43,45H,7-21H2,1-6H3,(H,39,44)(H,40,46)(H2,48,49,50)/p-2/t22-,23?,24+,25-,26-,27+,28+,29-,30+,32+,33+,37+,38-/m1/s1
+InChIKey: FIWSQOCVKNESKS-JWGNTNLOSA-L
+XLogP: 3.3
+TPSA: 254
+H-Bond Donors: 6
+H-Bond Acceptors: 12
+
+== ChEBI definition ==
+An <em>S</em>-acyl-4'-phosphopantetheine obtained by deprotonation of the phosphate OH groups of <em>S</em>-(3α,7α,12α-trihydroxy-5β-cholestan-26-oyl)-4'-phosphopantetheine; major species at pH 7.3.

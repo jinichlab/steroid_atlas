@@ -1,0 +1,40 @@
+Compound: cholesteryl beta-D-galactoside
+ChEBI ID: CHEBI:189066
+PubChem CID: 11613669
+
+== Chemical properties ==
+IUPAC Name: (2R,3R,4S,5R,6R)-2-[[(3S,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl]oxy]-6-(hydroxymethyl)oxane-3,4,5-triol
+Molecular Formula: C33H56O6
+Molecular Weight: 548.8
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O[C@H]5[C@@H]([C@H]([C@H]([C@H](O5)CO)O)O)O)C)C
+InChI: InChI=1S/C33H56O6/c1-19(2)7-6-8-20(3)24-11-12-25-23-10-9-21-17-22(13-15-32(21,4)26(23)14-16-33(24,25)5)38-31-30(37)29(36)28(35)27(18-34)39-31/h9,19-20,22-31,34-37H,6-8,10-18H2,1-5H3/t20-,22+,23+,24-,25+,26+,27-,28+,29+,30-,31-,32+,33-/m1/s1
+InChIKey: FSMCJUNYLQOAIM-YQDUOBHUSA-N
+XLogP: 6.9
+TPSA: 99.4
+H-Bond Donors: 4
+H-Bond Acceptors: 6
+
+== ChEBI definition ==
+Cholesteryl beta-D-galactoside is a cholesteryl glycoside. It contains a cholesterol and a beta-D-galactoside.
+
+== Literature on cholesteryl beta-D-galactoside ==
+
+[PMID 12810705] Acylated cholesteryl galactoside as a novel immunogenic motif in Borrelia burgdorferi sensu stricto
+2003
+Borrelia burgdorferi sensu lato is the causing agent of Lyme disease, an infectious disease frequently occurring in the United States, Europe, and Northern Asia. Currently, diagnosis of and vaccination strategies against this pathogen are exclusively based on proteinaceous structures. Here we report on a novel class of immunogenic glycolipids purified from B. burgdorferi sensu stricto B31. Employing a butanol/water extraction procedure with subsequent Bligh/Dyer extraction of the organic phase, thin layer chromatography analysis revealed the presence of three distinct glycolipids, which were chemically analyzed employing combined gas-liquid chromatography/mass spectroscopy, matrix-assisted laser desorption/ionization mass spectrometry, and NMR. We identified acylated cholesteryl galactoside (ACG) next to cholesteryl galactoside and alpha-monogalactosyl-diacylglycerol. After extensive purification, the glycolipids investigated failed to cause proinflammatory responses in human cells transfected with human toll-like receptor (TLR)-2 or -4. However, we observed a marked recognition of ACG by sera derived from patients suffering from Lyme disease. These data indicate that newly described ACG is involved in developing host immunity during Lyme disease and thus may be useful for diagnosis and vaccination.
+
+[PMID 12799465] A newly discovered cholesteryl galactoside from Borrelia burgdorferi
+2003
+Two major glycolipids, which comprise approximately 36% of the total lipid mass from Borrelia burgdorferi, the etiological agent of Lyme disease, were investigated. We determined the fatty acid type, sugar identity, anomeric configuration, and substituent type and position. The structures were identified as cholesteryl 6-O-acyl-beta-d-galactopyranoside (B. burgdorferi glycolipid 1, BbGL-I), and 1,2-di-O-acyl-3-O-alpha-d-galactopyranosyl-sn-glycerol (BbGL-II). The major fatty acids were palmitate and oleate. The structures were corroborated by gas-liquid chromatography MS, matrix-assisted laser desorption/ionization time-of-flight spectroscopy, fast atom bombardment MS, detailed NMR spectrometry, and metabolic labeling. This is a previously undescribed demonstration of a cholesteryl galactoside in bacteria. Lipopolysaccharide was not detected in B. burgdorferi. The two glycolipids have several properties suggesting they may function as lipopolysaccharide: both are main components of the bacterial membrane, surface exposed, and have a three-domain structure. BbGL-I elicited specific antibodies in mice and rabbits, and BbGL-II elicited antibodies that reacted with both glycolipids.
+
+[PMID 28002743] Ordered Membrane Domain-Forming Properties of the Lipids of Borrelia burgdorferi
+2016
+Co-existing disordered and ordered (raft) membrane domains exist in Borrelia burgdorferi, the causative agent of Lyme disease. However, although B. burgdorferi contains cholesterol lipids, it lacks sphingolipids-a crucial component of rafts in eukaryotes. To define the principles of ordered lipid domain formation in Borrelia, the domain forming properties of vesicles composed of its three major lipids, acylated cholesteryl galactoside (ACGal), monogalactosyl diacyglycerol (MGalD), and phosphatidylcholine (PC) and/or their mixtures were studied. Anisotropy and fluorescence resonance energy transfer measurements were used to assay membrane order and ordered-domain formation. ACGal had the highest potential to form ordered domains. Interestingly, mixtures of ACGal with B. burgdorferi PC formed ordered domains more readily than mixtures of ACGal with MGalD. This appears to reflect the relatively high level of saturation observed for B. burgdorferi PC, as vesicles containing ACGal and PC, but in which the unsaturated lipid dioleoyl PC was substituted for Borrelia PC, failed to form ordered domains. In addition, the properties of ACGal were compared to those of cholesterol. Depending on what other lipids were present, ordered-domain formation in the presence of ACGal was greater than or equal to that in the presence of cholesterol. Giant unilamellar vesicles formed from ACGal-containing mixtures showed rounded domain shapes similar to those in analogous vesicles containing cholesterol, indicative of liquid-ordered state rather than solid-like gel-state domain formation. Over all, principles of ordered-domain formation in B. burgdorferi appear to be very similar to those in eukaryotes, with saturated PC taking the place of sphingolipids, but with ACGal being the main lipid component inducing ordered-domain formation.
+
+[PMID 19342303] Strong IgG antibody responses to Borrelia burgdorferi glycolipids in patients with Lyme arthritis, a late manifestation of the infection
+2009
+In this study, the membrane lipids of B. burgdorferi were separated into 16 fractions; the components in each fraction were identified, and the immunogenicity of each fraction was determined by ELISA using sera from Lyme disease patients. Only the 2 glycolipids, acylated cholesteryl galactoside (ACG, BbGL-I) and monogalactosyl diacylglycerol (MgalD, BbGL-II), were immunogenic. Early in the infection, 24 of 84 patients (29%) who were convalescent from erythema migrans and 19 of the 35 patients (54%) with neuroborreliosis had weak IgG responses to purified MgalD, and a smaller percentage of patients had early responses to synthetic ACG. However, almost all of 75 patients with Lyme arthritis, a late disease manifestation, had strong IgG reactivity with both glycolipids. Thus, almost all patients with Lyme arthritis have strong IgG antibody responses to B. burgdorferi glycolipid antigens.
+
+[PMID 17456185] Functional analysis of a lipid galactosyltransferase synthesizing the major envelope lipid in the Lyme disease spirochete Borrelia burgdorferi
+2007
+One of the major lipids in the membranes of Borrelia burgdorferi is monogalactosyl diacylglycerol (MGalDAG), a glycolipid recently shown to carry antigenic potency. Herein, it is shown that the gene mgs (TIGR designation bb0454) of B. burgdorferi encodes for the protein bbMGS that, when expressed in Escherichia coli, catalyzes the glycosylation of 1,2-diacylglycerol with specificity for the donor substrate UDP-Gal yielding MGalDAG. Related lipid enzymes were found in many Gram-positive bacteria. The presence of this galactosyltransferase activity and synthesis of a cholesteryl galactoside by another enzyme were verified in B. burgdorferi cell extract. Besides MGalDAG, phosphatidylcholine, phosphatidylglycerol, and cholesterol were also found as major lipids in the cell envelope. The high isoelectric point of bbMGS and clustered basic residues in its amino acid sequence suggest that the enzyme interacts with acidic lipids in the plasma membrane, in agreement with strong enzymatic activation of bbMGS by phosphatidylglycerol. The membrane packing and immunological properties of MGalDAG are likely to be of great importance in vivo.

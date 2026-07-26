@@ -1,0 +1,33 @@
+Compound: (24R)-24,25-dihydroxycucurbitadienol
+ChEBI ID: CHEBI:229950
+PubChem CID: 171037432
+
+== Chemical properties ==
+IUPAC Name: (3R,6R)-6-[(3S,8R,9R,10S,13R,14S,17R)-3-hydroxy-4,4,9,13,14-pentamethyl-2,3,7,8,10,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-17-yl]-2-methylheptane-2,3-diol
+Molecular Formula: C30H52O3
+Molecular Weight: 460.7
+SMILES: C[C@H](CC[C@H](C(C)(C)O)O)[C@H]1CC[C@@]2([C@@]1(CC[C@@]3([C@H]2CC=C4[C@H]3CC[C@@H](C4(C)C)O)C)C)C
+InChI: InChI=1S/C30H52O3/c1-19(9-13-25(32)27(4,5)33)20-15-16-30(8)23-12-10-21-22(11-14-24(31)26(21,2)3)28(23,6)17-18-29(20,30)7/h10,19-20,22-25,31-33H,9,11-18H2,1-8H3/t19-,20-,22-,23-,24+,25-,28+,29-,30+/m1/s1
+InChIKey: RLNPYPMNPJGLNJ-KBHKVJMNSA-N
+XLogP: 6.7
+TPSA: 60.7
+H-Bond Donors: 3
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+(24R)-24,25-dihydroxycucurbitadienol is a tetracyclic triterpenoid. It has a role as a plant metabolite. It is functionally related to a (24S)-24,25-epoxycucurbitadienol.
+
+--- RELATED COMPOUND: (24S)-24 ---
+No literature found for (24R)-24,25-dihydroxycucurbitadienol itself. (24R)-24,25-dihydroxycucurbitadienol is functionally related to (24S)-24; the abstracts below are about (24S)-24.
+
+[PMID 40072719] New Polyhydroxysteroids Derivatives from Starfish Asterias amurensis Induce Embryotoxicity in Marine Medaka
+2025
+In recent years, multiple population outbreaks of the Northern Pacific starfish (Asterias amurensis) have been documented off the coast of Qingdao. Starfish use chemosensation to regulate their life history and interactions with the environment, with their secondary metabolites serving as deterrents and dispersal agents against predators. While the eggs of marine fish are passive and susceptible, we hypothesized that the secondary metabolites of A. amurensis may cause embryotoxicity and exhibit a more insidious chemical function. In this study, we identified the secondary metabolites of A. amurensis collected from the Yellow Sea of China. Five new polyhydroxysteroid derivatives, (22Z)-26-O-β-D-xylopyranosyl-24-nor-5α-cholestane-22(23)-ene-3β,6α,7α,15α,26-pentaol (1), (24S)-O-β-D-xylopyranosyl-5α-cholestane-3β,6α,7α,15α,24-pentaol (2), (22E,24S)-24-O-[4-O-sulfo-β-D-xylopyranosyl]-5α-cholest-9(11)-ene-3β,6α,7α,15β,24-pentol (3), (24S)-methylene-28-O-sulfo-5α-cholestane-3β,6α,15α,24-tetraol (4), and 6α-O-sulfo-5α-cholestane-3β,5-diol (5), together with two known steroids, (24S)-24-methyl-5α-cholestane-3β,6α,15β,24,24'-pentaol (6) and (20E)-3β,6α-dihydroxy-5α-cholesta-9(11),20(22)-dien-23-one (7) were identified from the n-butanol extract. NMR and HRESI-MS were employed for structure elucidations. The embryotoxicity and teratogenicity of the isolated compounds were assessed using embryos of marine medaka (Oryzias melastigma). Compound 5 induced significantly higher mortality rates than other compounds, causing up to 70% mortality at 96 hpf, with a 96 h-LC50 of 60.51 µM.
+
+[PMID 38144384] <i>In Vivo</i> Anti-<i>Vibrio</i> Evaluation of Sponge-Associated Bacteria on the Survival Rate of <i>Litopenaeus vannamei</i> Infected with Pathogenic <i>Vibrio</i> Species
+2023
+Sponge-associated bacteria are considered a rich source of bioactive compounds particularly to reduce the risk of Vibrio harveyi and Vibrio parahaemolyticus infection. The present study aimed to analyse the effectiveness of 19 isolates to control Vibrio infection in vivo. All 19 isolates displayed a non-pathogenic characteristic on shrimps (cell density of 106 cells/mL) as analysed using the pathogenicity test. The mortality caused by both Vibrio spp. on 50% of the shrimp population (LC50 value) had a cell density of 105 cells/mL as determined using the proportion interval method. On the basis of the challenge test, all isolates improved the survival rate of infected shrimps in diverse effectivities up to 89%, which was nearly 30% higher than the infected control. Two isolates coded as D6.9, and P5.20 reduced shrimp mortality after infection with Vibrio spp. 16S rRNA-based identification showed these isolates were closely similar to different genera of Bacillus and Staphylococcus. The extract derived from the most prospective isolate, D6.9, was dominated by 1-hydroxy-6-(3-isopropenyl-cycloprop-1-enyl)-6-methyl-heptan-2-one, hexadecanoic acid, 4-epicyclomusalenone [(24S)-24-methyl-28-norcycloart-25-en-3-one], and 2,4-dimethyl acetoacetanilide. This observation suggested these isolates characterised by in vivo anti-Vibrio activity need to be further developed as biocontrol candidates.
+
+[PMID 26197507] Structure Revision of Two Polyoxygenated Sterols from the Marine Sponge Neofibularia nolitangere
+2015
+Careful reexamination of the published 1H- and 13C-NMR spectral data of (24S)-24-ethylcholest-8-ene-3β,5α,6β,7α-tetraol (1) and (24S)-24-ethylcholest-8(14)-ene-3β,5α,6β,7α-tetraol (2), isolated from the marine sponge Neofibularia nolitangere, indicates that, in reality, compounds 1 and 2 are (24S)-5α,6α- epoxy-24-ethylcholest-8-ene-3β,7α-diol (9) and (24S)-5α,6α-epoxy-24-ethylcholest-(14)-ene-3β,7α-dio (10), respectively.

@@ -1,0 +1,18 @@
+Compound: mogroside IV
+ChEBI ID: CHEBI:230514
+PubChem CID: 131636951
+
+== Chemical properties ==
+IUPAC Name: (2R,3R,4S,5S,6R)-2-[[(2R,3S,4S,5R,6R)-6-[[(3S,8S,9R,10R,11R,13R,14S,17R)-17-[(2R,5R)-5-[(2S,3R,4S,5S,6R)-4,5-dihydroxy-6-(hydroxymethyl)-3-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyoxan-2-yl]oxy-6-hydroxy-6-methylheptan-2-yl]-11-hydroxy-4,4,9,13,14-pentamethyl-2,3,7,8,10,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-3-yl]oxy]-3,4,5-trihydroxyoxan-2-yl]methoxy]-6-(hydroxymethyl)oxane-3,4,5-triol
+Molecular Formula: C54H92O24
+Molecular Weight: 1125.3
+SMILES: C[C@H](CC[C@H](C(C)(C)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)[C@H]3CC[C@@]4([C@@]3(C[C@H]([C@@]5([C@H]4CC=C6[C@H]5CC[C@@H](C6(C)C)O[C@H]7[C@@H]([C@H]([C@@H]([C@H](O7)CO[C@H]8[C@@H]([C@H]([C@@H]([C@H](O8)CO)O)O)O)O)O)O)C)O)C)C
+InChI: InChI=1S/C54H92O24/c1-22(9-13-33(51(4,5)70)77-49-45(41(66)36(61)28(20-57)74-49)78-48-44(69)39(64)35(60)27(19-56)73-48)23-15-16-52(6)30-12-10-24-25(54(30,8)31(58)17-53(23,52)7)11-14-32(50(24,2)3)76-47-43(68)40(65)37(62)29(75-47)21-71-46-42(67)38(63)34(59)26(18-55)72-46/h10,22-23,25-49,55-70H,9,11-21H2,1-8H3/t22-,23-,25-,26-,27-,28-,29-,30+,31-,32+,33-,34-,35-,36-,37-,38+,39+,40+,41+,42-,43-,44-,45-,46-,47+,48+,49+,52+,53-,54+/m1/s1
+InChIKey: WRPAFPPCKSYACJ-UYQGGQRHSA-N
+XLogP: -1.5
+TPSA: 398
+H-Bond Donors: 16
+H-Bond Acceptors: 24
+
+== ChEBI definition ==
+Mogroside IV is a mogroside and a beta-D-glucoside. It has a role as a plant metabolite.

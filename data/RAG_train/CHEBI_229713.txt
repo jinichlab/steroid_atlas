@@ -1,0 +1,15 @@
+Compound: L-arginocholate
+ChEBI ID: CHEBI:229713
+PubChem CID: 171037398
+
+== Chemical properties ==
+IUPAC Name: (2S)-5-(diaminomethylideneazaniumyl)-2-[[(4R)-4-[(3R,5S,7R,8R,9S,10S,12S,13R,14S,17R)-3,7,12-trihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoyl]amino]pentanoate
+Molecular Formula: C30H52N4O6
+Molecular Weight: 564.8
+SMILES: C[C@H](CCC(=O)N[C@@H](CCC[NH+]=C(N)N)C(=O)[O-])[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)O)C
+InChI: InChI=1S/C30H52N4O6/c1-16(6-9-25(38)34-22(27(39)40)5-4-12-33-28(31)32)19-7-8-20-26-21(15-24(37)30(19,20)3)29(2)11-10-18(35)13-17(29)14-23(26)36/h16-24,26,35-37H,4-15H2,1-3H3,(H,34,38)(H,39,40)(H4,31,32,33)/t16-,17+,18-,19-,20+,21+,22+,23-,24+,26+,29+,30-/m1/s1
+InChIKey: VFJSXFXCQQBGTM-PUSGEFJRSA-N
+XLogP: 2.8
+TPSA: 196
+H-Bond Donors: 7
+H-Bond Acceptors: 6

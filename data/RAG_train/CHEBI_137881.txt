@@ -1,0 +1,40 @@
+Compound: 3,7,12-trioxo-5beta-cholan-24-oate
+ChEBI ID: CHEBI:137881
+PubChem CID: 11869222
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(5S,8R,9S,10S,13R,14S,17R)-10,13-dimethyl-3,7,12-trioxo-1,2,4,5,6,8,9,11,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H33O5-
+Molecular Weight: 401.5
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(C(=O)C[C@H]3[C@H]2C(=O)C[C@H]4[C@@]3(CCC(=O)C4)C)C
+InChI: InChI=1S/C24H34O5/c1-13(4-7-21(28)29)16-5-6-17-22-18(12-20(27)24(16,17)3)23(2)9-8-15(25)10-14(23)11-19(22)26/h13-14,16-18,22H,4-12H2,1-3H3,(H,28,29)/p-1/t13-,14+,16-,17+,18+,22+,23+,24-/m1/s1
+InChIKey: OHXPGWPVLFPUSM-KLRNGDHRSA-M
+XLogP: 3.2
+TPSA: 91.3
+H-Bond Donors: 0
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A cholanic acid anion that is the conjugate base of 3,7,12-trioxo-5β-cholanic acid, obtained by deprotonation of the carboxy group; major species at pH 7.3.
+
+== Literature on 3,7,12-trioxo-5beta-cholan-24-oate ==
+
+[PMID 17612553] Aqueous sodium dehydrocholate-sodium deoxycholate mixtures at low concentration
+2007
+The behavior of the sodium dehydrocholate (NaDHC)-sodium deoxycholate (NaDC) mixed system was studied by a battery of methods that examine effects caused by the different components of the system: monomers, micelles, and both components. The behavior of the mixed micellar system was studied by the application of Rubingh's model. The obtained results show that micellar interaction was repulsive when the aggregates were rich in NaDHC. The gradual inclusion of NaDC in micelles led to a structural transformation in the aggregates and the interaction became attractive. The bile salts' behavior in mixed monolayers at the air-solution interface was also investigated. Mixed monolayers are monotonically rich in NaDC, giving a stable and compact adsorbed layer. Results have shown that the interaction in both micelles and monolayer is not ideal and such behavior is assumed to be due to a structural factor in their hydrocarbon backbone.
+
+[PMID 23291193] Blood-brain barrier opening to large molecules does not imply blood-brain barrier opening to small ions
+2013
+Neuroimaging of exogenous tracer extravasation has become the technique of choice in preclinical and clinical studies of blood-brain barrier permeability. Such tracers have a larger molecular weight than small ions, neurotransmitters and many drugs. Therefore, it is assumed that tracer extravasation indicates both permeability to these and the cancelation of the electrical polarization across the barrier. Electrophysiological anomalies following intracarotideal administration of dehydrocholate, a bile salt causing extravasation of the albumin-binding tracer Evans blue, seemingly supported this. By contrast, electron microscopic studies suggested a different hierarchical pattern of blood-brain barrier dysfunction, a milder degree of impairment being characterized by increased function of the transcellular pathway and a severe degree by opening of the tight junctions. This would imply that the extravasation of macromolecules can occur before disruption of the electrical barrier. However, functional evidence for this has been lacking. Here, we further investigated the electrophysiological anomalies following intracarotideal application of dehydrocholate in rats and found that it caused focal cerebral ischemia by middle cerebral artery thrombosis, the electrophysiological recordings being characteristic of long-lasting spreading depolarization. These observations indicated that intracarotideal dehydrocholate is not a suitable model to study the isolated dysfunction of the blood-brain barrier. Second, we studied the topical application of dehydrocholate to the brain and the application of mannitol into the carotid artery. In both models, we found significant extravasation of Evans blue but no changes in either extracellular potassium or the CO(2)-dependent intracortical direct current deflection. The latter is assumed to depend on the proton gradient across the barrier in rats which we confirmed in additional experiments in vivo and in vitro. The stability of the extracellular potassium concentration and the CO(2)-dependent direct current deflection are two functional tests which indicate the integrity of the electrical barrier. Hence, our results provide functional evidence that the blood-brain barrier opening to large molecules does not necessarily imply the opening to small ions consistent with the hierarchy of damage in the previous electron microscopic studies.
+
+[PMID 9699412] Interaction of sodium dehydrocholate and sodium cholate with polyvinyl pyrrolidone in aqueous medium
+1998
+The results of interaction of the bile salts sodium dehydrocholate (NaDHC) and sodium cholate (NaC) with the water soluble polymer polyvinyl pyrrolidone (PVP) studied by the methods of conductance, surface tension, viscosity and calorimetry are reported. Both of the bile salts exhibited PVP influenced self-aggregation. While NaC showed expected surface tension behaviour, NaDHC exhibited anomalous behaviour. The minimum interfacial area per molecule of the bile salt, the maximum interfacial adsorption, the free energy of micellization and the free energy of interfacial adsorption are presented for NaC. This information was not obtained for NaDHC because of its anomalous surface tension behaviour. The bile-salt-adhered PVP exhibited polyelectrolyte behaviour at PVP concentrations < 0.25 g dl-1. The enthalpy of interaction of NaC with PVP had a maximum at 0.25 mole dm-3 (delta Hi = +180 cal/mole); NaDHC produced too little heat to be detected by the calorimeter.
+
+[PMID 3949093] Influence of dehydrocholate on bilirubin transport into bile in the rat
+1986
+The effect of an intravenous infusion of sodium dehydrocholate on the maximum biliary transport (Tm) of bilirubin was studied in Wistar rats anesthetized with sodium pentobarbitone. Infusion of the synthetic bile salt at 0.24 mumol/min/100 g gave rise to a marked increase in bile flow (69%). The biliary output of taurocholate, phospholipid or cholesterol, compounds which from mixed micelles in bile, was not modified. Neither did the Tm of bilirubin undergo any significant changes, with drops in the bile concentration of the pigment. Our experimental results revealed that bile flow induced by dehydrocholate is not a determining factor of the Tm of bilirubin in the rat.
+
+[PMID 6629304] Intravenous dehydrocholate tolerance test in patients with liver disease
+1983
+The disappearance of intravenously administered dehydrocholate was studied in 13 healthy subjects and 23 patients with chronic liver disease. Serum dehydrocholate was determined by the enzymatic method using 3 alpha-hydroxysteroid dehydrogenase. Following the loading dose of dehydrocholate, serum dehydrocholate and 3 alpha-hydroxy bile acid were assayed at five minute intervals for 15 minutes. During this 15 minute period, dehydrocholate decreased and 3 alpha-hydroxy bile acid increased. The disappearance of the dehydrocholate was delayed in patients with chronic liver disease, and the 5-minute retention value was significantly high in cirrhosis patients.

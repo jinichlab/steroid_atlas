@@ -1,0 +1,18 @@
+Compound: 9alpha-hydroxy-3-oxo-23,24-bisnorchola-1,4-dien-22-oate(1-)
+ChEBI ID: CHEBI:85553
+PubChem CID: 91825645
+
+== Chemical properties ==
+IUPAC Name: (2S)-2-[(8S,9R,10S,13S,14S,17R)-9-hydroxy-10,13-dimethyl-3-oxo-7,8,11,12,14,15,16,17-octahydro-6H-cyclopenta[a]phenanthren-17-yl]propanoate
+Molecular Formula: C22H29O4-
+Molecular Weight: 357.5
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)O)C)C(=O)[O-]
+InChI: InChI=1S/C22H30O4/c1-13(19(24)25)16-6-7-17-18-5-4-14-12-15(23)8-9-21(14,3)22(18,26)11-10-20(16,17)2/h8-9,12-13,16-18,26H,4-7,10-11H2,1-3H3,(H,24,25)/p-1/t13-,16+,17-,18-,20+,21-,22+/m0/s1
+InChIKey: HBUZRBRDIKABSC-MPITXTFFSA-M
+XLogP: 4.1
+TPSA: 77.4
+H-Bond Donors: 1
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+A steroid acid anion that is the conjugate base of 9α-hydroxy-3-oxo-23,24-bisnorchola-1,4-dien-22-oic acid, obtained by deprotonation of the carboxy group; major species at pH 7.3.

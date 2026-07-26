@@ -1,0 +1,28 @@
+Compound: 26-hydroxylanosterol
+ChEBI ID: CHEBI:178023
+PubChem CID: 69619365
+
+== Chemical properties ==
+IUPAC Name: (3S,5R,10S,13R,14R,17R)-17-[(E,2R)-7-hydroxy-6-methylhept-5-en-2-yl]-4,4,10,13,14-pentamethyl-2,3,5,6,7,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C30H50O2
+Molecular Weight: 442.7
+SMILES: C[C@H](CC/C=C(\C)/CO)[C@H]1CC[C@@]2([C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C
+InChI: InChI=1S/C30H50O2/c1-20(19-31)9-8-10-21(2)22-13-17-30(7)24-11-12-25-27(3,4)26(32)15-16-28(25,5)23(24)14-18-29(22,30)6/h9,21-22,25-26,31-32H,8,10-19H2,1-7H3/b20-9+/t21-,22-,25+,26+,28-,29-,30+/m1/s1
+InChIKey: DLYSUCFWWJEGFQ-AZIDVCJLSA-N
+XLogP: 7.7
+TPSA: 40.5
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A 3β-sterol that is lanosterol carrying a hydroxy group at position 26.
+
+== Literature on 26-hydroxylanosterol ==
+
+[PMID 22366074] 27-Hydroxycholesterol, does it exist? On the nomenclature and stereochemistry of 26-hydroxylated sterols
+2012
+Significant ambiguity exists in the scientific community with regard to the nomenclature of 26-hydroxylated oxysterols. Oxysterols constitute an important class of compounds that have biological roles in the regulation of cholesterol synthesis and as endogenous selective estrogen receptor modulators (SERMs). The ambiguity is attributable to deviations from clearly stated IUPAC rules and is likely to increase as more biologically active oxysterols are identified. This review provides a uniform approach to the naming of 26-hydroxylated sterols for those of current interest and for those on the horizon such as oxysterols of lanosterol that retain the unsaturation at C-24 and C-25 such as (E)-26-hydroxylanosterol. Using this molecule as a starting point, this review hopes to establish a common language to keep all investigators on the same page.
+
+[PMID 1504086] Structural analysis of the interaction between the side-chain of substrates and the active site of lanosterol 14 alpha-demethylase (P-450(14)DM) of yeast
+1992
+The role of the side-chain of lanosterol in the enzyme-substrate interaction of yeast P-450(14)DM (lanosterol 14 alpha-demethylase) was analyzed with lanosterol derivatives having functional groups on the side-chain. Purified P-450(14)DM from Saccharomyces cerevisiae catalyzed 14 alpha-demethylation of 26-hydroxylanosterol and 25-hydroxy-24,25-dihydrolanosterol with a lower activity than lanosterol and 24,25-dihydrolanosterol. This enzyme demethylated the (Z)-24-ethylidene-24,25-dihydrolanosterol with a low rate, but did not metabolize the E-isomer. The apparent Km of 26-hydroxylanosterol was 10.8 microM, which was higher than that of lanosterol, but lower than that of 24,25-dihydrolanosterol. On the other hand, competition experiments suggested that the affinity of 25-hydroxy-24,25-dihydrolanosterol and (Z)-24-ethylidene-24,25-dihydrolanosterol for P-450(14)DM was significantly lower than that of 24,25-dihydrolanosterol. Integration of the present results with the preceding ones (Aoyama, Y., Yoshida, Y., Sonoda, Y. and Sato, Y. (1991) Biochim. Biophys. Acta, 1081, 262-266 and Aoyama, Y. and Yoshida, Y. (1991) Biochem. Biophys. Res. Commun., 178, 1064-1071) suggests that yeast P-450(14)DM recognizes two parts of the side-chain, the structure around C-24 and the terminal fork consisting of C-25, C-26 and C-27.

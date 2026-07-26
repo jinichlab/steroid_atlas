@@ -1,0 +1,9 @@
+{
+  "chebi_id": "CHEBI:17347",
+  "name": "testosterone",
+  "cid": 6013,
+  "status": "own_literature",
+  "n_papers": 5,
+  "chars": 10186,
+  "has_definition": true
+}

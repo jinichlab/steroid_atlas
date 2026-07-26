@@ -1,0 +1,18 @@
+Compound: 14alpha-formyl steroid
+ChEBI ID: CHEBI:176902
+PubChem CID: 134822641
+
+== Chemical properties ==
+IUPAC Name: (14R)-10,13-dimethyl-1,2,3,4,5,6,7,8,9,11,12,15,16,17-tetradecahydrocyclopenta[a]phenanthrene-14-carbaldehyde
+Molecular Formula: C20H32O
+Molecular Weight: 288.5
+SMILES: CC12CCC[C@]1(C3CCC4CCCCC4(C3CC2)C)C=O
+InChI: InChI=1S/C20H32O/c1-18-10-5-12-20(18,14-21)17-8-7-15-6-3-4-11-19(15,2)16(17)9-13-18/h14-17H,3-13H2,1-2H3/t15?,16?,17?,18?,19?,20-/m1/s1
+InChIKey: JXDWPFZFXDZRLF-NSDIEPNESA-N
+XLogP: 6.5
+TPSA: 17.1
+H-Bond Donors: 0
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+Any 14-formyl steroid in which the formyl group at position 14 has α- configuration.

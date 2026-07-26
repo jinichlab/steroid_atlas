@@ -1,0 +1,28 @@
+Compound: 3-oxo-23,24-bisnorchola-1,4-dien-22-oyl-CoA(4-)
+ChEBI ID: CHEBI:83793
+PubChem CID: 90658772
+
+== Chemical properties ==
+IUPAC Name: [(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-2-[[[[(3R)-4-[[3-[2-[(2S)-2-[(8S,9S,10R,13S,14S,17R)-10,13-dimethyl-3-oxo-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthren-17-yl]propanoyl]sulfanylethylamino]-3-oxopropyl]amino]-3-hydroxy-2,2-dimethyl-4-oxobutoxy]-oxidophosphoryl]oxy-oxidophosphoryl]oxymethyl]-4-hydroxyoxolan-3-yl] phosphate
+Molecular Formula: C43H60N7O18P3S-4
+Molecular Weight: 1088.0
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)C=C[C@]34C)C)C(=O)SCCNC(=O)CCNC(=O)[C@@H](C(C)(C)COP(=O)([O-])OP(=O)([O-])OC[C@@H]5[C@H]([C@H]([C@@H](O5)N6C=NC7=C(N=CN=C76)N)O)OP(=O)([O-])[O-])O
+InChI: InChI=1S/C43H64N7O18P3S/c1-23(27-8-9-28-26-7-6-24-18-25(51)10-13-42(24,4)29(26)11-14-43(27,28)5)40(56)72-17-16-45-31(52)12-15-46-38(55)35(54)41(2,3)20-65-71(62,63)68-70(60,61)64-19-30-34(67-69(57,58)59)33(53)39(66-30)50-22-49-32-36(44)47-21-48-37(32)50/h10,13,18,21-23,26-30,33-35,39,53-54H,6-9,11-12,14-17,19-20H2,1-5H3,(H,45,52)(H,46,55)(H,60,61)(H,62,63)(H2,44,47,48)(H2,57,58,59)/p-4/t23-,26-,27+,28-,29-,30+,33+,34+,35-,39+,42-,43+/m0/s1
+InChIKey: NNUYEQLFHWCXPC-ZKTJOKCMSA-J
+XLogP: -0.7
+TPSA: 417
+H-Bond Donors: 5
+H-Bond Acceptors: 23
+
+== ChEBI definition ==
+An acyl-CoA oxoanion resulting from the removal of all four protons from the phosphate and diphosphate groups of 3-oxo-23,24-bisnorchola-1,4-dien-22-oyl-CoA; major species at pH 7.3.
+
+== Literature on 3-oxo-23,24-bisnorchola-1,4-dien-22-oyl-CoA(4-) ==
+
+[PMID 25049233] Substrate specificities and conformational flexibility of 3-ketosteroid 9α-hydroxylases
+2014
+KshA is the oxygenase component of 3-ketosteroid 9α-hydroxylase, a Rieske oxygenase involved in the bacterial degradation of steroids. Consistent with its role in bile acid catabolism, KshA1 from Rhodococcus rhodochrous DSM43269 had the highest apparent specificity (kcat/Km) for steroids with an isopropyl side chain at C17, such as 3-oxo-23,24-bisnorcholesta-1,4-diene-22-oate (1,4-BNC). By contrast, the KshA5 homolog had the highest apparent specificity for substrates with no C17 side chain (kcat/Km >10(5) s(-1) M(-1) for 4-estrendione, 5α-androstandione, and testosterone). Unexpectedly, substrates such as 4-androstene-3,17-dione (ADD) and 4-BNC displayed strong substrate inhibition (Ki S ∼100 μM). By comparison, the cholesterol-degrading KshAMtb from Mycobacterium tuberculosis had the highest specificity for CoA-thioesterified substrates. These specificities are consistent with differences in the catabolism of cholesterol and bile acids, respectively, in actinobacteria. X-ray crystallographic structures of the KshAMtb·ADD, KshA1·1,4-BNC-CoA, KshA5·ADD, and KshA5·1,4-BNC-CoA complexes revealed that the enzymes have very similar steroid-binding pockets with the substrate's C17 oriented toward the active site opening. Comparisons suggest Tyr-245 and Phe-297 are determinants of KshA1 specificity. All enzymes have a flexible 16-residue "mouth loop," which in some structures completely occluded the substrate-binding pocket from the bulk solvent. Remarkably, the catalytic iron and α-helices harboring its ligands were displaced up to 4.4 Å in the KshA5·substrate complexes as compared with substrate-free KshA, suggesting that Rieske oxygenases may have a dynamic nature similar to cytochrome P450.
+
+[PMID 21987574] Activity of 3-ketosteroid 9α-hydroxylase (KshAB) indicates cholesterol side chain and ring degradation occur simultaneously in Mycobacterium tuberculosis
+2011
+Mycobacterium tuberculosis (Mtb), a significant global pathogen, contains a cholesterol catabolic pathway. Although the precise role of cholesterol catabolism in Mtb remains unclear, the Rieske monooxygenase in this pathway, 3-ketosteroid 9α-hydroxylase (KshAB), has been identified as a virulence factor. To investigate the physiological substrate of KshAB, a rhodococcal acyl-CoA synthetase was used to produce the coenzyme A thioesters of two cholesterol derivatives: 3-oxo-23,24-bisnorchol-4-en-22-oic acid (forming 4-BNC-CoA) and 3-oxo-23,24-bisnorchola-1,4-dien-22-oic acid (forming 1,4-BNC-CoA). The apparent specificity constant (k(cat)/K(m)) of KshAB for the CoA thioester substrates was 20-30 times that for the corresponding 17-keto compounds previously proposed as physiological substrates. The apparent K(m)(O(2)) was 90 ± 10 μM in the presence of 1,4-BNC-CoA, consistent with the value for two other cholesterol catabolic oxygenases. The Δ(1) ketosteroid dehydrogenase KstD acted with KshAB to cleave steroid ring B with a specific activity eight times greater for a CoA thioester than the corresponding ketone. Finally, modeling 1,4-BNC-CoA into the KshA crystal structure suggested that the CoA moiety binds in a pocket at the mouth of the active site channel and could contribute to substrate specificity. These results indicate that the physiological substrates of KshAB are CoA thioester intermediates of cholesterol side chain degradation and that side chain and ring degradation occur concurrently in Mtb. This finding has implications for steroid metabolites potentially released by the pathogen during infection and for the design of inhibitors for cholesterol-degrading enzymes. The methodologies and rhodococcal enzymes used to generate thioesters will facilitate the further study of cholesterol catabolism.

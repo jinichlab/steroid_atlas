@@ -1,0 +1,40 @@
+Compound: cholest-4-en-3-one
+ChEBI ID: CHEBI:16175
+PubChem CID: 91477
+
+== Chemical properties ==
+IUPAC Name: (8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C27H44O
+Molecular Weight: 384.6
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C
+InChI: InChI=1S/C27H44O/c1-18(2)7-6-8-19(3)23-11-12-24-22-10-9-20-17-21(28)13-15-26(20,4)25(22)14-16-27(23,24)5/h17-19,22-25H,6-16H2,1-5H3/t19-,22+,23-,24+,25+,26+,27-/m1/s1
+InChIKey: NYOXRYYXRWJDKP-GYKMGIIDSA-N
+XLogP: 8.4
+TPSA: 17.1
+H-Bond Donors: 0
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A cholestanoid that is cholest-4-ene substituted by an oxo group at position 3.
+
+== Literature on cholest-4-en-3-one ==
+
+[PMID 30108700] Synthesis and biological activity evaluation of novel peroxo-bridged derivatives as potential anti-hepatitis B virus agents
+2017
+Previous studies have demonstrated that natural steroid compounds containing a peroxide bridge exhibited potential anti-hepatitis B virus activity. To continue our research, a simple and regioselective methodology, using Eosin Y as a clean photosensitized oxidation catalyst, was developed for the synthesis of a peroxide bridge in steroids. The method that using Eosin Y as the catalyst was exposed to visible light and furbished in high yields, did not involve tedious work-up or purification, and avoided using environmentally hazardous solvents. It can be regarded as a green protocol. Moreover, a series of cholesterol and β-sitosterol derivatives containing a peroxide bridge were synthesized using this method and screened for their anti-HBV activity. Among the compounds synthesized in this research, 5α,8α-cyclicobioxygen-6-vinyl-3-oxo-cholesterone (1f, 3.13 μg ml-1) had the most potent activity with inhibition rates of 77.45% ± 6.01% and 58.73% ± 8.64% on the secretion of HBsAg and HBeAg antigens, respectively, after 8 days. Further acute toxicity test showed that the LD50 value of compound 1f was 362.46 mg kg-1 after an intraperitoneal injection in mice. Moreover, structure-activity relationships of cholesterol and β-sitosterol derivatives were briefly discussed.
+
+[PMID 25997785] Association between tongue coating thickness and clinical characteristics among idiopathic membranous nephropathy patients
+2015
+Ethnopharmacological relevanceTongue coating diagnosis is a useful tool to examine the changes of a human body in Chinese Medicine. Tongue coating varies in thickness in kidney disease. However, little information exists regarding the association between clinical characters and tongue coating thickness in CKD patients.Aim of the studyThis study was carried out to determine whether there is an association between tongue coating thickness and laboratory, histological variables in idiopathic membranous nephropathy patients: one group with thin tongue coating, the other with thick tongue coating.Materials and methodsDuring July 2012-March 2014, idiopathic membranous nephropathy patients(CKD 1-2 stage) with tongue coating thickness Score ≤7, or ≥11, were enrolled as thin tongue coating group or thick tongue coating group, from Hangzhou Hospital of TCM. Laboratory variables (Hemoglobin (Hb), albumin (Alb); eGFR; alanine transferase (ALT); aspartate aminotransferase (AST); triglyceride (TG); total cholesterone (TC); high density lipoprotein (HDL); low density lipoprotein (LDL); immunoglobin A, G, M; Complement 3, 4) and renal histological data (glomerular lesions; tubular-interstitial damage) were compared, between these two groups.Results12 idiopathic MN patients (CKD 1-2 stage) with thin tongue coating (tongue coating thickness score ≤7) and 11 with thick tongue coating (tongue coating thickness score ≥11) were enrolled in our study. We found a significant lower level of TC and LDL, a significant lower level of AST, ALT in those thick tongue coating patients, compared with thin. No significant difference was observed in pathological lesion between thick and thin tongue coating patients.ConclusionTongue coating thickness is associated with lipid metabolism in idiopathic MN patients (CKD 1-2 stages).
+
+[PMID 22455743] [The relationship of serum testosterone and its related index with the metabolism syndrome in women at perimenopausal or postmenopausal periods]
+2012
+ObjectiveTo investigate the relationship between testosterone level and related index and metabolic syndrome (MS) of women in perimenopause or postmenopause period.MethodsFrom May 2009 to August 2010, 911 women aged 40-65 years underwent physical examination in the Memorial Hospital, Sun Yat-sen University were enrolled in this study, which were divided into 175 women with early perimenopause period in group A, 112 women late perimenopause period in group B, 161 women with early postmenopause period in group C, 132 women with moderate postmenopause period in group D, 88 women with late postmenopause period in group E, 243 women with regular menstruation as control group (group F). MS was defined according to the International Diabetes Federation (IDF) criteria. The relationship of free testosterone level and MS of women in different stage of menopause was analyzed.Results(1) Compared with 1.13 nmol/L in group F, median testosterone level of 1.03 nmol/L in group A, 0.91 nmol/L in group B, 0.91 nmol/L in group C, 0.87 nmol/L in group D, 0.83 nmol/L in group E decreased significantly at early peri-menopause period (P ConclusionsSerum testosterone was associated with MS in women at perimenopausal and postmenopausal period, so window period of preventing MS was set at perimenopausal period. A serum testosterone level was elevated from premenopause to postmenopause period. Because there was an association between SHBG and MS, SHBG was a selectable parameter to predict MS.
+
+[PMID 16830868] Stress and acid-base balance in chickens
+2006
+Two trials were conducted to study the effects of continuous infusion of adrenocorticotropic hormone (ACTH) on acid-base balance in broiler chickens. Osmotic pumps delivered 8 IU of ACTH in saline/kg of BW/d for 7 d or the same saline volume as used in ACTH at 1 microL/h for 7 d. Blood samples were taken on d 0 (baseline values) and on d 4, 7, and 14 after onset of the infusions. The ACTH treatment increased the hematocrit, partial pressure of CO2, anion gap, corticosterone, mean corpuscular hemoglobin concentration, the blood concentrations of hemoglobin and HCO3-, and reduced the partial pressure of O2, plasma concentrations of Na+, K+, and Cl-. Blood pH values and plasma concentrations of Ca2+ were unaffected by ACTH treatment. The ACTH infusion also resulted in a significant increase in plasma glucose, cholesterone, high-density lipoprotein, and triglyceride. There were no differences in any of the blood constituents measured from control groups. Results indicate that infusion of ACTH resulted in changes in plasma acid-base status along with changes in other blood metabolic variables. However, the ACTH treatment did not prevent homeostatic regulation of acid-base balance, as indicated by constant blood pH. There was, however, an increased need for O2 to support gluconeogenic energy production; the birds responded by increased erythropoiesis. This adaptive response provided greater numbers of erythrocytes and thus a higher amount of circulating hemoglobin to deliver O2 for metabolism.
+
+[PMID 1353652] Clinical research on treating senile dementia by combining acupuncture with acupoint-injection
+1992
+Combining acupuncture with acupoint-injection of aceglutamidi has been used in treating 38 cases of senile dementia. Our experiment showed that the therapy is effective for the cases of multi-infarct dementia, the rate of success being 42.85% and of improvement 42.86%, the total efficacy rate being 85.71%. The rating was based on the revised Hasegawa Dementia Scale and the Functional Activity Questionnaire. In addition, it has been observed that the component of high density lipid-cholesterone increased significantly after treatment.

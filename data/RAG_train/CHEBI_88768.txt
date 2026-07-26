@@ -1,0 +1,18 @@
+Compound: (11Z-octadecenoyl)-cholesterol
+ChEBI ID: CHEBI:88768
+PubChem CID: 53477793
+
+== Chemical properties ==
+IUPAC Name: [(3S,10R,13R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl] (Z)-octadec-11-enoate
+Molecular Formula: C45H78O2
+Molecular Weight: 651.1
+SMILES: CCCCCC/C=C\CCCCCCCCCC(=O)O[C@H]1CC[C@@]2(C3CC[C@]4(C(C3CC=C2C1)CCC4[C@H](C)CCCC(C)C)C)C
+InChI: InChI=1S/C45H78O2/c1-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-25-43(46)47-38-30-32-44(5)37(34-38)26-27-39-41-29-28-40(36(4)24-22-23-35(2)3)45(41,6)33-31-42(39)44/h12-13,26,35-36,38-42H,7-11,14-25,27-34H2,1-6H3/b13-12-/t36-,38+,39?,40?,41?,42?,44+,45-/m1/s1
+InChIKey: BNQAKMBVXYXXED-XZMNDPPTSA-N
+XLogP: 16.6
+TPSA: 26.3
+H-Bond Donors: 0
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A cholesteryl octadecenoate in which the acy group is specified as (11<i>Z</i>)-octadec-11-enoyl.

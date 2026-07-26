@@ -1,0 +1,18 @@
+Compound: chenodeoxycholate 7-sulfate(2-)
+ChEBI ID: CHEBI:172395
+PubChem CID: 155920195
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(3R,5S,7R,8R,9S,10S,13R,14S,17R)-3-hydroxy-10,13-dimethyl-7-sulfonatooxy-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H38O7S-2
+Molecular Weight: 470.6
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)OS(=O)(=O)[O-])C
+InChI: InChI=1S/C24H40O7S/c1-14(4-7-21(26)27)17-5-6-18-22-19(9-11-24(17,18)3)23(2)10-8-16(25)12-15(23)13-20(22)31-32(28,29)30/h14-20,22,25H,4-13H2,1-3H3,(H,26,27)(H,28,29,30)/p-2/t14-,15+,16-,17-,18+,19+,20-,22+,23+,24-/m1/s1
+InChIKey: DPVCTIYTPXYDMQ-BSWAIDMHSA-L
+XLogP: 5.1
+TPSA: 135
+H-Bond Donors: 1
+H-Bond Acceptors: 7
+
+== ChEBI definition ==
+A steroid sulfate oxoanion obtained by deprotonation of the carboxylic acid and sulfate functions of chenodeoxycholic acid 7-sulfate; major species at pH 7.3.

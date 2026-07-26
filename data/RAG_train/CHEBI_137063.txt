@@ -1,0 +1,18 @@
+Compound: cholestanol 7alpha,8alpha-epoxide
+ChEBI ID: CHEBI:137063
+PubChem CID: 129011073
+
+== Chemical properties ==
+IUPAC Name: (1R,3R,5R,7S,10S,11R,14R,15R,18R)-10,14-dimethyl-15-[(2R)-6-methylheptan-2-yl]-2-oxapentacyclo[9.7.0.01,3.05,10.014,18]octadecan-7-ol
+Molecular Formula: C27H46O2
+Molecular Weight: 402.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@]24[C@H](O4)C[C@@H]5[C@@]3(CC[C@@H](C5)O)C)C
+InChI: InChI=1S/C27H46O2/c1-17(2)7-6-8-18(3)21-9-10-22-26(21,5)14-12-23-25(4)13-11-20(28)15-19(25)16-24-27(22,23)29-24/h17-24,28H,6-16H2,1-5H3/t18-,19-,20+,21-,22-,23-,24-,25+,26-,27+/m1/s1
+InChIKey: JUEGMZBKIWIYAP-JGSBZTSISA-N
+XLogP: 7.6
+TPSA: 32.8
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A cholestanoid that is lathosterol in which the double bond at position 7,8 has been oxidised to the corresponding epoxide (the 7α,8α stereoisomer).

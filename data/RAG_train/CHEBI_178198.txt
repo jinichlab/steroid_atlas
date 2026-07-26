@@ -1,0 +1,18 @@
+Compound: etiocholan-3alpha-ol-17-one 3-O-(3-sulfo-beta-D-glucuronide)(2-)
+ChEBI ID: CHEBI:178198
+PubChem CID: 156613035
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,4S,5R,6R)-6-[[(3R,5R,8R,9S,10S,13S,14S)-10,13-dimethyl-17-oxo-1,2,3,4,5,6,7,8,9,11,12,14,15,16-tetradecahydrocyclopenta[a]phenanthren-3-yl]oxy]-3,5-dihydroxy-4-sulfonatooxyoxane-2-carboxylate
+Molecular Formula: C25H36O11S-2
+Molecular Weight: 544.6
+SMILES: C[C@]12CC[C@H](C[C@H]1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CCC4=O)C)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)[O-])O)OS(=O)(=O)[O-])O
+InChI: InChI=1S/C25H38O11S/c1-24-9-7-13(34-23-19(28)20(36-37(31,32)33)18(27)21(35-23)22(29)30)11-12(24)3-4-14-15-5-6-17(26)25(15,2)10-8-16(14)24/h12-16,18-21,23,27-28H,3-11H2,1-2H3,(H,29,30)(H,31,32,33)/p-2/t12-,13-,14+,15+,16+,18+,19-,20+,21+,23-,24+,25+/m1/s1
+InChIKey: DQNZSFSAXYWEPI-OCDJPEPRSA-L
+XLogP: 2.5
+TPSA: 191
+H-Bond Donors: 2
+H-Bond Acceptors: 11
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of etiocholan-3α-ol-17-one 3-<em>O</em>-(3-sulfo-β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic and sulfate groups; major species at pH 7.3.

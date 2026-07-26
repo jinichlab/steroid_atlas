@@ -1,0 +1,18 @@
+Compound: 5alpha-pregan-20beta-ol-3-one
+ChEBI ID: CHEBI:78594
+PubChem CID: 22211699
+
+== Chemical properties ==
+IUPAC Name: (5S,8R,9S,10S,13S,14S,17S)-17-[(1R)-1-hydroxyethyl]-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C21H34O2
+Molecular Weight: 318.5
+SMILES: C[C@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C)O
+InChI: InChI=1S/C21H34O2/c1-13(22)17-6-7-18-16-5-4-14-12-15(23)8-10-20(14,2)19(16)9-11-21(17,18)3/h13-14,16-19,22H,4-12H2,1-3H3/t13-,14+,16+,17-,18+,19+,20+,21-/m1/s1
+InChIKey: DYVGYXXLXQESJE-XPLLOJBJSA-N
+XLogP: 4.8
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A 3-oxo-5α- steroid that is 5α-pregane-3-one carrying an additional hydroxy substituent at the 20β-position.

@@ -1,0 +1,40 @@
+Compound: 5beta-cholestane-3alpha,7alpha,25-triol
+ChEBI ID: CHEBI:169972
+PubChem CID: 5284197
+
+== Chemical properties ==
+IUPAC Name: (3R,5S,7R,8R,9S,10S,13R,14S,17R)-17-[(2R)-6-hydroxy-6-methylheptan-2-yl]-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthrene-3,7-diol
+Molecular Formula: C27H48O3
+Molecular Weight: 420.7
+SMILES: C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)C
+InChI: InChI=1S/C27H48O3/c1-17(7-6-12-25(2,3)30)20-8-9-21-24-22(11-14-27(20,21)5)26(4)13-10-19(28)15-18(26)16-23(24)29/h17-24,28-30H,6-16H2,1-5H3/t17-,18+,19-,20-,21+,22+,23-,24+,26+,27-/m1/s1
+InChIKey: UROPIWALBBMYRP-JTKZRGNMSA-N
+XLogP: 6.3
+TPSA: 60.7
+H-Bond Donors: 3
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+5beta-cholestane-3alpha,7alpha,25-triol is a 3alpha-hydroxy steroid, a 7alpha-hydroxy steroid and a 25-hydroxy steroid. It derives from a hydride of a 5beta-cholestane.
+
+== Literature on 5beta-cholestane-3alpha,7alpha,25-triol ==
+
+[PMID 1145673] New bile alcohols--synthesis of 5beta-cholestane-3alpha, 7alpha, 25-triol and 5beta-cholestane-3alpha, 7alpha, 25-24 (14C)-triol
+1975
+5beta-Cholestane-3alpha, 7alpha, 25-triol and 5beta-cholestane-3alpha, 7alpha, 25-24(14-C)-triol were synthesized from 3alpha, 7alpha-dihydroxy-5beta-cholanoic acid (chenodeoxycholic acid). Chenodeoxycholic acid was converted to the diformoxy derivative (II) using formic acid. Reaction of II with thionyl chloride yielded the acid chloride which was treated with diazomethane (CH-2-N-2 or 14-CH-2-N-2) to produce 3alpha, 7alpha-diformoxy-24-oxo-25-diazo-25-homocholane (III, A or B). 25-Homochenodeoxycholic acid (IV, A or B) was formed from III by means of the Wolff rearrangement of the Arndt-Eistert synthesis. The methyl ester of V (A or B) was treated with methyl magnesium iodidi in ether to provide the desired triol, VI (A and B). The triol was identified by mass spectrometry and elemental analysis and was characterized by thin-layer and gas-liquid chromatography. The 3alpha, 7alpha, 25-triol is of possible significance as an intermediate in the pathway of bile acid formation from cholesterol.
+
+[PMID 1265799] New bile alcohols - synthesis of (22R)- and (22S)-5beta-cholestane-3alpha,7alpha,12alpha,22,25-pentols
+1976
+The synthesis of (22R)- and (22S)-5beta-cholestane-3alpha,7alpha,12alpha,22,25-pentols is described. Bisnorcholyl aldehyde was prepared from cholic acid and converted into the cholestane-pentols by a Grignard reaction with 3-methyl-3-(tetrahydropyran-2-yloxy)-butynylmagnesium bromide followed by hydrogenation and acid hydrolysis. One of the synthetic pentols, the 22R-isomer was identical with a metabolite of 5beta-cholestane-3alpha,7alpha,25-triol formed in the rabbit.
+
+[PMID 438653] Metabolism of potential precursors of chenodeoxycholic acid in cerebrotendinous xanthomatosis (CTX)
+1979
+In patients with cerebrotendinous xanthomatosis (CTX), diminished cholic acid production is associated with incomplete oxidation of the cholesterol side chain and the excretion of C(25)-hydroxy bile alcohols. The aims of this investigation were 1) to provide quantitative information on the pool size and production rate of chenodeoxycholic acid by the isotope dilution technique; and 2) to investigate the possible existence of a block in chenodeoxycholic acid synthesis and explain the absence of chenodeoxycholic acid precursors in CTX. After the injection of [24-(14)C]chenodeoxycholic acid, measurements of chenodeoxycholic acid pool size and production rate in a CTX subject were, respectively, 1/20 and 1/6 as great as controls. Further, three potential precursors of chenodeoxycholic acid, namely [G-(3)H]7alpha-hydroxy-4-cholesten-3-one, [G-(3)H]5beta-cholestane-3alpha,7alpha,25-triol, and [G-(3)H]5beta-cholestane-3alpha,7alpha,26-triol, were administered to the CTX and control subjects and the specific activity curves of [G-(3)H]cholic acid and [G-(3)H]chenodeoxycholic acid were constructed and compared. In the control subjects, the two bile acids decayed exponentially, but in the CTX patient maximum specific activities were abnormally delayed, indicating the hindered transformation of precursor into bile acid. These results show that chenodeoxycholic acid synthesis is small in CTX and that the conversion of 7alpha-hydroxy-4-cholesten-3-one, 5beta-cholestane-3alpha,7alpha,25-triol, and 5beta-cholestane-3alpha,7alpha,26-triol to both chenodeoxycholic acid and cholic acid were similarly impaired.
+
+[PMID 632683] Preparation of 24(R)- and 24(S)-5beta-cholestane-3alpha,7alpha,24-triols and 25(R)- and 25(S)-5beta-cholestane-3alpha,7alpha,26-triols by a hydroboration procedure
+1978
+This report describes a new and convenient method for the preparation of 5beta-cholestane-3alpha,7alpha,24-triol (24R and 24S) and 5beta-cholestane-3alpha,7alpha,26-triol (25R and 25S) starting from 5beta-cholestane-3alpha,7alpha,25-triol. Dehydration of the latter with acetic anhydride and glacial acetic acid yielded a mixture of 5beta-cholest-24ene-3alpha,7alpha-diol and the corresponding delta25 compound. Hydroboration and oxidation of the delta24 unsaturated bile alcohol resulted in the formation of 5beta-cholestane-3alpha,7alpha,24-triol. 5beta-Cholestane-3alpha,7alpha,26-triol and 5beta-cholestane-3alpha,7alpha-diol were obtained from the delta25 bile alcohol. In each case the bile alcohols epimeric at C-24 and C-25 were resolved by analytical and preparative thin-layer chromatography and characterized by gas-liquid chromatography, infrared-, proton magnetic resonance-, and mass spectrometry. Tentative assignment of the 24R, 24S and 25R, 25S configurations was made on the basis of molecular rotation differences. These epimeric bile alcohols will be useful for biological studies of chenodeoxycholic acid biosynthesis.
+
+[PMID 185209] Quantitative aspects of the conversion of 5 beta-cholestane intermediates to bile acids in man
+1976
+The in vivo conversion of several 5 beta-cholestane intermediates to primary bile acids was investigated in three patients with total biliary diversion. The following compounds were administered intravenously: 5 beta-[G-3H]-cholestane-3 alpha, 7 alpha-diol, 5 beta-[G-3H]cholestane-3 alpha, 7alpha, 26-triol, and 5 beta-[24-14C]cholestane-3 alpha, 7 alpha-25-triol. Bile was then collected quantitatively at frequent intervals for the next 21 to 28 h. The administered 5 beta-[G-3H]cholestane-3alpha, 7alpha, 26-triol was found to be efficiently converted to cholic and chenodeoxycholic acids in two patients; 61 and 75% of the administered label was found in primary bile acids. The proportion of labeled cholic to chenodeoxycholic acid was 1.20 and 1.02 in the bile of these patients, indicating that the C-26 triol was efficiently converted to cholic acid. The ratio of cholic to chenodeoxycholic acid (mass) in the bile of these patients was 1.23 and 2.32. The 5 beta-cholestane-3alpha, 7alpha-diol intermediate was also efficiently converted (71%) to both primary bile acids. The cholic to chenodeoxycholic acid ratios by mass and label were similar (2.97 versus 2.23). By contrast, the 5beta-cholestane-3alpha, 7alpha, 25-triol was poorly converted to bile acids in three patients. Following the administration of this compound almost all of the administered radioactivity found in the bile acid fraction was in cholic acid (5 to 19%) and very little (less than 5%) was found in chenodeoxycholic acid. These findings indicate that ring hydroxylation at position 12 is not materially hindered by the presence of a hydroxyl group on the side chain at C-26 in patients with biliary diversion. The labeled C-26-triol which was efficiently converted to both primary bile acids in a proportion similar to that which was observed for the bile acids synthesized by the liver suggests that this 5beta-cholestane derivative may be a major intermediate in the synthesis of both cholic and chenodeoxycholic acids.

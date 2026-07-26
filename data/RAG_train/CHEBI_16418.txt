@@ -1,0 +1,18 @@
+Compound: (20S)-17,20-dihydroxypregn-4-en-3-one
+ChEBI ID: CHEBI:16418
+PubChem CID: 440368
+
+== Chemical properties ==
+IUPAC Name: (8R,9S,10R,13S,14S,17R)-17-hydroxy-17-[(1S)-1-hydroxyethyl]-10,13-dimethyl-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthren-3-one
+Molecular Formula: C21H32O3
+Molecular Weight: 332.5
+SMILES: C[C@@H]([C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C)O)O
+InChI: InChI=1S/C21H32O3/c1-13(22)21(24)11-8-18-16-5-4-14-12-15(23)6-9-19(14,2)17(16)7-10-20(18,21)3/h12-13,16-18,22,24H,4-11H2,1-3H3/t13-,16+,17-,18-,19-,20-,21-/m0/s1
+InChIKey: MASCESDECGBIBB-HNXXTFFGSA-N
+XLogP: 2.5
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+The (20<i>S</i>)-stereoisomer of 17,20-dihydroxypregn-4-en-3-one.

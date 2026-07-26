@@ -1,0 +1,40 @@
+Compound: 17beta-hydroxy steroid
+ChEBI ID: CHEBI:35343
+PubChem CID: 68208519
+
+== Chemical properties ==
+IUPAC Name: (17S)-13-methyl-1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17-hexadecahydrocyclopenta[a]phenanthren-17-ol
+Molecular Formula: C18H30O
+Molecular Weight: 262.4
+SMILES: CC12CCC3C4CCCCC4CCC3C1CC[C@@H]2O
+InChI: InChI=1S/C18H30O/c1-18-11-10-14-13-5-3-2-4-12(13)6-7-15(14)16(18)8-9-17(18)19/h12-17,19H,2-11H2,1H3/t12?,13?,14?,15?,16?,17-,18?/m0/s1
+InChIKey: BPQNGYJXSMNOKW-DLBCMHPOSA-N
+XLogP: 5.5
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A 17-hydroxy steroid in which the hydroxy group at position 17 has a β-configuration.
+
+== Literature on 17beta-hydroxy steroid ==
+
+[PMID 19298521] Intracrine androgenic apparatus in human bone marrow stromal cells
+2009
+It was suggested that human mesenchymal stromal cells might contain an intracrine enzyme machinery potentially able to synthesize the cell's own supply of dihydrotestosterone (DHT) from dehydroepiandrosterone (DHEA) pro-hormone produced in the adrenal cortex in the reticular zone, which is unique to primates. Indeed, 3beta-hydroxysteroid dehydrogenase (3beta-HSD) and 5alpha-reductase enzyme proteins were expressed in resting mesenchymal stromal cells (MSCs) in vitro. However, the 'bridging' enzymes 17beta-HSDs, catalysing interconversion between 17beta-ketosteroids and 17beta-hydroxysteroids, were not found in resting MSCs, but 17beta-HSD enzyme protein was induced in a dose-dependent manner by DHEA. Quantitative real-time polymerase chain reactions disclosed that this was mainly due to induction of the isoform 5 catalysing this reaction in 'forward', androgen-bound direction (P < 0.01). This work demonstrates that the MSCs have an intracrine machinery to convert DHEA to DHT if and when challenged by DHEA. DHEA as substrate exerts a positive, feed-forward up-regulation on the 17beta-hydroxy steroid dehydrogenase-5, which may imply that DHEA-DHT tailor-making in MSCs is subjected to chronobiological regulation.
+
+[PMID 17176670] Impact of feeding ethanolic extract of root bark of Cananga odorata (Lam) on reproductive functions in male rats
+2006
+The 50% ethanolic extract of the root bark of C. odorata administered orally at the dose of 1g/kg body weight/day for 60 days resulted in decreased epididymal sperm motility and sperm count in male albino rats. Morphological abnormalities were also observed in the sperms. The testicular glycogen, the activities of 3beta hydroxy steroid dehydrogenase, glucose 6-phosphate dehydrogenase, malic enzyme, sorbitol dehydrogenase in seminal vesicle, fructose in seminal plasma and serum testosterone were significantly decreased in treated group. While testicular cholesterol level, the concentration of the fecal bile acids, urinary excretion of 17 ketosteroids, the activities of 17beta hydroxy steroid dehydrogenase, epididymal lactate dehydrogenase and that of testicular HMG CoA reductase were increased in treated group when compared to control. The results suggest that the ethanolic extract of C. odorata possesses the spermatotoxic effects in male albino rats.
+
+[PMID 16436288] The metabolism of cholesterol and certain hormonal steroids by Treponema denticola
+2006
+The aim was to investigate whether reference cultures and fresh isolates of Treponema denticola are able to 5alpha-reduce and further metabolise testosterone, 4-androstenedione, progesterone, corticosterone, cortisol or cholesterol. Two reference and five freshly isolated cultures of T. denticola were incubated with either radiolabeled or unlabeled steroid substrates; in the first case products were identified by thin layer chromatography and in the latter by gas chromatography-mass spectroscopy. All the substrates were 5alpha-reduced. Both reference cultures and fresh isolates of T. denticola presented 3beta- and 17beta-hydroxy steroid dehydrogenase activity. It was concluded that T. denticola was capable of steroid metabolism and hypotheses are discussed regarding the in vivo function of this metabolism including, T. denticola utilising host supplied steroids as growth factors and T. denticola steroid metabolism acting as a virulence factor.
+
+[PMID 10921451] Studies on methotrexate effects on testicular steroidogenesis in rats
+2000
+The effects of single dose, 4 consecutive days, 4 and 8 weekly doses of methotrexate (MTX) treatment (3 mg/kg body weight, intramuscularly) with and without leucovorin (LCN) supplementation (0.3 mg/kg body weight, intramuscularly) on serum testosterone titres, total, free and esterified cholesterol concentrations and steroidogenic enzymes, viz. 3beta- and 17beta-hydroxy steroid dehydrogenase activities were studied in adult albino rats. MTX treatment caused a marked reduction in serum testosterone titres in all the treatment groups in a duration-dependent manner. LCN supplementation did not restore serum testosterone titres to normalcy. Total and free cholesterol concentrations remained unaltered in both MTX and MTX + LCN treated groups. On the other hand, a marked increase in esterified cholesterol concentration was evident only in weekly dose treatment groups. The specific activities of 3beta- and 17beta-hydroxy steroid dehydrogenase were markedly diminished in both MTX and MTX + LCN treated groups. The results suggest the inhibitory effect of MTX on steroidogenesis.
+
+[PMID 18085508] Evaluation of boldenone formation and related steroids transformations in veal faeces by liquid chromatography/tandem mass spectrometry
+2008
+It is established that bovine urine can result positive for boldenone and androstadienedione in consequence of faecal contamination. The simple transfer of steroids to urine is one minor aspect of faecal contamination. A high de novo production of steroids in faeces after deposition and in faeces-contaminated urine is almost certainly due to microbial activity, although the precursor compounds and transformations leading to the presence of these illegal steroids are unclear. We developed a simple in vitro method - incubation of faecal matter suspended in 0.9% saline - to induce steroid transformations in faeces, and analyzed the products by liquid chromatography/tandem mass spectrometry, without the need for prior extraction. Norethandrolone was the internal standard. The linearity (R(2): 0.987-0.999), sensitivity (LODs: 0.3 to 1.0 ng/mL; LOQs: 1.0 to 3.0 ng/mL), precision (intra-day CVs: 2.6-8.2; inter-day CVs: 4.5-11.5) and accuracy (percentage recovery: 89-120%) were calculated for the studied steroids. Androstenedione, androstadienedione, alpha- and beta-boldenone, testosterone and epitestosterone transformations were investigated. Mutual interconversion of steroids was observed, although 17beta-hydroxy steroids had low stability compared with 17alpha-hydroxy and 17-keto steroids. The results suggest that this simple in vitro system may be an effective way of studying hormone transformations in faeces and, after analogue studies, in faeces-contaminated urine.

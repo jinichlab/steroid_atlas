@@ -1,0 +1,40 @@
+Compound: 17-oxo steroid
+ChEBI ID: CHEBI:19168
+PubChem CID: 4226429
+
+== Chemical properties ==
+IUPAC Name: 13-methyl-2,3,4,5,6,7,8,9,10,11,12,14,15,16-tetradecahydro-1H-cyclopenta[a]phenanthren-17-one
+Molecular Formula: C18H28O
+Molecular Weight: 260.4
+SMILES: CC12CCC3C4CCCCC4CCC3C1CCC2=O
+InChI: InChI=1S/C18H28O/c1-18-11-10-14-13-5-3-2-4-12(13)6-7-15(14)16(18)8-9-17(18)19/h12-16H,2-11H2,1H3
+InChIKey: WYRCRDCGMYGWKP-UHFFFAOYSA-N
+XLogP: 5.2
+TPSA: 17.1
+H-Bond Donors: 0
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+Any  oxo steroid carrying the oxo group at position 17.
+
+== Literature on 17-oxo steroid ==
+
+[PMID 2777951] Determination of 17-oxosteroid sulphates in serum by ion-pair extraction, prelabelling with dansylhydrazine and high-performance liquid chromatography with fluorescence detection
+1989
+A new high-performance liquid chromatographic (HPLC) method with fluorescence detection is described for the direct determination of four serum 17-oxosteroid sulphates. Each serum sample was deproteinated with methanol, the methanol was evaporated and 17-oxosteroid sulphates in the residue were extracted with benzene as ion pairs in the presence of tetrapentylammonium ion. The ion pairs were labelled with dansylhydrazine and the hydrazones were separated by HPLC on a Capcell-Pak C8 (silicone polymer-coated silica gel modified with octyl groups) reversed-phase column using methanol-0.5% (w/v) sodium acetate-50% (v/v) acetic acid (57:42:1, v/v/v) as the mobile phase. The eluent was monitored with a fluorometric detector at an excitation wavelength of 330 nm and an emission wavelength of 540 nm.
+
+[PMID 20685217] Pd(PPh(3))(4)/AgOAc-catalyzed coupling of 17-steroidal triflates and alkynes: Highly efficient synthesis of D-ring unsaturated 17-alkynylsteroids
+2010
+A novel and practical procedure was developed for the preparation of D-ring unsaturated 17-alkynyl steroids by Pd(PPh(3))(4)/AgOAc-catalyzed coupling of steroidal 17-triflates and alkynes. Firstly treatment of the steroid-17-ones with PhN(Tf)(2) and KHMDS in dried THF at -78 degrees C for 2h gives the corresponding steroidal 17-triflates products in high yields (97-98%), following the coupling of steroidal 17-triflates and various 1-alkynes by Pd(PPh(3))(4)/AgOAc-catalyzed in the presence of DIPEA for 24h to yield the desired D-ring unsaturated 17-alkynyl steroids (86-97%). Moreover, it was found that the coupling reaction catalyzed by Pd[(C(6)H(5))(3)P](4)/AgOAc system is selective for aryl triflates or vinyl triflates. By optimizing the reaction conditions, the sole C17-coupling products from steroidal bistriflates were obtained in satisfactory yields. Since D-ring unsaturated 17-alkynyl steroids with conjugated double and triplet bond can be subsequently converted into pentacyclic steroids and 17-oxosteroid derivatives at the side chain of D-ring, this general method provides a highly efficient route to these biologically important compounds.
+
+[PMID 3584369] Determination of 17-oxosteroid glucuronides and sulphates in urine by liquid chromatography using 2,4-dinitrophenylhydrazine as a prelabelling reagent for spectrophotometric detection
+1987
+A direct, convenient method using high-performance liquid chromatography with spectrophotometric detection has been developed for the determination of conjugated 17-oxosteroids in urine without hydrolysis. Conjugated 17-oxosteroids are extracted with a Sep-Pak C18 cartridge, prelabelled with 2,4-dinitrophenylhydrazine in trichloroacetic acid-benzene solution and then separated by high-performance liquid chromatography on a reversed-phase C18 column using a mobile phase of 70% methanol in a buffer consisting of 50 mM sodium acetate in 2% (v/v) acetic acid. The eluate is monitored by a spectrophotometer at 380 nm and a linear response was found for absorbance readings (peak heights) from amounts of various conjugated oxosteroids between 25 and 250 ng. The method provides a sensitive, reliable technique for the analysis of urinary 17-oxosteroid conjugates.
+
+[PMID 5964971] The indirect analysis of 17-oxosteroid glucosiduronates and sulphates in human urine
+1966
+1. An analytical procedure has been developed for the determination of urinary 17-oxosteroid sulphates and 11-deoxy-17-oxosteroid glucosiduronates. 2. By submitting urine to the following operations: (a) extraction of the 17-oxosteroid conjugates into chloroform (in the presence of pyridinium sulphate), (b) solvolysis (in the absence of acid) of the steroid sulphates, (c) separation of the steroid glucosiduronates, (d) hydrolysis of the glucosiduronates, (e) oxidation with tert.-butyl chromate of the liberated steroids and (f) analysis of the final extracts by gas-liquid chromatography, the 17-oxosteroid conjugates are converted into and measured as androstanediones and androstane-(ene)triones. 3. Values for the daily excretion of 17-oxosteroid glucosiduronates and sulphates in normal men and women are given.
+
+[PMID 171102] Application of a simple urinary 11-deoxy-17-oxosteroid assay to the study of adrenocortical function in a selected group of hirsute women
+1975
+Using a relatively simple 11-deoxy-17-oxosteroid assay a group of hirsute patients have been studied before and following the administration of ACTH. These patients were selected on the basis that each showed an exaggerated response of urinary testosterone excretion to ACTH stimulation. Fifteen of eighteen patients were found to show an exaggerated urinary 11-deoxy-17-oxosteroid response to ACTH stimulation in addition to the excessive urinary testosterone response, suggesting that dysfunction of the adrenal cortex might be a factor contributing to the hirsutism of these fifteen patients.

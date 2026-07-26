@@ -1,0 +1,40 @@
+Compound: (22S)-22-hydroxycholesterol
+ChEBI ID: CHEBI:1301
+PubChem CID: 168038
+
+== Chemical properties ==
+IUPAC Name: (3S,8S,9S,10R,13S,14S,17R)-17-[(2S,3S)-3-hydroxy-6-methylheptan-2-yl]-10,13-dimethyl-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C27H46O2
+Molecular Weight: 402.7
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)[C@H](CCC(C)C)O
+InChI: InChI=1S/C27H46O2/c1-17(2)6-11-25(29)18(3)22-9-10-23-21-8-7-19-16-20(28)12-14-26(19,4)24(21)13-15-27(22,23)5/h7,17-18,20-25,28-29H,6,8-16H2,1-5H3/t18-,20-,21-,22+,23-,24-,25-,26-,27+/m0/s1
+InChIKey: RZPAXNJLEKLXNO-QUOSNDFLSA-N
+XLogP: 7
+TPSA: 40.5
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+An oxysterol that is the 22<i>S</i>-hydroxy derivative of cholesterol.
+
+== Literature on (22S)-22-hydroxycholesterol ==
+
+[PMID 34816537] 22R- but not 22S-hydroxycholesterol is recruited for diosgenin biosynthesis
+2022
+Diosgenin is an important compound in the pharmaceutical industry and it is biosynthesized in several eudicot and monocot species, herein represented by fenugreek (a eudicot), and Dioscorea zingiberensis (a monocot). Formation of diosgenin can be achieved by the early C22,16-oxidations of cholesterol followed by a late C26-oxidation. This study reveals that, in both fenugreek and D. zingiberensis, the early C22,16-oxygenase(s) shows strict 22R-stereospecificity for hydroxylation of the substrates. Evidence against the recently proposed intermediacy of 16S,22S-dihydroxycholesterol in diosgenin biosynthesis was also found. Moreover, in contrast to the eudicot fenugreek, which utilizes a single multifunctional cytochrome P450 (TfCYP90B50) to perform the early C22,16-oxidations, the monocot D. zingiberensis has evolved two separate cytochrome P450 enzymes, with DzCYP90B71 being specific for the 22R-oxidation and DzCYP90G6 for the C16-oxidation. We suggest that the DzCYP90B71/DzCYP90G6 pair represent more broadly conserved catalysts for diosgenin biosynthesis in monocots.
+
+[PMID 24480443] Regulation of the adrenoleukodystrophy-related gene (ABCD2): focus on oxysterols and LXR antagonists
+2014
+The regulation of the ABCD2 gene is recognized as a possible therapeutic target for X-linked adrenoleukodystrophy, a rare neurodegenerative disease caused by mutations in the ABCD1 gene. Up-regulation of ABCD2 expression has indeed been demonstrated to compensate for ABCD1 deficiency, restoring peroxisomal β-oxidation of very-long-chain fatty acids. Besides the known inducers of the ABCD2 gene (phenylbutyrate and histone deacetylase inhibitors, fibrates, dehydroepiandrosterone, thyroid hormone and thyromimetics), this review will focus on LXR antagonists and 22S-hydroxycholesterol, recently described as inducers of ABCD2 expression. Several LXR antagonists have been identified and their possible indication for neurodegenerative disorders will be discussed.
+
+[PMID 6289587] Conversion of 22S-hydroxy-cholesterol and its effects on the metabolism of other sterols in rat adrenal cells and bovine adrenal mitochondria
+1982
+This study provides evidence that 22S-OH-cholesterol inhibits the conversion of 25-OH-cholesterol but has no effect on the conversion of 22R-OH-cholesterol. The latter sterol is an intermediate in the cholesterol side-chain cleavage, whereas for the conversion of 25-OH-cholesterol into pregnenolone the complete side-chain cleaving enzyme system is necessary. This complements a previous study in which it was shown, that 22S-OH-cholesterol has an inhibitory effect on the ACTH-induced conversion of cholesterol into corticosterone in isolated rat adrenal cells. The available evidence thus suggests an inhibition by 22S-OH-cholesterol of the first step in the cholesterol side-chain cleavage. The results, obtained from the experiments with rat adrenal cells and with bovine adrenal mitochondria, allow the hypothesis, that a causal relationship exists between conversion of 22S-OH-cholesterol and production of corticosterone, respectively pregnenolone. We conclude, that 22S-OH-cholesterol is a substrate for steroid production in the adrenal cell. This sterol inhibits the ACTH-stimulated corticosterone production. The site of this inhibition is located at one of the first steps in the cholesterol side-chain cleavage, probably the binding of cholesterol to the cytochrome P450-complex.
+
+[PMID 6263029] Effects of 22S-hydroxy-cholesterol and other hydroxylated sterols on the ACTH-stimulated steroid production in rat adrenal cells
+1981
+Several effects of hydroxylated sterols on cell cultures are known. Most of these can be explained by an inhibition of the cholesterol synthesis at the level of the 3-hydroxy-3-methylglutaryl CoA reductase. When studying cholesterol metabolism in rat adrenal cells, an inhibitory action of some sterols on the ACTH-stimulated corticosterone production was observed. The effects of one sterol, 22S-OH-cholesterol, were investigated further. The sterol had no effect on the ACTH-stimulated cyclic AMP production, suggesting an intact receptor-adenylate cyclase complex and cellular membrane. In the presence of ACTH and 22-OH-cholesterol particularly the free cholesterol concentration was elevated; 22S-OH-cholesterol therefore probably exerts its inhibitory effect at a step located after hydrolysis of the cholesterol esters. 22S-OH-cholesterol had no effect on the conversion of exogenous pregnenolone into corticosterone. These results make it probable, that the inhibitory effect of 22S-OH-cholesterol on the ACTH-stimulated corticosterone production is situated at the level of the cholesterol side-chain cleavage.
+
+[PMID 6322498] Effects of some hydroxylated sterols on the steroid production in isolated rat adrenal glomerulosa and fasciculata/reticularis cells in the presence of potassium, angiotensin II or ACTH
+1984
+22S-OH-cholesterol and 25-OH-cholesterol are good aldosterone precursors in isolated rat adrenal glomerulosa cells. In the two concentrations tested (25 and 50 microM) 25-OH-cholesterol stimulated the aldosterone production in a (not-linear) dose-dependent way. An increase in the 22S-OH-cholesterol concentration from 25 microM to 50 microM led to a decrease in the aldosterone production. The exogenous substrate deoxycorticosterone, entering the steroidogenic pathway after the cholesterol side-chain cleavage, is a much better substrate than the sterols mentioned. These results suggest that the cholesterol side-chain cleavage is the rate-limiting step in the aldosterone production from both sterols. We found no effect of the sterols on the potassium-induced aldosterone synthesis. This might be explained by the existence of separate pools of steroid intermediates within the adrenal cell. In vitro a difference in steroid production rates exists between glomerulosa and fasciculata/reticularis cells. This may arise from differences in availability of endogenous steroid precursors like cholesterol. However similar differences can be observed if exogenous substrates like 25-OH-cholesterol or 22S-OH-cholesterol are used. These results therefore suggest that enzymatic activities in the steroidogenic pathway are more important than the cholesterol concentration in regulating steroid production in isolated rat adrenal glomerulosa and fasciculata/reticularis cells.

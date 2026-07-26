@@ -1,0 +1,40 @@
+Compound: dehydroepiandrosterone sulfate(1-)
+ChEBI ID: CHEBI:57905
+PubChem CID: 20057076
+
+== Chemical properties ==
+IUPAC Name: [(3S,8R,9S,10R,13S,14S)-10,13-dimethyl-17-oxo-1,2,3,4,7,8,9,11,12,14,15,16-dodecahydrocyclopenta[a]phenanthren-3-yl] sulfate
+Molecular Formula: C19H27O5S-
+Molecular Weight: 367.5
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CC=C4[C@@]3(CC[C@@H](C4)OS(=O)(=O)[O-])C
+InChI: InChI=1S/C19H28O5S/c1-18-9-7-13(24-25(21,22)23)11-12(18)3-4-14-15-5-6-17(20)19(15,2)10-8-16(14)18/h3,13-16H,4-11H2,1-2H3,(H,21,22,23)/p-1/t13-,14-,15-,16-,18-,19-/m0/s1
+InChIKey: CZWCKYRVOZZJNM-USOAJAOKSA-M
+XLogP: 2.8
+TPSA: 91.9
+H-Bond Donors: 0
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+The conjugate base of 3β-hydroxyandrost-5-en-17-one 3-sulfate arising from deprotonation of the sulfate OH group; major species at pH 7.3.
+
+== Literature on dehydroepiandrosterone sulfate(1-) ==
+
+[PMID 16081670] Flavonoids as a novel class of human organic anion-transporting polypeptide OATP1B1 (OATP-C) modulators
+2005
+Flavonoids are a class of polyphenolic compounds widely present in the diet and herbal products. The interactions of flavonoids with some major efflux transporters [e.g., P-glycoprotein, multidrug resistance-associated protein 1 (MRP1), and breast cancer resistance protein] have been reported; however, their interactions with uptake transporters are largely unknown. Organic anion-transporting polypeptide OATP1B1 is a liver-specific uptake transporter important in hepatic drug disposition. Our objective was to evaluate the effects of 20 naturally occurring flavonoids, and some of their corresponding glycosides, on the uptake of [3H]dehydroepiandrosterone sulfate (DHEAS) in OATP1B1-expressing and OATP1B1-negative HeLa cells. Many of the tested flavonoids (including biochanin A, genistein, and epigallocatechin-3-gallate) significantly inhibited [3H]DHEAS uptake in a concentration-dependent manner in OATP1B1-expressing cells, with biochanin A being one of the most potent inhibitors with an IC50 of 11.3 +/- 3.22 microM. The flavonoids had negligible or small effects in OATP1B1-negative cells. Four of the eight pairs of tested flavonoids and their glycosides, namely, genistein/genistin, diosmetin/diosmin, epigallocatechin/epigallocatechin-3-gallate, and quercetin/rutin, exhibited distinct effects on [3H]DHEAS uptake. For example, genistin did not inhibit DHEAS uptake, whereas genistein did, and rutin stimulated uptake, whereas quercetin had no effect. [3H]Biochanin A uptake was similar in OATP1B1-expressing and OATP1B1-negative cells, suggesting that it is not a substrate for OATP1B1. A kinetic study revealed that biochanin A inhibited [3H]DHEAS uptake in a noncompetitive manner, with a Ki of 10.2 +/- 1.89 microM. Taken together, these results indicate that flavonoids are a novel class of OATP1B1 modulators, suggesting the potential for diet-drug interactions.
+
+[PMID 2977418] Metabolism of 3H-dehydroepiandrosterone sulphate by subjects with steroid sulphatase deficiency
+1988
+Patients with steroid sulphatase deficiency develop ichthyosis with accumulation of cholesterol sulphate in plasma and in the stratum corneum. The present study was undertaken to determine whether desulphation of the C19 steroid DHEAS is also impaired. The mean plasma concentrations of DHEA and androstenedione were significantly lower for patients than for controls (p less than 0.02 and 0.001) while the mean concentration of DHEAS was higher (p less than 0.002). Following intravenous administration of 3H-DHEAS, one patient failed to desulphate 3H-DHEAS as evidenced by an absence of urinary 3H-glucuronides. A second produced normal amounts of urinary 3H-glucuronides (indicative of desulphation capacity) in a baseline study but did not desulphate 3H-DHEAS following ampicillin treatment to alter gut microflora. A third patient had consistent sulphatase activity with and without ampicillin.
+
+[PMID 9539145] Dehydroepiandrosterone sulfate (DHEAS): identification of a carrier protein in human liver and brain
+1998
+Dehydroepiandrosterone sulfate (DHEAS) is the major circulating steroid in man. Pharmacologically, it exerts marked neuropsychiatric effects. Since no target receptor has been identified, we investigated whether the organic anion transporting polypeptide (OATP), a multispecific steroid carrier, transports DHEAS. Expression of the human liver OATP in Xenopus laevis oocytes resulted in high-affinity, partially Na+-dependent uptake of [3H]DHEAS (Km: 6.6 micromol/l). DHEAS transport was inhibited by bromosulfophthalein, bile acids, sulfated estrogens and dexamethasone. Northern blot analysis showed widespread expression of OATP in human brain. These data identify OATP as the first known target protein of DHEAS in human liver and brain.
+
+[PMID 7999152] Specific binding of dehydroepiandrosterone sulfate to rat liver cytosol: a possible association with peroxisomal enzyme induction
+1994
+Incubation of [3H]dehydroepiandrosterone sulfate (DHEAS) with rat liver cytosol demonstrated its specific binding with a dissociation constant of 72 +/- 14 nM and a maximal binding capacity of 312 +/- 105 fmol/mg cytosol protein. The binding correlated with the amount of cytosol protein, and depended on time, temperature and pH, with equilibrium being reached after 6 h at 0 degrees C and pH 7.5. Boiling or treatment of the cytosol with proteases or sulfhydryl-blocking reagents affected the binding. The apparent molecular mass of the binding entity was estimated to be 160-230 kDa by HPLC gel filtration. In competitive binding studies, free steroids, including dehydroepiandrosterone (DHEA), sulfatase substrates and ligands of organic anion binders such as ligandin and fatty acid binding protein, had no effect on the [3H]DHEAS binding. Peroxisome proliferators also had no effect, except Wy-14,643. Competition with various steroids related to DHEAS revealed strict structural requirements for DHEAS binding, in which epiandrosterone sulfate was almost as effective as unlabeled DHEAS in inhibiting [3H]DHEAS binding. These findings indicated the presence of a binding protein highly specific to DHEAS in rat liver cytosol. The DHEAS binding in liver cytosol was 2-fold higher in male than in female rats. The cytosolic DHEAS binding was highest in the liver, followed by the kidney and heart. The possibility of association between the DHEAS binding and DHEA induction of peroxisomal beta-oxidation is discussed.
+
+[PMID 9930762] Immunocytochemical localization and biological activity of hydroxysteroid sulfotransferase in the frog brain
+1999
+Biosynthesis of the neuroactive steroids pregnenolone sulfate (delta5PS) and dehydroepiandrosterone sulfate (DHEAS) is catalyzed by the enzyme hydroxysteroid sulfotransferase (HST), which transfers the sulfonate moiety from 3'-phosphoadenosine 5'-phosphosulfate (PAPS) on the 3-hydroxy site of steroids. Although high concentrations of delta5PS and DHEAS have been detected in the rat brain, the anatomical localization of HST in the CNS has never been determined. Using an antiserum against rat liver HST, we have investigated the distribution of HST-like immunoreactivity in the CNS of the frog Rana ridibunda. Two populations of HST-immunoreactive neurons were observed in the hypothalamus, and several bundles of positive nerve fibers were visualized in the telencephalon and diencephalon. Incubation of frog brain homogenates with [35S]PAPS and [3H]pregnenolone yielded the formation of several 3H,35S-labeled compounds, including delta5PS and testosterone sulfate. When [3H]dehydroepiandrosterone and [35S]PAPS were used as precursors, one of the 3H,35S-labeled metabolites coeluted with DHEAS. Neosynthesis of [3H]delta5PS and [3H]DHEAS was reduced significantly by 2,4-dichloro-6-nitrophenol, a specific inhibitor of sulfotransferases. The present study provides the first immunocytochemical mapping of HST in the brain. Our data also demonstrate for the first time that biosynthesis of the highly potent neuroactive steroids delta5PS and DHEAS occurs in the CNS of nonmammalian vertebrates.

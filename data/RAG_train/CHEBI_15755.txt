@@ -1,0 +1,18 @@
+Compound: 3alpha,7alpha,12beta-trihydroxy-5beta-cholanate
+ChEBI ID: CHEBI:15755
+PubChem CID: 9548607
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(3R,5S,7R,8R,9S,10S,12R,13R,14S,17R)-3,7,12-trihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H39O5-
+Molecular Weight: 407.6
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1([C@@H](C[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)O)C
+InChI: InChI=1S/C24H40O5/c1-13(4-7-21(28)29)16-5-6-17-22-18(12-20(27)24(16,17)3)23(2)9-8-15(25)10-14(23)11-19(22)26/h13-20,22,25-27H,4-12H2,1-3H3,(H,28,29)/p-1/t13-,14+,15-,16-,17+,18+,19-,20-,22+,23+,24-/m1/s1
+InChIKey: BHQCQFFYRZLCQQ-KRHHAYMPSA-M
+XLogP: 4.2
+TPSA: 101
+H-Bond Donors: 3
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A bile acid anion that is the conjugate base of 3α,7α,12β-trihydroxy-5β-cholanic acid, obtained by deprotonation of the carboxy group.

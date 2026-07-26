@@ -1,0 +1,15 @@
+Compound: 12-dehydrodeoxycholate(1-)
+ChEBI ID: CHEBI:233653
+PubChem CID: 21140256
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(3R,5R,8R,9S,10S,13R,14S,17R)-3-hydroxy-10,13-dimethyl-12-oxo-1,2,3,4,5,6,7,8,9,11,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H37O4-
+Molecular Weight: 389.5
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(C(=O)C[C@H]3[C@H]2CC[C@H]4[C@@]3(CC[C@H](C4)O)C)C
+InChI: InChI=1S/C24H38O4/c1-14(4-9-22(27)28)18-7-8-19-17-6-5-15-12-16(25)10-11-23(15,2)20(17)13-21(26)24(18,19)3/h14-20,25H,4-13H2,1-3H3,(H,27,28)/p-1/t14-,15-,16-,17+,18-,19+,20+,23+,24-/m1/s1
+InChIKey: CVNYHSDFZXHMMJ-VPUMZWJWSA-M
+XLogP: 5.3
+TPSA: 77.4
+H-Bond Donors: 1
+H-Bond Acceptors: 4

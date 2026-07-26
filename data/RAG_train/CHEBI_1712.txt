@@ -1,0 +1,24 @@
+Compound: 3alpha-hydroxy-5beta-pregnan-20-one
+ChEBI ID: CHEBI:1712
+PubChem CID: 31402
+
+== Chemical properties ==
+IUPAC Name: 1-[(3R,5R,8R,9S,10S,13S,14S,17S)-3-hydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]ethanone
+Molecular Formula: C21H34O2
+Molecular Weight: 318.5
+SMILES: CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@H]4[C@@]3(CC[C@H](C4)O)C)C
+InChI: InChI=1S/C21H34O2/c1-13(22)17-6-7-18-16-5-4-14-12-15(23)8-10-20(14,2)19(16)9-11-21(17,18)3/h14-19,23H,4-12H2,1-3H3/t14-,15-,16+,17-,18+,19+,20+,21-/m1/s1
+InChIKey: AURFZBICLPNKBZ-YZRLXODZSA-N
+XLogP: 4.9
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+The 3α-stereoisomer of 3-hydroxy-5β-pregnan-20-one.
+
+== Literature on 3alpha-hydroxy-5beta-pregnan-20-one ==
+
+[PMID 1547051] Preliminary study of a pregnanolone emulsion (Kabi 2213) for i.v. induction of general anaesthesia
+1992
+Pregnanolone emulsion was administered i.v. to 13 healthy male volunteers to assess its potential as an agent for i.v. induction of general anaesthesia and to establish a pharmacokinetic profile at two doses. Each subject received 0.5 mg kg-1, 0.75 mg kg-1 and 1.0 mg kg-1 on successive occasions, the rate of administration being constant for each dose. Pregnanolone emulsion was found to produce smooth and reliable induction of general anaesthesia with cardiorespiratory effects comparable to those of other i.v. induction agents.

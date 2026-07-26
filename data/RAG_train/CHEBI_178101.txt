@@ -1,0 +1,18 @@
+Compound: estrone 3-O-(3-sulfo-beta-D-glucuronide)(2-)
+ChEBI ID: CHEBI:178101
+PubChem CID: 156613037
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,4S,5R,6S)-3,5-dihydroxy-6-[[(8R,9S,13S,14S)-13-methyl-17-oxo-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-3-yl]oxy]-4-sulfonatooxyoxane-2-carboxylate
+Molecular Formula: C24H28O11S-2
+Molecular Weight: 524.5
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CCC4=C3C=CC(=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)[O-])O)OS(=O)(=O)[O-])O
+InChI: InChI=1S/C24H30O11S/c1-24-9-8-14-13-5-3-12(10-11(13)2-4-15(14)16(24)6-7-17(24)25)33-23-19(27)20(35-36(30,31)32)18(26)21(34-23)22(28)29/h3,5,10,14-16,18-21,23,26-27H,2,4,6-9H2,1H3,(H,28,29)(H,30,31,32)/p-2/t14-,15-,16+,18+,19-,20+,21+,23-,24+/m1/s1
+InChIKey: OHNDSIZOMMVECR-NFMHSUPCSA-L
+XLogP: 1.8
+TPSA: 191
+H-Bond Donors: 2
+H-Bond Acceptors: 11
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of estrone 3-<em>O</em>-(3-sulfo-β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic and sulfate groups; major species at pH 7.3.

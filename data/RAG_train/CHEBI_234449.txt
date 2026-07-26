@@ -1,0 +1,18 @@
+Compound: 11-keto-5alpha-androstane-3alpha,17beta-diol
+ChEBI ID: CHEBI:234449
+PubChem CID: 10125601
+
+== Chemical properties ==
+IUPAC Name: (3R,5S,8S,9S,10S,13S,14S,17S)-3,17-dihydroxy-10,13-dimethyl-1,2,3,4,5,6,7,8,9,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-11-one
+Molecular Formula: C19H30O3
+Molecular Weight: 306.4
+SMILES: C[C@]12CC[C@H](C[C@@H]1CC[C@@H]3[C@@H]2C(=O)C[C@]4([C@H]3CC[C@@H]4O)C)O
+InChI: InChI=1S/C19H30O3/c1-18-8-7-12(20)9-11(18)3-4-13-14-5-6-16(22)19(14,2)10-15(21)17(13)18/h11-14,16-17,20,22H,3-10H2,1-2H3/t11-,12+,13-,14-,16-,17+,18-,19-/m0/s1
+InChIKey: CEMLAYQDMWFPDU-SMVYYTPKSA-N
+XLogP: 2.7
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+An androstanoid that is 5α-androstane carrying an oxo group at position 11 and two hydroxy groups at the 3α and 17β positions.

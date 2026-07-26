@@ -1,0 +1,18 @@
+Compound: 3-O-(beta-D-glucopyranosyl)-2alpha-hydroxyisomotiol
+ChEBI ID: CHEBI:232475
+PubChem CID: 172429304
+
+== Chemical properties ==
+IUPAC Name: (2R,3R,4S,5S,6R)-2-[[(3R,3aR,5aS,7aR,9R,10R,11aS,13aS,13bR)-10-hydroxy-3a,5a,8,8,11a,13a-hexamethyl-3-propan-2-yl-1,2,3,4,5,6,7,7a,9,10,11,12,13,13b-tetradecahydrocyclopenta[a]chrysen-9-yl]oxy]-6-(hydroxymethyl)oxane-3,4,5-triol
+Molecular Formula: C36H60O7
+Molecular Weight: 604.9
+SMILES: CC(C)[C@H]1CC[C@@H]2[C@@]1(CC[C@]3([C@]2(CCC4=C3CC[C@@H]5[C@@]4(C[C@H]([C@@H](C5(C)C)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)O)C)C)C)C
+InChI: InChI=1S/C36H60O7/c1-19(2)20-9-12-26-33(20,5)15-16-35(7)22-10-11-25-32(3,4)30(43-31-29(41)28(40)27(39)24(18-37)42-31)23(38)17-34(25,6)21(22)13-14-36(26,35)8/h19-20,23-31,37-41H,9-18H2,1-8H3/t20-,23-,24-,25+,26-,27-,28+,29-,30+,31+,33-,34-,35-,36+/m1/s1
+InChIKey: DVJFUEIYHZDSLN-DMSWFEIMSA-N
+XLogP: 6.1
+TPSA: 120
+H-Bond Donors: 5
+H-Bond Acceptors: 7
+
+== ChEBI definition ==
+3-O-(beta-D-glucopyranosyl)-2alpha-hydroxyisomotiol is a glycoside and a triterpenoid.

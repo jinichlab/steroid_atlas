@@ -1,0 +1,18 @@
+Compound: testosterone 17-O-(3-sulfo-beta-D-glucuronide)(2-)
+ChEBI ID: CHEBI:178104
+PubChem CID: 156613033
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,4S,5R,6R)-6-[[(8R,9S,10R,13S,14S,17S)-10,13-dimethyl-3-oxo-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-17-yl]oxy]-3,5-dihydroxy-4-sulfonatooxyoxane-2-carboxylate
+Molecular Formula: C25H34O11S-2
+Molecular Weight: 542.6
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)[O-])O)OS(=O)(=O)[O-])O)CCC5=CC(=O)CC[C@]35C
+InChI: InChI=1S/C25H36O11S/c1-24-9-7-13(26)11-12(24)3-4-14-15-5-6-17(25(15,2)10-8-16(14)24)34-23-19(28)20(36-37(31,32)33)18(27)21(35-23)22(29)30/h11,14-21,23,27-28H,3-10H2,1-2H3,(H,29,30)(H,31,32,33)/p-2/t14-,15-,16-,17-,18-,19+,20-,21-,23+,24-,25-/m0/s1
+InChIKey: XVWRVYDYWWOOTO-PXSSYGRGSA-L
+XLogP: 2.2
+TPSA: 191
+H-Bond Donors: 2
+H-Bond Acceptors: 11
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of testosterone 17-<em>O</em>-(3-sulfo-β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic and sulfate groups; major species at pH 7.3.

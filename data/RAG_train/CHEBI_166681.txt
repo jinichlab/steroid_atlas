@@ -1,0 +1,21 @@
+Compound: 4,4-Dimethyl-14a-formyl-5alpha-cholesta-8,24-dien-3beta-ol
+ChEBI ID: CHEBI:166681
+PubChem CID: 21121725
+
+== Chemical properties ==
+IUPAC Name: (3S,5R,10S,13R,14S,17R)-3-hydroxy-4,4,10,13-tetramethyl-17-[(2R)-6-methylhept-5-en-2-yl]-2,3,5,6,7,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthrene-14-carbaldehyde
+Molecular Formula: C30H48O2
+Molecular Weight: 440.7
+SMILES: C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C=O
+InChI: InChI=1S/C30H48O2/c1-20(2)9-8-10-21(3)22-14-18-30(19-31)24-11-12-25-27(4,5)26(32)15-16-28(25,6)23(24)13-17-29(22,30)7/h9,19,21-22,25-26,32H,8,10-18H2,1-7H3/t21-,22-,25+,26+,28-,29-,30-/m1/s1
+InChIKey: PGGIMLIQOHYFIS-PUXRVUTHSA-N
+XLogP: 7.4
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== Literature on 4,4-Dimethyl-14a-formyl-5alpha-cholesta-8,24-dien-3beta-ol ==
+
+[PMID 3654653] Accumulation of regulatory oxysterols, 32-oxolanosterol and 32-hydroxylanosterol in mevalonate-treated cell cultures
+1987
+In a previous publication (Saucier, S.E., A.A., Taylor, F.R., Spencer, T.A., Phirwa, S., and Gayen, A.K., J. Biol. Chem. (1985) 260, 14571-14579), we demonstrated that cultured Chinese hamster lung (Dede) cells contain 24(S),25-epoxycholesterol and 25-hydroxycholesterol in cellular concentrations within the range required to repress 3-hydroxy-3-methylglutaryl-CoA (HMG-CoA) reductase. In this paper, we show that the addition to the culture medium of a concentration of mevalonate high enough to repress the reductase by 90% resulted in the appearance of two new regulatory oxysterols. The two new sterols are believed to be 32-oxolanosterol and 32-hydroxylanosterol on the basis of high performance liquid chromatography (HPLC) retention times and mass spectrometric and nuclear magnetic resonance spectroscopic data and by NaBH4 reduction of the putative aldehyde to material which had the HPLC retention time of the putative alcohol. The cellular concentrations of 24(S),25-epoxycholesterol and 25-hydroxycholesterol were not significantly changed by the presence of mevalonate. However, there was approximately a 30% increase in total HMG-CoA reductase repressor units which can be ascribed to the 32-oxolanosterol and 32-hydroxylanosterol, where 1 unit equals the repressor activity of 1 ng of 25-hydroxycholesterol. These results support the idea that the level of HMG-CoA reductase activity in growing cell cultures is determined by intracellular oxysterol metabolites and that relatively small changes in their numbers or concentrations can alter the level of HMG-CoA reductase activity.

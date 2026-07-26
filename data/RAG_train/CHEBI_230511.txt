@@ -1,0 +1,28 @@
+Compound: mogroside III-A1
+ChEBI ID: CHEBI:230511
+PubChem CID: 125126167
+
+== Chemical properties ==
+IUPAC Name: (2R,3R,4S,5S,6R)-2-[[(2R,3S,4S,5R,6S)-6-[(3R,6R)-6-[(3S,8S,9R,10R,11R,13R,14S,17R)-3,11-dihydroxy-4,4,9,13,14-pentamethyl-2,3,7,8,10,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-17-yl]-2-hydroxy-2-methylheptan-3-yl]oxy-3,4-dihydroxy-5-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyoxan-2-yl]methoxy]-6-(hydroxymethyl)oxane-3,4,5-triol
+Molecular Formula: C48H82O19
+Molecular Weight: 963.2
+SMILES: C[C@H](CC[C@H](C(C)(C)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)O)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)[C@H]4CC[C@@]5([C@@]4(C[C@H]([C@@]6([C@H]5CC=C7[C@H]6CC[C@@H](C7(C)C)O)C)O)C)C
+InChI: InChI=1S/C48H82O19/c1-21(22-15-16-46(6)28-12-10-23-24(11-13-29(51)44(23,2)3)48(28,8)30(52)17-47(22,46)7)9-14-31(45(4,5)61)66-43-40(67-42-39(60)36(57)33(54)26(19-50)64-42)37(58)34(55)27(65-43)20-62-41-38(59)35(56)32(53)25(18-49)63-41/h10,21-22,24-43,49-61H,9,11-20H2,1-8H3/t21-,22-,24-,25-,26-,27-,28+,29+,30-,31-,32-,33-,34-,35+,36+,37+,38-,39-,40-,41-,42+,43+,46+,47-,48+/m1/s1
+InChIKey: DDDXYRAMQRKPDO-GOILQDHQSA-N
+XLogP: 0.1
+TPSA: 318
+H-Bond Donors: 13
+H-Bond Acceptors: 19
+
+== ChEBI definition ==
+Mogroside III-A1 is a mogroside and a beta-D-glucoside. It has a role as a plant metabolite. It is functionally related to a mogroside IIA.
+
+== Literature on mogroside III-A1 ==
+
+[PMID 37379890] Maternal ancestry of first Parsi settlers of India using ancient mitogenome
+2023
+The rich cultural and genetic diversity of South Asia emerged from multiple migrations and cultural assimilation of multiple waves of migrants. The Parsi community of North-western India were one of those who migrated from West Eurasia in the aftermath of 7th century CE and assimilated into the local cultural framework. Earlier genetic studies further strengthened this notion with the finding that they harbour both Middle Eastern and South Asian genetic components. Although these studies covered both autosomal and uniparental markers, still maternal ancestry was not covered in depth and with good resolution of mitochondrial markers. Hence in our current study, we have first time generated a complete mitogenome of 19 ancient samples of the first Parsi settlers excavated from the archaeological site of Sanjan and performed detailed phylogenetic analysis to infer their maternal genetic affinity. In our analysis, we found that the Parsi mitogenome with mtDNA haplogroup M3a1 + 204 shares clade with both Middle Eastern and South Asian modern individuals in both the Maximum Likelihood tree and Bayesian phylogenetic tree. This haplogroup was also prevalent among the medieval Swat valley population of present-day Northern Pakistan and was also observed in two Roopkund A individuals. In the phylogenetic network this sample share haplotype with both South Asian and Middle Eastern samples. So conclusively, the first Parsi settlers' maternal ancestry encompasses both South Asian and Middle Eastern genetic composition.
+
+[PMID 23674761] Haplogroup heterogeneity of LHON patients carrying the m.14484T>C mutation in India
+2013
+PurposeTo investigate the clinical and mitochondrial DNA (mtDNA) haplogroup background of Indian Leber hereditary optic neuropathy (LHON) patients carrying the m.14484T>C mutation.MethodsDetailed clinical investigation and complete mtDNA sequencing analysis was carried out for eight Indian LHON families with the m.14484T>C mutation. Haplogroup was constructed based on the evolutionarily important mtDNA variants.ResultsIn the present study, we characterized eight unrelated probands selected from 187 LHON cases. The overall penetrance of the disease was estimated to be 19.75% (16/81) in eight pedigrees with the m.14484T>C mutation and showed substantially higher sex bias (male: female = 13:3). The mtDNA haplogrouping revealed that they belong to diverse haplogroups; i.e., F1c1, M31a, U2a, M*, I1, M6, M3a1, and R30a. Interestingly, we did not find an association of the m.14484T>C mutation with any specific haplogroup within the Indian population. We also did not find any secondary mutation(s) in these pedigrees, which might affect the clinical expression of LHON.ConclusionsContrary to earlier reports showing preferential association of the m.14484T>C mutation with western Eurasian haplogroup J and increased clinical penetrance when present in J1 subhaplogroup background, the present study shows that m.14484T>C arose independently in a different mtDNA haplogroup and ethnic background in India, which may influence the clinical expression of the disease.

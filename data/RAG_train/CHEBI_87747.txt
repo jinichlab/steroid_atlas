@@ -1,0 +1,29 @@
+Compound: 7alpha-hydroxy-3-oxochol-4-en-24-oate
+ChEBI ID: CHEBI:87747
+PubChem CID: 91972240
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(7R,8S,9S,10R,13R,14S,17R)-7-hydroxy-10,13-dimethyl-3-oxo-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H35O4-
+Molecular Weight: 387.5
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@@H](CC4=CC(=O)CC[C@]34C)O)C
+InChI: InChI=1S/C24H36O4/c1-14(4-7-21(27)28)17-5-6-18-22-19(9-11-24(17,18)3)23(2)10-8-16(25)12-15(23)13-20(22)26/h12,14,17-20,22,26H,4-11,13H2,1-3H3,(H,27,28)/p-1/t14-,17-,18+,19+,20-,22+,23+,24-/m1/s1
+InChIKey: CFLVYJJIZHNITM-NLXMLWGDSA-M
+XLogP: 4.9
+TPSA: 77.4
+H-Bond Donors: 1
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+A bile acid anion that is the conjugate base of 7α-hydroxy-3-oxochol-4-en-24-oic acid, obtained by deprotonation of the carboxy group; major species at pH 7.3.
+
+--- RELATED COMPOUND: 7α-hydroxy-3-oxochol-4-en-24-oic acid ---
+No literature found for 7alpha-hydroxy-3-oxochol-4-en-24-oate itself. 7alpha-hydroxy-3-oxochol-4-en-24-oate is the conjugate base of 7α-hydroxy-3-oxochol-4-en-24-oic acid; the abstracts below are about 7α-hydroxy-3-oxochol-4-en-24-oic acid.
+
+[PMID 33859329] Plasma fetal bile acids 7α-hydroxy-3-oxochol-4-en-24-oic acid and 3-oxachola-4,6-dien-24-oic acid indicate severity of liver cirrhosis
+2021
+Two 3-oxo-Δ4 fetal bile acids, 3-oxachola-4,6-dien-24-oic acid (1) and 7α-hydroxy-3-oxochol-4-en-24-oic acid (2), occur normally in the human fetus but remain elevated in neonates and children with severe cholestatic liver disease due to an autosomal recessive inborn error of metabolism affecting Δ4-3-oxo-steroid 5β-reductase (AKR1D1). Relatively little is known about 1 and 2 in adult patients with liver disease. The chemical synthesis of 1 and 2 is therefore described and their quantitation in plasma by ultrarapid chromatography-triple quadrupole mass spectrometry. Plasma concentrations of 1 and 2 were investigated in 25 adult patients with varying degrees of liver cirrhosis with and without hepatocellular carcinoma (HCC). Highly statistically significant correlations (P < 0.0001) were found between severity of liver cirrhosis, determined by the Child-Pugh and MELD scores, with plasma 1 and 2 concentrations, both alone and combined. The presence of HCC did not influence these correlations. Plasma cholic, chenodeoxycholic, deoxycholic, lithocholic or ursodeoxycholic acids, free and as their glycine or taurine conjugates, did not correlate with Child-Pugh or MELD score when corrected for multiple comparisons. These findings demonstrate that plasma levels of fetal bile acids 3-oxachola-4,6-dien-24-oic acid and 7α-hydroxy-3-oxochol-4-en-24-oic acid and likely deteriorating AKR1D1 activity indicate the severity of liver cirrhosis measured by the Child-Pugh and MELD scores.
+
+[PMID 21900402] Aberrant lipid metabolism in hepatocellular carcinoma revealed by plasma metabolomics and lipid profiling
+2011
+There has been limited analysis of the effects of hepatocellular carcinoma (HCC) on liver metabolism and circulating endogenous metabolites. Here, we report the findings of a plasma metabolomic investigation of HCC patients by ultraperformance liquid chromatography-electrospray ionization-quadrupole time-of-flight mass spectrometry (UPLC-ESI-QTOFMS), random forests machine learning algorithm, and multivariate data analysis. Control subjects included healthy individuals as well as patients with liver cirrhosis or acute myeloid leukemia. We found that HCC was associated with increased plasma levels of glycodeoxycholate, deoxycholate 3-sulfate, and bilirubin. Accurate mass measurement also indicated upregulation of biliverdin and the fetal bile acids 7α-hydroxy-3-oxochol-4-en-24-oic acid and 3-oxochol-4,6-dien-24-oic acid in HCC patients. A quantitative lipid profiling of patient plasma was also conducted by ultraperformance liquid chromatography-electrospray ionization-triple quadrupole mass spectrometry (UPLC-ESI-TQMS). By this method, we found that HCC was also associated with reduced levels of lysophosphocholines and in 4 of 20 patients with increased levels of lysophosphatidic acid [LPA(16:0)], where it correlated with plasma α-fetoprotein levels. Interestingly, when fatty acids were quantitatively profiled by gas chromatography-mass spectrometry (GC-MS), we found that lignoceric acid (24:0) and nervonic acid (24:1) were virtually absent from HCC plasma. Overall, this investigation illustrates the power of the new discovery technologies represented in the UPLC-ESI-QTOFMS platform combined with the targeted, quantitative platforms of UPLC-ESI-TQMS and GC-MS for conducting metabolomic investigations that can engender new insights into cancer pathobiology.

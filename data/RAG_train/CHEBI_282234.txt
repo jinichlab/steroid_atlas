@@ -1,0 +1,40 @@
+Compound: dihydrodigitoxin
+ChEBI ID: CHEBI:282234
+PubChem CID: 45266921
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(3S,5R,8R,9S,10S,13R,14S,17R)-3-[(2R,4S,5S,6R)-5-[(2S,4S,5S,6R)-5-[(2S,4S,5S,6R)-4,5-dihydroxy-6-methyloxan-2-yl]oxy-4-hydroxy-6-methyloxan-2-yl]oxy-4-hydroxy-6-methyloxan-2-yl]oxy-14-hydroxy-10,13-dimethyl-1,2,3,4,5,6,7,8,9,11,12,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]oxolan-2-one
+Molecular Formula: C41H66O13
+Molecular Weight: 767.0
+SMILES: C[C@@H]1[C@H]([C@H](C[C@@H](O1)O[C@@H]2[C@H](O[C@H](C[C@@H]2O)O[C@@H]3[C@H](O[C@H](C[C@@H]3O)O[C@H]4CC[C@]5([C@@H](C4)CC[C@@H]6[C@@H]5CC[C@]7([C@@]6(CC[C@@H]7[C@H]8CC(=O)OC8)O)C)C)C)C)O)O
+InChI: InChI=1S/C41H66O13/c1-20-36(46)29(42)16-34(49-20)53-38-22(3)51-35(18-31(38)44)54-37-21(2)50-33(17-30(37)43)52-25-8-11-39(4)24(15-25)6-7-28-27(39)9-12-40(5)26(10-13-41(28,40)47)23-14-32(45)48-19-23/h20-31,33-38,42-44,46-47H,6-19H2,1-5H3/t20-,21-,22-,23+,24-,25+,26-,27+,28-,29+,30+,31+,33+,34+,35+,36-,37-,38-,39+,40-,41+/m1/s1
+InChIKey: WWCGMGNIMDOEGK-XWQQVMAMSA-N
+XLogP: 3.3
+TPSA: 183
+H-Bond Donors: 5
+H-Bond Acceptors: 13
+
+== ChEBI definition ==
+A cardanolide glycoside that is the 20,22-dihydro derivative of digitoxin.
+
+== Literature on dihydrodigitoxin ==
+
+[PMID 438353] Enhanced transformation of digitoxin to dihydrodigitoxin in humans with renal failure
+1979
+A gas-chromatographic mass-spectroscopic technique was used to identify dihydrodigitoxin, a metabolite of digitoxin, in the plasma of healthy volunteers and patients with renal failure. Digitoxin and dihydrodigitoxin were extracted from plasma and derivatized with heptafluorbutyric anhydride. In normal subjects, only minimal concentrations of dihydrodigitoxin in plasma could be determined (1 ng/ml) after an intravenous bolus injection of digitoxin. Under a chronic treatment with a daily dose of 0.1 mg digitoxin in three out of seven individuals, detectable dihydrodigitoxin plasma levels were observed (0.7, 1.5, and 1.7 ng/ml) (Table I). On the other hand, in seven patients with renal failure, high dihydrodigitoxin plasma concentrations (8.9 +/- 0.9 ng/ml) were shown which were in a similar range as those of the parent compound (8.7 +/- 2.2 ng/ml) under a maintenance treatment with digitoxin.
+
+[PMID 6315020] Binding of dihydrodigitoxin to beef and human cardiac (Na+ + K+)-ATPase: evidence for two binding sites in cell membranes
+1983
+The specific binding of three cardiac glycosides, 3H-ouabain, 3H-digitoxin and 3H-dihydrodigitoxin, to beef cardiac (Na+ + K+)-ATPase was compared. Non-specific binding was defined as that in the presence of 0.1 mM unlabelled compound, or in the absence of ligands. The dissociation constants (KD-values) calculated from the inhibition of 3H-ouabain binding were: ouabain, 2.9 X 10(-9)M; digitoxin, 1.1 X 10(-9)M; and dihydrodigitoxin 2.7 X 10(-8)M. The concentrations which inhibited beef cardiac (Na+ + K+)-ATPase by 50% were: ouabain, 5.9 X 10(-9)M; digitoxin, 1.6 X 10(-9)M; and dihydrodigitoxin, 2.5 X 10(-8)M. Ouabain and digitoxin showed straight Scatchard plots for one site of high affinity (ouabain, KD = 2.6 X 10(-9)M; digitoxin, KD = 1.7 X 10(-9)M). However, dihydrodigitoxin gave a curved Scatchard plot. Analysis of this binding by the methods of M. J. Weidemann, H. Erdelt and M. Klingenberger (Eur. J. Biochem. 16, 313 (1970) for two binding sites gave the following results: for Mg2+,Pi-supported binding, the KD of the high affinity site was 1.6 X 10(-8)M with a capacity similar to that for ouabain of about 30 pmole/mg protein. For binding supported by Na+,ATP,Mg2+, the KD-value of the high affinity site was 5.3 X 10(-8)M of similar capacity. The low affinity binding site (KD = 4.0 X 10(-6)M for Mg2+,Pi; KD = 5.5 X 10(-6)M for Na+,ATP,Mg2+) bound about 350 pmole/mg protein. The low affinity site but not the high affinity site was also present in heat-denatured enzyme. Binding supported by Mg2+,Pi showed one low affinity site only for ouabain and dihydrodigitoxin in the presence of 200 mM Na+. The high affinity sites for these three cardiac glycosides were further characterized by measurement of the association and dissociation rate constants. The specific binding of 3H-ouabain and 3H-dihydrodigitoxin to human cardiac (Na+ + K+)-ATPase was measured. 3H-Ouabain showed a straight Scatchard plot for one high affinity site only (KD = 4.5 X 10(-9) M, capacity about 15 pmole/mg protein). 3H-Dihydrodigitoxin gave two binding sites: a high affinity site (KD = 1.8 X 10(-8) M) of similar capacity to ouabain, and a low affinity site (KD = 2.0 X 10(-6) M) of about 10-fold greater capacity.(ABSTRACT TRUNCATED AT 400 WORDS)
+
+[PMID 530320] Pharmacokinetics of dihydrodigitoxin in the cat. A comparison with digitoxin
+1979
+Pharmacokinetics of digitoxin (DGT) and its derivative hydrogenated at the unsaturated lactone ring have been studied using the 3H-labelled compounds in cats. Blood level data could be described by an open three compartment body model. The biological half-lives of dihydrodigitoxin (DH-DGT) and DGT are rather similar (0.12, 0.48, 20.4 h, and 0.11, 0.43, 31.8 h, respectively), whereas the volume of distribution of DH-DGT is about 1/10 from that of DGT (0.241 versus 2.581). Especially in myocardial tissue a significantly lower DH-DGT concentration was measured, indicating the loss of affinity to cardenolide binding sites by hydrogenation. Dihydrodigitoxinic acid was detected as the main metabolite of DH-DGT.
+
+[PMID 8069249] Preparation and antigenic properties of digitoxin-bovine serum albumin conjugates linked at the digitoxose C-3' and C-3" positions
+1994
+In order to obtain specific antisera to digitoxin, four new types of hapten-bovine serum albumin (BSA) conjugates were synthesized from digitoxin. The haptens were linked to the carrier protein through hemisuccinate and hemisuccinylglycine bridges at the C-3' and C-3" positions in the digitoxose chain. The antisera were prepared by immunizing rabbits with each digitoxin-BSA conjugate and the properties of the antisera were investigated by RIA with 3H-labeled digitoxin. Among these antisera, the antiserum raised against digitoxin 3'-hemisuccinate-BSA conjugate possessed high specificity for digitoxin, exhibiting only minor cross-reactions with digitoxigenin bisdigitoxoside (4.0%), dihydrodigitoxin (2.8%), digoxin (2.4%), digitoxigenin monodigitoxoside (0.23%) and digitoxigenin (< 0.05%).
+
+[PMID 3579289] Reductive inactivation of digitoxin by Eubacterium lentum cultures
+1987
+The obligate anaerobe Eubacterium lentum inactivated the cardiac glycoside digitoxin by reducing the double bond in the lactone ring. This conversion was quantitative when the substrate was incubated at a concentration of 10 micrograms/ml. The reduction reaction coincided with the growth phase of the bacterium. The stereochemical configuration at C-20 of the reduction product dihydrodigitoxin was found to be R. Incubation of digitoxigenin and its mono- and bisdigitoxosides individually with E. lentum led to the formation of their respective dihydro derivatives. The configuration at C-20 of these reduced metabolites was also found to be R.

@@ -1,0 +1,24 @@
+Compound: 3-dehydro-6-deoxo-28-norteasterone
+ChEBI ID: CHEBI:188989
+PubChem CID: 102023288
+
+== Chemical properties ==
+IUPAC Name: (5S,8R,9S,10S,13S,14S,17R)-17-[(2S,3R,4R)-3,4-dihydroxy-6-methylheptan-2-yl]-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C27H46O3
+Molecular Weight: 418.7
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C)[C@H]([C@@H](CC(C)C)O)O
+InChI: InChI=1S/C27H46O3/c1-16(2)14-24(29)25(30)17(3)21-8-9-22-20-7-6-18-15-19(28)10-12-26(18,4)23(20)11-13-27(21,22)5/h16-18,20-25,29-30H,6-15H2,1-5H3/t17-,18-,20-,21+,22-,23-,24+,25+,26-,27+/m0/s1
+InChIKey: VNYRYHUSEXFRBX-CAVUVSGNSA-N
+XLogP: 6.4
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+3-dehydro-6-deoxo-28-norteasterone is a C27-steroid, a phytosteroid, a 22-hydroxy steroid, a 23-hydroxy steroid and a 3-oxo steroid.
+
+== Literature on 3-dehydro-6-deoxo-28-norteasterone ==
+
+[PMID 11551544] Roots and shoots of tomato produce 6-deoxo-28-norcathasterone, 6-deoxo-28-nortyphasterol and 6-deoxo-28-norcastasterone, possible precursors of 28-norcastasterone
+2001
+Roots and shoots of tomato (Lycopersicon esculentum) were investigated for the occurrence of biosynthetic precursors of 28-norcastasterone, a C27 brassinosteroid that we have shown to be present in shoots of tomato. A series of putative precursors, including 6-deoxo-28-norcathasterone, 6-deoxo-28-norteasterone, 3-dehydro-6-deoxo-28-norteasterone, 6-deoxo-28-nortyphasterol and 6-deoxo-28-norcastasterone, were synthesized and used as GC-MS standards, resulting in the identification of 6-deoxo-28-norcathasterone, 6-deoxo-28-nortyphasterol and 6-deoxo-28-norcastasterone in both roots and shoots. These findings indicate that the biosynthesis of 28-norcastasterone may parallel that of castasterone. The endogenous levels of brassinosteroids differed between roots and shoots, indicating that the biosynthesis of brassinosteroids is differently regulated between these tissues. Regulation of root growth by brassinosteroids is also discussed.

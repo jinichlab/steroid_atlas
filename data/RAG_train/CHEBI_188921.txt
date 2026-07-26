@@ -1,0 +1,33 @@
+Compound: C28-steroid
+ChEBI ID: CHEBI:188921
+PubChem CID: 528828
+
+== Chemical properties ==
+IUPAC Name: 17-(5,6-dimethylheptan-2-yl)-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthrene
+Molecular Formula: C28H50
+Molecular Weight: 386.7
+SMILES: CC(C)C(C)CCC(C)C1CCC2C1(CCC3C2CCC4C3(CCCC4)C)C
+InChI: InChI=1S/C28H50/c1-19(2)20(3)10-11-21(4)24-14-15-25-23-13-12-22-9-7-8-17-27(22,5)26(23)16-18-28(24,25)6/h19-26H,7-18H2,1-6H3
+InChIKey: WAAWMJYYKITCGF-UHFFFAOYSA-N
+XLogP: 11.3
+TPSA: 0
+H-Bond Donors: 0
+H-Bond Acceptors: 0
+
+== Literature on C28-steroid ==
+
+[PMID 38949790] Clypeasterol, a novel aromatic ergosterol skeleton from the mushroom &lt;i&gt;Entoloma clypeatum&lt;/i&gt;
+2025
+Chemical investigation of the wild mushroom Entoloma clypeatum led to the isolation of one new A-nor B-aromatic C28 steroid (1), along with eight known compounds (2-9) from this mushroom. As far as we know, compound 1 represents an unprecedented type of natural product. The structure of the new compound was elucidated based on extensive spectroscopic data analysis of HR-ESI-MS, 1D, and 2D NMR, while the relative configuration was confirmed by NOESY correlations. In addition, the anti-inflammatory activity of compound 1 was evaluated against LPS induced NO production in RAW 264.7 macrophages. Compound 1 exhibited a moderate anti-inflammatory activity with an IC50 value of 24.56 ± 1.72 μM.
+
+[PMID 36976243] New Hybrid Phenalenone Dimer, Highly Conjugated Dihydroxylated C<sub>28</sub> Steroid and Azaphilone from the Culture Extract of a Marine Sponge-Associated Fungus, <i>Talaromyces pinophilus</i> KUFA 1767
+2023
+An undescribed hybrid phenalenone dimer, talaropinophilone (3), an unreported azaphilone, 7-epi-pinazaphilone B (4), an unreported phthalide dimer, talaropinophilide (6), and an undescribed 9R,15S-dihydroxy-ergosta-4,6,8 (14)-tetraen-3-one (7) were isolated together with the previously reported bacillisporins A (1) and B (2), an azaphilone derivative, Sch 1385568 (5), 1-deoxyrubralactone (8), acetylquestinol (9), piniterpenoid D (10) and 3,5-dihydroxy-4-methylphthalaldehydic acid (11) from the ethyl acetate extract of the culture of a marine sponge-derived fungus, Talaromyces pinophilus KUFA 1767. The structures of the undescribed compounds were elucidated by 1D and 2D NMR as well as high-resolution mass spectral analyses. The absolute configuration of C-9' of 1 and 2 was revised to be 9'S using the coupling constant value between C-8' and C-9' and was confirmed by ROESY correlations in the case of 2. The absolute configurations of the stereogenic carbons in 7 and 8 were established by X-ray crystallographic analysis. Compounds 1,2, 4-8, 10 and 11 were tested for antibacterial activity against four reference strains, viz. two Gram-positive (Staphylococcus aureus ATCC 29213, Enterococcus faecalis ATCC 29212) and two Gram-negative (Escherichia coli ATCC 25922, Pseudomonas aeruginosa ATCC 27853), as well as three multidrug-resistant strains, viz. an extended-spectrum β-lactamase (ESBL)-producing E. coli, a methicillin-resistant S. aureus (MRSA) and a vancomycin-resistant E. faecalis (VRE). However, only 1 and 2 exhibited significant antibacterial activity against both S. aureus ATCC 29213 and MRSA. Moreover, 1 and 2 also significantly inhibited biofilm formation in S. aureus ATCC 29213 at both MIC and 2xMIC concentrations.
+
+[PMID 21513291] A highly conjugated dihydroxylated C28 steroid from a myxobacterium
+2011
+In the course of our search for novel secondary metabolites, the CHCl3-MeOH extract of the novel myxobacterial strain Sorangiineae SBNa008 was shown to be active against human SW480 colon adinocarcinoma cells. Bioassay-guided fractionation of the extract yielded a highly conjugated novel, sterol 9α,11α-dihydroxyergosta-4,6,8(14),22-tetraen-3-one, 1. The structure and the relative stereochemistry of 1 were established from interpretation of spectroscopic data and X-ray crystallography.
+
+[PMID 25114157] Minicystis rosea gen. nov., sp. nov., a polyunsaturated fatty acid-rich and steroid-producing soil myxobacterium
+2014
+A bacterial strain designated SBNa008(T) was isolated from a Philippine soil sample. It exhibited the general characteristics associated with myxobacteria, such as swarming of Gram-negative vegetative rod cells, fruiting body and myxospore formation and predatory behaviour in lysing micro-organisms. The novel strain was characterized as mesophilic, chemoheterotrophic and aerobic. The major fatty acids were C(20:4)ω6,9,12,15 all cis (arachidonic acid), iso-C(15 : 0), C(17 : 1) 2-OH and iso-C(15 : 0) dimethylacetal. Interestingly, SBNa008(T) contained diverse fatty acids belonging to the commercially valuable polyunsaturated omega-6 and omega-3 families, and a highly conjugated dihydroxylated C28 steroid. The G+C content of the genomic DNA was 67.3 mol%. The 16S rRNA gene sequence revealed 95-96% similarity to sequences derived from clones of uncultured bacteria and 94-95% similarity to cultured members of the suborder Sorangiineae. Phylogenetic analysis revealed that strain SBNa008(T) formed a novel lineage in the suborder Sorangiineae. Based on a polyphasic taxonomic characterization, we propose that strain SBNa008(T) represents a novel genus and species, Minicystis rosea gen. nov., sp. nov. The type strain of Minicystis rosea is SBNa008(T) ( =DSM 24000(T) =NCCB 100349(T)).

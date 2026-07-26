@@ -1,0 +1,18 @@
+Compound: 17beta-estradiol 17-O-(3-sulfo-beta-D-glucuronide)(2-)
+ChEBI ID: CHEBI:178096
+PubChem CID: 156613056
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,4S,5R,6R)-3,5-dihydroxy-6-[[(8R,9S,13S,14S,17S)-3-hydroxy-13-methyl-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthren-17-yl]oxy]-4-sulfonatooxyoxane-2-carboxylate
+Molecular Formula: C24H30O11S-2
+Molecular Weight: 526.6
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)[O-])O)OS(=O)(=O)[O-])O)CCC5=C3C=CC(=C5)O
+InChI: InChI=1S/C24H32O11S/c1-24-9-8-14-13-5-3-12(25)10-11(13)2-4-15(14)16(24)6-7-17(24)33-23-19(27)20(35-36(30,31)32)18(26)21(34-23)22(28)29/h3,5,10,14-21,23,25-27H,2,4,6-9H2,1H3,(H,28,29)(H,30,31,32)/p-2/t14-,15-,16+,17+,18+,19-,20+,21+,23-,24+/m1/s1
+InChIKey: IJATWYJZSVYJPL-ZDFSTSLFSA-L
+XLogP: 2.8
+TPSA: 194
+H-Bond Donors: 3
+H-Bond Acceptors: 11
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of 17β-estradiol 17-<em>O</em>-(3-sulfo-β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic and sulfate groups; major species at pH 7.3.

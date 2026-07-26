@@ -1,0 +1,18 @@
+Compound: 6beta-hydroxytestosterone
+ChEBI ID: CHEBI:34477
+PubChem CID: 65543
+
+== Chemical properties ==
+IUPAC Name: (6R,8R,9S,10R,13S,14S,17S)-6,17-dihydroxy-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C19H28O3
+Molecular Weight: 304.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)C[C@H](C4=CC(=O)CC[C@]34C)O
+InChI: InChI=1S/C19H28O3/c1-18-7-5-11(20)9-15(18)16(21)10-12-13-3-4-17(22)19(13,2)8-6-14(12)18/h9,12-14,16-17,21-22H,3-8,10H2,1-2H3/t12-,13-,14-,16+,17-,18+,19-/m0/s1
+InChIKey: XSEGWEUVSZRCBC-ZVBLRVHNSA-N
+XLogP: 2
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 17β-hydroxy steroid that is testosterone bearing an additional hydroxy substituent at the 6β-position.

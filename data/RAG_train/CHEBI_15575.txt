@@ -1,0 +1,33 @@
+Compound: nuatigenin 3-beta-D-glucopyranoside
+ChEBI ID: CHEBI:15575
+PubChem CID: 440517
+
+== Chemical properties ==
+IUPAC Name: (2R,3S,4S,5R,6R)-2-(hydroxymethyl)-6-[(1S,2S,4S,5'S,6S,7S,8R,9S,12S,13R,16S)-5'-(hydroxymethyl)-5',7,9,13-tetramethylspiro[5-oxapentacyclo[10.8.0.02,9.04,8.013,18]icos-18-ene-6,2'-oxolane]-16-yl]oxyoxane-3,4,5-triol
+Molecular Formula: C33H52O9
+Molecular Weight: 592.8
+SMILES: C[C@H]1[C@H]2[C@H](C[C@@H]3[C@@]2(CC[C@H]4[C@H]3CC=C5[C@@]4(CC[C@@H](C5)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)C)C)O[C@]17CC[C@@](O7)(C)CO
+InChI: InChI=1S/C33H52O9/c1-17-25-23(41-33(17)12-11-30(2,16-35)42-33)14-22-20-6-5-18-13-19(7-9-31(18,3)21(20)8-10-32(22,25)4)39-29-28(38)27(37)26(36)24(15-34)40-29/h5,17,19-29,34-38H,6-16H2,1-4H3/t17-,19-,20+,21-,22-,23-,24+,25-,26+,27-,28+,29+,30-,31-,32-,33-/m0/s1
+InChIKey: QJEQHVALLZCTGC-HPNIRRCESA-N
+XLogP: 2.8
+TPSA: 138
+H-Bond Donors: 5
+H-Bond Acceptors: 9
+
+== ChEBI definition ==
+Nuatigenin 3-beta-D-glucopyranoside is a beta-D-glucoside, a steroid saponin and a monosaccharide derivative. It is functionally related to a nuatigenin.
+
+--- RELATED COMPOUND: nuatigenin ---
+No literature found for nuatigenin 3-beta-D-glucopyranoside itself. nuatigenin 3-beta-D-glucopyranoside is functionally related to nuatigenin; the abstracts below are about nuatigenin.
+
+[PMID 38559960] Characterization of Seven New Steroidal Saponins from Korean Oat Cultivars by UPLC-QTOF-MS and UPLC-MS/MS
+2024
+Oat saponins are composed of triterpenoid and steroidal saponins, and their potential biological activities, such as antibacterial, antifungicidal, osteogenic, and anticancer activities, have been reported. In this study, qualitative and quantitative analyses of oat saponins were conducted by using UPLC-QToF-MS and UPLC-Triple Q-MS/MS. A total of 22 saponins were analyzed in seven Korean oat cultivars. Among them, 7 saponins were identified as new compounds in this source, which were tentatively confirmed as nuatigenin-type saponins with 26-O-diglucoside and 3-O-malonylglucoside forms and (25S)-furost-5-en-3β,22,26-triol-type saponins. In addition, the total content of these saponins ranged from 70.61 to 141.38 mg/100 g dry weight, and it was affected by the type of oat cultivar and the presence or absence of hulling. These detailed profiles will be suggested as fundamental data for breeding superior oat cultivars, evaluating of related products, and various industries.
+
+[PMID 34337761] Identification of steroidal saponins from Tribulus terrestris and their in silico docking studies
+2021
+Tribulus terrestris is known to possess many pharmacological properties, most notably its anticancer activities, owing to its rich steroidal saponin contents. Even though many reports are available elucidating the anticancer potential of the herb, we, for the very first time have attempted to isolate and identified the active compound present in seed crude saponin extract and confers its in silico docking ability with various cellular targets proteins. High performance thin layer chromatography confirms the presence of active saponins in leaf and seed saponin extracts which were further fractionated by silica gel column chromatography. Fractions collected were assessed for cytotoxicity on human breast cancer cells. High resolution liquid chromatography and mass spectroscopy was employ to identify the active components present in fraction with highest cytotoxicity. Intriguingly, Nautigenin type of steriodal saponin was identified to present in the active fraction of seed extract (SF11) and the identified compound was further analyzed for its in silico docking interaction using PyRx AutodockVina. Docking studies revealed the high binding affinity of Nuatigenin at significant sites with apoptotic proteins Bcl-2, Bax, caspase-3, caspase-8, p53 and apoptosis inducing factor along with cell surface receptors estrogen receptor, projesterone receptor, epidermal growth factor receptor, and human epidermal growth factor receptor-2. Thus, the conclusions were drawn that saponin fraction of Tribulus terrestis possesses active compounds having anticancer property and specifically, Nuatigenin saponin can be considered as an important therapeutic drug for the breast cancer treatment.
+
+[PMID 36590423] Studies on biotransformation mechanism of <i>Fusarium</i> sp. C39 to enhance saponin content of Paridis Rhizoma
+2022
+Paridis Rhizoma is a natural medicine with strong anti-tumor and anti-inflammatory activities. Our previous research have found that Fusarium sp. C39, an endophytic fungus isolated from Dioscorea nipponica which contains the similar chemical components, significantly increased the steroidal saponins content of Paridis Rhizoma by fermentation. In this study, the inhibitory effects of fermentated Paridis Rhizoma extract (PRE) on liver cancer cells (Hepal-6), cervical cancer cells (Hela), and lung cancer cells (A549) were determined to be stronger than that of the unfermented extract. For discovering the fermentation mechanism of PRE with Fusarium sp. C39, 36 components with obviously quantitative variations were screened out by UPLC-Q/TOF-MS and 53 key genes involved in the metabolic pathways of steroidal saponins were identified by transcriptome. On the basis of comprehensively analyzing information from the metabonomics and transcriptome, it can be speculated that the increase of spirostanol saponins and nuatigenin-type saponins enhanced the inhibitory effect of fermented PRE on cancer cell proliferation. Under the action of glycosidase, glycosyltransferase, oxidoreductases, and genes involved in sterol synthesis, strain C39 achieved the synthesis of diosgenin and the alteration of configurations, sugar chain and substituent of steroidal saponins. The research suggested a microbial transformation approach to increase the resource utilization and activity of Paris polyphylla.

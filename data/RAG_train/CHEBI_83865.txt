@@ -1,0 +1,18 @@
+Compound: androst-5-ene-3,17-dione
+ChEBI ID: CHEBI:83865
+PubChem CID: 160531
+
+== Chemical properties ==
+IUPAC Name: (8R,9S,10R,13S,14S)-10,13-dimethyl-2,4,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthrene-3,17-dione
+Molecular Formula: C19H26O2
+Molecular Weight: 286.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CC=C4[C@@]3(CCC(=O)C4)C
+InChI: InChI=1S/C19H26O2/c1-18-9-7-13(20)11-12(18)3-4-14-15-5-6-17(21)19(15,2)10-8-16(14)18/h3,14-16H,4-11H2,1-2H3/t14-,15-,16-,18-,19-/m0/s1
+InChIKey: SQGZFRITSMYKRH-QAGGRKNESA-N
+XLogP: 2.9
+TPSA: 34.1
+H-Bond Donors: 0
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+An androstanoid that is androst-5-ene bearing two oxo substituents at positions 3 and 17.

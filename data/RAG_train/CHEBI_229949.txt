@@ -1,0 +1,33 @@
+Compound: (24S)-24,25-epoxycucurbitadienol
+ChEBI ID: CHEBI:229949
+PubChem CID: 171037431
+
+== Chemical properties ==
+IUPAC Name: (3S,8R,9R,10S,13R,14S,17R)-17-[(2R)-4-[(2S)-3,3-dimethyloxiran-2-yl]butan-2-yl]-4,4,9,13,14-pentamethyl-2,3,7,8,10,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C30H50O2
+Molecular Weight: 442.7
+SMILES: C[C@H](CC[C@H]1C(O1)(C)C)[C@H]2CC[C@@]3([C@@]2(CC[C@@]4([C@H]3CC=C5[C@H]4CC[C@@H](C5(C)C)O)C)C)C
+InChI: InChI=1S/C30H50O2/c1-19(9-14-25-27(4,5)32-25)20-15-16-30(8)23-12-10-21-22(11-13-24(31)26(21,2)3)28(23,6)17-18-29(20,30)7/h10,19-20,22-25,31H,9,11-18H2,1-8H3/t19-,20-,22-,23-,24+,25+,28+,29-,30+/m1/s1
+InChIKey: FKLMMFZHGLDEMF-CUGODZHQSA-N
+XLogP: 7.7
+TPSA: 32.8
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+(24S)-24,25-epoxycucurbitadienol is a tetracyclic triterpenoid and an epoxide. It has a role as a plant metabolite. It is functionally related to a cucurbitadienol.
+
+--- RELATED COMPOUND: cucurbitadienol ---
+No literature found for (24S)-24,25-epoxycucurbitadienol itself. (24S)-24,25-epoxycucurbitadienol is functionally related to cucurbitadienol; the abstracts below are about cucurbitadienol.
+
+[PMID 39693481] Overproduction of Cucurbitadienol through Modular Metabolic Engineering and Fermentation Optimization in <i>Saccharomyces cerevisiae</i>
+2025
+Cucurbitadienol is a key intermediate in the biosynthesis of cucurbitane-type compounds and serves as a precursor for mogrosides, cucurbitacins, and other valuable natural products of potential biological and food importance. However, microbial fermentation for cucurbitadienol production remains inefficient, limiting its potential for further industrial application. This study achieved the efficient synthesis of cucurbitadienol through a multimodular strategy. First, an N-degron tag was used to direct metabolic flux toward cucurbitadienol synthesis without compromising cell growth. Second, enzyme engineering strategies were employed to improve the utilization efficiency of intermediate metabolites. Finally, to increase precursor availability, the transcription factor UPC2-1 was introduced, which upregulated the expression of ERGs in the pre-squalene pathway. After eliminating nitrogen supplementation and optimizing fermentation conditions, cucurbitadienol accumulation in the 5 L bioreactor increased to 6.1 g/L, representing the highest titer reported to date. These findings provide a solid foundation for the industrial-scale production of cucurbitadienol and its derivatives.
+
+[PMID 41723343] Integrated metabolomic and transcriptomic analyses elucidates the molecular mechanisms underlying cucurbitacin accumulation and bitterness development in Luffa fruits
+2026
+The fruits of Luffa in the Cucurbitaceae family are characterized by a bitter taste, which is mainly attributed to cucurbitacin. However, the types of cucurbitacins related to bitterness and the molecular mechanism of cucurbitacin accumulation during Luffa fruit growth and development remain largely unclear. Here, we identified a total of 633 metabolites in Luffa, including alkaloids, flavonoids, and terpenoids, with 364 key metabolites showing significant differences between bitter and non-bitter varieties. Cucurbitacins B and D were significantly more abundant in bitter Luffa and showed an upward trend from non-bitter to extra-bitter varieties. Transcriptome analysis revealed 25,577 differentially expressed genes (DEGs) in these Luffa varieties, including the upregulation of terpenoid biosynthetic pathways in bitter fruits. Integrative metabolite profiling and transcriptome analyses showed that LaCBS(Luffa cucurbitadienol synthase), encoding cucurbitadienol synthase, is a hub gene for the first committed step in cucurbitacin biosynthesis, located within gene clusters comprising LaP450s(Luffa cytochrome P450s) and LaACT(Luffa acetyltransferase). In addition, two LaCBS genes were located within two gene clusters, alongside LaP450s and LaACT, in the interspecific hybrid of Luffa. A total of 746 DEGs were identified as transcription factors, including 103 LabHLH family members; two LabHLHs were positively correlated with LaCBS and LaACT. Heat and abscisic acid stress activated the cucurbitacin biosynthetic pathway. These findings help to elucidate the molecular mechanism of cucurbitacin biosynthesis in bitter Luffa fruits.
+
+[PMID 39511511] Establishment and application of highly efficient regeneration, genetic transformation and genome editing system for cucurbitacins biosynthesis in Hemsleya chinensis
+2024
+BackgroundHemsleya Chinensis is a perennial plant in the Cucurbitaceae family containing antibacterial and anti-inflammatory compounds. The lack of genetic transformation systems makes it difficult to verify the functions of genes controlling important traits and conduct molecular breeding in H. chinensis.ResultsHighly efficient calli were induced on MS medium added 1.5 mg·L- 1 6-benzylaminopurine (6-BA) and 0.02 mg·L- 1 1-naphthylacetic acid (NAA) with high efficiency (> 95%). The frequency of shoot induction was increased to 90% with a plant growth regulator combination of 1.5 mg·L- 1 6-BA and 0.1 mg·L- 1 NAA. Our results also showed that 100% of shoot regeneration was achieved in a shoot regeneration medium. Additionally, more than 92% of kanamycin-resistant plants were confirmed. Furthermore, we achieved 42% genome editing efficiency by applying this transformation method to HcOSC6, a gene that catalyzes the formation of cucurbitadienol. HPLC analysis showed OE-HcOSC6 lines exhibited significantly higher cucurbitadienol levels than the genome-edited lines. Transcriptomic analysis revealed that some downstream genes related to cucurbitadienol biosynthesis, such as HcCYP87D20, HcCYP81Q58, and HcSDR34, were up-regulated in OE lines and down-regulated in mutants.ConclusionsHere, we established a process for regeneration, transformation, and genome editing of H. chinensis using stem segments. This provides valuable insight into the underlying molecular mechanisms of medicinal compound production. By combining high-efficiency tissue culture, transformation, and genome editing systems, we provide a powerful platform that supports functional research on molecular mechanisms of secondary metabolism.

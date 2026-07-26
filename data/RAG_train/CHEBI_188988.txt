@@ -1,0 +1,32 @@
+Compound: 28-norteasterone
+ChEBI ID: CHEBI:188988
+PubChem CID: 131865289
+
+== Chemical properties ==
+IUPAC Name: (3S,5S,8S,9S,10R,13S,14S,17R)-17-[(2S,3R,4R)-3,4-dihydroxy-6-methylheptan-2-yl]-3-hydroxy-10,13-dimethyl-1,2,3,4,5,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-6-one
+Molecular Formula: C27H46O4
+Molecular Weight: 434.7
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC(=O)[C@@H]4[C@@]3(CC[C@@H](C4)O)C)C)[C@H]([C@@H](CC(C)C)O)O
+InChI: InChI=1S/C27H46O4/c1-15(2)12-24(30)25(31)16(3)19-6-7-20-18-14-23(29)22-13-17(28)8-10-27(22,5)21(18)9-11-26(19,20)4/h15-22,24-25,28,30-31H,6-14H2,1-5H3/t16-,17-,18-,19+,20-,21-,22+,24+,25+,26+,27+/m0/s1
+InChIKey: LEHNWZXASREXJG-ODJNXLQUSA-N
+XLogP: 5.2
+TPSA: 77.8
+H-Bond Donors: 3
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+A brassinosteroid that is 6-deoxo-28-norteasterone carrying an oxo group at position 6.
+
+== Literature on 28-norteasterone ==
+
+[PMID 22170941] Biosynthesis of a cholesterol-derived brassinosteroid, 28-norcastasterone, in Arabidopsis thaliana
+2012
+A metabolic study revealed that 28-norcastasterone in Arabidopsis is synthesized from cholesterol via the late C-6 oxidation pathway. On the other hand, the early C-6 oxidation pathway was found to be interrupted because cholestanol is converted to 6-oxocholestanol, but further metabolism to 28-norcathasterone was not observed. The 6-oxoBRs were found to have been produced from the respective 6-deoxoBRs administered to the enzyme solution, thus indicating that these 6-oxoBRs are supplied from the late C-6 oxidation pathway. Heterologously expressed CYP85A1 and CYP85A2 in yeast catalysed this C-6 oxidation, with CYP85A2 being much more efficient than CYP85A1. Abnormal growth of det2 and dwf4 was restored via the application of 28-norcastasterone and closer precursors. Furthermore, det2 and dwf4 could not convert cholesterol to cholestanol and cholestanol to 6-deoxo-28-norcathasterone, respectively. It is, therefore, most likely that the same enzyme system is operant in the synthesis of both 28-norcastasterone and castasterone. In the presence of S-adenosyl-L-methionine, the cell-free enzyme extract catalysed the C-24 methylation of 28-norcastasterone to castasterone, although the conversion rates of 28-norteasterone to teasterone and 28-nortyphasterol to typhasterol were much lower; this suggests that 28-norcastasterone is the primary precursor for the generation of C(28)-BRs from C(27)-BRs.
+
+[PMID 11551544] Roots and shoots of tomato produce 6-deoxo-28-norcathasterone, 6-deoxo-28-nortyphasterol and 6-deoxo-28-norcastasterone, possible precursors of 28-norcastasterone
+2001
+Roots and shoots of tomato (Lycopersicon esculentum) were investigated for the occurrence of biosynthetic precursors of 28-norcastasterone, a C27 brassinosteroid that we have shown to be present in shoots of tomato. A series of putative precursors, including 6-deoxo-28-norcathasterone, 6-deoxo-28-norteasterone, 3-dehydro-6-deoxo-28-norteasterone, 6-deoxo-28-nortyphasterol and 6-deoxo-28-norcastasterone, were synthesized and used as GC-MS standards, resulting in the identification of 6-deoxo-28-norcathasterone, 6-deoxo-28-nortyphasterol and 6-deoxo-28-norcastasterone in both roots and shoots. These findings indicate that the biosynthesis of 28-norcastasterone may parallel that of castasterone. The endogenous levels of brassinosteroids differed between roots and shoots, indicating that the biosynthesis of brassinosteroids is differently regulated between these tissues. Regulation of root growth by brassinosteroids is also discussed.
+
+[PMID 15247383] Novel biosynthetic pathway of castasterone from cholesterol in tomato
+2004
+Endogenous brassinosteroids (BRs) in tomato (Lycopersicon esculentum) seedlings are known to be composed of C27- and C28-BRs. The biosynthetic pathways of C27-BRs were examined using a cell-free enzyme solution prepared from tomato seedlings that yielded the biosynthetic sequences cholesterol --> cholestanol and 6-deoxo-28-norteasterone  6-deoxo-28-nor-3-dehydroteasterone  6-deoxo-28-nortyphasterol --> 6-deoxo-28-norcastasterone --> 28-norcastasterone (28-norCS). Arabidopsis CYP85A1 that was heterologously expressed in yeast mediated the conversion of 6-deoxo-28-norCS to 28-norCS. The same reaction was catalyzed by an enzyme solution from wild-type tomato but not by an extract derived from a tomato dwarf mutant with a defect in CYP85. Furthermore, exogenously applied 28-norCS restored the abnormal growth of the dwarf mutant. These findings indicate that the C-6 oxidation of 6-deoxo-28-norCS to 28-norCS in tomato seedlings is catalyzed by CYP85, just as in the conversion of 6-deoxoCS to CS. Additionally, the cell-free solution also catalyzed the C-24 methylation of 28-norCS to CS in the presence of NADPH and S-adenosylmethionine (SAM), a reaction that was clearly retarded in the absence of NADPH and SAM. Thus it seems that C27-BRs, in addition to C28-BRs, are important in the production of more active C28-BRs and CS, where a SAM-dependent sterol methyltransferase appears to biosynthetically connect C27-BRs to C28-BRs. Moreover, the tomato cell-free solution converted CS to 26-norCS and [2H6]CS to [2H3]28-norCS, suggesting that C-28 demethylation is an artifact due to an isotope effect. Although previous feeding experiments employing [2H6]CS suggested that 28-norCS was synthesized from CS in certain plant species, this is not supported in planta. Altogether, this study demonstrated for the first time, to our knowledge, that 28-norCS is not synthesized from CS but from cholesterol. In addition, CS and [2H6]CS were not converted into BL and [2H6]BL, respectively, confirming an earlier finding that the active BR in tomato seedlings is not BL but CS. In conclusion, the biosynthesis of 28-norBRs appears to play a physiologically important role in maintaining homeostatic levels of CS in tomato seedlings.
