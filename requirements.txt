@@ -23,5 +23,8 @@ h5py>=3.0
 # HTTP for the literature audit pipeline
 # (urllib is stdlib; requests is not required)
 
-#FAISS for RAG train
+#Packages for RAG train
 faiss-cpu
+openai
+dotenv
+python-dotenv
