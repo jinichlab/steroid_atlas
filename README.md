@@ -6,6 +6,8 @@ An interactive UMAP atlas of steroid- and bile-acid-metabolizing enzymes and the
 - **677 small molecules** with SMILES, verified ChEBI IDs, RDKit-drawn structures
 - **15 literature-recruited proteins** from 5 audited papers, each with full evidence-based provenance
 - **Interactive visualizer** built on [marimo](https://marimo.io) + Altair + RDKit
+- **AI Chatbot** that is RAG trained to answer any questions, trained on PubChem, Europe PMC, and ChEBI records  
+  *(Requires personal openAI API key)*
 
 ## Quick start
 
@@ -97,3 +99,4 @@ MIT (see `LICENSE`). Data is aggregated from public databases and open-access pu
 ## Contact
 
 Adriana Siordia · <adsiordia@ucsd.edu> · Jinich Lab, UC San Diego
+Akshay Uppal · <akuppal@ucsd.edu> · Jinich Lab, UC San Diego
