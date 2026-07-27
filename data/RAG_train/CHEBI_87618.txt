@@ -1,0 +1,18 @@
+Compound: 15alpha-hydroxyestrone
+ChEBI ID: CHEBI:87618
+PubChem CID: 22295806
+
+== Chemical properties ==
+IUPAC Name: (8R,9S,13S,14S,15S)-3,15-dihydroxy-13-methyl-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-17-one
+Molecular Formula: C18H22O3
+Molecular Weight: 286.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1[C@H](CC2=O)O)CCC4=C3C=CC(=C4)O
+InChI: InChI=1S/C18H22O3/c1-18-7-6-13-12-5-3-11(19)8-10(12)2-4-14(13)17(18)15(20)9-16(18)21/h3,5,8,13-15,17,19-20H,2,4,6-7,9H2,1H3/t13-,14-,15+,17-,18-/m1/s1
+InChIKey: FDFNTZDUOBCJMD-DMHIMHRUSA-N
+XLogP: 2.2
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 17-oxo steroid that is estrone substituted by an α-hydroxy group at position 15.

@@ -1,0 +1,18 @@
+Compound: 7alpha,12alpha-dihydroxycholest-4-en-3-one
+ChEBI ID: CHEBI:28477
+PubChem CID: 3081958
+
+== Chemical properties ==
+IUPAC Name: (7R,8R,9S,10R,12S,13R,14S,17R)-7,12-dihydroxy-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C27H44O3
+Molecular Weight: 416.6
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](CC4=CC(=O)CC[C@]34C)O)O)C
+InChI: InChI=1S/C27H44O3/c1-16(2)7-6-8-17(3)20-9-10-21-25-22(15-24(30)27(20,21)5)26(4)12-11-19(28)13-18(26)14-23(25)29/h13,16-17,20-25,29-30H,6-12,14-15H2,1-5H3/t17-,20-,21+,22+,23-,24+,25+,26+,27-/m1/s1
+InChIKey: UQPYXHJTHPHOMM-NIBOIBLTSA-N
+XLogP: 6
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+7alpha,12alpha-dihydroxycholest-4-en-3-one is a 7alpha-hydroxy steroid, a 12alpha-hydroxy steroid, a 3-oxo-Delta(4) steroid and a cholestanoid. It has a role as a mouse metabolite and a human metabolite.

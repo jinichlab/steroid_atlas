@@ -1,0 +1,33 @@
+Compound: 5beta-pregnane 3alpha,20alpha-diol 3-O-(3-sulfo-beta-D-glucuronide)(2-)
+ChEBI ID: CHEBI:178103
+PubChem CID: 156613029
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,4S,5R,6R)-3,5-dihydroxy-6-[[(3R,5R,8R,9S,10S,13S,14S,17S)-17-[(1S)-1-hydroxyethyl]-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-3-yl]oxy]-4-sulfonatooxyoxane-2-carboxylate
+Molecular Formula: C27H42O11S-2
+Molecular Weight: 574.7
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@H]4[C@@]3(CC[C@H](C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)[O-])O)OS(=O)(=O)[O-])O)C)C)O
+InChI: InChI=1S/C27H44O11S/c1-13(28)17-6-7-18-16-5-4-14-12-15(8-10-26(14,2)19(16)9-11-27(17,18)3)36-25-21(30)22(38-39(33,34)35)20(29)23(37-25)24(31)32/h13-23,25,28-30H,4-12H2,1-3H3,(H,31,32)(H,33,34,35)/p-2/t13-,14+,15+,16-,17+,18-,19-,20-,21+,22-,23-,25+,26-,27+/m0/s1
+InChIKey: DZRVFQXQIDBRQP-GYDHMEJXSA-L
+XLogP: 4
+TPSA: 194
+H-Bond Donors: 3
+H-Bond Acceptors: 11
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of 5β-pregnane 3α,20α-diol 3-<em>O</em>-(3-sulfo-β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic and sulfate groups; major species at pH 7.3.
+
+--- RELATED COMPOUND: 5β-pregnane 3α ---
+No literature found for 5beta-pregnane 3alpha,20alpha-diol 3-O-(3-sulfo-beta-D-glucuronide)(2-) itself. 5beta-pregnane 3alpha,20alpha-diol 3-O-(3-sulfo-beta-D-glucuronide)(2-) is the conjugate base of 5β-pregnane 3α; the abstracts below are about 5β-pregnane 3α.
+
+[PMID 38386612] Comparison of Behavioral Effects of GABAergic Low- and High-Efficacy Neuroactive Steroids in the Zebrafish Larvae Assay
+2024
+Activation of the GABAA receptor is associated with numerous behavioral end points ranging from anxiolysis to deep anesthesia. The specific behavioral effect of a GABAergic compound is considered to correlate with the degree of its functional effect on the receptor. Here, we tested the hypothesis that a low-efficacy allosteric potentiator of the GABAA receptor may act, due to a ceiling effect, as a sedative with reduced and limited action. We synthesized a derivative, named (3α,5β)-20-methyl-pregnane-3,20-diol (KK-235), of the GABAergic neurosteroid 5β-pregnane-3α,20α-diol. Using electrophysiology, we showed that KK-235 is a low-efficacy potentiator of the synaptic-type α1β2γ2L GABAA receptor. In the zebrafish larvae behavioral assay, KK-235 was found to only partially block the inverted photomotor response (PMR) and to weakly reduce swimming behavior, whereas the high-efficacy GABAergic steroid (3α,5α,17β)-3-hydroxyandrostane-17-carbonitrile (ACN) fully blocked PMR and spontaneous swimming. Coapplication of KK-235 reduced the potentiating effect of ACN in an electrophysiological assay and dampened its sedative effect in behavioral experiments. We propose that low-efficacy GABAergic potentiators may be useful as sedatives with limited action.
+
+[PMID 21796020] Inhibitory effect of 5β-pregnane-3α,20β-diol on transcriptional activity and enzyme activity of human bilirubin UDP-glucuronosyltransferase
+2011
+Prolonged unconjugated hyperbilirubinemia in infants associated with breast milk feeding is a common pediatric problem known as breast milk jaundice (BMJ). A polymorphic mutation (G71R) of bilirubin UDP-glucuronosyltransferase (UGT1A1) is a known cause of BMJ on the infantile side, but the responsible components of breast milk are not currently known. We analyzed the inhibitory effect of 5β-pregnane-3α,20β-diol (pregnanediol) on transcriptional activity and enzyme activity of UGT1A1. To this end, we constructed two types of expression vectors. One type comprised vectors including the upstream enhancer-promoter sequence of UGT1A1 for WT and variant type (-3279T>G with A(TA)7TAA), used in studying transcriptional regulation. The other type comprised vectors including cDNA of UGT1A1 for WT and the G71R variant, used in studying enzyme activity. In an in vitro expression study, pregnanediol did not affect the transcriptional activity of UGT1A1 enhancer-promoter complex of WT and variant type, even with coexistence of transcriptional factors such as constitutive androstane receptor or pregnane X receptor. In contrast, in the presence of 100 μM pregnanediol, bilirubin glucuronidation of G71R-UGT1A1 was reduced to 51% of WT. We suggest that pregnanediol is a cause of breast milk jaundice in carriers of G71R.
+
+[PMID 32049493] Multiplex Surface-Enhanced Raman Scattering Identification and Quantification of Urine Metabolites in Patient Samples within 30 min
+2020
+Successful translation of laboratory-based surface-enhanced Raman scattering (SERS) platforms to clinical applications requires multiplex and ultratrace detection of small biomarker molecules from a complex biofluid. However, these biomarker molecules generally exhibit low Raman scattering cross sections and do not possess specific affinity to plasmonic nanoparticle surfaces, significantly increasing the challenge of detecting them at low concentrations. Herein, we demonstrate a "confine-and-capture" approach for multiplex detection of two families of urine metabolites correlated with miscarriage risks, 5β-pregnane-3α,20α-diol-3α-glucuronide and tetrahydrocortisone. To enhance SERS signals by 1012-fold, we use specific nanoscale surface chemistry for targeted metabolite capture from a complex urine matrix prior to confining them on a superhydrophobic SERS platform. We then apply chemometrics, including principal component analysis and partial least-squares regression, to convert molecular fingerprint information into quantifiable readouts. The whole screening procedure requires only 30 min, including urine pretreatment, sample drying on the SERS platform, SERS measurements, and chemometric analyses. These readouts correlate well with the pregnancy outcomes in a case-control study of 40 patients presenting threatened miscarriage symptoms.

@@ -1,0 +1,33 @@
+Compound: tomatidine 3-O-beta-D-glucopyranoside(1+)
+ChEBI ID: CHEBI:166998
+PubChem CID: 155289489
+
+== Chemical properties ==
+IUPAC Name: (2R,3S,4S,5R,6R)-2-(hydroxymethyl)-6-[(1R,2S,4S,5'S,6S,7S,8R,9S,12S,13S,16S,18S)-5',7,9,13-tetramethylspiro[5-oxapentacyclo[10.8.0.02,9.04,8.013,18]icosane-6,2'-piperidin-1-ium]-16-yl]oxyoxane-3,4,5-triol
+Molecular Formula: C33H56NO7+
+Molecular Weight: 578.8
+SMILES: C[C@H]1CC[C@]2([C@H]([C@H]3[C@@H](O2)C[C@@H]4[C@@]3(CC[C@H]5[C@H]4CC[C@@H]6[C@@]5(CC[C@@H](C6)O[C@H]7[C@@H]([C@H]([C@@H]([C@H](O7)CO)O)O)O)C)C)C)[NH2+]C1
+InChI: InChI=1S/C33H55NO7/c1-17-7-12-33(34-15-17)18(2)26-24(41-33)14-23-21-6-5-19-13-20(8-10-31(19,3)22(21)9-11-32(23,26)4)39-30-29(38)28(37)27(36)25(16-35)40-30/h17-30,34-38H,5-16H2,1-4H3/p+1/t17-,18-,19-,20-,21+,22-,23-,24-,25+,26-,27+,28-,29+,30+,31-,32-,33-/m0/s1
+InChIKey: JDRMNHOIHYWSFN-UGSFAPCESA-O
+XLogP: 4.6
+TPSA: 125
+H-Bond Donors: 5
+H-Bond Acceptors: 7
+
+== ChEBI definition ==
+Tomatidine 3-O-beta-D-glucopyranoside(1+) is a sterol 3-beta-D-glucoside and a monosaccharide derivative. It is functionally related to a tomatidine.
+
+--- RELATED COMPOUND: tomatidine ---
+No literature found for tomatidine 3-O-beta-D-glucopyranoside(1+) itself. tomatidine 3-O-beta-D-glucopyranoside(1+) is functionally related to tomatidine; the abstracts below are about tomatidine.
+
+[PMID 41922652] Tomatidine is a senotherapeutic compound that improves cognitive function and reduces cellular senescence in aged mice
+2026
+Cellular senescence drives aging and age-related dysfunction across multiple tissues, including the brain. Through a high-content, senescent cell-based phenotypic screen of a small panel of natural products, we identified tomatidine, an aglycone of tomatine found in tomatoes, as a previously unrecognized senotherapeutic agent. In senescent human brain microvascular endothelial cells and fibroblasts, tomatidine selectively suppressed SASP expression without affecting p16Ink4a or p21Cip1 levels consistent with a senomorphic effect. In aged mice, tomatidine reduced frailty and improved motor coordination and cognitive performance. These functional benefits were accompanied by reduced senescence markers (p16 Ink4a, p21 Cip1, and telomere-associated DNA damage foci) in liver, skin, and hippocampal neurons, along with decreased neuroinflammation and microglial activation. Tomatidine also diminished brain endothelial cell senescence while enhancing tight junction protein expression, suggesting preserved blood-brain barrier integrity. Together, these findings identify tomatidine as a promising senescence-targeting compound with beneficial effects in aged mice and support its further evaluation in mechanistic and translational studies.
+
+[PMID 41487406] Tomatidine suppresses PI3K/Akt signaling to induce apoptosis in oral squamous cell carcinoma: An in vitro and molecular docking study
+2026
+IntroductionOral squamous cell carcinoma (OSCC) has high mortality. Over the decades, there has been not substantial improvement in overall survival which is mostly attributed to lack of effective anticancer agent. Tomatidine, a steroidal alkaloid derived and sourced from unripe green tomatoes, has shown immense anticancer potential. However, its activity in OSCC remains largely uncharacterized. This research aims to evaluate the cytotoxic and pro-apoptotic effects of tomatidine in OSCC.MethodTarget gene for Tomatidine on OSCC treatment was analyzed in the TCGA-HNSC dataset. Two gene were prioritized for network pharmacology to establish their relevance, followed by cheminformatics, drug-target screening, molecular docking, and ADME-T profiling to identify lead compounds. Gene expression and overall survival for target proteins (PI3K/AKT signaling) were examined using GEPIA an cBioportal databases. Functional validation for tomatidine was performed using KB cells via cell viability assay to assess the anticancer effect.ResultsTomatidine treatment reduced the viability of KB cells in a dosage-dependent manner. The docking simulations showed good binding affinities of tomatidine to PI3K (-8.4 kcal/mol), AKT (-8.8), and PTEN (-10.1), suggesting that tomatidine has a potential ability to disrupt PI3K/Akt signaling and apoptosis.ConclusionTomatidine has potent anticancer effects against OSCC cells inhibiting the PI3K/Akt signaling pathway and promoting apoptosis. These findings highlight the tomatidine utility as a natural anticancer compound.
+
+[PMID 40387453] Tomatidine Ameliorates Diabetes-Induced Cognitive Impairment and Tau Hyperphosphorylation Through the AMPK-TFEB Pathway
+2025
+Diabetes is associated with an increased risk of cognitive impairment. Autophagy-lysosomal dysfunction is a key feature of diabetes that contributes to dementia. Transcription factor EB (TFEB) is a master regulator of the autophagy-lysosomal function. Although the TFEB level and activity are known to be significantly decreased in transgenic mouse models of Alzheimer's disease, the role of TFEB in diabetes-associated cognitive decline remains unknown. Tomatidine protects nerve cells through reduced inflammation, oxidative stress, and cell apoptosis, which also increases the TFEB expression. In the present study, we elucidated whether tomatidine activates TFEB and ameliorates diabetes-associated cognitive impairment. The results revealed that tomatidine ameliorated diabetes-induced cognitive impairment and tau protein hyperphosphorylation through TFEB activation. Furthermore, tomatidine activated AMP-activated protein kinase (AMPK). When AMPK was inhibited, the improvement role of tomatidine disappeared. Taken together, tomatidine exerted a partial protective effect on diabetes-associated cognitive impairment by modulating the AMPK-TFEB signaling pathway.

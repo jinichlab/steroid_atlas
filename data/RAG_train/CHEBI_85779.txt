@@ -1,0 +1,18 @@
+Compound: 4beta,7alpha-dihydroxycholesterol
+ChEBI ID: CHEBI:85779
+PubChem CID: 57066358
+
+== Chemical properties ==
+IUPAC Name: (3S,4R,7S,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene-3,4,7-triol
+Molecular Formula: C27H46O3
+Molecular Weight: 418.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@@H](C=C4[C@@]3(CC[C@@H]([C@@H]4O)O)C)O)C
+InChI: InChI=1S/C27H46O3/c1-16(2)7-6-8-17(3)18-9-10-19-24-20(11-13-26(18,19)4)27(5)14-12-22(28)25(30)21(27)15-23(24)29/h15-20,22-25,28-30H,6-14H2,1-5H3/t17-,18-,19+,20+,22+,23-,24+,25-,26-,27-/m1/s1
+InChIKey: NEITZYUKMAAGFE-DNPWHXEXSA-N
+XLogP: 6.3
+TPSA: 60.7
+H-Bond Donors: 3
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+An oxysterol that is cholesterol carrying two additional hydroxy groups at the 4β and 7α positions.

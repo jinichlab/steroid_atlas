@@ -1,0 +1,19 @@
+Compound: 11-oxo steroid
+ChEBI ID: CHEBI:47787
+
+== ChEBI definition ==
+Any oxo steroid that has an oxo substituent at position 11.
+
+== Literature on 11-oxo steroid ==
+
+[PMID 14715373] Are the 11-oxo-steroids really so hindered towards organometallic compounds?
+2004
+Allylation of an 11-oxo-steroid, the protected adrenosterone, was studied to examine more closely the steric hindrance of such a ketosteroid. While the beta face exhibits, as well known, a strong steric hindrance, the alpha side appears to be only relatively hindered. A high diastereoselectivity was observed in the addition of crotyl magnesium bromide.
+
+[PMID 1455460] Convenient synthesis of 18-hydroxylated cortisol and prednisolone
+1992
+18,20-Epoxy-11 beta,17 alpha,20 beta,21-tetrahydroxypregn-4-en-3-one was synthesized by the application of hypoiodite reaction to the cortisol acetonide. The intermediary 18-iodo derivative was converted to the 11-oxo steroid by chromic acid prior to silver ion-assisted solvolysis. Removal of the protective group with hydrochloric acid was finally carried out to give the desired 11 beta,17 alpha,18,21-tetrahydroxypregn-4-ene-3,20-dione as the hemiacetal form. 18,20-Epoxy-11 beta-17 alpha,20 beta,21- tetrahydroxypregna-1,4-dien-3-one was also prepared from prednisolone through a similar reaction sequence.
+
+[PMID 3860318] Congenital 11 beta-hydroxysteroid dehydrogenase deficiency associated with juvenile hypertension: corticosteroid metabolite profiles of four patients and their families
+1985
+Four children with 11 beta-hydroxysteroid dehydrogenase deficiency are described. All patients had severe hypertension, hypokalaemia, and low plasma aldosterone and renin activities. Two of the patients were siblings and two were unrelated. The most noticeable biochemical feature of these individuals was the extremely low excretion of cortisol metabolites containing an 11-carbonyl group compared to the excretion of the 11 beta-hydroxyl containing metabolites. Although this condition is readily diagnosed in affected individuals by urinary steroid analysis, carriers of the defect do not differ from normal in their urinary steroids. Both parents of the affected siblings had normal 11-oxo-steroid/11 beta-hydroxysteroid ratios under baseline conditions and the lesions could not be revealed by ACTH administration.

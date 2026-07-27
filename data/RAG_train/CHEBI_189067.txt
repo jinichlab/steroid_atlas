@@ -1,0 +1,28 @@
+Compound: cholesteryl beta-D-xyloside
+ChEBI ID: CHEBI:189067
+PubChem CID: 162422402
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,4S,5R)-2-[[(3S,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl]oxy]oxane-3,4,5-triol
+Molecular Formula: C32H54O5
+Molecular Weight: 518.8
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O[C@H]5[C@@H]([C@H]([C@@H](CO5)O)O)O)C)C
+InChI: InChI=1S/C32H54O5/c1-19(2)7-6-8-20(3)24-11-12-25-23-10-9-21-17-22(37-30-29(35)28(34)27(33)18-36-30)13-15-31(21,4)26(23)14-16-32(24,25)5/h9,19-20,22-30,33-35H,6-8,10-18H2,1-5H3/t20-,22+,23+,24-,25+,26+,27-,28+,29-,30+,31+,32-/m1/s1
+InChIKey: UOCVCGQIJOLRSA-INKJFGPASA-N
+XLogP: 7
+TPSA: 79.2
+H-Bond Donors: 3
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+Cholesteryl beta-D-xyloside is a cholesteryl glycoside. It contains a cholesterol and a beta-D-xyloside.
+
+== Literature on cholesteryl beta-D-xyloside ==
+
+[PMID 33361282] Human glucocerebrosidase mediates formation of xylosyl-cholesterol by β-xylosidase and transxylosidase reactions
+2021
+Deficiency of glucocerebrosidase (GBA), a lysosomal β-glucosidase, causes Gaucher disease. The enzyme hydrolyzes β-glucosidic substrates and transglucosylates cholesterol to cholesterol-β-glucoside. Here we show that recombinant human GBA also cleaves β-xylosides and transxylosylates cholesterol. The xylosyl-cholesterol formed acts as an acceptor for the subsequent formation of di-xylosyl-cholesterol. Common mutant forms of GBA from patients with Gaucher disease with reduced β-glucosidase activity were similarly impaired in β-xylosidase, transglucosidase, and transxylosidase activities, except for a slightly reduced xylosidase/glucosidase activity ratio of N370S GBA and a slightly reduced transglucosylation/glucosidase activity ratio of D409H GBA. XylChol was found to be reduced in spleen from patients with Gaucher disease. The origin of newly identified XylChol in mouse and human tissues was investigated. Cultured human cells exposed to exogenous β-xylosides generated XylChol in a manner dependent on active lysosomal GBA but not the cytosol-facing β-glucosidase GBA2. We later sought an endogenous β-xyloside acting as donor in transxylosylation reactions, identifying xylosylated ceramide (XylCer) in cells and tissues that serve as donor in the formation of XylChol. UDP-glucosylceramide synthase (GCS) was unable to synthesize XylChol but could catalyze the formation of XylCer. Thus, food-derived β-D-xyloside and XylCer are potential donors for the GBA-mediated formation of XylChol in cells. The enzyme GCS produces XylCer at a low rate. Our findings point to further catalytic versatility of GBA and prompt a systematic exploration of the distribution and role of xylosylated lipids.
+
+[PMID 18196183] Metabolism of conjugated sterols in eggplant. Part 2. Phospholipid : steryl glucoside acyltransferase
+2008
+A membrane-bound phospholipid : steryl glucoside acyltransferase from Solanum melongena leaves was partially purified and its specificity and molecular as well as kinetic properties were defined. Among the steryl glycosides tested (e.g. typical plant steryl glucosides, steryl galactosides and cholesteryl xyloside) the highest activity was found with cholesteryl glucoside, but some structurally related compounds such as sito- and stigmasteryl glucoside or galactoside as well as cholesteryl galactoside were also acylated, albeit at lower rates. The investigated enzyme was able to use all classes of phosphoglycerolipids (phosphatidylethanolamine, phosphatidylcholine, phosphatidylserine, phosphatidylinositol, phosphatidylglycerol) as an acyl source for biosynthesis of acylated steryl glucoside. Among them 1,2-dimirystoylphosphatidylic acid appeared to be the best acyl donor. Apart from phosphoglycerolipids, 1,2-diacylglycerols were also used as acyl donor for steryl glucoside acylation, although at a distinctly lower rate. The acyl moiety was transferred from the C-1 position of phospholipid molecule. The investigated acyltransferase activity was stimulated by 2-mercaptoethanol, Triton X-100, 1-monoacylglycerols and inhibited in the presence of divalent cations such as Ca(2+), Mn(2+), Zn(2+) or Co(2+), some lipids (MDGD, ceramide), detergents (Tween 20, 40, 60 and 80, Tyloxapol, sodium deoxycholate) and high ionic strength.

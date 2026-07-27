@@ -1,0 +1,24 @@
+Compound: 17alpha-hydroxypregnenolone
+ChEBI ID: CHEBI:28750
+PubChem CID: 91451
+
+== Chemical properties ==
+IUPAC Name: 1-[(3S,8R,9S,10R,13S,14S,17R)-3,17-dihydroxy-10,13-dimethyl-1,2,3,4,7,8,9,11,12,14,15,16-dodecahydrocyclopenta[a]phenanthren-17-yl]ethanone
+Molecular Formula: C21H32O3
+Molecular Weight: 332.5
+SMILES: CC(=O)[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)O
+InChI: InChI=1S/C21H32O3/c1-13(22)21(24)11-8-18-16-5-4-14-12-15(23)6-9-19(14,2)17(16)7-10-20(18,21)3/h4,15-18,23-24H,5-12H2,1-3H3/t15-,16+,17-,18-,19-,20-,21-/m0/s1
+InChIKey: JERGUCIJOXJXHF-TVWVXWENSA-N
+XLogP: 3.1
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A hydroxypregnenolone carrying an α-hydroxy group at position 17.
+
+== Literature on 17alpha-hydroxypregnenolone ==
+
+[PMID 2707906] Enzymatic detoxification using lipophilic hollow-fiber membranes: IV. Glutathione conjugation reactions
+1989
+A hollow-fiber technique was used in the enzymatic glutathione conjugation of lipophilic toxins. Native enzyme was circulated on the external side of a lipophilic hollow-fiber membrane while the toxin-containing media (blood, plasma or aqueous solution) were circulated inside the fiber. Glutathione conjugation reactions were catalyzed by rat liver cytosol, with a specific glutathione transferase activity of 40 nmol/min/mg protein (acceptor: 1,2-epoxy-3-(p-nitrophenoxy)propane). Clearance rates of 1,2-epoxy-3-(p-nitrophenoxy)propane, phenylglycidether, styrene oxide, cis-9, 10-epoxystearic acid, cis-9, 10-epoxystearic acid methyl ester, 5a, 6a-cholesterol oxide, 16-, 17a-pregnenolone oxide, and p-nitrobenzylchloride were 10.44, 13.37, 32.25, 7.60, 7.31, 3.92, 4.20 and 29.24 nmol/mg protein/h/cm2 hollow-fiber surface respectively. This technique makes possible glutathione conjugation reactions with crude enzyme preparations over long periods without loss of activity from covalent immobilization and without loss of cofactor from (auto)oxidation. The lipophilic membrane ensures the absence of hemolysis, immunological hazards and hormone loss, while elimination of the toxin is not impaired.

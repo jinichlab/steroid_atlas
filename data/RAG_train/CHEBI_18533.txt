@@ -1,0 +1,28 @@
+Compound: 5alpha-campestan-3-one
+ChEBI ID: CHEBI:18533
+PubChem CID: 16061343
+
+== Chemical properties ==
+IUPAC Name: (5S,8R,9S,10S,13R,14S,17R)-17-[(2R,5R)-5,6-dimethylheptan-2-yl]-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C28H48O
+Molecular Weight: 400.7
+SMILES: C[C@H](CC[C@@H](C)C(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C
+InChI: InChI=1S/C28H48O/c1-18(2)19(3)7-8-20(4)24-11-12-25-23-10-9-21-17-22(29)13-15-27(21,5)26(23)14-16-28(24,25)6/h18-21,23-26H,7-17H2,1-6H3/t19-,20-,21+,23+,24-,25+,26+,27+,28-/m1/s1
+InChIKey: DDJMOMHMVFXEQF-JBQSTXLYSA-N
+XLogP: 9.2
+TPSA: 17.1
+H-Bond Donors: 0
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A brassinosteroid that is 5α-campestane bearing an oxo substituent at position 3.
+
+== Literature on 5alpha-campestan-3-one ==
+
+[PMID 31398025] Formation of 5α-Sitostan-3-one, 5α-Campestan-3-one, and Steroidal Hydrocarbons in Edible Oils during Catalytic Hydrogenation
+2019
+Targeted analysis confirmed the presence of new phytosterol degradation products in fully hydrogenated commercial samples. EI-MS, APCI-MS, and 1D-NMR experiments led to the identification of 10 novel markers of catalytic hydrogenation, among which 5α-sitostan-3-one and 5α-campestan-3-one, isomers of saturated and monounsaturated steroidal hydrocarbons, were reported in edible oils for the first time. Examination of the phytosterol degradation mechanism was done by the catalytic transfer deuteration technique. The mitigation strategy of potentially detrimental compounds included optimization of processing parameters. The effect of catalyst dosage (≤0.1% based on Ni basis) and temperature region (>180 °C) were the most crucial factors in phytosterol degradation control.
+
+[PMID 15286289] Brassinosteroid deficiency due to truncated steroid 5alpha-reductase causes dwarfism in the lk mutant of pea
+2004
+The endogenous brassinosteroids in the dwarf mutant lk of pea (Pisum sativum) were quantified by gas chromatography-selected ion monitoring. The levels of castasterone, 6-deoxocastasterone, and 6-deoxotyphasterol in lk shoots were reduced 4-, 70-, and 6-fold, respectively, compared with those of the wild type. The fact that the application of brassinolide restored the growth of the mutant indicated that the dwarf mutant lk is brassinosteroid deficient. Gas chromatography-selected ion monitoring analysis of the endogenous sterols in lk shoots revealed that the levels of campestanol and sitostanol were reduced 160- and 10-fold, respectively, compared with those of wild-type plants. These data, along with metabolic studies, showed that the lk mutant has a defect in the conversion of campest-4-en-3-one to 5alpha-campestan-3-one, which is a key hydrogenation step in the synthesis of campestanol from campesterol. This defect is the same as that found in the Arabidopsis det2 mutant and the Ipomoea nil kbt mutant. The pea gene homologous to the DET2 gene, PsDET2, was cloned, and it was found that the lk mutation would result in a putative truncated PsDET2 protein. Thus it was concluded that the short stature of the lk mutant is due to a defect in the steroidal 5alpha-reductase gene. This defect was also observed in the callus induced from the lk mutant. Biosynthetic pathways involved in the conversion of campesterol to campestanol are discussed in detail.

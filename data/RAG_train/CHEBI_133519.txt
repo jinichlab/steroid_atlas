@@ -1,0 +1,18 @@
+Compound: 5alpha-androstane-3alpha,17beta-diol 17-glucosiduronate
+ChEBI ID: CHEBI:133519
+PubChem CID: 122164834
+
+== Chemical properties ==
+IUPAC Name: (2S,3S,4S,5R,6R)-3,4,5-trihydroxy-6-[[(3R,5S,8R,9S,10S,13S,14S,17S)-3-hydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]oxy]oxane-2-carboxylate
+Molecular Formula: C25H39O8-
+Molecular Weight: 467.6
+SMILES: C[C@]12CC[C@H](C[C@@H]1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@@H]4O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)[O-])O)O)O)C)O
+InChI: InChI=1S/C25H40O8/c1-24-9-7-13(26)11-12(24)3-4-14-15-5-6-17(25(15,2)10-8-16(14)24)32-23-20(29)18(27)19(28)21(33-23)22(30)31/h12-21,23,26-29H,3-11H2,1-2H3,(H,30,31)/p-1/t12-,13+,14-,15-,16-,17-,18-,19-,20+,21-,23+,24-,25-/m0/s1
+InChIKey: ZJYZOWMDMWQJIV-WWLGJQRMSA-M
+XLogP: 3.5
+TPSA: 140
+H-Bond Donors: 4
+H-Bond Acceptors: 8
+
+== ChEBI definition ==
+A monocarboxylic acid anion resulting from the removal of a proton from the carboxy group of 5α-androstane-3α,17β-diol 17-glucosiduronic acid

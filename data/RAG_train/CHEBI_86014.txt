@@ -1,0 +1,18 @@
+Compound: 3,22-dioxochol-4-en-24-oyl-CoA(4-)
+ChEBI ID: CHEBI:86014
+PubChem CID: 90658756
+
+== Chemical properties ==
+IUPAC Name: [(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-2-[[[[(3R)-4-[[3-[2-[(4S)-4-[(8S,9S,10R,13S,14S,17R)-10,13-dimethyl-3-oxo-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-17-yl]-3-oxopentanoyl]sulfanylethylamino]-3-oxopropyl]amino]-3-hydroxy-2,2-dimethyl-4-oxobutoxy]-oxidophosphoryl]oxy-oxidophosphoryl]oxymethyl]-4-hydroxyoxolan-3-yl] phosphate
+Molecular Formula: C45H64N7O19P3S-4
+Molecular Weight: 1132.0
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C)C(=O)CC(=O)SCCNC(=O)CCNC(=O)[C@@H](C(C)(C)COP(=O)([O-])OP(=O)([O-])OC[C@@H]5[C@H]([C@H]([C@@H](O5)N6C=NC7=C(N=CN=C76)N)O)OP(=O)([O-])[O-])O
+InChI: InChI=1S/C45H68N7O19P3S/c1-24(28-8-9-29-27-7-6-25-18-26(53)10-13-44(25,4)30(27)11-14-45(28,29)5)31(54)19-34(56)75-17-16-47-33(55)12-15-48-41(59)38(58)43(2,3)21-68-74(65,66)71-73(63,64)67-20-32-37(70-72(60,61)62)36(57)42(69-32)52-23-51-35-39(46)49-22-50-40(35)52/h18,22-24,27-30,32,36-38,42,57-58H,6-17,19-21H2,1-5H3,(H,47,55)(H,48,59)(H,63,64)(H,65,66)(H2,46,49,50)(H2,60,61,62)/p-4/t24-,27-,28+,29-,30-,32+,36+,37+,38-,42+,44-,45+/m0/s1
+InChIKey: MUOUYOUSQGFFIP-GDRSPGQTSA-J
+XLogP: -1.1
+TPSA: 434
+H-Bond Donors: 5
+H-Bond Acceptors: 24
+
+== ChEBI definition ==
+An acyl-CoA(4−) oxoanion arising from deprotonation of the phosphate and diphosphate OH groups of 3,22-dioxochol-4-ene-24-oyl-CoA; major species at pH 7.3.

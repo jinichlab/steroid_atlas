@@ -1,0 +1,5 @@
+Compound: 7beta-hydroxy steroid
+ChEBI ID: CHEBI:35349
+
+== ChEBI definition ==
+A 7-hydroxy steroid in which the hydroxy group at position 7 has β-configuration.

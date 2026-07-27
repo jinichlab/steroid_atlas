@@ -1,0 +1,9 @@
+{
+  "chebi_id": "CHEBI:42977",
+  "name": "25-hydroxycholesterol",
+  "cid": 65094,
+  "status": "own_literature",
+  "n_papers": 5,
+  "chars": 12569,
+  "has_definition": true
+}

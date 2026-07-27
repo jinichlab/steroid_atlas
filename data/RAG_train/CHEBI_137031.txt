@@ -1,0 +1,24 @@
+Compound: 19-hydroxy-5alpha-dihydrotestosterone
+ChEBI ID: CHEBI:137031
+PubChem CID: 257409
+
+== Chemical properties ==
+IUPAC Name: (5S,8R,9S,10R,13S,14S,17S)-17-hydroxy-10-(hydroxymethyl)-13-methyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C19H30O3
+Molecular Weight: 306.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CC[C@@H]4[C@@]3(CCC(=O)C4)CO
+InChI: InChI=1S/C19H30O3/c1-18-8-7-16-14(15(18)4-5-17(18)22)3-2-12-10-13(21)6-9-19(12,16)11-20/h12,14-17,20,22H,2-11H2,1H3/t12-,14-,15-,16-,17-,18-,19+/m0/s1
+InChIKey: ZCXLTIZTHGOSFH-GLOHGQAKSA-N
+XLogP: 2.4
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+An androstanoid that is 5α-dihydrotestosterone carrying an additional hydroxy susbstituent at position 19.
+
+== Literature on 19-hydroxy-5alpha-dihydrotestosterone ==
+
+[PMID 22773874] Oxidation of dihydrotestosterone by human cytochromes P450 19A1 and 3A4
+2012
+Dihydrotestosterone is a more potent androgen than testosterone and plays an important role in endocrine function. We demonstrated that, like testosterone, dihydrotestosterone can be oxidized by human cytochrome P450 (P450) 19A1, the steroid aromatase. The products identified include the 19-hydroxy- and 19-oxo derivatives and the resulting Δ(1,10)-, Δ(5,10)-, and Δ(9,10)-dehydro 19-norsteroid products (loss of 19-methyl group). The overall catalytic efficiency of oxidation was ~10-fold higher than reported for 3α-reduction by 3α-hydroxysteroid dehydrogenase, the major enzyme known to deactivate dihydrotestosterone. These and other studies demonstrate the flexibility of P450 19A1 in removing the 1- and 2-hydrogens from 19-norsteroids, the 2-hydrogen from estrone, and (in this case) the 1-, 5β-, and 9β-hydrogens of dihydrotestosterone. Incubation of dihydrotestosterone with human liver microsomes and NADPH yielded the 18- and 19-hydroxy products plus the Δ(1,10)-dehydro 19-nor product identified in the P450 19A1 reaction. The 18- and 19-hydroxylation reactions were attributed to P450 3A4, and 18- and 19-hydroxydihydrotestosterone were identified in human plasma and urine samples. The change in the pucker of the A ring caused by reduction of the Δ(4,5) bond is remarkable in shifting the course of hydroxylation from the 6β-, 2β-, 1β-, and 15β-methylene carbons (testosterone) to the axial methyl groups (18, 19) in dihydrotestosterone and demonstrates the sensitivity of P450 3A4, even with its large active site, to small changes in substrate structure.

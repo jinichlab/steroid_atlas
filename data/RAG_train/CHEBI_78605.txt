@@ -1,0 +1,40 @@
+Compound: 7-oxolithocholate
+ChEBI ID: CHEBI:78605
+PubChem CID: 20848976
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(3R,5S,8R,9S,10S,13R,14S,17R)-3-hydroxy-10,13-dimethyl-7-oxo-1,2,3,4,5,6,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H37O4-
+Molecular Weight: 389.5
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2C(=O)C[C@H]4[C@@]3(CC[C@H](C4)O)C)C
+InChI: InChI=1S/C24H38O4/c1-14(4-7-21(27)28)17-5-6-18-22-19(9-11-24(17,18)3)23(2)10-8-16(25)12-15(23)13-20(22)26/h14-19,22,25H,4-13H2,1-3H3,(H,27,28)/p-1/t14-,15+,16-,17-,18+,19+,22+,23+,24-/m1/s1
+InChIKey: DXOCDBGWDZAYRQ-AURDAFMXSA-M
+XLogP: 5.3
+TPSA: 77.4
+H-Bond Donors: 1
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+A bile acid anion that is the conjugate base of 7-oxolithocholic acid, obtained by deprotonation of the carboxy group; major species at pH 7.3.
+
+== Literature on 7-oxolithocholate ==
+
+[PMID PMC6285914] PSXV-40 Plasma metabolomic analysis in underperforming piglets at 1 and 21 days of age, identification of potential prediction markers for growth rate
+2018
+Abstract This study was designed to determine if normal birth weight pigs that grow poorly during the pre-weaning period have altered plasma metabolites that might serve as markers for prediction of growth rate. Eight pairs of average birth weight pigs (1.57 ± 0.05 kg) were identified that diverged in weight by a minimum of 50 g/day until 21 days of age. At 21 days, slow growing (SG) pigs weighed 5.47 ± 0.22 kg while control (C) littermates weighed 6.98 ± 0.28 kg (P  0.05). Principle component analysis revealed that groups clustered strongly by age, with all day 1 samples strongly segregating along component axis 1 from day 21 samples. Conversely, growth rate had very little effect in further segregating samples, as plasma samples from slow- versus fast-growing pigs forming largely overlapping populations. The results indicate that while age profoundly affects global metabolic profiles, growth rate elicits minimal alterations in global biochemical makeup. Examination of the data for individual plasma metabolites at birth by analysis using 2-way ANOVA with repeated measures identified elevated erythronate (P = 0.009), histamine (P = 0.019), 7-ketolithocholate (P = 0.020), serotonin (P = 0.0257); and s-adenosylhomocysteine (P = 0.001) as potential markers to identify underperforming piglets and their littermates at birth.
+
+[PMID 16232975] Preparation of methyl ursodeoxycholate via microbial reduction of methyl 7-ketolithocholate in an anaerobic interface bioreactor
+2001
+An interface bioreactor, which is a device for the microbial transformation of water-insoluble substrates, was applied to an anaerobic bioconversion for the first time. Methyl 7-ketolithocholate [Me-7KLCA] was reduced with the human intestinal bacterium Eubacterium aerofaciens JCM 7790 in a convenient anaerobic interface bioreactor using a nutrient agar plate placed in a GasPak pouch. The resulting methyl ursodeoxycholate [Me-UDCA] is a precursor of ursodeoxycholic acid, which is used as a cholesterol gallstone-dissolving agent. The reaction conditions were optimized, and ABCM medium and dihexyl ether were selected as the best carrier and reaction solvent, respectively. The toxicity of the bile acid esters toward the human intestinal bacterium was effectively alleviated in the interface bioreactor, in which the maximal concentrations of Me-7KLCA and Me-UDCA in the dihexyl ether layer respectively reached to 12.0 and 6.1 g/l.
+
+[PMID 16232971] Synthesis of methyl ursodeoxycholate via microbial reduction of methyl 7-ketolithocholate with Eubacterium aerofaciens JCM 7790 grown on two kinds of carbon and hydride sources, glucose and mannitol
+2001
+Eubacterium aerofaciens JCM 7790, which produces 7beta-hydroxysteroid dehydrogenase [7beta-HSDH], efficiently catalyzed the reduction of methyl 7-ketolithocholate [Me-7KLCA] to afford methyl ursodeoxycholate [Me-UDCA] in an anaerobic interface bioreactor. For the high accumulation of Me-UDCA, the best supplement of carbon and hydride source to the ABCM medium (glucose content, 0.3 wt.%) was screened because glucose strongly repressed 7beta-HSDH production. The supplementation of cellobiose, mannitol, sodium gluconate, and sodium pyruvate was effective to improve the production of Me-UDCA, although many mono- and disaccharides, such as fructose, sucrose, and lactose, strongly repressed 7beta-HSDH activity. A phosphate buffer was used as the aqueous phase in the carrier to avoid the lowering of medium pH in the carrier caused by the accumulation of organic acids via fermentation by E. aerofaciens. Thus, the productivity of Me-UDCA was elevated by the combination of glucose and mannitol as carbon and hydride sources and by using a phosphate buffer.
+
+[PMID 6697665] The importance of conjugation in biliary secretion of ursodeoxycholate and 7-ketolithocholate in the rat
+1984
+The biliary maximum secretory rate (SRmax.) of glycoursodeoxycholate in the bile fistula anaesthetized rat was about five times that of unconjugated ursodeoxycholate. Likewise, the biliary SRmax. of tauro-7-ketolithocholate was more than three times that of unconjugated 7-ketolithocholate. The SRmax. of 7-ketolithocholate infused with taurine (to avoid depletion of the taurine pool) was still significantly lower than that of exogenous tauro-7-ketolithocholate. These data support the hypothesis that, for bile acids that are poorly water soluble, the maximal biliary secretion rate is dependent on conjugating capacity, which is the limiting step in the overall transport from plasma into bile.
+
+[PMID 2811609] Hepatic biotransformation and choleretic effect of 7-ketolithocholic acid in the rat
+1989
+Hepatic biotransformation and the effect on bile flow of 7-ketolithocholic acid (7-oxo-3 alpha-hydroxy-5 beta-cholan-24-oic acid), in comparison to ursodeoxycholic acid, were examined in rats under conditions of continuous infusion of solutions of sodium salts of these bile acids (1.2 mumol/min/100 g body wt) for 2 hr. Both bile salts elevated the bile flow rate as well as the bile bicarbonate concentration to a similar degree. The minor difference observed was a transient (10-20 min) and subtle drop of bile flow during the first hour in rats given 7-ketolithocholate. In ursodeoxycholate infused rats, the major bile salt in the bile was its taurine conjugate, although excretion of tauroursodeoxycholate dropped considerably during the second hour. In 7-ketolithocholate infused rats, the major bile salt in the bile was again its taurine conjugate, but ursodeoxycholate and chenodeoxycholate and their conjugates were also excreted. In contrast to ursodeoxycholate infused rats, the drop in excretion of taurine conjugates and the increase of glycine conjugates in rats infused with 7-ketolithocholate were more rapid. In rats infused with 7-ketolithocholate, excretion of ursodeoxycholate and its conjugates was significantly higher than the corresponding values for chenodeoxycholate, suggesting that 7-ketolithocholate is reduced predominantly to the 7 beta-epimer in this species. However, the concentration of ursodeoxycholate and its conjugates excreted into the bile in rats infused with 7-ketolithocholate was only 10% of that of rats infused with ursodeoxycholate, yet the magnitude of choleresis and the rise in bile bicarbonate concentration were similar in both experiments.(ABSTRACT TRUNCATED AT 250 WORDS)

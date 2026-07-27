@@ -71,3 +71,6 @@ A human-readable Markdown version is also provided at `literature_recruited_prot
 1. **No fabricated identifiers.** If a compound has no known ChEBI ID, its `chebi_id` field is blank. Same for proteins that lack a UniProt accession — they use their locus tag instead of a made-up UniProt-like ID, and the `identifier_type` field tells you which.
 2. **EC numbers reflect what the paper actually tested.** `ec_numbers` in `proteins.csv` lists only ECs directly demonstrated by the cited paper for that specific protein. Sequence-similarity inferences are excluded.
 3. **Every literature-recruited row is auditable.** The `annotation` and `sequence_source` fields, plus the provenance table, form a complete chain from paper → gene → sequence → row.
+
+## Optional: RAG AI Agent
+Include your OpenAI API in the landing page of the atlas tool to use an AI agent that can answer questions about the data. The agent is trained on all available data on the small molecules visualized. It can provide answers for proteins based on general information available. 

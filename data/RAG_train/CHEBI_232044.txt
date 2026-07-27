@@ -1,0 +1,24 @@
+Compound: mogroside IIIE
+ChEBI ID: CHEBI:232044
+PubChem CID: 102350789
+
+== Chemical properties ==
+IUPAC Name: (2R,3R,4S,5S,6R)-2-[[(3S,8S,9R,10R,11R,13R,14S,17R)-17-[(2R,5R)-5-[(2S,3R,4S,5S,6R)-4,5-dihydroxy-6-(hydroxymethyl)-3-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyoxan-2-yl]oxy-6-hydroxy-6-methylheptan-2-yl]-11-hydroxy-4,4,9,13,14-pentamethyl-2,3,7,8,10,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-3-yl]oxy]-6-(hydroxymethyl)oxane-3,4,5-triol
+Molecular Formula: C48H82O19
+Molecular Weight: 963.2
+SMILES: C[C@H](CC[C@H](C(C)(C)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)[C@H]3CC[C@@]4([C@@]3(C[C@H]([C@@]5([C@H]4CC=C6[C@H]5CC[C@@H](C6(C)C)O[C@H]7[C@@H]([C@H]([C@@H]([C@H](O7)CO)O)O)O)C)O)C)C
+InChI: InChI=1S/C48H82O19/c1-21(9-13-31(45(4,5)61)66-43-40(37(58)34(55)27(20-51)64-43)67-42-39(60)36(57)33(54)26(19-50)63-42)22-15-16-46(6)28-12-10-23-24(48(28,8)29(52)17-47(22,46)7)11-14-30(44(23,2)3)65-41-38(59)35(56)32(53)25(18-49)62-41/h10,21-22,24-43,49-61H,9,11-20H2,1-8H3/t21-,22-,24-,25-,26-,27-,28+,29-,30+,31-,32-,33-,34-,35+,36+,37+,38-,39-,40-,41+,42+,43+,46+,47-,48+/m1/s1
+InChIKey: QATISCJMIITVAB-CNEPTXDISA-N
+XLogP: 0.6
+TPSA: 318
+H-Bond Donors: 13
+H-Bond Acceptors: 19
+
+== ChEBI definition ==
+Mogroside IIIE is a mogroside, a beta-D-glucoside and a disaccharide derivative. It has a role as an antifibrotic agent and a plant metabolite. It is functionally related to a mogroside IE.
+
+== Literature on mogroside IIIE ==
+
+[PMID 42335341] A Rhizosphere-Derived β-glycosidase with Intrinsic Sequential Regioselectivity for Highly Efficient Production of Siamenoside I from Mogroside V
+2026
+Siamenoside I (SI), a high-intensity sweetener, is limited in natural abundance. A β-glycosidase (CoExg1) from Candida orthopsilosis L7 (isolated from the Siraitia grosvenorii rhizosphere) exhibits intrinsic sequential regioselectivity, enabling efficient SI production from mogroside V (MGV). Fermentation optimization increased SI yield from 70.34% (7 d) to 84.06% (72 h). CoExg1 rapidly cleaves the C-3 β-1,6 bond (89.35% SI in 20 min), then slowly hydrolyzes the C-24 bond to mogroside IIIE (MIIIE, 12 h)─a time-controlled process requiring no external regulation. Kinetic analysis showed a ∼50-fold higher catalytic efficiency toward MGV than toward SI. Molecular docking and dynamics revealed that the C-3 glycan of MGV binds in a catalytically competent conformation with stable hydrogen-bond networks, whereas SI's C-24 glycan hardly forms a productive binding mode, explaining the sequential selectivity. This work provides a sustainable SI production platform and unveils the structural basis of sequential regioselectivity in glycoside hydrolases.

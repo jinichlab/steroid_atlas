@@ -1,0 +1,33 @@
+Compound: gamma-chaconine(1+)
+ChEBI ID: CHEBI:166997
+PubChem CID: 154586040
+
+== Chemical properties ==
+IUPAC Name: (2R,3S,4S,5R,6R)-2-(hydroxymethyl)-6-[[(1S,2S,7S,10R,11S,14S,15R,16S,17R,20S,23S)-10,14,16,20-tetramethyl-22-azoniahexacyclo[12.10.0.02,11.05,10.015,23.017,22]tetracos-4-en-7-yl]oxy]oxane-3,4,5-triol
+Molecular Formula: C33H54NO6+
+Molecular Weight: 560.8
+SMILES: C[C@H]1CC[C@@H]2[C@H]([C@H]3[C@@H]([NH+]2C1)C[C@@H]4[C@@]3(CC[C@H]5[C@H]4CC=C6[C@@]5(CC[C@@H](C6)O[C@H]7[C@@H]([C@H]([C@@H]([C@H](O7)CO)O)O)O)C)C)C
+InChI: InChI=1S/C33H53NO6/c1-17-5-8-24-18(2)27-25(34(24)15-17)14-23-21-7-6-19-13-20(9-11-32(19,3)22(21)10-12-33(23,27)4)39-31-30(38)29(37)28(36)26(16-35)40-31/h6,17-18,20-31,35-38H,5,7-16H2,1-4H3/p+1/t17-,18+,20-,21+,22-,23-,24+,25-,26+,27-,28+,29-,30+,31+,32-,33-/m0/s1
+InChIKey: IDGKMGZVTKHZDA-OSCYGWHCSA-O
+XLogP: 4.5
+TPSA: 104
+H-Bond Donors: 5
+H-Bond Acceptors: 6
+
+== ChEBI definition ==
+Gamma-chaconine(1+) is a sterol 3-beta-D-glucoside and a monosaccharide derivative. It is functionally related to a solanidine.
+
+--- RELATED COMPOUND: solanidine ---
+No literature found for gamma-chaconine(1+) itself. gamma-chaconine(1+) is functionally related to solanidine; the abstracts below are about solanidine.
+
+[PMID 42393403] Rudolf Buchheim Award 2026: solanidine as a dietary derived CYP2D6 biomarker
+2026
+The German Society for Experimental and Clinical Pharmacology and Toxicology (DGPT) is annually awarding the Rudolf Buchheim Award. This year the Rudolf Buchheim Award was awarded to Julian Peter Müller for outstanding work of a young researcher in the field of clinical pharmacology. He investigated the performance and applicability of the novel CYP2D6 biomarker solanidine. CYP2D6 is a genotypic and phenotypic highly variable drug-metabolizing enzyme involved in the metabolism of about 20% of commonly used drugs. Variability in CYP2D6 activity may lead to pronounced interindividual deviations in the pharmacokinetics of its drug substrates, potentially leading to adverse events or therapy failure. CYP2D6 genotyping allows to predict metabolizer phenotypes, e.g., poor, intermediate, normal or ultrarapid, but cannot take into account additional variation due to co-medication or other factors. In the awarded work he could demonstrate that a single plasma sample is sufficient for accurate CYP2D6 phenotyping, and that by using solanidine, CYP2D6 phenoconversion, a genotype-phenotype mismatch, due to polypharmacy can be elucidated. The use of the CYP2D6 biomarker solanidine allows to study non-genetic variation of CYP2D6 activity and opens up new possibilities in personalized medicine. Application of solanidine phenotyping may help to understand factors of CYP2D6 phenoconversion and may be applied with patients to optimize therapy decisions and to improve outcomes and safety.
+
+[PMID 42026020] Exploratory Evaluation of Solanidine as an Endogenous Marker for CYP2D6-Mediated Drug-Drug-Gene Interactions of Venlafaxine in Koreans
+2026
+CYP2D6-mediated drug-drug-gene interactions (DDGIs) are known to influence the pharmacokinetics of venlafaxine and its metabolism to O-desmethylvenlafaxine. Solanidine and 3,4-seco-solanidine-3,4-dioic acid (SSDA) have recently been investigated as candidate endogenous CYP2D6 biomarkers; however, they remain unexplored in East Asian populations, where dietary potato intake is relatively lower than that in Western populations. A prospective clinical study aimed to characterize venlafaxine DDGIs and explore the potential of solanidine as a candidate biomarker of CYP2D6 activity in healthy Korean adults. Twenty participants including 14 CYP2D6 normal metabolizers (NMs) and 6 intermediate metabolizers (IMs)-all confirmed as CYP2C19 NMs-were enrolled. Serial plasma samples for pharmacokinetic assessment were collected before and after coadministration of paroxetine, a potent CYP2D6 inhibitor. Solanidine and SSDA were also measured in plasma and urine. Compared to CYP2D6 NMs, IMs exhibited higher venlafaxine exposure but lower O-desmethylvenlafaxine exposure. Following CYP2D6 inhibition, phenotype-dependent differences in venlafaxine and O-desmethylvenlafaxine pharmacokinetics were attenuated. The metabolic ratio (MR) of plasma solanidine showed a modest positive correlation with both the MR of venlafaxine and CYP2D6 activity score. The MR of plasma solanidine decreased when CYP2D6 activity was reduced by paroxetine coadministration. These findings demonstrate phenotype-dependent DDGIs of venlafaxine and suggest the exploratory potential of solanidine as an endogenous biomarker of CYP2D6 activity in the Korean population, despite relatively lower dietary exposure to potato-derived precursors. This study provides preliminary evidence extending endogenous CYP2D6 biomarkers to an East Asian population with distinct dietary backgrounds.
+
+[PMID 42292851] Very strong correlations of metoprolol- and solanidine-derived metabolic ratios in a real-world cohort with a stable metoprolol drug regimen
+2026
+IntroductionIndividual CYP2D6 activity can be assessed with minimal invasiveness by genotyping and solanidine-derived phenotyping. In this study, we aimed to compare the two methods to predict the metabolism of the CYP2D6 substrate metoprolol in a cohort of the "All-comer" Registry for ImmunocArdiology aNd cardiometabolic disease Aachen (ARIANA) study (DRKS00025716; https://drks.de/search/de/trial/DRKS00025716) with a stable metoprolol regimen.MethodsIn total, N = 48 patients were clinically assessed, and their medical records were analyzed for CYP2D6-interfering drugs. Plasma samples collected in a fasted state were analyzed using liquid chromatography-tandem mass spectrometry (LC-MS). Genotyping was performed using the Infinium Global Diversity Array with Enhanced PGx. CYP2D6 activity scores and metabolic ratios (MRs) of solanidine and metoprolol were calculated.ResultsN = 47 patients with detectable metoprolol plasma concentrations were included in the primary analysis. The MRs ln MR (OH-solanidine/solanidine) and ln MR (3,4-seco solanidine-3,4-dioic acid/solanidine) correlated very strongly (r = 0.907 and r = 0.945) with the ln MR (OH-metoprolol/metoprolol). There was a strong negative correlation of both solanidine-derived MRs with metoprolol trough levels (r = -0.625 and r = -0.703). The genotyping-derived CYP2D6 activity score showed weaker correlations in all comparisons, even when adjusting for covariates.DiscussionSolanidine-derived phenotyping showed stronger correlations to the measured CYP2D6 activity and metoprolol trough levels than the genotyping-derived activity scores. More research is needed in order to implement solanidine-derived dosing recommendations into clinical practice.

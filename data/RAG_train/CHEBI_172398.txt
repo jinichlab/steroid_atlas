@@ -1,0 +1,18 @@
+Compound: alpha-muricholate 7-sulfate(2-)
+ChEBI ID: CHEBI:172398
+PubChem CID: 155920197
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(3R,5R,6S,7S,8S,9S,10R,13R,14S,17R)-3,6-dihydroxy-10,13-dimethyl-7-sulfonatooxy-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H38O8S-2
+Molecular Weight: 486.6
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@@H]([C@H]([C@H]4[C@@]3(CC[C@H](C4)O)C)O)OS(=O)(=O)[O-])C
+InChI: InChI=1S/C24H40O8S/c1-13(4-7-19(26)27)15-5-6-16-20-17(9-11-23(15,16)2)24(3)10-8-14(25)12-18(24)21(28)22(20)32-33(29,30)31/h13-18,20-22,25,28H,4-12H2,1-3H3,(H,26,27)(H,29,30,31)/p-2/t13-,14-,15-,16+,17+,18+,20+,21+,22+,23-,24-/m1/s1
+InChIKey: URTZEGBTMAIZEU-GDYCBZMLSA-L
+XLogP: 4.1
+TPSA: 155
+H-Bond Donors: 2
+H-Bond Acceptors: 8
+
+== ChEBI definition ==
+A steroid sulfate oxoanion obtained by deprotonation of the carboxylic acid and sulfate functions of α-muricholic acid 7-sulfate; major species at pH 7.3.

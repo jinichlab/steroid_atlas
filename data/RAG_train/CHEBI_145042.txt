@@ -1,0 +1,18 @@
+Compound: solasodine 3-beta-D-glucoside(1+)
+ChEBI ID: CHEBI:145042
+PubChem CID: 139291713
+
+== Chemical properties ==
+IUPAC Name: (2R,3S,4S,5R,6R)-2-(hydroxymethyl)-6-[(1S,2S,4S,5'R,6R,7S,8R,9S,12S,13R,16S)-5',7,9,13-tetramethylspiro[5-oxapentacyclo[10.8.0.02,9.04,8.013,18]icos-18-ene-6,2'-piperidin-1-ium]-16-yl]oxyoxane-3,4,5-triol
+Molecular Formula: C33H54NO7+
+Molecular Weight: 576.8
+SMILES: C[C@@H]1CC[C@@]2([C@H]([C@H]3[C@@H](O2)C[C@@H]4[C@@]3(CC[C@H]5[C@H]4CC=C6[C@@]5(CC[C@@H](C6)O[C@H]7[C@@H]([C@H]([C@@H]([C@H](O7)CO)O)O)O)C)C)C)[NH2+]C1
+InChI: InChI=1S/C33H53NO7/c1-17-7-12-33(34-15-17)18(2)26-24(41-33)14-23-21-6-5-19-13-20(8-10-31(19,3)22(21)9-11-32(23,26)4)39-30-29(38)28(37)27(36)25(16-35)40-30/h5,17-18,20-30,34-38H,6-16H2,1-4H3/p+1/t17-,18+,20+,21-,22+,23+,24+,25-,26+,27-,28+,29-,30-,31+,32+,33-/m1/s1
+InChIKey: XMLLJGHZPHTUKK-GAMIEDRGSA-O
+XLogP: 3.8
+TPSA: 125
+H-Bond Donors: 5
+H-Bond Acceptors: 7
+
+== ChEBI definition ==
+A secondary ammonium ion resulting from the protonation of the amino group of solasodine 3-β-<small>D</small>-glucoside. The major species at pH 7.3.

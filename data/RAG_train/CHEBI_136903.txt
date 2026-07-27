@@ -1,0 +1,18 @@
+Compound: hyodeoxycholic acid 24-O-(beta-D-glucuronide)(1-)
+ChEBI ID: CHEBI:136903
+PubChem CID: 126843479
+
+== Chemical properties ==
+IUPAC Name: (2S,3S,4S,5R,6S)-6-[(4R)-4-[(3R,5R,6S,8S,9S,10R,13R,14S,17R)-3,6-dihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoyl]oxy-3,4,5-trihydroxyoxane-2-carboxylate
+Molecular Formula: C30H47O10-
+Molecular Weight: 567.7
+SMILES: C[C@H](CCC(=O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)C(=O)[O-])O)O)O)[C@H]2CC[C@@H]3[C@@]2(CC[C@H]4[C@H]3C[C@@H]([C@H]5[C@@]4(CC[C@H](C5)O)C)O)C
+InChI: InChI=1S/C30H48O10/c1-14(4-7-22(33)39-28-25(36)23(34)24(35)26(40-28)27(37)38)17-5-6-18-16-13-21(32)20-12-15(31)8-10-30(20,3)19(16)9-11-29(17,18)2/h14-21,23-26,28,31-32,34-36H,4-13H2,1-3H3,(H,37,38)/p-1/t14-,15-,16+,17-,18+,19+,20+,21+,23+,24+,25-,26+,28-,29-,30-/m1/s1
+InChIKey: GSKDKHGYQRRKMF-HHUAQUJWSA-M
+XLogP: 4
+TPSA: 177
+H-Bond Donors: 5
+H-Bond Acceptors: 10
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of hyodeoxycholic acid 24-<em>O</em>-(β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic acid function; major species at pH 7.3.

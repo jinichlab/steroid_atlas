@@ -1,0 +1,29 @@
+Compound: 2alpha-hydroxyisomotiol
+ChEBI ID: CHEBI:232472
+PubChem CID: 172429301
+
+== Chemical properties ==
+IUPAC Name: (3R,3aR,5aS,7aR,9R,10R,11aS,13aS,13bR)-3a,5a,8,8,11a,13a-hexamethyl-3-propan-2-yl-1,2,3,4,5,6,7,7a,9,10,11,12,13,13b-tetradecahydrocyclopenta[a]chrysene-9,10-diol
+Molecular Formula: C30H50O2
+Molecular Weight: 442.7
+SMILES: CC(C)[C@H]1CC[C@@H]2[C@@]1(CC[C@]3([C@]2(CCC4=C3CC[C@@H]5[C@@]4(C[C@H]([C@@H](C5(C)C)O)O)C)C)C)C
+InChI: InChI=1S/C30H50O2/c1-18(2)19-9-12-24-27(19,5)15-16-29(7)21-10-11-23-26(3,4)25(32)22(31)17-28(23,6)20(21)13-14-30(24,29)8/h18-19,22-25,31-32H,9-17H2,1-8H3/t19-,22-,23+,24-,25+,27-,28-,29-,30+/m1/s1
+InChIKey: YOKAJJNTGABJER-QQAKFQOESA-N
+XLogP: 7.7
+TPSA: 40.5
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+2alpha-hydroxyisomotiol is a triterpenoid. It has a role as a fungal metabolite. It is functionally related to an isomotiol.
+
+--- RELATED COMPOUND: isomotiol ---
+No literature found for 2alpha-hydroxyisomotiol itself. 2alpha-hydroxyisomotiol is functionally related to isomotiol; the abstracts below are about isomotiol.
+
+[PMID 36602159] Biosynthetic characterization of the antifungal fernane-type triterpenoid polytolypin for generation of new analogues <i>via</i> combinatorial biosynthesis
+2023
+Fernane-type triterpenoids are a small group of natural products mainly found in plants and fungi with a wide range of biological activities. Polytolypin is a representative fernane-type triterpenoid from fungi and possesses potent antifungal activity. So far, biosynthesis of fungal-derived fernane-type triterpenoids has not been characterized, which hinders the expansion of their structural diversity using biosynthetic approaches. Herein, we identified the biosynthetic gene cluster of polytolypin and elucidated its biosynthetic pathway through heterologous expression in Aspergillus oryzae NSAR1, which involves a new triterpene cyclase for the biosynthesis of the hydrocarbon skeleton motiol, followed by multiple oxidations via three P450 enzymes. Moreover, two new triterpene cyclases for the biosynthesis of two other fernane-type skeletons isomotiol and fernenol were identified from fungi, and were individually co-expressed with the three P450 enzymes involved in polytolypin biosynthesis. These studies led to the generation of 13 fernane-type triterpenoids including eight new compounds, and two of them showed stronger antifungal activity towards Candida albicans FIM709 than polytolypin.
+
+[PMID 35290128] A conserved mechanism affecting hydride shifting and deprotonation in the synthesis of hopane triterpenes as compositions of wax in oat
+2022
+Triterpenoids are biologically active metabolites synthesized from a common linear precursor catalyzed by 2,3-oxidosqualene cyclases (OSCs) to form diverse triterpenoid skeletons. OSCs corresponding to many discovered triterpene alcohols in nature have not been functionally and mechanistically characterized due to the diversity of chemical structures and complexity of the cyclization mechanism. We carried out a genome-wide investigation of OSCs from Avena strigosa and discovered two triterpene synthases, namely, AsHS1 and AsHS2, using a Nicotiana benthamiana expression system. These synthases produce hopenol B and hop-17(21)-en-3β-ol, which are components of surface wax in oat panicles and sheathes, respectively. We demonstrated that substitutions of two to three amino acid residues in AsHS1 with corresponding residues from AsHS2 allowed it to be completely converted into a hop-17(21)-en-3β-ol synthase. AsHS2 mutants with a substitution at site 410 could synthesize hopenol B alone or mixed with a side product isomotiol. The combined quantum mechanics and molecular mechanics calculation demonstrated that the side chain size of the residue at site 410 regulated the relative orientations between the hopyl C22 cation and Phe257, leading to a difference in deprotonation positions through providing or not providing cation–π interaction between the aromatic ring of F257 and the carbocation intermediate. A similar mechanism could be applied to a hopenol B synthase from a dicotyledonous plant Aquilegia. This study provided mechanistic insight into triterpenoid synthesis and discovered key amino acid residues acting on hydride transfer and a deprotonation site to differentiate between hopane-type scaffolds in diverse plant species.

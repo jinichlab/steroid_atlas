@@ -1,0 +1,18 @@
+Compound: 3beta-hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carboxylate
+ChEBI ID: CHEBI:58387
+PubChem CID: 21145105
+
+== Chemical properties ==
+IUPAC Name: (3S,4S,5R,9R,10R,13R,14R,17R)-3-hydroxy-4,10,13-trimethyl-17-[(2R)-6-methylheptan-2-yl]-1,2,3,5,6,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthrene-4-carboxylate
+Molecular Formula: C29H47O3-
+Molecular Weight: 443.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CC[C@@H]4[C@@]3(CC[C@@H]([C@@]4(C)C(=O)[O-])O)C)C
+InChI: InChI=1S/C29H48O3/c1-18(2)8-7-9-19(3)21-11-12-22-20-10-13-24-28(5,23(20)14-16-27(21,22)4)17-15-25(30)29(24,6)26(31)32/h10,18-19,21-25,30H,7-9,11-17H2,1-6H3,(H,31,32)/p-1/t19-,21-,22+,23+,24-,25+,27-,28-,29+/m1/s1
+InChIKey: UQFZKTIHSICSPG-DSHYQQBWSA-M
+XLogP: 9
+TPSA: 60.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A steroid acid anion that is the conjugate base of 3β-hydroxy-4β-methyl-5α-cholest-7-ene-4α-carboxylic acid, obtained via deprotonation of the carboxy group; major species at pH 7.3.

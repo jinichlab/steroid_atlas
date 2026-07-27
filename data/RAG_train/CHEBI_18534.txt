@@ -1,0 +1,40 @@
+Compound: campest-4-en-3-one
+ChEBI ID: CHEBI:18534
+PubChem CID: 11988279
+
+== Chemical properties ==
+IUPAC Name: (8S,9S,10R,13R,14S,17R)-17-[(2R,5R)-5,6-dimethylheptan-2-yl]-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C28H46O
+Molecular Weight: 398.7
+SMILES: C[C@H](CC[C@@H](C)C(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C
+InChI: InChI=1S/C28H46O/c1-18(2)19(3)7-8-20(4)24-11-12-25-23-10-9-21-17-22(29)13-15-27(21,5)26(23)14-16-28(24,25)6/h17-20,23-26H,7-16H2,1-6H3/t19-,20-,23+,24-,25+,26+,27+,28-/m1/s1
+InChIKey: QQIOPZFVTIHASB-IMUDCKKOSA-N
+XLogP: 8.8
+TPSA: 17.1
+H-Bond Donors: 0
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+Campest-4-en-3-one is a 3-oxo steroid and a 3-oxo-Delta(4) steroid. It derives from a hydride of a campestane.
+
+== Literature on campest-4-en-3-one ==
+
+[PMID 42392773] [A new triterpenoid from Cardiospermum halicacabum]
+2026
+Seventeen compounds were isolated from the 80% ethanol extracts of Cardiospermum halicacabum using various chromatographic techniques, including silica gel, MCI, Sephadex LH-20 and semi-preparative high-performance liquid chromatography. The structures of the compounds were elucidated by spectroscopic analysis, such as ultraviolet-visible spectroscopy(UV), infrared spectroscopy(IR), high-resolution electrospray ionization mass spectrometry(HR-ESI-MS) and one-dimensional/two-dimensional nuclear magnetic resonance(1D/2D NMR). The compounds were identified as: cardiospermone(1), 3β,6β-dihydroxy-21αH-24-norhopa-4(23),22(29)-diene(2), 3β-hydroxyolean-12-en-11-one(3), 18α-olean-12-ene-3,11-dione(4), β-amyrin(5), campest-4-en-3-one(6),(24S)6β-hydroxycampest-4-en-3-one(7), campestane-3,6-dione(8), stigmastane-3,6-dione(9), stigmasta-22-en-3,6-dione(10), stigmasta-4,22-dien-3-one(11),(20R)-6β-hydroxystigmasta-4,22-dien-3-one(12), β-sitostenone(13), 6β-hydroxystigmast-4-en-3-one(14), 7β-hydroxystigmast-4-en-3-one(15), 7-oxo-β-sitosterol(16), 3β-hydroxy-stigmasta-5,22-dien-7-one(17). Among them, compound 1 was identified as a new triterpenoid, while all compounds were isolated from this species for the first time. The inhibitory activities of compound 1 against α-glucosidase were assessed using the 4-nitrophenyl-α-D-glucopyranoside(PNPG) method. The results indicated that compound 1 exhibited moderate inhibitory activity on α-glucosidase at a concentration of 50 μmol·L~(-1), with an inhibition rate of 73.52%.
+
+[PMID 24507920] Further constituents of Galianthe thalictroides (Rubiaceae) and inhibition of DNA topoisomerases I and IIα by its cytotoxic β-carboline alkaloids
+2014
+A new cytotoxic β-carboline alkaloid, 1-methyl-3-(2-hydroxypropan-2-yl)-2-(5-methoxy-9H-β-carbolin-1-yl)-cyclopentanol (1), was isolated from roots of Galianthe thalictroides, together with the alkaloid 1-(hydroxymethyl)-3-(2-hydroxypropan-2-yl)-2-(5-methoxy-9H-β-carbolin-1-yl)-cyclopentanol (2), the anthraquinones 1-methyl-alizarin and morindaparvin-A, the coumarin scopoletin, homovanillic alcohol, (-)-epicatechin, and the steroids stigmast-4-en-3-one, 4,22-stigmastadien-3-one, campest-4-en-3-one, stigmast-4-en-3,6-dione, 6-β-hydroxy-stigmast-4-en-3-one, stigmasterol, campesterol, β-sitosterol, and β-sitosterol-3-O-β-D-glucopyranoside. Among the previously known compounds, homovanillic alcohol is a novel finding in Rubiaceae, while 1-methyl-alizarin, morindaparvin-A, scopoletin, stigmast-4-en-3-one, 4,22-stigmastadien-3-one, campest-4-en-3-one, stigmast-4-en-3,6-dione, and 6-β-hydroxy-stigmast-4-en-3-one is reported for the first time in the genus Galianthe. The cytotoxic β-carboline alkaloids 1 and 2 exhibited potent antitopoisomerase I and IIα activities and strong evidence is provided for their action as topoisomerase IIα poisons and redox-independent inhibitors.
+
+[PMID 24217325] Corncobs as a potential source of functional chemicals
+2013
+Phytochemical examination of corncob extracts led to the isolation of a new lignan identified as 7,7'-dihydroxy-3'-O-demethyl-4-methoxymatairesinol, together with seven known compounds, identified as β-sitosterol, β-sitosteryl-β-D-glucoside, 6β-hydroxy-campest-4-en-3-one, 5α,8α-epidioxyergosta-6,22-dien-3β-ol, tricin, kaempferol and p-coumaric acid. The isolated compounds were identified by one and two-dimensional NMR spectroscopies and mass spectrometry.
+
+[PMID 16960392] CYP724B2 and CYP90B3 function in the early C-22 hydroxylation steps of brassinosteroid biosynthetic pathway in tomato
+2006
+We characterized a new cytochrome P450 monooxygenase (P450), CYP724B2, from tomato (Lycopersicon esculentum). CYP724B2 showed 42% and 62% amino acid sequence identity with Arabidopsis DWARF4/CYP90B1 and rice DWARF11/CYP724B1 respectively. Functional assay of CYP724B2 heterologously expressed in insect cells revealed that CYP724B2 catalyzes C-22 hydroxylation of campesterol, indicating that CYP724B2 is a C-22 hydroxylase. We also isolated a tomato CYP90B homolog (CYP90B3) and found that CYP90B3 is a C-22 hydroxylase as well. CYP724B2 and CYP90B3 showed substrate specificities similar to each other toward the biosynthetic intermediate compounds from campesterol to campestanol. Campesterol was the best substrate, and (24R)-ergost-4-en-3-one was also metabolized to the C-22 hydroxylated product to some extent. On the other hand, the P450s catalyzed C-22 hydroxylation of (24R)-5alpha-ergostan-3-one and campestanol at a trace level, indicating that the compounds after C-5alpha reduction are poor substrates of CYP724B2 and CYP90B3. In addition, cholesterol (C27 sterol) and sitosterol (C29 sterol) were also converted to C-22 hydroxylated products by the P450s. Furthermore, CYP724B2 and CYP90B3 genes were ubiquitously expressed, and their transcript levels were down-regulated by the exogenous application of brassinolide. These findings strongly suggest that CYP724B2 and CYP90B3 function in the early C-22 hydroxylation steps of brassinosteroid biosynthetic pathway in tomato.
+
+[PMID 20619324] A new sesquiterpenoid from Ligusticum chuanxiong Hort
+2010
+A new sesquiterpenoid named (-)-alloaromadendrane-4β,10α,13,15-tetrol was isolated from the rhizome of Ligusticum chuanxiong Hort., together with two known compounds, campest-4-en-3-one and 3-carboxyethyl-phthalide. Their structures were elucidated on the basis of spectroscopic and chemical analysis. All the compounds showed mild antimicrobial activity.

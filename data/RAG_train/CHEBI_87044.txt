@@ -1,0 +1,24 @@
+Compound: 4,4-dimethyl-5alpha-cholest-8-en-3beta-ol
+ChEBI ID: CHEBI:87044
+PubChem CID: 12070223
+
+== Chemical properties ==
+IUPAC Name: (3S,5R,10S,13R,14R,17R)-4,4,10,13-tetramethyl-17-[(2R)-6-methylheptan-2-yl]-1,2,3,5,6,7,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-ol
+Molecular Formula: C29H50O
+Molecular Weight: 414.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C
+InChI: InChI=1S/C29H50O/c1-19(2)9-8-10-20(3)22-12-13-23-21-11-14-25-27(4,5)26(30)16-18-29(25,7)24(21)15-17-28(22,23)6/h19-20,22-23,25-26,30H,8-18H2,1-7H3/t20-,22-,23+,25+,26+,28-,29-/m1/s1
+InChIKey: FYHRVINOXYETMN-QGBOJXOESA-N
+XLogP: 8.8
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A cholestanoid that is 5α-cholesta-8-en-3β-ol bearing two additional methyl substituents at position 4.
+
+== Literature on 4,4-dimethyl-5alpha-cholest-8-en-3beta-ol ==
+
+[PMID 4724584] The effect of carbon monoxide on the nature of the accumulated 4,4-dimethyl sterol precursors of cholesterol during its biosynthesis from (2-14C)mevalonic acid in vitro
+1973
+Cholesterol biosynthesis was studied in rat liver subcellular fractions incubated with dl-[2-(14)C]mevalonic acid under gas phases consisting of either N(2)+O(2) (90:10) or CO+O(2) (90:10). CO inhibits cholesterol biosynthesis from [2-(14)C]mevalonic acid and results in a large accumulation of radioactive 4,4-dimethyl sterols. Separation of the components of the 4,4-dimethyl sterol fraction showed that lanosterol and dihydrolanosterol are the major components that accumulate during cholesterol biosynthesis in an atmosphere containing CO, whereas 14-demethyl-lanosterol and 14-demethyldihydrolanosterol are the major components of the much less intensely radioactive 4,4-dimethyl sterol fraction isolated from incubations with N(2)+O(2) as the gas phase. The identities of lanosterol, dihydrolanosterol and 14-demethyldihydrolanosterol were confirmed by both radiochemical and physicochemical methods, including g.l.c. and combined g.l.c.-mass spectrometry. CO therefore results in a qualitative as well as a quantitative difference in the 4,4-dimethyl sterol fraction which arises during cholesterol biosynthesis from mevalonic acid. The specific radioactivity of the [(14)C]lanosterol biosynthesized in the presence of CO was lower than that of its companion, [(14)C]dihydrolanosterol. The relative amounts of 4,4-dimethyl-Delta(24)-sterols and 4,4-dimethyl-24,25-dihydrosterols present in each type of incubation suggest that enzymic reduction of the sterol side chain occurs predominantly at a stage after that of lanosterol.

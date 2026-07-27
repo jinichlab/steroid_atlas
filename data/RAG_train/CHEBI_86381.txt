@@ -1,0 +1,18 @@
+Compound: 5beta-dihydrocorticosterone
+ChEBI ID: CHEBI:86381
+PubChem CID: 21145110
+
+== Chemical properties ==
+IUPAC Name: (5R,8S,9S,10S,11S,13S,14S,17S)-11-hydroxy-17-(2-hydroxyacetyl)-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C21H32O4
+Molecular Weight: 348.5
+SMILES: C[C@]12CCC(=O)C[C@H]1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@H]4C(=O)CO)C)O
+InChI: InChI=1S/C21H32O4/c1-20-8-7-13(23)9-12(20)3-4-14-15-5-6-16(18(25)11-22)21(15,2)10-17(24)19(14)20/h12,14-17,19,22,24H,3-11H2,1-2H3/t12-,14+,15+,16-,17+,19-,20+,21+/m1/s1
+InChIKey: CTTOFMJLOGMZRN-BBWLNIHDSA-N
+XLogP: 2.4
+TPSA: 74.6
+H-Bond Donors: 2
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+A 3-oxo-5β-steroid formed from corticosterone by reduction across the C4-C5 double bond.

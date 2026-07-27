@@ -1,23 +1,26 @@
 """Molecule + protein search prototype — matching styling for both views.
 
-Two toggles at the top:
-  · View:   Small molecule (681)   |   Protein (35k+)
-  · Method: Multi-column search    |   Class filter
+Landing page gates the app: nothing below renders until "Enter the Atlas"
+is clicked. "Help" returns to the landing page.
+
+Two toggles once inside:
+  · View:   Protein centric | Small molecule centric | Natural + synthetic
+  · Method: Multi-column search | Class filter
 
 Same UMAP styling for both views (cluster-colored dots, STAR SVG for
-newly-recruited entries, amber-ring highlights, gray-out non-matches).
+newly-recruited entries, red-ring highlights, gray-out non-matches).
 
 Launch:
     cd /home/adsiordia/marimo_visualizer/MarimoSteroidVisualizer
     ./demo/run_search_prototype.sh
 """
+
 import marimo
 
-__generated_with = "0.20.1"
+__generated_with = "0.23.15"
 app = marimo.App(width="full")
 
 
-# ─── Cell 1: imports + RDKit ─────────────────────────────────────────────
 @app.cell
 def _():
     import marimo as mo
@@ -25,6 +28,11 @@ def _():
     import altair as alt
     import ast
     import re
+    import os, json
+    import numpy as np
+    import faiss
+    from openai import OpenAI
+    from dotenv import load_dotenv
     alt.data_transformers.disable_max_rows()
     try:
         from rdkit import Chem
@@ -34,10 +42,9 @@ def _():
         Chem = None
         Draw = None
         rdkit_ok = False
-    return Chem, Draw, alt, ast, mo, pd, rdkit_ok, re
+    return Chem, Draw, alt, ast, faiss, json, mo, np, pd, rdkit_ok, re
 
 
-# ─── Cell 2: load molecule dataframe ─────────────────────────────────────
 @app.cell
 def _(pd):
     from pathlib import Path as _Path
@@ -63,7 +70,6 @@ def _(pd):
     return (molecule_df,)
 
 
-# ─── Cell 3: load natural + synthetic steroid catalog ────────────────────
 @app.cell
 def _(pd):
     from pathlib import Path as _Path
@@ -82,7 +88,6 @@ def _(pd):
     return (natsyn_df,)
 
 
-# ─── Cell 4: load protein dataframe ──────────────────────────────────────
 @app.cell
 def _(pd):
     from pathlib import Path as _Path
@@ -125,7 +130,6 @@ def _(pd):
     return (protein_df,)
 
 
-# ─── Cell 4: precompute molecule 2D structure cache ──────────────────────
 @app.cell
 def _(Chem, Draw, molecule_df, rdkit_ok):
     structure_cache = {}
@@ -154,38 +158,232 @@ def _(Chem, Draw, molecule_df, rdkit_ok):
     return (structure_cache,)
 
 
-# ─── Cell 5: simple header ──────────────────────────────────────────────
 @app.cell
-def _(mo, molecule_df, natsyn_df, protein_df):
-    mo.md(
-        f"""
-# 🧭 Nature's Steroid Atlas
+def _(mo):
+    # Persistent gate. mo.state survives reruns, unlike run_button.value
+    # which is a one-shot trigger.
+    get_entered, set_entered = mo.state(False)
+    return get_entered, set_entered
 
-**{len(molecule_df):,} molecules** · **{len(protein_df):,} proteins** · **{len(natsyn_df):,} natural + synthetic entries**
-· newly recruited from 2024-2026 literature (stars).
 
-Pick a view and search method below.
-"""
+@app.cell
+def _(mo, set_entered):
+    # Depends only on set_entered, so clicking never rebuilds these buttons.
+    enter_button = mo.ui.button(
+        label="Enter the Atlas", full_width=True,
+        on_change=lambda _: set_entered(True),
     )
+    help_button = mo.ui.button(
+        label="Help", on_change=lambda _: set_entered(False),
+    )
+    return enter_button, help_button
+
+
+@app.cell(hide_code=True)
+def _(mo, molecule_df, natsyn_df, protein_df):
+    intro_text = mo.Html(f"""
+    <div style="text-align:center; margin-top:10px;">
+
+    <span style="font-size:34px; font-weight:600;">
+    🧭 Welcome to Nature's Steroid Atlas
+    </span>
+
+    <p style="max-width:750px; margin:12px auto 0; font-size:15px;">
+    Explore Nature's steroids and the proteins they interact with — all
+    through an interactive, unified interface.
+    </p>
+
+    <p style="font-size:13px; color:#6B7280; margin:6px auto 0;">
+    {len(molecule_df):,} molecules · {len(protein_df):,} proteins ·
+    {len(natsyn_df):,} natural + synthetic entries
+    </p>
+
+    <hr style="width:60%; margin:16px auto;">
+
+    <h3 style="margin:0; text-align:left; text-decoration:underline;">Views Available</h3>
+
+    <div style="text-align:left; max-width:1000px; margin:10px auto; font-size:15px;">
+
+      <b>• Protein-centric view →</b> Explore the protein landscape.<br>
+      <span style="margin-left:18px; display:inline-block;">Each point is a
+      steroid-binding protein; selecting one reveals associated steroids.</span>
+      <br><br>
+
+      <b>• Steroid-centric view →</b> Explore the chemical space of steroids.<br>
+      <span style="margin-left:18px; display:inline-block;">Each point is a
+      steroid molecule; selecting one highlights interacting proteins.</span>
+      <br><br>
+
+      <b>• Natural and Synthetic steroid view →</b> Compare known natural
+      steroids against synthetic ones.<br>
+      <span style="margin-left:18px; display:inline-block;">Each point is a
+      steroid; selecting one reveals associated proteins where available.</span>
+
+      <h3 style="margin-top:20px; text-decoration:underline;">How to Use It</h3>
+
+      <p style="font-size:15px;">
+      Pick a view, then narrow the map either by free-text search (name, ChEBI
+      ID, SMILES fragment, UniProt accession, gene, sequence) or by structural
+      or EC class. Matches gain a <b style="color:#e0144c;">red ring</b>;
+      everything else greys out. <b>Stars</b> mark entries newly recruited from
+      2024–2026 literature. Click a point, or drag a rectangle for many, and a
+      results table appears. Tick rows there to see structures, identifiers
+      (ChEBI, UniProt, Rhea) and AlphaFold models. A built-in language model
+      companion, trained on scraped information for small molecules, explains 
+      any questions asked, once an API key is entered.
+      </p>
+
+      <p style="font-size:13px; opacity:0.7;">
+      Tip: scroll to zoom, double-click to reset, click pan to move around.
+      </p>
+
+    </div>
+    </div>
+    """)
+    return (intro_text,)
+
+
+@app.cell
+def _(mo):
+    # Own cell, ungated: the landing cell's mo.stop() would otherwise destroy
+    # it on entry and break every cell downstream.
+    # .form() holds .value at None until Submit, so nothing reruns per keystroke.
+    key_form = mo.ui.text(
+        label="OpenAI API key (enables the chat)",
+        placeholder="sk-...",
+        kind="password",
+        full_width=True,
+    ).form(submit_button_label="Save & enable chat")
+    return (key_form,)
+
+
+@app.cell
+def _(enter_button, get_entered, intro_text, key_form, key_status, mo):
+    mo.stop(get_entered())          # already inside → render nothing
+    mo.vstack([intro_text, key_form, mo.md(key_status), enter_button], align="center")
     return
 
 
-# ─── Cell 6: view selector — simple radio ───────────────────────────────
 @app.cell
-def _(mo):
+def _(index_ok, key_form):
+    import os as _os
+    from pathlib import Path as _P
+
+    try:
+        _ROOT = _P(__file__).resolve().parent.parent
+    except NameError:
+        _ROOT = _P.cwd()
+    _ENV = _ROOT / ".env"
+
+    try:
+        from dotenv import load_dotenv as _load
+        _load(dotenv_path=_ENV)
+    except ImportError:
+        pass
+
+    def _looks_like_key(k):
+        """Cheap shape check — catches typos before spending a network call."""
+        return k.startswith("sk-") and len(k) >= 20 and " " not in k
+
+    def _verify(k):
+        """Return (client, status_word). Distinguishes bad key from no network."""
+        from openai import OpenAI as _OpenAI
+        _c = _OpenAI(api_key=k, max_retries=0, timeout=10.0)
+        try:
+            _c.models.list()                    # free, instant
+            return _c, "ok"
+        except Exception as _e:
+            _name = type(_e).__name__
+            if "Authentication" in _name or "PermissionDenied" in _name:
+                return None, "rejected"
+            if "Connection" in _name or "Timeout" in _name or "APIStatus" in _name:
+                return _c, "offline"            # key may be fine; network isn't
+            return None, "rejected"
+
+    def _write_env(k):
+        """Set OPENAI_API_KEY in .env, preserving every other line."""
+        _lines = []
+        if _ENV.exists():
+            _lines = [l for l in _ENV.read_text(encoding="utf-8").splitlines()
+                      if not l.strip().startswith("OPENAI_API_KEY")]
+        _lines.append(f"OPENAI_API_KEY={k}")
+        _ENV.write_text("\n".join(_lines).strip() + "\n", encoding="utf-8")
+        try:
+            _ENV.chmod(0o600)                   # owner-only
+        except OSError:
+            pass
+
+    _typed = (key_form.value or "").strip()
+    _stored = (_os.getenv("OPENAI_API_KEY") or "").strip()
+
+    oai = None
+    key_status = ("*Paste an OpenAI key above to enable the chat "
+                  "([get one](https://platform.openai.com/api-keys)). "
+                  "Everything else in the atlas works without it.*")
+
+    if _typed:
+        if not _looks_like_key(_typed):
+            key_status = "❌ *That doesn't look like an OpenAI key — they start with `sk-`.*"
+        else:
+            oai, _res = _verify(_typed)
+            if _res == "ok":
+                try:
+                    _write_env(_typed)
+                    _os.environ["OPENAI_API_KEY"] = _typed
+                    key_status = "✅ *Chat enabled — key saved, it'll load automatically next time.*"
+                except OSError as _e:
+                    key_status = (f"✅ *Chat enabled, but couldn't save to .env "
+                                  f"({_e.strerror}) — you'll need to re-enter it next launch.*")
+            elif _res == "offline":
+                key_status = "⚠️ *Couldn't reach OpenAI to check that key — enabling it anyway.*"
+            else:
+                key_status = "❌ *That key was rejected. Check it and submit again.*"
+    elif _stored:
+        oai, _res = _verify(_stored)
+        if _res == "ok":
+            key_status = "✅ *Chat enabled — key loaded from `.env`.*"
+        elif _res == "offline":
+            key_status = "⚠️ *Couldn't reach OpenAI to check the saved key — enabling it anyway.*"
+        else:
+            key_status = "❌ *The key saved in `.env` was rejected. Paste a new one above.*"
+
+    rag_ok = bool(oai) and index_ok
+    if not index_ok:
+        key_status = ("⚠️ *No search index found in `data/rag_store`, so the chat "
+                      "is unavailable. Everything else works normally.*")
+    return key_status, oai, rag_ok
+
+
+@app.cell
+def _(get_entered, mo, molecule_df, natsyn_df, protein_df):
+    mo.stop(not get_entered())
+    mo.md(f"""
+    # 🧭 Nature's Steroid Atlas
+
+    **{len(molecule_df):,} molecules** · **{len(protein_df):,} proteins** · **{len(natsyn_df):,} natural + synthetic entries**
+    · newly recruited from 2024-2026 literature (stars).
+
+    Pick a view and search method below.
+    """)
+    return
+
+
+@app.cell
+def _(get_entered, help_button, mo):
+    mo.stop(not get_entered())
     view = mo.ui.radio(
         options=["Protein centric", "Small molecule centric", "Natural and Synthetic steroids"],
         value="Protein centric",
         label="View",
         inline=True,
     )
-    view
+    mo.vstack([mo.hstack([help_button], justify="end"), view])
     return (view,)
 
 
-# ─── Cell 7: active dataframe + view kind ────────────────────────────────
 @app.cell
 def _(molecule_df, natsyn_df, protein_df, view):
+    # Gated transitively via `view`.
     if view.value == "Protein centric":
         df = protein_df
         view_kind = "protein"
@@ -198,9 +396,9 @@ def _(molecule_df, natsyn_df, protein_df, view):
     return df, view_kind
 
 
-# ─── Cell 8: method selector ─────────────────────────────────────────────
 @app.cell
-def _(mo):
+def _(get_entered, mo):
+    mo.stop(not get_entered())      # depends only on mo → needs its own gate
     method = mo.ui.radio(
         options=["① Multi-column search", "② Class filter"],
         value="① Multi-column search",
@@ -211,15 +409,16 @@ def _(mo):
     return (method,)
 
 
-# ─── Cell 9: search widgets — molecule ───────────────────────────────────
 @app.cell
 def _(mo):
+    # Definition-only cell — renders nothing, so no gate needed.
     mol_search = mo.ui.text(
         placeholder="Try: estradiol · CHEBI:16469 · C[C@]12CC (SMILES fragment)",
         label="Free-text molecule search",
         full_width=True,
     )
     _mol_classes = [
+        "None (show all)",
         "Bile acids (all)",
         "  · Primary bile acids",
         "  · Secondary bile acids",
@@ -236,13 +435,13 @@ def _(mo):
         "Brassinosteroids", "Backbone / substructure classes",
         "Newly recruited",
     ]
-    mol_class = mo.ui.dropdown(_mol_classes, value="Bile acids (all)", label="Structural class")
+    mol_class = mo.ui.dropdown(_mol_classes, value="None (show all)", label="Structural class")
     return mol_class, mol_search
 
 
-# ─── Cell 10: search widgets — protein ───────────────────────────────────
 @app.cell
 def _(mo):
+    # Definition-only cell — renders nothing, so no gate needed.
     prot_search = mo.ui.text(
         placeholder="Try: P19410 (UniProt) · Bile salt hydrolase (name) · baiCD (gene) · MKATVL... (sequence)",
         label="Free-text protein search",
@@ -263,9 +462,9 @@ def _(mo):
     return ec_class, prot_search
 
 
-# ─── Cell 11: display active widget ──────────────────────────────────────
 @app.cell
-def _(ec_class, method, mo, mol_class, mol_search, prot_search, view_kind):
+def _(ec_class, method, mol_class, mol_search, prot_search, view_kind):
+    # Gated transitively via view_kind.
     if view_kind == "molecule":
         active = mol_search if method.value == "① Multi-column search" else mol_class
     else:
@@ -274,9 +473,18 @@ def _(ec_class, method, mo, mol_class, mol_search, prot_search, view_kind):
     return
 
 
-# ─── Cell 12: compute match state ────────────────────────────────────────
 @app.cell
-def _(df, ec_class, method, mol_class, mol_search, pd, prot_search, re, view_kind):
+def _(
+    df,
+    ec_class,
+    method,
+    mol_class,
+    mol_search,
+    pd,
+    prot_search,
+    re,
+    view_kind,
+):
     plot_df = df.copy()
     plot_df["_match"] = False
     plot_df["_selected"] = False
@@ -294,8 +502,7 @@ def _(df, ec_class, method, mol_class, mol_search, pd, prot_search, re, view_kin
                 plot_df["_match"] = _mask
         else:
             # Class filter (all 20+ sub-classes)
-            _SECONDARY_STEMS = (
-                r"(?i)(?:(?<!cheno)deoxychol(?:ate|ic)|lithochol(?:ate|ic)|"
+            _SECONDARY_STEMS = (r"(?i)(?:(?<!cheno)deoxychol(?:ate|ic)|lithochol(?:ate|ic)|"
                 r"ursodeoxychol(?:ate|ic)|hyodeoxychol(?:ate|ic)|"
                 r"(?:^|[^a-z])(?:uro|urso)chol(?:ate|ic))"
             )
@@ -305,7 +512,9 @@ def _(df, ec_class, method, mol_class, mol_search, pd, prot_search, re, view_kin
                 r"(?:alpha|beta|α|β)-?muricholi[cs]|"
                 r"(?:glyco|tauro)chol(?:ate|ic)|(?:glyco|tauro)chenodeoxychol)"
             )
-            _BILE_ANY = r"(?i)chol|muricho|hyocho|urocho"
+            # _BILE_ANY = r"(?i)chol|muricho|hyocho|urocho"
+            _BILE_ANY = (r"(?i)(?:chol(?:ate|ic|oyl|an)|muricho|hyocho|urocho|"
+                 r"cholan[-\s]?[0-9]|chol-[0-9])")
             _patterns = {
                 "Corticoids":       r"cort|dexamet|prednis|aldos|betameth",
                 "Estrogens":        r"estr|estradiol|estrone|estriol|estetrol",
@@ -324,7 +533,9 @@ def _(df, ec_class, method, mol_class, mol_search, pd, prot_search, re, view_kin
                 _lc.str.contains(_PRIMARY_STEMS, regex=True, na=False)
                 & ~_is_secondary & _is_bile
             )
-            if _v == "Newly recruited":
+            if _v == "None (show all)":
+                plot_df["_match"] = False
+            elif _v == "Newly recruited":
                 plot_df["_match"] = (plot_df["is_new"] == 1)
             elif _v == "Backbone / substructure classes":
                 plot_df["_match"] = _lc.str.startswith("a ") | _lc.str.startswith("an ")
@@ -391,13 +602,11 @@ def _(df, ec_class, method, mol_class, mol_search, pd, prot_search, re, view_kin
                 _digit = _v.split(" ")[1]  # "EC 1 — ..." → "1"
                 _pat = r"(?<![\d.])" + _digit + r"\."
                 plot_df["_match"] = df["reaction_ecs"].astype(str).str.contains(_pat, regex=True, na=False)
-
     return (plot_df,)
 
 
-# ─── Cell 13: BIG UMAP (view-aware) ──────────────────────────────────────
 @app.cell
-def _(alt, mo, plot_df, view_kind):
+def _(alt, mo, pan_toggle, plot_df, view_kind):
     n_hit = int(plot_df["_match"].sum())
     n_new = int((plot_df["is_new"] == 1).sum())
     n_total = len(plot_df)
@@ -491,7 +700,7 @@ def _(alt, mo, plot_df, view_kind):
             alt.selection_point(name="pt", on="click", clear="dblclick"),
             alt.selection_interval(name="rng"),
             alt.selection_interval(name="zoom", bind="scales",
-                                    translate=False, zoom=True),
+                                    translate=pan_toggle.value, zoom=True),
         )
         .properties(width=920, height=560)
     )
@@ -519,7 +728,6 @@ def _(chart_widget, mo, plot_df):
     return
 
 
-# ─── Cell 14: SELECTED-ROWS TABLE (drag → table → pick rows to expand) ──
 @app.cell
 def _(chart_widget, mo, plot_df, view_kind):
     _sel = chart_widget.value
@@ -547,7 +755,7 @@ def _(chart_widget, mo, plot_df, view_kind):
         selection_table = None
         table_out = mo.md("")
     else:
-        selection_table = mo.ui.table(_tbl, page_size=15, selection="multi")
+        selection_table = mo.ui.table(_tbl, page_size=8, selection="multi")
         table_out = mo.vstack([
             mo.md(f"---\n### Results table — {len(_tbl):,} candidates"),
             selection_table,
@@ -556,7 +764,6 @@ def _(chart_widget, mo, plot_df, view_kind):
     return (selection_table,)
 
 
-# ─── Cell 15: DETAIL PANEL — view-aware ──────────────────────────────────
 @app.cell
 def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
     # Priority 1: use the TABLE selection (rows the user ticked)
@@ -582,6 +789,7 @@ def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
             try:
                 v = ast.literal_eval(s)
                 return [str(x).strip() for x in v if str(x).strip()]
+
             except (ValueError, SyntaxError):
                 pass
         if ";" in s:
@@ -894,13 +1102,225 @@ def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
     return
 
 
-# ─── Cell 16: legend/footer ──────────────────────────────────────────────
 @app.cell
-def _(mo):
-    mo.md(
-        """
-        ---
-        **Legend:** Colored circles = existing entries · Stars = newly recruited from 2024-2026 literature · **Red ring** = search / class match.
-        """
-    )
+def _(get_entered, mo):
+    mo.stop(not get_entered())      # depends only on mo → needs its own gate
+    pan_toggle = mo.ui.checkbox(label="Toggle Pan")
+    mo.vstack([
+        pan_toggle,
+        mo.md("""
+    ---
+    **Legend:** Colored circles = existing entries · Stars = newly recruited from 2024-2026 literature · **Red ring** = search / class match.
+    """),
+    ])
+    return (pan_toggle,)
+
+
+@app.cell
+def _():
+    # try:
+    #     _ROOT = _P(__file__).resolve().parent.parent
+    #     load_dotenv(dotenv_path=_ROOT / ".env")
+    #     _STORE = _ROOT / "data" / "RAG_train"
+    #     rag_index = faiss.read_index(str(_STORE.parent / "rag_store/index.faiss"))
+    #     rag_catalog = [json.loads(l) for l in open(_STORE.parent / "rag_store/catalog.jsonl", encoding="utf-8")]
+    #     oai = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    #     rag_ok = True
+    # except Exception as _e:
+    #     rag_index = rag_catalog = oai = None
+    #     rag_ok = False
+    #     print("RAG disabled:", _e)
     return
+
+
+@app.cell
+def _(faiss, json):
+    from pathlib import Path as _P
+
+    rag_index = rag_catalog = None
+    index_ok = False
+
+    try:
+        _ROOT = _P(__file__).resolve().parent.parent
+        _STORE = _ROOT / "data" / "rag_store"
+        rag_index = faiss.read_index(str(_STORE / "index.faiss"))
+        rag_catalog = [json.loads(l) for l in
+                       open(_STORE / "catalog.jsonl", encoding="utf-8")]
+        index_ok = True
+    except Exception as _e:
+        print("Index disabled:", _e)
+    return index_ok, rag_catalog, rag_index
+
+
+@app.cell
+def _(np, oai, rag_catalog, rag_index, rag_ok):
+    MIN_SCORE = 0.30
+    # CITE_SCORE = 0.60
+
+    def retrieve(query, k=6):
+        if not rag_ok or not query.strip():
+            return []
+        _r = oai.embeddings.create(model="text-embedding-3-large", input=[query])
+        _v = np.array(_r.data[0].embedding, dtype="float32")
+        _v /= np.linalg.norm(_v) + 1e-12
+        _scores, _idxs = rag_index.search(_v.reshape(1, -1), k)
+        hits = []
+        for _s, _i in zip(_scores[0], _idxs[0]):
+            if _i == -1 or _s < MIN_SCORE:
+                continue
+            _row = dict(rag_catalog[_i]); _row["score"] = float(_s)
+            hits.append(_row)
+        return hits
+
+    return (retrieve,)
+
+
+@app.cell
+def _():
+    # Created once, never rebuilt — this is what keeps the chat widget (and
+    # your conversation history) alive as you click around the table.
+    chat_ctx = {"kind": "molecule", "compounds": [], "labels": []}
+    return (chat_ctx,)
+
+
+@app.cell
+def _(chat_ctx, plot_df, selection_table, view_kind):
+    # Mutates chat_ctx in place; must NOT redefine it. Gated transitively.
+    _sel = selection_table.value if selection_table is not None else None
+    chat_ctx["kind"] = view_kind
+    chat_ctx["compounds"] = []
+    chat_ctx["labels"] = []
+    if _sel is not None and len(_sel):
+        if view_kind == "molecule" and "Compound Name" in _sel.columns:
+            chat_ctx["compounds"] = [str(x) for x in _sel["Compound Name"].head(15)]
+            chat_ctx["labels"] = chat_ctx["compounds"]
+        elif view_kind == "protein" and "Entry" in _sel.columns:
+            _full = plot_df[plot_df["Entry"].isin(_sel["Entry"].tolist())]
+            chat_ctx["labels"] = [str(x) for x in _full["Protein names"].head(10)]
+            # interacting steroids → what we actually search the corpus with
+            _c = []
+            for _s in _full["Compound Name"].head(10):
+                _c += [p.strip(" '\"[]") for p in str(_s).split(",") if p.strip(" '\"[]")]
+            chat_ctx["compounds"] = _c[:15]
+    return
+
+
+@app.cell
+def _(chat_ctx, get_entered, mo, oai, rag_ok, retrieve):
+    mo.stop(not get_entered())
+
+    # Above this, the answer counts as corpus-backed and gets no footer.
+    # (MIN_SCORE, in the retrieve cell, decides what reaches the model at all.)
+    CITE_SCORE = 0.60
+
+    _WORDS = ("select", "selected", "selection", "highlighted",
+              "chosen", "picked", "these", "this one")
+
+    _SYS_MOLECULE = (
+        "You are a precise steroid-chemistry assistant. The context below comes "
+        "from per-compound records (ChEBI definitions, identifiers, literature "
+        "abstracts). When it genuinely answers the question, ground your answer "
+        "in it and name the compound records you used. Never stretch an unrelated "
+        "compound record into an answer — if the records don't address the "
+        "question, ignore them and answer from your own knowledge instead. "
+        "Do not add your own disclaimer about sources; that is handled for you."
+    )
+
+    _SYS_PROTEIN = (
+        "You are a precise protein-biochemistry assistant for a steroid atlas. "
+        "The retrieval corpus covers small molecules only, so it will rarely help "
+        "with protein questions — answer those from your own knowledge, directly "
+        "and substantively. If the context happens to describe a steroid the "
+        "protein acts on, use that detail and name the record. Be concrete about "
+        "enzyme mechanism, family, and reaction chemistry where you can, and say "
+        "plainly when something is uncertain or organism-dependent. "
+        "Do not add your own disclaimer about sources; that is handled for you."
+    )
+
+    def steroid_chat(messages, config=None):
+        if not rag_ok:
+            return ("Chat is offline — add an OpenAI key to `.env` at the repo "
+                    "root and restart. Everything else in the atlas works without it.")
+
+        _hist = [{"role": "assistant" if m.role == "assistant" else "user",
+                  "content": m.content} for m in messages]
+        _q = _hist[-1]["content"] if _hist else "Hello!"
+        _kind = chat_ctx["kind"]
+
+        _asks_sel = any(w in _q.lower() for w in _WORDS)
+        if _asks_sel and not chat_ctx["labels"]:
+            return "Tick some rows in the results table first, then ask me again."
+
+        _sel_txt = ""
+        if chat_ctx["labels"]:
+            _noun = "proteins" if _kind == "protein" else "molecules"
+            _sel_txt = f"\n\nSelected {_noun}: " + "; ".join(chat_ctx["labels"])
+            if _kind == "protein" and chat_ctx["compounds"]:
+                _sel_txt += "\nSteroids they act on: " + "; ".join(chat_ctx["compounds"])
+
+        # Corpus is compound-centric, so search it with compound words.
+        _search_q = _q + (" " + " ".join(chat_ctx["compounds"]) if _asks_sel else "")
+        _hits = retrieve(_search_q, k=20)
+
+        # Lookalike IUPAC names make similarity unreliable — if the user ticked
+        # rows, float those compounds' chunks to the top.
+        if chat_ctx["labels"]:
+            _named = [h for h in _hits if h["paper"] in chat_ctx["labels"]]
+            _rest = [h for h in _hits if h not in _named]
+            _hits = (_named + _rest)[:6]
+        else:
+            _hits = _hits[:6]
+
+        _top = _hits[0]["score"] if _hits else 0.0
+
+        # Build the context whenever there ARE hits. Weak ones still go in —
+        # odd phrasing can depress the score on a perfectly relevant record.
+        if _hits:
+            _ctx = "\n\n".join(
+                f"[{i}] {h['paper']} ({h['score']:.2f}) — "
+                f"{h.get('section') or '(no section)'}\n{h['text']}"
+                for i, h in enumerate(_hits, 1)
+            )
+            if _top < CITE_SCORE:
+                _ctx = ("NOTE: these records are only loosely related to the "
+                        "question. Use anything genuinely relevant, ignore the "
+                        "rest, and fill the gaps from your own knowledge.\n\n") + _ctx
+        else:
+            _ctx = "(nothing in the corpus matched)"
+
+        _sys = _SYS_PROTEIN if _kind == "protein" else _SYS_MOLECULE
+
+        _resp = oai.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[{"role": "system", "content": _sys}, *_hist[:-1],
+                      {"role": "user",
+                       "content": f"Context:\n{_ctx}\n\nQuestion: {_q}{_sel_txt}"}],
+            temperature=0.2,
+        )
+        _answer = _resp.choices[0].message.content
+
+        # Deterministic footer — three states, decided in code.
+        if not _hits:
+            _answer += ("\n\n---\n*From general knowledge — nothing in the "
+                        "compound corpus matched.*")
+        elif _top < CITE_SCORE:
+            _answer += ("\n\n---\n*Loosely related corpus records were consulted; "
+                        "this answer is largely general knowledge.*")
+        return _answer
+
+    chat_ui = mo.ui.chat(steroid_chat, prompts=[
+        "Tell me about the selected entries",
+        "What reaction does this enzyme catalyse?",
+        "How does conjugation change this bile acid?",
+    ])
+    mo.vstack([mo.md("---\n### 💬 Atlas companion"), chat_ui])
+    return
+
+
+@app.cell
+def _():
+    return
+
+
+if __name__ == "__main__":
+    app.run()

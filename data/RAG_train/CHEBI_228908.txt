@@ -1,0 +1,18 @@
+Compound: Siamenoside I
+ChEBI ID: CHEBI:228908
+PubChem CID: 71307460
+
+== Chemical properties ==
+IUPAC Name: (2R,3R,4S,5S,6R)-2-[[(2R,3S,4S,5R,6S)-3,4-dihydroxy-6-[(3R,6R)-2-hydroxy-6-[(3S,8S,9R,10R,11R,13R,14S,17R)-11-hydroxy-4,4,9,13,14-pentamethyl-3-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-2,3,7,8,10,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-17-yl]-2-methylheptan-3-yl]oxy-5-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyoxan-2-yl]methoxy]-6-(hydroxymethyl)oxane-3,4,5-triol
+Molecular Formula: C54H92O24
+Molecular Weight: 1125.3
+SMILES: C[C@H](CC[C@H](C(C)(C)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)O)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)[C@H]4CC[C@@]5([C@@]4(C[C@H]([C@@]6([C@H]5CC=C7[C@H]6CC[C@@H](C7(C)C)O[C@H]8[C@@H]([C@H]([C@@H]([C@H](O8)CO)O)O)O)C)O)C)C
+InChI: InChI=1S/C54H92O24/c1-22(23-15-16-52(6)30-12-10-24-25(54(30,8)31(58)17-53(23,52)7)11-14-32(50(24,2)3)76-47-43(68)39(64)35(60)27(19-56)73-47)9-13-33(51(4,5)70)77-49-45(78-48-44(69)40(65)36(61)28(20-57)74-48)41(66)37(62)29(75-49)21-71-46-42(67)38(63)34(59)26(18-55)72-46/h10,22-23,25-49,55-70H,9,11-21H2,1-8H3/t22-,23-,25-,26-,27-,28-,29-,30+,31-,32+,33-,34-,35-,36-,37-,38+,39+,40+,41+,42-,43-,44-,45-,46-,47+,48+,49+,52+,53-,54+/m1/s1
+InChIKey: XJIPREFALCDWRQ-UYQGGQRHSA-N
+XLogP: -1.5
+TPSA: 398
+H-Bond Donors: 16
+H-Bond Acceptors: 24
+
+== ChEBI definition ==
+siamenoside I has been reported in Siraitia siamensis and Siraitia grosvenorii with data available.

@@ -1,0 +1,18 @@
+Compound: 5alpha-dihydrotestosterone 17-O-(beta-D-glucuronide)(1-)
+ChEBI ID: CHEBI:136914
+PubChem CID: 129011083
+
+== Chemical properties ==
+IUPAC Name: (2S,3S,4S,5R,6R)-6-[[(5S,8R,9S,10S,13S,14S,17S)-10,13-dimethyl-3-oxo-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]oxy]-3,4,5-trihydroxyoxane-2-carboxylate
+Molecular Formula: C25H37O8-
+Molecular Weight: 465.6
+SMILES: C[C@]12CCC(=O)C[C@@H]1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@@H]4O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)[O-])O)O)O)C
+InChI: InChI=1S/C25H38O8/c1-24-9-7-13(26)11-12(24)3-4-14-15-5-6-17(25(15,2)10-8-16(14)24)32-23-20(29)18(27)19(28)21(33-23)22(30)31/h12,14-21,23,27-29H,3-11H2,1-2H3,(H,30,31)/p-1/t12-,14-,15-,16-,17-,18-,19-,20+,21-,23+,24-,25-/m0/s1
+InChIKey: CLQMBSSRTBUNDV-CPKOJWPQSA-M
+XLogP: 3
+TPSA: 136
+H-Bond Donors: 3
+H-Bond Acceptors: 8
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of 5α-dihydrotestosterone 17-<em>O</em>-(β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic acid function; major species at pH 7.3.

@@ -1,0 +1,24 @@
+Compound: cholesterol
+ChEBI ID: CHEBI:16113
+PubChem CID: 5997
+
+== Chemical properties ==
+IUPAC Name: (3S,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C27H46O
+Molecular Weight: 386.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C
+InChI: InChI=1S/C27H46O/c1-18(2)7-6-8-19(3)23-11-12-24-22-10-9-20-17-21(28)13-15-26(20,4)25(22)14-16-27(23,24)5/h9,18-19,21-25,28H,6-8,10-17H2,1-5H3/t19-,21+,22+,23-,24+,25+,26+,27-/m1/s1
+InChIKey: HVYWMOMLDIMFJA-DPAQBDIFSA-N
+XLogP: 8.7
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A cholestanoid consisting of cholestane having a double bond at the 5,6-position as well as a 3β-hydroxy group.
+
+== Literature on cholesterol ==
+
+[PMID 15554222] Physicochemical characterization and in vitro release of salicylic acid from O/W emulsions prepared with Montanov 68: effect of formulation parameters
+2004
+Montanovs are surfactants consisting of a combination of alkylpolyglucosides and long chain saturated alcohols. They are used to formulated oil in water (O/W) emulsions where they generate liquid crystals. Emulsions containing 5% Montanov 68 with 40% Lanol 1688 were prepared and salicylic acid (SA) was incorporated at different stages of the O/W emulsion preparation. This study highlights the effects of formulation parameters on the microscopic characteristics, particle size and rheologic properties of Montanov 68 O/W emulsions. Diffusion studies with these emulsions showed the influence of SA incorporation at different steps on the release kinetics. Montanov enabled the release of SA to be controlled when it was solubilized in the internal phase. The presence of a physical barrier formed by the Montanov at the interface between the oil and water appeared to modulate the SA passage to the external phase.

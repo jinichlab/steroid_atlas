@@ -1,0 +1,24 @@
+Compound: 3alpha-sulfodeoxycholate(2-)
+ChEBI ID: CHEBI:195622
+PubChem CID: 168475447
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(3R,5R,8R,9S,10S,12S,13R,14S,17R)-12-hydroxy-10,13-dimethyl-3-sulfonatooxy-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H38O7S-2
+Molecular Weight: 470.6
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2CC[C@H]4[C@@]3(CC[C@H](C4)OS(=O)(=O)[O-])C)O)C
+InChI: InChI=1S/C24H40O7S/c1-14(4-9-22(26)27)18-7-8-19-17-6-5-15-12-16(31-32(28,29)30)10-11-23(15,2)20(17)13-21(25)24(18,19)3/h14-21,25H,4-13H2,1-3H3,(H,26,27)(H,28,29,30)/p-2/t14-,15-,16-,17+,18-,19+,20+,21+,23+,24-/m1/s1
+InChIKey: ARGCPGOJOKCMSW-LLQZFEROSA-L
+XLogP: 5.1
+TPSA: 135
+H-Bond Donors: 1
+H-Bond Acceptors: 7
+
+== ChEBI definition ==
+3alpha-sulfodeoxycholate(2-) is a bile acid anion and a steroid sulfate oxoanion.
+
+== Literature on 3alpha-sulfodeoxycholate(2-) ==
+
+[PMID 21900402] Aberrant lipid metabolism in hepatocellular carcinoma revealed by plasma metabolomics and lipid profiling
+2011
+There has been limited analysis of the effects of hepatocellular carcinoma (HCC) on liver metabolism and circulating endogenous metabolites. Here, we report the findings of a plasma metabolomic investigation of HCC patients by ultraperformance liquid chromatography-electrospray ionization-quadrupole time-of-flight mass spectrometry (UPLC-ESI-QTOFMS), random forests machine learning algorithm, and multivariate data analysis. Control subjects included healthy individuals as well as patients with liver cirrhosis or acute myeloid leukemia. We found that HCC was associated with increased plasma levels of glycodeoxycholate, deoxycholate 3-sulfate, and bilirubin. Accurate mass measurement also indicated upregulation of biliverdin and the fetal bile acids 7α-hydroxy-3-oxochol-4-en-24-oic acid and 3-oxochol-4,6-dien-24-oic acid in HCC patients. A quantitative lipid profiling of patient plasma was also conducted by ultraperformance liquid chromatography-electrospray ionization-triple quadrupole mass spectrometry (UPLC-ESI-TQMS). By this method, we found that HCC was also associated with reduced levels of lysophosphocholines and in 4 of 20 patients with increased levels of lysophosphatidic acid [LPA(16:0)], where it correlated with plasma α-fetoprotein levels. Interestingly, when fatty acids were quantitatively profiled by gas chromatography-mass spectrometry (GC-MS), we found that lignoceric acid (24:0) and nervonic acid (24:1) were virtually absent from HCC plasma. Overall, this investigation illustrates the power of the new discovery technologies represented in the UPLC-ESI-QTOFMS platform combined with the targeted, quantitative platforms of UPLC-ESI-TQMS and GC-MS for conducting metabolomic investigations that can engender new insights into cancer pathobiology.

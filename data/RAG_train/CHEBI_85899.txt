@@ -1,0 +1,18 @@
+Compound: 4-pregnen-3beta-ol-20-one
+ChEBI ID: CHEBI:85899
+PubChem CID: 12838303
+
+== Chemical properties ==
+IUPAC Name: 1-[(3S,8S,9S,10R,13S,14S,17S)-3-hydroxy-10,13-dimethyl-2,3,6,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-17-yl]ethanone
+Molecular Formula: C21H32O2
+Molecular Weight: 316.5
+SMILES: CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C[C@H](CC[C@]34C)O)C
+InChI: InChI=1S/C21H32O2/c1-13(22)17-6-7-18-16-5-4-14-12-15(23)8-10-20(14,2)19(16)9-11-21(17,18)3/h12,15-19,23H,4-11H2,1-3H3/t15-,16-,17+,18-,19-,20-,21+/m0/s1
+InChIKey: QWVWXRKHAXWWSV-QGVNFLHTSA-N
+XLogP: 4
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A 3β-hydroxy steroid that is 4-pregnen-3β-ol substituted by an oxo group at position 20.

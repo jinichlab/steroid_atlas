@@ -1,0 +1,18 @@
+Compound: 7beta-hydroxydehydroepiandrosterone
+ChEBI ID: CHEBI:183368
+PubChem CID: 22245198
+
+== Chemical properties ==
+IUPAC Name: 3,7-dihydroxy-10,13-dimethyl-1,2,3,4,7,8,9,11,12,14,15,16-dodecahydrocyclopenta[a]phenanthren-17-one
+Molecular Formula: C19H28O3
+Molecular Weight: 304.4
+SMILES: CC12CCC3C(C1CCC2=O)C(C=C4C3(CCC(C4)O)C)O
+InChI: InChI=1S/C19H28O3/c1-18-7-5-12(20)9-11(18)10-15(21)17-13-3-4-16(22)19(13,2)8-6-14(17)18/h10,12-15,17,20-21H,3-9H2,1-2H3
+InChIKey: OLPSAOWBSPXZEA-UHFFFAOYSA-N
+XLogP: 2.1
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+An androstanoid that is dehydroepiandrosterone carrying an additional hydroxy substituent at the 7β-position. It is a metabolite of dehydroepiandrosterone.

@@ -1,0 +1,15 @@
+Compound: 3beta-sulfo-5-cholenoate(2-)
+ChEBI ID: CHEBI:195614
+PubChem CID: 168475446
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(3S,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-3-sulfonatooxy-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H36O6S-2
+Molecular Weight: 452.6
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)OS(=O)(=O)[O-])C)C
+InChI: InChI=1S/C24H38O6S/c1-15(4-9-22(25)26)19-7-8-20-18-6-5-16-14-17(30-31(27,28)29)10-12-23(16,2)21(18)11-13-24(19,20)3/h5,15,17-21H,4,6-14H2,1-3H3,(H,25,26)(H,27,28,29)/p-2/t15-,17+,18+,19-,20+,21+,23+,24-/m1/s1
+InChIKey: YZVVZYNJACRDSJ-QIZZZRFXSA-L
+XLogP: 5.6
+TPSA: 115
+H-Bond Donors: 0
+H-Bond Acceptors: 6

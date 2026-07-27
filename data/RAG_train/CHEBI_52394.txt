@@ -1,0 +1,5 @@
+Compound: lanosteryl ester
+ChEBI ID: CHEBI:52394
+
+== ChEBI definition ==
+A sterol ester obtained by formal condensation of the 3-hydroxy group of lanosterol with the carboxy group of any carboxylic acid.

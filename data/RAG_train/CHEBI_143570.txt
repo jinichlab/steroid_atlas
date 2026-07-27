@@ -1,0 +1,18 @@
+Compound: 4alpha-methyl-3-oxosteroid
+ChEBI ID: CHEBI:143570
+PubChem CID: 146035866
+
+== Chemical properties ==
+IUPAC Name: (4S)-4,10,13-trimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C20H32O
+Molecular Weight: 288.5
+SMILES: C[C@H]1C2CCC3C4CCCC4(CCC3C2(CCC1=O)C)C
+InChI: InChI=1S/C20H32O/c1-13-15-7-6-14-16-5-4-10-19(16,2)11-8-17(14)20(15,3)12-9-18(13)21/h13-17H,4-12H2,1-3H3/t13-,14?,15?,16?,17?,19?,20?/m0/s1
+InChIKey: SYZKAZJEGNMIAQ-VTXBIYPASA-N
+XLogP: 6.1
+TPSA: 17.1
+H-Bond Donors: 0
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+Any 3-oxosteroid which is substituted by a methyl group at the 4α position.

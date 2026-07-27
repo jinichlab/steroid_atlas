@@ -1,0 +1,40 @@
+Compound: 15alpha-hydroxyestradiol
+ChEBI ID: CHEBI:87593
+PubChem CID: 66418
+
+== Chemical properties ==
+IUPAC Name: (8R,9S,13S,14S,15S,17S)-13-methyl-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthrene-3,15,17-triol
+Molecular Formula: C18H24O3
+Molecular Weight: 288.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1[C@H](C[C@@H]2O)O)CCC4=C3C=CC(=C4)O
+InChI: InChI=1S/C18H24O3/c1-18-7-6-13-12-5-3-11(19)8-10(12)2-4-14(13)17(18)15(20)9-16(18)21/h3,5,8,13-17,19-21H,2,4,6-7,9H2,1H3/t13-,14-,15+,16+,17-,18-/m1/s1
+InChIKey: QVQMPLATUBCZMQ-GVLSGGHMSA-N
+XLogP: 3
+TPSA: 60.7
+H-Bond Donors: 3
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 3-hydroxy steroid that is 17β-estradiol substituted by an α-hydroxy group at position 15.
+
+== Literature on 15alpha-hydroxyestradiol ==
+
+[PMID 150071] Formation of 15alpha-hydroxyestriol and 15alpha-hydroxyestradiol from C19 15alpha-hydroxylated precursors in human pregnancy
+1978
+A mixture of 3H-15alpha-hydroxyandrostenedione and 14C-15alpha-hydroxydehydroisoandrosterone was injected intravenously into two subjects in the third trimester of pregnancy and, in a second study, directly into two fetuses in utero during transfusion for erythroblastosis fetalis. The urine was collected for 4-5 days and steroid conjugates in the urine were hydrolyzed into sulfate and glucosiduronate fractions. From the glucosiduronate fraction 15alpha-hydroxyestriol, 15alpha-hydroxyestradiol, 15alpha-hydroxyandrostenedione and 15alpha-hydroxydehydroisoandrosterone were isolated. No metabolites were identified in the sulfate fraction of the urine. A marked difference was observed in the metabolism of 15alpha-hydroxyandrostenedione and 15alpha-hydroxydehydroisoandrosterone which is dependent on the route of administration of the substrates. Both substrates were converted to 15alpha-hydroxyestriol and 15alpha-hydroxyestradiol, and the 3H/14C ratios and percentage conversions suggest that 15alpha-hydroxyandrostenedione seems to be a better precursor of the urinary 15alpha-hydroxylated estrogens than 15alpha-hydroxydehydroisoandrosterone. The 3H/14C ratios also suggest that 15alpha-hydroxydehydroisoandrosterone was converted to 15alpha-hydroxyestriol via 15alpha-hydroxyandrostenedione, and that the formation of 15alpha-hydroxyestradiol from 15alpha-hydroxydehydroisoandrosterone via 15alpha-hydroxyandrostenedione is a pathway of minor importance. Finally, 15alpha-hydroxydehydroisoandrosterone was recovered from the urine only when the precursors were injected into the maternal circulation. Also, an unknown metabolite containing only 14C was detected in the glucosiduronate fraction of the urine of each subject.
+
+[PMID 10493601] Preparation of specific antisera to 15alpha-hydroxyestrogens
+1999
+The synthesis of haptens of 15alpha-hydroxyestrone, 15alpha-hydroxyestradiol, and 15alpha-hydroxyestriol (estetrol) was undertaken, to obtain specific antisera required for enzyme immunoassay. 3-(1-Carboxypropyl) ethers of these 15alpha-hydroxyestrogens were prepared and conjugated with bovine serum albumin and horseradish peroxidase. The specificity of antisera elicited against bovine serum albumin conjugates was checked by the enzyme immunoassay by using horseradish peroxidase-labeled antigen, and proved to be satisfactory in terms of cross-reactivities to related compounds.
+
+[PMID 630454] Precursor role of 15alpha-hydroxyestradiol and 15alpha-hydroxyandrostenedione in the formation of estetrol
+1978
+Studies were designed to elucidate the origin of estetrol (15alpha-hydroxyestriol (estra-1,3,5(10)triene-3,15alpha,17beta-tetrol) or E4) during late human pregnancy. 3H-Labelled 15alpha-hydroxyestradiol (3,15alpha-dihydroxyestra-1,3,5(10)-trien-17-one or 15E2) and 14C-labelled 17beta-estradiol (estra-1,3,5(10)-triene-3,17beta-diol or E2) were infused into the fetus during transfusion in utero for erythroblastosis fetalis, and in another study the same substrates were injected intravenously into the maternal circulation. In a third study, 3H-labelled 15alpha-hydroxyandrostenedion (15alpha-hydroxyandrost-4-ene-3,17-dione or 15delta4) and 14C-labelled E2 were infused into the fetus. Maternal urine was collected for 5--6 days, and after Glusulase hydrolysis, the following metabolites were isolated: estriol (estra-1,3,5(10)-triene-3,16alpha,17beta-triol or E3) containing 14C only and 15alpha-hydroxyestrone (3,15alpha-dihydroxyestra-1,3,5(10)-trien-17-one or 15E1), 15E2, and E4, all containing both labels. From the isotope content of these metabolites, it was concluded that E4 was derived from both fetal E2 and 15delta4 and only partially via 15E2. When administered to the fetus E2 and 15delta4 contributed approximately equal amounts to urinary E4. The yield of 15alpha-hydroxylated estrogens from E2 injected into the mother was very low indicating the predominantly fetal origin of the 15alpha-hydroxylase. 15delta4 was a better precursor than E2 for urinary 15E2.
+
+[PMID 10443905] Preparation of specific antisera to 15alpha-hydroxyestrogen 15-N-acetylglucosaminides
+1999
+3-(1-Carboxypropyl) ether derivatives of 15alpha-hydroxyestradiol 15-N-acetylglucosaminide (15alpha-OHE2 15NAG) and 15alpha-hydroxyestriol (E4) 15NAG were synthesized and conjugated with bovine serum albumin. Antisera elicited in rabbits possessed high affinity and specificity for the 15alpha-hydroxyestrogen (15alpha-OHEs) 15NAG, exhibiting no significant cross-reactivity with 15alpha-OHEs and their positional isomers such as 16NAG and 17NAG. Enzyme immunoassay methods developed by using the purified antisera and horseradish peroxidase-labeled antigens were applied to the measurement of 15alpha-OHEs 15NAG and E4 15NAG in normal pregnancy urine. We demonstrated for the first time that the conjugation of N-acetylglucosamine to E4 occurs at the C-15alpha position.
+
+[PMID 181390] Studies of phenolic steroids in human subjects. XIX. Renal conjugation of 15alpha-hydroxyestradiol-3-sulfate
+1976
+In order to elucidate further the role of the kidney in the conjugation and excretion of 15alpha-hydroxy-estrogens, we synthesized doubly and singly labeled 15alpha-hydroxyestradiol-3-sulfate (15alpha-OHE-S) and determined its urinary excretory pattern after administering differently labeled 15alpha-OHE2-S into the renal artery and concomitantly into a peripheral vein and by the infusion of doubly labeled 3H-15alpha-OHE2-S-35S into the renal artery. The excretion of radioactivity in the early urinary samples and the conjugate pattern in these urines were determined. About twice as much radioactivity was excreted in the early urine samples originating from the renal artery injection than from samples obtained following peripheral administration, indicating renal conjugation and excretion of the 15alpha-OHE2-S. The latter was preponderantly excreted as the S-NAG with only a small part (about 10%) of the administered sulfate being hydrolyzed to the aglycone. The latter was then either conjugated with N-acetylglucosamine (NAG) or glucuronide, probably also in the kidney. Most of the 15-alpha-OHE2-S could not be accounted for, possibly because of biliary excretion and enterohepatic circulation. The results obtained and those already published indicate that the human kidney is capable of conjugating 15alpha-OHE2, its NAG, and its sulfate conjugates.

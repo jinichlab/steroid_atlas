@@ -1,0 +1,18 @@
+Compound: lanost-8-ene-3beta,30-diol
+ChEBI ID: CHEBI:87057
+PubChem CID: 15698821
+
+== Chemical properties ==
+IUPAC Name: (3S,5R,10S,13R,14S,17R)-14-(hydroxymethyl)-4,4,10,13-tetramethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,5,6,7,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C30H52O2
+Molecular Weight: 444.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@]2([C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)CO
+InChI: InChI=1S/C30H52O2/c1-20(2)9-8-10-21(3)22-14-18-30(19-31)24-11-12-25-27(4,5)26(32)15-16-28(25,6)23(24)13-17-29(22,30)7/h20-22,25-26,31-32H,8-19H2,1-7H3/t21-,22-,25+,26+,28-,29-,30-/m1/s1
+InChIKey: SJPDNXKPBQHPMZ-PUXRVUTHSA-N
+XLogP: 8
+TPSA: 40.5
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A tetracyclic triterpenoid that is lanost-8-ene carrying two hydroxy substituents at positions 3β and 30.

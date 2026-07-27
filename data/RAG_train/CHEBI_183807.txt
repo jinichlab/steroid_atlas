@@ -1,0 +1,32 @@
+Compound: 7-ketopregnenolone
+ChEBI ID: CHEBI:183807
+PubChem CID: 134972
+
+== Chemical properties ==
+IUPAC Name: (3S,8S,9S,10R,13S,14S,17S)-17-acetyl-3-hydroxy-10,13-dimethyl-1,2,3,4,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-7-one
+Molecular Formula: C21H30O3
+Molecular Weight: 330.5
+SMILES: CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2C(=O)C=C4[C@@]3(CC[C@@H](C4)O)C)C
+InChI: InChI=1S/C21H30O3/c1-12(22)15-4-5-16-19-17(7-9-21(15,16)3)20(2)8-6-14(23)10-13(20)11-18(19)24/h11,14-17,19,23H,4-10H2,1-3H3/t14-,15+,16-,17-,19-,20-,21+/m0/s1
+InChIKey: WNHLZNUVEVVTSY-GVQHXQKQSA-N
+XLogP: 3
+TPSA: 54.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 3β-hydroxy-Δ<small><sup>5</small></sup>-steroid that is pregnenolone carrying an oxo group at position 7.
+
+== Literature on 7-ketopregnenolone ==
+
+[PMID 35806021] Hydroxylation of Progesterone and Its Derivatives by the Entomopathogenic Strain <i>Isaria farinosa</i> KCh KW1.1
+2022
+Progesterone biotransformation is worth studying because of the high industrial value of its derivatives. This study investigated the catalytic ability of the entomopathogenic filamentous fungus strain Isaria farinosa KCh KW1.1 to transform progesterone derivatives: 11α-hydroxyprogesterone, 17α-hydroxyprogesterone, 16α,17α-epoxyprogesterone and pregnenolone. In the culture of Isaria farinosa KCh KW1.1, 11α-hydroxyprogesterone was effectively transformed into only one product: 6β,11α-dihydroxyprogesterone. Transformation of 17α-hydroxyprogesterone gave three hydroxy derivatives: 6β,17α-dihydroxyprogesterone, 12β,17α-dihydroxyprogesterone and 6β,12β,17α-trihydroxyprogesterone. Two products: 6β-hydroxy-16α,17α-epoxyprogesterone and 6β,11α-dihydroxy-16α,17α-epoxyprogesterone, were obtained from the 16α,17α-epoxyprogesterone transformation. We isolated two compounds from the biotransformation medium with pregnenolone: 11α-hydroxy-7-oxopregnenolone and 5α,6α-epoxy-3β,11α-dihydroxypregnan-7,20-dione. In this study, we observed only mono- and dihydroxy derivatives of the tested substrates, and the number of obtained products for each biotransformation did not exceed three.
+
+[PMID 17593962] Hexose-6-phosphate dehydrogenase modulates 11beta-hydroxysteroid dehydrogenase type 1-dependent metabolism of 7-keto- and 7beta-hydroxy-neurosteroids
+2007
+BackgroundThe role of 11beta-hydroxysteroid dehydrogenase type 1 (11beta-HSD1) in the regulation of energy metabolism and immune system by locally reactivating glucocorticoids has been extensively studied. Experiments determining initial rates of enzyme activity revealed that 11beta-HSD1 can catalyze both the reductase and the dehydrogenase reaction in cell lysates, whereas it predominantly catalyzes the reduction of cortisone to cortisol in intact cells that also express hexose-6-phosphate dehydrogenase (H6PDH), which provides cofactor NADPH. Besides its role in glucocorticoid metabolism, there is evidence that 11beta-HSD1 is involved in the metabolism of 7-keto- and 7-hydroxy-steroids; however the impact of H6PDH on this alternative function of 11beta-HSD1 has not been assessed.MethodologyWe investigated the 11beta-HSD1-dependent metabolism of the neurosteroids 7-keto-, 7alpha-hydroxy- and 7beta-hydroxy-dehydroepiandrosterone (DHEA) and 7-keto- and 7beta-hydroxy-pregnenolone, respectively, in the absence or presence of H6PDH in intact cells. 3D-structural modeling was applied to study the binding of ligands in 11beta-HSD1.Principal findingsWe demonstrated that 11beta-HSD1 functions in a reversible way and efficiently catalyzed the interconversion of these 7-keto- and 7-hydroxy-neurosteroids in intact cells. In the presence of H6PDH, 11beta-HSD1 predominantly converted 7-keto-DHEA and 7-ketopregnenolone into their corresponding 7beta-hydroxy metabolites, indicating a role for H6PDH and 11beta-HSD1 in the local generation of 7beta-hydroxy-neurosteroids. 3D-structural modeling offered an explanation for the preferred formation of 7beta-hydroxy-neurosteroids.ConclusionsOur results from experiments determining the steady state concentrations of glucocorticoids or 7-oxygenated neurosteroids suggested that the equilibrium between cortisone and cortisol and between 7-keto- and 7-hydroxy-neurosteroids is regulated by 11beta-HSD1 and greatly depends on the coexpression with H6PDH. Thus, the impact of H6PDH on 11beta-HSD1 activity has to be considered for understanding both glucocorticoid and neurosteroid action in different tissues.
+
+[PMID 11226835] Transformation of steroids by Bacillus strains isolated from the foregut of water beetles (Coleoptera: Dytiscidae): II. Metabolism of 3 beta-hydroxypregn-5-en-20-one (pregnenolone)
+2000
+The in vitro metabolism of pregnenolone by two Bacillus strains (HA-V6-3 and HA-V6-11) isolated from the foregut of the water beetle Agabus affinis (Payk.) was examined in the course of our studies about a possible participation of gut micro-organisms in the biosynthesis of prothoracic defensive steroids of dytiscids. The transformation products were identified by EI GC--MS of culture extracts after derivatization. The dominating reactions were hydroxylations, with 7 alpha-hydroxypregnenolone as the major product. With considerably lower yields, 7 beta- and 15xi-hydroxypregenolone were formed by both strains, while 11, 17 and 16 alpha-hydroxypregnenolone were produced only by HA-V6-3. The occurrence of 7, 11 alpha- and 7 beta, 11 alpha-dihydroxypregnenolone as well as several minor products containing a 17 alpha-OH group proved the capability of HA-V6-11 to hydroxylate pregenenolone at C(11) and C(17) as well. The monohydroxylated 7-OH-pregnenolones were partly oxidized to 7-oxopregnenolone by both strains. In trace amounts, HA-V6-3 performed 3 beta-acetylation of pregnenolone.

@@ -1,0 +1,18 @@
+Compound: 3-oxochola-4,6-dien-24-oate
+ChEBI ID: CHEBI:87748
+PubChem CID: 20848979
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(8S,9S,10R,13R,14S,17R)-10,13-dimethyl-3-oxo-1,2,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H33O3-
+Molecular Weight: 369.5
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2C=CC4=CC(=O)CC[C@]34C)C
+InChI: InChI=1S/C24H34O3/c1-15(4-9-22(26)27)19-7-8-20-18-6-5-16-14-17(25)10-12-23(16,2)21(18)11-13-24(19,20)3/h5-6,14-15,18-21H,4,7-13H2,1-3H3,(H,26,27)/p-1/t15-,18+,19-,20+,21+,23+,24-/m1/s1
+InChIKey: CREVIXFSUWYGRJ-IHMUCKAYSA-M
+XLogP: 5.8
+TPSA: 57.2
+H-Bond Donors: 0
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A steroid acid anion that is the conjugate base of 3-oxochola-4,6-dien-24-oic acid, obtained by deprotonation of the carboxy group; major species at pH 7.3.

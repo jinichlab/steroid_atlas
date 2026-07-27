@@ -1,0 +1,18 @@
+Compound: 3-dehydro-6alpha-hydroxy-28-norteasterone
+ChEBI ID: CHEBI:188990
+PubChem CID: 162422394
+
+== Chemical properties ==
+IUPAC Name: (5S,6S,8S,9S,10R,13S,14S,17R)-17-[(2S,3R,4R)-3,4-dihydroxy-6-methylheptan-2-yl]-6-hydroxy-10,13-dimethyl-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C27H46O4
+Molecular Weight: 434.7
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2C[C@@H]([C@@H]4[C@@]3(CCC(=O)C4)C)O)C)[C@H]([C@@H](CC(C)C)O)O
+InChI: InChI=1S/C27H46O4/c1-15(2)12-24(30)25(31)16(3)19-6-7-20-18-14-23(29)22-13-17(28)8-10-27(22,5)21(18)9-11-26(19,20)4/h15-16,18-25,29-31H,6-14H2,1-5H3/t16-,18-,19+,20-,21-,22+,23-,24+,25+,26+,27+/m0/s1
+InChIKey: OJTWEEFPSNPVQC-GFEZGRAESA-N
+XLogP: 5.1
+TPSA: 77.8
+H-Bond Donors: 3
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+3-dehydro-6alpha-hydroxy-28-norteasterone is a C27-steroid, a phytosteroid, a 6alpha-hydroxy steroid, a 22-hydroxy steroid, a 23-hydroxy steroid and a 3-oxo steroid.

@@ -1,0 +1,24 @@
+Compound: Delta(1)-dihydrotestosterone
+ChEBI ID: CHEBI:59714
+PubChem CID: 236666
+
+== Chemical properties ==
+IUPAC Name: (5S,8R,9S,10R,13S,14S,17S)-17-hydroxy-10,13-dimethyl-4,5,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C19H28O2
+Molecular Weight: 288.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CC[C@@H]4[C@@]3(C=CC(=O)C4)C
+InChI: InChI=1S/C19H28O2/c1-18-9-7-13(20)11-12(18)3-4-14-15-5-6-17(21)19(15,2)10-8-16(14)18/h7,9,12,14-17,21H,3-6,8,10-11H2,1-2H3/t12-,14-,15-,16-,17-,18-,19-/m0/s1
+InChIKey: OKJCFMUGMSVJBG-ABEVXSGRSA-N
+XLogP: 4
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+An anabolic steroid that differs from testosterone by having a 1,2-double bond instead of a 4,5-double bond in its A ring. A potent androgen with anabolic properties, it was legally sold as a prohormone in the U.S.A. until 2005, when it was reclassified as a Schedule III drug.
+
+== Literature on Delta(1)-dihydrotestosterone ==
+
+[PMID 16621347] 17beta-hydroxy-5alpha-androst-1-en-3-one (1-testosterone) is a potent androgen with anabolic properties
+2006
+Since the begining of the year 2005, the use of steroid precursors (prohormones) is illegal in the United States; nevertheless, there is still an enormous abuse of such substances. One of the most frequently misused steroids, often declared to be a prohormone, is 1-testosterone (17beta-hydroxy-5alpha-androst-1-en-3-one, 1-Testo). In this study, we have characterised molecular mechanisms of its action, determined its tissue specific androgenic and anabolic potency and investigated potential adverse effects. 1-Testo binds highly selective to the androgen receptor (AR) and has a high potency to stimulate AR dependent transactivation. In vivo an equimolar dose of 1-Testo has the same potency to stimulate the growth of the prostate, the seminal vesicles and the androgen sensitive levator ani muscle as the reference compound testosterone propionate (TP). Administration of 1-Testo, in contrast to TP, results in a significant increase of liver weight. Our results demonstrate that 1-Testo, even without being metabolised, is a very potent androgen. It binds selectively to the AR and transactivates AR dependent reporter genes. In vivo it has a high androgenic and anabolic potency and increases liver weight. In summary 1-Testo can be characterised as a typical anabolic steroid. It has to be assumed that consumption of this substance is associated with adverse side effects typical for this class of compounds. Therefore, a strict control of its ban is essential.

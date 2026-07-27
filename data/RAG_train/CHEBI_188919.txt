@@ -1,0 +1,21 @@
+Compound: a C27-steroid
+ChEBI ID: CHEBI:188919
+PubChem CID: 10202
+
+== Chemical properties ==
+IUPAC Name: 10,13-dimethyl-17-(6-methylheptan-2-yl)-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthrene
+Molecular Formula: C27H48
+Molecular Weight: 372.7
+SMILES: CC(C)CCCC(C)C1CCC2C1(CCC3C2CCC4C3(CCCC4)C)C
+InChI: InChI=1S/C27H48/c1-19(2)9-8-10-20(3)23-14-15-24-22-13-12-21-11-6-7-17-26(21,4)25(22)16-18-27(23,24)5/h19-25H,6-18H2,1-5H3
+InChIKey: XIIAYQZJNBULGD-UHFFFAOYSA-N
+XLogP: 11.1
+TPSA: 0
+H-Bond Donors: 0
+H-Bond Acceptors: 0
+
+== Literature on a C27-steroid ==
+
+[PMID 24152093] OH-initiated heterogeneous oxidation of cholestane: a model system for understanding the photochemical aging of cyclic alkane aerosols
+2013
+Aerosols containing aliphatic hydrocarbons play a substantial role in the urban atmosphere. Cyclic alkanes constitute a large fraction of aliphatic hydrocarbon emissions originating from incomplete combustion of diesel fuel and motor oil. In the present study, cholestane (C27H48) is used as a model system to examine the OH-initiated heterogeneous oxidation pathways of cyclic alkanes in a photochemical flow tube reactor. Oxidation products are collected on filters and analyzed by a novel soft ionization two-dimensional gas chromatography/mass spectrometry technique. The analysis reveals that the first-generation functionalization products (cholestanones, cholestanals, and cholestanols) are the dominant reaction products that account for up to 70% by mass of the total speciated compounds. The ratio of first-generation carbonyls to alcohols is near unity at every oxidation level. Among the cholestanones/cholestanals, 55% are found to have the carbonyl group on the rings of the androstane skeleton, while 74% of cholestanols have the hydroxyl group on the rings. Particle-phase oxidation products with carbon numbers less than 27 (i.e., "fragmentation products") and higher-generation functionalization products are much less abundant. Carbon bond cleavage was found to occur only on the side chain. Tertiary-carbon alkoxy radicals are suggested to play an important role in governing both the distribution of functionalization products (via alkoxy radical isomerization and reaction with oxygen) and the fragmentation products (via alkoxy radical decomposition). These results provide new insights into the oxidation mechanism of cyclic alkanes.

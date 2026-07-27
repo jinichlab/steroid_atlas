@@ -1,0 +1,18 @@
+Compound: 21-dehydrocortisone
+ChEBI ID: CHEBI:78596
+PubChem CID: 331383
+
+== Chemical properties ==
+IUPAC Name: 2-[(8S,9S,10R,13S,14S,17R)-17-hydroxy-10,13-dimethyl-3,11-dioxo-1,2,6,7,8,9,12,14,15,16-decahydrocyclopenta[a]phenanthren-17-yl]-2-oxoacetaldehyde
+Molecular Formula: C21H26O5
+Molecular Weight: 358.4
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2C(=O)C[C@]4([C@H]3CC[C@@]4(C(=O)C=O)O)C
+InChI: InChI=1S/C21H26O5/c1-19-7-5-13(23)9-12(19)3-4-14-15-6-8-21(26,17(25)11-22)20(15,2)10-16(24)18(14)19/h9,11,14-15,18,26H,3-8,10H2,1-2H3/t14-,15-,18+,19-,20-,21-/m0/s1
+InChIKey: DJLICGGNASJAQR-ZPOLXVRWSA-N
+XLogP: 1.8
+TPSA: 88.5
+H-Bond Donors: 1
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A C<small><sub>21</sub></small>-steroid that is cortisone in which the 21-hydroxy group has been oxidised to the corresponding aldehyde.

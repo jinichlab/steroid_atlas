@@ -1,0 +1,5 @@
+Compound: 3-oxo-Delta(1) steroid
+ChEBI ID: CHEBI:20156
+
+== ChEBI definition ==
+Any 3-oxo steroid that contains a double bond between positions 1 and 2.

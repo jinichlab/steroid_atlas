@@ -1,0 +1,5 @@
+Compound: Delta(14) steroid
+ChEBI ID: CHEBI:138031
+
+== ChEBI definition ==
+Any steroid that contains a double bond between positions 14 and 15.

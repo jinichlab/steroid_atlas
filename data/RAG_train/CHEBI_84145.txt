@@ -1,0 +1,40 @@
+Compound: 3beta-hydroxycholest-5-en-26-al
+ChEBI ID: CHEBI:84145
+PubChem CID: 53975001
+
+== Chemical properties ==
+IUPAC Name: (6R)-6-[(3S,8S,9S,10R,13R,14S,17R)-3-hydroxy-10,13-dimethyl-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-17-yl]-2-methylheptanal
+Molecular Formula: C27H44O2
+Molecular Weight: 400.6
+SMILES: C[C@H](CCCC(C)C=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C
+InChI: InChI=1S/C27H44O2/c1-18(17-28)6-5-7-19(2)23-10-11-24-22-9-8-20-16-21(29)12-14-26(20,3)25(22)13-15-27(23,24)4/h8,17-19,21-25,29H,5-7,9-16H2,1-4H3/t18?,19-,21+,22+,23-,24+,25+,26+,27-/m1/s1
+InChIKey: JUGXQEJPWDYOJV-CCDZVGGQSA-N
+XLogP: 7
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A 26-oxo steroid resulting from the oxidation of one of the terminal methyl groups of cholesterol to the corresponding aldehyde.
+
+== Literature on 3beta-hydroxycholest-5-en-26-al ==
+
+[PMID 41903765] Cisplatin-resistant A549 non-small cell lung cancer cells sensitivity to 7-ketocholesterol
+2026
+Lung cancer is the most common cancer worldwide. It is often detected in the late stages of the disease and is difficult to treat. Furthermore, the cancer often develops resistance to chemotherapy drugs such as cisplatin. This study aimed to compare the sensitivity of two variants of the A549 cell line: sensitive and resistant to cisplatin, to the action of 7-ketocholesterol. A549 cells were exposed to cisplatin for several weeks to generate a cisplatin-resistant subpopulation. They were then exposed to various concentrations of 7-ketocholesterol. The effect of 7-ketocholesterol on cell viability, apoptosis, and reactive oxygen species was examined. The results for both variants of the A549 cell line subpopulations demonstrated a slightly greater sensitivity of the cisplatin-resistant subpopulation to 7-ketocholesterol. These are preliminary, pilot studies that pave the way for more advanced research on the effects of oxysterols on chemotherapy-resistant cancer cells.
+
+[PMID 41864549] Hydration and interfacial behavior of 7-ketocholesterol monolayers: A comparative molecular dynamics study with cholesterol using the OPC water model
+2026
+We investigate how oxidation of cholesterol at the C7 position alters sterol hydration and interfacial organization by combining Langmuir monolayer experiments with all-atom molecular dynamics simulations employing the OPC water model. While cholesterol forms tightly packed and weakly hydrated monolayers, 7-ketocholesterol exhibits increased molecular area, enhanced compressibility, and pronounced orientational disorder. These differences originate from altered hydration: the hydroxyl group of 7-ketocholesterol at C3 position retains cholesterol-like hydration, whereas the additional carbonyl group at C7 introduces a pressure-dependent hydration site that becomes increasingly exposed upon monolayer expansion. Consequently, 7-ketocholesterol monolayers accommodate more interfacial water, display deeper water penetration, and form an extensive network of water-mediated sterol-sterol bridges. Energetic analysis reveals that van der Waals cohesion remains comparable to cholesterol, whereas electrostatic interactions are significantly less unfavorable due to effective hydration and screening of polar groups. These hydration-driven effects, captured only with an accurate interfacial water description, provide a molecular basis for the altered mechanical properties and biological behavior of 7-ketocholesterol-rich membranes.
+
+[PMID 41794295] Emerging role of 7-Ketocholesterol and hydroxylated 7-Ketocholesterol in the pathophysiology of disease
+2026
+Cholesterol oxidation at the C7 position is a hallmark of non-enzymatic lipid peroxidation. Reactive oxygen species initiate hydrogen abstraction at the allylic C7 position of cholesterol, leading to the formation of 7-hydroperoxides, which subsequently decompose to yield 7-hydroxycholesterols and 7-ketocholesterol (7KC). Due to the relative chemical stability, 7KC accumulates preferentially and is commonly detected in biological samples, compared to more labile hydroperoxide intermediates. 7KC is known to induce oxidative stress, mitochondrial dysfunction, and endoplasmic reticulum stress, leading to apoptosis, autophagy, or necrotic cell death depending on cell type and exposure conditions. In addition, 7KC promotes inflammatory pathways and membrane dysfunction, contributing to tissue damage in diseases associated with chronic oxidative stress. These mechanisms open opportunities for the development of targeted intervention strategies. Accumulation of 7KC also acts as a substrate that may undergo further metabolic or oxidative transformations. Importantly, cells possess enzymatic systems capable of introducing hydroxyl groups at the cholesterol side chain that 7KC can be further modified into double-substituted oxysterols (7-keto-25-hydroxycholesterol and 7-keto-27-hydroxycholesterol) combining a 7-keto moiety with side-chain hydroxylation. These metabolites of 7KC represent the dynamic interplay between oxidative damage and cellular sterol metabolic pathways. Elucidating their biological functions will be essential for a more comprehensive understanding of oxysterol biology in health and disease.
+
+[PMID 41679346] Current mass spectrometry methods for the analysis of 7-ketocholesterol and related sterols
+2026
+In this article we summarise the current mass spectrometry methods used for analysis of 7-ketocholesterol and related sterols, focusing on the advantages of the different methods with emphasis on pre-analytical and analytical precautions to avoid artefactual ex vivo formation of these oxysterols.
+
+[PMID 42329430] Endoglin is not a mediator in 7-ketocholesterol-induced endothelial activation in liver sinusoidal endothelial cells in vitro
+2026
+BackgroundEndoglin (ENG) is expressed in liver sinusoidal endothelial cells (LSECs), where it regulates endothelial activation and inflammation. The 7-ketocholesterol (7-K), a cholesterol oxidation product, accumulates in the liver and induces endothelial dysfunction. ENG has been shown to play an important role in adhesion processes in other endothelial models but its role in LSECs upon 7-K exposure remains unclear. We hypothesized that 7-K treatment of LSECs would confirm the critical role of ENG in endothelial activation, potentially outweighing the contributions of the cell adhesion molecules VCAM-1 and ICAM-1.MethodsHuman LSECs were exposed to 25 µM 7-K. Protein expression and monocyte adhesion were assessed by flow cytometry, and soluble ENG was measured by ELISA.Results7-K reduced ENG expression, while ICAM-1 was markedly upregulated. 7-K increased monocyte adhesion to LSECs, which was abrogated by ICAM-1, but not by ENG neutralization.ConclusionWe showed that 7-K promotes a pro-inflammatory phenotype defined by ICAM-1, rather than ENG. Thus, we propose that individual roles of ENG, ICAM-1, and VCAM-1 must be carefully considered when studying endothelial dysfunction.

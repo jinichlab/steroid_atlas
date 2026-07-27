@@ -1,0 +1,33 @@
+Compound: 32-ketoeburicol
+ChEBI ID: CHEBI:194329
+PubChem CID: 168007565
+
+== Chemical properties ==
+IUPAC Name: (3S,5R,10S,13R,14S,17R)-3-hydroxy-4,4,10,13-tetramethyl-17-[(2R)-6-methyl-5-methylideneheptan-2-yl]-2,3,5,6,7,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthrene-14-carbaldehyde
+Molecular Formula: C31H50O2
+Molecular Weight: 454.7
+SMILES: C[C@H](CCC(=C)C(C)C)[C@H]1CC[C@@]2([C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C=O
+InChI: InChI=1S/C31H50O2/c1-20(2)21(3)9-10-22(4)23-14-18-31(19-32)25-11-12-26-28(5,6)27(33)15-16-29(26,7)24(25)13-17-30(23,31)8/h19-20,22-23,26-27,33H,3,9-18H2,1-2,4-8H3/t22-,23-,26+,27+,29-,30-,31-/m1/s1
+InChIKey: SRGDGDSDQBHQSM-VAPIERHISA-N
+XLogP: 7.9
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+32-ketoeburicol is a 14alpha-formyl steroid and a 3beta-sterol. It is functionally related to an eburicol.
+
+--- RELATED COMPOUND: eburicol ---
+No literature found for 32-ketoeburicol itself. 32-ketoeburicol is functionally related to eburicol; the abstracts below are about eburicol.
+
+[PMID 39060235] Toxic eburicol accumulation drives the antifungal activity of azoles against Aspergillus fumigatus
+2024
+Azole antifungals inhibit the sterol C14-demethylase (CYP51/Erg11) of the ergosterol biosynthesis pathway. Here we show that the azole-induced synthesis of fungicidal cell wall carbohydrate patches in the pathogenic mold Aspergillus fumigatus strictly correlates with the accumulation of the CYP51 substrate eburicol. A lack of other essential ergosterol biosynthesis enzymes, such as sterol C24-methyltransferase (Erg6A), squalene synthase (Erg9) or squalene epoxidase (Erg1) does not trigger comparable cell wall alterations. Partial repression of Erg6A, which converts lanosterol into eburicol, increases azole resistance. The sterol C5-desaturase (ERG3)-dependent conversion of eburicol into 14-methylergosta-8,24(28)-dien-3β,6α-diol, the "toxic diol" responsible for the fungistatic activity against yeasts, is not required for the fungicidal effects in A. fumigatus. While ERG3-lacking yeasts are azole resistant, ERG3-lacking A. fumigatus becomes more susceptible. Mutants lacking mitochondrial complex III functionality, which are much less effectively killed, but strongly inhibited in growth by azoles, convert eburicol more efficiently into the supposedly "toxic diol". We propose that the mode of action of azoles against A. fumigatus relies on accumulation of eburicol which exerts fungicidal effects by triggering cell wall carbohydrate patch formation.
+
+[PMID 42478844] Lanosterol synthase inhibition as a potential approach for re-sensitizing triazole-resistant &lt;i&gt;Aspergillus fumigatus&lt;/i&gt;
+2026
+The increasing prevalence of triazole resistance among Aspergillus fumigatus clinical isolates threatens the efficacy of this front-line treatment, highlighting the urgent need for novel therapeutic targets. In this study, we characterized three putative lanosterol synthase (also known as oxidosqualene cyclase) paralogs and identified Erg7A as the dominant enzyme. Although erg7B provided functional redundancy when overexpressed, deletion of erg7A alone created a significant ergosterol biosynthetic blockade. erg7A deficiency led to the accumulation of upstream substrates (squalene and 2,3-oxidosqualene) as well as downstream sterol intermediates, including lanosterol and eburicol. This sterol perturbation conferred triazole hypersusceptibility to a laboratory strain and restored susceptibility in resistant clinical isolates harboring cyp51A or hmg1 mutations. We further validated these findings using Ro 48-8071, a specific oxidosqualene cyclase inhibitor, and found that Ro 48-8071 exhibited potent synergy with the long-tailed triazoles, itraconazole, and posaconazole. Our findings demonstrate that targeting Erg7 sensitizes A. fumigatus to triazoles, offering a potential combination therapy against resistant isolates.IMPORTANCEAspergillus fumigatus is a mold pathogen and the major etiologic agent of invasive aspergillosis. Treatment of invasive aspergillosis is currently limited to only three classes of antifungals, the use of which is hampered by toxicity and rising antifungal resistance rates. The front-line therapeutic class, the triazoles, functions through the inhibition of ergosterol biosynthesis, and the majority of clinical triazole resistance is caused by target gene mutations impacting the sterol demethylase Cyp51. In this study, we differentiate the biological roles of three putative A. fumigatus lanosterol synthase paralogs as enzymes functioning upstream of the triazole target. We provide strong genetic and pharmacological evidence that inhibition of this upstream enzymatic step in the ergosterol biosynthetic pathway is synergistic with triazoles and can resensitize resistant clinical isolates. The development of lanosterol synthase inhibitors with fungus-specific activity is expected to provide new stand-alone and/or combination therapies to improve outcomes of invasive aspergillosis.
+
+[PMID 39728316] The Molecular Basis of the Intrinsic and Acquired Resistance to Azole Antifungals in &lt;i&gt;Aspergillus fumigatus&lt;/i&gt;
+2024
+Aspergillus fumigatus is intrinsically resistant to the widely used antifungal fluconazole, and therapeutic failure can result from acquired resistance to voriconazole, the primary treatment for invasive aspergillosis. The molecular basis of substrate specificity and innate and acquired resistance of A. fumigatus to azole drugs were addressed using crystal structures, molecular models, and expression in Saccharomyces cerevisiae of the sterol 14α-demethylase isoforms AfCYP51A and AfCYP51B targeted by azole drugs, together with their cognate reductase AfCPRA2 and AfERG6 (sterol 24-C-methyltransferase). As predicted by molecular modelling, functional expression of CYP51A and B required eburicol and not lanosterol. A crowded conformationally sensitive region involving the BC-loop, helix I, and the heme makes AfCYP51A T289 primarily responsible for resistance to fluconazole, VT-1161, and the agrochemical difenoconazole. The Y121F T289A combination was required for higher level acquired resistance to fluconazole, VT-1161, difenoconazole, and voriconazole, and confirms posaconazole, isavuconazole and possibly ravuconazole as preferred treatments for target-based azole-resistant aspergillosis due to such a combination of mutations.

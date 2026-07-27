@@ -1,0 +1,18 @@
+Compound: 16alpha,17alpha-dihydroxypregnenolone
+ChEBI ID: CHEBI:137049
+PubChem CID: 102041888
+
+== Chemical properties ==
+IUPAC Name: 1-[(3S,8R,9S,10R,13S,14S,16R,17S)-3,16,17-trihydroxy-10,13-dimethyl-1,2,3,4,7,8,9,11,12,14,15,16-dodecahydrocyclopenta[a]phenanthren-17-yl]ethanone
+Molecular Formula: C21H32O4
+Molecular Weight: 348.5
+SMILES: CC(=O)[C@]1([C@@H](C[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)O)O
+InChI: InChI=1S/C21H32O4/c1-12(22)21(25)18(24)11-17-15-5-4-13-10-14(23)6-8-19(13,2)16(15)7-9-20(17,21)3/h4,14-18,23-25H,5-11H2,1-3H3/t14-,15+,16-,17-,18+,19-,20-,21+/m0/s1
+InChIKey: JUTWIBFBXPFWGP-XXHSLLPRSA-N
+XLogP: 2.5
+TPSA: 77.8
+H-Bond Donors: 3
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+A pregnane sterol that is pregnenolone substituted by two hydroxy groups at positions 16 and 17 (16α,17α-stereoisomer).

@@ -1,0 +1,32 @@
+Compound: 7alpha-hydroxycholesterol
+ChEBI ID: CHEBI:17500
+PubChem CID: 107722
+
+== Chemical properties ==
+IUPAC Name: (3S,7S,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene-3,7-diol
+Molecular Formula: C27H46O2
+Molecular Weight: 402.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@@H](C=C4[C@@]3(CC[C@@H](C4)O)C)O)C
+InChI: InChI=1S/C27H46O2/c1-17(2)7-6-8-18(3)21-9-10-22-25-23(12-14-27(21,22)5)26(4)13-11-20(28)15-19(26)16-24(25)29/h16-18,20-25,28-29H,6-15H2,1-5H3/t18-,20+,21-,22+,23+,24-,25+,26+,27-/m1/s1
+InChIKey: OYXZMSRRJOYLLO-RVOWOUOISA-N
+XLogP: 7.4
+TPSA: 40.5
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+The 7α-hydroxy derivative of cholesterol.
+
+== Literature on 7alpha-hydroxycholesterol ==
+
+[PMID 22235657] [Mechanisms of bile acid biosynthesis regulation--autoregulation by bile acids]
+2011
+Bile acids play significant role in body homeostasis regulation. They are products of cholesterol catabolism and ligands for some nuclear receptors regulating crucial metabolic pathways. The main enzyme regulating bile acids biosynthesis is CYP7A1 (7alpha-cholesterol hydroxylase). Its activity is controlled mainly at the transcription level and the key transcription factor is FXR. It is activated by other nuclear receptors like SHP, HNF-4alpha or LRH-1 and bile acids themselves, and represses CYP7A1 gene. The other transcription factors that inhibit CYP7A1 activity, are PXR, VDR, PPARalpha. The main activator is LXR (in rodents), increasing CYP7A1 transcriptional activity. CYP7A1 activity increases in presence of insulin and glucocorticoids. It is also regulated by diurnal rhythm. Some of those factors influence the activities of other bile acids biosynthesis enzymes--CYP7B1, CYP27A1, CYP8B1. Because of bile acids significant function in body metabolism this article presents the newest knowledge on mechanisms of key enzymes activities control.
+
+[PMID 12745061] Antidyslipidemic action of fenofibrate in dyslipidemic-diabetic hamster model
+2003
+Fenofibrate is the ligand for PPARalpha subtype that mediates the action of its agonists' in lipid metabolism. How fibrate exerts hypolipidemic effect? The mechanism is studied in a newly developed high-fat fructose enriched diet induced dyslipidemia-diabetic hamster model. Fenofibrate lowered the basal plasma lipids like TC, TG, PL, FFA, glycerol, VLDL, and LDL, but HDL was increased. The activity of lipoprotein lipase in liver, adipose tissue, and small intestine was upregulated. However, that of triglyceride lipase was downregulated in liver. It has also improved the insulin secretion and plasma glucose lowering, caused by impairment in insulin secretion due to high-fat load. The drug was found effective in reducing body weight and diet due to rise in leptin level. Fenofibrate also enhanced the fecal excretion of total lipids, cholic acid, and deoxycholic acid probably by the activation of 7alpha cholesterol hydroxylase enzyme. Thus, causing broad-spectrum lipid lowering along with inhibition of hepatic lipid biosynthesis and maintaining lipid-glucose homeostasis.
+
+[PMID 7790692] Failure of vitamin E to protect cultured human arterial smooth muscle cells against oxysterol-induced cytotoxicity
+1995
+ObjectiveThe cytotoxicity of oxysterols including 7 alpha-hydroxycholesterol (7 alpha OHC), 7 beta-hydroxycholesterol (7 beta OHC), cholesterol 5 alpha,6 alpha-epoxide (alpha epoxyC), cholesterol 5 beta,6 beta-epoxide (beta epoxyC), 7-ketocholesterol (7ketoC), 26-hydroxycholesterol (26OHC), cholesterol-3 beta,5 alpha,6 beta-triol (TriolC) and the possible protecting effect of vitamin E on 26OHC-induced cytotoxicity were investigated in smooth muscle cells isolated from the arteries of human umbilical cords.MethodsTo study the cytotoxicity of oxysterols, the cells were incubated with each oxysterol at a level of 10 micrograms/ml from 24 to 120 hours, then 45Ca++ uptake, cytosolic free Ca++ level, [3H]thymidine incorporation, total DNA content and viable cell number were measured. Cholesterol was used as a control. For tracing the possible origin of cytotoxicity of 26OHC, cholesterol, phospholipid and 26OHC content in the membrane were investigated from 24 to 72 hours. For determining whether antioxidants had a protective effect against the cytotoxicity of 26OHC, vitamin E and butylated hydroxytoluene (BHT) were used.ResultsThe results indicated that the oxysterols elevated 45Ca++ uptake and cytosolic free Ca++ level, but diminished [3H]thymidine incorporation, total DNA content and viable cell number. 26OHC lowered the cholesterol content of the membrane and incorporated into the membrane after 24 hours of the incubation, but did not alter the total phospholipid content of the membrane until 72 hours. Neither vitamin E or BHT significantly protected the cells from the 26OHC-induced alterations.ConclusionWe suggest that the cytotoxicity of oxysterols, which might result in an alteration in Ca++ ion flow into the cell by decreasing cholesterol content and incorporating oxysterol itself into the membranes, could not be protected by vitamin E.

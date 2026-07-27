@@ -1,0 +1,18 @@
+Compound: chenodeoxycholate-3-O-beta-D-glucoside(1-)
+ChEBI ID: CHEBI:142610
+PubChem CID: 135563666
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(3R,5R,7R,8R,9S,10S,13R,14S,17R)-7-hydroxy-10,13-dimethyl-3-[(2R,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C30H49O9-
+Molecular Weight: 553.7
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)C)O)C
+InChI: InChI=1S/C30H50O9/c1-15(4-7-23(33)34)18-5-6-19-24-20(9-11-30(18,19)3)29(2)10-8-17(12-16(29)13-21(24)32)38-28-27(37)26(36)25(35)22(14-31)39-28/h15-22,24-28,31-32,35-37H,4-14H2,1-3H3,(H,33,34)/p-1/t15-,16+,17-,18-,19+,20+,21-,22-,24+,25-,26+,27-,28-,29+,30-/m1/s1
+InChIKey: QRLIJDGVRXVHQD-UVMPBBQUSA-M
+XLogP: 4
+TPSA: 160
+H-Bond Donors: 5
+H-Bond Acceptors: 9
+
+== ChEBI definition ==
+A bile acid anion that results from the deprotonation of the carboxy group of chenodeoxycholic acid-3-<em>O</em>-β-<small>D</small>-glucoside; Major species at pH 7.3.

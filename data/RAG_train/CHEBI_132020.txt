@@ -1,0 +1,18 @@
+Compound: S-choloyl-4'-phosphopantetheine(2-)
+ChEBI ID: CHEBI:132020
+PubChem CID: 119058176
+
+== Chemical properties ==
+IUPAC Name: [(3R)-3-hydroxy-2,2-dimethyl-4-oxo-4-[[3-oxo-3-[2-[(4R)-4-[(3R,5S,7R,8R,9S,10S,12S,13R,14S,17R)-3,7,12-trihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoyl]sulfanylethylamino]propyl]amino]butyl] phosphate
+Molecular Formula: C35H59N2O11PS-2
+Molecular Weight: 746.9
+SMILES: C[C@H](CCC(=O)SCCNC(=O)CCNC(=O)[C@@H](C(C)(C)COP(=O)([O-])[O-])O)[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)O)C
+InChI: InChI=1S/C35H61N2O11PS/c1-20(6-9-29(42)50-15-14-36-28(41)11-13-37-32(44)31(43)33(2,3)19-48-49(45,46)47)23-7-8-24-30-25(18-27(40)35(23,24)5)34(4)12-10-22(38)16-21(34)17-26(30)39/h20-27,30-31,38-40,43H,6-19H2,1-5H3,(H,36,41)(H,37,44)(H2,45,46,47)/p-2/t20-,21+,22-,23-,24+,25+,26-,27+,30+,31+,34+,35-/m1/s1
+InChIKey: UPYNKWYJRGJDLW-PVNVRVFMSA-L
+XLogP: 1.6
+TPSA: 254
+H-Bond Donors: 6
+H-Bond Acceptors: 12
+
+== ChEBI definition ==
+An <em>S</em>-acyl-4'-phosphopantetheine obtained by deprotonation of the phosphate OH groups of <em>S</em>-choloyl-4'-phosphopantetheine; major species at pH 7.3.

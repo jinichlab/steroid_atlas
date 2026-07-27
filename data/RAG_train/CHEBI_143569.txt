@@ -1,0 +1,18 @@
+Compound: 3beta-hydroxy-4alpha-methylsteroid-4beta-carboxylate
+ChEBI ID: CHEBI:143569
+PubChem CID: 146035865
+
+== Chemical properties ==
+IUPAC Name: (3S,4R)-3-hydroxy-4,10,13-trimethyl-1,2,3,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthrene-4-carboxylic acid
+Molecular Formula: C21H34O3
+Molecular Weight: 334.5
+SMILES: C[C@@]1([C@H](CCC2(C1CCC3C2CCC4(C3CCC4)C)C)O)C(=O)O
+InChI: InChI=1S/C21H34O3/c1-19-10-4-5-14(19)13-6-7-16-20(2,15(13)8-11-19)12-9-17(22)21(16,3)18(23)24/h13-17,22H,4-12H2,1-3H3,(H,23,24)/t13?,14?,15?,16?,17-,19?,20?,21+/m0/s1
+InChIKey: DWKHAHUWMWAIAP-UVESEQQFSA-N
+XLogP: 6
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+Any steroid acid anion obtained by deprotonation of the 4β-carboxy group of a 3β-hydroxy-4α-methylsteroid-4β-carboxylic acid.

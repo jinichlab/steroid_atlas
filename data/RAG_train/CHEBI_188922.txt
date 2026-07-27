@@ -1,0 +1,15 @@
+Compound: (22S)-22-hydroxy C28-steroid
+ChEBI ID: CHEBI:188922
+PubChem CID: 162422385
+
+== Chemical properties ==
+IUPAC Name: (3S)-2-(10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl)-5,6-dimethylheptan-3-ol
+Molecular Formula: C28H50O
+Molecular Weight: 402.7
+SMILES: CC(C)C(C)C[C@@H](C(C)C1CCC2C1(CCC3C2CCC4C3(CCCC4)C)C)O
+InChI: InChI=1S/C28H50O/c1-18(2)19(3)17-26(29)20(4)23-12-13-24-22-11-10-21-9-7-8-15-27(21,5)25(22)14-16-28(23,24)6/h18-26,29H,7-17H2,1-6H3/t19?,20?,21?,22?,23?,24?,25?,26-,27?,28?/m0/s1
+InChIKey: XCYIMZFGSRPMQH-YVXPVVMSSA-N
+XLogP: 10
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1

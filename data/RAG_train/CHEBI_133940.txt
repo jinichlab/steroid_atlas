@@ -1,0 +1,40 @@
+Compound: lithocholate sulfate(2-)
+ChEBI ID: CHEBI:133940
+PubChem CID: 122391354
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(3R,5R,8R,9S,10S,13R,14S,17R)-10,13-dimethyl-3-sulfonatooxy-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H38O6S-2
+Molecular Weight: 454.6
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@H]4[C@@]3(CC[C@H](C4)OS(=O)(=O)[O-])C)C
+InChI: InChI=1S/C24H40O6S/c1-15(4-9-22(25)26)19-7-8-20-18-6-5-16-14-17(30-31(27,28)29)10-12-23(16,2)21(18)11-13-24(19,20)3/h15-21H,4-14H2,1-3H3,(H,25,26)(H,27,28,29)/p-2/t15-,16-,17-,18+,19-,20+,21+,23+,24-/m1/s1
+InChIKey: AXDXVEYHEODSPN-HVATVPOCSA-L
+XLogP: 6.4
+TPSA: 115
+H-Bond Donors: 0
+H-Bond Acceptors: 6
+
+== ChEBI definition ==
+A steroid sulfate oxoanion obtained by deprotonation of the carboxylic acid and sulfate functions of lithocholic acid sulfate; major species at pH 7.3.
+
+== Literature on lithocholate sulfate(2-) ==
+
+[PMID 32114508] Alteration in the Plasma Concentrations of Endogenous Organic Anion-Transporting Polypeptide 1B Biomarkers in Patients with Non-Small Cell Lung Cancer Treated with Paclitaxel
+2020
+Paclitaxel has been considered to cause OATP1B-mediated drug-drug interactions at therapeutic doses; however, its clinical relevance has not been demonstrated. This study aimed to elucidate in vivo inhibition potency of paclitaxel against OATP1B1 and OATP1B3 using endogenous OATP1B biomarkers. Paclitaxel is an inhibitor of OATP1B1 and OATP1B3, with Ki of 0.579 ± 0.107 and 5.29 ± 3.87 μM, respectively. Preincubation potentiated its inhibitory effect on both OATP1B1 and OATP1B3, with Ki of 0.154 ± 0.031 and 0.624 ± 0.183 μM, respectively. Ten patients with non-small cell lung cancer who received 200 mg/m2 of paclitaxel by a 3-hour infusion were recruited. Plasma concentrations of 10 endogenous OATP1B biomarkers-namely, coproporphyrin I, coproporphyrin III, glycochenodeoxycholate-3-sulfate, glycochenodeoxycholate-3-glucuronide, glycodeoxycholate-3-sulfate, glycodeoxycholate-3-glucuronide, lithocholate-3-sulfate, glycolithocholate-3-sulfate, taurolithocholate-3-sulfate, and chenodeoxycholate-24-glucuronide-were determined in the patients with non-small cell lung cancer on the day before paclitaxel administration and after the end of paclitaxel infusion for 7 hours. Paclitaxel increased the area under the plasma concentration-time curve (AUC) of the endogenous biomarkers 2- to 4-fold, although a few patients did not show any increment in the AUC ratios of lithocholate-3-sulfate, glycolithocholate-3-sulfate, and taurolithocholate-3-sulfate. Therapeutic doses of paclitaxel for the treatment of non-small cell lung cancer (200 mg/m2) will cause significant OATP1B1 inhibition during and at the end of the infusion. This is the first demonstration that endogenous OATP1B biomarkers could serve as surrogate biomarkers in patients. SIGNIFICANCE STATEMENT: Endogenous biomarkers can address practical and ethical issues in elucidating transporter-mediated drug-drug interaction (DDI) risks of anticancer drugs clinically. We could elucidate a significant increment of the plasma concentrations of endogenous OATP1B biomarkers after a 3-hour infusion (200 mg/m2) of paclitaxel, a time-dependent inhibitor of OATP1B, in patients with non-small cell lung cancer. The endogenous OATP1B biomarkers are useful to assess the possibility of OATP1B-mediated DDIs in patients and help in appropriately designing a dosing schedule to avoid the DDIs.
+
+[PMID 9508524] Enhanced biliary excretion of lithocholate-3-sulfate by ursodeoxycholate-3,7-disulfate infusion in Eisai hyperbilirubinemic rat (EHBR)
+1998
+Biliary excretion of lithocholate-3-sulfate and ursodeoxycholate 3,7-disulfate is markedly impaired in EHBR. In the present study, the effects of ursodeoxycholate 3,7-disulfate infusion on lithocholate-3-sulfate excretion were studied in EHBR and Sprague-Dawley rats. Although in control rats, ursodeoxycholate 3,7-disulfate infusion had no effect on biliary lithocholate-3-sulfate excretion, in EHBR it enhanced biliary lithocholate-3-sulfate excretion. Although ursodeoxycholate 3,7-disulfate dose-dependently inhibited lithocholate-3-sulfate binding by rat serum albumin and rat liver cytosol, it did not affect the serum clearance of lithocholate-3-sulfate in EHBR in vivo. These findings indicate that in EHBR, in which the major ATP-dependent organic anion transporter is impaired, the excretory pathway for ursodeoxycholate 3,7-disulfate may interact to that for lithocholate-3-sulfate.
+
+[PMID 7648982] Mechanisms of biliary excretion of lithocholate-3-sulfate in Eisai hyperbilirubinemic rats (EHBR)
+1995
+Biliary excretion of lithocholate-3-sulfate is markedly impaired in EHBR. To examine the mechanism of biliary lithocholate-3-sulfate excretion in EHBR, the effects of colchicine treatment, a vesicular transport inhibitor, and infusion of taurocholate and organic anions were studied in EHBR and Sprague-Dawley rats. Colchicine treatment and taurocholate infusion had no effect of biliary lithocholate-3-sulfate excretion in EHBR, suggesting that biliary lithocholate-3-sulfate excretion is not mediated by the vesicular transport or by the bile acid excretory pathway. In control Sprague-Dawley rats, both sulfobromophthalein and dibromosulfophthalein infusion inhibited biliary lithocholate-3-sulfate excretion. In contrast, in EHBR dibromosulfophthalein infusion inhibited biliary lithocholate-3-sulfate excretion but BSP infusion did not. Indocyanine green and pravastatin infusion did not affect biliary lithocholate-3-sulfate excretion but pravastatin infusion had no effect in EHBR. These findings indicate that, whether physiologically important or not, two of more excretory pathways for organic anions exist at the canalicular membrane other than the ATP-dependent one.
+
+[PMID 12191677] Effect of ursodeoxycholate-3,7-disulfate on biliary excretion of lithocholate-3-O-glucuronide in Eisai hyperbilirubinemic rat (EHBR)
+2002
+Biliary excretion of lithocholate-3-O-glucuronide and ursodeoxycholate-3,7-disulfate is markedly impaired in EHBR, in which the multidrug resistance protein 2 (Mrp2), a major ATP-dependent canalicular organic anion transporter, is impaired. We previously reported that biliary excretion of lithocholate-3-sulfate was enhanced by ursodeoxycholate-3,7-disulfate in Eisai hyperbilirubinemic rat (EHBR). In the present study, we examined the effect of ursodeoxycholate-3,7-disulfate infusion on biliary excretion of lithocholate-3-O-glucuronide. Although in control rats, ursodeoxycholate-3,7-disulfate infusion had no effect on biliary lithocholate-3-O-glucuronide excretion, in EHBR it enhanced biliary lithocholate-3-O-glucuronide excretion. These findings indicate that ursodeoxycholate-3,7-disulfate may interact to the excretory pathway of lithocholate-3-O-glucuronide and enhances biliary excretion of lithocholate-3-O-glucuronide in EHBR.
+
+[PMID 7568341] Biliary cefpiramide excretion: its relation to biliary excretion of bile acids and sulfobromophthalein
+1995
+Cefpiramide, a beta-lactam antibiotic, has been reported to be excreted from hepatocytes into the bile by a carrier-mediated system. Herein, the relationship of biliary cefpiramide excretion to the excretion of bile acids and sulfobromophthalein was studied in rats. Biliary cefpiramide excretion was markedly inhibited by sulfobromophthalein, lithocholate-3-O-glucuronide and taurolithocholate-3-sulfate, whereas it was not inhibited by ursodeoxycholate or taurocholate. However, the inhibitory effect of cefpiramide on the biliary excretion of sulfobromophthalein or lithocholate-3-sulfate was very small. These findings indicate that, although cefpiramide is excreted by a process common to organic anions and bile acid sulfate and glucuronide, two or more excretory pathways for organic anions exist and cefpiramide has affinity for only one of these carriers.

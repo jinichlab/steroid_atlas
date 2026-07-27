@@ -1,0 +1,18 @@
+Compound: 3beta-hydroxy-4,4-dimethylsteroid
+ChEBI ID: CHEBI:143563
+PubChem CID: 146035862
+
+== Chemical properties ==
+IUPAC Name: (3S)-4,4,10,13-tetramethyl-1,2,3,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-ol
+Molecular Formula: C21H36O
+Molecular Weight: 304.5
+SMILES: CC1([C@H](CCC2(C1CCC3C2CCC4(C3CCC4)C)C)O)C
+InChI: InChI=1S/C21H36O/c1-19(2)17-8-7-14-15-6-5-11-20(15,3)12-9-16(14)21(17,4)13-10-18(19)22/h14-18,22H,5-13H2,1-4H3/t14?,15?,16?,17?,18-,20?,21?/m0/s1
+InChIKey: MXDKBVHPMDJCNG-GRCSFXLMSA-N
+XLogP: 6.7
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+Any 3β-hydroxy steroid which is substituted by two methyl groups at position 4.

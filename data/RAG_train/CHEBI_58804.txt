@@ -1,0 +1,18 @@
+Compound: 12alpha-hydroxy-3-oxochola-4,6-dien-24-oate
+ChEBI ID: CHEBI:58804
+PubChem CID: 20848947
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(8R,9S,10R,12S,13R,14S,17R)-12-hydroxy-10,13-dimethyl-3-oxo-1,2,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H33O4-
+Molecular Weight: 385.5
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2C=CC4=CC(=O)CC[C@]34C)O)C
+InChI: InChI=1S/C24H34O4/c1-14(4-9-22(27)28)18-7-8-19-17-6-5-15-12-16(25)10-11-23(15,2)20(17)13-21(26)24(18,19)3/h5-6,12,14,17-21,26H,4,7-11,13H2,1-3H3,(H,27,28)/p-1/t14-,17+,18-,19+,20+,21+,23+,24-/m1/s1
+InChIKey: DJVAMCYXFUWMLS-QUPGBHKMSA-M
+XLogP: 4.5
+TPSA: 77.4
+H-Bond Donors: 1
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+Conjugate base of 12α-hydroxy-3-oxochola-4,6-dien-24-oic acid.

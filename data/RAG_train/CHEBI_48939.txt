@@ -1,0 +1,40 @@
+Compound: (25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetrol
+ChEBI ID: CHEBI:48939
+PubChem CID: 24771793
+
+== Chemical properties ==
+IUPAC Name: (3R,5S,7R,8R,9S,10S,12S,13R,14S,17R)-17-[(2R,6R)-7-hydroxy-6-methylheptan-2-yl]-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthrene-3,7,12-triol
+Molecular Formula: C27H48O4
+Molecular Weight: 436.7
+SMILES: C[C@H](CCC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)O)C)CO
+InChI: InChI=1S/C27H48O4/c1-16(15-28)6-5-7-17(2)20-8-9-21-25-22(14-24(31)27(20,21)4)26(3)11-10-19(29)12-18(26)13-23(25)30/h16-25,28-31H,5-15H2,1-4H3/t16-,17-,18+,19-,20-,21+,22+,23-,24+,25+,26+,27-/m1/s1
+InChIKey: XJZGNVBLVFOSKJ-IUFSEJPUSA-N
+XLogP: 5.3
+TPSA: 80.9
+H-Bond Donors: 4
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+(25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetrol is a 5beta-cholestane-3alpha,7alpha,12alpha,26-tetrol.
+
+== Literature on (25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetrol ==
+
+[PMID 38650983] Epidermal oxysterols function as alarm substances in zebrafish
+2024
+Alarm substances signal imminent predation thread and enable anti-predation strategies. In shoaling fish, alarm cues diffuse from injured skins that induce intense fear and anti-predation behaviors in other members. While these "fear substances" are shown to be present in numerous fishes and thought to exist in roughly 8,000 Ostariophysan species, their chemical nature remains largely unknown. We posited that fish alarm cues comprise small compounds and induce specific behaviors characteristic of fish exposed to skin extracts. Using the behaviors as bioassays, we tracked the alarm function of zebrafish skin extract to two compounds, 24-methyl-5α-cholestane-3α,7α,12α,24,28-pentahydroxy 28-sulfate, an oxysterol sulfate, and 5α-cyprinol sulfate. At concentrations of less than one nanomolar, each compound induced anti-predator behaviors and increased cortisol levels in zebrafish. Their mixture, at the natural ratio, replicated the skin extract in eliciting the full suite of anti-predator behavior patterns. Our findings reveal a molecular mechanism whereby fish escape predation danger.
+
+[PMID 30080648] New steroidal alkaloid and furostanol glycosides isolated from Solanum lyratum with cytotoxicity
+2018
+Two previously undescribed steroidal compounds, 16, 23-epoxy-22, 26-epimino-cholest-22(N), 23, 25(26)-trien-3β-ol-3-O-β-D-glucopyranosyl-(1→2)-β-D-glucopyranosyl-(1→4)-β-D-galactopyranoside (1) and 26-O-β-D-glucopyranosyl-(25R)-5α-furost-20(22)-en-3β, 26-diol (2), together with 7 known ones including 26-O-β-D-glucopyranosyl-(25R)-5, 20(22)-dien-furost-3β, 26-diol (3), (25R)-5-en-spirost-3β-ol-O-β-D-glucopyranosyl-(1→4)-[α-L-rhmanopyranosyl-(1→2)]-β-D-galactopyranoside (4), funkioside D (5), aspidistrin (6), tigogenin-3-O-β-D-lucotrioside (7), desglucolanatigonin II (8), and degalactotigonin (9), were isolated from Solanum lyratum Thunb. Their cytotoxic activities were tested in two cancer cell lines by MTT method. One of the steroidal glycosides (6) showed significant cytotoxic activity against gastric cancer SGC7901 and liver cancer BEL-7402 cells.
+
+[PMID 32993368] Polyhydroxylated steroid derivatives from the starfish <i>Pentaceraster regulus</i>
+2022
+A new polyhydroxysteroid glycoside, regulusoside D (1), and a new polyhydroxylated steroid, (24S)-cholestane-3β,5,6β,8,15α,24-hexol (2), together with seven known compounds were purified from the starfish Pentaceraster regulus collected near Con Co Islands, Vietnam. The structure elucidation was confirmed by extensive analysis of their NMR and HR-QTOF mass experiments. Among isolated compounds, regulusoside D (1), (24S)-cholestane-3β,5,6β,8,15α,24-hexol (2), granulatoside A (4), 5α-cholestane-3β,6β,7α,15α,16β,26-hexol (6), 5α-cholestane-3β,6β,7α,8β,15α,16β,26-heptol (7) and 5α-cholestane-3β,6α,8,15α,16β,26-hexol (8) exhibited strong inhibitory effects on LPS-induced NO production in RAW264.7 cells with IC50 values of 9.13 ± 1.17, 9.19 ± 0.77, 8.63 ± 3.31, 12.61 ± 0.51, 14.83 ± 3.02 and 10.98 ± 1.22 µM, respectively.
+
+[PMID 31844759] Isolation and identification of cholestane and dihydropyrene from <i>Calophyllum inophyllum</i>
+2019
+The highest population of Calophyllum inophyllum is in Indonesia. One of the bioactive compound contained in C. inophyllum leave is cholestane. The extraction method was employed to obtain crude extract from these leaves. It was followed by identification of the bioactive compounds. The purpose of this research was to develop a process for isolating and identifying cholestane and dihydropyrene from methanolic extract of C. inophyllum leaves in high yield and purity. The effect of crude extract to non-polar solvent mass ratio and non-polar solvent types on the separation of the bioactive compounds were also systematically investigated. New compounds (trans-2-[2-(trifluoromethyl)phenyl]-10b,10c-dimethyl-10b, 10c-dihydropyrene and anti-4-aza-B-homo-5.alpha-cholestane-3-one) were also identified in C. inophyllum leaves. The successful separation was obtained by employing CS2 as the solvent and crude extract to CS2 mass ratio of 1/10 (g/g).
+
+[PMID 23969106] Steroidal saponins from the flowers of Dioscorea bulbifera var. sativa
+2013
+Eleven steroidal saponins, dioscoreanosides A-K, along with five known congeners, were isolated from the flowers of Dioscorea bulbifera var. sativa. Their structures were established by extensive NMR experiments in conjunction with mass spectrometry. The isolated compounds were tested for cytotoxicity against urinary bladder carcinoma cells (ECV-304 cells). Our results revealed a moderate activity for spiroconazol A (15), pennogenin 3-O-α-l-rhamnopyranosyl-(1→4)-α-l-rhamnopyranosyl-(1→4)-[α-l-rhamnopyranosyl-(1→2)]-β-d-glucopyranoside (12), and 26-O-ß-d-glucopyranosyl-(25R)-5-en-furost-3ß,17α,22α,26-tetraol-3-O-α-l-rhamnopyranosyl-(1→4)-α-l-rhamnopyranosyl-(1→4)-[α-l-rhamnopyranosyl-(1→2)]-β-d-glucopyranoside (13).

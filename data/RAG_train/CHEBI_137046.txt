@@ -1,0 +1,18 @@
+Compound: 6beta,16alpha,17alpha-trihydroxyprogesterone
+ChEBI ID: CHEBI:137046
+PubChem CID: 129011071
+
+== Chemical properties ==
+IUPAC Name: (6R,8R,9S,10R,13S,14S,16R,17S)-17-acetyl-6,16,17-trihydroxy-10,13-dimethyl-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthren-3-one
+Molecular Formula: C21H30O5
+Molecular Weight: 362.5
+SMILES: CC(=O)[C@]1([C@@H](C[C@@H]2[C@@]1(CC[C@H]3[C@H]2C[C@H](C4=CC(=O)CC[C@]34C)O)C)O)O
+InChI: InChI=1S/C21H30O5/c1-11(22)21(26)18(25)10-15-13-9-17(24)16-8-12(23)4-6-19(16,2)14(13)5-7-20(15,21)3/h8,13-15,17-18,24-26H,4-7,9-10H2,1-3H3/t13-,14+,15+,17-,18-,19-,20+,21-/m1/s1
+InChIKey: SSBCUQUXYYMNRG-NAUTVQSMSA-N
+XLogP: 1.1
+TPSA: 94.8
+H-Bond Donors: 3
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A 3-oxo-Δ<small><sup>4</small></sup> steroid that is progesterone substituted by hydroxy groups at positions 6, 16 and 17 (6β,16α,17α-stereoisomer).

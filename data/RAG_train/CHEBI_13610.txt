@@ -1,0 +1,5 @@
+Compound: 3beta-hydroxysterol ester
+ChEBI ID: CHEBI:13610
+
+== ChEBI definition ==
+A sterol ester obtained by formal condensation of the carboxy group of any carboxylic acid with the 3-hydroxy group of a 3β-hydroxysterol.

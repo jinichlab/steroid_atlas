@@ -1,0 +1,18 @@
+Compound: 3beta-hydroxysteroid-4alpha-carboxylate
+ChEBI ID: CHEBI:136966
+PubChem CID: 146035867
+
+== Chemical properties ==
+IUPAC Name: (3S,4S)-3-hydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthrene-4-carboxylic acid
+Molecular Formula: C20H32O3
+Molecular Weight: 320.5
+SMILES: CC12CCCC1C3CCC4[C@@H]([C@H](CCC4(C3CC2)C)O)C(=O)O
+InChI: InChI=1S/C20H32O3/c1-19-9-3-4-13(19)12-5-6-15-17(18(22)23)16(21)8-11-20(15,2)14(12)7-10-19/h12-17,21H,3-11H2,1-2H3,(H,22,23)/t12?,13?,14?,15?,16-,17-,19?,20?/m0/s1
+InChIKey: QTZKHXDNTPVLTH-DXFVOQEXSA-N
+XLogP: 5.6
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A steroid acid anion that has a carboxylate group located at the 4α-position together with a hydroxy substituent located at the 3β-position. Major microspecies at pH 7.4.

@@ -1,0 +1,18 @@
+Compound: 17alpha-hydroxy-C21-steroid
+ChEBI ID: CHEBI:138141
+PubChem CID: 129626755
+
+== Chemical properties ==
+IUPAC Name: (17R)-17-ethyl-10,13-dimethyl-1,2,3,4,5,6,7,8,9,11,12,14,15,16-tetradecahydrocyclopenta[a]phenanthren-17-ol
+Molecular Formula: C21H36O
+Molecular Weight: 304.5
+SMILES: CC[C@]1(CCC2C1(CCC3C2CCC4C3(CCCC4)C)C)O
+InChI: InChI=1S/C21H36O/c1-4-21(22)14-11-18-16-9-8-15-7-5-6-12-19(15,2)17(16)10-13-20(18,21)3/h15-18,22H,4-14H2,1-3H3/t15?,16?,17?,18?,19?,20?,21-/m1/s1
+InChIKey: JSIVWCLRCGAVHN-ILZKQPLKSA-N
+XLogP: 6.6
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+Any C<small><sub>21</sub></small>-steroid carrying a hydroxy substituent at the 17α-position. Note that individual examples may have ring substituents at other positions and/or contain double bonds, aromatic A-rings, expanded/contracted rings etc., so the formula and mass may vary from that given for the generic structure.

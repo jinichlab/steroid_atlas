@@ -1,0 +1,28 @@
+Compound: (25S)-Delta(4)-dafachronate
+ChEBI ID: CHEBI:71541
+PubChem CID: 70698394
+
+== Chemical properties ==
+IUPAC Name: (2S,6R)-6-[(8S,9S,10R,13R,14S,17R)-10,13-dimethyl-3-oxo-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-17-yl]-2-methylheptanoate
+Molecular Formula: C27H41O3-
+Molecular Weight: 413.6
+SMILES: C[C@H](CCC[C@H](C)C(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C
+InChI: InChI=1S/C27H42O3/c1-17(6-5-7-18(2)25(29)30)22-10-11-23-21-9-8-19-16-20(28)12-14-26(19,3)24(21)13-15-27(22,23)4/h16-18,21-24H,5-15H2,1-4H3,(H,29,30)/p-1/t17-,18+,21+,22-,23+,24+,26+,27-/m1/s1
+InChIKey: PSXQJZDFWDKBIP-KMPPVSSLSA-M
+XLogP: 7.7
+TPSA: 57.2
+H-Bond Donors: 0
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A steroid acid anion that is the conjugate base of (25<i>S</i>)-Δ<small><sup>4</small></sup>-dafachronic acid, obtained by deprotonation of the carboxy group; major species at pH 7.3.
+
+== Literature on (25S)-Delta(4)-dafachronate ==
+
+[PMID 20178781] Functional divergence of dafachronic acid pathways in the control of C. elegans development and lifespan
+2010
+Steroid hormone and insulin/insulin-like growth factor signaling (IIS) pathways control development and lifespan in the nematode Caenorhabditis elegans by regulating the activity of the nuclear receptor DAF-12 and the FoxO transcription factor DAF-16, respectively. The DAF-12 ligands Delta(4)- and Delta(7)-dafachronic acid (DA) promote bypass of the dauer diapause and proper gonadal migration during larval development; in adults, DAs influence lifespan. Whether Delta(4)- and Delta(7)-DA have unique biological functions is not known. We identified the 3-beta-hydroxysteroid dehydrogenase (3betaHSD) family member HSD-1, which participates in Delta(4)-DA biosynthesis, as an inhibitor of DAF-16/FoxO activity. Whereas IIS promotes the cytoplasmic sequestration of DAF-16/FoxO, HSD-1 inhibits nuclear DAF-16/FoxO activity without affecting DAF-16/FoxO subcellular localization. Thus, HSD-1 and IIS inhibit DAF-16/FoxO activity via distinct and complementary mechanisms. In adults, HSD-1 was required for full lifespan extension in IIS mutants, indicating that HSD-1 interactions with IIS are context-dependent. In contrast to the Delta(7)-DA biosynthetic enzyme DAF-36, HSD-1 is dispensable for proper gonadal migration and lifespan extension induced by germline ablation. These findings provide insights into the molecular interface between DA and IIS pathways and suggest that Delta(4)- and Delta(7)-DA pathways have unique as well as overlapping biological functions in the control of development and lifespan.
+
+[PMID 7585697] Utility of non-covalent complexes in the matrix-assisted laser desorption ionization mass spectrometry of heparin-derived oligosaccharides
+1995
+Molecular weights of heparin-derived oligosaccharides ranging from disaccharides to hexadecasaccharides have been determined by matrix-assisted laser desorption ionization time-of-flight mass spectrometry. While these compounds ionize poorly or not at all when used as such, a strong signal can be obtained of their ionic complexes formed with a basic peptide or protein. The molecular weight of the sulfated oligosaccharide is determined by subtracting the mass of the basic component from that of the complex. Optimization of the experimental conditions resulted in sub-picomole sensitivity, in the elimination of sulfate loss and of the interference from attachment of inorganic cations. Synthetic peptides (Arg-Gly)10 and (Arg-Gly)15 were specifically designed as complexing agents for synthetic and natural heparin fragments up to decasaccharides. Accurate molecular weight determination on chemically homogeneous oligosaccharides (+/- 0.05%) unambiguously identified the number of saccharide units, and the number of O,N-sulfate and N-acetyl groups. For oligosaccharides larger than decasaccharides, a small basic protein, angiogenin (M(r) = 14,120), was used to form the complex (an inhomogeneous hexadecasaccharide fraction was the largest available for this study). For inhomogeneous samples larger than decasaccharides, the mass accuracy is lower (+/- 0.2-0.3%) but still suffices to determine the number of saccharide units present and to estimate the number of sulfate groups, except it is no longer possible to differentiate one sulfate from two N-acetyl groups (delta = 4 Da). However, taking into account known regularities of sulfation and acetylation, the specificity of heparin lyases and chemical degradation steps, the method promises to contribute significantly to the determination of the primary structure of heparin and other sulfated glycosaminoglycans.

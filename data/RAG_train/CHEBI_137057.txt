@@ -1,0 +1,28 @@
+Compound: cholesta-5,7-dien-3beta,25-diol
+ChEBI ID: CHEBI:137057
+PubChem CID: 9908983
+
+== Chemical properties ==
+IUPAC Name: (3S,9S,10R,13R,14R,17R)-17-[(2R)-6-hydroxy-6-methylheptan-2-yl]-10,13-dimethyl-2,3,4,9,11,12,14,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C27H44O2
+Molecular Weight: 400.6
+SMILES: C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CC=C4[C@@]3(CC[C@@H](C4)O)C)C
+InChI: InChI=1S/C27H44O2/c1-18(7-6-14-25(2,3)29)22-10-11-23-21-9-8-19-17-20(28)12-15-26(19,4)24(21)13-16-27(22,23)5/h8-9,18,20,22-24,28-29H,6-7,10-17H2,1-5H3/t18-,20+,22-,23+,24+,26+,27-/m1/s1
+InChIKey: JJFYNCJHSCTBPW-TVQCKQBJSA-N
+XLogP: 6.2
+TPSA: 40.5
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A cholestanoid that is 7-dehydrocholesterol carrying an additional hydroxy substituent at position 25.
+
+== Literature on cholesta-5,7-dien-3beta,25-diol ==
+
+[PMID 42142606] Concise synthesis of 7-dehydrocholesterol and 25-hydroxy-7-dehydrocholesterol
+2026
+7-Dehydrocholesterol (7-DHC) and its hydroxylated product, 25-hydroxy-7-dehydrocholesterol (25-OH-7-DHC), exhibit diverse biological activities and serve as key precursors in the industrial synthesis of vitamin D3 (VD3) and 25-hydroxyvitamin D3 (25-OH-VD3). Consequently, various synthetic routes for 7-DHC and 25-OH-7-DHC have been proposed. Herein, we report a concise and practical synthetic route to 7-DHC (64% total yield) and 25-OH-7-DHC (44% total yield), using commercially available cholesterol and 25-hydroxycholesterol as the starting materials, respectively. The key reaction conditions, including solvent choice, temperature, base, and additive, were systematically investigated and optimized. This innovative synthetic route provides a cost-effective strategy for the potential large-scale production of 7-DHC and 25-OH-7-DHC.
+
+[PMID 24269243] 7-Dehydrocholesterol metabolites produced by sterol 27-hydroxylase (CYP27A1) modulate liver X receptor activity
+2014
+7-Dehydrocholesterol (7-DHC) is a common precursor of vitamin D3 and cholesterol. Although various oxysterols, oxygenated cholesterol derivatives, have been implicated in cellular signaling pathways, 7-DHC metabolism and potential functions of its metabolites remain poorly understood. We examined 7-DHC metabolism by various P450 enzymes and detected three metabolites produced by sterol 27-hydroxylase (CYP27A1) using high-performance liquid chromatography. Two were further identified as 25-hydroxy-7-DHC and 26/27-hydroxy-7-DHC. These 7-DHC metabolites were detected in serum of a patient with Smith-Lemli-Opitz syndrome. Luciferase reporter assays showed that 25-hydroxy-7-DHC activates liver X receptor (LXR) α, LXRβ and vitamin D receptor and that 26/27-hydroxy-7-DHC induces activation of LXRα and LXRβ, although the activities of both compounds on LXRs were weak. In a mammalian two-hybrid assay, 25-hydroxy-7-DHC and 26/27-hydroxy-7-DHC induced interaction between LXRα and a coactivator fragment less efficiently than a natural LXR agonist, 22(R)-hydroxycholesterol. These 7-DHC metabolites did not oppose agonist-induced LXR activation and interacted directly to LXRα in a manner distinct from a potent agonist. These findings indicate that the 7-DHC metabolites are partial LXR activators. Interestingly, 25-hydroxy-7-DHC and 26/27-hydroxy-7-DHC suppressed mRNA expression of sterol regulatory element-binding protein 1c, an LXR target gene, in HepG2 cells and HaCaT cells, while they weakly increased mRNA levels of ATP-binding cassette transporter A1, another LXR target, in HaCaT cells. Thus, 7-DHC is catabolized by CYP27A1 to metabolites that act as selective LXR modulators.

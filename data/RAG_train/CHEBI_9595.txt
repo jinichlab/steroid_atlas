@@ -1,0 +1,40 @@
+Compound: tigogenin
+ChEBI ID: CHEBI:9595
+PubChem CID: 99516
+
+== Chemical properties ==
+IUPAC Name: (1R,2S,4S,5'R,6R,7S,8R,9S,12S,13S,16S,18S)-5',7,9,13-tetramethylspiro[5-oxapentacyclo[10.8.0.02,9.04,8.013,18]icosane-6,2'-oxane]-16-ol
+Molecular Formula: C27H44O3
+Molecular Weight: 416.6
+SMILES: C[C@@H]1CC[C@@]2([C@H]([C@H]3[C@@H](O2)C[C@@H]4[C@@]3(CC[C@H]5[C@H]4CC[C@@H]6[C@@]5(CC[C@@H](C6)O)C)C)C)OC1
+InChI: InChI=1S/C27H44O3/c1-16-7-12-27(29-15-16)17(2)24-23(30-27)14-22-20-6-5-18-13-19(28)8-10-25(18,3)21(20)9-11-26(22,24)4/h16-24,28H,5-15H2,1-4H3/t16-,17+,18+,19+,20-,21+,22+,23+,24+,25+,26+,27-/m1/s1
+InChIKey: GMBQZIIUCVWOCD-MFRNJXNGSA-N
+XLogP: 6.5
+TPSA: 38.7
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A widely used steroidal sapogenin isolated from several plant species and used for synthesizing steroid drugs.
+
+== Literature on tigogenin ==
+
+[PMID 42069427] CERTAIN PROPERTIES OF Β-GLUCOSIDASE FROM YUCCA GLORIOSA FLOWERS
+2026
+The search for rational synthetic pathways for steroid drugs from accessible plant sources represents an important and relevant objective. Yucca gloriosa presents significant interest as a source of tigogenin-a valuable sapogenin for steroid hormonal drug production. Along with traditionally utilized leaves, the flowers of this plant contain 1.25-1.48% tigogenin and possess several technological advantages: simpler extraction of the target product due to lower lipophilic substance content and softer raw material texture. Endogenous β-glucosidase plays a key role in the tigogenin production process, catalyzing the conversion of oligofurostanoside to oligospirostanoside. This work investigated the properties of β-glucosidase from flowers of Yucca gloriosa cultivated in Georgia. Two enzyme forms differing in substrate specificity were identified. The first form (30% ammonium sulfate saturation fraction) hydrolyzes both natural oligofurostanoside and synthetic substrate 4-nitrophenyl-β-D-glucopyranoside, whereas the second form (80% saturation fraction) cleaves only the synthetic substrate. For the first β-glucosidase form, which has practical significance for tigogenin production, optimal operating conditions were determined: pH6.3 and temperature 47°C. Notably, the temperature optimum for the flower enzyme (47°C) proved higher than for the leaf enzyme (37°C). Heating at 57°C for 10 minutes reduces enzyme activity by 29%, while at 67°C it reduces activity by 79%.
+
+[PMID 34639219] Synthesis of Demissidine Analogues from Tigogenin via Imine Intermediates
+2021
+A five-step transformation of a spiroketal side chain of tigogenin into an indolizidine system present in solanidane alkaloids such as demissidine and solanidine was elaborated. The key intermediate in the synthesis was spiroimine 3 readily obtained from tigogenin by its RuO4 oxidation to 5,6-dihydrokryptogenin followed by amination with aluminum amide generated in situ from DIBAlH and ammonium chloride. The mild reduction of spiroimine to a 26-hydroxy-dihydropyrrole derivative and subsequent mesylation resulted in the formation of 25-epidemissidinium salt or 23-sulfone depending on reaction conditions.
+
+[PMID 36720039] A Simple Four-Step Synthesis of the Potato Alkaloid Demissidine from the Common Sapogenin Tigogenin
+2023
+A simple synthesis method of solanidane alkaloids from common steroidal sapogenins was developed. Previously described multi-step transformations of tigogenin to demissidine (8-12 steps) were shortened to four steps only. The key-step of the present synthesis was the epimerization at C25 of the lactam intermediate. Different approaches to this reaction, i. e., a classical one via enolate, and a chemoselective umpolung transformation, were thoroughly investigated. The epimerization step is unnecessary if the starting sapogenin has the same configuration at C25 as the target alkaloid because the configuration at C25 (either R or S) remains intact throughout the synthesis. Thus, the related solanidane alkaloids, 12β-hydroxy-25-epi-demissidine and 5-epi-demissidine, were synthesized in the three-step procedure with retention of configuration at this stereogenic center from rockogenin (25R-5α-sapogenin) or sarsasapogenin (25S-5β-sapogenin), respectively.
+
+[PMID 36055516] Concise synthesis of E/F ring spiroethers from tigogenin. Carbaanalogs of steroidal sapogenins and their biological activity
+2022
+A four-step synthesis of five- and six-membered E/F ring spiroethers from tigogenin has been developed. An efficient strategy that features bis-Grignard reaction of dinorcholanic lactone with appropriate bis(bromomagnesio)alkanes followed by acid-mediated spirocyclization was employed to construct a new class of steroid compounds having E and F ring junction as an oxa-carbacyclic system. The synthesized carbaanalogs interact with liposomes and albumin, and also exhibit antibacterial and antifungal activity, demonstrating their pharmacological potential.
+
+[PMID 41289745] Quadratic polynomial prediction model-based isotope-coded equivalent reporter ion assay: A novel single-calibration LC-MS/MS strategy for sensitive quantification of steroidal sapogenin isomers in functional foods
+2026
+Steroidal sapogenins, as characteristic components in functional foods, face LC-MS analytical challenges including difficulty separation, low ionization efficiency, and reference standards dependence. This study developed a novel quadratic polynomial prediction model (QPM) based-isotope-coded equivalent reporter ion assay (iERIA), exemplified using tigogenin and sarsasapogenin. N-Alkylpyridinium quaternization derivatization with pyridine‑d0/d5 impart permanent positive charges, significantly enhancing the ionization efficiency (20-fold) and chromatographic separation (12-fold) in LC-MS analysis. A common fragment ion m/z 255.4 generated by derivatization served as an equivalent reporter ion for quantification, with key MS parameters predicted via the QPM. A simultaneous quantitative method based on a single calibration curve was established and validated in complex matrices, thereby reducing reference standard costs and workload. Notably, the initial QPM for predicting the optimal combination of declustering potential and collision energy ensures the robustness of the iERIA strategy and expands its applicability to multicomponent determination using a single calibration curve.

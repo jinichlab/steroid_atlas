@@ -1,0 +1,24 @@
+Compound: 1alpha-hydroxytestosterone
+ChEBI ID: CHEBI:132358
+PubChem CID: 23256526
+
+== Chemical properties ==
+IUPAC Name: (1S,8S,9S,10R,13S,14S,17S)-1,17-dihydroxy-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C19H28O3
+Molecular Weight: 304.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)C[C@@H]([C@]34C)O
+InChI: InChI=1S/C19H28O3/c1-18-8-7-15-13(14(18)5-6-16(18)21)4-3-11-9-12(20)10-17(22)19(11,15)2/h9,13-17,21-22H,3-8,10H2,1-2H3/t13-,14-,15-,16-,17-,18-,19-/m0/s1
+InChIKey: LUWKGSHFDJJDAJ-LOVVWNRFSA-N
+XLogP: 2.3
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A C<small><sub>19</sub></small>-steroid that is testosterone carrying an additional hydroxy substituent at the 1α-position
+
+== Literature on 1alpha-hydroxytestosterone ==
+
+[PMID 18180313] Testosterone-stimulated growth of the rat prostate may be driven by tissue hypoxia and hypoxia-inducible factor-1alpha
+2008
+Testosterone-stimulated growth of the ventral prostate (VP) in castrated rats is preceded by angiogenesis, but the mechanisms coordinating vascular and tissue growth are unknown. Adult rats were castrated and some treated with testosterone. Tissue hypoxia was studied morphologically using the hypoxia marker pimonidazole (Hypoxyprobe), hypoxia-inducible factor-1 (HIF-1) alpha, vascular endothelial growth factor (VEGF), and carbonicanhydrase 9 (CA-9) levels by western blotting and quantitative RT-PCR. In the intact untreated prostate, most glands were unstained by the hypoxia marker but already 1 day after castration most epithelial cells in the VP were stained. Seven days after castration prostate glands were apparently normoxic again, and HIF-1alpha, VEGF, and CA-9 were decreased. Treatment of 7-day castrated rats with testosterone resulted in increased epithelial hypoxyprobe staining and increased HIF-1alpha, VEGF, and CA-9 levels. The transient increase in tissue hypoxia after testosterone treatment is probably caused by a temporary mismatch between oxygen consumption and supply. Treatment of prostate epithelial cells in vitro under normoxic conditions also increased HIF-1alpha, and this could be blocked if epidermal growth factor receptor (EGFR) signaling was blocked with gefitinib. In vivo gefitinib could, however, not block the testosterone induced increase in HIF-1alpha. Testosterone may thus induce HIF-1alpha and its downstream angiogenesis promoting genes by at least two mechanisms, hypoxia and EGFR signaling. Transient epithelial cell hypoxia could by rapidly increasing HIF-1alpha and VEGF be an essential coordinator of testosterone-stimulated vascular and glandular growth.

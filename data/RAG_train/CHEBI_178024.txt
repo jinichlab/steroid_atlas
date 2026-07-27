@@ -1,0 +1,18 @@
+Compound: 26-oxolanosterol
+ChEBI ID: CHEBI:178024
+PubChem CID: 156587284
+
+== Chemical properties ==
+IUPAC Name: (E,6R)-6-[(3S,5R,10S,13R,14R,17R)-3-hydroxy-4,4,10,13,14-pentamethyl-2,3,5,6,7,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-17-yl]-2-methylhept-2-enal
+Molecular Formula: C30H48O2
+Molecular Weight: 440.7
+SMILES: C[C@H](CC/C=C(\C)/C=O)[C@H]1CC[C@@]2([C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C
+InChI: InChI=1S/C30H48O2/c1-20(19-31)9-8-10-21(2)22-13-17-30(7)24-11-12-25-27(3,4)26(32)15-16-28(25,5)23(24)14-18-29(22,30)6/h9,19,21-22,25-26,32H,8,10-18H2,1-7H3/b20-9+/t21-,22-,25+,26+,28-,29-,30+/m1/s1
+InChIKey: YVJWSYCNRKXINY-AZIDVCJLSA-N
+XLogP: 7.5
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A 3β-sterol that is lanosterol carrying an oxo group at position 26.

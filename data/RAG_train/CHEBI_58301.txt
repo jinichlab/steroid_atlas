@@ -1,0 +1,18 @@
+Compound: taurolithocholic acid sulfate(2-)
+ChEBI ID: CHEBI:58301
+PubChem CID: 25200609
+
+== Chemical properties ==
+IUPAC Name: 2-[[(4R)-4-[(3R,5R,8R,9S,10S,13R,14S,17R)-10,13-dimethyl-3-sulfonatooxy-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoyl]amino]ethanesulfonate
+Molecular Formula: C26H43NO8S2-2
+Molecular Weight: 561.8
+SMILES: C[C@H](CCC(=O)NCCS(=O)(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@H]4[C@@]3(CC[C@H](C4)OS(=O)(=O)[O-])C)C
+InChI: InChI=1S/C26H45NO8S2/c1-17(4-9-24(28)27-14-15-36(29,30)31)21-7-8-22-20-6-5-18-16-19(35-37(32,33)34)10-12-25(18,2)23(20)11-13-26(21,22)3/h17-23H,4-16H2,1-3H3,(H,27,28)(H,29,30,31)(H,32,33,34)/p-2/t17-,18-,19-,20+,21-,22+,23+,25+,26-/m1/s1
+InChIKey: HSNPMXROZIQAQD-GBURMNQMSA-L
+XLogP: 4.4
+TPSA: 169
+H-Bond Donors: 1
+H-Bond Acceptors: 8
+
+== ChEBI definition ==
+A steroid sulfate oxoanion arising from deprotonation of both sulfo groups of taurolithocholic acid sulfate; major species at pH 7.3.

@@ -1,0 +1,33 @@
+Compound: 16alpha-hydroxyprogesterone
+ChEBI ID: CHEBI:15826
+PubChem CID: 243761
+
+== Chemical properties ==
+IUPAC Name: (8S,9S,10R,13S,14S,16R,17R)-17-acetyl-16-hydroxy-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C21H30O3
+Molecular Weight: 330.5
+SMILES: CC(=O)[C@H]1[C@@H](C[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C)O
+InChI: InChI=1S/C21H30O3/c1-12(22)19-18(24)11-17-15-5-4-13-10-14(23)6-8-20(13,2)16(15)7-9-21(17,19)3/h10,15-19,24H,4-9,11H2,1-3H3/t15-,16+,17+,18-,19+,20+,21+/m1/s1
+InChIKey: LOVNYFVWYTXDRE-RMWFXKKMSA-N
+XLogP: 3.3
+TPSA: 54.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+16alpha-hydroxyprogesterone is a 16alpha-hydroxy steroid. It is functionally related to a progesterone.
+
+--- RELATED COMPOUND: progesterone ---
+No literature found for 16alpha-hydroxyprogesterone itself. 16alpha-hydroxyprogesterone is functionally related to progesterone; the abstracts below are about progesterone.
+
+[PMID 42490929] Progesterone signaling in cardio-renal physiology and pathophysiology
+2026
+Progesterone is a multifunctional steroid hormone essential for reproductive function, yet its roles in cardiovascular and renal physiology remain comparatively less understood than those of estrogen. While its classical actions in regulating the menstrual cycle, promoting endometrial receptivity, and maintaining pregnancy are well-established, progesterone also signals through both genomic pathways via nuclear receptors, and non-genomic mechanisms via membrane receptors. These receptors are expressed outside of reproductive tissues, including the vasculature, heart, and kidney, supporting broader systemic effects of progesterone that are not yet fully defined. When compared to the current understanding of estrogen-mediated regulation in these tissues, the mechanisms conferring progesterone-mediated regulation of cardiovascular and renal function are less well studied. This review explores the contemporary understanding of progesterone signaling on cardiorenal physiology and pathophysiology in females and males, highlighting the need for enhanced methodological reporting in studies in this field and further investigation into the integrative roles of progesterone signaling.
+
+[PMID 42480887] Progesterone and vascular function: mechanisms and therapeutic implications in cardiovascular disease
+2026
+Progesterone, the first sex hormone ever discovered, has a long history. Yet, it gained prominence in research during the 1930s. Currently, our understanding of progesterone goes beyond its role in the reproductive system, also encompassing the cardiovascular system. Studies have reported on the protective role played by this hormone in the cardiovascular system, which is primarily due to its actions on the vasculature. Progesterone stimulates vasoactive factors, modulates lipid profiles, reduces inflammatory responses, inhibits platelet aggregation and cell proliferation, and lowers blood pressure, thereby contributing to the reduction of cardiovascular disease risk. However, for a long time, hormone replacement therapy relied on the use of progestins, synthetic compounds that failed to replicate the beneficial effects of progesterone and often cause various adverse effects, which cannot be attributed to progesterone itself. In this context, this review compiles the most recent findings regarding the actions of progesterone in the vascular system, while also presenting a historical overview that contextualizes the research in both clinical and experimental areas related to progesterone. Thus, we seek to clarify the unique role played by progesterone in the cardiovascular system, dispelling misconceptions about its effects and discussing its therapeutic prospects.
+
+[PMID 42426865] Progesterone interferes with microtubule-dependent cell division in Toxoplasma gondii
+2026
+BackgroundToxoplasma gondii is an opportunistic intracellular parasite that can cause severe reproductive disorders during pregnancy. Progesterone is markedly elevated during pregnancy and has been shown to affect the replication of T. gondii. However, the downstream cellular processes and molecular mechanisms underlying progesterone-mediated regulation of parasite replication remain unclear.MethodsTranscriptomic analysis was performed to investigate the global gene expression changes in tachyzoites after progesterone treatment. Differentially expressed genes were subjected to functional enrichment analysis. The effects of progesterone on parasite division were further assessed by immunofluorescence assays targeting subpellicular microtubules, centrosome, and organelles.ResultsTranscriptomic analysis identified 329 differentially expressed genes after progesterone treatment, which were mainly enriched in microtubule-associated pathways, including microtubule motor activity and microtubule-based movement. Although the overall structure of subpellicular microtubules showed no detectable alteration, progesterone selectively disrupted division of the outer core of the centrosome, while the inner core of the centrosome was largely unaffected. Further analysis of organelle division showed that progesterone mainly interfered with early events of endodyogeny, including the segregation of the centrosome, Golgi, and apicoplast, whereas later division-related structures were less affected.ConclusionsThese findings indicate that progesterone impairs T. gondii replication by selectively interfering with microtubule-dependent processes, especially outer core centrosome division. This study provides new insight into how the pregnancy-associated hormone progesterone regulates parasite replication.

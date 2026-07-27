@@ -1,0 +1,18 @@
+Compound: 7alpha,12alpha-dihydroxy-5beta-cholestan-3-one
+ChEBI ID: CHEBI:2288
+PubChem CID: 5284271
+
+== Chemical properties ==
+IUPAC Name: (5R,7R,8R,9S,10S,12S,13R,14S,17R)-7,12-dihydroxy-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C27H46O3
+Molecular Weight: 418.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CCC(=O)C4)C)O)O)C
+InChI: InChI=1S/C27H46O3/c1-16(2)7-6-8-17(3)20-9-10-21-25-22(15-24(30)27(20,21)5)26(4)12-11-19(28)13-18(26)14-23(25)29/h16-18,20-25,29-30H,6-15H2,1-5H3/t17-,18+,20-,21+,22+,23-,24+,25+,26+,27-/m1/s1
+InChIKey: HHVQPBXBALLUDF-QORHGLQKSA-N
+XLogP: 6.3
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 3-oxo-5β-steroid that is 5β-cholestan-3-one bearing two additional hydroxy substituents at positions 7α and 12α.

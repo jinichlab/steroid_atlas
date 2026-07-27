@@ -1,0 +1,18 @@
+Compound: cholyl-L-tryptophan(1-)
+ChEBI ID: CHEBI:234456
+PubChem CID: 176454291
+
+== Chemical properties ==
+IUPAC Name: 3-(1H-indol-3-yl)-2-[4-(3,7,12-trihydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl)pentanoylamino]propanoate
+Molecular Formula: C35H49N2O6-
+Molecular Weight: 593.8
+SMILES: CC(CCC(=O)NC(CC1=CNC2=CC=CC=C21)C(=O)[O-])C3CCC4C3(C(CC5C4C(CC6C5(CCC(C6)O)C)O)O)C
+InChI: InChI=1S/C35H50N2O6/c1-19(8-11-31(41)37-28(33(42)43)14-20-18-36-27-7-5-4-6-23(20)27)24-9-10-25-32-26(17-30(40)35(24,25)3)34(2)13-12-22(38)15-21(34)16-29(32)39/h4-7,18-19,21-22,24-26,28-30,32,36,38-40H,8-17H2,1-3H3,(H,37,41)(H,42,43)/p-1
+InChIKey: UXWZMQPNSYWAHX-UHFFFAOYSA-M
+XLogP: 5.7
+TPSA: 146
+H-Bond Donors: 5
+H-Bond Acceptors: 6
+
+== ChEBI definition ==
+A monocarboxylic acid anion that is the conjugate base of cholyl-<small>L</small>-tryptophan resulting from the deprotonation of the carboxy group; Major species at pH 7.3.

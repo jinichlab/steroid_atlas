@@ -1,0 +1,18 @@
+Compound: 14alpha-hydroxymethyl steroid
+ChEBI ID: CHEBI:176901
+PubChem CID: 134822640
+
+== Chemical properties ==
+IUPAC Name: [(14R)-10,13-dimethyl-1,2,3,4,5,6,7,8,9,11,12,15,16,17-tetradecahydrocyclopenta[a]phenanthren-14-yl]methanol
+Molecular Formula: C20H34O
+Molecular Weight: 290.5
+SMILES: CC12CCC[C@]1(C3CCC4CCCCC4(C3CC2)C)CO
+InChI: InChI=1S/C20H34O/c1-18-10-5-12-20(18,14-21)17-8-7-15-6-3-4-11-19(15,2)16(17)9-13-18/h15-17,21H,3-14H2,1-2H3/t15?,16?,17?,18?,19?,20-/m1/s1
+InChIKey: SXLXTCWGXBLWCM-NSDIEPNESA-N
+XLogP: 6.6
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+Any steroid carrying a 14α-hydroxymethyl substituent.

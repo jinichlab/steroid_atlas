@@ -1,0 +1,18 @@
+Compound: (3alpha,5alpha,17beta)-3-hydroxyandrostan-17-yl sulfate(1-)
+ChEBI ID: CHEBI:133105
+PubChem CID: 121596225
+
+== Chemical properties ==
+IUPAC Name: [(3R,5S,8R,9S,10S,13S,14S,17S)-3-hydroxy-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl] sulfate
+Molecular Formula: C19H31O5S-
+Molecular Weight: 371.5
+SMILES: C[C@]12CC[C@H](C[C@@H]1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@@H]4OS(=O)(=O)[O-])C)O
+InChI: InChI=1S/C19H32O5S/c1-18-9-7-13(20)11-12(18)3-4-14-15-5-6-17(24-25(21,22)23)19(15,2)10-8-16(14)18/h12-17,20H,3-11H2,1-2H3,(H,21,22,23)/p-1/t12-,13+,14-,15-,16-,17-,18-,19-/m0/s1
+InChIKey: KWYNDVHEQWYGIL-KHOSGYARSA-M
+XLogP: 3.7
+TPSA: 95
+H-Bond Donors: 1
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A steroid sulfate oxoanion that is the conjugate base of (3α,5α,17β)-3-hydroxyandrostan-17-yl sulfate, obtained by deprotonation of the sulfo group; major species at pH 7.3.

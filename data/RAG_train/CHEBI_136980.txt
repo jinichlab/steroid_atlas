@@ -1,0 +1,18 @@
+Compound: 2-hydroxy-3-O-methyl estrone
+ChEBI ID: CHEBI:136980
+PubChem CID: 13831793
+
+== Chemical properties ==
+IUPAC Name: (8R,9S,13S,14S)-2-hydroxy-3-methoxy-13-methyl-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-17-one
+Molecular Formula: C19H24O3
+Molecular Weight: 300.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CCC4=CC(=C(C=C34)O)OC
+InChI: InChI=1S/C19H24O3/c1-19-8-7-12-13(15(19)5-6-18(19)21)4-3-11-9-17(22-2)16(20)10-14(11)12/h9-10,12-13,15,20H,3-8H2,1-2H3/t12-,13+,15-,19-/m0/s1
+InChIKey: YBCPNMOFBUWYTP-QPWUGHHJSA-N
+XLogP: 3.1
+TPSA: 46.5
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 2-hydroxy steroid that is 2-hydroxyestrone in which the hydroxy group at position 3 has been converted to the corresponding methyl ether.

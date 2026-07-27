@@ -1,0 +1,40 @@
+Compound: 7beta-hydroxycholesterol
+ChEBI ID: CHEBI:42989
+PubChem CID: 473141
+
+== Chemical properties ==
+IUPAC Name: (3S,7R,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene-3,7-diol
+Molecular Formula: C27H46O2
+Molecular Weight: 402.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@H](C=C4[C@@]3(CC[C@@H](C4)O)C)O)C
+InChI: InChI=1S/C27H46O2/c1-17(2)7-6-8-18(3)21-9-10-22-25-23(12-14-27(21,22)5)26(4)13-11-20(28)15-19(26)16-24(25)29/h16-18,20-25,28-29H,6-15H2,1-5H3/t18-,20+,21-,22+,23+,24+,25+,26+,27-/m1/s1
+InChIKey: OYXZMSRRJOYLLO-KGZHIOMZSA-N
+XLogP: 7.4
+TPSA: 40.5
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+7beta-hydroxycholesterol is a 7beta-hydroxy steroid and an oxysterol. It is functionally related to a cholesterol.
+
+== Literature on 7beta-hydroxycholesterol ==
+
+[PMID 11697131] alpha-Tocopherol, but not gamma-tocopherol inhibits 7 beta-hydroxycholesterol-induced apoptosis in human U937 cells
+2001
+Oxysterols, particularly those oxidised at position 7, are toxic to cells in culture and have been shown to induce apoptosis in cell types such as vascular endothelial cells, smooth muscle cells and monocytes. The precise mechanism by which oxysterols induce apoptosis is unknown but may involve the generation of oxidative stress. In the present study we examined the ability of alpha-TOC, alpha-TOC acetate (alpha-TOCA) and gamma-TOC to protect against 7 beta-hydroxycholesterol (7 beta-OHC)-induced apoptosis of human monocytic U937 cells. 7 beta-OHC is one of the most commonly detected oxysterols in foods and its level in plasma has been positively associated with an increased risk of atherosclerosis. The present study demonstrates a significant decrease in cell membrane integrity and cellular glutathione levels when U937 cells were treated with 30 microM 7 beta-OHC. DNA fragmentation also occurred, as measured by agarose gel electrophoresis, and the number of apoptotic cells increased as assessed by nuclear morphology. Analysis by HPLC showed that there was a greater incorporation of gamma-TOC into U937 cells after a 48 h incubation, than either alpha-TOC or alpha-TOCA. However, despite the increased uptake of gamma-TOC, only alpha-TOC, and not gamma-TOC or alpha-TOCA was effective at inhibiting 7 beta-OHC-induced apoptosis in U937 cells.
+
+[PMID 12527036] Oxysterols induce apoptosis and accumulation of cell cycle at G(2)/M phase in the human monocytic THP-1 cell line
+2003
+The cytotoxic activity of oxysterols, 7 beta-hydroxycholesterol (7 beta-OHC) and 25-hydroxycholesterol (25-OHC), has been evaluated using various leukemia cell lines. Among the tested cell lines, both oxysterols showed the highest cytotoxicity to THP-1, human monocytic leukemia cell line. These oxysterols induced apoptosis through down-regulation of Bcl-2 expression and activation of caspases. Also, the oxysterols showed the accumulation at G(2)/M phase of cell cycle through down-regulation of cyclin B1 expression. Taken together, these results indicated that both 7 beta-OHC and 25-OHC inhibited the proliferation of THP-1 cells through apoptosis and cell cycle accumulation at G(2)/M phase.
+
+[PMID 9252691] Cytotoxic properties of a phosphoglycoconjugated derivative of 7 beta-hydroxycholesterol upon normal and tumor cells in culture
+1997
+The cytotoxic activity of a new hydrosoluble axysterol derivative, a phosphoric acid diester of 7 beta-hydroxycholesterol (7 beta-OHC, one of the most toxic oxysterol) and of galactose has been evaluated using cultured tumor cells of various origins, and compared with 7 beta-OHC. As its parent compound, XG-142 exhibits a significant cytotoxic activity against all the cell lines tested, but the IC50's were higher than those obtained with 7 beta-OHC. Moreover, the cytotoxicity was slower to appear than after a 7 beta-OHC treatment. Cell phase distribution was analysed, and revealed some differences between the two compounds. Both oxysterols induced apoptosis at micromolar concentrations, as evidenced by several methods including agarose gel electrophoresis of fragmented DNA and flow cytometry of propidium iodide labeled cells. Apoptosis was also obtained when 7 beta-OHC and XG-142 were combined at concentrations unable to induce this type of cell death when used separately. Upon normal murine spleen cells, XG-142 was found to be less toxic than 7 beta-OHC, and the capacity to respond to Con A stimulation was preserved. Therefore, XG-142 can be considered as a promising soluble analogue of 7 beta-OHC, and its application as anticancer agent should be considered.
+
+[PMID 9865387] Oxysterols, but not cholesterol, inhibit human immunodeficiency virus replication in vitro
+1998
+Oxysterols, oxygenated derivatives of cholesterol selected for their cytostatic activity and their inhibitory effect on cholesterol synthesis, have been investigated for their anti-human immunodeficiency virus (HIV) activity in vitro. The three oxysterols tested, 7 beta-hydroxycholesterol (7 beta-OHC), 25-hydroxycholesterol (25-OHC) and 7 beta, 25-dihydroxycholesterol (7,25-OHC), inhibit viral replication at micromolar concentrations. The selectivity indexes for 7 beta-OHC and 25-OHC are quite modest (2 to 8) but reproducible; the dihydroxycholesterol 7,25-OHC exhibited antiviral properties at concentrations 13- to 25-fold lower than the highest concentration tested at which no toxicity was measurable. Oxysterols are naturally occurring compounds, and we speculate on their physiological relevance in HIV-infected individuals.
+
+[PMID 2011116] Differential sensitivity of astrocyte primary cultures and derived spontaneous transformed cell lines to 7 beta-hydroxycholesterol: effect on plasma membrane lipid composition and fluidity, and on cell surface protein expression
+1991
+The cytotoxicity of 7 beta-hydroxycholesterol (7 beta-OHC) was investigated on rat astrocyte primary cultures and spontaneously transformed cell lines derived from them. Confluent astrocyte primary cultures (normal cells) were unaffected by 20 microM 7 beta-OHC over a period of 72 h whereas 30 microM markedly affected the viability of the transformed cells within the first 72 h. Both cell types incorporated 18% of the total amount of 7 beta-OHC added to the cultures at concentrations of 20 microM or 30 microM. Cellular fractionation after incubation with 20 microM or 30 microM 7 beta-OHC indicated that the plasma membrane incorporated 2 or 6 fold more 7 beta-OHC than the intracellular one's respectively. Plasma membrane cholesterol (CH) and phospholipid (PL) analysis showed that 20 microM 7 beta-OHC did not affect CH/PL in normal cells; in contrast, plasma membranes of transformed cells displayed a significant CH/PL decrease, which was more pronounced with 30 microM 7 beta-OHC treatment. Fluorescence anisotropy measurements indicated that 20 microM 7 beta-OHC slightly fluidified the plasma membrane of normal cells whereas it has not effect on that of the transformed cells one; however, an increase in plasma membrane fluidity was observed when the transformed cells were treated with 30 microM 7 beta-OHC. Lactoperoxidase catalyzed radioiodination of cell surface proteins and subsequent autoradioelectrophoretic analysis demonstrated that the labelled protein pattern was unchanged when both cell types were incubated with 30 microM 7 beta-OHC. These findings demonstrate that 7 beta-OHC is lethal to highly proliferating cultured glial cells. The high accumulation of 7 beta-OHC in the plasma membrane and its decrease in fluidity, by themselves, do not seem to be involved in the processes leading to cellular death. However, increase of plasma membrane fragility associated with the decrease of CH/PL, which occurs exclusively in plasma membranes isolated from 7 beta-OHC treated transformed cells together with high 7 beta-OHC uptake, are probably implicated in 7 beta-OHC cytotoxicity. The possibility of an additional action mechanism is discussed.

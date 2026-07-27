@@ -1,0 +1,40 @@
+Compound: adrenosterone
+ChEBI ID: CHEBI:2495
+PubChem CID: 223997
+
+== Chemical properties ==
+IUPAC Name: (8S,9S,10R,13S,14S)-10,13-dimethyl-1,2,6,7,8,9,12,14,15,16-decahydrocyclopenta[a]phenanthrene-3,11,17-trione
+Molecular Formula: C19H24O3
+Molecular Weight: 300.4
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2C(=O)C[C@]4([C@H]3CCC4=O)C
+InChI: InChI=1S/C19H24O3/c1-18-8-7-12(20)9-11(18)3-4-13-14-5-6-16(22)19(14,2)10-15(21)17(13)18/h9,13-14,17H,3-8,10H2,1-2H3/t13-,14-,17+,18-,19-/m0/s1
+InChIKey: RZRPTBIGEANTGU-IRIMSJTPSA-N
+XLogP: 1.6
+TPSA: 51.2
+H-Bond Donors: 0
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 3-oxo Δ<small><sup>4</small></sup>-steroid that is androst-4-ene carrying three oxo-substituents at positions 3, 11 and 17.
+
+== Literature on adrenosterone ==
+
+[PMID 41090402] Measurement of 11-Oxo-androgens, A Novel Biomarker, in Females with Clinical Signs of Premature Adrenarche
+2026
+ObjectiveEndocrine findings in premature adrenarche have been characterized by elevated dehydroepiandrosterone (DHEA) DHEA-sulfate (DHEA-S) levels in the past.MethodsWe reviewed female patients, aged 4 to 8 years, with premature adrenarche who were seen at a single center between 2019 and 2023. Data were collected on the traditional androgens (DHEA and DHEA-S) and novel 11-oxo-androgens, which were measured using liquid chromatography/tandem mass spectrometry assays in commercial laboratories (Lab Corp).ResultsThe study included 44 girls. The majority, 89% of patients from the youngest group (4-5 years olds), presented with apocrine odor as the only symptom of premature adrenarche. We have demonstrated that DHEA and DHEA-S levels were within the normal range in many girls with premature adrenarche, whereas 11-oxo-androgens, particularly 11-hydroxyandrostenedione and 11-beta-hydroxytestosterone, were elevated. Out of those with normal DHEA-S, 75% had elevated 11-hydroxyandrostenedione, and 77.8% of those patients with normal DHEA had the same elevated oxo-androgen. Moreover, advanced bone age greater than 1 year compared to chronological age was positively associated with 11-ketotestosterone [Spearman rho=0.32, 95% confidence interval (CI): 0.01-0.57, p=0.0429] and 11β-hydroxy testosterone (Spearman rho=0.32, 95% CI: 0.01-0.58, p=0.0395).ConclusionWe propose that 11-oxo-androgens are a more sensitive steroid to be measured when premature adrenarche is suspected.
+
+[PMID 42319989] Synthesis of A-nor- and A-cleaved derivatives of glycyrrhetinic acid esters by ozonolysis
+2026
+Using ozonolysis reaction, skeletal transformations of ring A of glycyrrhetinic acid methyl and butyl esters were carried out, and novel A-nor- and A-cleaved derivatives with the additional oxygen-containing functional groups have been synthesised. The main product of ozonolysis of methyl 3-(2-isopropenyl)-11-oxo-A-neo-5α,18βH-olean-12-en-30-oate was methyl 3,11-dioxo-A-nor-5βH,18βH-olean-12-ene-30-oate 4 (54%), and the minor products were methyl esters of 3,11-dioxo-5β-hydroxy-A-nor-18βH-olean-12-ene-30-oic acid 5 (10%) and 3-carboxy-5β-hydroxy-11-oxo-3,5-seco-18βH-olean-12-ene-30-oic acid 6 (12%). Butyl 3,11-dioxo-A-nor-5βH,18βH-olean-12-ene-30-oate 8 have been synthesised by ozonolysis reaction too. Structures of obtained compounds were established by high-resolution NMR spectroscopy with two-dimensional correlation (COSY, HSQC, HMBC, NOESY, HSQCED) and full assignment of protons and carbon atoms.
+
+[PMID 38535301] Employing 11-Ketotestosterone as a Target Analyte for Adrenosterone (11OXO) Administration in Doping Controls
+2024
+Adrenosterone (Androst-4-ene-3,11,17-trione, 11OXO) is forbidden in sports according to the Prohibited List of the World Anti-Doping Agency. The administration of 11OXO may be detected by monitoring the urinary concentrations of its main human metabolites 11β-hydroxy-androsterone and 11β-hydroxy-etiocholanolone. Preliminary urinary concentration and concentration ratio thresholds have been established for sports drug testing purposes, but adaptations are desirable as the suggested limits would result in numerous suspicious findings due to naturally elevated concentrations and ratios. Recently, the metabolism of 11-oxo-testosterone (KT) was investigated in the context of anti-doping research, resulting in a preliminary urinary concentration threshold and a confirmation procedure based on the determination of carbon isotope ratios (CIRs). Gas chromatography coupled to isotope ratio mass spectrometry was employed to investigate the CIRs of selected steroids. As KT is also a metabolite of 11OXO, the developed protocols for KT have been tested to elucidate their potential to detect the administration of 11OXO after a single oral dose of 100 mg. In order to further improve the analytical approach, the threshold for urinary concentrations of KT was re-investigated by employing a reference population of n = 5232 routine doping control samples. Quantification of urinary steroids was conducted by employing gas chromatography coupled to triple quadrupole mass spectrometry. Derived from these, a subset of n = 106 samples showing elevated concentrations of KT was investigated regarding their CIRs. By means of this, potentially positive samples due to the illicit administration of 11OXO or KT could be excluded, and the calculation of reference population-derived thresholds for the concentrations and CIR of KT was possible. Based on the results, the urinary concentration threshold for KT is suggested to be established at 130 ng/mL.
+
+[PMID 36795896] Production of 11-Oxo-β-Amyrin in <i>Saccharomyces cerevisiae</i> at High Efficiency by Fine-Tuning the Expression Ratio of CYP450:CPR
+2023
+The production of glycyrrhetinic acid (GA) and 11-oxo-β-amyrin, the major bioactive components in liquorice, was typically inhibited by P450 oxidation in Saccharomyces cerevisiae. This study focused on optimizing CYP88D6 oxidation by balancing its expression with cytochrome P450 oxidoreductase (CPR) for the efficient production of 11-oxo-β-amyrin in yeast. Results indicated that a high CPR:CYP88D6 expression ratio could decrease both 11-oxo-β-amyrin concentration and turnover ratio of β-amyrin to 11-oxo-β-amyrin, whereas a high CYP88D6:CPR expression ratio is beneficial for improving the catalytic activity of CYP88D6 and 11-oxo-β-amyrin production. Under such a scenario, 91.2% of β-amyrin was converted into 11-oxo-β-amyrin in the resulting S. cerevisiae Y321, and 11-oxo-β-amyrin production was further improved to 810.6 mg/L in fed-batch fermentation. Our study provides new insights into the expression of cytochrome P450 and CPR in maximizing the catalytic activity of P450s, which could guide the construction of cell factories in producing natural products.
+
+[PMID 42117402] Identification of &lt;i&gt;Trifolium repens&lt;/i&gt; as a New Source of Glycyrrhetinic Acid: Pathway Elucidation and Heterologous Reconstruction in Yeast
+2026
+Glycyrrhetinic acid (GA) is a pharmacologically important oleanane-type triterpenoid best known from licorice, but its sustainable production is limited by inefficient enzymes. Here, we report the complete GA biosynthetic pathway in Trifolium repens, a legume not previously known to produce GA. Targeted metabolomics confirmed GA accumulation in multiple tissues, highest in roots. Transcriptomic analyses identified key biosynthetic genes, and heterologous reconstruction in yeast verified their catalytic functions. The pathway comprises three β-amyrin synthases, two β-amyrin 11-oxidases (TrCYP88D37/35b), and an 11-oxo-β-amyrin 30-oxidase (TrCYP72A1633). Phylogenetic analyses revealed these CYP450s are conserved in supertribe Fabodae, hinting at the potential for GA or related triterpenoid production in other legumes. Screening seven cytochrome P450 reductases (CPRs), including two from T. repens, identified AiCPR from Azadirachta indica as optimal for TrCYP72A1633, increasing GA titers in yeast to 3.07 mg/L. This study establishes GA biosynthesis in T. repens and provides a basis for sustainable microbial production.

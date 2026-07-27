@@ -1,0 +1,5 @@
+Compound: 3-oxo-Delta(1),Delta(4)-steroid
+ChEBI ID: CHEBI:77166
+
+== ChEBI definition ==
+A 3-oxo-Δ<small><sup>1</small></sup> steroid containing an additional double bond between positions 4 and 5.

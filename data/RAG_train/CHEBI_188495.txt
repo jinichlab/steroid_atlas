@@ -1,0 +1,18 @@
+Compound: 6alpha-hydroxytyphasterol
+ChEBI ID: CHEBI:188495
+PubChem CID: 102515372
+
+== Chemical properties ==
+IUPAC Name: (3R,5S,6S,8S,9S,10R,13S,14S,17R)-17-[(2S,3R,4R,5S)-3,4-dihydroxy-5,6-dimethylheptan-2-yl]-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthrene-3,6-diol
+Molecular Formula: C28H50O4
+Molecular Weight: 450.7
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2C[C@@H]([C@@H]4[C@@]3(CC[C@H](C4)O)C)O)C)[C@H]([C@@H]([C@@H](C)C(C)C)O)O
+InChI: InChI=1S/C28H50O4/c1-15(2)16(3)25(31)26(32)17(4)20-7-8-21-19-14-24(30)23-13-18(29)9-11-28(23,6)22(19)10-12-27(20,21)5/h15-26,29-32H,7-14H2,1-6H3/t16-,17-,18+,19-,20+,21-,22-,23+,24-,25+,26+,27+,28+/m0/s1
+InChIKey: QQPPQQNYVDYNAA-VKTWQGKFSA-N
+XLogP: 6
+TPSA: 80.9
+H-Bond Donors: 4
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+6alpha-hydroxytyphasterol is a (22S)-22-hydroxy C28-steroid, a brassinosteroid, a 3alpha-sterol, a 6alpha-hydroxy steroid, a 22-hydroxy steroid and a 23-hydroxy steroid.

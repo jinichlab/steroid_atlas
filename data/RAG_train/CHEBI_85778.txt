@@ -1,0 +1,28 @@
+Compound: 4beta-hydroxycholesterol
+ChEBI ID: CHEBI:85778
+PubChem CID: 3247060
+
+== Chemical properties ==
+IUPAC Name: (3S,4R,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene-3,4-diol
+Molecular Formula: C27H46O2
+Molecular Weight: 402.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H]([C@@H]4O)O)C)C
+InChI: InChI=1S/C27H46O2/c1-17(2)7-6-8-18(3)20-11-12-21-19-9-10-23-25(29)24(28)14-16-27(23,5)22(19)13-15-26(20,21)4/h10,17-22,24-25,28-29H,6-9,11-16H2,1-5H3/t18-,19+,20-,21+,22+,24+,25-,26-,27-/m1/s1
+InChIKey: CZDKQKOAHAICSF-JSAMMMMSSA-N
+XLogP: 7.4
+TPSA: 40.5
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A oxysterol that is cholesterol in which the hydrogen at the 4β position has been replaced by a hydroxy group. A metabolite of cholesterol formed by the drug-metabolizing enzyme cytochrome P450 3A4, it is one of the major oxysterols in the human circulation.
+
+== Literature on 4beta-hydroxycholesterol ==
+
+[PMID 27565568] Rapid LC-MS/MS method for the determination of 4-hydroxycholesterol/cholesterol ratio in serum as endogenous biomarker for CYP3A activity in human and foals
+2016
+Cytochrome P450 3A (CYP) enzymes are involved in the elimination of many drugs and are known to be regulated by several environmental factors. Thus, it was the aim of this study to develop and validate an analytical method allowing estimation of the hepatic CYP3A enzyme activity using the 4-hydroxycholesterol to cholesterol ratio as an endogenous biomarker in serum. Both compounds were isolated from the biological matrix by liquid-liquid extraction using n-hexane after saponification with ethanolic sodium methoxide solution (2M) to cleave the steroids from their esterified forms without any kind of further derivatization. Chromatographic separation was achieved on a reversed-phase column (SupelcoAcsentis(®), C8) within 7min using an isocratic elution with ammonium acetate 5mM (pH=3.8, 10%) and acetonitrile (90%) at a flow rate of 300μl/min. d6-cholesterol and d7-4β-hydroxycholesterol were used as internal standards. Detection was done on a triple quadrupole mass spectrometer using the following mass transitions: 369.3/161.5, 369.3/147.1 and 369.3/95.2 for cholesterol; 385.2/367.4, 385.2/109.1 for 4-hydroxycholesterol; 374.4/152.7 and 392.2/108.9 for d6-cholesterol and d7-4-hydroxycholesterol, respectively as the internal standards. The method was validated according to current bioanalytical guidelines considering selectivity, linearity, accuracy, precision, recovery, stability. The analytical range was 5-250 and 50-1000ng/ml, for 4-hydroxycholesterol and cholesterol, respectively. The method was shown to be selective for both compounds with good linearity over the selected range (r>0.99) as well as good within- and between day accuracy (error: -1.2-3.7% for 4-hydroxycholesterol and -7.7-9.5% for cholesterol) and within- and between day precision (2.1-14.6% for 4-hydroxycholesterol and 1.1-14.9% for cholesterol). Recovery was found to be over 80% for both analytes while significant stability issues could not be observed. Finally, the validated assay was applied to measure 4-hydroxycholesterol and cholesterol in serum samples of clinical studies in humans and foals that could verify induction of hepatic CYP3A4 (human) and CYP3A89 (foals) after premedication with the known enzyme inducer rifampicin.
+
+[PMID 8263423] Hypochlorous acid-mediated modification of cholesterol and phospholipid: analysis of reaction products by gas chromatography-mass spectrometry
+1993
+Oxidative modification of membrane lipids by hypochlorous acid could be an important element in the mechanism of membrane disruption by activated neutrophils. We have previously shown that hypochlorous acid reacts with unsaturated fatty acids of membrane phospholipids to give fatty acid chlorohydrins (Winterbourn et al. 1992. Arch. Biochem. Biophys. 296: 547-555). In the present study, we examined the reaction of cholesterol in bilayers with an inert phospholipid carrier. Product separation and identification was performed using gas chromatography-mass spectrometry after trimethylsilyl-derivatization. Unlike the reaction of hypochlorous acid with unsaturated fatty acids, no chlorohydrin derivatives were found with cholesterol. Instead, the main oxidation products were identified as the epimeric cholesterol 5,6-epoxides and 4-hydroxycholesterol, while several other hydroxy- and keto-derivatives were also found in smaller amounts. Analysis of the products obtained after reaction of vesicles composed of a mixture of several unsaturated phospholipid species plus cholesterol revealed that the individual fatty acids and cholesterol all exhibit comparable susceptibilities toward hypochlorous acid. Using myeloperoxidase to generate hypochlorous acid, basically the same products and product distribution were obtained. These studies show that unsaturated phospholipids and cholesterol can be profoundly modified by reaction with hypochlorous acid. This warrants further investigation to define the role of lipid modifications in neutrophil-mediated membrane disruption.

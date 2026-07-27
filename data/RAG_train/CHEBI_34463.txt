@@ -1,0 +1,21 @@
+Compound: 5alpha-Androstane-3,11,17-trione
+ChEBI ID: CHEBI:34463
+PubChem CID: 11185733
+
+== Chemical properties ==
+IUPAC Name: (5S,8S,9S,10S,13S,14S)-10,13-dimethyl-1,2,4,5,6,7,8,9,12,14,15,16-dodecahydrocyclopenta[a]phenanthrene-3,11,17-trione
+Molecular Formula: C19H26O3
+Molecular Weight: 302.4
+SMILES: C[C@]12CCC(=O)C[C@@H]1CC[C@@H]3[C@@H]2C(=O)C[C@]4([C@H]3CCC4=O)C
+InChI: InChI=1S/C19H26O3/c1-18-8-7-12(20)9-11(18)3-4-13-14-5-6-16(22)19(14,2)10-15(21)17(13)18/h11,13-14,17H,3-10H2,1-2H3/t11-,13-,14-,17+,18-,19-/m0/s1
+InChIKey: VRHVOUYZPKSINF-XNTXBEAUSA-N
+XLogP: 2
+TPSA: 51.2
+H-Bond Donors: 0
+H-Bond Acceptors: 3
+
+== Literature on 5alpha-Androstane-3,11,17-trione ==
+
+[PMID 17639573] Development and application of stable carbon isotope analysis to the detection of cortisol administration in cattle
+2007
+The use of anabolic agents in food-producing animals has been prohibited within the EU since 1988. The control of the illegal use of natural steroid hormones in cattle is still an exciting analytical challenge as no definitive method and nonambiguous analytical criteria are available. We have used gas chromatography/combustion/isotope ratio mass spectrometry (GC/C/IRMS) to demonstrate the administration of cortisol to cattle. The method consisted of an efficient combination between OASIS HLB solid-phase extraction (SPE), oxidation, SiOH SPE and semi-preparative high-performance liquid chromatography (HPLC) for glucocorticoid purification. By comparison of the (13)C/(12)C isotopic ratio of the oxidised product of cortisol, i.e. 5 beta-androstane-3,11,17-trione (5 beta AAT), with an endogenous reference compound (ERC), dehydroepiandrosterone (DHEA), the differentiation of cortisol metabolite origin, either endogenous or exogenous, has been achieved. After treatment of an animal, the delta(13)C(VPDB) values of 5 beta AAT reached -30 to -32 per thousand, whereas the delta(13)C(VPDB) values of DHEA remained at -25 per thousand. A significant difference in the delta(13)C(VPDB) values between DHEA and 5 beta AAT was measurable over a period of 3 days after a single administration of cortisol to the animal.

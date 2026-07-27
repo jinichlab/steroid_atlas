@@ -1,0 +1,18 @@
+Compound: 9alpha-hydroxyandrosta-1,4-diene-3,17-dione
+ChEBI ID: CHEBI:63641
+PubChem CID: 241544
+
+== Chemical properties ==
+IUPAC Name: (8S,9R,10S,13S,14S)-9-hydroxy-10,13-dimethyl-6,7,8,11,12,14,15,16-octahydrocyclopenta[a]phenanthrene-3,17-dione
+Molecular Formula: C19H24O3
+Molecular Weight: 300.4
+SMILES: C[C@]12CC[C@]3([C@H]([C@@H]1CCC2=O)CCC4=CC(=O)C=C[C@@]43C)O
+InChI: InChI=1S/C19H24O3/c1-17-9-10-19(22)15(14(17)5-6-16(17)21)4-3-12-11-13(20)7-8-18(12,19)2/h7-8,11,14-15,22H,3-6,9-10H2,1-2H3/t14-,15-,17-,18-,19+/m0/s1
+InChIKey: JCEUDJXAQHPZGL-PLOWYNNNSA-N
+XLogP: 1.8
+TPSA: 54.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A steroid that consists of androstane having double bonds at positions 1 and 4, two keto groups at positions 3 and 17 and a hydroxy group at position 9.

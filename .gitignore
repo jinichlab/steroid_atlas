@@ -32,3 +32,6 @@ Thumbs.db
 # Ad-hoc analysis outputs
 *_report.tsv
 *_report.json
+.env
+app/test_vis
+app/test_vis.py

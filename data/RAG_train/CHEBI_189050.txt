@@ -1,0 +1,18 @@
+Compound: 20beta-dihydrocorticosterone
+ChEBI ID: CHEBI:189050
+PubChem CID: 92855825
+
+== Chemical properties ==
+IUPAC Name: (8S,9S,10R,11S,13S,14S,17S)-17-[(1S)-1,2-dihydroxyethyl]-11-hydroxy-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one
+Molecular Formula: C21H32O4
+Molecular Weight: 348.5
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@H]4[C@@H](CO)O)C)O
+InChI: InChI=1S/C21H32O4/c1-20-8-7-13(23)9-12(20)3-4-14-15-5-6-16(18(25)11-22)21(15,2)10-17(24)19(14)20/h9,14-19,22,24-25H,3-8,10-11H2,1-2H3/t14-,15-,16+,17-,18+,19+,20-,21-/m0/s1
+InChIKey: DCMCEXCRUWBAFV-LDGASQGZSA-N
+XLogP: 1.6
+TPSA: 77.8
+H-Bond Donors: 3
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+A C21-steroid that is corticosterone in which the 20-oxo group has been reduced to a hydroxy group.

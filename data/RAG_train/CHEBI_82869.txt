@@ -1,0 +1,5 @@
+Compound: (24S)-24-hydroxycholesterol ester
+ChEBI ID: CHEBI:82869
+
+== ChEBI definition ==
+A sterol ester consiting of (24<i>S</i>)-24-hydroxycholesterol esterified at the 3-hydroxy group.

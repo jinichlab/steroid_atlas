@@ -1,0 +1,32 @@
+Compound: 20,22-dihydrodigoxigenin
+ChEBI ID: CHEBI:71004
+PubChem CID: 94291
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(3S,5R,8R,9S,10S,12R,13S,14S,17R)-3,12,14-trihydroxy-10,13-dimethyl-1,2,3,4,5,6,7,8,9,11,12,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]oxolan-2-one
+Molecular Formula: C23H36O5
+Molecular Weight: 392.5
+SMILES: C[C@]12CC[C@@H](C[C@H]1CC[C@@H]3[C@@H]2C[C@H]([C@]4([C@@]3(CC[C@@H]4[C@H]5CC(=O)OC5)O)C)O)O
+InChI: InChI=1S/C23H36O5/c1-21-7-5-15(24)10-14(21)3-4-17-18(21)11-19(25)22(2)16(6-8-23(17,22)27)13-9-20(26)28-12-13/h13-19,24-25,27H,3-12H2,1-2H3/t13-,14+,15-,16+,17+,18-,19+,21-,22-,23-/m0/s1
+InChIKey: MWPLZPAHTHIKQB-YNFYBLEISA-N
+XLogP: 2.5
+TPSA: 87
+H-Bond Donors: 3
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A hydroxy steroid that is the 20,22-dihydro derivative of digoxigenin, consisting of 5β-cardanolide with hydroxy groups at the 3β-, 12β- and 14β-positions.
+
+== Literature on 20,22-dihydrodigoxigenin ==
+
+[PMID 39239200] Integrated GC-MS and UPLC-ESI-QTOF-MS based untargeted metabolomics analysis of <i>in vitro</i> raised tissues of <i>Digitalis purpurea</i> L
+2024
+Digitalis purpurea L. is one of the important plant species of Nilgiris, Kashmir and Darjeeling regions of India, belonging to the family Plantaginaceae, with well-known pharmacological applications. In the present investigation, an in vitro culture technique of indirect shoot organogenesis of D. purpurea is being explored; the biochemical attributes, the antioxidant activities and the metabolomic analyses were made by utilizing untargeted Gas Chromatography-Mass Spectrometry (GC-MS) and Ultra Performance Liquid Chromatography coupled with electronspray ionization/quadrupole-time-of-flight-mass spectrometry (UPLC-ESI-QTOF-MS) approaches. Initially, the leaf explants were used for callus induction and proliferation and maximum callusing frequency (94.44%) and fresh biomass (4.9 g) were obtained on MS, fortified with 8.8 µM BAP (6-benzyl amino purine) + 0.9 µM 2,4-D (2,4-dichlorophenoxyacetic acid), subsequently shoot formation (indirect organogenesis) was noted on the same MS medium with a shoot induction frequency of 83.33%. Later on, the biochemical and antioxidant potential of in vivo-, in vitro grown leaf and leaf derived callus were assessed. Significantly higher total phenol, flavonoid, DPPH (2,2-diphenyl-1-picrylhydrazyl), POD (peroxidase) and SOD (superoxide dismutase) activities were noticed in in vitro grown callus and leaf tissues compared with field grown leaf. The GC-MS analysis of each methanolic extract (in vivo-, in vitro derived leaf and leaf derived callus) displayed the presence of more than 75 bioactive compounds viz loliolide, stigmasterin, alpha-tocopherol, squalene, palmitic acid, linoleic acid, beta-amyrin, campesterol etc. possessing immense therapeutic importance. The UPLC-MS based metabolite fingerprinting of each methanolic extracts were conducted in both positive and negative ionization mode. The obtained results revealed variation in phytochemical composition in field - and laboratory grown tissues, indicating the impact of in vitro culture conditions on plant tissues. The detected phytocompounds belongs to various classes such as flavonoids, steroids, terpenoids, carbohydrates, tannins, lignans etc. The medicinally important metabolites identified were 20, 22-dihydrodigoxigenin, digoxigenin monodigitoxoside, apigenin, luteolin, kaempferide, rosmarinic acid, nepitrin and others. The results of the present study suggest that in vitro culture of D. purpurea could successfully be utilized for the novel drug discovery by producing such important phytocompounds of commercial interest in shorter duration without harming the plants' natural population.
+
+[PMID 6302244] Spectral analysis of the configuration and solution conformation of dihydrodigoxigenin epimers
+1983
+The C20 configuration and solution conformation of each epimer of dihydrodigoxigenin has been studied by circular dichroism (CD) and NMR spectroscopy. Results from the CD spectra indicate that the two epimers have opposite orientations of the beta-carbon in the lactone ring. This finding, together with X-ray crystallographic data from a separate study on the minor epimer, establishes the C20 configuration of the minor epimer as S and of the major epimer as R. NMR evidence indicates that the average lactone rotamer for the minor epimer has the C22 position located on the C12 side of the steroid nucleus, whereas the average lactone rotamer for the major epimer has the C21 position located on the C12 side of the steroid nucleus. Molecular models indicate that these are the least-hindered positions for the respective rotamers. Physical data characterizing the two epimers are provided.
+
+[PMID 2858377] Formation of [20R]-dihydrodigoxin from digoxin in humans
+1985
+The objective of this research was to determine the stereochemical identity of dihydrodigoxin (DHD3), a metabolite of digoxin excreted in urine after digoxin administration in man. Separation of the individual epimers in reference DHD3 was effected by a chemical derivatization-HPLC procedure. Comparison of individual derivatized epimers of DHD3 with the known 20R and 20S epimers of derivatized dihydrodigoxigenin using chromatographic data and NMR spectroscopy permitted identification of the 20R and 20S epimers in reference DHD3. Material corresponding chromatographically to R-DHD3 was isolated from urine of a volunteer taking oral digoxin daily. The NMR spectrum of the chromatographically pure, derivatized urinary isolate was identical to the NMR spectrum of derivatized R-DHD3. Urine samples from 20 patients on chronic digoxin therapy and from two volunteers were surveyed for chromatographic evidence of R- or S-DHD3 using HPLC of a fluorescent derivative as well as HPLC of a UV-absorbing derivative. The more sensitive fluorescence procedure yielded evidence for R-DHD3 in eight patients and both volunteers. There was a sufficient concentration in four patients and both volunteers for independent evidence of R-DHD3 using the UV-absorbing derivative. Chromatographic evidence (fluorescent derivative) for S-DHD3 was found in urine from three patients. However, this evidence for S-DHD3 was demonstrated to be an artifact by the absence of the peak expected for S-DHD3 in the chromatogram of the UV-absorbing derivative as well as by the inability of fecal incubates to convert digoxin to S-DHD3. The results of the investigation indicate that the DHD3 metabolite formed in humans is the 20R epimer.

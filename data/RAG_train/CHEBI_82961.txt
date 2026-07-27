@@ -1,0 +1,28 @@
+Compound: 17beta-estradiol 17-glucosiduronate
+ChEBI ID: CHEBI:82961
+PubChem CID: 443090
+
+== Chemical properties ==
+IUPAC Name: (2S,3S,4S,5R,6R)-3,4,5-trihydroxy-6-[[(8R,9S,13S,14S,17S)-3-hydroxy-13-methyl-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthren-17-yl]oxy]oxane-2-carboxylate
+Molecular Formula: C24H31O8-
+Molecular Weight: 447.5
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)[O-])O)O)O)CCC5=C3C=CC(=C5)O
+InChI: InChI=1S/C24H32O8/c1-24-9-8-14-13-5-3-12(25)10-11(13)2-4-15(14)16(24)6-7-17(24)31-23-20(28)18(26)19(27)21(32-23)22(29)30/h3,5,10,14-21,23,25-28H,2,4,6-9H2,1H3,(H,29,30)/p-1/t14-,15-,16+,17+,18+,19+,20-,21+,23-,24+/m1/s1
+InChIKey: MTKNDAQYHASLID-QXYWQCSFSA-M
+XLogP: 3.3
+TPSA: 140
+H-Bond Donors: 4
+H-Bond Acceptors: 8
+
+== ChEBI definition ==
+A monocarboxylic acid anion resulting from the deprotonation of the carboxy group of 17β-estradiol 17-glucosiduronic acid.
+
+== Literature on 17beta-estradiol 17-glucosiduronate ==
+
+[PMID 190739] Estrogen metabolism in nonhuman primates. I. In vitro biosynthesis of estrogen glucosiduronates in rhesus monkey liver
+1977
+Estrone glucosiduronate, 17beta-estradiol-3-glucosiduronate, 17beta-estradiol-17-glucosiduronate and estriol-16alpha-glucosiduronate have been biosynthesized in substantial yield by incubation of radioactive estrone, 17beta-estradiol, estriol and uridine diphosphoglucosiduronic acid with rhesus monkey liver homogenates. The metabolites were characterized by chromatography on Celite and DEAE-Sephadex, enzyme hydrolysis, derivative formation and crystallization to constant specific activity. The percent conversion to 17beta-estradiol-17-glucosiduronate from 17beta-estradiol ranged between 56-71%; from estrone, the conversion was 49-54%. Other metabolites formed from estradiol were estrone glucosiduronate (12-21%) and 17beta-estradiol-3-glucosiduronate(5-12%). The same metabolites derived from estrone accounted for 18-28% and 10-14% respectively. After estriol incubation, more than 90% of the steroid was converted to estriol-16alpha-glucosiduronate with no detectable estriol-3-glucosiduronate. This report represents the first time that 17beta-estradiol-17-glucosiduronate has been reported as a metabolite in the rhesus monkey and this is the only known species which forms 17beta-estradiol-17-glucosiduronate as the predominant metabolite of either estrone or estradiol in vitro. Rhesus monkey liver is similar to the human and baboon in that it metabolizes estriol exclusively to estriol-16-glucosiduronate.
+
+[PMID 208201] Separation of estrogen conjugates by high pressure liquid chromatography
+1978
+High pressure liquid chromatography using a prepacked commercial strong anion exchanger column (mu Partisil 10 SAX, 25 cm x 4.6 mm) was used to separate a mixture of eight estrogen conjugates. Chromatographic conditions using a 0.01 M potassium phosphate or 0.1 M NaCl as solvent in the isocratic mode are described for the separation of estrone glucosiduronate, 17beta-estradiol-3-glucosiduronate, 17beta-estradiol-17-glucosiduronate, estriol-3-glucosiduronate, estriol-16alpha-glucosiduronate, estriol-17-glucosiduronate, estrone sulfate and 17beta-estradiol-3-sulfate. This system gives high resolution of the estrogen conjugates in small eluent volumes in less than 30 min. The advantages of this high pressure liquid chromatographic system over other methods of separation are discussed.

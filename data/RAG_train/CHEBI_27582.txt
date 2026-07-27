@@ -1,0 +1,18 @@
+Compound: 16alpha-hydroxyandrost-4-ene-3,17-dione
+ChEBI ID: CHEBI:27582
+PubChem CID: 440574
+
+== Chemical properties ==
+IUPAC Name: (8R,9S,10R,13S,14S,16R)-16-hydroxy-10,13-dimethyl-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthrene-3,17-dione
+Molecular Formula: C19H26O3
+Molecular Weight: 302.4
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3C[C@H](C4=O)O)C
+InChI: InChI=1S/C19H26O3/c1-18-7-5-12(20)9-11(18)3-4-13-14(18)6-8-19(2)15(13)10-16(21)17(19)22/h9,13-16,21H,3-8,10H2,1-2H3/t13-,14+,15+,16-,18+,19+/m1/s1
+InChIKey: SSBCZTXGVMMZOT-NBBHSKLNSA-N
+XLogP: 2.2
+TPSA: 54.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+16alpha-hydroxyandrost-4-ene-3,17-dione is a 16alpha-hydroxy steroid, a 17-oxo steroid, a secondary alpha-hydroxy ketone, a 3-oxo steroid and an androstanoid. It has a role as a mouse metabolite.

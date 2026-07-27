@@ -1,0 +1,5 @@
+Compound: 14alpha-methyl steroid
+ChEBI ID: CHEBI:138029
+
+== ChEBI definition ==
+Any steroid carrying a 14α-methyl substituent.

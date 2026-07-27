@@ -1,0 +1,18 @@
+Compound: ergosteryl 3-beta-D-glucoside
+ChEBI ID: CHEBI:52973
+PubChem CID: 44176397
+
+== Chemical properties ==
+IUPAC Name: (2R,3R,4S,5S,6R)-2-[[(3S,9S,10R,13R,14R,17R)-17-[(E,2R,5R)-5,6-dimethylhept-3-en-2-yl]-10,13-dimethyl-2,3,4,9,11,12,14,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-3-yl]oxy]-6-(hydroxymethyl)oxane-3,4,5-triol
+Molecular Formula: C34H54O6
+Molecular Weight: 558.8
+SMILES: C[C@H](/C=C/[C@H](C)C(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CC=C4[C@@]3(CC[C@@H](C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)C)C
+InChI: InChI=1S/C34H54O6/c1-19(2)20(3)7-8-21(4)25-11-12-26-24-10-9-22-17-23(13-15-33(22,5)27(24)14-16-34(25,26)6)39-32-31(38)30(37)29(36)28(18-35)40-32/h7-10,19-21,23,25-32,35-38H,11-18H2,1-6H3/b8-7+/t20-,21+,23-,25+,26-,27-,28+,29+,30-,31+,32+,33-,34+/m0/s1
+InChIKey: MKZPNGBJJJZJMI-GBLVNJONSA-N
+XLogP: 5.8
+TPSA: 99.4
+H-Bond Donors: 4
+H-Bond Acceptors: 6
+
+== ChEBI definition ==
+The ergosterol analogue of a sterol 3-β-<small>D</small>-glucoside.

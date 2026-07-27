@@ -1,0 +1,40 @@
+Compound: 20beta-dihydrocortisol
+ChEBI ID: CHEBI:139311
+PubChem CID: 12150498
+
+== Chemical properties ==
+IUPAC Name: (8S,9S,10R,11S,13S,14S,17R)-17-[(1R)-1,2-dihydroxyethyl]-11,17-dihydroxy-10,13-dimethyl-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthren-3-one
+Molecular Formula: C21H32O5
+Molecular Weight: 364.5
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4([C@@H](CO)O)O)C)O
+InChI: InChI=1S/C21H32O5/c1-19-7-5-13(23)9-12(19)3-4-14-15-6-8-21(26,17(25)11-22)20(15,2)10-16(24)18(14)19/h9,14-18,22,24-26H,3-8,10-11H2,1-2H3/t14-,15-,16-,17+,18+,19-,20-,21-/m0/s1
+InChIKey: AWWCEQOCFFQUKS-LCGKLAOVSA-N
+XLogP: 0.8
+TPSA: 98
+H-Bond Donors: 4
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A 17α-hydroxy-C21-steroid that is cortisol in which the 20-oxo group has been reduced to a hydroxy group. It is a metabolite of cortisol identified in the urine of horses and humans, and its urinary excretion is increased in obesity.
+
+== Literature on 20beta-dihydrocortisol ==
+
+[PMID 10454084] New approaches to detect cortisol administration in the horse
+1999
+The cortisol threshold concentration of 1.0 microg/ml in horse urine adopted by the International Federation of the racing Authorities in 1994 is specific. However, an increase in the sensitivity for the detection of cortisol administration would be helpful. Previous studies have shown that 20beta-dihydrocortisol concentration in urine would be a good indicator of cortisol administration. The purpose of the present work was to estimate the population parameters and the critical values of 20beta-dihydrocortisol and 20beta-dihydrocortisone concentration in urine compared with that of cortisol. Using the same probability (1.1 x 10(-4)) which was used for the establishment of the official cortisol threshold, the critical values of 5000 ng/ml for 20beta-dihydrocortisol and 350 ng/ml for 20beta-dihydrocortisone were obtained. Considering these 2 critical values for 20beta-dihydrocortisol and 20beta-dihydrocortisone, the time during which a horse could be declared positive is significantly increased.
+
+[PMID 10218997] Corticoid concentrations are increased in the plasma and urine of ewes with naturally occurring scrapie
+1999
+The 24-h pattern of corticoid plasma concentrations was determined in scrapie-affected ewes during the clinical phase of the disease. Twenty one ewes (8 healthy and 13 scrapie-affected ewes) were subjected to 24-h blood sampling sessions. Urine samples were simultaneously obtained during the clinical stage of the disease and in healthy ewes. The scrapie diagnosis was performed by histopathology. Plasma and urinary corticoids were assayed using HPLC methods. Mean plasma and urinary levels of corticoid (cortisol, 20beta-dihydrocortisol cortisone) of scrapie-affected ewes were greater than those observed in healthy ewes. 20Beta-dihydrocortisol appeared to be the main cortisol metabolite in ewes. The intra-individual variations of 20beta-dihydrocortisol plasma concentrations were lower than the corresponding plasma cortisol concentrations due to the dampening effect of the metabolic process on the short term variations of cortisol secretion. This dampening mechanism was amplified in urine, the urinary concentrations integrating cortisol production over the period preceding sampling. For these reasons, 20beta-dihydrocortisol could present a potential interest for a non invasive diagnostic test of transmissible spongiform encephalopathies. The pathophysiological consequences of an excessive exposure to cortisol on development of the neurogenerative process are discussed.
+
+[PMID 12074236] Discriminant value of blood and urinary corticoids for the diagnosis of scrapie in live sheep
+2002
+The mean (sd) concentration of plasma 20beta-dihydrocortisol in 126 scrapie-affected sheep was 5-5 (7.0) ng/ml compared with 1.1 (0.7) ng/ml in 52 healthy sheep. The mean (sd) concentration of creatinine in the urine of 93 scrapie-affected sheep was 2.43 (1.56) microg/ml compared with 0.94 (0.86) pg/ml in 49 healthy sheep and 1.10 (0-95) pg/ml in 25 sheep with other diseases. These discriminant analyses carried out on healthy and scrapie-affected sheep showed that plasma 20beta-dihydrocortisol and urinary creatinine were the best predictors of the disease, and classified correctly 98 per cent of healthy sheep and 82 per cent of scrapie-affected sheep.
+
+[PMID 9408088] Cortisol metabolism and its inhibition by glycyrrhetinic acid in the isolated perfused human placental lobule
+1997
+We have previously reported the placental metabolism of prednisolone to prednisone, 20alpha- and beta-dihydroprednisone and 20beta-dihydroprednisolone. In this study, the disposition of cortisol was investigated in vitro in the dual perfused, isolated human placental lobule after the addition of cortisol (1.2 micromol, n = 3 and 12 micromol, n = 4) to the maternal compartment. Analysis of 5 h maternal and fetal perfusate samples by high performance liquid chromatography-electrospray-tandem mass spectrometry (HPLC-ESI-MS/MS) revealed that cortisol was mainly metabolized to cortisone, but a significant production of 20alpha-dihydrocortisone, 20beta-dihydrocortisone, 20alpha-dihydrocortisol and 20beta-dihydrocortisol was also detected. Saturability of metabolism but not transfer was demonstrated. Metabolism was eliminated by co-perfusion with the potent 11beta-hydroxysteroid dehydrogenase (11beta-HSD) enzyme inhibitor 18beta-glycyrrhetinic acid (GA). The disposition of GA was analysed using HPLC-atmospheric pressure chemical ionisation-MS/MS (HPLC-APCI-MS/MS). GA was found to transfer from the maternal to the fetal circulations without detectable metabolism during 6 h of perfusion.
+
+[PMID 10454083] Hydrocortisone levels in the urine and blood of horses treated with ACTH
+1999
+An investigation was undertaken to demonstrate whether therapeutic treatment with ACTH raises hydrocortisone (cortisol) levels in horse urine above the limit (1000 ng/ml) established by the International Conference of Racing Authorities with the aim of controlling the abuse of cortisol and ACTH in equine sports. ACTH (200 iu) was administered i.m. to 3 Thoroughbred horses; urine and blood samples were collected at intervals afterwards and analysed by an immunoenzymatic system (ELISA) and HPLC-MS. To ascertain post exercise cortisol levels in untreated horses, 101 urine and 103 serum samples were taken from horses immediately after racing and analysed by ELISA. The peak urine level of cortisol, detected 8 h after ACTH administration, was around 600 ng/ml using either ELISA or HPLC-MS. The peak serum cortisol concentration was found to be around 250 ng/ml by ELISA, but consistently less by HPLC-MS. Mean cortisol levels in post race horses were 135.1+/-72.1 ng/ml in urine and 90.1+/-41.7 ng/ml in serum. High levels of the metabolite 20beta-dihydrocortisol in urine and the cortisol precursor 11beta-desoxycortisol in serum were found. The latter showed high cross-reactivity with cortisol on ELISA. In our experiment, treatment with ACTH 200 iu i.m. did not raise urinary cortisol levels above the 1000 ng/ml threshold proposed by the ICRA.

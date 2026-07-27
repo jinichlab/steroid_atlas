@@ -1,0 +1,18 @@
+Compound: 4-hydroxyestrone 3-O-(beta-D-glucuronide)(1-)
+ChEBI ID: CHEBI:136969
+PubChem CID: 129011095
+
+== Chemical properties ==
+IUPAC Name: (2S,3S,4S,5R,6S)-3,4,5-trihydroxy-6-[[(8R,9S,13S,14S)-4-hydroxy-13-methyl-17-oxo-7,8,9,11,12,14,15,16-octahydro-6H-cyclopenta[a]phenanthren-3-yl]oxy]oxane-2-carboxylate
+Molecular Formula: C24H29O9-
+Molecular Weight: 461.5
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CCC4=C3C=CC(=C4O)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)[O-])O)O)O
+InChI: InChI=1S/C24H30O9/c1-24-9-8-11-10-4-6-15(32-23-20(29)18(27)19(28)21(33-23)22(30)31)17(26)13(10)3-2-12(11)14(24)5-7-16(24)25/h4,6,11-12,14,18-21,23,26-29H,2-3,5,7-9H2,1H3,(H,30,31)/p-1/t11-,12-,14+,18+,19+,20-,21+,23-,24+/m1/s1
+InChIKey: QAOFTFHHOWYCDI-WOKPNQEWSA-M
+XLogP: 2.3
+TPSA: 157
+H-Bond Donors: 4
+H-Bond Acceptors: 9
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of 4-hydroxyestrone 3-<em>O</em>-(β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic acid function; major species at pH 7.3.

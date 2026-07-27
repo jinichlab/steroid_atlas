@@ -1,0 +1,18 @@
+Compound: 17beta-estradiol 3-O-(3-sulfo-beta-D-glucuronide) 17-sulfate(3-)
+ChEBI ID: CHEBI:178094
+PubChem CID: 156613050
+
+== Chemical properties ==
+IUPAC Name: (2S,3R,4S,5R,6S)-3,5-dihydroxy-6-[[(8R,9S,13S,14S,17S)-13-methyl-17-sulfonatooxy-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthren-3-yl]oxy]-4-sulfonatooxyoxane-2-carboxylate
+Molecular Formula: C24H29O14S2-3
+Molecular Weight: 605.6
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2OS(=O)(=O)[O-])CCC4=C3C=CC(=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)[O-])O)OS(=O)(=O)[O-])O
+InChI: InChI=1S/C24H32O14S2/c1-24-9-8-14-13-5-3-12(10-11(13)2-4-15(14)16(24)6-7-17(24)37-39(29,30)31)35-23-19(26)20(38-40(32,33)34)18(25)21(36-23)22(27)28/h3,5,10,14-21,23,25-26H,2,4,6-9H2,1H3,(H,27,28)(H,29,30,31)(H,32,33,34)/p-3/t14-,15-,16+,17+,18+,19-,20+,21+,23-,24+/m1/s1
+InChIKey: VFPGVQRZZWWOOK-ZDFSTSLFSA-K
+XLogP: 2.1
+TPSA: 249
+H-Bond Donors: 2
+H-Bond Acceptors: 14
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of 17β-estradiol 3-<em>O</em>-(3-sulfo-β-<small>D</small>-glucuronide) 17-sulfate arising from deprotonation of the carboxylic and sulfate groups; major species at pH 7.3.

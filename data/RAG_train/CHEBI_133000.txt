@@ -1,0 +1,28 @@
+Compound: pregnenolone sulfate(1-)
+ChEBI ID: CHEBI:133000
+PubChem CID: 20112068
+
+== Chemical properties ==
+IUPAC Name: [(3S,8S,9S,10R,13S,14S,17S)-17-acetyl-10,13-dimethyl-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl] sulfate
+Molecular Formula: C21H31O5S-
+Molecular Weight: 395.5
+SMILES: CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)OS(=O)(=O)[O-])C)C
+InChI: InChI=1S/C21H32O5S/c1-13(22)17-6-7-18-16-5-4-14-12-15(26-27(23,24)25)8-10-20(14,2)19(16)9-11-21(17,18)3/h4,15-19H,5-12H2,1-3H3,(H,23,24,25)/p-1/t15-,16-,17+,18-,19-,20-,21+/m0/s1
+InChIKey: DIJBBUIOWGGQOP-QGVNFLHTSA-M
+XLogP: 3.8
+TPSA: 91.9
+H-Bond Donors: 0
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+A steroid sulfate oxoanion that is the conjugate base of pregnenolone sulfate, obtained by deprotonation of the sulfo group; major species at pH 7.3.
+
+== Literature on pregnenolone sulfate(1-) ==
+
+[PMID 9522171] Neuroactive steroids modulate in vitro the Mg(2+)-dependent Ca(2+)-ATPase activity in cultured rat neurons
+1998
+1. The in vitro effect of neuroactive steroids on the Mg(2+)-dependent Ca(2+)-ATPase activity in neuronal membranes isolated from primary cell culture of rat cortex was examined. 2. A 1-hr treatment of neuronal cell culture with 17-beta-estradiol (10 pM) and pregnenolone sulfate (1 microM) resulted in an increase in the enzyme activity of as much as 130% and 160%, respectively. 3. Neuroactive steroids moderately decreased the stimulation of the Mg(2+)-dependent Ca(2+)-ATPase activity by 72 nM calmodulin, by 20-30%. 4. The effects of hormones on the ATPase activity were irreversible after extensive washing of the membranes. 5. These results suggest that 17-beta-estradiol and pregnenolone sulfate at physiological concentrations could participate in the regulation of neuronal calcium homeostasis at a membrane level.
+
+[PMID 3827742] Production of steroids and release of prostaglandins by spherical pig blastocysts in vitro
+1986
+Levels of pregnenolone and progesterone in spherical pig blastocysts (near 4 and 15 microM respectively) exceeded respective levels in histotroph by about 400-fold. When blastocysts were cultured for 5 days in a synthetic medium containing pregnenolone sulfate (1 microM), daily rates of release of pregnenolone, progesterone, androstenedione, testosterone, oestrone and oestradiol were determined to be near 320, 45, 26, 27, 0.8 and 9.2 fmol per blastocyst respectively. Daily outputs of progesterone and testosterone (fmol per blastocyst) diminished (P less than 0.05) to 1.3 and undetectable levels (less than 2) respectively in the presence of Trilostane (94 microM). Increasing the content of pregnenolone sulfate in the culture medium (to 4.5 microM) resulted in higher daily rates of release of pregnenolone and progesterone (to near 1740 and 380 fmol per blastocyst respectively), verifying activity of 3 beta-hydroxy-delta 5-steroid dehydrogenase, and of arylsulfatase, in tissues of intact spherical pig blastocysts. Prostaglandin E2 was the predominant prostaglandin (PG) released by cultured blastocysts (about 1 fmol per blastocyst per hour), hourly rates of release of PGH2 (derived) and PGF2 alpha being near 0.1 and less than 0.06 fmol per blastocyst respectively. The data establish a capacity for spherical pig blastocysts to release a range of steroids and PGs of possible significance to embryonic growth and development in vivo.

@@ -1,0 +1,18 @@
+Compound: 5alpha-androstane-3,17-dione
+ChEBI ID: CHEBI:15994
+PubChem CID: 222865
+
+== Chemical properties ==
+IUPAC Name: (5S,8R,9S,10S,13S,14S)-10,13-dimethyl-2,4,5,6,7,8,9,11,12,14,15,16-dodecahydro-1H-cyclopenta[a]phenanthrene-3,17-dione
+Molecular Formula: C19H28O2
+Molecular Weight: 288.4
+SMILES: C[C@]12CCC(=O)C[C@@H]1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CCC4=O)C
+InChI: InChI=1S/C19H28O2/c1-18-9-7-13(20)11-12(18)3-4-14-15-5-6-17(21)19(15,2)10-8-16(14)18/h12,14-16H,3-11H2,1-2H3/t12-,14-,15-,16-,18-,19-/m0/s1
+InChIKey: RAJWOBJTTGJROA-WZNAKSSCSA-N
+XLogP: 3.6
+TPSA: 34.1
+H-Bond Donors: 0
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+The 5α-stereoisomer of androstane-3,17-dione.

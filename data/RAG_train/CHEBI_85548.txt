@@ -1,0 +1,18 @@
+Compound: 9alpha-hydroxy-3-oxo-23,24-bisnorchol-4-en-22-oyl-CoA(4-)
+ChEBI ID: CHEBI:85548
+PubChem CID: 90659333
+
+== Chemical properties ==
+IUPAC Name: [(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-4-hydroxy-2-[[[[(3R)-3-hydroxy-4-[[3-[2-[(2S)-2-[(8S,9R,10S,13S,14S,17R)-9-hydroxy-10,13-dimethyl-3-oxo-2,6,7,8,11,12,14,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-17-yl]propanoyl]sulfanylethylamino]-3-oxopropyl]amino]-2,2-dimethyl-4-oxobutoxy]-oxidophosphoryl]oxy-oxidophosphoryl]oxymethyl]oxolan-3-yl] phosphate
+Molecular Formula: C43H62N7O19P3S-4
+Molecular Weight: 1106.0
+SMILES: C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@]3([C@H]2CCC4=CC(=O)CC[C@@]43C)O)C)C(=O)SCCNC(=O)CCNC(=O)[C@@H](C(C)(C)COP(=O)([O-])OP(=O)([O-])OC[C@@H]5[C@H]([C@H]([C@@H](O5)N6C=NC7=C(N=CN=C76)N)O)OP(=O)([O-])[O-])O
+InChI: InChI=1S/C43H66N7O19P3S/c1-23(26-8-9-27-28-7-6-24-18-25(51)10-12-42(24,5)43(28,57)14-13-41(26,27)4)39(56)73-17-16-45-30(52)11-15-46-37(55)34(54)40(2,3)20-66-72(63,64)69-71(61,62)65-19-29-33(68-70(58,59)60)32(53)38(67-29)50-22-49-31-35(44)47-21-48-36(31)50/h18,21-23,26-29,32-34,38,53-54,57H,6-17,19-20H2,1-5H3,(H,45,52)(H,46,55)(H,61,62)(H,63,64)(H2,44,47,48)(H2,58,59,60)/p-4/t23-,26+,27-,28-,29+,32+,33+,34-,38+,41+,42-,43+/m0/s1
+InChIKey: BTANWBCJTFWTDB-ISEMAQJJSA-J
+XLogP: -2.5
+TPSA: 438
+H-Bond Donors: 6
+H-Bond Acceptors: 24
+
+== ChEBI definition ==
+An acyl-CoA oxoanion resulting from the removal of all four protons from the phosphate groups of 9α-hydroxy-3-oxo-23,24-bisnorchol-4-en-22-oyl-CoA; major species at pH 7.3.

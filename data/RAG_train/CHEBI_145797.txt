@@ -1,0 +1,28 @@
+Compound: digoxigenin(1-)
+ChEBI ID: CHEBI:145797
+PubChem CID: 145864754
+
+== Chemical properties ==
+IUPAC Name: 4-[(3S,5R,8R,9S,10S,12R,13S,14S,17R)-3,12,14-trihydroxy-10,13-dimethyl-1,2,3,4,5,6,7,8,9,11,12,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]furan-2-olate
+Molecular Formula: C23H33O5-
+Molecular Weight: 389.5
+SMILES: C[C@]12CC[C@@H](C[C@H]1CC[C@@H]3[C@@H]2C[C@H]([C@]4([C@@]3(CC[C@@H]4C5=COC(=C5)[O-])O)C)O)O
+InChI: InChI=1S/C23H34O5/c1-21-7-5-15(24)10-14(21)3-4-17-18(21)11-19(25)22(2)16(6-8-23(17,22)27)13-9-20(26)28-12-13/h9,12,14-19,24-27H,3-8,10-11H2,1-2H3/p-1/t14-,15+,16-,17-,18+,19-,21+,22+,23+/m1/s1
+InChIKey: QWANRZGATYQPEL-KCZCNTNESA-M
+XLogP: 2.9
+TPSA: 96.9
+H-Bond Donors: 3
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+An organic anion that is the conjugate base of digoxigenin resulting from the deprotonation of the furanone moiety; major species at pH 7.3.
+
+== Literature on digoxigenin(1-) ==
+
+[PMID 8726358] Intracellular localization of the mRNAs of argininosuccinate synthetase and argininosuccinate lyase around liver mitochondria, visualized by high-resolution in situ reverse transcription-polymerase chain reaction
+1996
+Argininosuccinate synthetase and argininosuccinate lyase, two cytoplasmic enzymes of the urea cycle, are released into the soluble phase in the absence of detergent when cells are disrupted. Yet previous biochemical studies, as well as immunocytochemistry at the electron microscope level, have shown that these enzymes are localized around mitochondria in situ. Such intracellular localization of soluble enzymes requires mechanisms to deliver the proteins to the appropriate sites, where they may then be anchored by specific protein-protein interactions. A method was developed to examine the intracellular distribution of the mRNA of argininosuccinate synthetase and argininosuccinate lyase in intact rat liver at the ultrastructural level by in situ reverse transcription and the polymerase chain reaction, using primers targeting regions of the coding sequences of the rat enzymes, digoxigenin-dUTP as the label, and anti-digoxigenin/1 nm [corrected] gold plus silver enhancement as the detection method. The tissue was fixed in 4% paraformaldehyde/0.1% glutaraldehyde and embedded in Lowicryl. Examination of the numbers and the location of the silver grains, coupled with morphometric analysis of the electron micrographs, permitted the calculation of the silver "enrichment ratio" for each type of cell structure. These ratios showed that the mRNAs for argininosuccinate synthetase and argininosuccinate lyase were located next to the cytoplasmic side of the mitochondrial membrane and in the nearby endoplasmic reticulum. Most of the silver grains that were observed in the endoplasmic reticulum were within 200 nm of the mitochondria; it was not possible, however, to determine if those grains were actually associated with the reticular membranes. These studies demonstrate that the mRNAs of these two soluble cytoplasmic proteins are localized to the same limited regions where the proteins are situated. Translation of the proteins, therefore, must occur at these specific sites. The targeting of argininosuccinate synthetase and argininosuccinate lyase mRNAs to the immediate vicinity of the mitochondria may be the first step of the mechanisms by which the spatial organization of these soluble proteins in situ is accomplished. The targeting of mRNAs for soluble cytoplasmic proteins of organized metabolic pathways has not been demonstrated previously. These studies also show that in situ reverse transcription and the polymerase chain reaction at the ultrastructural level, which has not been previously reported, can be used to detect specific mRNAs; it should be extremely valuable for the intracellular detection of low-abundance mRNAs.
+
+[PMID 872427] Digoxin radioimmunoassay: a comparison of the assay performances using tritiated and 125I radioiodinated tracers
+1977
+The preparation of 125I-labelled tracer for digoxin radioimmunoassay (125I monoiodinated 3-succinyl digoxigenin-1-tyrosine) is described, and its performance in radioimmunoassay of plasma samples is compared with that obtained with tritiated digoxin. The accuracy levels were assessed through the evaluation of different potential sources of systematic errors, such as interference from digoxin-related molecules and plasma proteins and methodological artefacts possibly associated with the immunocomplex instability, and through a series of checks including the recovery and parallelism tests and the correspondence of results obtained with the two tracers. The slope and the repeatability with time of the calibration curves and the spread of replicate estimates were taken into consideration to assess the assay precision. An essential equivalence in terms of reliability of measurement was proved for the two methodological variants, so that practical aspects and economic factors remain the main criteria to evaluate the relative merits: from this point of view, the advantages of using 125I-labelled tracer, as an alternative to tritiated digoxin, are discussed.

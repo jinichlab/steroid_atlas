@@ -1,0 +1,33 @@
+Compound: 3alpha-sulfotaurodeoxycholate(2-)
+ChEBI ID: CHEBI:195625
+PubChem CID: 168475449
+
+== Chemical properties ==
+IUPAC Name: 2-[[(4R)-4-[(3R,5R,8R,9S,10S,12S,13R,14S,17R)-12-hydroxy-10,13-dimethyl-3-sulfonatooxy-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl]pentanoyl]amino]ethanesulfonate
+Molecular Formula: C26H43NO9S2-2
+Molecular Weight: 577.8
+SMILES: C[C@H](CCC(=O)NCCS(=O)(=O)[O-])[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2CC[C@H]4[C@@]3(CC[C@H](C4)OS(=O)(=O)[O-])C)O)C
+InChI: InChI=1S/C26H45NO9S2/c1-16(4-9-24(29)27-12-13-37(30,31)32)20-7-8-21-19-6-5-17-14-18(36-38(33,34)35)10-11-25(17,2)22(19)15-23(28)26(20,21)3/h16-23,28H,4-15H2,1-3H3,(H,27,29)(H,30,31,32)(H,33,34,35)/p-2/t16-,17-,18-,19+,20-,21+,22+,23+,25+,26-/m1/s1
+InChIKey: UCVGCHGIKFWAGH-VAYUFCLWSA-L
+XLogP: 3
+TPSA: 190
+H-Bond Donors: 2
+H-Bond Acceptors: 9
+
+== ChEBI definition ==
+3alpha-sulfotaurodeoxycholate(2-) is a cholanic acid conjugate anion and a steroid sulfate oxoanion. It is a conjugate base of a taurodeoxycholic acid 3-sulfate.
+
+--- RELATED COMPOUND: taurodeoxycholic acid 3-sulfate ---
+No literature found for 3alpha-sulfotaurodeoxycholate(2-) itself. 3alpha-sulfotaurodeoxycholate(2-) is the conjugate base of taurodeoxycholic acid 3-sulfate; the abstracts below are about taurodeoxycholic acid 3-sulfate.
+
+[PMID 38915026] Lung cancer metabolomics: a pooled analysis in the Cancer Prevention Studies
+2024
+BackgroundA better understanding of lung cancer etiology and the development of screening biomarkers have important implications for lung cancer prevention.MethodsWe included 623 matched case-control pairs from the Cancer Prevention Study (CPS) cohorts. Pre-diagnosis blood samples were collected between 1998 and 2001 in the CPS-II Nutrition cohort and 2006 and 2013 in the CPS-3 cohort and were sent for metabolomics profiling simultaneously. Cancer-free controls at the time of case diagnosis were 1:1 matched to cases on date of birth, blood draw date, sex, and race/ethnicity. Odds ratios (ORs) and 95% confidence intervals (CIs) were estimated using conditional logistic regression, controlling for confounders. The Benjamini-Hochberg method was used to correct for multiple comparisons.ResultsSphingomyelin (d18:0/22:0) (OR: 1.32; 95% CI: 1.15, 1.53, FDR = 0.15) and taurodeoxycholic acid 3-sulfate (OR: 1.33; 95% CI: 1.14, 1.55, FDR = 0.15) were positively associated with lung cancer risk. Participants diagnosed within 3 years of blood draw had a 55% and 48% higher risk of lung cancer per standard deviation increase in natural log-transformed sphingomyelin (d18:0/22:0) and taurodeoxycholic acid 3-sulfate level, while 26% and 28% higher risk for those diagnosed beyond 3 years, compared to matched controls. Lipid and amino acid metabolism accounted for 47% to 80% of lung cancer-associated metabolites at P ConclusionsThis is the largest prospective study examining untargeted metabolic profiles regarding lung cancer risk. Sphingomyelin (d18:0/22:0), a sphingolipid, and taurodeoxycholic acid 3-sulfate, a bile salt, may be risk factors and potential screening biomarkers for lung cancer. Lipid and amino acid metabolism may contribute significantly to lung cancer etiology which varied by smoking status.
+
+[PMID 41187797] Dissecting the role of plasma and urinary metabolites in bone mineral density: Evidence from a bidirectional univariable Mendelian randomization study
+2025
+BackgroundPlasma and urinary metabolites offer valuable insights into diverse metabolic pathways, potentially playing a pivotal role in osteoporosis pathogenesis. Investigating their association could significantly enhance our comprehension of the underlying mechanisms of osteoporosis.MethodsThis research employed bidirectional univariable Mendelian randomization analyses to causally examine 1296 plasma and 1399 urinary metabolites in relation to estimated bone mineral density (BMD). Subsequent bidirectional univariable Mendelian randomization analyses used these metabolites to further validate these relationships and elucidate the impact of age.Results15 plasma and 5 urinary metabolites demonstrated a causal link with estimated BMD. Further analysis identified 3 metabolites with causal associations in at least one age subgroup. Taurocholenate sulfate exhibited a causal association with total body BMD of all age group (β = 0.04, 95 % CI = 0.02-0.06, p = 8.57E-04), 45-60 years group (β = 0.07, 95 % CI = 0.03-0.012, p = 1.40E-03), over 60 years age group (β = 0.06, 95 % CI = 0.02-0.011, p = 3.37E-03). Taurodeoxycholic acid 3-sulfate demonstrated a causal link to total body BMD within the 45-60 group (β = 0.07, 95 %CI = 0.02-0.012, p = 3.21E-03). Octadecadienedioate was related to total body BMD in the 45-60 years group (β = 0.07, 95 %CI = 0.02-0.012, p = 4.61E-03).ConclusionsThis research deepens our insight into metabolite and bone mineral density interactions. The three lipid-related metabolites with causal links to bone density could be potential markers and targets for osteoporosis treatment, especially in middle-aged and older adults.
+
+[PMID 37512553] Crosstalk between Breast Milk N-Acetylneuraminic Acid and Infant Growth in a Gut Microbiota-Dependent Manner
+2023
+The healthy growth of infants during early life is associated with lifelong consequences. Breastfeeding has positive impacts on reducing obesity risk, which is likely due to the varied components of breast milk, such as N-acetylneuraminic acid (Neu5Ac). However, the effect of breast milk Neu5Ac on infant growth has not been well studied. In this study, targeted metabolomic and metagenomic analyses were performed to illustrate the association between breast milk Neu5Ac and infant growth. Results demonstrated that Neu5Ac was significantly abundant in breast milk from infants with low obesity risk in two independent Chinese cohorts. Neu5Ac from breast milk altered infant gut microbiota and bile acid metabolism, resulting in a distinct fecal bile acid profile in the high-Neu5Ac group, which was characterized by reduced levels of primary bile acids and elevated levels of secondary bile acids. Taurodeoxycholic acid 3-sulfate and taurochenodeoxycholic acid 3-sulfate were correlated with high breast milk Neu5Ac and low obesity risk in infants, and their associations with healthy growth were reproduced in mice colonized with infant-derived microbiota. Parabacteroides might be linked to bile acid metabolism and act as a mediator between Neu5Ac and infant growth. These results showed the gut microbiota-dependent crosstalk between breast milk Neu5Ac and infant growth.

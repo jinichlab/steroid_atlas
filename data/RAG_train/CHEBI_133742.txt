@@ -1,0 +1,18 @@
+Compound: 17alpha-hydroxypregnenolone 3-sulfate(1-)
+ChEBI ID: CHEBI:133742
+PubChem CID: 122198226
+
+== Chemical properties ==
+IUPAC Name: [(3S,8R,9S,10R,13S,14S,17R)-17-acetyl-17-hydroxy-10,13-dimethyl-1,2,3,4,7,8,9,11,12,14,15,16-dodecahydrocyclopenta[a]phenanthren-3-yl] sulfate
+Molecular Formula: C21H31O6S-
+Molecular Weight: 411.5
+SMILES: CC(=O)[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)OS(=O)(=O)[O-])C)C)O
+InChI: InChI=1S/C21H32O6S/c1-13(22)21(23)11-8-18-16-5-4-14-12-15(27-28(24,25)26)6-9-19(14,2)17(16)7-10-20(18,21)3/h4,15-18,23H,5-12H2,1-3H3,(H,24,25,26)/p-1/t15-,16+,17-,18-,19-,20-,21-/m0/s1
+InChIKey: OMOKWYAQVYBHMG-TVWVXWENSA-M
+XLogP: 2.7
+TPSA: 112
+H-Bond Donors: 1
+H-Bond Acceptors: 6
+
+== ChEBI definition ==
+A steroid sulfate oxoanion obtained by deprotonation of the sulfo group of 17α-hydroxypregnenolone 3-sulfate.

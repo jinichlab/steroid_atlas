@@ -1,0 +1,18 @@
+Compound: 19-oxo-5alpha-dihydrotestosterone
+ChEBI ID: CHEBI:137032
+PubChem CID: 129011069
+
+== Chemical properties ==
+IUPAC Name: (5S,8S,9S,10R,13S,14S,17S)-17-hydroxy-13-methyl-3-oxo-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthrene-10-carbaldehyde
+Molecular Formula: C19H28O3
+Molecular Weight: 304.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CC[C@@H]4[C@@]3(CCC(=O)C4)C=O
+InChI: InChI=1S/C19H28O3/c1-18-8-7-16-14(15(18)4-5-17(18)22)3-2-12-10-13(21)6-9-19(12,16)11-20/h11-12,14-17,22H,2-10H2,1H3/t12-,14-,15-,16-,17-,18-,19+/m0/s1
+InChIKey: AFTUEXSGQQDJKS-GLOHGQAKSA-N
+XLogP: 2.3
+TPSA: 54.4
+H-Bond Donors: 1
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+An androstanoid that is 5α-dihydrotestosterone carrying an additional oxo susbstituent at position 19.

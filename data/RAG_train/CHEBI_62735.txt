@@ -1,0 +1,36 @@
+Compound: lupan-3beta,20-diol
+ChEBI ID: CHEBI:62735
+PubChem CID: 10003607
+
+== Chemical properties ==
+IUPAC Name: (1R,3aR,5aR,5bR,7aR,9S,11aR,11bR,13aR,13bS)-1-(2-hydroxypropan-2-yl)-3a,5a,5b,8,8,11a-hexamethyl-1,2,3,4,5,6,7,7a,9,10,11,11b,12,13,13a,13b-hexadecahydrocyclopenta[a]chrysen-9-ol
+Molecular Formula: C30H52O2
+Molecular Weight: 444.7
+SMILES: C[C@]12CC[C@H]([C@@H]1[C@H]3CC[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC2)C)C)(C)C)O)C)C(C)(C)O
+InChI: InChI=1S/C30H52O2/c1-25(2)21-12-16-30(8)22(28(21,6)15-13-23(25)31)10-9-20-24-19(26(3,4)32)11-14-27(24,5)17-18-29(20,30)7/h19-24,31-32H,9-18H2,1-8H3/t19-,20-,21+,22-,23+,24-,27-,28+,29-,30-/m1/s1
+InChIKey: YDNYDUBBAZTLTQ-LIVJDELJSA-N
+XLogP: 8.4
+TPSA: 40.5
+H-Bond Donors: 2
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A pentacyclic triterpenoid that is lupane in which the hydrogens at the 3β and 20 positions are substituted by hydroxy groups.
+
+== Literature on lupan-3beta,20-diol ==
+
+[PMID 36604888] [Two new triterpeneoids from roots of Dolomiaea souliei]
+2022
+The present study analyzed the chemical constituents in dried roots of Dolomiaea souliei. Chromatographic methods, such as normal-phase, and reversed-phase column chromatography, TLC, and preparative HPLC, were applied to separate and purify the petroleum ether extract of D. souliei. The structures of the purified constituents were identified by multiple spectroscopic methods including 1 D NMR, 2 D NMR, IR, UV, and HR-ESI-MS. Fourteen triterpenoids were obtained and identified as bauer-8-ene-3,11-dione-7α-ol(1), bauer-8-ene-3-one-7α,11α-diol(2), 3-oxo-11α-hydroxy-urs-12-ene(3), 3-oxour-12-ene-1β,11α-diol(4), 3β,11α-dihydroxy-urs-12-ene(5), taraxast-20-ene-3β,30-diol(6), 28-hydroxy-3-oxo-12-ursene(7), 3β-hydroxytaraxast-20-ene-30-aldehyde(8), urs-12-ene-2α,3β,28-triol(9), 20-hydroxylupan-3-one(10), monogynol A(11), obtusalin(12), 3-oxo, 11α-hydroxy-olean-12-ene(13), and isocabralealactone(14). Among them, compounds 1 and 2 were new compounds. Compounds 4-10, 12, and 14 were isolated from this genus for the first time. Compounds 3 and 11 were obtained from D. souliei for the first time.
+
+[PMID 1133680] Isolation of 19alpha-H-lupeol from Maclura pomifera
+1975
+A reinvestigation of the constituents of the Osage orange (maclura pomifera) yielded, in addition to the previously reported triterpenses (lupeol, butyrospermol, and lupan-3beta,20-diol), the pigments osajin and pomiferin, and a previously unreported constituent. The structure of this new compound was investigated. On the basis of spectroscopic and chemical data, it appeared to be an epimer of lupeol and is referred to as 19alpha-H-lupeol.
+
+[PMID 10930257] Arabidopsis thaliana LUP1 converts oxidosqualene to multiple triterpene alcohols and a triterpene diol
+2000
+The Arabidopsis thaliana LUP1 gene encodes an enzyme that converts oxidosqualene to pentacyclic triterpenes. Lupeol and beta-amyrin were previously reported as LUP1 products. Further investigation described here uncovered the additional products germanicol, taraxasterol, psi-taraxasterol, and 3,20-dihydroxylupane. These results suggest that the 80 known C(30)H(50)O compounds that are structurally consistent with being oxidosqualene cyclase products may be derived from fewer than 80 enzymes and that some C(30)H(52)O(2) compounds may be direct cyclization products of oxidosqualene.
+
+[PMID 17260797] [Studies on chemical constituents of Balanophora spicata]
+2006
+ObjectiveTo investigate the chemical constituents of Balanophora spicata.MethodVarious chromatographic and spectral techniques were used to isolate the constituents and elucidate their structures.ResultEight compounds were isolated from whole plant of B. spicata and elucidated as balanophorin A (1), balanophorin B (2), beta-amyrin acetate (3), monogynol A (4), lupeone (5), caffeic acid ethyl ester (6), catechin (7), 1-O-(E)-caffeoyl-3-O-galloyl-beta-D-glucopyranose (8), respectively.ConclusionCompounds of 1-8 were obtained from B. spicata for the first time and the compound 4 was isolated from this genus for the first time.

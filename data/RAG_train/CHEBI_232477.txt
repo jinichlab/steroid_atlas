@@ -1,0 +1,18 @@
+Compound: 3-O-(beta-D-glucopyranosyl)-2alpha-acetoxyisomotiol
+ChEBI ID: CHEBI:232477
+PubChem CID: 172429305
+
+== Chemical properties ==
+IUPAC Name: [(3R,3aR,5aS,7aR,9R,10R,11aS,13aS,13bR)-3a,5a,8,8,11a,13a-hexamethyl-3-propan-2-yl-9-[(2R,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-1,2,3,4,5,6,7,7a,9,10,11,12,13,13b-tetradecahydrocyclopenta[a]chrysen-10-yl] acetate
+Molecular Formula: C38H62O8
+Molecular Weight: 646.9
+SMILES: CC(C)[C@H]1CC[C@@H]2[C@@]1(CC[C@]3([C@]2(CCC4=C3CC[C@@H]5[C@@]4(C[C@H]([C@@H](C5(C)C)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)OC(=O)C)C)C)C)C
+InChI: InChI=1S/C38H62O8/c1-20(2)22-10-13-28-35(22,6)16-17-37(8)24-11-12-27-34(4,5)32(46-33-31(43)30(42)29(41)26(19-39)45-33)25(44-21(3)40)18-36(27,7)23(24)14-15-38(28,37)9/h20,22,25-33,39,41-43H,10-19H2,1-9H3/t22-,25-,26-,27+,28-,29-,30+,31-,32+,33+,35-,36-,37-,38+/m1/s1
+InChIKey: JHPRINUVFRMYDG-XCURSTFZSA-N
+XLogP: 6.7
+TPSA: 126
+H-Bond Donors: 4
+H-Bond Acceptors: 8
+
+== ChEBI definition ==
+3-O-(beta-D-glucopyranosyl)-2alpha-acetoxyisomotiol is a glycoside and a triterpenoid.

@@ -1,0 +1,18 @@
+Compound: 7alpha-hydroxy-3-oxo-5beta-cholan-24-oate
+ChEBI ID: CHEBI:87731
+PubChem CID: 20848987
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(5R,7R,8R,9S,10S,13R,14S,17R)-7-hydroxy-10,13-dimethyl-3-oxo-1,2,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H37O4-
+Molecular Weight: 389.5
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CCC(=O)C4)C)O)C
+InChI: InChI=1S/C24H38O4/c1-14(4-7-21(27)28)17-5-6-18-22-19(9-11-24(17,18)3)23(2)10-8-16(25)12-15(23)13-20(22)26/h14-15,17-20,22,26H,4-13H2,1-3H3,(H,27,28)/p-1/t14-,15+,17-,18+,19+,20-,22+,23+,24-/m1/s1
+InChIKey: KNVADAPHVNKTEP-CIGXQKLNSA-M
+XLogP: 5.2
+TPSA: 77.4
+H-Bond Donors: 1
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+A bile acid anion that is the conjugate base of 7α-hydroxy-3-oxo-5β-cholan-24-oic acid, obtained by deprotonation of the carboxy group; major species at pH 7.3.

@@ -1,0 +1,32 @@
+Compound: 7beta-hydroxypregnenolone
+ChEBI ID: CHEBI:183806
+PubChem CID: 10131679
+
+== Chemical properties ==
+IUPAC Name: 1-[(3S,7R,8S,9S,10R,13S,14S,17S)-3,7-dihydroxy-10,13-dimethyl-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-17-yl]ethanone
+Molecular Formula: C21H32O3
+Molecular Weight: 332.5
+SMILES: CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@H](C=C4[C@@]3(CC[C@@H](C4)O)C)O)C
+InChI: InChI=1S/C21H32O3/c1-12(22)15-4-5-16-19-17(7-9-21(15,16)3)20(2)8-6-14(23)10-13(20)11-18(19)24/h11,14-19,23-24H,4-10H2,1-3H3/t14-,15+,16-,17-,18-,19-,20-,21+/m0/s1
+InChIKey: UEWNVBNIVGLQPG-OCHQKFOUSA-N
+XLogP: 3.1
+TPSA: 57.5
+H-Bond Donors: 2
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 20-oxo steroid that is pregnenolone carrying an additional hydroxy substituent at the 7β-position.
+
+== Literature on 7beta-hydroxypregnenolone ==
+
+[PMID 19362555] Discovery of a novel avian neurosteroid, 7alpha-hydroxypregnenolone, and its role in the regulation of the diurnal rhythm of locomotor activity in Japanese quail
+2009
+The discovery of two novel avian neurosteroids in the quail brain, 7alpha- and 7beta-hydroxypregnenolone is described. Intracerebroventricular administration of 7alpha-hydroxypregnenolone, but not 7beta-hydroxypregnenolone was found to stimulate locomotor activity of male quail when spontaneous nocturnal activity is low. Diurnal changes in locomotor activity in male quail were found to be correlated with a diurnal change in the concentration of diencephalic 7alpha-hydroxypregnenolone. This correlation was a not seen in female quail which have a lower amplitude diurnal rhythm of locomotor activity and lower daytime concentrations of diencephalic 7alpha-hydroxypregnenolone. Treatment of male quail with melatonin was found to depress the synthesis of 7alpha-hydroxypregnenolone in the diencephalon. This is a previously undescribed role for melatonin in the regulation of neurosteroid synthesis in the brain of any vertebrate. We therefore deduced in male quail, that the nocturnal depression in locomotory activity is a consequence of a depression in diencephalic 7alpha-hydroxypregnenolone resulting from the inhibitory action of the nocturnal increase in melatonin. This observation may be of widespread significance for the molecular control of rhythmic locomotor activity in all vertebrates.
+
+[PMID 16272731] Microbial hydroxylation of pregnenolone derivatives
+2005
+Pregnenolone and pregnenolone acetate were incubated with the fungi Cunninghamella elegans, Rhizopus stolonifer and Gibberella fujikuroi. Incubation of with C. elegans yielded metabolites, 3beta,7beta,11alpha-trihydroxypreg-5-en-20-one, 3beta,6alpha,11alpha,12beta,15beta-pentahydroxypreg-4-en-20-one and 3beta,6beta,11alpha-trihydroxypreg-4-en-20-one, while incubation with G. fujikuroi yielded two known metabolites, 3beta,7beta-dihydroxypregn-5-en-20-one and 6beta,15beta-dihydroxypreg-4-ene-3,20-dione. Metabolites and were found to be new. Fermentation of by C. elegans yielded four known oxidative metabolites, androsta-1,4-diene-3,17-dione, 6beta,15beta-dihydroxyandrost-4-ene-3,17-dione and 11alpha,15beta-dihydroxypreg-4-ene-3,20-dione. Fermentation of with R. stolonifer yielded two known metabolites, 11alpha-hydroxypreg-4-ene-3,20-dione and. Compounds were screened for their cholinesterase inhibitory activity in a mechanism-based assay.
+
+[PMID 18305249] 7Alpha-hydroxypregnenolone mediates melatonin action underlying diurnal locomotor rhythms
+2008
+Melatonin regulates diurnal changes in locomotor activity in vertebrates, but the molecular mechanism for this neurohormonal regulation of behavior is poorly understood. Here we show that 7alpha-hydroxypregnenolone, a previously undescribed avian neurosteroid, mediates melatonin action on diurnal locomotor rhythms in quail. In this study, we first identified 7alpha-hydroxypregnenolone and its stereoisomer 7beta-hydroxypregnenolone in quail brain. These neurosteroids have not been described previously in avian brain. We then demonstrated that 7alpha-hydroxypregnenolone acutely increased quail locomotor activity. To analyze the production of 7alpha-hydroxypregnenolone, cytochrome P450(7alpha), a steroidogenic enzyme of this neurosteroid, was also identified. Subsequently, we demonstrated diurnal changes in 7alpha-hydroxypregnenolone synthesis in quail. 7Alpha-Hydroxypregnenolone synthesis and locomotor activity in males were much higher than in females. This is the first demonstration in any vertebrate of a clear sex difference in neurosteroid synthesis. This sex difference in 7alpha-hydroxypregnenolone synthesis corresponded to the sex difference in locomotion. We show that only males exhibited marked diurnal changes in 7alpha-hydroxypregnenolone synthesis, and these changes occurred in parallel with changes in locomotor activity. Finally, we identified melatonin as a key component of the mechanism regulating 7alpha-hydroxypregnenolone synthesis. Increased synthesis of 7alpha-hydroxypregnenolone occurred in males in vivo after melatonin removal via pinealectomy and orbital enucleation (Px plus Ex). Conversely, decreased synthesis of this neurosteroid occurred after melatonin administration to Px plus Ex males. This study demonstrates that melatonin regulates synthesis of 7alpha-hydroxypregnenolone, a key factor for induction of locomotor activity, thus inducing diurnal locomotor changes in male birds. This is a previously undescribed role for melatonin.

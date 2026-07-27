@@ -1,0 +1,40 @@
+Compound: ergosta-5,7,22,24(28)-tetraen-3beta-ol
+ChEBI ID: CHEBI:18249
+PubChem CID: 11090531
+
+== Chemical properties ==
+IUPAC Name: (3S,9S,10R,13R,14R,17R)-10,13-dimethyl-17-[(E,2R)-6-methyl-5-methylidenehept-3-en-2-yl]-2,3,4,9,11,12,14,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-3-ol
+Molecular Formula: C28H42O
+Molecular Weight: 394.6
+SMILES: C[C@H](/C=C/C(=C)C(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CC=C4[C@@]3(CC[C@@H](C4)O)C)C
+InChI: InChI=1S/C28H42O/c1-18(2)19(3)7-8-20(4)24-11-12-25-23-10-9-21-17-22(29)13-15-27(21,5)26(23)14-16-28(24,25)6/h7-10,18,20,22,24-26,29H,3,11-17H2,1-2,4-6H3/b8-7+/t20-,22+,24-,25+,26+,27+,28-/m1/s1
+InChIKey: SQFQJKZSFOZDJY-CVGLIYDESA-N
+XLogP: 7.7
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A 3β-sterol having double bonds in the 5-, 7- and 22-positions and a methylene group at position 24.
+
+== Literature on ergosta-5,7,22,24(28)-tetraen-3beta-ol ==
+
+[PMID 41472032] Gut Microbiome and Metabolome Signatures Associated with Heat Tolerance in Dairy Cows
+2025
+Heat stress significantly impairs dairy cow health and productivity, highlighting the need to understand the gut microbiome-metabolite interactions that contribute to heat tolerance. Here, we integrated metagenomic sequencing and untargeted metabolomics in twelve holstein cows selected from a previously phenotyped herd of 120 individuals, including six heat-tolerant (HT) and six heat-sensitive (HS) cows identified using entropy-weighted TOPSIS scoring. HT cows were enriched in genera such as Faecalimonas and UBA737, which were functionally linked to pathways of energy and lipid metabolism, whereas, HS cows harbored taxa associated with bacterial lipopolysaccharide and glycosphingolipid biosynthesis. A total of 135 metabolites were differentially abundant between groups. Among them, glycerol 2-phosphate and 24(28)-dehydroergosterol showed perfect classification performance (AUC = 1.000), and were mainly involved in membrane lipid remodeling and redox regulation. Integrated analysis revealed coordinated microbial-metabolite networks, exemplified by the Faecalimonas-LysoPS (16:0/0:0) and UBA737-Glycerol 2-phosphate axes, suggesting functional coupling between microbial composition and metabolic adaptation. Together, these findings demonstrate that HT cows harbor gut microbiota and metabolites favoring energy balance, membrane remodeling, and oxidative stress resilience, while HS cows display stress-related metabolic patterns. This study elucidates the microbial-metabolic mechanisms underlying thermal resilience and highlights potential biomarkers and metabolic pathways that could be applied in heat-tolerance breeding and precision management of dairy cattle.
+
+[PMID 3060417] Sterol composition of a delta 5,7-sterol-rich strain of Saccharomyces cerevisiae during batch growth
+1988
+Sterol composition was examined during batch growth on complex media containing ethanol, molasses or glucose as the carbon source. The molasses-grown cells exhibited a balanced sterol composition throughout growth, maintaining the proportion of ergosterol to 24:28-dehydroergosterol equal to 1.4. The negative effect of glucose on sterol synthesis manifested itself by decreasing the accumulation of 24:28-dehydroergosterol and total sterols but not of ergosterol. Using ethanol as the sole carbon source, a large amount of 24:28-dehydroergosterol accumulated, partly at the expense of other sterols. The gradual addition of nitrogen source during growth significantly decreased the accumulation of ergosterol, 24:28-dehydroergosterol and of total sterols. A general scheme of regulation of sterol synthesis in baker's yeast is presented.
+
+[PMID 5122815] Nystatin-resistant mutants of yeast: alterations in sterol content
+1971
+Mutants of the genes nys1 and nys3 differ from sensitive strains (nys(+)) in their sterol content. Ultraviolet absorption spectra of the nonsaponifiable material extracted from cells of nys(+) demonstrated the presence of ergosterol and 24(28)-dehydroergosterol. In nys1 mutants, the spectrum suggests the presence of a new sterol. The absorption spectrum of extracts from nys3 mutants indicates absence of both ergosterol and 24(28)-dehydroergosterol and presence of another new sterol. Conversion of nys(+) and nys3 to petite results in loss of 24(28)-dehydroergosterol in the former and the new sterol in the latter, whereas the new sterol in nys1 is only reduced. The sterols in ethanol-grown cells of all genotypes are essentially the same as is found for growth on glucose. With the exception of nys3 grown on ethanol, the mutants do not appear to be at a disadvantage compared to wild type.
+
+[PMID 3537638] A nystatin-resistant mutant of Saccharomyces cerevisiae: isolation and characterization by electron microscopy and chemical analysis of whole cells, cell-walls and protoplasts
+1986
+A mutant of Saccharomyces cerevisiae NCYC 239 with a high minimum inhibitory concentration (35 micrograms ml-1) for nystatin, compared to that of the parent strain (2 micrograms ml-1), was derived by a series of subcultures in media containing increasing antibiotic concentrations. In the absence of nystatin, the growth rate of the mutant was significantly lower than the parent strain, although mean cell-size and size-distribution were similar. No differences between strains were detectable by electron microscopy. Analysis of whole cells showed the total sterol present and the ratio of ergosterol:24(28)dehydroergosterol was similar. However, there were marked differences in amino acid content and chain-length of fatty acids in the cell wall, and protoplasts from resistant cells had decreased amounts of unsaturated fatty acids. It is suggested that alterations in cell wall components in the mutant may be directly linked to the mechanism of nystatin resistance.
+
+[PMID 1091369] Neutral lipids in the cells and cell envelope fractions of aerobic baker's yeast and anaerobic brewer's yeast
+1975
+The neutral lipids from whole cells and cell envelopes of aerobic Saccharomyces cerevisiae and anaerobic Sacch. carlsbergensis and the cell walls isolated from the cell envelopes were analysed. The effect of anaerobiosis was particularly clear on the neutral lipid composition of the plasma membrane. Compared to the anaerobic membrane, the aerobic membrane contained more C16:1, C18:1 and other unsaturated fatty acids, more total sterol, more than ten times as much ergosterol and less than one tenth as much squalene, reflecting differences between the aerobic and anaerobic whole cellmthe main sterol in the aerobic membrane ergosterol, was mainly in the free form, whereas zymosterol, 24(28)-dehydroergosterol, epi- or fecosterol and lanosterol were predominantly esterified. In contrast, the anerobic membrane contained small amounts of biosynthetic sterol precursors of ergosterol (mainly esterified), and was clearly richer in saturated fatty acids having a greater variation in chain length and in 18:2 acid. Both plasma membranes contained a considerable amount of triacyglycerols, while the amount of lower acylglycerols was clearly higher in the anaerobic plasma membrane. The lipid composition of both cell walls were relatively similar, consisting mainly of triacylglycerols and lower acylglycerols.

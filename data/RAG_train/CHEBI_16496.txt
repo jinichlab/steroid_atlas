@@ -1,0 +1,40 @@
+Compound: 5beta-cholestane-3alpha,7alpha,12alpha-triol
+ChEBI ID: CHEBI:16496
+PubChem CID: 160520
+
+== Chemical properties ==
+IUPAC Name: (3R,5S,7R,8R,9S,10S,12S,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthrene-3,7,12-triol
+Molecular Formula: C27H48O3
+Molecular Weight: 420.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)O)C
+InChI: InChI=1S/C27H48O3/c1-16(2)7-6-8-17(3)20-9-10-21-25-22(15-24(30)27(20,21)5)26(4)12-11-19(28)13-18(26)14-23(25)29/h16-25,28-30H,6-15H2,1-5H3/t17-,18+,19-,20-,21+,22+,23-,24+,25+,26+,27-/m1/s1
+InChIKey: RIVQQZVHIVNQFH-XJZYBRFWSA-N
+XLogP: 6.7
+TPSA: 60.7
+H-Bond Donors: 3
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+5beta-cholestane-3alpha,7alpha,12alpha-triol is a 3alpha-hydroxy steroid, a 7alpha-hydroxy steroid and a 12alpha-hydroxy steroid. It has a role as a mouse metabolite and a human metabolite. It derives from a hydride of a 5beta-cholestane.
+
+== Literature on 5beta-cholestane-3alpha,7alpha,12alpha-triol ==
+
+[PMID 31070338] [Determination of five cholesterol oxidation products in marinated pig feet and hocks by gas chromatography-mass spectrometry]
+2019
+An analytical method was developed for the simultaneous determination of five cholesterol oxidation products (COPs) in marinated pig feet and hocks by gas chromatography-mass spectrometry (GC-MS). The five COPs were 7 β -hydroxycholesterol, cholesterol-5 α,6 α -epoxide, 3 β,5 α,6 β -trihydroxycholestane, 25-hydroxycholesterol and 7-ketocholesterol. The sample was extracted with methanol-chloroform (1:2, v/v) and purified by solid phase extraction. Subsequently, the sample was collected for derivatization by N,O-bis(trimethylsilyl)acetamide-trimethyl chlorosilane-1-trimethylsilyllimidazole (3:2:3, v/v/v) (Sylon BTZ). The column temperature was properly programmed, and the selected ion monitoring (SIM) mode was used for the determination of COPs. Under optimum conditions, the five COPs were well separated within 22 min with good separation. The linear range of the five COPs met the requirement of determination, and the average recoveries of the five COPs spiked in the pork samples at three levels were 61.16%-96.96% with relative standard deviations (RSDs) no more than 7.80% (n=3). The limits of detection (LODs) and limits of quantification (LOQs) were in the range of 0.02-47.07 ng/g and 0.06-156.90 ng/g, respectively. This method has a wide line arrange and high sensitivity, and has been successfully applied to the analysis of COPs in actual samples.
+
+[PMID 32054160] Assessing metabolic properties of dairy cows fed low quality straws by integrative arterial and venous metabolomics
+2020
+ObjectiveThis study was conducted to reveal potential metabolic differences of dairy cows fed corn stover (CS) and rice straw (RS) instead of alfalfa hay (AH) as main forage source.MethodsThirty multiparous mid-late lactation Holstein dairy cows were selected and randomly assigned to three diets, AH, CS, or RS (n = 10). After 13 weeks of the feeding trial, coccygeal arterial and superficial epigastric venous plasma samples were collected before morning feeding for gas chromatography time-of-flight/mass spectrometry analyses.ResultsIn the artery, 8 and 13 metabolites were detected as differential metabolites between AH and CS, and between AH and RS, respectively. The relative abundance of phenylpropanoate (log2fold change [FC]) = 1.30, 1.09), panthenol (log2FC = 2.36, 2.20), threitol (log2FC = 1.00, 1.07), and 3,7,12-trihydroxycoprostane (log2FC = 0.79, 0.78) were greater in both CS and RS than in AH, and tyrosine (log2FC = -0.32), phenylalanine (log2FC = -0.30), and pyruvic acid (log2FC = -0.30) were lower in RS than in AH. In the vein, 1 and 7 metabolites were detected as differential metabolites between AH and CS, and between AH and RS, respectively. By comparing AH and RS, we found that metabolic pathways of phenylalanine, tyrosine, and tryptophan biosynthesis and phenylalanine metabolism were enriched by integrative artery and vein analysis. Furthermore, AH and RS, arterial phenylpropanoate and 4-hydroxyproline were positively, and phenylalanine was negatively correlated with milk urea nitrogen. Finally, in AH and CS, arterial panthenol was negatively correlated with feed efficiency.ConclusionArterial metabolic profiles changed more than those in the veins from animals on three forage diets, differing in amino acids. We found that phenylalanine, tyrosine, and tryptophan biosynthesis and phenylalanine metabolism were restricted when cows were fed low-quality cereal straw diets.
+
+[PMID 26423043] Saponins, Esculeosides B-1 and B-2, in Tomato Juice and Sapogenol, Esculeogenin B1
+2015
+It has been shown that commercial tomato juice packaged in 900 g plastic bottles contains rare, naturally occurring steroidal solanocapsine-type tomato glycosides in which the saponins consist of esculeosides B-1 (2) and B-2 (3) in 0.041% as major components lacking esculeoside A. We suggest that these saponins are derived from esculeoside A (1) when the juice in plastic bottles is prepared by treatment with boiling water, similar to the process used in preparing canned tomatoes. Herein, the obtained tomato saponins (2) and (3) provided sapogenols esculeogenin B1 (4) and B2 (5), respectively, by acid hydrolysis. The former was identical to esculeogenin B previously reported, and the latter was a new sapogenol characterized to be (5α,22S,23S,25S)-22,26-epimino-16β,23-epoxy-3β,23,27-trihydroxycholestane.
+
+[PMID 23812400] Saponins esculeosides B-1 and B-2 in Italian canned tomatoes
+2013
+Italian canned tomatoes contain the tomato glycosides esculeosides B-1 (1, 0.0052%) and B-2 (2, 0.0068%) without esculeoside A. Herein, the structure of esculeoside B-1 (1) is characterized to be 3-O-β-lycotetraosyl (5S,22R,23S,25S)-22,26-epimino-16β,23-epoxy-3β,23,27-trihydroxycholestane 27-O-β-D-glucopyranoside. We hypothesized that these substances might be derived from esculeoside A when the cans are prepared with treatment in boiling water. To confirm that hypothesis, we refluxed esculeoside A with water for 6.5 h, providing esculeosides B-1 (1) and B-2 (2) in yields of 25.8% and 31.0%, respectively.
+
+[PMID 18591803] Conversion of esculeoside A into esculeogenin B
+2008
+Conversion of the spirosolane-type glycoside, esculeoside A, a major component contained in the ripe tomato Lycopersicon esculentum fruits, into a solanocapsine-type sapogenol, esculeogenin B-2, (5alpha,22S,23R,25S)-22,26-epimino-16beta,23-epoxy-3beta,23,27-trihydroxycholestane, and esculeogenin B-1, (5alpha,22R,23S,25S)-22,26-epimino-16beta,23-epoxy-3beta,23,27-trihydroxycholestane, which are rare naturally occurring compounds was attained by acid hydrolysis with 2 N HCl in dioxane and water (1 : 1).

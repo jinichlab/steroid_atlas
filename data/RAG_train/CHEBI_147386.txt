@@ -1,0 +1,33 @@
+Compound: 2-deoxyecdysone 22-phosphate(2-)
+ChEBI ID: CHEBI:147386
+PubChem CID: 90658875
+
+== Chemical properties ==
+IUPAC Name: [(2S,3R)-2-[(3S,5R,9R,10R,13R,14S,17R)-3,14-dihydroxy-10,13-dimethyl-6-oxo-2,3,4,5,9,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-17-yl]-6-hydroxy-6-methylheptan-3-yl] phosphate
+Molecular Formula: C27H43O8P-2
+Molecular Weight: 526.6
+SMILES: C[C@@H]([C@H]1CC[C@@]2([C@@]1(CC[C@H]3C2=CC(=O)[C@H]4[C@@]3(CC[C@@H](C4)O)C)C)O)[C@@H](CCC(C)(C)O)OP(=O)([O-])[O-]
+InChI: InChI=1S/C27H45O8P/c1-16(23(35-36(32,33)34)9-10-24(2,3)30)18-8-13-27(31)20-15-22(29)21-14-17(28)6-11-25(21,4)19(20)7-12-26(18,27)5/h15-19,21,23,28,30-31H,6-14H2,1-5H3,(H2,32,33,34)/p-2/t16-,17-,18+,19-,21-,23+,25+,26+,27+/m0/s1
+InChIKey: AOKIBCRWTSJHIE-XNSSJAPWSA-L
+XLogP: 1.4
+TPSA: 150
+H-Bond Donors: 3
+H-Bond Acceptors: 8
+
+== ChEBI definition ==
+2-deoxyecdysone 22-phosphate(2-) is an organophosphate oxoanion. It is a conjugate base of a 2-deoxyecdysone.
+
+--- RELATED COMPOUND: 2-deoxyecdysone ---
+No literature found for 2-deoxyecdysone 22-phosphate(2-) itself. 2-deoxyecdysone 22-phosphate(2-) is the conjugate base of 2-deoxyecdysone; the abstracts below are about 2-deoxyecdysone.
+
+[PMID 41176260] Synhesis, anti-inflammatory and analgesic activity of the supramolecular complex of 3-EPI-2-deoxyecdysone and prospects for its medical application
+2025
+3α,14α,22R,25-Tetrahydroxy-5β(H)-cholest-7-en-6-one, or 3-epi-2-deoxyecdysone, was isolated from the aerial parts of the Kazakhstani plant Acanthophyllum gypsophiloides Regel. Quantum-chemical calculations of the molecules using density functional theory (DFT) and ONIOM (a hybrid method combining quantum and molecular mechanics) were carried out to investigate the stability and properties of the inclusion complex of 3-epi-2-deoxyecdysone with β-cyclodextrin. Directed synthesis was performed, and supramolecular complex formation of the phytoecdysteroid with β-cyclodextrin was studied by NMR spectroscopy. The analgesic and anti-inflammatory activities of the resulting complex were evaluated.
+
+[PMID 39244035] A validated HPLC-MS/MS method for the simultaneous determination of ecdysteroid hormones in subminimal amounts of biological material
+2024
+Ecdysteroids represent a large class of polyhydroxylated steroids which, due to their anabolic properties, are marketed as dietary supplements. Some ecdysteroids also act as important hormones in arthropods, where they regulate molting, development, and reproduction and many of these insects are miniature organisms that contain submicroliter levels of circulating biofluids. Analysis of ecdysteroids is further complicated by their very low abundance, large fluctuations during development, and difficult access to a pooled sample, which is important for quantitative measurements. In this work, we propose a new method that overcomes the described difficulties and allows validated quantification of four ecdysteroids in minimal amounts of biological material. After methanolic extraction, detectability of the ecdysteroids is increased 16- to 20-fold by conversion to their 14,15-anhydrooximes. These are further purified by pipette tip solid-phase extraction on a three-layer sorbent and subjected to HPLC-MS/MS analysis. Full validation was achieved using hemolymph from larvae of the firebug Pyrrhocoris apterus as a blank matrix and by the determination of ecdysteroids in a single Drosophila larva. The lower limit of quantifications for the four target ecdysteroids (20-hydroxyecdysone, ecdysone, makisterone A, and 2-deoxyecdysone) were 0.01; 0.1; 0.05; and 0.025 pg·ml-1 (20; 200; 100; 50 fmol ml-1), respectively, with very good accuracy, precision (expressed as relative standard deviation <15%) and recoveries (96%-119.9%). The application potential of the new method was demonstrated by quantification of ecdysteroids in various biological materials including human serum.
+
+[PMID 37178942] Phytoecdysteroids from Dianthus superbus L.: Structures and anti-neuroinflammatory evaluation
+2023
+Six undescribed C27-phytoecdysteroid derivatives, named superecdysones A-F, and ten known analogs were extracted from the whole plant of Dianthus superbus L. Their structures were identified by extensive spectroscopy, mass spectrometric methods, chemical transformations, chiral HPLC analysis, and the single-crystal X-ray diffraction analysis. Superecdysones A and B possess a tetrahydrofuran ring in the side chain and superecdysones C-E are rare phytoecdysones containing a (R)-lactic acid moiety, whereas superecdysone F is an uncommon B-ring-modified ecdysone. Notably, based on the variable temperature (from 333 K to 253 K) NMR experiments of superecdysone C, the missing carbon signals were visible at 253 K and assigned. The neuroinflammatory bioassay of all compounds were evaluated, and 22-acetyl-2-deoxyecdysone, 2-deoxy-20-hydroxyecdysone, 20-hydroxyecdysone, ecdysterone-22-O-benzoate, 20-hydroxyecdysone-20,22-O-R-ethylidene, and acetonide derivative 20-hydroxyecdysterone-20, 22-acetonide significantly suppressed the LPS-induced nitric oxide generation in microglia cells (BV-2), with IC50 values ranging from 6.9 to 23.0 μM. Structure-activity relationships were also discussed. Molecular docking simulations of the active compounds confirmed the possible mechanism of action against neuroinflammations. Furthermore, none compounds showed cytotoxicity against HepG2 and MCF-7. It is the first report about the occurrence and anti-neuroinflammatory activity of the phytoecdysteroids in the genus Dianthus. Our findings demonstrated that ecdysteroids may be used as potential anti-inflammatory drugs.

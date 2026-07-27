@@ -1,0 +1,33 @@
+Compound: androstenediol 3-sulfate(1-)
+ChEBI ID: CHEBI:190287
+PubChem CID: 21120399
+
+== Chemical properties ==
+IUPAC Name: [(3S,8R,9S,10R,13S,14S,17S)-17-hydroxy-10,13-dimethyl-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl] sulfate
+Molecular Formula: C19H29O5S-
+Molecular Weight: 369.5
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CC=C4[C@@]3(CC[C@@H](C4)OS(=O)(=O)[O-])C
+InChI: InChI=1S/C19H30O5S/c1-18-9-7-13(24-25(21,22)23)11-12(18)3-4-14-15-5-6-17(20)19(15,2)10-8-16(14)18/h3,13-17,20H,4-11H2,1-2H3,(H,21,22,23)/p-1/t13-,14-,15-,16-,17-,18-,19-/m0/s1
+InChIKey: HXJFCUUBVWOORF-LOVVWNRFSA-M
+XLogP: 3.1
+TPSA: 95
+H-Bond Donors: 1
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+Androstenediol 3-sulfate(1-) is a steroid sulfate oxoanion. It is functionally related to an androst-5-ene-3beta,17beta-diol.
+
+--- RELATED COMPOUND: androst-5-ene-3beta ---
+No literature found for androstenediol 3-sulfate(1-) itself. androstenediol 3-sulfate(1-) is functionally related to androst-5-ene-3beta; the abstracts below are about androst-5-ene-3beta.
+
+[PMID 20620158] The conversion of dehydroepiandrosterone into androst-5-ene-3beta,17beta-diol (androstenediol) is increased in endometria from untreated women with polycystic ovarian syndrome
+2010
+The changes in endometrial homeostasis found in women with polycystic ovarian syndrome (PCOS) could be associated with alterations in the intracrine metabolism of steroid hormones. The uptake of dehydroepiandrosterone-sulphate (DHEA-S), precursor of the intracrine pathway, is achieved by transporters, such as organic anion transporter polypeptides (OATPs), and molecules with oestrogenic activity, such as androst-5-ene-3beta,17beta-diol (androstenediol), can be generated. We aimed to determine androstenediol generation and the expression of OATPs in human endometria throughout the menstrual cycle and in endometria from PCOS women. Endometrial samples were obtained from control women in the proliferative phase (control endometria (CEp), n=7), secretory phase (CEs, n=7), and from PCOS patients (PCOSEp, n=7). The mRNA levels of OATP-B, OATP-D and OATP-E were measured by reverse transcriptase polymerase chain reaction (RT-PCR) and protein levels of OATP-E by immunofluorescence; 3beta-hydroxysteroid dehydrogenase (HSD) by immunohistochemistry/Western blot; the metabolism of DHEA to androstenediol was evaluated by thin layer chromatography-high-performance liquid chromatography (TLC-HPLC). Lower levels of OATP-E transcript were obtained in PCOSEp (p<0.05) compared with CEp, while OATP-E protein levels (p<0.05) and DHEA conversion to androstenediol (p<0.01) were higher in PCOSEp. Lower 3beta-(hydroxysteroid dehydrogenase) HSD protein levels were found in PCOSEp (p<0.05) (Western blot, immunohistochemistry). These results reveal a higher capacity of the endometria from PCOS women to metabolise DHEA to androstenediol, which, coupled with the high oestrogen sensitivity previously found in these endometria, may account for the increase in cell proliferation in PCOSEp already reported.
+
+[PMID 17078923] Redox reactions of dehydroepiandrosterone and its metabolites in differentiating 3T3-L1 adipocytes: A liquid chromatographic-mass spectrometric study
+2006
+Dehydroepiandrosterone is known to depress fatty acid formation in differentiating 3T3-L1 adipocytes. The metabolism of dehydroepiandrosterone and four of its natural metabolites in differentiating adipocytes was studied by liquid chromatography-mass spectrometry. Adipocytes rapidly converted dehydroepiandrosterone to androst-5-ene-3beta,17beta-diol. 7alpha-Hydroxy-DHEA was interconverted with 7-oxo-DHEA and 7beta-hydroxy-DHEA and the corresponding 17beta reduced products. Dehydroepiandrosterone and its derivatives were detected only in the culture medium suggesting that dehydroepiandrosterone is metabolized via enzymes located in close proximity to, or that are integral parts of the cell membrane. Alternatively, there may be efficient mechanisms at play for extrusion of the steroids to the aqueous media rather than being retained in the lipid-rich cell. An interesting aspect of the study was finding androstenediol as the major metabolite of dehydroepiandrosterone. Androst-5-ene-3beta,17beta-diol has been implicated in prostate cancer. The contribution of adipose cells to the circulating supply of androst-5-ene-3beta,17beta-diol may therefore be considered in managing prostate cancer.
+
+[PMID 19337256] Inhibition of androstenediol-dependent LNCaP tumour growth by 17alpha-ethynyl-5alpha-androstane-3alpha, 17beta-diol (HE3235)
+2009
+Androst-5-ene-3beta, 17beta-diol (AED) is an adrenal hormone that has been reported to sustain prostate cancer growth after androgen deprivation therapy (ADT). LNCaP cells express a mutated androgen receptor that confers the ability to respond not only to androgen but also to oestrogen and adrenal hormones such as AED, and thus provide a cell line useful for identifying compounds capable of inhibiting AED-stimulated cell growth. We sought to determine whether structurally related steroids could inhibit AED-stimulated LNCaP cell growth in vitro and tumour growth in vivo. We report here the identification of a novel androstane steroid, HE3235 (17alpha-ethynyl-5alpha-androstan-3alpha, 17beta-diol), with significant inhibitory activity for AED-stimulated LNCaP proliferation. This inhibitory activity is accompanied by an increase in the number of apoptotic cells. Animal studies have confirmed the cytoreductive activity of HE3235 on LNCaP tumours. The results suggest that this compound may be of clinical use in castration-resistant prostate cancer.

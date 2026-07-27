@@ -1,0 +1,28 @@
+Compound: 5beta-cholestane-3alpha,7alpha,12alpha,25-tetrol
+ChEBI ID: CHEBI:169973
+PubChem CID: 5284211
+
+== Chemical properties ==
+IUPAC Name: (3R,5S,7R,8R,9S,10S,12S,13R,14S,17R)-17-[(2R)-6-hydroxy-6-methylheptan-2-yl]-10,13-dimethyl-2,3,4,5,6,7,8,9,11,12,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthrene-3,7,12-triol
+Molecular Formula: C27H48O4
+Molecular Weight: 436.7
+SMILES: C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)O)C
+InChI: InChI=1S/C27H48O4/c1-16(7-6-11-25(2,3)31)19-8-9-20-24-21(15-23(30)27(19,20)5)26(4)12-10-18(28)13-17(26)14-22(24)29/h16-24,28-31H,6-15H2,1-5H3/t16-,17+,18-,19-,20+,21+,22-,23+,24+,26+,27-/m1/s1
+InChIKey: NTIXPPFPXLYJCT-RNUSRIHUSA-N
+XLogP: 4.9
+TPSA: 80.9
+H-Bond Donors: 4
+H-Bond Acceptors: 4
+
+== ChEBI definition ==
+5beta-cholestane-3alpha,7alpha,12alpha,25-tetrol is a 3alpha-hydroxy steroid, a 7alpha-hydroxy steroid, a 12alpha-hydroxy steroid and a 25-hydroxy steroid. It derives from a hydride of a 5beta-cholestane.
+
+== Literature on 5beta-cholestane-3alpha,7alpha,12alpha,25-tetrol ==
+
+[PMID 41596197] Integration of Serum and Liver Metabolomics with Antioxidant Biomarkers Elucidates Dietary Energy Modulation of the Fatty Acid Profile in Donkey Meat
+2026
+Donkey meat is valued for its high protein, unsaturated fats, and low cholesterol. Fatty acid (FA) composition critically influences meat quality and is modulated by dietary energy levels. Twenty-four meat donkeys (male) were randomly divided into three groups: a low-energy group (LEG), a medium-energy group (MEG), and a high-energy group (HEG). The trial lasted for 135 days, with dietary digestible energy levels adjusted during the pre-fattening, mid-fattening, and late-fattening phases according to the experimental design. The results showed that MEG and HEG interventions significantly upregulated tissue polyunsaturated fatty acid (PUFA) and n-3 PUFA content while reducing n-6/n-3 ratios, concomitant with enhanced activity and gene expression of most lipid-metabolizing enzymes. Notably, MEG further elevated antioxidant enzyme activities and anti-inflammatory mediators while suppressing pro-inflammatory factors. MEG and HEG significantly upregulated serum cholestane-3,7,12,25-tetrol-3-glucuronide and cortisol, along with hepatic choline, lysoPC(20:2(11Z,14Z)), glycocholic acid, and cholestane-3,7,12,25-tetrol-3-glucuronide. These modified metabolites were predominantly enriched in key metabolic pathways: pentose and glucuronate interconversions, primary bile acid biosynthesis, steroid hormone biosynthesis, glycerophospholipid metabolism, purine metabolism, and glutathione metabolism. Additionally, compared to HEG, MEG improved the antioxidant activities and immune signaling molecule levels with elevated pyroglutamic acid, glutathione, choline, inosine, adenine, and uric acid. Thus, moderately elevated dietary energy levels may enhance FA profiles in muscular and adipose tissues through coordinated regulation of lipid-metabolizing enzymes and associated gene expression, with serum and hepatic metabolites actively participating in these regulatory pathways. However, excessive energy intake could induce oxidative stress in donkeys.
+
+[PMID 34557741] Cardiorespiratory Effects of Indoor Ozone Exposure Associated with Changes in Metabolic Profiles among Children: A Repeated-Measure Panel Study
+2021
+Ozone is one of the major gaseous pollutants associated with short-term adverse cardiopulmonary effects, even at concentrations below the current indoor air quality limits. However, the underlying biological mechanisms of cardiorespiratory changes with exposure to ozone remain unclear. To further explore molecular linkages between indoor ozone exposure and relevant cardiorespiratory effects, a repeated-measure panel study including 46 schoolchildren was conducted and real-time exposure measurements including ozone were performed inside classrooms every weekday during the study period. Repeated health measurements and urine sample collection were conducted in each participant. Ultra-high-performance liquid chromatography/tandem mass spectrometry and meet-in-metabolite approach were used in metabolomics analysis. Methods including mixed-effect models were adopted to identify metabolites associated with ozone exposure or health indices. Nine metabolites were found to be associated with ozone after mixed-effect model analysis, which are mainly involved in amino acid and bile acid metabolism. Boys may have a greater decrease in bile acid and RNA related metabolites. Four of the nine ozone-related metabolites were also associated with cardiorespiratory function indices. Furthermore, 26.67% of the positive association between ozone and heart rate was mediated by cholestane-3,7,12,25-tetrol-3-glucuronide. Exposure to ozone below the current indoor standards was associated with the deteriorated cardiovascular function by disturbing bile acid and endogenous nitric oxide-related oxidation and inflammation, and associated with the exacerbated airway inflammation by reducing GPx-related anti-oxidation. The results provide metabolic evidence of the cardiorespiratory effects of indoor ozone exposure. Indoor ozone pollution should be controlled further, and more attention should be paid to preventing its adverse health effects, especially in children.

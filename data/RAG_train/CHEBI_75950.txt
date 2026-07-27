@@ -1,0 +1,28 @@
+Compound: (20S)-protopanaxadiol
+ChEBI ID: CHEBI:75950
+PubChem CID: 11213350
+
+== Chemical properties ==
+IUPAC Name: (3S,5R,8R,9R,10R,12R,13R,14R,17S)-17-[(2S)-2-hydroxy-6-methylhept-5-en-2-yl]-4,4,8,10,14-pentamethyl-2,3,5,6,7,9,11,12,13,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene-3,12-diol
+Molecular Formula: C30H52O3
+Molecular Weight: 460.7
+SMILES: CC(=CCC[C@@](C)([C@H]1CC[C@@]2([C@@H]1[C@@H](C[C@H]3[C@]2(CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)O)C)O)C
+InChI: InChI=1S/C30H52O3/c1-19(2)10-9-14-30(8,33)20-11-16-29(7)25(20)21(31)18-23-27(5)15-13-24(32)26(3,4)22(27)12-17-28(23,29)6/h10,20-25,31-33H,9,11-18H2,1-8H3/t20-,21+,22-,23+,24-,25-,27-,28+,29+,30-/m0/s1
+InChIKey: PYXFVCFISTUSOO-HKUCOEKDSA-N
+XLogP: 7.2
+TPSA: 60.7
+H-Bond Donors: 3
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A diastereomer of protopanaxadiol in which the 20-hydroxy substituent has been introduced at the <em>pro</em>-<i>S</i> position.
+
+== Literature on (20S)-protopanaxadiol ==
+
+[PMID 32015754] 20(S)-Protopanaxdiol Suppresses the Abnormal Granule-Monocyte Differentiation of Hematopoietic Stem Cells in 4T1 Breast Cancer-Bearing Mouse
+2020
+Panax notoginseng (PN) has been used as a qi- and blood-activating (Huoxue) drug for thousands of years in China. It has also been widely used as an anticancer drug at present. As a Huoxue drug, the effect of PN on hematopoietic differentiation in tumor-bearing body has been paid more and more attention. Our research found that panax notoginseng saponins (PNS), especially panaxadiol saponins (PDS) and its aglucon 20(S)-Protopanaxdiol (PPD), could improve the immunosuppressive state by regulating the abnormal hematopoietic differentiation in a tumor-bearing body by multiple ways. An interesting phenomenon is that PDS reduced the neutrophil-lymphocyte ratio (NLR) via its inhibition effect on the granule-monocyte differentiation of spleen cells, which is associated with a decrease in the secretion of tumor MPO, G-CSF, PU.1, and C/EBPα. Otherwise, PDS increased the proportion of both hematopoietic stem cells and erythroid progenitor cells in the bone marrow, but inhibited spleen erythroid differentiation via inhibiting secretion of tumor EPO, GATA-1, and GATA-2. This study suggests that PNS regulated the tumor-induced abnormal granule-monocyte differentiation of hematopoietic stem cells, affecting the distribution and function of haemocytes in tumor-bearing mice.
+
+[PMID 35598356] Microbiome-based screening and co-fermentation of rhizospheric microorganisms for highly ginsenoside Rg<sub>3</sub> production
+2022
+Ginsenoside Rg3 has a wide range of pharmacological activities and application value while the content of Rg3 in Panax plants is extremely low. The interaction between medicinal plants and microorganisms will be beneficial to produce active compounds by biotechnology. In this study, the rhizosphere soil samples from different P. notoginseng producing areas (Asanlong, Huilong, Demonstration garden) were collected to analyze the soil microflora characteristics by Illumina MiSeq sequencing technology. Based on the highest contents of ginsenosides in Huilong, the first, second, and the specificity dominant strains were predicted and the database was established. Besides, a total of 6 strains of bacteria and 3 strains of fungi were isolated from the soil of P. notoginseng. Among them, F24 was identified as Chaetomium sp, which was not only consistent with the second dominant strain of P. notoginseng predicted in the database, but also had a high level of Rg3. It also indicated that the method of screening the dominant strains in soil was reasonable and the database was reliable. Through the optimization of fermentation conditions, the highest yield of Rg3 was obtained when F24 was cultured in the medium supplemented with 8 mg/L glucose and 5 mg/L methyl jasmonate (MeJA) for 7 days. On this basis, the yield of ginsenoside Rg3 in shake flask reached 108.95 mg/L (4.93 mg/g, ~4.2-fold higher than cultivated P. notoginseng plants) by the co-fermentation with A. niger in a concentration ratio of 2:1. The increase of Rg3 yield mainly came from the conversion of other 20S-protopanaxdiol saponins into Rg3 by β-glucosidase in A. niger. In addition, the expression levels of ginsenoside biosynthesis genes in different strains were compared, it was found that the expression of key genes was significantly increased after co-fermentation. This research provided certain theoretical and technical support for the large-scale industrial production of ginsenoside Rg3 by microbiology.

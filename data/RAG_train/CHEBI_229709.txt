@@ -1,0 +1,5 @@
+Compound: N-choloyl-L-alpha-amino acid anion
+ChEBI ID: CHEBI:229709
+
+== ChEBI definition ==
+The conjugate base of an <em>N</em>-choloyl-<small>L</small>-α-amino acid.

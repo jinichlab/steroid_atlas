@@ -1,0 +1,18 @@
+Compound: 17alpha-estradiol 3-glucosiduronate
+ChEBI ID: CHEBI:57529
+PubChem CID: 46878390
+
+== Chemical properties ==
+IUPAC Name: (2S,3S,4S,5R,6S)-3,4,5-trihydroxy-6-[[(8R,9S,13S,14S,17R)-17-hydroxy-13-methyl-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthren-3-yl]oxy]oxane-2-carboxylate
+Molecular Formula: C24H31O8-
+Molecular Weight: 447.5
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@H]2O)CCC4=C3C=CC(=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)[O-])O)O)O
+InChI: InChI=1S/C24H32O8/c1-24-9-8-14-13-5-3-12(10-11(13)2-4-15(14)16(24)6-7-17(24)25)31-23-20(28)18(26)19(27)21(32-23)22(29)30/h3,5,10,14-21,23,25-28H,2,4,6-9H2,1H3,(H,29,30)/p-1/t14-,15-,16+,17-,18+,19+,20-,21+,23-,24+/m1/s1
+InChIKey: MUOHJTRCBBDUOW-FNUZHIFDSA-M
+XLogP: 1.8
+TPSA: 140
+H-Bond Donors: 4
+H-Bond Acceptors: 8
+
+== ChEBI definition ==
+A monocarboxylic acid anion resulting from the removal of a proton from the carboxy group of 17α-estradiol 3-glucosiduronic acid.

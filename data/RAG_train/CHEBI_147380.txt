@@ -1,0 +1,40 @@
+Compound: ecdysone 22-phosphate(2-)
+ChEBI ID: CHEBI:147380
+PubChem CID: 90657769
+
+== Chemical properties ==
+IUPAC Name: [(2S,3R)-6-hydroxy-6-methyl-2-[(2S,3R,5R,9R,10R,13R,14S,17R)-2,3,14-trihydroxy-10,13-dimethyl-6-oxo-2,3,4,5,9,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthren-17-yl]heptan-3-yl] phosphate
+Molecular Formula: C27H43O9P-2
+Molecular Weight: 542.6
+SMILES: C[C@@H]([C@H]1CC[C@@]2([C@@]1(CC[C@H]3C2=CC(=O)[C@H]4[C@@]3(C[C@@H]([C@@H](C4)O)O)C)C)O)[C@@H](CCC(C)(C)O)OP(=O)([O-])[O-]
+InChI: InChI=1S/C27H45O9P/c1-15(23(36-37(33,34)35)8-9-24(2,3)31)16-7-11-27(32)18-12-20(28)19-13-21(29)22(30)14-25(19,4)17(18)6-10-26(16,27)5/h12,15-17,19,21-23,29-32H,6-11,13-14H2,1-5H3,(H2,33,34,35)/p-2/t15-,16+,17-,19-,21+,22-,23+,25+,26+,27+/m0/s1
+InChIKey: FUMILPJJVXGPIT-LAMJOLGYSA-L
+XLogP: 0.4
+TPSA: 170
+H-Bond Donors: 4
+H-Bond Acceptors: 9
+
+== ChEBI definition ==
+Ecdysone 22-phosphate(2-) is an ecdysone phosphate and an organophosphate oxoanion.
+
+== Literature on ecdysone 22-phosphate(2-) ==
+
+[PMID 6684423] Identification of the 22-phosphate esters of ecdysone, 2-deoxyecdysone, 20-hydroxyecdysone and 2-deoxy-20-hydroxyecdysone from newly laid eggs of the desert locust, Schistocerca gregaria
+1983
+The four major ecdysteroid (insect moulting hormone) conjugates present in the newly laid eggs of the desert locust, Schistocera gregaria, have been purified by reversed-phase and anion-exchange high-performance liquid chromatography. The steroid moieties were identified as ecdysone, 2-deoxyecdysone, 20-hydroxyecdysone and 2-deoxy-20-hydroxyecdysone. Phosphate analysis of acid-hydrolysed samples showed a steroid:phosphate ratio of approx. 1:1 for all four compounds. The intact conjugates were identified as ecdysone 22-phosphate, 2-deoxyecdysone 22-phosphate, 20-hydroxyecdysone 22-phosphate and 2-deoxy-20-hydroxyecdysone 22-phosphate by fast atom bombardment mass spectrometry and 1H, 13C and 31P n.m.r. The significance of ecdysteroid phosphates as a source of free hormone during embryogenesis is discussed.
+
+[PMID 18937503] Structural and functional characterization of the c-terminal domain of the ecdysteroid phosphate phosphatase from bombyx mori reveals a new enzymatic activity
+2008
+Here, we present the crystal structure of the ecdysone phosphate phosphatase (EPPase) phosphoglycerate mutase (PGM) homology domain, the first structure of a steroid phosphate phosphatase. The structure reveals an alpha/beta-fold common to members of the two histidine (2H)-phosphatase superfamily with strong homology to the Suppressor of T-cell receptor signaling-1 (Sts-1 PGM) protein. The putative EPPase PGM active site contains signature residues shared by 2H-phosphatase enzymes, including a conserved histidine (His80) that acts as a nucleophile during catalysis. The physiological substrate ecdysone 22-phosphate was modeled in a hydrophobic cavity close to the phosphate-binding site. EPPase PGM shows limited substrate specificity with an ability to hydrolyze steroid phosphates, the phospho-tyrosine (pTyr) substrate analogue para-nitrophenylphosphate ( pNPP) and pTyr-containing peptides and proteins. Altogether, our data demonstrate a new protein tyrosine phosphatase (PTP) activity for EPPase. They suggest that EPPase and its closest homologues can be grouped into a distinct subfamily in the large 2H-phosphatase superfamily of proteins.
+
+[PMID 18494578] Ecdysone Metabolism in Diapause Eggs and Non-Diapause Eggs of the Silkworm, Bombyx mori
+2000
+In order to compare ecdysone metabolism between diapause eggs and non-diapause eggs of the silkworm, Bombyx mori, (3)H-ecdysone and its derivatives ((3)H-3-epiecdysone and (3)H-ecdysone 22-phosphate) were injected into the eggs at various stages during early embryogenesis, and the resultant labelled metabolites were analyzed by high-performance liquid chromatography. From the quantitative and qualitative changes in the labelled metabolites between diapause eggs and non-diapause eggs, it was demonstrated that epimerization of ecdysone occurred during early embryogenesis irrespective of the embryonic stage in both diapause eggs and non-diapause eggs, and that phosphorylation of ecdysone was a major metabolic step in diapause eggs, whereas dephosphorylation of ecdysone 22-phosphate and its subsequent hydroxylation at the C-20 and C-26 positions were characteristic in non-diapause eggs.
+
+[PMID 12721294] Purification, kinetic characterization, and molecular cloning of a novel enzyme ecdysteroid-phosphate phosphatase
+2003
+From eggs of the silkworm Bombyx mori, we isolated a novel enzyme that is involved in the conversion of physiologically inactive conjugated ecdysteroids, such as ecdysone 22-phosphate and 20-hydroxyecdysone 22-phosphate, to active free ecdysteroids. This enzyme, called ecdysteroid-phosphate phosphatase (EPPase), was located in the cytosol fraction and differed from nonspecific lysosomal acid phosphatases in various enzymic properties. EPPase was purified about 3,000-fold to homogeneity by seven steps of column chromatography. The cDNA clone encoding EPPase was isolated by reverse transcription polymerase chain reaction using degenerate primers on the basis of the partial amino acid sequence obtained from purified EPPase and by subsequent 3'- and 5'-rapid amplification of cDNA ends. The full-length cDNA of EPPase was found to be composed of 1620 bp with an open reading frame encoding a protein of 331 amino acid residues. A data base search showed that there was no functional protein with the amino acid sequence identical to that of EPPase. Northern blot analysis revealed that EPPase mRNA was expressed predominantly during gastrulation and organogenesis in nondiapause eggs but was not detected in diapause eggs whose development was arrested at the late gastrula stage. In nondiapause eggs, the developmental changes in the expression pattern of EPPase mRNA corresponded closely to changes in the enzyme activity and in the amounts of free ecdysteroids in eggs.
+
+[PMID 1944416] Metabolism and fate of ecdysteroids in the nematodes Ascaris suum and Parascaris equorum
+1991
+When injected with [3H]ecdysone and maintained in vitro, the parasitic nematodes, Ascaris suum and Parascaris equorum each produced a series of polar and relatively apolar metabolites. A. suum metabolised the compound into ecdysonoic acid ([3H]EOIC), ecdysone 25-glucoside ([3H]E25gluc), putative ecdysone 22-phosphate ([3H]E22P) and a series of at least six relatively apolar metabolites. All of these, except ecdysonoic acid, were hydrolysed by a crude enzyme preparation from Helix pomatia, releasing ecdysone. In a similar study, P. equorum produced ecdysone 25-glucoside, putative ecdysone 22-phosphate and a series of relatively apolar compounds all of which were hydrolysed by H. pomatia enzymes, releasing ecdysone. [3H]Ecdysone 25-glucoside was the most abundant single metabolite in both species, and in P. equorum, at least, was released into the culture medium in relatively large amounts. Apolar metabolites were present in worm samples and were the major, if not the only radiolabelled compounds detected in eggs of both species. Data indicated a metabolic relationship between some of the apolar conjugates found in both nematode species and ecdysone 25-glucoside.

@@ -1,0 +1,18 @@
+Compound: 7alpha,12alpha-dihydroxy-3-oxochol-4-en-24-oate
+ChEBI ID: CHEBI:58803
+PubChem CID: 20848972
+
+== Chemical properties ==
+IUPAC Name: (4R)-4-[(7R,8R,9S,10R,12S,13R,14S,17R)-7,12-dihydroxy-10,13-dimethyl-3-oxo-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-17-yl]pentanoate
+Molecular Formula: C24H35O5-
+Molecular Weight: 403.5
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@H]2[C@@H](CC4=CC(=O)CC[C@]34C)O)O)C
+InChI: InChI=1S/C24H36O5/c1-13(4-7-21(28)29)16-5-6-17-22-18(12-20(27)24(16,17)3)23(2)9-8-15(25)10-14(23)11-19(22)26/h10,13,16-20,22,26-27H,4-9,11-12H2,1-3H3,(H,28,29)/p-1/t13-,16-,17+,18+,19-,20+,22+,23+,24-/m1/s1
+InChIKey: ZZUMXQCSMJCDDC-DFQOQHGMSA-M
+XLogP: 3.5
+TPSA: 97.7
+H-Bond Donors: 2
+H-Bond Acceptors: 5
+
+== ChEBI definition ==
+Conjugate base of 7α,12α-dihydroxy-3-oxochol-4-en-24-oic acid.

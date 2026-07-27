@@ -1,0 +1,24 @@
+Compound: 3beta-hydroxylanost-8-en-32-al
+ChEBI ID: CHEBI:87060
+PubChem CID: 15698824
+
+== Chemical properties ==
+IUPAC Name: (3S,5R,10S,13R,14S,17R)-3-hydroxy-4,4,10,13-tetramethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,5,6,7,11,12,15,16,17-decahydro-1H-cyclopenta[a]phenanthrene-14-carbaldehyde
+Molecular Formula: C30H50O2
+Molecular Weight: 442.7
+SMILES: C[C@H](CCCC(C)C)[C@H]1CC[C@@]2([C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C=O
+InChI: InChI=1S/C30H50O2/c1-20(2)9-8-10-21(3)22-14-18-30(19-31)24-11-12-25-27(4,5)26(32)15-16-28(25,6)23(24)13-17-29(22,30)7/h19-22,25-26,32H,8-18H2,1-7H3/t21-,22-,25+,26+,28-,29-,30-/m1/s1
+InChIKey: MKMLAQLNFVFNRK-PUXRVUTHSA-N
+XLogP: 7.8
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A tetracyclic triterpenoid that is lanost-8-ene carrying hydroxy and oxo substituents at positions 3β and 30 respectively.
+
+== Literature on 3beta-hydroxylanost-8-en-32-al ==
+
+[PMID 2509459] Deformylation of 32-oxo-24,25-dihydrolanosterol by the purified cytochrome P-45014DM (lanosterol 14 alpha-demethylase) from yeast evidence confirming the intermediate step of lanosterol 14 alpha-demethylation
+1989
+32-Oxo-24,25-dihydrolanosterol (32-oxo-DHL) was deformylated to 4,4-dimethylcholesta-8,14-dien-3 beta-ol, the product of 14 alpha-demethylation of 24,25-dihydro-lanosterol (DHL), by the reconstituted lanosterol 14 alpha-demethylase system consisting of cytochrome P-45014DM and NADPH-cytochrome P-450 reductase of yeast. Affinity of 32-oxo-DHL to the cytochrome was considerably higher than those of lanosterol and DHL, and the rate of deformylation of 32-oxo-DHL was faster than the rate of demethylation of lanosterol and DHL. Spectral analysis of the 32-oxo-DHL complex of cytochrome P-45014DM suggested the interaction between the 32-aldehyde group and the heme iron. These observations, together with our preceding findings on the metabolism of 32-hydroxy-24,25-dihydrolanosterol (Aoyama, Y., Yoshida, Y., Sonoda, Y., and Sato, Y. (1987) J. Biol. Chem. 262, 1239-1243), indicate that the 14 alpha-demethylation of lanosterol catalyzed by cytochrome P-45014DM proceeds with three step monooxygenations via the 32-hydroxy and 32-oxo intermediates, and the cytochrome mediates this sequential reaction without releasing the intermediates.

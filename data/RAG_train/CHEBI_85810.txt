@@ -1,0 +1,18 @@
+Compound: androst-5-ene-3beta,7alpha,17beta-triol
+ChEBI ID: CHEBI:85810
+PubChem CID: 25108320
+
+== Chemical properties ==
+IUPAC Name: (3S,7S,8R,9S,10R,13S,14S,17S)-10,13-dimethyl-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene-3,7,17-triol
+Molecular Formula: C19H30O3
+Molecular Weight: 306.4
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)[C@@H](C=C4[C@@]3(CC[C@@H](C4)O)C)O
+InChI: InChI=1S/C19H30O3/c1-18-7-5-12(20)9-11(18)10-15(21)17-13-3-4-16(22)19(13,2)8-6-14(17)18/h10,12-17,20-22H,3-9H2,1-2H3/t12-,13-,14-,15+,16-,17-,18-,19-/m0/s1
+InChIKey: OEVZKEVBDIDVOI-FMKNUBLKSA-N
+XLogP: 2.4
+TPSA: 60.7
+H-Bond Donors: 3
+H-Bond Acceptors: 3
+
+== ChEBI definition ==
+A 3β-hydroxy steroid that is β-hydroxyandrost-5-ene carrying two additional hydroxy groups at positions 7α and 17β.

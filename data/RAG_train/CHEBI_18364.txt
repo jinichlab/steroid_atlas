@@ -1,0 +1,24 @@
+Compound: 14-demethyllanosterol
+ChEBI ID: CHEBI:18364
+PubChem CID: 165609
+
+== Chemical properties ==
+IUPAC Name: (3S,5R,10S,13R,14R,17R)-4,4,10,13-tetramethyl-17-[(2R)-6-methylhept-5-en-2-yl]-1,2,3,5,6,7,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-ol
+Molecular Formula: C29H48O
+Molecular Weight: 412.7
+SMILES: C[C@H](CCC=C(C)C)[C@H]1CC[C@@H]2[C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C
+InChI: InChI=1S/C29H48O/c1-19(2)9-8-10-20(3)22-12-13-23-21-11-14-25-27(4,5)26(30)16-18-29(25,7)24(21)15-17-28(22,23)6/h9,20,22-23,25-26,30H,8,10-18H2,1-7H3/t20-,22-,23+,25+,26+,28-,29-/m1/s1
+InChIKey: CHGIKSSZNBCNDW-QGBOJXOESA-N
+XLogP: 8.4
+TPSA: 20.2
+H-Bond Donors: 1
+H-Bond Acceptors: 1
+
+== ChEBI definition ==
+A 3β-sterol formed formally by loss of a methyl group from the 14-position of lanosterol.
+
+== Literature on 14-demethyllanosterol ==
+
+[PMID 2751307] Metabolism of 24(R,S),25-epiminolanosterol to 25-aminolanosterol and lanosterol by Gibberella fujikuroi
+1989
+Mycelia of Gibberella fujikuroi metabolized 2-tritio-24(R,S), 25-epiminolanosterol, a novel fungal sterol biosynthesis inhibitor that regulates delta 24-sterol methyltransferase, to 25-aminolanosterol (a new sterol) and lanosterol. The identities of the two sterols were established by cochromatography with authentic samples, mass spectroscopy, and isotopic dilution and recrystallization to constant specific activity. The newly biosynthesized tritiolanosterol was demonstrably introduced into the sterol pathway as evidenced by significant tritium label in the radiochemically purified sterols; 24(28)-methylene-24,25-dihydrolanosterol and 14-norlanosterol. The results demonstrate for the first time the direct reduction in situ of an aziridine ring to a tertiary amine and the stereocontrolled deamination of a C-25 aminosteroid to produce a delta 24, rather than a delta 25(27), steroid.

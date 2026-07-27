@@ -1,0 +1,24 @@
+Compound: 11-oxocucurbitadienol
+ChEBI ID: CHEBI:138973
+PubChem CID: 131801254
+
+== Chemical properties ==
+IUPAC Name: (3S,8S,9R,10R,13R,14S,17R)-3-hydroxy-4,4,9,13,14-pentamethyl-17-[(2R)-6-methylhept-5-en-2-yl]-1,2,3,7,8,10,12,15,16,17-decahydrocyclopenta[a]phenanthren-11-one
+Molecular Formula: C30H48O2
+Molecular Weight: 440.7
+SMILES: C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC(=O)[C@@]3([C@H]2CC=C4[C@H]3CC[C@@H](C4(C)C)O)C)C)C
+InChI: InChI=1S/C30H48O2/c1-19(2)10-9-11-20(3)21-16-17-28(6)24-14-12-22-23(13-15-25(31)27(22,4)5)30(24,8)26(32)18-29(21,28)7/h10,12,20-21,23-25,31H,9,11,13-18H2,1-8H3/t20-,21-,23-,24+,25+,28+,29-,30+/m1/s1
+InChIKey: GBFPAYOKITZRAZ-XALYZVBKSA-N
+XLogP: 7.5
+TPSA: 37.3
+H-Bond Donors: 1
+H-Bond Acceptors: 2
+
+== ChEBI definition ==
+A tetracyclic triterpenoid that is cucurbitadienol in which the methylene hydrogens at position 11 have been replaced by an oxo group.
+
+== Literature on 11-oxocucurbitadienol ==
+
+[PMID 26903528] Oxidation of Cucurbitadienol Catalyzed by CYP87D18 in the Biosynthesis of Mogrosides from Siraitia grosvenorii
+2016
+Mogrosides, the principally bioactive compounds extracted from the fruits of Siraitia grosvenorii, are a group of glycosylated cucurbitane-type tetracyclic triterpenoid saponins that exhibit a wide range of notable biological activities and are commercially available worldwide as natural sweeteners. The biosynthesis of mogrosides involves initial cyclization of 2,3-oxidosqualene to the triterpenoid skeleton of cucurbitadienol, followed by a series of oxidation reactions catalyzed by Cyt P450s (P450s) and then glycosylation reactions catalyzed by UDP glycosyltransferases (UGTs). We previously reported the identification of a cucurbitadienol synthase (SgCbQ) and a mogrol C-3 hydroxyl glycosyltransferase (UGT74AC1). However, molecular characterization of further transformation of cucurbitadienol to mogrol by P450s remains unavailable. In this study, we report the successful identification of a multifunctional P450 (CYP87D18) as being involved in C-11 oxidation of cucurbitadienol. In vitro enzymatic activity assays showed that CYP87D18 catalyzed the oxidation of cucurbitadienol at C-11 to produce 11-oxo cucurbitadienol and 11-hydroxy cucurbitadienol. Furthermore, 11-oxo-24,25-epoxy cucurbitadienol as well as 11-oxo cucurbitadienol and 11-hydroxy cucurbitadienol were produced when CYP87D18 was co-expressed with SgCbQ in genetic yeast, and their structures were confirmed by liquid chromatography-solid-phase extraction-nuclear magnetic resonance-mass spectrometry coupling (LC-SPE-NMR-MS). Taken together, these results suggest a role for CYP87D18 as a multifunctional cucurbitadienol oxidase in the mogrosides pathway.

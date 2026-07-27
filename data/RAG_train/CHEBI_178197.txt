@@ -1,0 +1,18 @@
+Compound: etiocholan-3alpha-ol-17-one 3-O-(beta-D-glucuronide)(1-)
+ChEBI ID: CHEBI:178197
+PubChem CID: 156613055
+
+== Chemical properties ==
+IUPAC Name: (2S,3S,4S,5R,6R)-6-[[(3R,5R,8R,9S,10S,13S,14S)-10,13-dimethyl-17-oxo-1,2,3,4,5,6,7,8,9,11,12,14,15,16-tetradecahydrocyclopenta[a]phenanthren-3-yl]oxy]-3,4,5-trihydroxyoxane-2-carboxylate
+Molecular Formula: C25H37O8-
+Molecular Weight: 465.6
+SMILES: C[C@]12CC[C@H](C[C@H]1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CCC4=O)C)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)[O-])O)O)O
+InChI: InChI=1S/C25H38O8/c1-24-9-7-13(32-23-20(29)18(27)19(28)21(33-23)22(30)31)11-12(24)3-4-14-15-5-6-17(26)25(15,2)10-8-16(14)24/h12-16,18-21,23,27-29H,3-11H2,1-2H3,(H,30,31)/p-1/t12-,13-,14+,15+,16+,18+,19+,20-,21+,23-,24+,25+/m1/s1
+InChIKey: VFUIRAVTUVCQTF-SDHZCXLISA-M
+XLogP: 3
+TPSA: 136
+H-Bond Donors: 3
+H-Bond Acceptors: 8
+
+== ChEBI definition ==
+A steroid glucuronide anion that is the conjugate base of etiocholan-3α-ol-17-one 3-<em>O</em>-(β-<small>D</small>-glucuronide) arising from deprotonation of the carboxylic group; major species at pH 7.3.
