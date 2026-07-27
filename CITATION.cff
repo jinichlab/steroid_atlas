@@ -6,6 +6,10 @@ authors:
     given-names: "Andres"
     email: "adsiordia@ucsd.edu"
     affiliation: "Jinich Lab, University of California San Diego"
+  - family-names: "Uppal"
+    given-names: "Akshay"
+    email: "akuppal@ucsd.edu"
+    affiliation: "Jinich Lab, University of California San Diego"
 version: "0.1.0"
 date-released: "2026-07-23"
 license: MIT
