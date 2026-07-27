@@ -729,14 +729,6 @@ def _(chart_widget, mo, plot_df):
 
 
 @app.cell
-def _(get_entered, mo):
-    mo.stop(not get_entered())
-    pan_toggle = mo.ui.checkbox(label="Toggle Pan")
-    pan_toggle
-    return (pan_toggle,)
-
-
-@app.cell
 def _(chart_widget, mo, plot_df, view_kind):
     _sel = chart_widget.value
     # Build the pool of rows the user has narrowed down to
@@ -797,7 +789,7 @@ def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
             try:
                 v = ast.literal_eval(s)
                 return [str(x).strip() for x in v if str(x).strip()]
-    
+
             except (ValueError, SyntaxError):
                 pass
         if ";" in s:
@@ -1113,11 +1105,15 @@ def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
 @app.cell
 def _(get_entered, mo):
     mo.stop(not get_entered())      # depends only on mo → needs its own gate
-    mo.md("""
+    pan_toggle = mo.ui.checkbox(label="Toggle Pan")
+    mo.vstack([
+        pan_toggle,
+        mo.md("""
     ---
     **Legend:** Colored circles = existing entries · Stars = newly recruited from 2024-2026 literature · **Red ring** = search / class match.
-    """)
-    return
+    """),
+    ])
+    return (pan_toggle,)
 
 
 @app.cell
