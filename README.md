@@ -96,4 +96,4 @@ MIT (see `LICENSE`). Data is aggregated from public databases and open-access pu
 
 ## Contact
 
-Andres Sierra Ordieres · <adsiordia@ucsd.edu> · Jinich Lab, UC San Diego
+Adriana Siordia · <adsiordia@ucsd.edu> · Jinich Lab, UC San Diego
