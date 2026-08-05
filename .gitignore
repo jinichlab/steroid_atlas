@@ -20,6 +20,11 @@ Thumbs.db
 *.bak[0-9]*
 *.OLD.csv
 *.PRE_*.csv
+*.pre_audit_backup
+
+# Large UniProt REST caches (regenerable by re-running analysis scripts)
+analysis/*_cache.json
+analysis/binder_audit_uniprot.json
 
 # ProtT5 embedding caches (large; regenerable from FASTAs)
 *.h5

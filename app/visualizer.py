@@ -121,7 +121,9 @@ def _(pd):
     for _col in ("ChEBI ID", "Rhea ID", "SMILES", "Compound Name",
                  "Protein names", "Entry", "Entry Name", "Gene Names",
                  "Organism", "reaction_descriptions", "reaction_ecs",
-                 "Annotation", "Paper"):
+                 "Annotation", "Paper",
+                 "go_ids", "go_labels", "keyword_ids", "keyword_labels",
+                 "binder_evidence", "audit_decision", "audit_reason"):
         if _col in protein_df.columns:
             protein_df[_col] = protein_df[_col].fillna("").astype(str)
     if "is_new" not in protein_df.columns:
@@ -443,8 +445,12 @@ def _(mo):
 def _(mo):
     # Definition-only cell — renders nothing, so no gate needed.
     prot_search = mo.ui.text(
-        placeholder="Try: P19410 (UniProt) · Bile salt hydrolase (name) · baiCD (gene) · MKATVL... (sequence)",
-        label="Free-text protein search",
+        placeholder=(
+            "Try: P19410 (UniProt) · Bile salt hydrolase (name) · baiCD (gene) · "
+            "MKATVL... (sequence) · GO:0005496 (GO id) · steroid binding (GO label) · "
+            "KW-0754 (keyword) · CHEBI:15366 (ligand)"
+        ),
+        label="Free-text protein search (name · gene · UniProt · GO term · keyword · ChEBI · Rhea · sequence)",
         full_width=True,
     )
     _ec_classes = [
@@ -585,7 +591,12 @@ def _(
                 else:
                     _cols = [c for c in ("Protein names", "Entry", "Entry Name",
                                           "Gene Names", "Organism", "reaction_ecs",
-                                          "Sequence") if c in df.columns]
+                                          "Sequence", "ChEBI ID", "Rhea ID",
+                                          "Compound Name", "reaction_descriptions",
+                                          "go_ids", "go_labels",
+                                          "keyword_ids", "keyword_labels",
+                                          "binder_evidence", "audit_reason")
+                             if c in df.columns]
                     _qlow = _q.lower()
                     _mask = pd.Series(False, index=df.index)
                     for _c in _cols:
@@ -748,7 +759,9 @@ def _(chart_widget, mo, plot_df, view_kind):
         _cols = [c for c in ("Compound Name", "ChEBI ID", "clusters", "is_new", "Paper") if c in _pool.columns]
     else:
         _cols = [c for c in ("Entry", "Protein names", "Gene Names", "Organism",
-                              "reaction_ecs", "clusters", "is_new") if c in _pool.columns]
+                              "reaction_ecs", "go_labels", "keyword_labels",
+                              "audit_decision", "clusters", "is_new")
+                 if c in _pool.columns]
     _tbl = _pool[_cols].head(500).reset_index(drop=True) if len(_pool) else _pool[_cols].reset_index(drop=True)
 
     if len(_tbl) == 0:

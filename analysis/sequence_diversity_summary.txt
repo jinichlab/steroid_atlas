@@ -1,0 +1,69 @@
+=== Sequence diversity summary ===
+
+Total proteins: 35,349
+
+
+--- Length (aa) ---
+  min:    53
+  25%:    353
+  median: 502
+  mean:   596.8
+  75%:    655
+  max:    6093
+
+--- Amino-acid Shannon entropy per sequence ---
+  (theoretical max for 20 AAs = 4.32 bits)
+  min:    3.342
+  25%:    4.103
+  median: 4.135
+  mean:   4.125
+  75%:    4.165
+  max:    4.258
+
+--- Taxonomic diversity ---
+  Distinct genera:   1,404
+  Distinct species:  2,112
+
+  Top 15 genera by count:
+      695  Sus
+      579  Oncorhynchus
+      568  Bos
+      556  Cyprinus
+      425  Macaca
+      405  Mus
+      374  Oryzias
+      372  Sinocyclocheilus
+      369  Aspergillus
+      336  Homo
+      296  Candida
+      295  Canis
+      289  Equus
+      279  Rattus
+      252  Oreochromis
+
+--- Functional annotation coverage ---
+  is_p450             4,792  (13.6%)
+  is_bsh                 41  (0.1%)
+  is_hsd              3,800  (10.7%)
+  is_reductase        6,148  (17.4%)
+  is_receptor         1,384  (3.9%)
+  is_transporter      6,407  (18.1%)
+
+--- EC number availability ---
+  With any EC:         13,506  (38.2%)
+  With Rhea reactions: 32,855  (92.9%)
+
+--- EC top-level distribution (for proteins with EC) ---
+    EC 1.-.-.- Oxidoreductases       9,655
+    EC 2.-.-.- Transferases          1,732
+    EC 3.-.-.- Hydrolases            1,817
+    EC 4.-.-.- Lyases                  263
+    EC 5.-.-.- Isomerases               28
+    EC 6.-.-.- Ligases                  11
+
+--- Cluster size distribution ---
+  n_clusters: 95
+  min size:   71
+  median size:332
+  mean size:  372.1
+  max size:   1180

@@ -111,6 +111,21 @@ Captures proteins with annotated steroid-binding function that may not catalyze 
 
 → **2,746 binding entries.**
 
+**Post-hoc curation.** The UniProt REST GO query returns hits on descendant terms of `GO:0005496`, including `GO:0005499` (vitamin D binding). Since vitamin D is a secosteroid (ring B open) and fails the sterane substructure test defined in §1, entries whose only steroid-family evidence is `GO:0005499` violate the operational definition. Every binder-search entry that ended up in the atlas without a Rhea reaction (2,480 entries after dedup) was re-annotated via the UniProt REST `/uniprotkb/accessions` endpoint and classified against the sterane definition:
+
+| Bucket | Count | Basis |
+|---|---:|---|
+| KEEP | 1,952 | KW-0754, KW-0675, or a sterane-specific GO child (androgen/cholesterol/sterol/bile-acid binding) |
+| KEEP_BY_NAME | 98 | TrEMBL orthologs of established steroid proteins with no annotations |
+| KEEP_WEAK | 56 | KW-0754 or `GO:0005496` umbrella only (no specific ligand named) |
+| REVIEW | 143 | Sterol / cholesterol vocabulary in FUNCTION text, no formal ligand |
+| DROP_VITD | 208 | Only steroid-family evidence is vitamin D binding (`GO:0005499`, secosteroid) |
+| DROP_NONE | 23 | No current steroid keyword, GO term, or ligand annotation |
+
+**231 entries (208 DROP_VITD + 23 DROP_NONE) were removed**, and every retained entry carries a `binder_evidence` string that records the exact keyword(s), GO term(s), and any specific ligand ChEBI ids that qualified it.
+
+The audit pipeline is implemented in `analysis/04_validate_binder_annotations.py` and `analysis/05_apply_curation.py`; per-entry decisions are in `analysis/binder_audit.tsv`.
+
 ### Union
 
 The two automated sources are unioned by UniProt accession, with duplicates collapsed.
@@ -146,7 +161,12 @@ Full provenance is in `data/literature_recruited_proteins.csv`.
 
 ## Final atlas
 
-**35,349 protein sequences** (final after literature audit removed one incorrectly attributed entry).
+**35,118 protein sequences** — after literature audit and post-hoc removal of 231 binder-search entries whose only steroid-family evidence was secosteroid binding (vitamin D) or had no current steroid annotation.
+
+Every entry carries:
+- `sequence_source` — `Rhea catalytic reaction (rhea2uniprot mapping)` for 32,869 entries; `UniProt binder search (KW-0754 / GO:0005496 hierarchy)` for 2,249 entries
+- `binder_evidence` — for binder-search entries: the exact KW/GO annotations and any specific ligand ChEBI that qualified the entry
+- `go_ids` / `go_labels` / `keyword_ids` / `keyword_labels` — full UniProt GO and keyword annotations for search + provenance
 
 ## Corpus composition by evidence source
 
@@ -156,7 +176,8 @@ Full provenance is in `data/literature_recruited_proteins.csv`.
 | B. Steroid-binding (UniProt KW-0754 / GO:0005496) | 2,746 | 7.4% |
 | **Union (dedup by accession)** | **36,877** | 100% |
 | After exact-sequence dedup | 35,349 | |
-| After literature audit (+15 STARs) | **35,349** | |
+| After literature audit (+15 STARs) | 35,349 | |
+| **After sterane-definition audit** (−231 secosteroid-only / no-annotation) | **35,118** | |
 
 ## Data sources cited
 
