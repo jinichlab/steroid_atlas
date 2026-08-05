@@ -161,7 +161,7 @@ Full provenance is in `data/literature_recruited_proteins.csv`.
 
 ## Final atlas
 
-**35,118 protein sequences** — after literature audit and post-hoc removal of 231 binder-search entries whose only steroid-family evidence was secosteroid binding (vitamin D) or had no current steroid annotation.
+**35,117 protein sequences** — after literature audit and post-hoc removal of 231 binder-search entries whose only steroid-family evidence was secosteroid binding (vitamin D) or had no current steroid annotation.
 
 Every entry carries:
 - `sequence_source` — `Rhea catalytic reaction (rhea2uniprot mapping)` for 32,869 entries; `UniProt binder search (KW-0754 / GO:0005496 hierarchy)` for 2,249 entries
@@ -177,7 +177,7 @@ Every entry carries:
 | **Union (dedup by accession)** | **36,877** | 100% |
 | After exact-sequence dedup | 35,349 | |
 | After literature audit (+15 STARs) | 35,349 | |
-| **After sterane-definition audit** (−231 secosteroid-only / no-annotation) | **35,118** | |
+| **After sterane-definition audit** (−231 secosteroid-only / no-annotation) | **35,117** | |
 
 ## Data sources cited
 

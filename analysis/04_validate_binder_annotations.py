@@ -270,11 +270,17 @@ def classify(ann: dict, sterane_chebis: set[str], protein_name: str = "") -> tup
     if vitd_ligs and not sterane_ligs:
         return ("DROP_VITD", f"only vitamin-D-family ligands: {sorted(vitd_ligs)[:3]}")
 
-    # Name-based hard drop for well-known secosteroid-only proteins
+    # Name-based hard drop for well-known secosteroid-only proteins.
+    # The parenthesized VDR form ("Vitamin D (1,25-...) receptor") won't match the plain
+    # substrings, so also detect names that start with "vitamin d" and contain "receptor".
     vdr_name_patterns = [
         "vitamin d3 receptor", "vitamin d receptor", "1,25-dihydroxyvitamin d3 receptor",
     ]
-    if any(p in pname_lower for p in vdr_name_patterns) and not sterane_ligs:
+    is_vdr_variant = (
+        any(p in pname_lower for p in vdr_name_patterns)
+        or (pname_lower.startswith("vitamin d") and "receptor" in pname_lower)
+    )
+    if is_vdr_variant and not sterane_ligs:
         return ("DROP_VITD", "VDR — vitamin D nuclear receptor (secosteroid-only)")
     if "vitamin d 25-hydroxylase" in pname_lower and not sterane_ligs:
         return ("DROP_VITD", "vitamin D 25-hydroxylase acts on secosteroid substrate")
