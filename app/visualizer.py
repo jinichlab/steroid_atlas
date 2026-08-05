@@ -469,13 +469,28 @@ def _(mo):
 
 
 @app.cell
-def _(ec_class, method, mol_class, mol_search, prot_search, view_kind):
+def _(ec_class, method, mo, mol_class, mol_search, prot_search, view_kind):
     # Gated transitively via view_kind.
     if view_kind == "molecule":
         active = mol_search if method.value == "① Multi-column search" else mol_class
+        display = active
     else:
         active = prot_search if method.value == "① Multi-column search" else ec_class
-    active
+        # For proteins in multi-column mode, show a legend under the box so users
+        # know exactly which UniProt fields the search scans.
+        if method.value == "① Multi-column search":
+            legend = mo.md(
+                "*Searched fields (each result row shows which one matched in the "
+                "**matched_in** column):* "
+                "protein name · UniProt accession · entry name · gene name · organism · "
+                "EC number · sequence · ChEBI ligand · Rhea reaction · compound · "
+                "reaction description · GO id · GO label · UniProt keyword id · "
+                "UniProt keyword · binder evidence · audit note"
+            )
+            display = mo.vstack([active, legend])
+        else:
+            display = active
+    display
     return
 
 
@@ -597,11 +612,42 @@ def _(
                                           "keyword_ids", "keyword_labels",
                                           "binder_evidence", "audit_reason")
                              if c in df.columns]
+                    # Human-friendly labels shown in the `matched_in` results column
+                    _display = {
+                        "Protein names": "protein name",
+                        "Entry": "UniProt accession",
+                        "Entry Name": "entry name",
+                        "Gene Names": "gene name",
+                        "Organism": "organism",
+                        "reaction_ecs": "EC number",
+                        "Sequence": "sequence",
+                        "ChEBI ID": "ChEBI ligand",
+                        "Rhea ID": "Rhea reaction",
+                        "Compound Name": "compound",
+                        "reaction_descriptions": "reaction description",
+                        "go_ids": "GO id",
+                        "go_labels": "GO label",
+                        "keyword_ids": "UniProt keyword id",
+                        "keyword_labels": "UniProt keyword",
+                        "binder_evidence": "binder evidence",
+                        "audit_reason": "audit note",
+                    }
                     _qlow = _q.lower()
                     _mask = pd.Series(False, index=df.index)
+                    _col_masks = {}
                     for _c in _cols:
-                        _mask = _mask | df[_c].astype(str).str.lower().str.contains(_qlow, regex=False, na=False)
+                        _m = df[_c].astype(str).str.lower().str.contains(_qlow, regex=False, na=False)
+                        _col_masks[_c] = _m
+                        _mask = _mask | _m
                     plot_df["_match"] = _mask
+                    # Build a per-row "matched_in" annotation for rows that hit
+                    _matched_in = pd.Series("", index=df.index)
+                    if _mask.any():
+                        _idx = df.index[_mask]
+                        for i in _idx:
+                            _hits = [_display.get(c, c) for c, m in _col_masks.items() if m.loc[i]]
+                            _matched_in.loc[i] = ", ".join(_hits)
+                    plot_df["matched_in"] = _matched_in
         else:
             # EC top-level class filter
             _v = ec_class.value
@@ -759,8 +805,9 @@ def _(chart_widget, mo, plot_df, view_kind):
         _cols = [c for c in ("Compound Name", "ChEBI ID", "clusters", "is_new", "Paper") if c in _pool.columns]
     else:
         _cols = [c for c in ("Entry", "Protein names", "Gene Names", "Organism",
-                              "reaction_ecs", "go_labels", "keyword_labels",
-                              "audit_decision", "clusters", "is_new")
+                              "reaction_ecs", "matched_in", "go_labels",
+                              "keyword_labels", "audit_decision",
+                              "clusters", "is_new")
                  if c in _pool.columns]
     _tbl = _pool[_cols].head(500).reset_index(drop=True) if len(_pool) else _pool[_cols].reset_index(drop=True)
 
