@@ -399,6 +399,29 @@ def _(molecule_df, natsyn_df, protein_df, view):
 
 
 @app.cell
+def _(df, mo):
+    # Cluster picker: multiselect with all cluster ids + counts. Selecting one
+    # or more clusters red-rings their points on the plot, same as name search.
+    if "clusters" in df.columns:
+        _counts = df["clusters"].astype(str).value_counts()
+        try:
+            _sorted_ids = sorted(_counts.index, key=lambda x: int(float(x)))
+        except (ValueError, TypeError):
+            _sorted_ids = sorted(_counts.index)
+        _labels = [f"cluster {c} (n={_counts[c]:,})" for c in _sorted_ids]
+        cluster_pick_map = {label: c for label, c in zip(_labels, _sorted_ids)}
+    else:
+        _labels = []
+        cluster_pick_map = {}
+    cluster_pick = mo.ui.multiselect(
+        options=_labels,
+        label=f"Highlight cluster(s) — pick from all {len(_labels)}",
+        value=[],
+    )
+    return cluster_pick, cluster_pick_map
+
+
+@app.cell
 def _(get_entered, mo):
     mo.stop(not get_entered())      # depends only on mo → needs its own gate
     method = mo.ui.radio(
@@ -469,15 +492,13 @@ def _(mo):
 
 
 @app.cell
-def _(ec_class, method, mo, mol_class, mol_search, prot_search, view_kind):
+def _(cluster_pick, ec_class, method, mo, mol_class, mol_search, prot_search, view_kind):
     # Gated transitively via view_kind.
     if view_kind == "molecule":
         active = mol_search if method.value == "① Multi-column search" else mol_class
-        display = active
+        display = mo.vstack([active, cluster_pick])
     else:
         active = prot_search if method.value == "① Multi-column search" else ec_class
-        # For proteins in multi-column mode, show a legend under the box so users
-        # know exactly which UniProt fields the search scans.
         if method.value == "① Multi-column search":
             legend = mo.md(
                 "*Searched fields (each result row shows which one matched in the "
@@ -487,15 +508,17 @@ def _(ec_class, method, mo, mol_class, mol_search, prot_search, view_kind):
                 "reaction description · GO id · GO label · UniProt keyword id · "
                 "UniProt keyword · binder evidence · audit note"
             )
-            display = mo.vstack([active, legend])
+            display = mo.vstack([active, legend, cluster_pick])
         else:
-            display = active
+            display = mo.vstack([active, cluster_pick])
     display
     return
 
 
 @app.cell
 def _(
+    cluster_pick,
+    cluster_pick_map,
     df,
     ec_class,
     method,
@@ -659,6 +682,23 @@ def _(
                 _digit = _v.split(" ")[1]  # "EC 1 — ..." → "1"
                 _pat = r"(?<![\d.])" + _digit + r"\."
                 plot_df["_match"] = df["reaction_ecs"].astype(str).str.contains(_pat, regex=True, na=False)
+
+    # Cluster picker adds red-ring highlight to every point in the picked cluster(s),
+    # regardless of which text search / class filter mode is active.
+    if cluster_pick.value:
+        _picked_ids = {str(cluster_pick_map[label]) for label in cluster_pick.value
+                       if label in cluster_pick_map}
+        if _picked_ids and "clusters" in plot_df.columns:
+            _cluster_mask = plot_df["clusters"].astype(str).isin(_picked_ids)
+            plot_df["_match"] = plot_df["_match"] | _cluster_mask
+            # For rows that only matched via cluster (no prior matched_in text), tag them
+            if "matched_in" not in plot_df.columns:
+                plot_df["matched_in"] = ""
+            plot_df["matched_in"] = plot_df["matched_in"].fillna("").astype(str)
+            _only_cluster = _cluster_mask & (plot_df["matched_in"] == "")
+            plot_df.loc[_only_cluster, "matched_in"] = "cluster pick"
+            _both = _cluster_mask & (plot_df["matched_in"] != "") & (plot_df["matched_in"] != "cluster pick")
+            plot_df.loc[_both, "matched_in"] = plot_df.loc[_both, "matched_in"] + ", cluster pick"
     return (plot_df,)
 
 
@@ -707,29 +747,53 @@ def _(alt, mo, pan_toggle, plot_df, view_kind):
         range=["circle", STAR],
     )
     # Pick a color scale that gives high contrast for the number of clusters present.
+    # For >20 clusters we generate a unique color per cluster via golden-ratio hue
+    # sampling with alternating saturation/value (Altair's tableau20 recycles beyond 20).
+    import colorsys as _colorsys
+    def _n_distinct_colors(n):
+        out = []
+        for i in range(n):
+            h = (i * 0.6180339887498949) % 1.0
+            s = 0.55 + 0.30 * ((i % 3) / 2.0)
+            v = 0.60 + 0.28 * ((i + 1) % 2)
+            r, g, b = _colorsys.hsv_to_rgb(h, s, v)
+            out.append(f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}")
+        return out
+
     _n_clusters = int(_chart_df["clusters"].nunique())
     if _n_clusters <= 3:
-        # Hand-picked contrasting scheme for 2-3 categories (used by natural vs synthetic view)
         _color_scale = alt.Scale(range=["#0E7490", "#F59E0B", "#B91C1C"])
     elif _n_clusters <= 10:
         _color_scale = alt.Scale(scheme="tableau10")
-    else:
+    elif _n_clusters <= 20:
         _color_scale = alt.Scale(scheme="tableau20")
+    else:
+        try:
+            _sorted_ids = sorted(_chart_df["clusters"].unique().tolist(),
+                                 key=lambda x: int(float(x)))
+        except (ValueError, TypeError):
+            _sorted_ids = sorted(_chart_df["clusters"].unique().tolist())
+        _color_scale = alt.Scale(
+            domain=_sorted_ids,
+            range=_n_distinct_colors(len(_sorted_ids)),
+        )
+
+    # Legend: show every cluster (no ellipsis) in a compact multi-column layout.
+    _legend = alt.Legend(
+        title="Cluster",
+        orient="right",
+        columns=4 if _n_clusters > 40 else 2,
+        symbolLimit=max(200, _n_clusters + 10),
+    )
 
     if _search_active:
         _color_enc = alt.condition(
             "datum._match",
-            alt.Color("clusters:N",
-                      scale=_color_scale,
-                      legend=alt.Legend(title="Cluster", orient="right", columns=2, symbolLimit=40)),
+            alt.Color("clusters:N", scale=_color_scale, legend=_legend),
             alt.value("#D1D5DB"),
         )
     else:
-        _color_enc = alt.Color(
-            "clusters:N",
-            scale=_color_scale,
-            legend=alt.Legend(title="Cluster", orient="right", columns=2, symbolLimit=40),
-        )
+        _color_enc = alt.Color("clusters:N", scale=_color_scale, legend=_legend)
     _size_enc = alt.Size("_size:Q", scale=None, legend=None)
     _stroke_enc = alt.Stroke("_stroke:N", scale=None, legend=None)
     _stroke_w_enc = alt.StrokeWidth("_stroke_w:Q", scale=None, legend=None)

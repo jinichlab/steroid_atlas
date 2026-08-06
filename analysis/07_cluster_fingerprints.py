@@ -1,0 +1,223 @@
+"""Build a per-cluster fingerprint of the atlas to identify case-study candidates.
+
+For each cluster, compute:
+  - size
+  - dominant_stem      most common protein-name first token
+  - stem_coherence     % of cluster sharing that stem
+  - dominant_go        most-informative GO label (housekeeping terms filtered)
+  - go_coherence       % of cluster carrying that GO label
+  - dominant_kw        most-informative UniProt keyword (housekeeping terms filtered)
+  - kw_coherence       % of cluster carrying that keyword
+  - dominant_ec        most common EC top-level (or none)
+  - ec_coherence       % of cluster with that EC top-level (of those with any EC)
+  - outliers           accession list of members whose stem doesn't match the dominant
+  - case_study_score   heuristic: prefer high coherence, medium size, small but nonzero outliers
+
+Reads:  ../data/proteins.csv
+Writes: ../analysis/cluster_fingerprints.tsv     one row per cluster, ranked
+        ../analysis/cluster_shortlist.txt        top-N clusters with a scannable summary
+"""
+from __future__ import annotations
+
+import re
+from collections import Counter
+from pathlib import Path
+
+import pandas as pd
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+IN = ROOT / "data" / "proteins.csv"
+OUT_TSV = HERE / "cluster_fingerprints.tsv"
+OUT_TXT = HERE / "cluster_shortlist.txt"
+
+TOP_N_SHORTLIST = 15
+
+# GO terms that appear in most eukaryotic proteins and add no discriminative power
+GO_HOUSEKEEPING = {
+    "cytoplasm", "cytosol", "nucleus", "nucleoplasm",
+    "membrane", "plasma membrane", "integral component of membrane",
+    "endoplasmic reticulum", "endoplasmic reticulum membrane",
+    "mitochondrion", "mitochondrial matrix", "mitochondrial inner membrane",
+    "mitochondrial outer membrane", "extracellular region", "extracellular space",
+    "extracellular exosome", "extracellular vesicle", "vesicle",
+    "protein binding", "metal ion binding", "atp binding", "zinc ion binding",
+    "identical protein binding", "dna binding", "rna binding",
+    "hydrolase activity", "transferase activity", "oxidoreductase activity",
+    "catalytic activity", "iron ion binding",
+    "cell surface", "perinuclear region of cytoplasm",
+    "golgi apparatus", "golgi membrane", "lysosome",
+    "reference proteome",
+    "cellular response to xenobiotic stimulus",
+}
+
+# UniProt keywords that are curation infrastructure, not functional discriminators
+KW_HOUSEKEEPING = {
+    "Reference proteome", "3D-structure", "Direct protein sequencing",
+    "Signal", "Transmembrane", "Transmembrane helix", "Membrane",
+    "Cell membrane", "Cytoplasm", "Nucleus", "Mitochondrion",
+    "Endoplasmic reticulum", "Alternative splicing", "Phosphoprotein",
+    "Glycoprotein", "Disulfide bond", "Metal-binding", "Zinc",
+    "Isopeptide bond", "Ubl conjugation", "Acetylation",
+    "ATP-binding", "Nucleotide-binding",
+}
+
+STEM_STOPWORDS = {"protein", "putative", "probable", "uncharacterized",
+                  "hypothetical", "sub", "unnamed", "fragment"}
+
+
+def name_stem(name: str) -> str:
+    """First meaningful token of protein_names — used as a coarse identity marker."""
+    if not name:
+        return ""
+    s = str(name).strip()
+    # Drop parenthesized aliases: "Estrogen receptor (ER-alpha) (Nuclear ...)" → "Estrogen receptor"
+    s = re.sub(r"\s*\(.*", "", s)
+    # Drop EC numbers
+    s = re.sub(r"\s+EC\s*[\d.]+\s*$", "", s, flags=re.IGNORECASE)
+    # First two words normalized (many families share the first word but differ in the second)
+    tokens = [t for t in re.split(r"[\s,;]+", s) if t and t.lower() not in STEM_STOPWORDS]
+    if not tokens:
+        return ""
+    # Use first two tokens (e.g., "Cytochrome P450") lowercased for grouping
+    return " ".join(tokens[:2]).lower()
+
+
+def top_informative(items, housekeeping) -> tuple[str, int]:
+    """Return (label, count) of the most frequent item not in the housekeeping set."""
+    if not items:
+        return "", 0
+    ctr = Counter(x for x in items if x)
+    for label, count in ctr.most_common():
+        if label.lower() not in {h.lower() for h in housekeeping}:
+            return label, count
+    return "", 0
+
+
+def semicolon_flat(series) -> list[list[str]]:
+    """Turn a Series of 'a;b;c' strings into a list-of-lists."""
+    return [
+        [x.strip() for x in str(s).split(";") if str(x).strip()]
+        for s in series.fillna("")
+    ]
+
+
+def main() -> int:
+    print(f"Reading {IN.name}...")
+    p = pd.read_csv(IN, low_memory=False)
+    for c in ["cluster", "protein_names", "gene_names", "organism",
+              "ec_numbers", "go_labels", "keyword_labels"]:
+        if c not in p.columns:
+            p[c] = ""
+        p[c] = p[c].fillna("").astype(str)
+
+    p["_stem"] = p["protein_names"].apply(name_stem)
+
+    print(f"  {len(p):,} entries · {p['cluster'].nunique():,} clusters")
+
+    rows = []
+    for cid, sub in p.groupby("cluster"):
+        n = len(sub)
+        stems = sub["_stem"].tolist()
+        stem_ctr = Counter(s for s in stems if s)
+        dom_stem, dom_stem_n = ("", 0)
+        for s, k in stem_ctr.most_common():
+            if s not in STEM_STOPWORDS:
+                dom_stem, dom_stem_n = s, k
+                break
+        stem_coh = dom_stem_n / n if n else 0
+
+        # GO labels — flatten across members
+        go_flat = [g for row in semicolon_flat(sub["go_labels"]) for g in row]
+        dom_go, dom_go_n = top_informative(go_flat, GO_HOUSEKEEPING)
+        # go count is per-mention across members; convert to per-member coverage
+        go_holders = sum(1 for row in semicolon_flat(sub["go_labels"])
+                         if any(g == dom_go for g in row))
+        go_coh = go_holders / n if n else 0
+
+        kw_flat = [k for row in semicolon_flat(sub["keyword_labels"]) for k in row]
+        dom_kw, _ = top_informative(kw_flat, KW_HOUSEKEEPING)
+        kw_holders = sum(1 for row in semicolon_flat(sub["keyword_labels"])
+                         if any(k == dom_kw for k in row))
+        kw_coh = kw_holders / n if n else 0
+
+        # EC top-level
+        ec_top = []
+        for ec_str in sub["ec_numbers"]:
+            for e in str(ec_str).split(";"):
+                e = e.strip()
+                if e and e[0].isdigit():
+                    ec_top.append(e.split(".")[0])
+        ec_ctr = Counter(ec_top)
+        dom_ec = ec_ctr.most_common(1)[0][0] if ec_ctr else ""
+        ec_coh = ec_ctr.get(dom_ec, 0) / len(ec_top) if ec_top else 0
+
+        outliers = sub[sub["_stem"] != dom_stem] if dom_stem else sub.iloc[0:0]
+
+        # Case-study score: reward coherent clusters with SOME outliers of medium size
+        n_outliers = len(outliers)
+        # size sweet spot 15–200
+        size_penalty = 0.0 if 15 <= n <= 200 else min(1.0, abs(n - 100) / 500.0)
+        # want at least 3, no more than 30 outliers
+        outlier_reward = min(n_outliers, 20) / 20 if 3 <= n_outliers <= 40 else 0.0
+        score = stem_coh * 0.55 + go_coh * 0.15 + outlier_reward * 0.25 - size_penalty * 0.2
+
+        rows.append({
+            "cluster": cid,
+            "size": n,
+            "dominant_stem": dom_stem,
+            "stem_coherence": round(stem_coh, 3),
+            "dominant_go": dom_go,
+            "go_coherence": round(go_coh, 3),
+            "dominant_kw": dom_kw,
+            "kw_coherence": round(kw_coh, 3),
+            "dominant_ec_top": dom_ec,
+            "ec_coherence": round(ec_coh, 3),
+            "n_outliers": n_outliers,
+            "case_study_score": round(score, 3),
+            "outlier_accessions": ";".join(outliers["accession"].tolist()[:30]),
+            "outlier_protein_names": ";".join(
+                outliers["protein_names"].str[:60].tolist()[:30]
+            ),
+        })
+
+    out = pd.DataFrame(rows).sort_values("case_study_score", ascending=False)
+    out.to_csv(OUT_TSV, sep="\t", index=False)
+    print(f"Wrote {OUT_TSV.name}  ({len(out)} clusters ranked)")
+
+    # Human-readable shortlist
+    lines = []
+    lines.append("=" * 78)
+    lines.append(f"CLUSTER CASE-STUDY SHORTLIST — top {TOP_N_SHORTLIST} of {len(out)} clusters")
+    lines.append("=" * 78)
+    lines.append("Ranking heuristic:")
+    lines.append("  score = 0.55·stem_coherence + 0.15·go_coherence + 0.25·outlier_reward - 0.2·size_penalty")
+    lines.append("  outlier_reward peaks when a cluster has 3–40 members whose protein-name")
+    lines.append("  first token differs from the dominant stem (interesting to write about).")
+    lines.append("")
+    for _, r in out.head(TOP_N_SHORTLIST).iterrows():
+        lines.append(f"--- CLUSTER {r['cluster']}  (size {r['size']}, score {r['case_study_score']}) ---")
+        lines.append(f"  Dominant identity : {r['dominant_stem']}  "
+                     f"({int(r['stem_coherence']*r['size'])}/{r['size']} = {r['stem_coherence']*100:.0f}%)")
+        if r["dominant_go"]:
+            lines.append(f"  Dominant GO term  : {r['dominant_go']}  ({r['go_coherence']*100:.0f}%)")
+        if r["dominant_kw"]:
+            lines.append(f"  Dominant keyword  : {r['dominant_kw']}  ({r['kw_coherence']*100:.0f}%)")
+        if r["dominant_ec_top"]:
+            lines.append(f"  Dominant EC       : EC {r['dominant_ec_top']}.-.-.-  ({r['ec_coherence']*100:.0f}% of EC-carriers)")
+        lines.append(f"  Outliers ({r['n_outliers']}):")
+        if r["outlier_protein_names"]:
+            for pn in r["outlier_protein_names"].split(";")[:8]:
+                if pn.strip():
+                    lines.append(f"      · {pn}")
+            if r["n_outliers"] > 8:
+                lines.append(f"      · ... (+{r['n_outliers']-8} more)")
+        lines.append("")
+
+    OUT_TXT.write_text("\n".join(lines) + "\n")
+    print(f"Wrote {OUT_TXT.name}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
