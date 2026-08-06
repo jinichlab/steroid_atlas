@@ -402,10 +402,19 @@ def _(molecule_df, natsyn_df, protein_df, view):
 def _(df, mo):
     # Cluster picker: multiselect with all cluster ids + counts. Selecting one
     # or more clusters red-rings their points on the plot, same as name search.
-    if "clusters" in df.columns:
-        _counts = df["clusters"].astype(str).value_counts()
+    def _canon(x):
+        s = str(x).strip()
+        if not s or s.lower() == "nan":
+            return ""
         try:
-            _sorted_ids = sorted(_counts.index, key=lambda x: int(float(x)))
+            return str(int(float(s)))
+        except (ValueError, TypeError):
+            return s
+    if "clusters" in df.columns:
+        _clean = df["clusters"].apply(_canon)
+        _counts = _clean[_clean != ""].value_counts()
+        try:
+            _sorted_ids = sorted(_counts.index, key=lambda x: int(x))
         except (ValueError, TypeError):
             _sorted_ids = sorted(_counts.index)
         _labels = [f"cluster {c} (n={_counts[c]:,})" for c in _sorted_ids]
@@ -689,7 +698,16 @@ def _(
         _picked_ids = {str(cluster_pick_map[label]) for label in cluster_pick.value
                        if label in cluster_pick_map}
         if _picked_ids and "clusters" in plot_df.columns:
-            _cluster_mask = plot_df["clusters"].astype(str).isin(_picked_ids)
+            def _canon_cluster(x):
+                s = str(x).strip()
+                if not s or s.lower() == "nan":
+                    return ""
+                try:
+                    return str(int(float(s)))
+                except (ValueError, TypeError):
+                    return s
+            _plot_clean = plot_df["clusters"].apply(_canon_cluster)
+            _cluster_mask = _plot_clean.isin(_picked_ids)
             plot_df["_match"] = plot_df["_match"] | _cluster_mask
             # For rows that only matched via cluster (no prior matched_in text), tag them
             if "matched_in" not in plot_df.columns:
@@ -760,6 +778,19 @@ def _(alt, mo, pan_toggle, plot_df, view_kind):
             out.append(f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}")
         return out
 
+    # Canonicalize cluster ids to clean integer strings ("0", "1", ..., "94")
+    # so the color scale domain and the chart data match exactly regardless of
+    # how pandas/CSV serializes floats.
+    def _clean_cluster(x):
+        s = str(x).strip()
+        if not s or s.lower() == "nan":
+            return ""
+        try:
+            return str(int(float(s)))
+        except (ValueError, TypeError):
+            return s
+    _chart_df["clusters"] = _chart_df["clusters"].apply(_clean_cluster).astype(str)
+
     _n_clusters = int(_chart_df["clusters"].nunique())
     if _n_clusters <= 3:
         _color_scale = alt.Scale(range=["#0E7490", "#F59E0B", "#B91C1C"])
@@ -768,15 +799,10 @@ def _(alt, mo, pan_toggle, plot_df, view_kind):
     elif _n_clusters <= 20:
         _color_scale = alt.Scale(scheme="tableau20")
     else:
-        try:
-            _sorted_ids = sorted(_chart_df["clusters"].unique().tolist(),
-                                 key=lambda x: int(float(x)))
-        except (ValueError, TypeError):
-            _sorted_ids = sorted(_chart_df["clusters"].unique().tolist())
-        _color_scale = alt.Scale(
-            domain=_sorted_ids,
-            range=_n_distinct_colors(len(_sorted_ids)),
-        )
+        # No explicit domain: Vega auto-assigns each cluster the next color from
+        # `range`, giving 95 unique colors for 95 clusters. Order-of-first-occurrence
+        # is stable within a single render, which is enough for interactive use.
+        _color_scale = alt.Scale(range=_n_distinct_colors(_n_clusters))
 
     # Legend: show every cluster (no ellipsis) in a compact multi-column layout.
     _legend = alt.Legend(
