@@ -1,0 +1,168 @@
+==================================================================================
+PER-CLUSTER GO ENRICHMENT — 35,117 proteins · 95 clusters
+==================================================================================
+
+Clarity buckets:
+  clear    : top GO enrichment ≥ 10×  AND  -log10(p) ≥ 20
+  moderate : top GO enrichment ≥ 3×   AND  -log10(p) ≥ 10
+  unclear  : below both thresholds
+  no_go    : no annotated members with GO terms
+
+   93  clear
+    2  moderate
+    0  unclear
+    0  no_go
+
+--- TOP 20 CLUSTERS (strongest to weakest enrichment story) ---
+
+cluster 0  size=771  [clear]
+    top: cholesterol 24-hydroxylase activity
+         enrichment = 26.9×    -log10(p) = 300.0    terms ≥10×: 5
+    also: presynapse  (26.8×, -log10p=300.0)
+    also: postsynapse  (26.8×, -log10p=300.0)
+    also: cholesterol catabolic process  (25.8×, -log10p=300.0)
+
+cluster 1  size=521  [clear]
+    top: intein-mediated protein splicing
+         enrichment = 22.7×    -log10(p) = 300.0    terms ≥10×: 5
+    also: cell fate specification  (21.9×, -log10p=300.0)
+    also: peptidase activity  (21.8×, -log10p=300.0)
+    also: protein autoprocessing  (21.7×, -log10p=300.0)
+
+cluster 2  size=332  [clear]
+    top: aromatase activity
+         enrichment = 92.5×    -log10(p) = 300.0    terms ≥10×: 4
+    also: long-chain fatty acid omega-hydroxylase activity  (83.4×, -log10p=300.0)
+    also: heme binding  (4.5×, -log10p=114.0)
+    also: muscle cell differentiation  (72.5×, -log10p=80.8)
+
+cluster 4  size=558  [clear]
+    top: sterol 14-demethylase activity
+         enrichment = 14.4×    -log10(p) = 300.0    terms ≥10×: 4
+    also: cholesterol biosynthetic process  (11.1×, -log10p=300.0)
+    also: heme binding  (5.7×, -log10p=300.0)
+    also: small molecule biosynthetic process  (45.0×, -log10p=37.0)
+
+cluster 5  size=1050  [clear]
+    top: chloride channel complex
+         enrichment = 28.5×    -log10(p) = 300.0    terms ≥10×: 4
+    also: intracellularly ATP-gated chloride channel activity  (28.5×, -log10p=300.0)
+    also: early endosome membrane  (28.2×, -log10p=300.0)
+    also: ABC-type glutathione S-conjugate transporter activity  (11.2×, -log10p=300.0)
+
+cluster 6  size=271  [clear]
+    top: coenzyme A diphosphatase activity
+         enrichment = 30.5×    -log10(p) = 300.0    terms ≥10×: 1
+
+cluster 7  size=763  [clear]
+    top: carbohydrate catabolic process
+         enrichment = 32.0×    -log10(p) = 300.0    terms ≥10×: 2
+    also: beta-glucosidase activity  (11.1×, -log10p=300.0)
+    also: galactosylceramidase activity  (6.7×, -log10p=300.0)
+    also: glucosylceramidase activity  (6.7×, -log10p=300.0)
+
+cluster 9  size=362  [clear]
+    top: ABC-type oligopeptide transporter activity
+         enrichment = 25.0×    -log10(p) = 300.0    terms ≥10×: 5
+    also: oligopeptide export from mitochondrion  (25.0×, -log10p=300.0)
+    also: recycling endosome membrane  (19.6×, -log10p=300.0)
+    also: canalicular bile acid transport  (21.9×, -log10p=286.5)
+
+cluster 11  size=345  [clear]
+    top: glycosyltransferase activity
+         enrichment = 38.9×    -log10(p) = 300.0    terms ≥10×: 3
+    also: carbohydrate metabolic process  (34.2×, -log10p=300.0)
+    also: central nervous system development  (19.7×, -log10p=300.0)
+    also: glucosylceramide catabolic process  (9.4×, -log10p=235.6)
+
+cluster 12  size=536  [clear]
+    top: acetylesterase activity
+         enrichment = 25.8×    -log10(p) = 300.0    terms ≥10×: 5
+    also: lipid catabolic process  (24.4×, -log10p=300.0)
+    also: triacylglycerol lipase activity  (13.6×, -log10p=300.0)
+    also: sterol ester esterase activity  (13.4×, -log10p=300.0)
+
+cluster 13  size=423  [clear]
+    top: acetyl-CoA C-acyltransferase activity
+         enrichment = 20.0×    -log10(p) = 300.0    terms ≥10×: 5
+    also: acetyl-CoA C-myristoyltransferase activity  (19.9×, -log10p=300.0)
+    also: lipid binding  (19.8×, -log10p=300.0)
+    also: lipid metabolic process  (17.7×, -log10p=300.0)
+
+cluster 14  size=698  [clear]
+    top: acetoacetyl-CoA hydrolase activity
+         enrichment = 49.8×    -log10(p) = 300.0    terms ≥10×: 5
+    also: acetyl-CoA hydrolase activity  (49.8×, -log10p=300.0)
+    also: succinyl-CoA hydrolase activity  (49.8×, -log10p=300.0)
+    also: hydroxymethylglutaryl-CoA hydrolase activity  (49.8×, -log10p=300.0)
+
+cluster 15  size=594  [clear]
+    top: bile acid:sodium symporter activity
+         enrichment = 24.9×    -log10(p) = 300.0    terms ≥10×: 3
+    also: sodium ion transport  (40.2×, -log10p=24.2)
+    also: symporter activity  (36.4×, -log10p=21.8)
+    also: bile acid and bile salt transport  (8.3×, -log10p=12.3)
+
+cluster 16  size=545  [clear]
+    top: regulation of protein catabolic process
+         enrichment = 18.9×    -log10(p) = 300.0    terms ≥10×: 5
+    also: regulation of TOR signaling  (18.8×, -log10p=300.0)
+    also: lysosome organization  (18.7×, -log10p=300.0)
+    also: regulation of macroautophagy  (18.7×, -log10p=300.0)
+
+cluster 17  size=700  [clear]
+    top: 3-beta-hydroxysteroid 3-dehydrogenase (NADP+) activity
+         enrichment = 35.9×    -log10(p) = 300.0    terms ≥10×: 5
+    also: 5-alpha-androstane-3-beta,17-beta-diol dehydrogenase (NADP+) activity  (31.8×, -log10p=300.0)
+    also: estrogen biosynthetic process  (27.9×, -log10p=300.0)
+    also: cholesterol biosynthetic process  (11.9×, -log10p=300.0)
+
+cluster 18  size=861  [clear]
+    top: riboflavin transmembrane transporter activity
+         enrichment = 40.7×    -log10(p) = 300.0    terms ≥10×: 3
+    also: efflux transmembrane transporter activity  (33.9×, -log10p=300.0)
+    also: mitochondrial membrane  (29.8×, -log10p=300.0)
+    also: ABC-type xenobiotic transporter activity  (7.8×, -log10p=300.0)
+
+cluster 20  size=388  [clear]
+    top: glutathione transmembrane transporter activity
+         enrichment = 35.9×    -log10(p) = 300.0    terms ≥10×: 2
+    also: ABC-type glutathione S-conjugate transporter activity  (10.3×, -log10p=278.1)
+    also: basolateral plasma membrane  (8.6×, -log10p=252.6)
+    also: ABC-type xenobiotic transporter activity  (8.1×, -log10p=243.6)
+
+cluster 21  size=298  [clear]
+    top: 24S-hydroxycholesterol 7-alpha-hydroxylase activity
+         enrichment = 94.7×    -log10(p) = 300.0    terms ≥10×: 5
+    also: digestion  (92.6×, -log10p=300.0)
+    also: oxysterol 7-alpha-hydroxylase activity  (75.3×, -log10p=300.0)
+    also: bile acid biosynthetic process  (56.9×, -log10p=300.0)
+
+cluster 22  size=657  [clear]
+    top: 7-beta-hydroxysteroid dehydrogenase (NADP+) activity
+         enrichment = 27.9×    -log10(p) = 300.0    terms ≥10×: 5
+    also: 11-beta-hydroxysteroid dehydrogenase (NADP+) activity  (27.8×, -log10p=300.0)
+    also: steroid catabolic process  (24.7×, -log10p=300.0)
+    also: steroid binding  (15.6×, -log10p=300.0)
+
+cluster 23  size=814  [clear]
+    top: triglyceride catabolic process
+         enrichment = 27.9×    -log10(p) = 300.0    terms ≥10×: 5
+    also: monoacylglycerol lipase activity  (27.8×, -log10p=300.0)
+    also: caveola  (23.7×, -log10p=300.0)
+    also: lipid droplet  (17.7×, -log10p=300.0)
+
+
+--- BOTTOM 10 CLUSTERS (weakest — potential 'mixed/unclear' case study) ---
+
+cluster 59  size=284  [clear]  top: endoplasmic reticulum-plasma membrane contact site  (123.7×, -log10p=84.9)
+cluster 94  size=219  [clear]  top: monoacylglycerol lipase activity  (14.6×, -log10p=81.5)
+cluster 66  size=102  [clear]  top: L-asparagine transmembrane transporter activity  (332.4×, -log10p=71.3)
+cluster 19  size=81  [clear]  top: sodium-independent organic anion transport  (346.8×, -log10p=69.3)
+cluster 36  size=166  [clear]  top: sulfation  (211.6×, -log10p=61.4)
+cluster 49  size=82  [clear]  top: positive regulation of smoothened signaling pathway  (78.7×, -log10p=59.3)
+cluster 57  size=118  [clear]  top: very-long-chain 3-oxoacyl-CoA reductase activity  (51.5×, -log10p=58.8)
+cluster 3  size=77  [clear]  top: catechol O-methyltransferase activity  (54.6×, -log10p=33.4)
+cluster 75  size=173  [moderate]  top: basolateral plasma membrane  (8.0×, -log10p=96.2)
+cluster 78  size=153  [moderate]  top: ABC-type glutathione S-conjugate transporter activity  (7.7×, -log10p=61.8)
+
