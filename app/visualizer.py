@@ -420,6 +420,7 @@ def _(df, mo):
         _labels = [f"cluster {c} (n={_counts[c]:,})" for c in _sorted_ids]
         cluster_pick_map = {label: c for label, c in zip(_labels, _sorted_ids)}
     else:
+        _sorted_ids = []
         _labels = []
         cluster_pick_map = {}
     cluster_pick = mo.ui.multiselect(
@@ -427,7 +428,40 @@ def _(df, mo):
         label=f"Highlight cluster(s) — pick from all {len(_labels)}",
         value=[],
     )
-    return cluster_pick, cluster_pick_map
+
+    # Full scrollable color reference — mirrors the chart's palette so users can
+    # see every cluster's color without cramming the Vega legend.
+    import colorsys as _colorsys
+    def _palette(n):
+        out = []
+        for i in range(n):
+            h = (i * 0.6180339887498949) % 1.0
+            s = 0.55 + 0.30 * ((i % 3) / 2.0)
+            v = 0.60 + 0.28 * ((i + 1) % 2)
+            r, g, b = _colorsys.hsv_to_rgb(h, s, v)
+            out.append(f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}")
+        return out
+    _colors = _palette(len(_sorted_ids))
+    _cells = "".join(
+        f'<div style="display:flex;align-items:center;gap:6px;padding:2px 6px;'
+        f'font-family:ui-monospace,monospace;font-size:11px;">'
+        f'<span style="display:inline-block;width:14px;height:14px;'
+        f'background:{_colors[i]};border:1px solid #999;border-radius:2px;flex-shrink:0"></span>'
+        f'<span>cluster {c} (n={_counts[c]:,})</span>'
+        f'</div>'
+        for i, c in enumerate(_sorted_ids)
+    )
+    cluster_legend_html = mo.Html(
+        f'<details style="margin-top:6px;">'
+        f'<summary style="cursor:pointer;font-size:12px;color:#374151;">'
+        f'▸ Show all {len(_sorted_ids)} cluster colors (scrollable)</summary>'
+        f'<div style="max-height:260px;overflow-y:auto;border:1px solid #E5E7EB;'
+        f'border-radius:6px;padding:6px;margin-top:4px;'
+        f'display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));'
+        f'gap:2px;background:#FAFAFA;">'
+        f'{_cells}</div></details>'
+    )
+    return cluster_legend_html, cluster_pick, cluster_pick_map
 
 
 @app.cell
@@ -501,11 +535,12 @@ def _(mo):
 
 
 @app.cell
-def _(cluster_pick, ec_class, method, mo, mol_class, mol_search, prot_search, view_kind):
+def _(cluster_legend_html, cluster_pick, ec_class, method, mo,
+      mol_class, mol_search, prot_search, view_kind):
     # Gated transitively via view_kind.
     if view_kind == "molecule":
         active = mol_search if method.value == "① Multi-column search" else mol_class
-        display = mo.vstack([active, cluster_pick])
+        display = mo.vstack([active, cluster_pick, cluster_legend_html])
     else:
         active = prot_search if method.value == "① Multi-column search" else ec_class
         if method.value == "① Multi-column search":
@@ -517,9 +552,9 @@ def _(cluster_pick, ec_class, method, mo, mol_class, mol_search, prot_search, vi
                 "reaction description · GO id · GO label · UniProt keyword id · "
                 "UniProt keyword · binder evidence · audit note"
             )
-            display = mo.vstack([active, legend, cluster_pick])
+            display = mo.vstack([active, legend, cluster_pick, cluster_legend_html])
         else:
-            display = mo.vstack([active, cluster_pick])
+            display = mo.vstack([active, cluster_pick, cluster_legend_html])
     display
     return
 
@@ -804,13 +839,19 @@ def _(alt, mo, pan_toggle, plot_df, view_kind):
         # is stable within a single render, which is enough for interactive use.
         _color_scale = alt.Scale(range=_n_distinct_colors(_n_clusters))
 
-    # Legend: show every cluster (no ellipsis) in a compact multi-column layout.
-    _legend = alt.Legend(
-        title="Cluster",
-        orient="right",
-        columns=4 if _n_clusters > 40 else 2,
-        symbolLimit=max(200, _n_clusters + 10),
-    )
+    # In-chart legend: keep it compact (~30 slots max) so it doesn't clip the plot.
+    # For >30 clusters, the user browses the full list via the cluster-picker widget
+    # (which is natively scrollable in the browser).
+    if _n_clusters <= 30:
+        _legend = alt.Legend(title="Cluster", orient="right",
+                             columns=2, symbolLimit=_n_clusters + 5)
+    else:
+        _legend = alt.Legend(
+            title=f"Cluster (top 30 of {_n_clusters} — use picker below for full list)",
+            orient="right",
+            columns=2,
+            symbolLimit=30,
+        )
 
     if _search_active:
         _color_enc = alt.condition(
