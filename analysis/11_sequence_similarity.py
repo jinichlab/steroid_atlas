@@ -48,8 +48,14 @@ OUT_PNG = HERE / "seq_similarity_figure.png"
 OUT_PDF = HERE / "seq_similarity_figure.pdf"
 TMP = HERE / "tmp_cdhit"
 
-CDHIT_THRESHOLDS = [0.90, 0.70, 0.50, 0.40]
-NN_THRESHOLD = 0.40             # the threshold whose .clstr gives per-protein NN identity
+# Standard bioinformatics thresholds:
+#   90% — near-duplicates / very close orthologs (matches UniRef90)
+#   75% — same protein family across species / orthologs (common cutoff for
+#         cross-species ortholog assignment)
+#   50% — homologs / distant orthologs; edge of the "twilight zone"
+#         (matches UniRef50; below this alignment-based identity becomes less reliable)
+CDHIT_THRESHOLDS = [0.90, 0.75, 0.50]
+NN_THRESHOLD = 0.50             # the threshold whose .clstr gives per-protein NN identity
 BACKFILL_SAMPLE = 500           # random alignment sample for singleton representatives
 BACKFILL_MAX_LEN = 2000
 RANDOM_SEED = 42
