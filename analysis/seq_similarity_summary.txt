@@ -1,29 +1,29 @@
-==========================================================================
-SEQUENCE-SIMILARITY BASELINE — 35,117 atlas proteins
-==========================================================================
+==============================================================================
+SEQUENCE-SIMILARITY CHARACTERIZATION — all 35,117 atlas proteins
+==============================================================================
 
-[A] Pairwise identity distribution (19,921 random pairs, BLOSUM62 local alignment):
-    min      0.095
-    5%       0.211
-    25%      0.251
-    median   0.300
-    75%      0.375
-    95%      0.571
-    max      1.000
-    mean     0.332
+[A] Per-protein nearest-neighbor identity  (100% coverage — every
+    protein contributes one value):
+    min           0.0%
+    5%            42.5%
+    25%           50.2%
+    median        58.0%
+    75%           69.7%
+    95%           88.0%
+    max           100.0%
+    mean          61.0%
 
-    Fraction of pairs above threshold:
-      > 30%   49.16%
-      > 50%    7.50%
-      > 70%    1.94%
-      > 90%    0.23%
+    Fraction of atlas whose NN identity is ≥ threshold:
+      ≥ 30%      100.0%
+      ≥ 50%       75.7%
+      ≥ 70%       24.3%
+      ≥ 90%        3.6%
 
-[B] CD-HIT redundancy at multiple identity thresholds:
-     threshold     clusters    reduction
-       90%          11,283       67.9%
-       70%           3,200       90.9%
-       50%           1,118       96.8%
-       40%             700       98.0%
+    Coverage note: 35,117 / 35,117 proteins covered (singleton reps backfilled by 500-protein alignment sample).
 
-    (Atlas has 35,117 sequences; the cluster count is the number of
-     non-redundant sequences that would remain after collapsing at each threshold.)
+[B] CD-HIT redundancy at multiple identity thresholds (clustering on all sequences):
+       threshold     clusters    reduction
+       90%           11,283       67.9%
+       70%            3,200       90.9%
+       50%            1,118       96.8%
+       40%              700       98.0%
