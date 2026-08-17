@@ -1086,8 +1086,16 @@ def _(chart_widget, mo, plot_df):
 def _(chart_widget, cluster_go_map, cluster_pick, cluster_pick_map,
       cluster_stem_map, mo, plot_df, view_kind):
     _sel = chart_widget.value
-    # Build the pool of rows the user has narrowed down to
-    if _sel is not None and hasattr(_sel, "__len__") and 0 < len(_sel) < len(plot_df):
+    # Priority: an explicit cluster pick / search-class match wins over any
+    # stale chart_widget.value. Only fall back to the chart's interval or
+    # click selection when nothing was matched by search / cluster picker.
+    _has_match = bool(plot_df["_match"].any())
+    _has_chart_sel = (
+        _sel is not None and hasattr(_sel, "__len__") and 0 < len(_sel) < len(plot_df)
+    )
+    if _has_match:
+        _pool = plot_df[plot_df["_match"]]
+    elif _has_chart_sel:
         if view_kind == "molecule" and "Compound Name" in _sel.columns:
             _pool = plot_df[plot_df["Compound Name"].isin(_sel["Compound Name"].tolist())]
         elif view_kind == "protein" and "Entry" in _sel.columns:
@@ -1095,8 +1103,21 @@ def _(chart_widget, cluster_go_map, cluster_pick, cluster_pick_map,
         else:
             _pool = _sel
     else:
-        # No chart selection → fall back to whatever the search/class filter matched
-        _pool = plot_df[plot_df["_match"]] if plot_df["_match"].any() else plot_df.head(0)
+        _pool = plot_df.head(0)
+
+    # Small debug banner so we can see WHERE the pipeline stops when the
+    # cluster picker seems to be ignored.
+    _n_picked = len(cluster_pick.value) if cluster_pick.value else 0
+    _chart_len = len(_sel) if _has_chart_sel else 0
+    debug_html = mo.Html(
+        f'<div style="font-family:ui-monospace,monospace;font-size:11px;'
+        f'color:#6B7280;background:#F3F4F6;padding:6px 10px;border-radius:6px;'
+        f'margin:4px 0;">'
+        f'debug · view={view_kind} · cluster_pick.value={_n_picked} '
+        f'· _match.sum()={int(plot_df["_match"].sum())} '
+        f'· chart_widget.value_len={_chart_len} · pool_len={len(_pool)}'
+        f'</div>'
+    )
 
     # If the user has picked one or more clusters via the widget, build an info
     # card at the top of the results — cluster ID, GO term, family, size, top
@@ -1170,16 +1191,19 @@ def _(chart_widget, cluster_go_map, cluster_pick, cluster_pick_map,
     if len(_tbl) == 0:
         selection_table = None
         # Helpful hint when nothing is highlighted yet.
-        table_out = mo.md(
-            "---\n### Results\n"
-            "*No proteins highlighted yet. Try one of these:*\n"
-            "- **Pick a cluster** from the highlight-cluster widget above — "
-            "you'll see every steroid in the cluster with the proteins that act on it, "
-            "grouped for easy browsing\n"
-            "- **Type a search** in the box above (name, gene, GO term, ChEBI, keyword, sequence)\n"
-            "- **Click a dot** on the plot to select one protein\n"
-            "- **Drag a rectangle** on the plot to select many\n"
-        )
+        table_out = mo.vstack([
+            debug_html,
+            mo.md(
+                "---\n### Results\n"
+                "*No proteins highlighted yet. Try one of these:*\n"
+                "- **Pick a cluster** from the highlight-cluster widget above — "
+                "you'll see every steroid in the cluster with the proteins that act on it, "
+                "grouped for easy browsing\n"
+                "- **Type a search** in the box above (name, gene, GO term, ChEBI, keyword, sequence)\n"
+                "- **Click a dot** on the plot to select one protein\n"
+                "- **Drag a rectangle** on the plot to select many\n"
+            ),
+        ])
     else:
         selection_table = mo.ui.table(_tbl, page_size=8, selection="multi")
         # For the protein view, also render a substrate-grouped list where
@@ -1262,6 +1286,7 @@ def _(chart_widget, cluster_go_map, cluster_pick, cluster_pick_map,
                 f'</div>'
             )
         table_out = mo.vstack([
+            debug_html,
             mo.md(f"---\n### Results — {len(_tbl):,} candidate proteins"),
             cluster_info_html,
             grouped_html if grouped_html else mo.md(""),
@@ -1318,7 +1343,6 @@ def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
                 _name_raw = str(_row.get("Compound Name", "")).strip()
                 _chebi = str(_row.get("ChEBI ID", "")).strip()
                 _name = _name_raw if _name_raw else (f"[ChEBI:{_chebi}]" if _chebi else "(unnamed)")
-                _cluster = str(_row.get("clusters", "?"))
                 _is_new = int(_row.get("is_new", 0))
                 _paper = str(_row.get("Paper", ""))
                 # Try name first, fall back to ChEBI lookup
@@ -1410,7 +1434,7 @@ def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
                     f'<div style="font-size:20px; font-weight:600; margin-top:14px; '
                     f'line-height:1.3;">{_safe_name}{_new_badge}</div>'
                     f'<div style="font-size:12px; color:#6B7280; font-family:monospace; margin-top:4px;">'
-                    f'CHEBI:{_chebi} · cluster {_cluster}</div>'
+                    f'CHEBI:{_chebi}</div>'
                     f'{_paper_html}'
                     f'</div>'
                 )
@@ -1446,7 +1470,6 @@ def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
             _gene = str(_row.get("Gene Names", ""))
             _org = str(_row.get("Organism", ""))
             _length = str(_row.get("Length", ""))
-            _cluster = str(_row.get("clusters", "?"))
             _is_new = int(_row.get("is_new", 0))
             _paper = str(_row.get("Paper", ""))
             _rhea = str(_row.get("Rhea ID", ""))
