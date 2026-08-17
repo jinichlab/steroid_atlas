@@ -1005,12 +1005,20 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
             _centroid_df = _c
 
     if _centroid_df is not None and len(_centroid_df):
-        centroid_labels = (
+        # Render text as TWO layers to avoid the halo eating the black fill:
+        # bottom layer = fat white halo (stroke only, no fill), top layer =
+        # crisp black text (fill only, no stroke).
+        _halo = (
             alt.Chart(_centroid_df)
-            .mark_text(fontSize=11, fontWeight="normal",
-                       color="#111827",              # solid black
-                       stroke="white", strokeWidth=3, strokeOpacity=1.0,
-                       opacity=1.0)
+            .mark_text(fontSize=12, fontWeight="bold",
+                       stroke="white", strokeWidth=4, fillOpacity=0,
+                       strokeOpacity=0.95)
+            .encode(x="UMAP_1:Q", y="UMAP_2:Q", text="short_label:N")
+        )
+        _text = (
+            alt.Chart(_centroid_df)
+            .mark_text(fontSize=12, fontWeight="bold",
+                       color="#000000", opacity=1.0)
             .encode(
                 x="UMAP_1:Q",
                 y="UMAP_2:Q",
@@ -1018,7 +1026,7 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
                 tooltip=[alt.Tooltip("cluster_label:N", title="Cluster")],
             )
         )
-        chart_raw = alt.layer(points, centroid_labels).properties(width=1200, height=720)
+        chart_raw = alt.layer(points, _halo, _text).properties(width=1200, height=720)
     else:
         chart_raw = points.properties(width=1200, height=720)
 
