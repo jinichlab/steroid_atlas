@@ -1049,7 +1049,15 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
             .add_params(*_selection_params)
         )
 
-    chart_widget = mo.ui.altair_chart(chart_raw, chart_selection=True, legend_selection=True)
+    # For the layered chart, tell marimo explicitly which selections to
+    # surface — "interval" catches the rectangle-drag param named "rng",
+    # and "point" catches click-selects (param "pt"). Passing True didn't
+    # reliably detect selections through the layer wrapper.
+    chart_widget = mo.ui.altair_chart(
+        chart_raw,
+        chart_selection="interval",
+        legend_selection=True,
+    )
     return (chart_widget,)
 
 
