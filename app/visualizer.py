@@ -993,31 +993,32 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
                     _k = str(int(float(_s)))
                 except (ValueError, TypeError):
                     _k = _s
-                # Prefer dominant family (stem); fall back to top GO term; then ID
+                # Always start with the cluster NUMBER so the user can map it
+                # back; then the full family name (no aggressive truncation).
                 _stem = cluster_stem_map.get(_k, "")
                 if _stem:
-                    return _stem[:26]
+                    return f"{_k} · {_stem[:50]}"
                 _go = cluster_go_map.get(_k, "")
                 if _go:
-                    return _go[:26]
+                    return f"{_k} · {_go[:50]}"
                 return _k
             _c["short_label"] = _c["clusters"].apply(_semantic_label)
             _centroid_df = _c
 
     if _centroid_df is not None and len(_centroid_df):
         # Render text as TWO layers to avoid the halo eating the black fill:
-        # bottom layer = fat white halo (stroke only, no fill), top layer =
+        # bottom layer = white halo (stroke only, no fill), top layer =
         # crisp black text (fill only, no stroke).
         _halo = (
             alt.Chart(_centroid_df)
-            .mark_text(fontSize=12, fontWeight="bold",
-                       stroke="white", strokeWidth=4, fillOpacity=0,
+            .mark_text(fontSize=10, fontWeight="bold",
+                       stroke="white", strokeWidth=3, fillOpacity=0,
                        strokeOpacity=0.95)
             .encode(x="UMAP_1:Q", y="UMAP_2:Q", text="short_label:N")
         )
         _text = (
             alt.Chart(_centroid_df)
-            .mark_text(fontSize=12, fontWeight="bold",
+            .mark_text(fontSize=10, fontWeight="bold",
                        color="#000000", opacity=1.0)
             .encode(
                 x="UMAP_1:Q",
@@ -1265,7 +1266,21 @@ def _(chart_widget, cluster_browser_html, cluster_go_map, cluster_pick,
 
     if len(_tbl) == 0:
         selection_table = None
-        table_out = mo.md("")
+        # Show a helpful hint + the cluster browser even when nothing is
+        # highlighted, so the user has something to interact with instead
+        # of a blank page.
+        table_out = mo.vstack([
+            mo.md(
+                "---\n### Results\n"
+                "*No proteins highlighted yet. Try one of these:*\n"
+                "- **Type a search** in the box above (name, gene, GO term, ChEBI, keyword, sequence)\n"
+                "- **Click a dot** on the plot to select one protein\n"
+                "- **Drag a rectangle** on the plot to select many\n"
+                "- **Pick a cluster** from the highlight-cluster widget above\n"
+                "- **Or scroll the cluster browser below** to explore any cluster's proteins\n"
+            ),
+            cluster_browser_html,
+        ])
     else:
         selection_table = mo.ui.table(_tbl, page_size=8, selection="multi")
         # For the protein view, also render a substrate-grouped list where
