@@ -399,12 +399,37 @@ def _(molecule_df, natsyn_df, protein_df, view):
 
 
 @app.cell
-def _(df, mo, pd, view_kind):
-    # Cluster picker: multiselect with semantic names.  Each option shows
-    # cluster id + top GO term + dominant protein-name stem + size.  Selecting
-    # one or more clusters red-rings their points on the plot.
+def _(pd, view_kind):
+    """Load semantic cluster metadata (top GO term + dominant protein-name stem)
+    so both the picker widget and the chart tooltip can show meaningful names."""
     from pathlib import Path as _Path
+    cluster_stem_map = {}
+    cluster_go_map = {}
+    if view_kind == "protein":
+        _root = _Path(__file__).resolve().parent.parent / "analysis"
+        try:
+            _fp = pd.read_csv(_root / "cluster_fingerprints.tsv", sep="\t", low_memory=False)
+            for _, _r in _fp.iterrows():
+                _cid = str(int(float(_r["cluster"])))
+                cluster_stem_map[_cid] = str(_r["dominant_stem"] or "")
+        except Exception:
+            pass
+        try:
+            _go = pd.read_csv(_root / "cluster_go_top_terms.tsv", sep="\t", low_memory=False)
+            _go_top = _go[_go["rank"] == 1]
+            for _, _r in _go_top.iterrows():
+                _cid = str(int(float(_r["cluster"])))
+                cluster_go_map[_cid] = str(_r["go_term"] or "")
+        except Exception:
+            pass
+    return cluster_go_map, cluster_stem_map
 
+
+@app.cell
+def _(cluster_go_map, cluster_stem_map, df, mo, pd):
+    # Cluster picker: multiselect with semantic names. Each option shows
+    # CLUSTER NUMBER first (bold), then top GO term + dominant protein-name
+    # stem + size. Selecting one or more clusters red-rings their points.
     def _canon(x):
         s = str(x).strip()
         if not s or s.lower() == "nan":
@@ -425,31 +450,13 @@ def _(df, mo, pd, view_kind):
         _sorted_ids = []
         _counts = pd.Series(dtype=int)
 
-    # Load semantic metadata for protein-view clusters only (fingerprints + GO)
-    _stem_map, _go_map = {}, {}
-    if view_kind == "protein":
-        _root = _Path(__file__).resolve().parent.parent / "analysis"
-        try:
-            _fp = pd.read_csv(_root / "cluster_fingerprints.tsv", sep="\t", low_memory=False)
-            for _, r in _fp.iterrows():
-                _stem_map[str(int(float(r["cluster"])))] = str(r["dominant_stem"] or "")
-        except Exception:
-            pass
-        try:
-            _go = pd.read_csv(_root / "cluster_go_top_terms.tsv", sep="\t", low_memory=False)
-            _go_top = _go[_go["rank"] == 1]
-            for _, r in _go_top.iterrows():
-                _go_map[str(int(float(r["cluster"])))] = str(r["go_term"] or "")
-        except Exception:
-            pass
-
     def _label_for(cid):
         n = _counts.get(cid, 0)
-        stem = _stem_map.get(cid, "")
-        go = _go_map.get(cid, "")
-        parts = [f"c{cid} (n={n:,})"]
+        stem = cluster_stem_map.get(cid, "")
+        go = cluster_go_map.get(cid, "")
+        # Cluster NUMBER first, prominent
+        parts = [f"Cluster {cid} (n={n:,})"]
         if go:
-            # Trim overly-long GO labels
             g = go[:55] + ("…" if len(go) > 55 else "")
             parts.append(f"GO: {g}")
         if stem:
@@ -792,7 +799,7 @@ def _(
 
 
 @app.cell
-def _(alt, mo, pan_toggle, plot_df, view_kind):
+def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind):
     n_hit = int(plot_df["_match"].sum())
     n_new = int((plot_df["is_new"] == 1).sum())
     n_total = len(plot_df)
@@ -819,6 +826,29 @@ def _(alt, mo, pan_toggle, plot_df, view_kind):
 
     _chart_df["_kind"] = "Existing"
     _chart_df.loc[_chart_df["is_new"] == 1, "_kind"] = "Newly recruited"
+
+    # Build a human-readable cluster label for the tooltip (protein view only):
+    #   "Cluster 42 · nuclear estrogen receptor activity · estrogen receptor"
+    if view_kind == "protein" and (cluster_stem_map or cluster_go_map):
+        def _hover_label(_cid):
+            _s = str(_cid).strip()
+            if not _s or _s.lower() == "nan":
+                return ""
+            try:
+                _k = str(int(float(_s)))
+            except (ValueError, TypeError):
+                _k = _s
+            _parts = [f"Cluster {_k}"]
+            _go = cluster_go_map.get(_k, "")
+            _stem = cluster_stem_map.get(_k, "")
+            if _go:
+                _parts.append(_go[:60])
+            if _stem:
+                _parts.append(_stem[:40])
+            return " · ".join(_parts)
+        _chart_df["cluster_label"] = _chart_df["clusters"].apply(_hover_label)
+    else:
+        _chart_df["cluster_label"] = _chart_df["clusters"].astype(str)
     # Drop _selected to save spec bytes (not used in current logic)
     _chart_df = _chart_df.drop(columns=[c for c in ("_selected",) if c in _chart_df.columns])
     # Precompute size/stroke/strokeWidth — few unique values, Vega compresses well
@@ -901,9 +931,10 @@ def _(alt, mo, pan_toggle, plot_df, view_kind):
     _stroke_enc = alt.Stroke("_stroke:N", scale=None, legend=None)
     _stroke_w_enc = alt.StrokeWidth("_stroke_w:Q", scale=None, legend=None)
 
-    _tooltip = (["Compound Name:N", "ChEBI ID:N", "clusters:N", "is_new:N"]
+    _tooltip = (["Compound Name:N", "ChEBI ID:N", "cluster_label:N", "is_new:N"]
                 if view_kind == "molecule"
-                else ["Entry:N", "Protein names:N", "Gene Names:N", "clusters:N", "is_new:N"])
+                else ["Entry:N", "Protein names:N", "Gene Names:N",
+                      "cluster_label:N", "is_new:N"])
     _tooltip = [t for t in _tooltip if t.split(":")[0] in _chart_df.columns]
 
     chart_raw = (
@@ -947,7 +978,9 @@ def _(chart_widget, mo, plot_df):
               "**Red ring** = search / class match. "
               "**Click** for one · **drag rectangle** for many · "
               "**scroll to zoom** · **double-click** to reset.*"),
-        chart_widget,
+        # Center the chart horizontally in the container so the 1200-wide plot
+        # doesn't sit left-aligned in a wider marimo viewport.
+        mo.hstack([chart_widget], justify="center", align="center"),
     ])
     return
 
