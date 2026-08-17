@@ -945,6 +945,8 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
                             alt.Tooltip("is_new:N", title="New?")])
     _tooltip = [t for t in _tooltip_specs if t.shorthand.split(":")[0] in _chart_df.columns]
 
+    # Points layer — selection params are attached to the LAYERED chart below
+    # (not here) so click/drag work correctly when text layers are on top.
     points = (
         alt.Chart(_chart_df)
         .mark_point(filled=True, opacity=0.85)
@@ -959,13 +961,13 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
             strokeWidth=_stroke_w_enc,
             tooltip=_tooltip,
         )
-        .add_params(
-            alt.selection_point(name="pt", on="click", clear="dblclick"),
-            alt.selection_interval(name="rng"),
-            alt.selection_interval(name="zoom", bind="scales",
-                                    translate=pan_toggle.value, zoom=True),
-        )
     )
+    _selection_params = [
+        alt.selection_point(name="pt", on="click", clear="dblclick"),
+        alt.selection_interval(name="rng"),
+        alt.selection_interval(name="zoom", bind="scales",
+                               translate=pan_toggle.value, zoom=True),
+    ]
 
     # Persistent centroid labels: for each cluster (≥30 members only) place
     # its SEMANTIC NAME (the dominant protein-name family stem) at the median
@@ -1036,9 +1038,16 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
                 tooltip=[alt.Tooltip("cluster_label:N", title="Cluster")],
             )
         )
-        chart_raw = alt.layer(points, _halo, _text).properties(width=1200, height=720)
+        chart_raw = (
+            alt.layer(points, _halo, _text)
+            .properties(width=1200, height=720)
+            .add_params(*_selection_params)
+        )
     else:
-        chart_raw = points.properties(width=1200, height=720)
+        chart_raw = (
+            points.properties(width=1200, height=720)
+            .add_params(*_selection_params)
+        )
 
     chart_widget = mo.ui.altair_chart(chart_raw, chart_selection=True, legend_selection=True)
     return (chart_widget,)
