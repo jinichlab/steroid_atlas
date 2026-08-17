@@ -399,9 +399,12 @@ def _(molecule_df, natsyn_df, protein_df, view):
 
 
 @app.cell
-def _(df, mo):
-    # Cluster picker: multiselect with all cluster ids + counts. Selecting one
-    # or more clusters red-rings their points on the plot, same as name search.
+def _(df, mo, pd, view_kind):
+    # Cluster picker: multiselect with semantic names.  Each option shows
+    # cluster id + top GO term + dominant protein-name stem + size.  Selecting
+    # one or more clusters red-rings their points on the plot.
+    from pathlib import Path as _Path
+
     def _canon(x):
         s = str(x).strip()
         if not s or s.lower() == "nan":
@@ -410,6 +413,7 @@ def _(df, mo):
             return str(int(float(s)))
         except (ValueError, TypeError):
             return s
+
     if "clusters" in df.columns:
         _clean = df["clusters"].apply(_canon)
         _counts = _clean[_clean != ""].value_counts()
@@ -417,12 +421,44 @@ def _(df, mo):
             _sorted_ids = sorted(_counts.index, key=lambda x: int(x))
         except (ValueError, TypeError):
             _sorted_ids = sorted(_counts.index)
-        _labels = [f"cluster {c} (n={_counts[c]:,})" for c in _sorted_ids]
-        cluster_pick_map = {label: c for label, c in zip(_labels, _sorted_ids)}
     else:
         _sorted_ids = []
-        _labels = []
-        cluster_pick_map = {}
+        _counts = pd.Series(dtype=int)
+
+    # Load semantic metadata for protein-view clusters only (fingerprints + GO)
+    _stem_map, _go_map = {}, {}
+    if view_kind == "protein":
+        _root = _Path(__file__).resolve().parent.parent / "analysis"
+        try:
+            _fp = pd.read_csv(_root / "cluster_fingerprints.tsv", sep="\t", low_memory=False)
+            for _, r in _fp.iterrows():
+                _stem_map[str(int(float(r["cluster"])))] = str(r["dominant_stem"] or "")
+        except Exception:
+            pass
+        try:
+            _go = pd.read_csv(_root / "cluster_go_top_terms.tsv", sep="\t", low_memory=False)
+            _go_top = _go[_go["rank"] == 1]
+            for _, r in _go_top.iterrows():
+                _go_map[str(int(float(r["cluster"])))] = str(r["go_term"] or "")
+        except Exception:
+            pass
+
+    def _label_for(cid):
+        n = _counts.get(cid, 0)
+        stem = _stem_map.get(cid, "")
+        go = _go_map.get(cid, "")
+        parts = [f"c{cid} (n={n:,})"]
+        if go:
+            # Trim overly-long GO labels
+            g = go[:55] + ("…" if len(go) > 55 else "")
+            parts.append(f"GO: {g}")
+        if stem:
+            s = stem[:40] + ("…" if len(stem) > 40 else "")
+            parts.append(f"family: {s}")
+        return "  ·  ".join(parts)
+
+    _labels = [_label_for(c) for c in _sorted_ids]
+    cluster_pick_map = {label: c for label, c in zip(_labels, _sorted_ids)}
     cluster_pick = mo.ui.multiselect(
         options=_labels,
         label=f"Highlight cluster(s) — pick from all {len(_labels)}",
@@ -890,7 +926,7 @@ def _(alt, mo, pan_toggle, plot_df, view_kind):
             alt.selection_interval(name="zoom", bind="scales",
                                     translate=pan_toggle.value, zoom=True),
         )
-        .properties(width=920, height=560)
+        .properties(width=1200, height=720)
     )
 
     chart_widget = mo.ui.altair_chart(chart_raw, chart_selection=True, legend_selection=True)
@@ -947,8 +983,82 @@ def _(chart_widget, mo, plot_df, view_kind):
         table_out = mo.md("")
     else:
         selection_table = mo.ui.table(_tbl, page_size=8, selection="multi")
+        # For the protein view, also render a substrate-grouped list where
+        # proteins are grouped by the compound they act on (avoids repeating
+        # "estradiol glucuronide" many times in a flat table).
+        grouped_html = ""
+        if view_kind == "protein" and "Compound Name" in _pool.columns:
+            _pool2 = _pool.copy()
+            _pool2["Compound Name"] = _pool2["Compound Name"].fillna("").astype(str)
+
+            def _explode_compounds(_row_arg):
+                _s = _row_arg["Compound Name"]
+                if not _s:
+                    return ["(no compound listed)"]
+                import re as _re
+                _parts = [_x.strip() for _x in _re.split(r"[;\n]", _s) if _x.strip()]
+                if not _parts:
+                    _parts = [_s.strip() or "(no compound listed)"]
+                return _parts
+
+            # Build (compound → list of protein rows) mapping
+            _by_compound = {}
+            for _idx, _r in _pool2.iterrows():
+                for _c in _explode_compounds(_r):
+                    _by_compound.setdefault(_c, []).append(_r)
+            _compounds_sorted = sorted(_by_compound, key=lambda _k: -len(_by_compound[_k]))
+
+            _sections = []
+            for _cname in _compounds_sorted[:60]:
+                _proteins = _by_compound[_cname]
+                _rows_html = []
+                for _pr in _proteins[:200]:
+                    _acc = str(_pr.get("Entry", ""))
+                    _name = str(_pr.get("Protein names", ""))[:70]
+                    _org = str(_pr.get("Organism", ""))[:40]
+                    _pm = _pr.get("pubmed_count", 0)
+                    _pm_str = f" · {int(_pm) if str(_pm) not in ('nan','') else 0} refs" if "pubmed_count" in _pool.columns else ""
+                    _rows_html.append(
+                        f'<div style="padding:2px 8px;font-family:ui-monospace,monospace;font-size:11.5px;">'
+                        f'<a href="https://www.uniprot.org/uniprotkb/{_acc}/entry" target="_blank" '
+                        f'style="color:#1D4ED8;text-decoration:none;font-weight:600;">{_acc}</a>'
+                        f' <span style="color:#111827;">{_name}</span>'
+                        f' <span style="color:#6B7280;">· {_org}{_pm_str}</span>'
+                        f'</div>'
+                    )
+                _rows_html_str = "".join(_rows_html)
+                if len(_proteins) > 200:
+                    _rows_html_str += f'<div style="padding:2px 8px;color:#6B7280;font-size:11px;">…and {len(_proteins)-200} more</div>'
+                _sections.append(
+                    f'<details style="border:1px solid #E5E7EB;border-radius:6px;'
+                    f'margin:4px 0;padding:6px 10px;background:#FAFAFA;">'
+                    f'<summary style="cursor:pointer;font-size:13px;font-weight:600;color:#111827;">'
+                    f'{_cname}  <span style="color:#6B7280;font-weight:400;">'
+                    f'[{len(_proteins):,} protein{"s" if len(_proteins)!=1 else ""}]</span>'
+                    f'</summary>'
+                    f'<div style="max-height:340px;overflow-y:auto;margin-top:6px;">{_rows_html_str}</div>'
+                    f'</details>'
+                )
+            if len(_compounds_sorted) > 60:
+                _sections.append(
+                    f'<div style="padding:6px;color:#6B7280;font-size:11px;">'
+                    f'…and {len(_compounds_sorted)-60} more compound groups (view via table below)'
+                    f'</div>'
+                )
+            grouped_html = mo.Html(
+                f'<div style="margin-top:10px;">'
+                f'<div style="font-size:13px;color:#374151;margin-bottom:6px;">'
+                f'<b>Substrate-grouped view</b> — {len(_compounds_sorted):,} unique compound(s) '
+                f'across the {len(_tbl):,} candidate proteins; each collapsible section lists '
+                f'the proteins acting on that specific compound.'
+                f'</div>'
+                f'{"".join(_sections)}'
+                f'</div>'
+            )
         table_out = mo.vstack([
-            mo.md(f"---\n### Results table — {len(_tbl):,} candidates"),
+            mo.md(f"---\n### Results — {len(_tbl):,} candidate proteins"),
+            grouped_html if grouped_html else mo.md(""),
+            mo.md("---\n#### Flat protein table (select rows below to view structures)"),
             selection_table,
         ])
     table_out
