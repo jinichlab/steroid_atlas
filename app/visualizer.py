@@ -931,13 +931,21 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
     _stroke_enc = alt.Stroke("_stroke:N", scale=None, legend=None)
     _stroke_w_enc = alt.StrokeWidth("_stroke_w:Q", scale=None, legend=None)
 
-    _tooltip = (["Compound Name:N", "ChEBI ID:N", "cluster_label:N", "is_new:N"]
-                if view_kind == "molecule"
-                else ["Entry:N", "Protein names:N", "Gene Names:N",
-                      "cluster_label:N", "is_new:N"])
-    _tooltip = [t for t in _tooltip if t.split(":")[0] in _chart_df.columns]
+    # Tooltip: use explicit alt.Tooltip with human titles so field names
+    # like "cluster_label" appear as "Cluster" in the hover popup.
+    _tooltip_specs = ([alt.Tooltip("Compound Name:N", title="Compound"),
+                       alt.Tooltip("ChEBI ID:N", title="ChEBI"),
+                       alt.Tooltip("cluster_label:N", title="Cluster"),
+                       alt.Tooltip("is_new:N", title="New?")]
+                      if view_kind == "molecule"
+                      else [alt.Tooltip("Entry:N", title="UniProt"),
+                            alt.Tooltip("Protein names:N", title="Protein"),
+                            alt.Tooltip("Gene Names:N", title="Gene"),
+                            alt.Tooltip("cluster_label:N", title="Cluster"),
+                            alt.Tooltip("is_new:N", title="New?")])
+    _tooltip = [t for t in _tooltip_specs if t.shorthand.split(":")[0] in _chart_df.columns]
 
-    chart_raw = (
+    points = (
         alt.Chart(_chart_df)
         .mark_point(filled=True, opacity=0.85)
         .encode(
@@ -957,8 +965,50 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
             alt.selection_interval(name="zoom", bind="scales",
                                     translate=pan_toggle.value, zoom=True),
         )
-        .properties(width=1200, height=720)
     )
+
+    # Persistent centroid labels: for each cluster (only those with ≥30 members
+    # so the plot doesn't turn into a wall of text), place the cluster ID at
+    # the median UMAP position of its members. Uses the cluster_label so the
+    # user sees "42" at the cluster centroid, and the full name on hover.
+    _centroid_df = None
+    if view_kind == "protein" and "clusters" in _chart_df.columns:
+        _sizes = _chart_df["clusters"].value_counts()
+        _big = _sizes[_sizes >= 30].index.tolist()
+        if _big:
+            _c = _chart_df[_chart_df["clusters"].isin(_big)].groupby("clusters").agg(
+                UMAP_1=("UMAP_1", "median"),
+                UMAP_2=("UMAP_2", "median"),
+                cluster_label=("cluster_label", "first"),
+            ).reset_index()
+            # Short label (just the number) — pulled from "Cluster N · …" prefix
+            def _short_label(_s):
+                _s = str(_s)
+                # e.g. "Cluster 42 · …" → "42"
+                if _s.startswith("Cluster "):
+                    _tail = _s[len("Cluster "):]
+                    return _tail.split(" ")[0].split("·")[0].strip()
+                return _s[:6]
+            _c["short_label"] = _c["cluster_label"].apply(_short_label)
+            _centroid_df = _c
+
+    if _centroid_df is not None and len(_centroid_df):
+        centroid_labels = (
+            alt.Chart(_centroid_df)
+            .mark_text(fontSize=13, fontWeight="bold",
+                       color="#111827", stroke="white", strokeWidth=3,
+                       strokeOpacity=0.9)
+            .encode(
+                x="UMAP_1:Q",
+                y="UMAP_2:Q",
+                text="short_label:N",
+                tooltip=[alt.Tooltip("cluster_label:N", title="Cluster")],
+            )
+        )
+        # Layer text ON TOP of point layer
+        chart_raw = alt.layer(points, centroid_labels).properties(width=1200, height=720)
+    else:
+        chart_raw = points.properties(width=1200, height=720)
 
     chart_widget = mo.ui.altair_chart(chart_raw, chart_selection=True, legend_selection=True)
     return (chart_widget,)
@@ -986,7 +1036,8 @@ def _(chart_widget, mo, plot_df):
 
 
 @app.cell
-def _(chart_widget, mo, plot_df, view_kind):
+def _(chart_widget, cluster_go_map, cluster_pick, cluster_pick_map,
+      cluster_stem_map, mo, plot_df, view_kind):
     _sel = chart_widget.value
     # Build the pool of rows the user has narrowed down to
     if _sel is not None and hasattr(_sel, "__len__") and 0 < len(_sel) < len(plot_df):
@@ -999,6 +1050,64 @@ def _(chart_widget, mo, plot_df, view_kind):
     else:
         # No chart selection → fall back to whatever the search/class filter matched
         _pool = plot_df[plot_df["_match"]] if plot_df["_match"].any() else plot_df.head(0)
+
+    # If the user has picked one or more clusters via the widget, build an info
+    # card at the top of the results — cluster ID, GO term, family, size, top
+    # substrates, and top organisms — so the pick has a rich context view.
+    cluster_info_html = mo.md("")
+    if view_kind == "protein" and cluster_pick.value:
+        _picked = [str(cluster_pick_map[_lbl]) for _lbl in cluster_pick.value
+                   if _lbl in cluster_pick_map]
+        _cards = []
+        for _cid in _picked[:5]:  # cap at 5 cards to keep the header manageable
+            _in_c = plot_df[plot_df["clusters"].astype(str).apply(
+                lambda _x: str(int(float(_x))) if _x not in ("", "nan") else "") == _cid]
+            if len(_in_c) == 0:
+                continue
+            _go = cluster_go_map.get(_cid, "(no dominant GO term)")
+            _stem = cluster_stem_map.get(_cid, "(mixed family)")
+            _n = len(_in_c)
+            _top_subs = (_in_c["Compound Name"].astype(str).str.split(";").explode()
+                         .str.strip().replace("", None).dropna()
+                         .value_counts().head(5))
+            _top_orgs = _in_c["Organism"].astype(str).value_counts().head(5)
+            _subs_html = "".join(
+                f'<li style="font-size:11.5px;color:#374151;">'
+                f'<b>{_n}</b> · {_sub[:60]}</li>'
+                for _sub, _n in _top_subs.items()
+            )
+            _orgs_html = "".join(
+                f'<li style="font-size:11.5px;color:#374151;">'
+                f'<b>{_n}</b> · {_org[:60]}</li>'
+                for _org, _n in _top_orgs.items()
+            )
+            _cards.append(
+                f'<div style="border:2px solid #1F4B99;border-radius:8px;'
+                f'padding:10px 14px;margin:6px 0;background:#F8FAFC;">'
+                f'<div style="font-size:16px;font-weight:700;color:#111827;">'
+                f'Cluster {_cid}  <span style="color:#6B7280;font-weight:500;font-size:13px;">'
+                f'({_n} proteins)</span></div>'
+                f'<div style="font-size:12.5px;color:#374151;margin-top:4px;">'
+                f'<b>Top GO:</b> {_go}   ·   <b>Dominant family:</b> {_stem}</div>'
+                f'<div style="display:flex;gap:20px;margin-top:8px;">'
+                f'<div style="flex:1;">'
+                f'<div style="font-size:12px;font-weight:600;color:#111827;">'
+                f'Top 5 substrates:</div>'
+                f'<ul style="margin:2px 0 0 18px;padding:0;">{_subs_html or "<li>(none listed)</li>"}</ul>'
+                f'</div>'
+                f'<div style="flex:1;">'
+                f'<div style="font-size:12px;font-weight:600;color:#111827;">'
+                f'Top 5 organisms:</div>'
+                f'<ul style="margin:2px 0 0 18px;padding:0;">{_orgs_html}</ul>'
+                f'</div></div></div>'
+            )
+        if _cards:
+            _extra = ""
+            if len(_picked) > 5:
+                _extra = (f'<div style="padding:4px;color:#6B7280;font-size:11px;">'
+                          f'…and {len(_picked)-5} more clusters picked '
+                          f'(showing top 5 info cards)</div>')
+            cluster_info_html = mo.Html("".join(_cards) + _extra)
 
     # Pick a slim set of columns for the table
     if view_kind == "molecule":
@@ -1090,6 +1199,7 @@ def _(chart_widget, mo, plot_df, view_kind):
             )
         table_out = mo.vstack([
             mo.md(f"---\n### Results — {len(_tbl):,} candidate proteins"),
+            cluster_info_html,
             grouped_html if grouped_html else mo.md(""),
             mo.md("---\n#### Flat protein table (select rows below to view structures)"),
             selection_table,
