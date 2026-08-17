@@ -1006,24 +1006,33 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
             _centroid_df = _c
 
     if _centroid_df is not None and len(_centroid_df):
-        # Render text as TWO layers to avoid the halo eating the black fill:
-        # bottom layer = white halo (stroke only, no fill), top layer =
-        # crisp black text (fill only, no stroke).
+        # Show cluster labels ONLY when the user has zoomed in — the labels
+        # would be too crowded at the default zoomed-out view. Uses a Vega
+        # expression: labels appear when the current x-axis domain width
+        # is less than THRESHOLD (roughly half the full UMAP range).
+        _xrange = float(_chart_df["UMAP_1"].max() - _chart_df["UMAP_1"].min())
+        _threshold = _xrange * 0.5   # show once zoomed to < 50% of full range
+        _visible_test = f"(domain('x')[1] - domain('x')[0]) < {_threshold:.4f}"
+
+        # Two-layer text rendering (halo + fill). Both use an alt.condition
+        # on a Vega expression that tests the current axis domain width —
+        # opacity is 1 when zoomed in past the threshold, 0 otherwise.
         _halo = (
             alt.Chart(_centroid_df)
-            .mark_text(fontSize=10, fontWeight="bold",
+            .mark_text(fontSize=11, fontWeight="bold",
                        stroke="white", strokeWidth=3, fillOpacity=0,
                        strokeOpacity=0.95)
-            .encode(x="UMAP_1:Q", y="UMAP_2:Q", text="short_label:N")
+            .encode(
+                x="UMAP_1:Q", y="UMAP_2:Q", text="short_label:N",
+                opacity=alt.condition(_visible_test, alt.value(1), alt.value(0)),
+            )
         )
         _text = (
             alt.Chart(_centroid_df)
-            .mark_text(fontSize=10, fontWeight="bold",
-                       color="#000000", opacity=1.0)
+            .mark_text(fontSize=11, fontWeight="bold", color="#000000")
             .encode(
-                x="UMAP_1:Q",
-                y="UMAP_2:Q",
-                text="short_label:N",
+                x="UMAP_1:Q", y="UMAP_2:Q", text="short_label:N",
+                opacity=alt.condition(_visible_test, alt.value(1), alt.value(0)),
                 tooltip=[alt.Tooltip("cluster_label:N", title="Cluster")],
             )
         )
