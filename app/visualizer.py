@@ -1066,131 +1066,8 @@ def _(chart_widget, mo, plot_df):
 
 
 @app.cell
-def _(cluster_go_map, cluster_stem_map, mo, plot_df, view_kind):
-    """Cluster browser — a scrollable list of every cluster in the atlas.
-    Each cluster is a collapsible <details>; expanding it shows the
-    proteins in that cluster grouped by the compound they act on.
-
-    This is separate from the top-of-results substrate-grouped view: this
-    browser is always available, doesn't require highlighting a cluster,
-    and lets the user drill into any cluster on demand."""
-    cluster_browser_html = mo.md("")
-    if view_kind == "protein" and "clusters" in plot_df.columns:
-        _p = plot_df.copy()
-        _p["Compound Name"] = _p.get("Compound Name", "").fillna("").astype(str)
-        _p["clusters_str"] = _p["clusters"].astype(str).apply(
-            lambda _x: str(int(float(_x))) if _x not in ("", "nan") else ""
-        )
-
-        import re as _re
-
-        def _explode(_row):
-            _s = _row["Compound Name"]
-            if not _s:
-                return ["(no compound listed)"]
-            _parts = [_x.strip() for _x in _re.split(r"[;\n]", _s) if _x.strip()]
-            return _parts or ["(no compound listed)"]
-
-        _cluster_ids = sorted(
-            [c for c in _p["clusters_str"].unique() if c],
-            key=lambda x: int(x)
-        )
-
-        _sections = []
-        for _cid in _cluster_ids:
-            _members = _p[_p["clusters_str"] == _cid]
-            _n = len(_members)
-            _stem = cluster_stem_map.get(_cid, "")
-            _go = cluster_go_map.get(_cid, "")
-
-            _by_compound = {}
-            for _idx, _r in _members.iterrows():
-                for _c in _explode(_r):
-                    _by_compound.setdefault(_c, []).append(_r)
-            _compounds_sorted = sorted(_by_compound, key=lambda _k: -len(_by_compound[_k]))
-
-            _compound_blocks = []
-            for _cname in _compounds_sorted[:15]:
-                _proteins = _by_compound[_cname]
-                _rows_html = []
-                for _pr in _proteins[:25]:
-                    _acc = str(_pr.get("Entry", ""))
-                    _name = str(_pr.get("Protein names", ""))[:65]
-                    _org = str(_pr.get("Organism", ""))[:35]
-                    _pm = _pr.get("pubmed_count", 0)
-                    _pm_str = ""
-                    if "pubmed_count" in plot_df.columns and str(_pm) not in ("nan", "", "0"):
-                        try:
-                            _pm_str = f" · {int(_pm)} refs"
-                        except (ValueError, TypeError):
-                            _pm_str = ""
-                    _rows_html.append(
-                        f'<div style="padding:1px 8px;font-family:ui-monospace,monospace;font-size:11px;">'
-                        f'<a href="https://www.uniprot.org/uniprotkb/{_acc}/entry" target="_blank" '
-                        f'style="color:#1D4ED8;text-decoration:none;font-weight:600;">{_acc}</a>'
-                        f' <span style="color:#111827;">{_name}</span>'
-                        f' <span style="color:#6B7280;">· {_org}{_pm_str}</span></div>'
-                    )
-                _rows_str = "".join(_rows_html)
-                if len(_proteins) > 25:
-                    _rows_str += (
-                        f'<div style="padding:1px 8px;color:#6B7280;font-size:10.5px;">'
-                        f'…and {len(_proteins)-25} more</div>'
-                    )
-                _compound_blocks.append(
-                    f'<details style="margin:3px 0 3px 12px;">'
-                    f'<summary style="cursor:pointer;font-size:12px;color:#374151;">'
-                    f'<b>{_cname[:80]}</b> · '
-                    f'<span style="color:#6B7280;">{len(_proteins)} '
-                    f'protein{"s" if len(_proteins)!=1 else ""}</span>'
-                    f'</summary>'
-                    f'{_rows_str}'
-                    f'</details>'
-                )
-            if len(_compounds_sorted) > 15:
-                _compound_blocks.append(
-                    f'<div style="padding:2px 12px;color:#6B7280;font-size:11px;">'
-                    f'…and {len(_compounds_sorted)-15} more compound groups</div>'
-                )
-
-            _hdr_bits = [f'<b>Cluster {_cid}</b>']
-            if _stem:
-                _hdr_bits.append(f'<span style="color:#374151;">{_stem[:40]}</span>')
-            _hdr_bits.append(f'<span style="color:#6B7280;">({_n} proteins)</span>')
-            if _go:
-                _hdr_bits.append(
-                    f'<span style="color:#6B7280;font-size:11px;">· {_go[:60]}</span>')
-            _hdr = " · ".join(_hdr_bits)
-
-            _sections.append(
-                f'<details style="border:1px solid #E5E7EB;border-radius:6px;'
-                f'margin:5px 0;padding:6px 10px;background:#FAFAFA;">'
-                f'<summary style="cursor:pointer;font-size:13px;">{_hdr}</summary>'
-                f'<div style="margin-top:6px;">{"".join(_compound_blocks)}</div>'
-                f'</details>'
-            )
-
-        cluster_browser_html = mo.Html(
-            f'<div style="margin-top:14px;">'
-            f'<details open>'
-            f'<summary style="cursor:pointer;font-size:14px;font-weight:600;color:#111827;padding:6px 0;">'
-            f'Cluster browser — all {len(_cluster_ids)} clusters '
-            f'<span style="color:#6B7280;font-weight:normal;font-size:12px;">'
-            f'(click a cluster to see its proteins, grouped by compound)</span>'
-            f'</summary>'
-            f'<div style="max-height:640px;overflow-y:auto;border:1px solid #E5E7EB;'
-            f'border-radius:6px;padding:8px;margin-top:6px;background:#FFFFFF;">'
-            f'{"".join(_sections)}'
-            f'</div>'
-            f'</details>'
-            f'</div>'
-        )
-    return (cluster_browser_html,)
-
-
-@app.cell
-def _(chart_widget, cluster_browser_html, cluster_go_map, cluster_pick,
-      cluster_pick_map, cluster_stem_map, mo, plot_df, view_kind):
+def _(chart_widget, cluster_go_map, cluster_pick, cluster_pick_map,
+      cluster_stem_map, mo, plot_df, view_kind):
     _sel = chart_widget.value
     # Build the pool of rows the user has narrowed down to
     if _sel is not None and hasattr(_sel, "__len__") and 0 < len(_sel) < len(plot_df):
@@ -1275,21 +1152,17 @@ def _(chart_widget, cluster_browser_html, cluster_go_map, cluster_pick,
 
     if len(_tbl) == 0:
         selection_table = None
-        # Show a helpful hint + the cluster browser even when nothing is
-        # highlighted, so the user has something to interact with instead
-        # of a blank page.
-        table_out = mo.vstack([
-            mo.md(
-                "---\n### Results\n"
-                "*No proteins highlighted yet. Try one of these:*\n"
-                "- **Type a search** in the box above (name, gene, GO term, ChEBI, keyword, sequence)\n"
-                "- **Click a dot** on the plot to select one protein\n"
-                "- **Drag a rectangle** on the plot to select many\n"
-                "- **Pick a cluster** from the highlight-cluster widget above\n"
-                "- **Or scroll the cluster browser below** to explore any cluster's proteins\n"
-            ),
-            cluster_browser_html,
-        ])
+        # Helpful hint when nothing is highlighted yet.
+        table_out = mo.md(
+            "---\n### Results\n"
+            "*No proteins highlighted yet. Try one of these:*\n"
+            "- **Pick a cluster** from the highlight-cluster widget above — "
+            "you'll see every steroid in the cluster with the proteins that act on it, "
+            "grouped for easy browsing\n"
+            "- **Type a search** in the box above (name, gene, GO term, ChEBI, keyword, sequence)\n"
+            "- **Click a dot** on the plot to select one protein\n"
+            "- **Drag a rectangle** on the plot to select many\n"
+        )
     else:
         selection_table = mo.ui.table(_tbl, page_size=8, selection="multi")
         # For the protein view, also render a substrate-grouped list where
@@ -1318,7 +1191,7 @@ def _(chart_widget, cluster_browser_html, cluster_go_map, cluster_pick,
             _compounds_sorted = sorted(_by_compound, key=lambda _k: -len(_by_compound[_k]))
 
             _sections = []
-            for _cname in _compounds_sorted[:60]:
+            for _ix, _cname in enumerate(_compounds_sorted[:60]):
                 _proteins = _by_compound[_cname]
                 _rows_html = []
                 for _pr in _proteins[:200]:
@@ -1328,7 +1201,8 @@ def _(chart_widget, cluster_browser_html, cluster_go_map, cluster_pick,
                     _pm = _pr.get("pubmed_count", 0)
                     _pm_str = f" · {int(_pm) if str(_pm) not in ('nan','') else 0} refs" if "pubmed_count" in _pool.columns else ""
                     _rows_html.append(
-                        f'<div style="padding:2px 8px;font-family:ui-monospace,monospace;font-size:11.5px;">'
+                        f'<div style="padding:3px 10px;font-family:ui-monospace,monospace;font-size:12px;'
+                        f'border-bottom:1px solid #F3F4F6;">'
                         f'<a href="https://www.uniprot.org/uniprotkb/{_acc}/entry" target="_blank" '
                         f'style="color:#1D4ED8;text-decoration:none;font-weight:600;">{_acc}</a>'
                         f' <span style="color:#111827;">{_name}</span>'
@@ -1337,15 +1211,19 @@ def _(chart_widget, cluster_browser_html, cluster_go_map, cluster_pick,
                     )
                 _rows_html_str = "".join(_rows_html)
                 if len(_proteins) > 200:
-                    _rows_html_str += f'<div style="padding:2px 8px;color:#6B7280;font-size:11px;">…and {len(_proteins)-200} more</div>'
+                    _rows_html_str += f'<div style="padding:4px 10px;color:#6B7280;font-size:11px;">…and {len(_proteins)-200} more</div>'
+                # First 5 compound groups are open by default so the user
+                # sees content immediately without clicking anything.
+                _open = " open" if _ix < 5 else ""
                 _sections.append(
-                    f'<details style="border:1px solid #E5E7EB;border-radius:6px;'
-                    f'margin:4px 0;padding:6px 10px;background:#FAFAFA;">'
-                    f'<summary style="cursor:pointer;font-size:13px;font-weight:600;color:#111827;">'
-                    f'{_cname}  <span style="color:#6B7280;font-weight:400;">'
-                    f'[{len(_proteins):,} protein{"s" if len(_proteins)!=1 else ""}]</span>'
+                    f'<details{_open} style="border:1px solid #E5E7EB;border-radius:8px;'
+                    f'margin:8px 0;padding:8px 14px;background:#FAFAFA;">'
+                    f'<summary style="cursor:pointer;font-size:15px;font-weight:700;color:#111827;padding:2px 0;">'
+                    f'🧪 {_cname}  <span style="color:#6B7280;font-weight:500;font-size:13px;">'
+                    f'— {len(_proteins):,} protein{"s" if len(_proteins)!=1 else ""}</span>'
                     f'</summary>'
-                    f'<div style="max-height:340px;overflow-y:auto;margin-top:6px;">{_rows_html_str}</div>'
+                    f'<div style="max-height:340px;overflow-y:auto;margin-top:8px;'
+                    f'background:#FFFFFF;border-radius:4px;">{_rows_html_str}</div>'
                     f'</details>'
                 )
             if len(_compounds_sorted) > 60:
@@ -1355,12 +1233,14 @@ def _(chart_widget, cluster_browser_html, cluster_go_map, cluster_pick,
                     f'</div>'
                 )
             grouped_html = mo.Html(
-                f'<div style="margin-top:10px;">'
-                f'<div style="font-size:13px;color:#374151;margin-bottom:6px;">'
-                f'<b>Substrate-grouped view</b> — {len(_compounds_sorted):,} unique compound(s) '
-                f'across the {len(_tbl):,} candidate proteins; each collapsible section lists '
-                f'the proteins acting on that specific compound.'
-                f'</div>'
+                f'<div style="margin-top:14px;">'
+                f'<div style="font-size:14px;color:#111827;margin-bottom:10px;">'
+                f'<b style="font-size:16px;">🧬 Steroids in the selected cluster{"s" if len(cluster_pick.value) > 1 else ""} → proteins that act on each</b><br>'
+                f'<span style="color:#6B7280;font-size:12.5px;">'
+                f'{len(_compounds_sorted):,} unique compound{"s" if len(_compounds_sorted)!=1 else ""} '
+                f'across {len(_tbl):,} candidate protein{"s" if len(_tbl)!=1 else ""}. '
+                f'The first 5 substrate groups are expanded — click any header to expand or collapse.'
+                f'</span></div>'
                 f'{"".join(_sections)}'
                 f'</div>'
             )
@@ -1368,7 +1248,6 @@ def _(chart_widget, cluster_browser_html, cluster_go_map, cluster_pick,
             mo.md(f"---\n### Results — {len(_tbl):,} candidate proteins"),
             cluster_info_html,
             grouped_html if grouped_html else mo.md(""),
-            cluster_browser_html,
             mo.md("---\n#### Flat protein table (select rows below to view structures)"),
             selection_table,
         ])
