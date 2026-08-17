@@ -975,7 +975,9 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
     _centroid_df = None
     if view_kind == "protein" and "clusters" in _chart_df.columns:
         _sizes = _chart_df["clusters"].value_counts()
-        _big = _sizes[_sizes >= 30].index.tolist()
+        # Bump threshold to ≥60 members so the plot doesn't feel overwhelmed
+        # by labels — the smaller clusters are still visible via the picker.
+        _big = _sizes[_sizes >= 60].index.tolist()
         if _big:
             _c = _chart_df[_chart_df["clusters"].isin(_big)].groupby("clusters").agg(
                 UMAP_1=("UMAP_1", "median"),
@@ -994,10 +996,10 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
                 # Prefer dominant family (stem); fall back to top GO term; then ID
                 _stem = cluster_stem_map.get(_k, "")
                 if _stem:
-                    return _stem[:28]
+                    return _stem[:26]
                 _go = cluster_go_map.get(_k, "")
                 if _go:
-                    return _go[:28]
+                    return _go[:26]
                 return _k
             _c["short_label"] = _c["clusters"].apply(_semantic_label)
             _centroid_df = _c
@@ -1006,8 +1008,9 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
         centroid_labels = (
             alt.Chart(_centroid_df)
             .mark_text(fontSize=11, fontWeight="normal",
-                       color="#6B7280", stroke="white", strokeWidth=2.5,
-                       strokeOpacity=0.85, opacity=0.85)
+                       color="#111827",              # solid black
+                       stroke="white", strokeWidth=3, strokeOpacity=1.0,
+                       opacity=1.0)
             .encode(
                 x="UMAP_1:Q",
                 y="UMAP_2:Q",
