@@ -967,10 +967,11 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
         )
     )
 
-    # Persistent centroid labels: for each cluster (only those with ≥30 members
-    # so the plot doesn't turn into a wall of text), place the cluster ID at
-    # the median UMAP position of its members. Uses the cluster_label so the
-    # user sees "42" at the cluster centroid, and the full name on hover.
+    # Persistent centroid labels: for each cluster (≥30 members only) place
+    # its SEMANTIC NAME (the dominant protein-name family stem) at the median
+    # UMAP position. Rendered in a soft gray so it names the region without
+    # competing with the colored dots. Full "Cluster N · GO · family" name
+    # still shown on hover of the label.
     _centroid_df = None
     if view_kind == "protein" and "clusters" in _chart_df.columns:
         _sizes = _chart_df["clusters"].value_counts()
@@ -981,23 +982,32 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
                 UMAP_2=("UMAP_2", "median"),
                 cluster_label=("cluster_label", "first"),
             ).reset_index()
-            # Short label (just the number) — pulled from "Cluster N · …" prefix
-            def _short_label(_s):
-                _s = str(_s)
-                # e.g. "Cluster 42 · …" → "42"
-                if _s.startswith("Cluster "):
-                    _tail = _s[len("Cluster "):]
-                    return _tail.split(" ")[0].split("·")[0].strip()
-                return _s[:6]
-            _c["short_label"] = _c["cluster_label"].apply(_short_label)
+
+            def _semantic_label(_cid_val):
+                _s = str(_cid_val).strip()
+                if not _s or _s.lower() == "nan":
+                    return ""
+                try:
+                    _k = str(int(float(_s)))
+                except (ValueError, TypeError):
+                    _k = _s
+                # Prefer dominant family (stem); fall back to top GO term; then ID
+                _stem = cluster_stem_map.get(_k, "")
+                if _stem:
+                    return _stem[:28]
+                _go = cluster_go_map.get(_k, "")
+                if _go:
+                    return _go[:28]
+                return _k
+            _c["short_label"] = _c["clusters"].apply(_semantic_label)
             _centroid_df = _c
 
     if _centroid_df is not None and len(_centroid_df):
         centroid_labels = (
             alt.Chart(_centroid_df)
-            .mark_text(fontSize=13, fontWeight="bold",
-                       color="#111827", stroke="white", strokeWidth=3,
-                       strokeOpacity=0.9)
+            .mark_text(fontSize=11, fontWeight="normal",
+                       color="#6B7280", stroke="white", strokeWidth=2.5,
+                       strokeOpacity=0.85, opacity=0.85)
             .encode(
                 x="UMAP_1:Q",
                 y="UMAP_2:Q",
@@ -1005,7 +1015,6 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
                 tooltip=[alt.Tooltip("cluster_label:N", title="Cluster")],
             )
         )
-        # Layer text ON TOP of point layer
         chart_raw = alt.layer(points, centroid_labels).properties(width=1200, height=720)
     else:
         chart_raw = points.properties(width=1200, height=720)
@@ -1524,7 +1533,7 @@ def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
                 f'border-bottom:1px solid #E5E7EB;">'
                 f'<div style="font-size:20px; font-weight:600; line-height:1.3;">{_prot_names_safe}{_new_badge}</div>'
                 f'<div style="font-size:12px; color:#6B7280; margin-top:6px;">'
-                f'{_gene} · <em>{_org_safe}</em> · cluster {_cluster} · {_length} aa</div>'
+                f'{_gene} · <em>{_org_safe}</em> · {_length} aa</div>'
                 f'{_links_html}{_ec_badges}{_rhea_html}{_reaction_html}{_paper_html}'
                 f'</div>'
             )
