@@ -511,7 +511,12 @@ def _(cluster_go_map, cluster_stem_map, df, mo, pd):
     # doubles as a name reference — "cluster 34 · Estrogen receptor".
     def _legend_row(i, c):
         _name = cluster_stem_map.get(str(c), "")
-        _name_html = (f' · <span style="color:#111827;">{_name[:36]}</span>'
+        # Show the full family name — let CSS ellipsis handle overflow so
+        # nothing is cut mid-word by an arbitrary char limit.
+        _name_html = (f' · <span style="color:#111827;overflow:hidden;'
+                      f'text-overflow:ellipsis;white-space:nowrap;'
+                      f'display:inline-block;max-width:280px;'
+                      f'vertical-align:middle;" title="{_name}">{_name}</span>'
                       if _name else "")
         return (
             f'<div style="display:flex;align-items:center;gap:6px;padding:3px 6px;'
@@ -531,7 +536,7 @@ def _(cluster_go_map, cluster_stem_map, df, mo, pd):
         f'(click to fold / unfold)</summary>'
         f'<div style="max-height:220px;overflow-y:auto;border:1px solid #E5E7EB;'
         f'border-radius:6px;padding:6px;margin-top:4px;'
-        f'display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));'
+        f'display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));'
         f'gap:2px;background:#FAFAFA;">'
         f'{_cells}</div></details>'
     )

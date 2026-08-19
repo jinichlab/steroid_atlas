@@ -68,12 +68,16 @@ STEM_STOPWORDS = {"protein", "putative", "probable", "uncharacterized",
 
 def _clean_first_name(name: str) -> str:
     """Strip parenthesized aliases and drop trailing EC / accession noise so we
-    keep just the primary protein name (still in original casing)."""
+    keep just the primary protein name (still in original casing).
+
+    Aliases-in-parens are recognized only when there's whitespace before the
+    open-paren — that keeps identifiers like ``Delta(24)-sterol reductase``
+    intact while still stripping ``(EC 1.2.3)`` and other trailing aliases.
+    """
     if not name:
         return ""
     s = str(name).strip()
-    # Split at first paren, semicolon, or slash before a number — take the head.
-    s = re.sub(r"\s*\(.*", "", s)          # drop "(alias) (…)"
+    s = re.sub(r"\s+\(.*", "", s)          # drop " (alias) (…)" only when the paren stands apart
     s = re.split(r"\s*[;]\s*", s, 1)[0]    # drop everything past a ";"
     s = re.sub(r"\s+EC\s*[\d.]+\s*$", "", s, flags=re.IGNORECASE)  # trailing " EC 1.2.3"
     # Drop trailing "/17,20-lyase" style fragments that indicate joined names
