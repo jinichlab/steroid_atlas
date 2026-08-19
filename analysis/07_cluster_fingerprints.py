@@ -66,21 +66,41 @@ STEM_STOPWORDS = {"protein", "putative", "probable", "uncharacterized",
                   "hypothetical", "sub", "unnamed", "fragment"}
 
 
-def name_stem(name: str) -> str:
-    """First meaningful token of protein_names — used as a coarse identity marker."""
+def _clean_first_name(name: str) -> str:
+    """Strip parenthesized aliases and drop trailing EC / accession noise so we
+    keep just the primary protein name (still in original casing)."""
     if not name:
         return ""
     s = str(name).strip()
-    # Drop parenthesized aliases: "Estrogen receptor (ER-alpha) (Nuclear ...)" → "Estrogen receptor"
-    s = re.sub(r"\s*\(.*", "", s)
-    # Drop EC numbers
-    s = re.sub(r"\s+EC\s*[\d.]+\s*$", "", s, flags=re.IGNORECASE)
-    # First two words normalized (many families share the first word but differ in the second)
+    # Split at first paren, semicolon, or slash before a number — take the head.
+    s = re.sub(r"\s*\(.*", "", s)          # drop "(alias) (…)"
+    s = re.split(r"\s*[;]\s*", s, 1)[0]    # drop everything past a ";"
+    s = re.sub(r"\s+EC\s*[\d.]+\s*$", "", s, flags=re.IGNORECASE)  # trailing " EC 1.2.3"
+    # Drop trailing "/17,20-lyase" style fragments that indicate joined names
+    s = re.sub(r"/\d.*$", "", s).strip()
+    return s
+
+
+def name_key(name: str) -> str:
+    """Coarse grouping key: first two meaningful tokens, lowercased.
+    Used to compute stem coherence — many families share word 1 but differ
+    on word 2 (e.g. "Cytochrome P450" vs "Cytochrome b5")."""
+    s = _clean_first_name(name)
     tokens = [t for t in re.split(r"[\s,;]+", s) if t and t.lower() not in STEM_STOPWORDS]
     if not tokens:
         return ""
-    # Use first two tokens (e.g., "Cytochrome P450") lowercased for grouping
     return " ".join(tokens[:2]).lower()
+
+
+def display_name(name: str) -> str:
+    """Full, casing-preserved display name — used as the cluster label
+    everywhere the user sees it (picker, legend, on-plot centroid text).
+    Keeps the primary protein name; drops parenthesized aliases and EC noise."""
+    return _clean_first_name(name)
+
+
+# Kept for downstream imports that referenced the old name.
+name_stem = name_key
 
 
 def top_informative(items, housekeeping) -> tuple[str, int]:
@@ -111,21 +131,35 @@ def main() -> int:
             p[c] = ""
         p[c] = p[c].fillna("").astype(str)
 
-    p["_stem"] = p["protein_names"].apply(name_stem)
+    # Two columns: `_stem_key` for coherence grouping (lowercased first two
+    # meaningful tokens), and `_display` for the human-readable label
+    # (preserved casing, full primary name minus parenthesized aliases).
+    p["_stem_key"] = p["protein_names"].apply(name_key)
+    p["_display"] = p["protein_names"].apply(display_name)
 
     print(f"  {len(p):,} entries · {p['cluster'].nunique():,} clusters")
 
     rows = []
     for cid, sub in p.groupby("cluster"):
         n = len(sub)
-        stems = sub["_stem"].tolist()
-        stem_ctr = Counter(s for s in stems if s)
-        dom_stem, dom_stem_n = ("", 0)
+        stem_ctr = Counter(s for s in sub["_stem_key"].tolist() if s)
+        dom_stem_key, dom_stem_n = ("", 0)
         for s, k in stem_ctr.most_common():
             if s not in STEM_STOPWORDS:
-                dom_stem, dom_stem_n = s, k
+                dom_stem_key, dom_stem_n = s, k
                 break
         stem_coh = dom_stem_n / n if n else 0
+
+        # Pick the most-common FULL display name from members whose stem-key
+        # matches the dominant. This yields readable, correctly-cased labels
+        # like "Estrogen receptor" or "Cholesterol 24-hydroxylase" instead of
+        # the terse "estrogen receptor" / "cholesterol 24-hydroxylase" pair.
+        if dom_stem_key:
+            _dom_group = sub[sub["_stem_key"] == dom_stem_key]
+            _display_ctr = Counter(x for x in _dom_group["_display"].tolist() if x)
+            dom_stem = _display_ctr.most_common(1)[0][0] if _display_ctr else dom_stem_key
+        else:
+            dom_stem = ""
 
         # GO labels — flatten across members
         go_flat = [g for row in semicolon_flat(sub["go_labels"]) for g in row]
@@ -152,7 +186,7 @@ def main() -> int:
         dom_ec = ec_ctr.most_common(1)[0][0] if ec_ctr else ""
         ec_coh = ec_ctr.get(dom_ec, 0) / len(ec_top) if ec_top else 0
 
-        outliers = sub[sub["_stem"] != dom_stem] if dom_stem else sub.iloc[0:0]
+        outliers = sub[sub["_stem_key"] != dom_stem_key] if dom_stem_key else sub.iloc[0:0]
 
         # Case-study score: reward coherent clusters with SOME outliers of medium size
         n_outliers = len(outliers)

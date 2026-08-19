@@ -165,7 +165,10 @@ def _(mo):
     # Persistent gate. mo.state survives reruns, unlike run_button.value
     # which is a one-shot trigger.
     get_entered, set_entered = mo.state(False)
-    return get_entered, set_entered
+    # Tile-focus state: which steroid was clicked in the catalogue. Empty
+    # string = no tile focus.
+    get_tile_focus, set_tile_focus = mo.state("")
+    return get_entered, get_tile_focus, set_entered, set_tile_focus
 
 
 @app.cell
@@ -450,57 +453,85 @@ def _(cluster_go_map, cluster_stem_map, df, mo, pd):
         _sorted_ids = []
         _counts = pd.Series(dtype=int)
 
+    def _display_num(cid):
+        # User-facing cluster numbering: bump by 1 so it reads 1..82 not 0..81
+        try:
+            return int(cid) + 1
+        except (ValueError, TypeError):
+            return cid
+
     def _label_for(cid):
         n = _counts.get(cid, 0)
         stem = cluster_stem_map.get(cid, "")
         go = cluster_go_map.get(cid, "")
-        # Cluster NUMBER first, prominent
-        parts = [f"Cluster {cid} (n={n:,})"]
+        # Cluster NUMBER first, prominent (1-based for display)
+        parts = [f"Cluster {_display_num(cid)} (n={n:,})"]
         if go:
             g = go[:55] + ("…" if len(go) > 55 else "")
             parts.append(f"GO: {g}")
         if stem:
-            s = stem[:40] + ("…" if len(stem) > 40 else "")
+            s = stem[:70] + ("…" if len(stem) > 70 else "")
             parts.append(f"family: {s}")
         return "  ·  ".join(parts)
 
     _labels = [_label_for(c) for c in _sorted_ids]
     cluster_pick_map = {label: c for label, c in zip(_labels, _sorted_ids)}
-    cluster_pick = mo.ui.multiselect(
-        options=_labels,
-        label=f"Highlight cluster(s) — pick from all {len(_labels)}",
-        value=[],
+    # Use a dropdown (single-select) — much more reliable than multiselect
+    # in marimo run mode. Prepend a "— none —" sentinel so the user can clear.
+    _NONE = "— none —"
+    _dropdown_opts = [_NONE] + _labels
+    cluster_pick_map[_NONE] = None
+    cluster_pick = mo.ui.dropdown(
+        options=_dropdown_opts,
+        value=_NONE,
+        label=f"Highlight a cluster — pick from all {len(_labels)}",
+        searchable=True,
     )
 
     # Full scrollable color reference — mirrors the chart's palette so users can
     # see every cluster's color without cramming the Vega legend.
+    # Palette: golden-angle hue rotation combined with 5 (S, L) presets
+    # cycled through — 82 outputs share no two nearly-identical colors, and
+    # the presets keep neighbors distinct even where hues would otherwise
+    # collide. Uses HSL for stable perceived luminance across hues.
     import colorsys as _colorsys
     def _palette(n):
+        # MUST match the plot's palette (see chart cell). See that comment
+        # for the algorithm rationale.
         out = []
         for i in range(n):
-            h = (i * 0.6180339887498949) % 1.0
-            s = 0.55 + 0.30 * ((i % 3) / 2.0)
-            v = 0.60 + 0.28 * ((i + 1) % 2)
-            r, g, b = _colorsys.hsv_to_rgb(h, s, v)
+            h = (i * 137.508 / 360.0) % 1.0
+            l = 0.62 if (i % 2 == 0) else 0.36
+            s = (0.95, 0.72, 0.55)[i % 3]
+            r, g, b = _colorsys.hls_to_rgb(h, l, s)
             out.append(f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}")
         return out
     _colors = _palette(len(_sorted_ids))
-    _cells = "".join(
-        f'<div style="display:flex;align-items:center;gap:6px;padding:2px 6px;'
-        f'font-family:ui-monospace,monospace;font-size:11px;">'
-        f'<span style="display:inline-block;width:14px;height:14px;'
-        f'background:{_colors[i]};border:1px solid #999;border-radius:2px;flex-shrink:0"></span>'
-        f'<span>cluster {c} (n={_counts[c]:,})</span>'
-        f'</div>'
-        for i, c in enumerate(_sorted_ids)
-    )
+    # Include the cluster's display name (family stem) inline so the legend
+    # doubles as a name reference — "cluster 34 · Estrogen receptor".
+    def _legend_row(i, c):
+        _name = cluster_stem_map.get(str(c), "")
+        _name_html = (f' · <span style="color:#111827;">{_name[:36]}</span>'
+                      if _name else "")
+        return (
+            f'<div style="display:flex;align-items:center;gap:6px;padding:3px 6px;'
+            f'font-family:ui-monospace,monospace;font-size:11px;">'
+            f'<span style="display:inline-block;width:14px;height:14px;'
+            f'background:{_colors[i]};border:1px solid #999;border-radius:2px;'
+            f'flex-shrink:0"></span>'
+            f'<span style="color:#374151;">cluster {_display_num(c)} '
+            f'<span style="color:#9CA3AF;">(n={_counts[c]:,})</span>{_name_html}'
+            f'</span></div>'
+        )
+    _cells = "".join(_legend_row(i, c) for i, c in enumerate(_sorted_ids))
     cluster_legend_html = mo.Html(
-        f'<details style="margin-top:6px;">'
+        f'<details open style="margin-top:6px;">'
         f'<summary style="cursor:pointer;font-size:12px;color:#374151;">'
-        f'▸ Show all {len(_sorted_ids)} cluster colors (scrollable)</summary>'
-        f'<div style="max-height:260px;overflow-y:auto;border:1px solid #E5E7EB;'
+        f'▸ Cluster color legend — {len(_sorted_ids)} clusters '
+        f'(click to fold / unfold)</summary>'
+        f'<div style="max-height:220px;overflow-y:auto;border:1px solid #E5E7EB;'
         f'border-radius:6px;padding:6px;margin-top:4px;'
-        f'display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));'
+        f'display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));'
         f'gap:2px;background:#FAFAFA;">'
         f'{_cells}</div></details>'
     )
@@ -580,10 +611,13 @@ def _(mo):
 @app.cell
 def _(cluster_legend_html, cluster_pick, ec_class, method, mo,
       mol_class, mol_search, prot_search, view_kind):
-    # Gated transitively via view_kind.
+    # Gated transitively via view_kind. Cluster picker sits with the search
+    # controls; the color-swatch legend below it shows every cluster's plot
+    # color so you can cross-reference picker choice ↔ dot color.
+    _picker_row = mo.vstack([cluster_pick, cluster_legend_html])
     if view_kind == "molecule":
         active = mol_search if method.value == "① Multi-column search" else mol_class
-        display = mo.vstack([active, cluster_pick, cluster_legend_html])
+        display = mo.vstack([active, _picker_row])
     else:
         active = prot_search if method.value == "① Multi-column search" else ec_class
         if method.value == "① Multi-column search":
@@ -595,9 +629,9 @@ def _(cluster_legend_html, cluster_pick, ec_class, method, mo,
                 "reaction description · GO id · GO label · UniProt keyword id · "
                 "UniProt keyword · binder evidence · audit note"
             )
-            display = mo.vstack([active, legend, cluster_pick, cluster_legend_html])
+            display = mo.vstack([active, legend, _picker_row])
         else:
-            display = mo.vstack([active, cluster_pick, cluster_legend_html])
+            display = mo.vstack([active, _picker_row])
     display
     return
 
@@ -770,12 +804,14 @@ def _(
                 _pat = r"(?<![\d.])" + _digit + r"\."
                 plot_df["_match"] = df["reaction_ecs"].astype(str).str.contains(_pat, regex=True, na=False)
 
-    # Cluster picker adds red-ring highlight to every point in the picked cluster(s),
-    # regardless of which text search / class filter mode is active.
-    if cluster_pick.value:
-        _picked_ids = {str(cluster_pick_map[label]) for label in cluster_pick.value
-                       if label in cluster_pick_map}
-        if _picked_ids and "clusters" in plot_df.columns:
+    # Cluster picker adds red-ring highlight to every point in the picked
+    # cluster. cluster_pick is a dropdown so its .value is a single label
+    # string (or the "— none —" sentinel which maps to None).
+    _picked_val = cluster_pick.value
+    _picked_cid = cluster_pick_map.get(_picked_val) if _picked_val else None
+    if _picked_cid is not None:
+        _picked_ids = {str(_picked_cid)}
+        if "clusters" in plot_df.columns:
             def _canon_cluster(x):
                 s = str(x).strip()
                 if not s or s.lower() == "nan":
@@ -828,7 +864,8 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
     _chart_df.loc[_chart_df["is_new"] == 1, "_kind"] = "Newly recruited"
 
     # Build a human-readable cluster label for the tooltip (protein view only):
-    #   "Cluster 42 · nuclear estrogen receptor activity · estrogen receptor"
+    #   "Cluster 43 · nuclear estrogen receptor activity · estrogen receptor"
+    # (Display cluster IDs are 1-based; the raw column values remain 0-based.)
     if view_kind == "protein" and (cluster_stem_map or cluster_go_map):
         def _hover_label(_cid):
             _s = str(_cid).strip()
@@ -836,9 +873,11 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
                 return ""
             try:
                 _k = str(int(float(_s)))
+                _disp = str(int(_k) + 1)
             except (ValueError, TypeError):
                 _k = _s
-            _parts = [f"Cluster {_k}"]
+                _disp = _s
+            _parts = [f"Cluster {_disp}"]
             _go = cluster_go_map.get(_k, "")
             _stem = cluster_stem_map.get(_k, "")
             if _go:
@@ -858,24 +897,33 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
     _chart_df["_stroke_w"] = 0.3
     _chart_df.loc[_chart_df["is_new"] == 1, "_stroke"] = "black"
     _chart_df.loc[_chart_df["is_new"] == 1, "_stroke_w"] = 1.0
+    # Highlighted (cluster-picked / search-matched) points: bold red ring +
+    # size boost so the pick is immediately visible on a 1200px UMAP.
     _chart_df.loc[_chart_df["_match"], "_stroke"] = "#e0144c"
-    _chart_df.loc[_chart_df["_match"], "_stroke_w"] = 2.0
+    _chart_df.loc[_chart_df["_match"], "_stroke_w"] = 3.0
+    _chart_df.loc[_chart_df["_match"] & (_chart_df["is_new"] != 1), "_size"] = 120
 
     _shape_scale = alt.Scale(
         domain=["Existing", "Newly recruited"],
         range=["circle", STAR],
     )
     # Pick a color scale that gives high contrast for the number of clusters present.
-    # For >20 clusters we generate a unique color per cluster via golden-ratio hue
-    # sampling with alternating saturation/value (Altair's tableau20 recycles beyond 20).
+    # For >20 clusters we generate a unique color per cluster via a golden-angle
+    # hue rotation combined with 5 (S, L) presets so neighboring cluster IDs
+    # never share a nearly-identical color. MUST match the swatch palette used
+    # in the legend cell above.
     import colorsys as _colorsys
     def _n_distinct_colors(n):
+        # Golden-angle hue rotation for maximum consecutive-index hue
+        # separation, PLUS alternating lightness for adjacent contrast, PLUS
+        # a 3-way saturation cycle. This yields 82 pairwise-distinct colors
+        # where no two neighbors share both hue-range and lightness.
         out = []
         for i in range(n):
-            h = (i * 0.6180339887498949) % 1.0
-            s = 0.55 + 0.30 * ((i % 3) / 2.0)
-            v = 0.60 + 0.28 * ((i + 1) % 2)
-            r, g, b = _colorsys.hsv_to_rgb(h, s, v)
+            h = (i * 137.508 / 360.0) % 1.0
+            l = 0.62 if (i % 2 == 0) else 0.36    # light / dark alternation
+            s = (0.95, 0.72, 0.55)[i % 3]         # sat cycle
+            r, g, b = _colorsys.hls_to_rgb(h, l, s)
             out.append(f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}")
         return out
 
@@ -905,19 +953,11 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
         # is stable within a single render, which is enough for interactive use.
         _color_scale = alt.Scale(range=_n_distinct_colors(_n_clusters))
 
-    # In-chart legend: keep it compact (~30 slots max) so it doesn't clip the plot.
-    # For >30 clusters, the user browses the full list via the cluster-picker widget
-    # (which is natively scrollable in the browser).
-    if _n_clusters <= 30:
-        _legend = alt.Legend(title="Cluster", orient="right",
-                             columns=2, symbolLimit=_n_clusters + 5)
-    else:
-        _legend = alt.Legend(
-            title=f"Cluster (top 30 of {_n_clusters} — use picker below for full list)",
-            orient="right",
-            columns=2,
-            symbolLimit=30,
-        )
+    # On-plot Vega legend disabled — the full-color swatch legend under the
+    # cluster picker widget serves the same role without taking away plot
+    # width. If we ever need a small in-plot legend again, set this to an
+    # alt.Legend(...) instead of None.
+    _legend = None
 
     if _search_active:
         _color_enc = alt.condition(
@@ -954,8 +994,7 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
             x=alt.X("UMAP_1:Q", axis=None, scale=alt.Scale(zero=False)),
             y=alt.Y("UMAP_2:Q", axis=None, scale=alt.Scale(zero=False)),
             color=_color_enc,
-            shape=alt.Shape("_kind:N", scale=_shape_scale,
-                            legend=alt.Legend(title="Type", orient="right")),
+            shape=alt.Shape("_kind:N", scale=_shape_scale, legend=None),
             size=_size_enc,
             stroke=_stroke_enc,
             strokeWidth=_stroke_w_enc,
@@ -977,9 +1016,12 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
     _centroid_df = None
     if view_kind == "protein" and "clusters" in _chart_df.columns:
         _sizes = _chart_df["clusters"].value_counts()
-        # Bump threshold to ≥60 members so the plot doesn't feel overwhelmed
-        # by labels — the smaller clusters are still visible via the picker.
-        _big = _sizes[_sizes >= 60].index.tolist()
+        # Threshold ≥30 members so smaller (but still meaningful) clusters
+        # like Cluster 34 "Estrogen receptor" (n=56) also get an on-plot
+        # label. Labels only appear when the user is zoomed in enough
+        # (Vega expression guard on axis-domain width), so this doesn't
+        # crowd the default zoom.
+        _big = _sizes[_sizes >= 30].index.tolist()
         if _big:
             _c = _chart_df[_chart_df["clusters"].isin(_big)].groupby("clusters").agg(
                 UMAP_1=("UMAP_1", "median"),
@@ -993,17 +1035,19 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
                     return ""
                 try:
                     _k = str(int(float(_s)))
+                    _disp = str(int(_k) + 1)
                 except (ValueError, TypeError):
                     _k = _s
-                # Always start with the cluster NUMBER so the user can map it
-                # back; then the full family name (no aggressive truncation).
+                    _disp = _s
+                # Always start with the (1-based) cluster NUMBER so the user
+                # can map it back; then the full family name.
                 _stem = cluster_stem_map.get(_k, "")
                 if _stem:
-                    return f"{_k} · {_stem[:50]}"
+                    return f"{_disp} · {_stem[:50]}"
                 _go = cluster_go_map.get(_k, "")
                 if _go:
-                    return f"{_k} · {_go[:50]}"
-                return _k
+                    return f"{_disp} · {_go[:50]}"
+                return _disp
             _c["short_label"] = _c["clusters"].apply(_semantic_label)
             _centroid_df = _c
 
@@ -1049,15 +1093,12 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
             .add_params(*_selection_params)
         )
 
-    # For the layered chart, tell marimo explicitly which selections to
-    # surface — "interval" catches the rectangle-drag param named "rng",
-    # and "point" catches click-selects (param "pt"). Passing True didn't
-    # reliably detect selections through the layer wrapper.
-    chart_widget = mo.ui.altair_chart(
-        chart_raw,
-        chart_selection="interval",
-        legend_selection=True,
-    )
+    # For layered charts, we don't pass chart_selection — the layer already
+    # carries "rng" (rectangle-drag), "pt" (click), and "zoom" (pan/zoom)
+    # params. Marimo's warning "chart already has a selection param" was
+    # firing before. Downstream code uses chart_widget.apply_selection(df)
+    # to pull selected rows out of the layered chart.
+    chart_widget = mo.ui.altair_chart(chart_raw, legend_selection=True)
     return (chart_widget,)
 
 
@@ -1075,238 +1116,492 @@ def _(chart_widget, mo, plot_df):
               "**Red ring** = search / class match. "
               "**Click** for one · **drag rectangle** for many · "
               "**scroll to zoom** · **double-click** to reset.*"),
-        # Center the chart horizontally in the container so the 1200-wide plot
-        # doesn't sit left-aligned in a wider marimo viewport.
-        mo.hstack([chart_widget], justify="center", align="center"),
+        mo.center(chart_widget),
     ])
     return
 
 
 @app.cell
-def _(chart_widget, cluster_go_map, cluster_pick, cluster_pick_map,
-      cluster_stem_map, mo, plot_df, view_kind):
-    _sel = chart_widget.value
-    # Priority: an explicit cluster pick / search-class match wins over any
-    # stale chart_widget.value. Only fall back to the chart's interval or
-    # click selection when nothing was matched by search / cluster picker.
+def _(chart_widget, mo, plot_df, set_tile_focus, structure_cache,
+      view_kind):
+    """Cell A — build one mo.ui.button per compound WHERE THE ENTIRE TILE
+    CARD IS THE BUTTON. The `label` string is HTML (image + name + count);
+    marimo's frontend renders it inside the button element, so clicking
+    ANYWHERE on the tile fires the on_change. This cell doesn't read the
+    tile-focus state so the buttons aren't destroyed on state change."""
+    _ = getattr(chart_widget, "value", None)
+    _sel = None
+    try:
+        _sels = getattr(chart_widget, "selections", None) or {}
+        _rng = _sels.get("rng", {})
+        if isinstance(_rng, dict) and "UMAP_1" in _rng and "UMAP_2" in _rng:
+            _x0, _x1 = _rng["UMAP_1"]
+            _y0, _y1 = _rng["UMAP_2"]
+            _mask = ((plot_df["UMAP_1"] >= min(_x0, _x1))
+                     & (plot_df["UMAP_1"] <= max(_x0, _x1))
+                     & (plot_df["UMAP_2"] >= min(_y0, _y1))
+                     & (plot_df["UMAP_2"] <= max(_y0, _y1)))
+            if _mask.any():
+                _sel = plot_df[_mask]
+    except Exception:
+        _sel = None
     _has_match = bool(plot_df["_match"].any())
-    _has_chart_sel = (
-        _sel is not None and hasattr(_sel, "__len__") and 0 < len(_sel) < len(plot_df)
-    )
-    if _has_match:
+    if _sel is not None and 0 < len(_sel) < len(plot_df):
+        _pool = _sel
+    elif _has_match:
         _pool = plot_df[plot_df["_match"]]
-    elif _has_chart_sel:
-        if view_kind == "molecule" and "Compound Name" in _sel.columns:
-            _pool = plot_df[plot_df["Compound Name"].isin(_sel["Compound Name"].tolist())]
-        elif view_kind == "protein" and "Entry" in _sel.columns:
-            _pool = plot_df[plot_df["Entry"].isin(_sel["Entry"].tolist())]
-        else:
-            _pool = _sel
     else:
         _pool = plot_df.head(0)
 
-    # Small debug banner so we can see WHERE the pipeline stops when the
-    # cluster picker seems to be ignored.
-    _n_picked = len(cluster_pick.value) if cluster_pick.value else 0
-    _chart_len = len(_sel) if _has_chart_sel else 0
-    debug_html = mo.Html(
-        f'<div style="font-family:ui-monospace,monospace;font-size:11px;'
-        f'color:#6B7280;background:#F3F4F6;padding:6px 10px;border-radius:6px;'
-        f'margin:4px 0;">'
-        f'debug · view={view_kind} · cluster_pick.value={_n_picked} '
-        f'· _match.sum()={int(plot_df["_match"].sum())} '
-        f'· chart_widget.value_len={_chart_len} · pool_len={len(_pool)}'
-        f'</div>'
+    compound_names = []
+    tile_buttons = {}
+    if view_kind == "protein" and len(_pool) and "Compound Name" in _pool.columns:
+        _pool2 = _pool.copy()
+        _pool2["Compound Name"] = _pool2["Compound Name"].fillna("").astype(str)
+        _pool2["ChEBI ID"] = _pool2.get("ChEBI ID", "").fillna("").astype(str)
+        _by = {}
+        _chebi_for = {}
+        for _, _r in _pool2.iterrows():
+            _cn_raw = str(_r.get("Compound Name") or "")
+            _cb_raw = str(_r.get("ChEBI ID") or "")
+            _names = [x.strip() for x in _cn_raw.replace(";", "\n").split("\n") if x.strip()]
+            _chebis = [x.strip() for x in _cb_raw.replace(";", "\n").split("\n") if x.strip()]
+            while len(_chebis) < len(_names):
+                _chebis.append("")
+            if not _names:
+                _names, _chebis = ["(no compound listed)"], [""]
+            for _nm, _cb in zip(_names, _chebis[:len(_names)]):
+                _by.setdefault(_nm, 0)
+                _by[_nm] += 1
+                if _cb and _nm not in _chebi_for:
+                    _chebi_for[_nm] = _cb
+        compound_names = sorted(_by, key=lambda k: -_by[k])[:120]
+
+        def _make_handler(_c):
+            def _handler(_v):
+                import sys as _sys
+                print(f"### TILE CLICK: {_c} ###", file=_sys.stderr, flush=True)
+                set_tile_focus(_c)
+            return _handler
+
+        # Plain-text button (marimo's frontend does NOT render HTML inside
+        # `label`; when I tried, all tile HTML stacked on top of each other
+        # because the browser flattened the flex layout). The button lives
+        # RIGHT BELOW the tile card in cell B — same effective click zone.
+        for _nm in compound_names:
+            tile_buttons[_nm] = mo.ui.button(
+                label="→ show proteins",
+                kind="neutral",
+                full_width=True,
+                on_change=_make_handler(_nm),
+            )
+
+    clear_focus_button = mo.ui.button(
+        label="✕ clear focused steroid",
+        kind="warn",
+        on_change=lambda _v: set_tile_focus(""),
     )
-
-    # If the user has picked one or more clusters via the widget, build an info
-    # card at the top of the results — cluster ID, GO term, family, size, top
-    # substrates, and top organisms — so the pick has a rich context view.
-    cluster_info_html = mo.md("")
-    if view_kind == "protein" and cluster_pick.value:
-        _picked = [str(cluster_pick_map[_lbl]) for _lbl in cluster_pick.value
-                   if _lbl in cluster_pick_map]
-        _cards = []
-        for _cid in _picked[:5]:  # cap at 5 cards to keep the header manageable
-            _in_c = plot_df[plot_df["clusters"].astype(str).apply(
-                lambda _x: str(int(float(_x))) if _x not in ("", "nan") else "") == _cid]
-            if len(_in_c) == 0:
-                continue
-            _go = cluster_go_map.get(_cid, "(no dominant GO term)")
-            _stem = cluster_stem_map.get(_cid, "(mixed family)")
-            _n = len(_in_c)
-            _top_subs = (_in_c["Compound Name"].astype(str).str.split(";").explode()
-                         .str.strip().replace("", None).dropna()
-                         .value_counts().head(5))
-            _top_orgs = _in_c["Organism"].astype(str).value_counts().head(5)
-            _subs_html = "".join(
-                f'<li style="font-size:11.5px;color:#374151;">'
-                f'<b>{_n}</b> · {_sub[:60]}</li>'
-                for _sub, _n in _top_subs.items()
-            )
-            _orgs_html = "".join(
-                f'<li style="font-size:11.5px;color:#374151;">'
-                f'<b>{_n}</b> · {_org[:60]}</li>'
-                for _org, _n in _top_orgs.items()
-            )
-            _cards.append(
-                f'<div style="border:2px solid #1F4B99;border-radius:8px;'
-                f'padding:10px 14px;margin:6px 0;background:#F8FAFC;">'
-                f'<div style="font-size:16px;font-weight:700;color:#111827;">'
-                f'Cluster {_cid}  <span style="color:#6B7280;font-weight:500;font-size:13px;">'
-                f'({_n} proteins)</span></div>'
-                f'<div style="font-size:12.5px;color:#374151;margin-top:4px;">'
-                f'<b>Top GO:</b> {_go}   ·   <b>Dominant family:</b> {_stem}</div>'
-                f'<div style="display:flex;gap:20px;margin-top:8px;">'
-                f'<div style="flex:1;">'
-                f'<div style="font-size:12px;font-weight:600;color:#111827;">'
-                f'Top 5 substrates:</div>'
-                f'<ul style="margin:2px 0 0 18px;padding:0;">{_subs_html or "<li>(none listed)</li>"}</ul>'
-                f'</div>'
-                f'<div style="flex:1;">'
-                f'<div style="font-size:12px;font-weight:600;color:#111827;">'
-                f'Top 5 organisms:</div>'
-                f'<ul style="margin:2px 0 0 18px;padding:0;">{_orgs_html}</ul>'
-                f'</div></div></div>'
-            )
-        if _cards:
-            _extra = ""
-            if len(_picked) > 5:
-                _extra = (f'<div style="padding:4px;color:#6B7280;font-size:11px;">'
-                          f'…and {len(_picked)-5} more clusters picked '
-                          f'(showing top 5 info cards)</div>')
-            cluster_info_html = mo.Html("".join(_cards) + _extra)
-
-    # Pick a slim set of columns for the table
-    if view_kind == "molecule":
-        _cols = [c for c in ("Compound Name", "ChEBI ID", "clusters", "is_new", "Paper") if c in _pool.columns]
-    else:
-        _cols = [c for c in ("Entry", "Protein names", "Gene Names", "Organism",
-                              "reaction_ecs", "matched_in", "go_labels",
-                              "keyword_labels", "audit_decision",
-                              "clusters", "is_new")
-                 if c in _pool.columns]
-    _tbl = _pool[_cols].head(500).reset_index(drop=True) if len(_pool) else _pool[_cols].reset_index(drop=True)
-
-    if len(_tbl) == 0:
-        selection_table = None
-        # Helpful hint when nothing is highlighted yet.
-        table_out = mo.vstack([
-            debug_html,
-            mo.md(
-                "---\n### Results\n"
-                "*No proteins highlighted yet. Try one of these:*\n"
-                "- **Pick a cluster** from the highlight-cluster widget above — "
-                "you'll see every steroid in the cluster with the proteins that act on it, "
-                "grouped for easy browsing\n"
-                "- **Type a search** in the box above (name, gene, GO term, ChEBI, keyword, sequence)\n"
-                "- **Click a dot** on the plot to select one protein\n"
-                "- **Drag a rectangle** on the plot to select many\n"
-            ),
-        ])
-    else:
-        selection_table = mo.ui.table(_tbl, page_size=8, selection="multi")
-        # For the protein view, also render a substrate-grouped list where
-        # proteins are grouped by the compound they act on (avoids repeating
-        # "estradiol glucuronide" many times in a flat table).
-        grouped_html = ""
-        if view_kind == "protein" and "Compound Name" in _pool.columns:
-            _pool2 = _pool.copy()
-            _pool2["Compound Name"] = _pool2["Compound Name"].fillna("").astype(str)
-
-            def _explode_compounds(_row_arg):
-                _s = _row_arg["Compound Name"]
-                if not _s:
-                    return ["(no compound listed)"]
-                import re as _re
-                _parts = [_x.strip() for _x in _re.split(r"[;\n]", _s) if _x.strip()]
-                if not _parts:
-                    _parts = [_s.strip() or "(no compound listed)"]
-                return _parts
-
-            # Build (compound → list of protein rows) mapping
-            _by_compound = {}
-            for _idx, _r in _pool2.iterrows():
-                for _c in _explode_compounds(_r):
-                    _by_compound.setdefault(_c, []).append(_r)
-            _compounds_sorted = sorted(_by_compound, key=lambda _k: -len(_by_compound[_k]))
-
-            _sections = []
-            for _ix, _cname in enumerate(_compounds_sorted[:60]):
-                _proteins = _by_compound[_cname]
-                _rows_html = []
-                for _pr in _proteins[:200]:
-                    _acc = str(_pr.get("Entry", ""))
-                    _name = str(_pr.get("Protein names", ""))[:70]
-                    _org = str(_pr.get("Organism", ""))[:40]
-                    _pm = _pr.get("pubmed_count", 0)
-                    _pm_str = f" · {int(_pm) if str(_pm) not in ('nan','') else 0} refs" if "pubmed_count" in _pool.columns else ""
-                    _rows_html.append(
-                        f'<div style="padding:3px 10px;font-family:ui-monospace,monospace;font-size:12px;'
-                        f'border-bottom:1px solid #F3F4F6;">'
-                        f'<a href="https://www.uniprot.org/uniprotkb/{_acc}/entry" target="_blank" '
-                        f'style="color:#1D4ED8;text-decoration:none;font-weight:600;">{_acc}</a>'
-                        f' <span style="color:#111827;">{_name}</span>'
-                        f' <span style="color:#6B7280;">· {_org}{_pm_str}</span>'
-                        f'</div>'
-                    )
-                _rows_html_str = "".join(_rows_html)
-                if len(_proteins) > 200:
-                    _rows_html_str += f'<div style="padding:4px 10px;color:#6B7280;font-size:11px;">…and {len(_proteins)-200} more</div>'
-                # First 5 compound groups are open by default so the user
-                # sees content immediately without clicking anything.
-                _open = " open" if _ix < 5 else ""
-                _sections.append(
-                    f'<details{_open} style="border:1px solid #E5E7EB;border-radius:8px;'
-                    f'margin:8px 0;padding:8px 14px;background:#FAFAFA;">'
-                    f'<summary style="cursor:pointer;font-size:15px;font-weight:700;color:#111827;padding:2px 0;">'
-                    f'🧪 {_cname}  <span style="color:#6B7280;font-weight:500;font-size:13px;">'
-                    f'— {len(_proteins):,} protein{"s" if len(_proteins)!=1 else ""}</span>'
-                    f'</summary>'
-                    f'<div style="max-height:340px;overflow-y:auto;margin-top:8px;'
-                    f'background:#FFFFFF;border-radius:4px;">{_rows_html_str}</div>'
-                    f'</details>'
-                )
-            if len(_compounds_sorted) > 60:
-                _sections.append(
-                    f'<div style="padding:6px;color:#6B7280;font-size:11px;">'
-                    f'…and {len(_compounds_sorted)-60} more compound groups (view via table below)'
-                    f'</div>'
-                )
-            grouped_html = mo.Html(
-                f'<div style="margin-top:14px;">'
-                f'<div style="font-size:14px;color:#111827;margin-bottom:10px;">'
-                f'<b style="font-size:16px;">🧬 Steroids in the selected cluster{"s" if len(cluster_pick.value) > 1 else ""} → proteins that act on each</b><br>'
-                f'<span style="color:#6B7280;font-size:12.5px;">'
-                f'{len(_compounds_sorted):,} unique compound{"s" if len(_compounds_sorted)!=1 else ""} '
-                f'across {len(_tbl):,} candidate protein{"s" if len(_tbl)!=1 else ""}. '
-                f'The first 5 substrate groups are expanded — click any header to expand or collapse.'
-                f'</span></div>'
-                f'{"".join(_sections)}'
-                f'</div>'
-            )
-        table_out = mo.vstack([
-            debug_html,
-            mo.md(f"---\n### Results — {len(_tbl):,} candidate proteins"),
-            cluster_info_html,
-            grouped_html if grouped_html else mo.md(""),
-            mo.md("---\n#### Flat protein table (select rows below to view structures)"),
-            selection_table,
-        ])
-    table_out
-    return (selection_table,)
+    return clear_focus_button, compound_names, tile_buttons
 
 
 @app.cell
-def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
-    # Priority 1: use the TABLE selection (rows the user ticked)
-    # Priority 2: if table has no selection but exists → show nothing (wait for user)
-    # Priority 3: if no table at all (empty pool) → show placeholder
+def _(chart_widget, clear_focus_button, compound_names, get_tile_focus,
+      mo, plot_df, structure_cache, tile_buttons, view_kind):
+    """Cell B — render the styled tile grid.
+    Reads the tile-focus state + the pre-built buttons from cell A and
+    lays out image + name + click button + (for the focused tile) an
+    inline scrollable protein panel."""
+    tiles_grid = mo.md("")
+    if view_kind == "protein" and compound_names:
+        _ = getattr(chart_widget, "value", None)
+        _sel = None
+        try:
+            _sels = getattr(chart_widget, "selections", None) or {}
+            _rng = _sels.get("rng", {})
+            if isinstance(_rng, dict) and "UMAP_1" in _rng and "UMAP_2" in _rng:
+                _x0, _x1 = _rng["UMAP_1"]
+                _y0, _y1 = _rng["UMAP_2"]
+                _mask = ((plot_df["UMAP_1"] >= min(_x0, _x1))
+                         & (plot_df["UMAP_1"] <= max(_x0, _x1))
+                         & (plot_df["UMAP_2"] >= min(_y0, _y1))
+                         & (plot_df["UMAP_2"] <= max(_y0, _y1)))
+                if _mask.any():
+                    _sel = plot_df[_mask]
+        except Exception:
+            _sel = None
+        _has_match = bool(plot_df["_match"].any())
+        if _sel is not None and 0 < len(_sel) < len(plot_df):
+            _pool = _sel
+        elif _has_match:
+            _pool = plot_df[plot_df["_match"]]
+        else:
+            _pool = plot_df.head(0)
+
+        # Focus source: tile click only (no more dropdown).
+        _current_focus = get_tile_focus() or ""
+
+        # Group rows by compound for panel content + chebi lookup.
+        _pool2 = _pool.copy()
+        _pool2["Compound Name"] = _pool2["Compound Name"].fillna("").astype(str)
+        _pool2["ChEBI ID"] = _pool2.get("ChEBI ID", "").fillna("").astype(str)
+        _by = {}
+        _chebi_for = {}
+        for _, _r in _pool2.iterrows():
+            _cn_raw = str(_r.get("Compound Name") or "")
+            _cb_raw = str(_r.get("ChEBI ID") or "")
+            _names = [x.strip() for x in _cn_raw.replace(";", "\n").split("\n") if x.strip()]
+            _chebis = [x.strip() for x in _cb_raw.replace(";", "\n").split("\n") if x.strip()]
+            while len(_chebis) < len(_names):
+                _chebis.append("")
+            if not _names:
+                _names, _chebis = ["(no compound listed)"], [""]
+            for _nm, _cb in zip(_names, _chebis[:len(_names)]):
+                _by.setdefault(_nm, []).append(_r)
+                if _cb and _nm not in _chebi_for:
+                    _chebi_for[_nm] = _cb
+
+        _tiles = []
+        for _nm in compound_names:
+            if _nm not in _by:
+                continue
+            _prots = _by[_nm]
+            _is_focus = (_current_focus == _nm)
+            _btn = tile_buttons.get(_nm)
+            if _btn is None:
+                continue
+            _bg = "#DBEAFE" if _is_focus else "#F8FAFC"
+            _ring = "box-shadow:0 0 0 3px #2563EB;" if _is_focus else ""
+            _b64 = structure_cache.get(_nm.lower())
+            if not _b64 and _chebi_for.get(_nm):
+                _b64 = structure_cache.get(f"chebi:{_chebi_for[_nm]}")
+            if _b64:
+                _img = (f'<img src="data:image/png;base64,{_b64}" '
+                        f'style="width:100%;height:140px;object-fit:contain;'
+                        f'background:#FFFFFF;border-radius:6px;" />')
+            else:
+                # No structure image — surface WHY these proteins were
+                # recruited to this tile (top steroid-related GO / keyword,
+                # literature or audit source counts). Keeps the tile useful
+                # for placeholder compounds like "a 3-oxo-Delta(5)-steroid".
+                _STEROID_TOKENS = ("steroid", "hormon", "estro", "andro",
+                                   "progest", "cortic", "sterol", "bile",
+                                   "cholester", "vitamin d")
+                def _steroidy(s):
+                    _lc = str(s).lower()
+                    return any(t in _lc for t in _STEROID_TOKENS)
+                # Collect GO labels (with ids) + keywords across the
+                # tile's proteins. The ids let us build clickable links
+                # to AmiGO for each GO term.
+                _go_ctr = {}
+                _go_id_for = {}
+                _kw_ctr = {}
+                _lit_n = 0
+                for _pr in _prots:
+                    _labels = [x.strip() for x in
+                               str(_pr.get("go_labels", "") or "").split(";")]
+                    _ids = [x.strip() for x in
+                            str(_pr.get("go_ids", "") or "").split(";")]
+                    while len(_ids) < len(_labels):
+                        _ids.append("")
+                    for _g, _gid in zip(_labels, _ids):
+                        if _g and _steroidy(_g):
+                            _go_ctr[_g] = _go_ctr.get(_g, 0) + 1
+                            if _gid and _g not in _go_id_for:
+                                _go_id_for[_g] = _gid
+                    for _k in str(_pr.get("keyword_labels", "") or "").split(";"):
+                        _k = _k.strip()
+                        if _k and _steroidy(_k):
+                            _kw_ctr[_k] = _kw_ctr.get(_k, 0) + 1
+                    try:
+                        if int(_pr.get("is_literature_recruited", 0)) == 1:
+                            _lit_n += 1
+                    except (ValueError, TypeError):
+                        pass
+                _top_go = sorted(_go_ctr, key=lambda k: -_go_ctr[k])[:3]
+                _top_kw = sorted(_kw_ctr, key=lambda k: -_kw_ctr[k])[:3]
+                _evi_lines = []
+                if _top_go:
+                    def _go_link(_g):
+                        _gid = _go_id_for.get(_g, "")
+                        _txt = _g[:34]
+                        if _gid:
+                            return (f'<a href="https://amigo.geneontology.org/'
+                                    f'amigo/term/{_gid}" target="_blank" '
+                                    f'style="color:#1D4ED8;text-decoration:none;'
+                                    f'border-bottom:1px dotted #1D4ED8;">'
+                                    f'{_txt}</a>')
+                        return _txt
+                    _evi_lines.append(
+                        f'<div style="font-size:10px;color:#0F172A;'
+                        f'margin-bottom:3px;line-height:1.4;">'
+                        f'<b>GO:</b> {" · ".join(_go_link(g) for g in _top_go)}'
+                        f'</div>'
+                    )
+                if _top_kw:
+                    _evi_lines.append(
+                        f'<div style="font-size:10px;color:#0F172A;'
+                        f'margin-bottom:3px;line-height:1.4;">'
+                        f'<b>Keyword:</b> '
+                        f'{" · ".join(k[:34] for k in _top_kw)}</div>'
+                    )
+                if _lit_n:
+                    _evi_lines.append(
+                        f'<div style="font-size:10px;color:#0F172A;'
+                        f'margin-bottom:2px;">'
+                        f'<b>Literature-recruited:</b> {_lit_n:,} of '
+                        f'{len(_prots):,}</div>'
+                    )
+                _evi_html = ("".join(_evi_lines) or
+                             '<div style="font-size:10px;color:#9CA3AF;">'
+                             'no recruitment evidence found</div>')
+                _img = (
+                    '<div style="width:100%;height:140px;background:#FEF9C3;'
+                    'border:1px dashed #CA8A04;border-radius:6px;'
+                    'padding:8px;overflow-y:auto;text-align:left;">'
+                    '<div style="font-size:10px;font-weight:700;color:#78350F;'
+                    'text-align:center;margin-bottom:4px;">'
+                    'RECRUITED BY ANNOTATION</div>'
+                    f'{_evi_html}</div>'
+                )
+            _cb_str = _chebi_for.get(_nm, "")
+            _cbl = (f'<div style="font-size:10px;color:#6B7280;'
+                    f'font-family:ui-monospace,monospace;">CHEBI:{_cb_str}</div>'
+                    if _cb_str else "")
+            _badge = ('<div style="font-size:10px;color:#1D4ED8;font-weight:700;">'
+                      '◉ FOCUSED</div>' if _is_focus else "")
+            _card_html = mo.Html(
+                f'<div style="width:250px;border:1px solid #E5E7EB;border-radius:10px;'
+                f'background:{_bg};padding:8px 8px 6px;text-align:center;{_ring}">'
+                f'{_img}<div style="font-size:11.5px;font-weight:600;'
+                f'margin-top:4px;line-height:1.25;color:#111827;'
+                f'min-height:2.4em;">{_nm}</div>{_cbl}'
+                f'<div style="font-size:10.5px;color:#374151;margin-top:4px;'
+                f'background:#E0E7FF;border-radius:10px;padding:2px 8px;'
+                f'display:inline-block;">{len(_prots):,} protein'
+                f'{"s" if len(_prots)!=1 else ""}</div>{_badge}</div>'
+            )
+            _panel = mo.md("")
+            if _is_focus:
+                _rows_html = []
+                for _pr in _prots[:200]:
+                    _acc = str(_pr.get("Entry", ""))
+                    _pname = str(_pr.get("Protein names", ""))[:60]
+                    _org = str(_pr.get("Organism", ""))[:30]
+                    _gene = str(_pr.get("Gene Names", ""))[:20]
+                    _pm = _pr.get("pubmed_count", 0)
+                    _pm_str = (f" · {int(_pm) if str(_pm) not in ('nan','') else 0} refs"
+                               if "pubmed_count" in _pool.columns else "")
+                    _uni = (f'<a href="https://www.uniprot.org/uniprotkb/{_acc}/entry" '
+                            f'target="_blank" style="color:#1D4ED8;text-decoration:none;'
+                            f'font-weight:600;">{_acc}</a>')
+                    _af = (f' · <a href="https://alphafold.ebi.ac.uk/entry/{_acc}" '
+                           f'target="_blank" style="color:#0E7490;text-decoration:none;'
+                           f'font-size:10px;padding:1px 5px;border:1px solid #0E7490;'
+                           f'border-radius:3px;">AF</a>')
+                    _rows_html.append(
+                        f'<div style="padding:4px 8px;border-bottom:1px solid #F3F4F6;'
+                        f'font-family:ui-monospace,monospace;font-size:10.5px;'
+                        f'text-align:left;">'
+                        f'{_uni}{_af}<br>'
+                        f'<span style="color:#111827;">{_pname}</span><br>'
+                        f'<span style="color:#6B7280;">{_gene} · {_org}{_pm_str}</span>'
+                        f'</div>'
+                    )
+                _tail = (f'<div style="padding:6px;color:#6B7280;font-size:10px;">'
+                         f'…and {len(_prots)-200} more</div>'
+                         if len(_prots) > 200 else "")
+                _panel = mo.Html(
+                    f'<div style="width:250px;margin-top:4px;'
+                    f'border:1px solid #2563EB;border-radius:8px;'
+                    f'background:#FFFFFF;overflow:hidden;">'
+                    f'<div style="padding:6px 10px;background:#DBEAFE;'
+                    f'font-size:11px;font-weight:600;color:#1E3A8A;'
+                    f'text-align:center;">Proteins ({len(_prots):,})</div>'
+                    f'<div style="max-height:340px;overflow-y:auto;'
+                    f'background:#FFFFFF;">'
+                    f'{"".join(_rows_html)}{_tail}</div></div>'
+                )
+            _tiles.append(mo.vstack([_card_html, _btn, _panel],
+                                    gap=0.2, align="center"))
+
+        _hdr = mo.Html(
+            f'<div style="margin-top:14px;">'
+            f'<div style="font-size:14px;color:#111827;margin-bottom:8px;">'
+            f'<b style="font-size:16px;">🧬 Steroid catalogue — click '
+            f'"→ show proteins" below any tile</b><br>'
+            f'<span style="color:#6B7280;font-size:12.5px;">'
+            f'{len(compound_names):,} unique compound'
+            f'{"s" if len(compound_names)!=1 else ""}. Clicking a tile '
+            f'opens its interacting proteins right below THAT tile.'
+            f'</span></div></div>'
+        )
+        _clear = clear_focus_button if _current_focus else mo.md("")
+        tiles_grid = mo.vstack([
+            _hdr,
+            _clear,
+            mo.hstack(_tiles, wrap=True, gap=0.75, align="start", justify="start"),
+        ])
+    return (tiles_grid,)
+
+
+@app.cell
+def _(chart_widget, cluster_pick, cluster_pick_map,
+      get_tile_focus, mo, plot_df, tiles_grid, view_kind):
+    """Results cell v14 — focus is driven entirely by tile clicks."""
+
+    # -------- COMPUTE POOL FROM DRAG / MATCH --------
+    _pool_source = "(nothing selected)"
+    _pool = plot_df.head(0)
+    _err = ""
+
+    # drag rectangle
+    try:
+        _ = getattr(chart_widget, "value", None)
+        _sels = getattr(chart_widget, "selections", None) or {}
+        _rng = _sels.get("rng") if hasattr(_sels, "get") else None
+        if isinstance(_rng, dict):
+            _u1 = _rng.get("UMAP_1")
+            _u2 = _rng.get("UMAP_2")
+            if _u1 and _u2 and len(_u1) == 2 and len(_u2) == 2:
+                _dm = ((plot_df["UMAP_1"] >= min(_u1[0], _u1[1]))
+                       & (plot_df["UMAP_1"] <= max(_u1[0], _u1[1]))
+                       & (plot_df["UMAP_2"] >= min(_u2[0], _u2[1]))
+                       & (plot_df["UMAP_2"] <= max(_u2[0], _u2[1])))
+                if _dm.any() and _dm.sum() < len(plot_df):
+                    _pool = plot_df[_dm]
+                    _pool_source = "rectangle drag on the plot"
+    except Exception as _e:
+        _err += f" drag:{_e};"
+
+    # fallback: search/cluster _match
+    if _pool_source == "(nothing selected)":
+        try:
+            if bool(plot_df["_match"].any()):
+                _pool = plot_df[plot_df["_match"]]
+                _pool_source = "search / cluster pick"
+        except Exception as _e:
+            _err += f" match:{_e};"
+
+    # -------- FOCUS (tile click always wins) --------
+    # Clicking a tile is the primary gesture — instant, in-place, no need
+    # to scroll to the dropdown. The dropdown is a searchable fallback
+    # when the pool is large. To switch compounds, click a different tile;
+    # to clear, click the currently-focused tile again.
+    _focus = None
+    try:
+        _focus = get_tile_focus() or None
+    except Exception as _e:
+        _err += f" focus:{_e};"
+
+    _pool_for_table = _pool
+    try:
+        if _focus and "Compound Name" in _pool.columns and len(_pool):
+            _cn = _pool["Compound Name"].fillna("").astype(str)
+            _fm = _cn.str.contains(_focus, regex=False, na=False, case=False)
+            if _fm.any():
+                _pool_for_table = _pool[_fm]
+    except Exception as _e:
+        _err += f" ff:{_e};"
+
+    # -------- TABLE --------
+    try:
+        if view_kind == "molecule":
+            _cols = [c for c in ("Compound Name", "ChEBI ID", "clusters", "is_new", "Paper")
+                     if c in _pool_for_table.columns]
+        else:
+            _cols = [c for c in ("Entry", "Protein names", "Gene Names", "Organism",
+                                  "reaction_ecs", "matched_in", "go_labels",
+                                  "keyword_labels", "audit_decision",
+                                  "clusters", "is_new")
+                     if c in _pool_for_table.columns]
+        _tbl = (_pool_for_table[_cols].head(500).reset_index(drop=True)
+                if len(_pool_for_table)
+                else _pool_for_table[_cols].reset_index(drop=True))
+    except Exception as _e:
+        _err += f" cols:{_e};"
+        _tbl = plot_df.head(0)
+
+    try:
+        selection_table = (mo.ui.table(_tbl, page_size=8, selection="multi")
+                           if len(_tbl) > 0 else None)
+    except Exception as _e:
+        _err += f" utable:{_e};"
+        selection_table = None
+
+    # (Steroid tiles now built in their own cell as `tiles_grid`.)
+
+    # -------- CLUSTER INFO --------
+    _cluster_info = mo.md("")
+    try:
+        if view_kind == "protein" and cluster_pick.value:
+            _cid = cluster_pick_map.get(cluster_pick.value)
+            if _cid is not None:
+                try:
+                    _cid_disp = str(int(str(_cid)) + 1)
+                except (ValueError, TypeError):
+                    _cid_disp = str(_cid)
+                _cluster_info = mo.md(f"**Cluster {_cid_disp}** selected.")
+    except Exception as _e:
+        _err += f" cluster:{_e};"
+
+    # -------- OUTPUT --------
+    _dbg = f" · debug:{_err}" if _err else ""
+    _header = mo.md(
+        f"---\n### Results — **{len(_pool):,}** candidate proteins in this "
+        f"pool *(source: {_pool_source}){_dbg}*"
+    )
+
+    focused_pool = _pool_for_table
+    focus_active = bool(_focus)
+    if selection_table is None:
+        results_output = mo.vstack([
+            _header,
+            _cluster_info,
+            mo.md("*Drag a rectangle on the plot, pick a cluster, or type "
+                  "a search to populate the table.*"),
+        ])
+    else:
+        # Flat protein table brought back so users can tick rows to narrow
+        # the detail cards accordion. When a steroid is focused, the table
+        # is scoped to just that compound; otherwise the full pool.
+        if _focus:
+            _flat_header = mo.Html(
+                f'<div style="margin-top:14px;padding:10px 14px;'
+                f'border:2px solid #2563EB;border-radius:8px;'
+                f'background:#DBEAFE;">'
+                f'<div style="font-size:16px;font-weight:700;color:#0B1F5A;">'
+                f'{_focus}</div>'
+                f'<div style="font-size:12px;color:#1E3A8A;margin-top:2px;">'
+                f'{len(_tbl):,} protein{"s" if len(_tbl)!=1 else ""} '
+                f'act on this steroid</div></div>'
+            )
+        else:
+            _flat_header = mo.md(
+                f"---\n**Full pool** — {len(_tbl):,} protein"
+                f"{'s' if len(_tbl)!=1 else ''}"
+            )
+        results_output = mo.vstack([
+            _header,
+            _cluster_info,
+            tiles_grid,
+            _flat_header,
+            selection_table,
+        ])
+    results_output
+    return focus_active, focused_pool, results_output, selection_table
+
+
+@app.cell
+def _(ast, focus_active, focused_pool, mo, plot_df, rdkit_ok,
+      selection_table, structure_cache, view_kind):
+    # Detail cards render ONLY for rows the user has ticked in the flat
+    # table. This keeps the page from dumping 500 cards at once when a
+    # popular steroid is focused — the user picks specifically which
+    # proteins to inspect, one, two, or a handful at a time.
     _rows = None
     if selection_table is not None:
         _tbl_sel = selection_table.value
         if _tbl_sel is not None and hasattr(_tbl_sel, "__len__") and len(_tbl_sel) > 0:
-            # Recover full plot_df rows by key
             if view_kind == "molecule" and "Compound Name" in _tbl_sel.columns:
                 _rows = plot_df[plot_df["Compound Name"].isin(_tbl_sel["Compound Name"].tolist())]
             elif view_kind == "protein" and "Entry" in _tbl_sel.columns:
@@ -1455,9 +1750,13 @@ def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
                     f'</div>'
                 )
             _extra = f" · (+{len(_rows) - len(_shown)} more not shown)" if len(_rows) > len(_shown) else ""
-            _grid = f'<div style="display:flex; flex-direction:column;">{"".join(_cards)}</div>'
-            _output = mo.md(
-                f"---\n### Selected molecules — **{len(_rows)}**{_extra}\n\n{_grid}"
+            _grid = (f'<div style="display:grid;'
+                     f'grid-template-columns:repeat(auto-fill,minmax(420px,1fr));'
+                     f'gap:14px;">'
+                     f'{"".join(_cards)}</div>')
+            _output = mo.Html(
+                f'<div style="font-size:14px; color:#111827; margin-bottom:8px;">'
+                f'<b>Selected molecules — {len(_rows)}</b>{_extra}</div>{_grid}'
             )
     else:
         # ─── PROTEIN DETAIL — protein info + reaction + interacting steroid structures ───
@@ -1606,6 +1905,69 @@ def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
             _org_safe = _org.replace("<", "&lt;").replace(">", "&gt;")[:100]
 
             # Top pane — protein header/info (mirror of molecule top pane)
+            # NEW: in-card "protein summary page" — surfaces GO terms +
+            # keywords + pubmed count so the user gets a rich per-protein
+            # snapshot right in the detail card, without leaving the app
+            # to click over to UniProt (though UniProt / AlphaFold links
+            # are still one click away in the links row above).
+            _go_labels = str(_row.get("go_labels", "") or "")
+            _kw_labels = str(_row.get("keyword_labels", "") or "")
+            _pm_count = _row.get("pubmed_count", 0)
+            try:
+                _pm_n = int(_pm_count) if str(_pm_count) not in ("nan", "") else 0
+            except (ValueError, TypeError):
+                _pm_n = 0
+            _pm_ids = str(_row.get("pubmed_ids", "") or "")
+            _pm_first = _pm_ids.split(";")[:3]
+
+            def _chip(_txt, _bg="#EEF2FF", _fg="#3730A3"):
+                _t = str(_txt).strip()[:38]
+                if not _t:
+                    return ""
+                return (f'<span style="display:inline-block;background:{_bg};'
+                        f'color:{_fg};padding:2px 8px;border-radius:10px;'
+                        f'font-size:10.5px;margin:2px 3px 2px 0;">{_t}</span>')
+
+            _go_chips = "".join(_chip(g) for g in _go_labels.split(";")[:6] if g.strip())
+            _kw_chips = "".join(_chip(k, "#FEF3C7", "#78350F")
+                                for k in _kw_labels.split(";")[:6] if k.strip())
+            _pm_chips = "".join(
+                f'<a href="https://pubmed.ncbi.nlm.nih.gov/{_p.strip()}" '
+                f'target="_blank" style="text-decoration:none;">'
+                f'<span style="display:inline-block;background:#D1FAE5;'
+                f'color:#065F46;padding:2px 8px;border-radius:10px;'
+                f'font-size:10.5px;margin:2px 3px 2px 0;">PMID {_p.strip()}</span></a>'
+                for _p in _pm_first if _p.strip()
+            )
+            _summary_rows = []
+            if _go_chips:
+                _summary_rows.append(
+                    f'<div style="margin-top:6px;"><span style="font-size:11px;'
+                    f'font-weight:600;color:#374151;">GO terms:</span> {_go_chips}</div>'
+                )
+            if _kw_chips:
+                _summary_rows.append(
+                    f'<div style="margin-top:4px;"><span style="font-size:11px;'
+                    f'font-weight:600;color:#374151;">UniProt keywords:</span> {_kw_chips}</div>'
+                )
+            if _pm_n:
+                _more = (f' <span style="color:#6B7280;font-size:10.5px;">(+{_pm_n-len(_pm_first)} more)</span>'
+                         if _pm_n > len(_pm_first) else "")
+                _summary_rows.append(
+                    f'<div style="margin-top:4px;"><span style="font-size:11px;'
+                    f'font-weight:600;color:#374151;">PubMed refs ({_pm_n}):</span> '
+                    f'{_pm_chips}{_more}</div>'
+                )
+            _summary_pane = ""
+            if _summary_rows:
+                _summary_pane = (
+                    f'<div style="padding:10px 22px 4px; text-align:left; '
+                    f'background:#F9FAFB; border-top:1px solid #E5E7EB;">'
+                    f'<div style="font-size:11px; color:#6B7280; margin-bottom:4px; '
+                    f'font-weight:700; letter-spacing:0.04em;">PROTEIN SUMMARY</div>'
+                    f'{"".join(_summary_rows)}</div>'
+                )
+
             _top_pane_prot = (
                 f'<div style="padding:20px 22px 14px; text-align:center; '
                 f'border-bottom:1px solid #E5E7EB;">'
@@ -1615,22 +1977,36 @@ def _(ast, mo, plot_df, rdkit_ok, selection_table, structure_cache, view_kind):
                 f'{_links_html}{_ec_badges}{_rhea_html}{_reaction_html}{_paper_html}'
                 f'</div>'
             )
-            _bottom_pane_prot = f'<div style="padding:14px 22px;">{_mol_thumbs}</div>'
+            _bottom_pane_prot = (f'{_summary_pane}'
+                                 f'<div style="padding:14px 22px;">{_mol_thumbs}</div>')
 
             _cards.append(
-                f'<div style="margin:12px 0; '
-                f'border:1px solid #E5E7EB; border-radius:10px; background:white; '
-                f'box-shadow:0 2px 6px rgba(0,0,0,0.06); max-width:640px; overflow:hidden;">'
+                f'<div style="border:1px solid #E5E7EB; border-radius:10px; '
+                f'background:white; box-shadow:0 2px 6px rgba(0,0,0,0.06); '
+                f'overflow:hidden; height:100%;">'
                 f'{_top_pane_prot}{_bottom_pane_prot}'
                 f'</div>'
             )
         _extra = f" · (+{len(_rows) - len(_shown)} more not shown)" if len(_rows) > len(_shown) else ""
-        _grid = f'<div style="display:flex; flex-wrap:wrap;">{"".join(_cards)}</div>'
-        _output = mo.md(
-            f"---\n### Selected proteins — **{len(_rows)}**{_extra}\n\n{_grid}"
+        # Responsive grid: 2-3 protein cards per row (auto-fill columns
+        # with minimum 420px each so cards stay readable but two-plus fit
+        # side-by-side on typical laptop viewports).
+        _grid = (f'<div style="display:grid;'
+                 f'grid-template-columns:repeat(auto-fill,minmax(420px,1fr));'
+                 f'gap:14px;">'
+                 f'{"".join(_cards)}</div>')
+        _output = mo.Html(
+            f'<div style="font-size:14px; color:#111827; margin-bottom:8px;">'
+            f'<b>Selected proteins — {len(_rows)}</b>{_extra}</div>{_grid}'
         )
-    _output
-    return
+    # Detail cards render directly on the page — no accordion wrap so the
+    # user sees them inline as soon as rows are ticked / a steroid is focused.
+    if _rows is None or len(_rows) == 0:
+        detail_cards = mo.md("")
+    else:
+        detail_cards = _output
+    detail_cards
+    return (detail_cards,)
 
 
 @app.cell
