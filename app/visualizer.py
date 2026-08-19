@@ -190,16 +190,16 @@ def _(mo, molecule_df, natsyn_df, protein_df):
     <div style="text-align:center; margin-top:10px;">
 
     <span style="font-size:34px; font-weight:600;">
-    🧭 Welcome to Nature's Steroid Atlas
+    🧭 Welcome to Steroid Atlas
     </span>
 
     <p style="max-width:750px; margin:12px auto 0; font-size:15px;">
-    Explore Nature's steroids and the proteins they interact with — all
-    through an interactive, unified interface.
+    Explore steroids and the proteins they interact with — all through an
+    interactive, unified interface.
     </p>
 
     <p style="font-size:13px; color:#6B7280; margin:6px auto 0;">
-    {len(molecule_df):,} molecules · {len(protein_df):,} proteins ·
+    {len(molecule_df):,} steroids · {len(protein_df):,} proteins ·
     {len(natsyn_df):,} natural + synthetic entries
     </p>
 
@@ -362,14 +362,14 @@ def _(index_ok, key_form):
 @app.cell
 def _(get_entered, mo, molecule_df, natsyn_df, protein_df):
     mo.stop(not get_entered())
-    mo.md(f"""
-    # 🧭 Nature's Steroid Atlas
-
-    **{len(molecule_df):,} molecules** · **{len(protein_df):,} proteins** · **{len(natsyn_df):,} natural + synthetic entries**
-    · newly recruited from 2024-2026 literature (stars).
-
-    Pick a view and search method below.
-    """)
+    mo.md(
+        f"# 🧭 Steroid Atlas\n\n"
+        f"**{len(molecule_df):,} steroids** · **{len(protein_df):,} proteins**"
+        f" · **{len(natsyn_df):,} natural + synthetic entries** · newly "
+        f"recruited from 2024-2026 literature "
+        f'<span style="color:#111827;">★</span>. '
+        f"*Pick a view and search method below.*"
+    )
     return
 
 
@@ -382,7 +382,7 @@ def _(get_entered, help_button, mo):
         label="View",
         inline=True,
     )
-    mo.vstack([mo.hstack([help_button], justify="end"), view])
+    mo.hstack([view, help_button], justify="space-between", align="center")
     return (view,)
 
 
@@ -622,12 +622,9 @@ def _(cluster_legend_html, cluster_pick, ec_class, method, mo,
         active = prot_search if method.value == "① Multi-column search" else ec_class
         if method.value == "① Multi-column search":
             legend = mo.md(
-                "*Searched fields (each result row shows which one matched in the "
-                "**matched_in** column):* "
-                "protein name · UniProt accession · entry name · gene name · organism · "
-                "EC number · sequence · ChEBI ligand · Rhea reaction · compound · "
-                "reaction description · GO id · GO label · UniProt keyword id · "
-                "UniProt keyword · binder evidence · audit note"
+                "*Searches names, IDs, sequences, GO / keywords, "
+                "reactions & compounds — the `matched_in` column shows which "
+                "field hit.*"
             )
             display = mo.vstack([active, legend, _picker_row])
         else:
@@ -835,7 +832,7 @@ def _(
 
 
 @app.cell
-def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind):
+def _(alt, cluster_go_map, cluster_stem_map, mo, plot_df, view_kind):
     n_hit = int(plot_df["_match"].sum())
     n_new = int((plot_df["is_new"] == 1).sum())
     n_total = len(plot_df)
@@ -941,17 +938,12 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
     _chart_df["clusters"] = _chart_df["clusters"].apply(_clean_cluster).astype(str)
 
     _n_clusters = int(_chart_df["clusters"].nunique())
-    if _n_clusters <= 3:
-        _color_scale = alt.Scale(range=["#0E7490", "#F59E0B", "#B91C1C"])
-    elif _n_clusters <= 10:
-        _color_scale = alt.Scale(scheme="tableau10")
-    elif _n_clusters <= 20:
-        _color_scale = alt.Scale(scheme="tableau20")
-    else:
-        # No explicit domain: Vega auto-assigns each cluster the next color from
-        # `range`, giving 95 unique colors for 95 clusters. Order-of-first-occurrence
-        # is stable within a single render, which is enough for interactive use.
-        _color_scale = alt.Scale(range=_n_distinct_colors(_n_clusters))
+    # ALWAYS use the golden-angle palette so the plot colors match the
+    # swatch legend below the cluster picker (which uses the same palette).
+    # Previously we branched on _n_clusters and used tableau schemes for
+    # small counts, which caused a mismatch for the natural / synthetic
+    # 2-cluster view.
+    _color_scale = alt.Scale(range=_n_distinct_colors(max(_n_clusters, 2)))
 
     # On-plot Vega legend disabled — the full-color swatch legend under the
     # cluster picker widget serves the same role without taking away plot
@@ -1001,11 +993,25 @@ def _(alt, cluster_go_map, cluster_stem_map, mo, pan_toggle, plot_df, view_kind)
             tooltip=_tooltip,
         )
     )
+    # Gesture set:
+    #   drag (no modifier) → rectangle-select "rng"
+    #   shift+drag         → pan the map (bound to scales via "zoom")
+    #   scroll             → zoom
+    #   double-click       → reset selection
+    # The rectangle-select is restricted to plain drags (no shift held) so
+    # the two gestures don't fire simultaneously.
     _selection_params = [
         alt.selection_point(name="pt", on="click", clear="dblclick"),
-        alt.selection_interval(name="rng"),
-        alt.selection_interval(name="zoom", bind="scales",
-                               translate=pan_toggle.value, zoom=True),
+        alt.selection_interval(
+            name="rng",
+            on="[pointerdown[!event.shiftKey], pointerup] > pointermove",
+        ),
+        alt.selection_interval(
+            name="zoom",
+            bind="scales",
+            translate="[pointerdown[event.shiftKey], pointerup] > pointermove!",
+            zoom=True,
+        ),
     ]
 
     # Persistent centroid labels: for each cluster (≥30 members only) place
@@ -1109,13 +1115,37 @@ def _(chart_widget, mo, plot_df):
     n_new_disp = int((plot_df["is_new"] == 1).sum())
     mo.vstack([
         mo.md(
-            f"### **{n_hit_disp:,} highlighted** — {n_total_disp:,} total · "
-            f"**{n_new_disp} newly-recruited (stars)**"
+            f"### **{n_hit_disp:,} highlighted** — {n_total_disp:,} total"
         ),
-        mo.md("*Circles = existing entries · Stars = newly recruited · "
-              "**Red ring** = search / class match. "
-              "**Click** for one · **drag rectangle** for many · "
-              "**scroll to zoom** · **double-click** to reset.*"),
+        mo.Html(
+            '<div style="display:flex;flex-wrap:wrap;gap:18px;'
+            'align-items:center;justify-content:center;font-size:13px;'
+            'color:#111827;">'
+            # existing = filled circle
+            '<span style="display:flex;align-items:center;gap:6px;">'
+            '<svg width="18" height="18" viewBox="-6 -6 12 12">'
+            '<circle cx="0" cy="0" r="5" fill="#0E7490" '
+            'stroke="white" stroke-width="0.6"/></svg>existing</span>'
+            # newly recruited = star
+            '<span style="display:flex;align-items:center;gap:6px;">'
+            '<svg width="20" height="20" viewBox="-1.05 -1.05 2.1 2.1">'
+            '<path d="M0,-1 L0.22,-0.31 L0.95,-0.31 L0.36,0.12 '
+            'L0.59,0.81 L0,0.4 L-0.59,0.81 L-0.36,0.12 L-0.95,-0.31 '
+            'L-0.22,-0.31 Z" fill="#F59E0B" stroke="black" '
+            'stroke-width="0.06"/></svg>newly recruited</span>'
+            # red-ring = highlighted
+            '<span style="display:flex;align-items:center;gap:6px;">'
+            '<svg width="20" height="20" viewBox="-7 -7 14 14">'
+            '<circle cx="0" cy="0" r="5" fill="#0E7490" '
+            'stroke="#e0144c" stroke-width="2.4"/></svg>highlighted</span>'
+            # separator
+            '<span style="color:#9CA3AF;font-size:14px;">·</span>'
+            '<span style="font-size:12px;">'
+            '<b>click</b> a dot · <b>drag</b> to select · '
+            '<b>shift+drag</b> to pan · <b>scroll</b> to zoom · '
+            '<b>double-click</b> to reset</span>'
+            '</div>'
+        ),
         mo.center(chart_widget),
     ])
     return
@@ -1260,6 +1290,57 @@ def _(chart_widget, clear_focus_button, compound_names, get_tile_focus,
                 if _cb and _nm not in _chebi_for:
                     _chebi_for[_nm] = _cb
 
+        # ── Steroid-abbreviation glossary ───────────────────────────────
+        # For tiles whose compound name uses a short-form (e.g. "Trp-CA"
+        # or "TCA"), show the explicit chemical name below the abbreviation
+        # so viewers who don't know the shorthand aren't left guessing.
+        # Both are printed — we never silently rewrite the label — so nothing
+        # can be mistaken for the wrong molecule.
+        _AA3 = {"ala":"alanine","arg":"arginine","asn":"asparagine",
+                "asp":"aspartate","cys":"cysteine","gln":"glutamine",
+                "glu":"glutamate","gly":"glycine","his":"histidine",
+                "ile":"isoleucine","leu":"leucine","lys":"lysine",
+                "met":"methionine","phe":"phenylalanine","pro":"proline",
+                "ser":"serine","thr":"threonine","trp":"tryptophan",
+                "tyr":"tyrosine","val":"valine"}
+        _BILE_STEMS = {
+            "ca":"cholate", "cdca":"chenodeoxycholate",
+            "dca":"deoxycholate", "lca":"lithocholate",
+            "udca":"ursodeoxycholate", "hdca":"hyodeoxycholate",
+            "hca":"hyocholate", "mca":"muricholate",
+        }
+        _FIXED_ABBREV = {
+            "tca":"taurocholate", "gca":"glycocholate",
+            "tcdca":"taurochenodeoxycholate", "gcdca":"glycochenodeoxycholate",
+            "tdca":"taurodeoxycholate", "gdca":"glycodeoxycholate",
+            "tlca":"taurolithocholate", "glca":"glycolithocholate",
+            "tudca":"tauroursodeoxycholate", "gudca":"glycoursodeoxycholate",
+            "thca":"taurohyocholate", "ghca":"glycohyocholate",
+            "tmca":"tauromuricholate", "gmca":"glycomuricholate",
+            "dht":"dihydrotestosterone", "dhea":"dehydroepiandrosterone",
+            "dheas":"dehydroepiandrosterone sulfate",
+            "e1":"estrone", "e2":"estradiol", "e3":"estriol",
+            "e4":"estetrol",
+        }
+
+        import re as _re_abbrev
+        def _expand_abbrev(_name):
+            _stripped = _name.strip()
+            _low = _stripped.lower()
+            # Fixed short abbreviations that stand alone.
+            if _low in _FIXED_ABBREV:
+                return _FIXED_ABBREV[_low]
+            # MCBA pattern: <3-letter AA>-<bile-stem> or <AA>-CA-<isoform>
+            _m = _re_abbrev.match(
+                r"^([a-z]{3})-(ca|cdca|dca|lca|udca|hdca|hca|mca)"
+                r"([-_].*)?$", _low)
+            if _m:
+                _aa = _AA3.get(_m.group(1))
+                _st = _BILE_STEMS.get(_m.group(2))
+                if _aa and _st:
+                    return f"{_aa}-conjugated {_st}"
+            return None
+
         _tiles = []
         for _nm in compound_names:
             if _nm not in _by:
@@ -1369,12 +1450,16 @@ def _(chart_widget, clear_focus_button, compound_names, get_tile_focus,
                     if _cb_str else "")
             _badge = ('<div style="font-size:10px;color:#1D4ED8;font-weight:700;">'
                       '◉ FOCUSED</div>' if _is_focus else "")
+            _expansion = _expand_abbrev(_nm)
+            _exp_line = (f'<div style="font-size:10px;color:#6B7280;'
+                         f'font-style:italic;line-height:1.2;margin-top:2px;">'
+                         f'= {_expansion}</div>' if _expansion else "")
             _card_html = mo.Html(
                 f'<div style="width:250px;border:1px solid #E5E7EB;border-radius:10px;'
                 f'background:{_bg};padding:8px 8px 6px;text-align:center;{_ring}">'
                 f'{_img}<div style="font-size:11.5px;font-weight:600;'
                 f'margin-top:4px;line-height:1.25;color:#111827;'
-                f'min-height:2.4em;">{_nm}</div>{_cbl}'
+                f'min-height:2.4em;">{_nm}</div>{_exp_line}{_cbl}'
                 f'<div style="font-size:10.5px;color:#374151;margin-top:4px;'
                 f'background:#E0E7FF;border-radius:10px;padding:2px 8px;'
                 f'display:inline-block;">{len(_prots):,} protein'
@@ -2012,15 +2097,8 @@ def _(ast, focus_active, focused_pool, mo, plot_df, rdkit_ok,
 @app.cell
 def _(get_entered, mo):
     mo.stop(not get_entered())      # depends only on mo → needs its own gate
-    pan_toggle = mo.ui.checkbox(label="Toggle Pan")
-    mo.vstack([
-        pan_toggle,
-        mo.md("""
-    ---
-    **Legend:** Colored circles = existing entries · Stars = newly recruited from 2024-2026 literature · **Red ring** = search / class match.
-    """),
-    ])
-    return (pan_toggle,)
+    mo.md("---")
+    return
 
 
 @app.cell
