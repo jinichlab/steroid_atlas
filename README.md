@@ -2,12 +2,13 @@
 
 An interactive UMAP atlas of steroid- and bile-acid-metabolizing enzymes and their small-molecule substrates, curated from public databases (UniProt, Rhea, ChEBI, NCBI RefSeq) and augmented with hand-audited literature recruitments from recent papers.
 
-- **35,349 protein sequences** (deduplicated) with ProtT5 embeddings + 2D UMAP + HDBSCAN clusters
-- **677 small molecules** with SMILES, verified ChEBI IDs, RDKit-drawn structures
+- **14,089 protein sequences** — Swiss-Prot annotation-score 5, active in UniProtKB, steroid-associated by either Rhea catalysis or GO / ChEBI / keyword annotation. Each entry carries ProtT5 embeddings, 2D UMAP coordinates, k-means clusters (k = 82, chosen by silhouette + composite score in [50, 95]), and PubMed provenance.
+- **677 steroid small molecules** with SMILES, verified ChEBI IDs, and RDKit-drawn structures
+- **2,889 natural + synthetic steroid entries** for chemical-space comparison
 - **15 literature-recruited proteins** from 5 audited papers, each with full evidence-based provenance
-- **Interactive visualizer** built on [marimo](https://marimo.io) + Altair + RDKit
-- **AI Chatbot** that is RAG trained to answer any questions, trained on PubChem, Europe PMC, and ChEBI records  
-  *(Requires personal openAI API key)*
+- **Interactive visualizer** built on [marimo](https://marimo.io) + Altair + RDKit — clickable steroid catalogue, per-tile inline protein panels, rich detail cards with GO / keyword chips, PubMed refs, EC / Rhea reactions, UniProt + AlphaFold links, and modifier-based gestures (drag to select, shift+drag to pan, scroll to zoom)
+- **AI chatbot** with retrieval over PubChem, Europe PMC, and ChEBI records for compound / protein questions  
+  *(requires a personal OpenAI API key)*
 
 ## Quick start
 
@@ -35,7 +36,7 @@ steroid-atlas/
 ├── .gitignore
 │
 ├── data/                                  # canonical data — all CSVs
-│   ├── proteins.csv                       # 35,349 rows × 21 cols
+│   ├── proteins.csv                       # 14,089 rows × 33 cols
 │   ├── molecules.csv                      # 677 rows × 10 cols
 │   ├── natural_synthetic_steroids.csv     # 2,889 rows × 7 cols
 │   ├── literature_recruited_proteins.csv  # 15 rows × 12 cols — provenance
