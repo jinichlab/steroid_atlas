@@ -574,6 +574,202 @@ export default function ExploreClient({ kind, clusters }: Props) {
           </aside>
         </div>
 
+        {/* Flat entry table — one row per pooled entry (from lasso,
+            cluster, or search). Same-shape data as the marimo table.
+            Includes a Select-all-N-proteins button. */}
+        {pool.length > 0 && (
+          <div className="mt-6">
+            <div className="mb-2 flex flex-wrap items-baseline gap-3">
+              <div className="text-lg font-semibold text-slate-900">
+                📋 Selected entries
+              </div>
+              <div className="text-sm text-slate-500">
+                {pool.length.toLocaleString()} row
+                {pool.length !== 1 ? "s" : ""}
+                {kind === "protein"
+                  ? " · tick any row to add its detail card below"
+                  : ""}
+              </div>
+              {kind === "protein" && (
+                <div className="ml-auto flex items-center gap-2">
+                  {(() => {
+                    // Cap at 100 to keep the browser responsive when
+                    // rendering many detail cards (each has structures).
+                    const MAX = 100;
+                    const targets = (pool as Protein[]).slice(0, MAX);
+                    const allPicked = targets.every((p) =>
+                      isProteinFocused(p.accession),
+                    );
+                    return (
+                      <>
+                        <button
+                          onClick={() => {
+                            if (allPicked) {
+                              setFocusedProteins((cur) =>
+                                cur.filter(
+                                  (x) =>
+                                    !targets.some(
+                                      (t) => t.accession === x.accession,
+                                    ),
+                                ),
+                              );
+                            } else {
+                              setFocusedProteins((cur) => {
+                                const have = new Set(cur.map((x) => x.accession));
+                                const additions = targets.filter(
+                                  (t) => !have.has(t.accession),
+                                );
+                                return [...cur, ...additions];
+                              });
+                            }
+                          }}
+                          className={`rounded-md border px-3 py-1 text-xs font-semibold transition ${
+                            allPicked
+                              ? "border-rose-500 bg-rose-50 text-rose-700 hover:bg-rose-100"
+                              : "border-sky-500 bg-sky-50 text-sky-700 hover:bg-sky-100"
+                          }`}
+                        >
+                          {allPicked
+                            ? `☒ Deselect all ${targets.length}`
+                            : `☑ Select all ${targets.length}${
+                                pool.length > MAX ? ` (of ${pool.length})` : ""
+                              }`}
+                        </button>
+                        {pool.length > MAX && !allPicked && (
+                          <span
+                            title="Rendering more than 100 detail cards at once slows the browser; the button caps at the first 100 rows."
+                            className="cursor-help self-center text-xs text-slate-500"
+                          >
+                            (capped at 100)
+                          </span>
+                        )}
+                      </>
+                    );
+                  })()}
+                </div>
+              )}
+            </div>
+            <div className="max-h-[360px] overflow-auto rounded-lg border border-slate-200 bg-white">
+              <table className="w-full text-[12px]">
+                <thead className="sticky top-0 z-10 bg-slate-100 text-left text-[11px] uppercase tracking-wide text-slate-500">
+                  {kind === "protein" ? (
+                    <tr>
+                      <th className="px-2 py-1.5"></th>
+                      <th className="px-2 py-1.5">Accession</th>
+                      <th className="px-2 py-1.5">Name</th>
+                      <th className="px-2 py-1.5">Gene</th>
+                      <th className="px-2 py-1.5">Organism</th>
+                      <th className="px-2 py-1.5 text-right">Cluster</th>
+                      <th className="px-2 py-1.5">EC</th>
+                      <th className="px-2 py-1.5 text-right">Refs</th>
+                      <th className="px-2 py-1.5">★</th>
+                    </tr>
+                  ) : (
+                    <tr>
+                      <th className="px-2 py-1.5">Compound</th>
+                      <th className="px-2 py-1.5">ChEBI</th>
+                      <th className="px-2 py-1.5 text-right">Cluster</th>
+                    </tr>
+                  )}
+                </thead>
+                <tbody>
+                  {pool.slice(0, 500).map((r) => {
+                    if (kind === "protein") {
+                      const p = r as Protein;
+                      const isPick = isProteinFocused(p.accession);
+                      return (
+                        <tr
+                          key={p.accession}
+                          onClick={() => toggleProtein(p)}
+                          className={`cursor-pointer border-b border-slate-100 transition ${
+                            isPick ? "bg-sky-100" : "hover:bg-slate-50"
+                          }`}
+                        >
+                          <td className="px-2 py-1.5">
+                            <span
+                              className={`inline-block h-3.5 w-3.5 rounded-sm border transition ${
+                                isPick
+                                  ? "border-sky-600 bg-sky-600"
+                                  : "border-slate-400 bg-white"
+                              }`}
+                            >
+                              {isPick && (
+                                <span className="block text-center text-[9px] leading-[13px] text-white">
+                                  ✓
+                                </span>
+                              )}
+                            </span>
+                          </td>
+                          <td className="px-2 py-1.5 font-mono font-semibold text-sky-700">
+                            {p.accession}
+                          </td>
+                          <td className="px-2 py-1.5 text-slate-900">
+                            {(p.protein_names || "").slice(0, 60)}
+                          </td>
+                          <td className="px-2 py-1.5 text-slate-600">
+                            {(p.gene_names || "").slice(0, 24)}
+                          </td>
+                          <td className="px-2 py-1.5 italic text-slate-600">
+                            {(p.organism || "").slice(0, 32)}
+                          </td>
+                          <td className="px-2 py-1.5 text-right text-slate-600">
+                            {((p.cluster ?? 0) + 1).toString()}
+                          </td>
+                          <td className="px-2 py-1.5 font-mono text-[11px] text-slate-500">
+                            {(p.ec_numbers || "")
+                              .split(/[,;]/)
+                              .slice(0, 2)
+                              .join(" ")
+                              .slice(0, 24)}
+                          </td>
+                          <td className="px-2 py-1.5 text-right text-slate-500">
+                            {p.pubmed_count || ""}
+                          </td>
+                          <td className="px-2 py-1.5">
+                            {p.is_literature_recruited ? (
+                              <span
+                                className="text-amber-500"
+                                title="Newly recruited"
+                              >
+                                ★
+                              </span>
+                            ) : (
+                              ""
+                            )}
+                          </td>
+                        </tr>
+                      );
+                    }
+                    const m = r as Molecule | NatsynEntry;
+                    return (
+                      <tr
+                        key={rowKey(kind, r)}
+                        onClick={() => setFocusedPoint(r)}
+                        className="cursor-pointer border-b border-slate-100 hover:bg-slate-50"
+                      >
+                        <td className="px-2 py-1.5 text-slate-900">
+                          {(m.compound_name || "").slice(0, 60)}
+                        </td>
+                        <td className="px-2 py-1.5 font-mono text-slate-500">
+                          {m.chebi_id ? `CHEBI:${m.chebi_id}` : ""}
+                        </td>
+                        <td className="px-2 py-1.5 text-right text-slate-600">
+                          {String((m as any).cluster ?? "")}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+              {pool.length > 500 && (
+                <div className="border-t border-slate-200 bg-slate-50 px-3 py-1.5 text-xs text-slate-500">
+                  …showing first 500 of {pool.length.toLocaleString()} rows
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* Steroid catalogue */}
         {kind === "protein" && compoundTiles.length > 0 && (
           <div className="mt-6">

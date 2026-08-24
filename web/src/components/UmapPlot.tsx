@@ -5,7 +5,7 @@ import DeckGL from "@deck.gl/react";
 import { ScatterplotLayer, IconLayer, TextLayer } from "@deck.gl/layers";
 import { OrthographicView, PickingInfo } from "@deck.gl/core";
 import { clusterRgb } from "@/lib/palette";
-import { MousePointer2, Hand } from "lucide-react";
+import { MousePointer2, Hand, Maximize2 } from "lucide-react";
 
 export interface UmapPoint {
   x: number;
@@ -439,6 +439,20 @@ export default function UmapPlot({
           <MousePointer2 size={12} /> Select
         </button>
       </div>
+
+      {/* Reset view button (top-right) — snaps zoom + pan back to fit-all */}
+      <button
+        title="Reset zoom & pan to fit the whole atlas"
+        onClick={() =>
+          setViewState({
+            target: [bounds.cx, bounds.cy, 0],
+            zoom: bounds.zoom,
+          })
+        }
+        className="absolute top-2 right-2 flex items-center gap-1 rounded-md border border-slate-300 bg-white/95 px-2 py-1 text-[11px] font-semibold text-slate-700 shadow-sm transition hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700"
+      >
+        <Maximize2 size={12} /> Reset view
+      </button>
 
       <div
         className={`pointer-events-none absolute bottom-2 right-2 rounded-md px-3 py-1 text-[11px] shadow-sm ${
