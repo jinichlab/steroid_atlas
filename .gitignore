@@ -38,5 +38,14 @@ analysis/binder_audit_uniprot.json
 *_report.tsv
 *_report.json
 .env
-app/test_vis
-app/test_vis.py
+marimo/test_vis
+marimo/test_vis.py
+
+# ── web/ (Next.js) ────────────────────────────────────────────────────────
+web/node_modules/
+web/.next/
+web/out/
+web/build/
+web/.vercel/
+web/*.tsbuildinfo
+web/next-env.d.ts

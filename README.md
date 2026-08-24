@@ -6,24 +6,36 @@ An interactive UMAP atlas of steroid- and bile-acid-metabolizing enzymes and the
 - **677 steroid small molecules** with SMILES, verified ChEBI IDs, and RDKit-drawn structures
 - **2,889 natural + synthetic steroid entries** for chemical-space comparison
 - **15 literature-recruited proteins** from 5 audited papers, each with full evidence-based provenance
-- **Interactive visualizer** built on [marimo](https://marimo.io) + Altair + RDKit — clickable steroid catalogue, per-tile inline protein panels, rich detail cards with GO / keyword chips, PubMed refs, EC / Rhea reactions, UniProt + AlphaFold links, and modifier-based gestures (drag to select, shift+drag to pan, scroll to zoom)
+- **Two visualizers under one roof:**
+  - **`marimo/`** — Python + marimo + Altair + RDKit notebook, the original interactive tool: clickable steroid catalogue, per-tile inline protein panels, rich detail cards with GO / keyword chips, PubMed refs, EC / Rhea reactions, UniProt + AlphaFold links.
+  - **`web/`** — Next.js 14 + deck.gl web app, a redesigned frontend consuming the same data: WebGL scatter, zoom-conditional cluster labels, marimo-style hover tooltips, multi-column search (name / gene / GO / EC / ChEBI / …), pan-or-select toggle with persistent lasso, structure-thumbnail catalogue tiles, multi-select detail cards.
 - **AI chatbot** with retrieval over PubChem, Europe PMC, and ChEBI records for compound / protein questions  
   *(requires a personal OpenAI API key)*
 
 ## Quick start
 
-Clone and install requirements
+Clone once, run either visualizer:
 ```bash
 git clone https://github.com/jinichlab/steroid_atlas.git
 cd steroid_atlas
-pip install -r requirements.txt
-```
-Run and open the visualization tool
-```bash
-./app/run.sh
 ```
 
-Then open <http://localhost:2730>. If on a remote server, use `ssh -L 2730:localhost:2730 <you>@<server>` first.
+**Marimo (Python):**
+```bash
+pip install -r requirements.txt
+./marimo/run.sh
+# open http://localhost:2730
+```
+
+**Web (Next.js):**
+```bash
+cd web
+npm install
+npm run dev -- --port 3000
+# open http://localhost:3000
+```
+
+If on a remote server, tunnel first — e.g. `ssh -N -L 2730:localhost:2730 -L 3000:localhost:3000 <you>@<server>`.
 
 ## Repo layout
 
@@ -43,9 +55,16 @@ steroid-atlas/
 │   ├── literature_recruited_proteins.md   # human-readable version
 │   └── README.md                          # data dictionary
 │
-├── app/                                   # the visualizer
+├── marimo/                                # original marimo visualizer (Python)
 │   ├── visualizer.py                      # marimo notebook
 │   ├── run.sh                             # launcher script
+│   └── README.md
+│
+├── web/                                   # Next.js 14 + deck.gl web app
+│   ├── src/                               # App Router pages + client components
+│   ├── public/atlas/                      # pre-built JSON + structure PNGs
+│   ├── scripts/                           # build_atlas_data.py, build_structures.py
+│   ├── package.json
 │   └── README.md
 │
 ├── literature/                            # provenance materials
