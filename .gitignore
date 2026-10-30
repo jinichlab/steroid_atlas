@@ -49,3 +49,6 @@ web/build/
 web/.vercel/
 web/*.tsbuildinfo
 web/next-env.d.ts
+
+# Keep the literature-recruited protein embeddings tracked (small, canonical)
+!literature/embeddings/literature_recruited.h5
