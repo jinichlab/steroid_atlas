@@ -68,11 +68,24 @@ steroid-atlas/
 │   └── README.md
 │
 ├── literature/                            # provenance materials
-│   ├── scripts/                           # audit + fetch scripts (reproducible)
+│   ├── scripts/                           # audit + fetch + embedding-export scripts
+│   │   └── export_literature_recruited_fasta.py   # regenerates FASTA + manifest from proteins.csv
 │   ├── supplementary/                     # SI Excel files from cited papers
-│   ├── sequences/                         # fetched FASTAs organized per paper
-│   ├── embeddings/                        # ProtT5 embeddings + projection reports
+│   ├── sequences/
+│   │   ├── literature_recruited.fasta             # canonical 15-record FASTA
+│   │   ├── literature_recruited_manifest.tsv      # per-protein metadata (paper, UMAP, cluster)
+│   │   └── guzior/                                # per-paper candidate FASTAs
+│   ├── embeddings/
+│   │   └── literature_recruited.h5                # ProtT5 1024-d vectors (15 proteins, 72 KB)
 │   └── README.md
+│
+├── analysis/
+│   └── polish/                            # finalized paper-figure + CYP-superfamily scripts
+│       ├── 15d_cyp_landscape_cluster_ids.py       # Figure 2 Panel A
+│       ├── 16_panelB_cyp46_zoom.py                # Figure 2 Panel B
+│       ├── 17_panelsCD_cyp46_composition.py       # Figure 2 Panels C + D
+│       ├── 18_protein_vs_molecule_coupling.py     # protein × molecule coupling heatmap
+│       └── (18–22) CYP family rankings, within-family diversity, umbrella GO coverage
 │
 └── docs/
     ├── methodology.md                     # how the atlas was built
@@ -110,7 +123,36 @@ Full provenance in `data/literature_recruited_proteins.csv` and human-readable `
 
 ## Reproducibility
 
-All fetch + audit scripts under `literature/scripts/` are runnable. See `literature/README.md` for the end-to-end pipeline (download SI files → parse → fetch sequences → verify → append to atlas → embed → project into UMAP).
+**Literature-recruitment pipeline.** All fetch + audit scripts under `literature/scripts/` are runnable. See `literature/README.md` for the end-to-end pipeline (download SI files → parse → fetch sequences → verify → append to atlas → embed → project into UMAP).
+
+The 15 recruited proteins' ProtT5 1024-d per-protein vectors are tracked at `literature/embeddings/literature_recruited.h5` (72 KB) — no need to recompute to use the atlas. To regenerate from scratch:
+
+```bash
+# 1. canonical FASTA (reads from data/proteins.csv)
+python literature/scripts/export_literature_recruited_fasta.py
+
+# 2. ProtT5 embeddings (requires GPU; prot_t5_xl_half_uniref50-enc)
+python prott5_embedder.py \
+    -i literature/sequences/literature_recruited.fasta \
+    -o literature/embeddings/literature_recruited.h5 \
+    --per_protein 1
+```
+
+**Paper figures (Figure 2 and supporting analyses).** Finalized scripts live under `analysis/polish/`:
+
+| Script | Produces |
+|---|---|
+| `15d_cyp_landscape_cluster_ids.py` | Figure 2 Panel A — full atlas, CYP cluster palette |
+| `16_panelB_cyp46_zoom.py` | Figure 2 Panel B — CYP46 region zoom |
+| `17_panelsCD_cyp46_composition.py` | Figure 2 Panels C + D — taxonomy + CYP family breakdown |
+| `18_protein_vs_molecule_coupling.py` | 82×8 protein × molecule coupling heatmap |
+| `18_cyp_family_substrate_ranking.py` | CYP family substrate-Tanimoto ranking |
+| `19_cyp_subfamily_notable_trends.py` | CYP subfamily trend analysis |
+| `20_umbrella_go_coverage_estimate.py` | Umbrella-GO coverage estimate |
+| `21_umbrella_go_missing_lookup.py` | Missing umbrella-GO lookup |
+| `22_cyp_within_family_diversity.py` | Within-family Tanimoto + Jaccard diversity |
+
+Each script reads `data/proteins.csv` + `data/molecules.csv` and writes PDFs / PNGs / TSVs into `analysis/` on run (outputs are regenerable and not tracked).
 
 ## Citation
 
