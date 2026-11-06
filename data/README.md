@@ -29,13 +29,13 @@ One row per protein sequence. Deduplicated (no identical sequences repeated).
 | `sequence_source` | Where the sequence was fetched from + evidence trail |
 | `identifier_type` | UniProt / RefSeq_WP / Locus_Tag / NCBI_Genome |
 
-## `molecules.csv` — 677 rows × 10 columns
+## `molecules.csv` — 675 rows × 11 columns
 
 One row per steroid/bile-acid small molecule.
 
 | Column | Description |
 |---|---|
-| `compound_name` | Human-readable name (common or IUPAC) |
+| `compound_name` | Human-readable name (common or IUPAC). The atlas convention is to use the **canonical ChEBI name** when a ChEBI entry exists (e.g. `L-alanocholate`, not `Ala-CA`). |
 | `chebi_id` | ChEBI database ID (numeric, no `CHEBI:` prefix). Blank if no ChEBI entry known — never fabricated. |
 | `smiles` | SMILES string (canonical or as-published) |
 | `umap_1`, `umap_2` | 2D UMAP embedding of the RDKit Morgan fingerprint |
@@ -44,6 +44,7 @@ One row per steroid/bile-acid small molecule.
 | `paper_url` | Paper DOI (only if `is_literature_recruited=1`) |
 | `interacting_protein_accessions` | List of protein accessions known to act on this compound |
 | `chebi_url` | Direct link to the ChEBI page (blank if no ChEBI ID) |
+| `synonyms` | Alternative name(s) used in the literature for the same molecule — primarily the paper-side shorthand when the canonical ChEBI name is used in `compound_name`. Example: for `L-alanocholate` the `synonyms` field holds `Ala-CA` (the name used in Rimal 2024 / Guzior 2024 / Lucas 2023). Blank if no alternative is recorded. |
 
 ## `literature_recruited_proteins.csv` — 15 rows × 12 columns
 

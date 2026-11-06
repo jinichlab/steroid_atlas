@@ -19,6 +19,21 @@ Evidence we have walked through end-to-end is marked **✓ walked through**. The
 DOI: [10.1038/s41586-023-06990-w](https://doi.org/10.1038/s41586-023-06990-w)
 SI file in repo: `literature/supplementary/Rimal_2024_bsh_bfagilis.xlsx`
 
+### Naming convention — paper shorthand ↔ atlas canonical name
+
+Rimal 2024 (and the downstream MCBA literature) names amino-acid-conjugated cholates with a short code like `Ala-CA`. The atlas stores these under their **canonical ChEBI name** in `data/molecules.csv:compound_name` and carries the paper shorthand in the `synonyms` column (see `data/README.md` for the schema). Mapping for this paper's MCBAs:
+
+| Paper shorthand | Atlas `compound_name` | `chebi_id` | `synonyms` |
+|---|---|---|---|
+| `Ala-CA` | `L-alanocholate` | 229710 | `Ala-CA` |
+| `Ser-CA` | `L-serocholate` | 229711 | `Ser-CA` |
+| `Phe-CA` | `L-phenylalanocholate` | 229714 | `Phe-CA` |
+| `Tyr-CA` | `Tyr-CA` *(no canonical ChEBI entry; see note on row)* | — | — |
+| `His-CA` | `L-histidocholate` | 229712 | — *(not a product of Q5LF84 by Fig 2d; tracked separately)* |
+| `Thr-CA` | — *(not currently in the atlas as a dedicated row)* | — | — |
+
+A browser search on `Ala-CA` / `Ser-CA` / `Phe-CA` is intended to resolve to the canonical row via the `synonyms` column.
+
 ### `P0DXD2` — *Bifidobacterium longum* subsp. *longum* (NCTC 11818)
 
 - **Identifier type:** UniProt (Swiss-Prot curated)
