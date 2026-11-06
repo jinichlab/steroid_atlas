@@ -2,6 +2,20 @@
 
 Everything under this directory is provenance for the 15 literature-recruited protein entries in `../data/proteins.csv` (rows where `is_literature_recruited=1`). Every script is runnable and every fetched artifact is preserved.
 
+## Where did each recruited protein come from?
+
+Per-protein evidence trail — paper DOI, specific figure/table that provides the activity evidence, SI file in this repo (if present), and the protein-ID attribution strategy (direct mention vs. strain + annotation inference):
+
+**→ [`data/literature_recruited_proteins.md`](../data/literature_recruited_proteins.md)**
+
+Entries marked **✓ walked through** have been audited end-to-end (paper panels inspected, strain/locus-tag/accession attribution verified). Entries marked **pending — not yet walked through** are accepted based on the paper's overall claim but have not yet been audited against the specific SI panel. One entry (`Q8A6H3`) is flagged for paper-attribution re-audit.
+
+The per-protein sequences are bundled in one place:
+
+- FASTA: [`sequences/literature_recruited.fasta`](sequences/literature_recruited.fasta) (15 entries)
+- Manifest: [`sequences/literature_recruited_manifest.tsv`](sequences/literature_recruited_manifest.tsv)
+- ProtT5 embeddings: [`embeddings/literature_recruited.h5`](embeddings/literature_recruited.h5)
+
 ## Layout
 
 ```
