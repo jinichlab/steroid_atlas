@@ -7,7 +7,9 @@ This document lists every protein added to `data/proteins.csv` beyond the initia
 - the **SI file in this repo** (if we have it locally),
 - the **protein-ID attribution strategy** — how the paper's description was matched to the identifier we use in the atlas (direct mention vs. strain + annotation inference).
 
-**Total:** 15 entries across 6 papers.
+**Total:** 14 entries across 5 papers.
+
+> **Previously** this document listed 15 entries across 6 papers. `WP_243289361` (CpBSH/T, *Clostridium perfringens* ATCC 13124), previously attributed to Guzior 2024, was removed on re-audit after the paper attribution did not hold up. The Guzior 2024 paper now contributes **molecules only** (its 9 MCBA products) to the atlas. The Guzior-side scripts and provenance JSONs under `literature/scripts/` and `literature/guzior2024_*.json` are kept as historical audit trail.
 
 Evidence we have walked through end-to-end is marked **✓ walked through**. The others are marked **pending — not yet walked through**, meaning the rows in the atlas were accepted based on the paper's overall claim but the exact figure/panel attribution hasn't been audited yet.
 
@@ -64,21 +66,13 @@ A browser search on `Ala-CA` / `Ser-CA` / `Phe-CA` is intended to resolve to the
 
 ---
 
-## Guzior 2024 — pending re-audit of SI tables
+## Guzior 2024 — molecule-side only
 
 **Guzior, D.V. et al. Bile salt hydrolase acyltransferase activity expands bile acid diversity. *Nature* 626, 852–858 (2024).**
 DOI: [10.1038/s41586-024-07017-8](https://doi.org/10.1038/s41586-024-07017-8)
 SI file in repo: `literature/supplementary/Guzior2024_SupplTables.xlsx`
 
-### `WP_243289361` — *Clostridium perfringens* (ATCC 13124)
-
-- **Identifier type:** RefSeq_WP
-- **Length:** 329 aa
-- **Evidence type:** Biochemical (kinetics + mutagenesis + structure)
-- **Paper evidence location:** Main text + Supp Table 1 (CpBSH/T). Structure: PDB 2BJG. *(exact SI panel/tab pending — not yet walked through)*
-- **Why recruited:** CpBSH/T — the only Guzior 2024 protein with direct biochemical evidence. Bifunctional BSH (EC 3.5.1.24, pH 3–7) AND novel amine N-acyltransferase (EC 2.3.1.-, pH optimum 5.3). Peak acyl transfer = 7% of hydrolysis rate. Substrate scope: 16/20 amino acids from TCA, 12/20 from CA; Pro and Asp never conjugated. Mutants: C2A abolishes both activities; N82Y preserves activity but shifts specificity. Other Guzior 2024 Table 1 entries were deliberately NOT added — no protein-level biochemical evidence.
-- **Protein-ID attribution strategy:** pending — not yet walked through
-- **In atlas UMAP:** yes
+This paper contributes 9 MCBA products to `data/molecules.csv` (Ala-, Ser-, Glu-, His-, Ile-, Val-, Lys-, Ala-, Glu-CDCA — see the per-molecule `paper_url` filter). **No protein rows** are recruited from Guzior 2024. A previous version of this doc listed `WP_243289361` (CpBSH/T) under Guzior 2024; that row was removed on re-audit because the paper attribution did not hold up.
 
 ---
 

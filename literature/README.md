@@ -1,6 +1,8 @@
 # Literature audit pipeline
 
-Everything under this directory is provenance for the 15 literature-recruited protein entries in `../data/proteins.csv` (rows where `is_literature_recruited=1`). Every script is runnable and every fetched artifact is preserved.
+Everything under this directory is provenance for the 14 literature-recruited protein entries in `../data/proteins.csv` (rows where `is_literature_recruited=1`). Every script is runnable and every fetched artifact is preserved.
+
+> The CpBSH/T entry `WP_243289361` (previously attributed to Guzior 2024) was removed on re-audit, dropping the count from 15 → 14. Guzior-side scripts and audit JSONs are retained as historical provenance.
 
 ## Where did each recruited protein come from?
 
