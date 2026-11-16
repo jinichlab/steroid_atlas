@@ -1,7 +1,7 @@
 # Steroid Atlas — Web
 
 A **Next.js + deck.gl** frontend for the [Steroid Atlas](https://github.com/jinichlab/steroid_atlas):
-an interactive UMAP of **14,089 steroid-interacting proteins**, **677 steroid
+an interactive UMAP of **14,087 steroid-interacting proteins**, **842 steroid
 molecules**, and **2,889 natural + synthetic steroid entries**, curated from
 UniProt, Rhea, ChEBI, RefSeq, and hand-audited 2024–2026 literature
 recruitments.
@@ -13,10 +13,10 @@ and a multi-column search bar.
 
 ## Features
 
-- **WebGL UMAP** (deck.gl `ScatterplotLayer` + `IconLayer`) — 14 k points
+- **WebGL UMAP** (deck.gl `ScatterplotLayer` + `IconLayer`) — 14 k protein points
   in a single frame, smooth pan + zoom, no jank
 - **Three views**: *Protein centric* (82 clusters), *Steroid centric*
-  (8 family-labeled clusters), *Natural + synthetic* (2 groups)
+  (10 chemistry-labeled clusters: MCBAs, Cholestanes, Androstanes, Estranes, Plant/fungal sterols, Alkamines), *Natural + synthetic* (2 groups)
 - **Zoom-conditional cluster labels** at each centroid (family stem +
   cluster id), just like the marimo Vega version
 - **Marimo-style hover tooltip**: name · accession · gene · organism ·
@@ -28,7 +28,7 @@ and a multi-column search bar.
   drag = lasso rectangle; the last drawn rectangle **persists** on the map
   for reference until you clear it
 - **Steroid catalogue tiles** with pre-rendered 2D structure PNGs (RDKit
-  → 2,441 unique files) — click a tile → per-compound protein list → tick
+  → ~2,630 unique files) — click a tile → per-compound protein list → tick
   any rows to open their full detail cards side-by-side
 - **Multi-select detail cards** with EC badges, Rhea links, GO / Keyword
   chips, PubMed refs, UniProt + AlphaFold links, and a 3-column grid of
