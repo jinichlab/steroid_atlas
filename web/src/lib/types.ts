@@ -21,6 +21,12 @@ export interface Protein {
   is_literature_recruited: number;
   paper_url: string;
   audit_decision: string;
+  identifier_type?: string;
+  putative_role?: string;
+  cluster_level_evidence?: string;
+  annotation?: string;
+  reaction_descriptions?: string;
+  sequence_source?: string;
 }
 
 export interface Molecule {
@@ -33,6 +39,10 @@ export interface Molecule {
   is_literature_recruited: number;
   paper_url: string;
   interacting_protein_accessions: string;
+  synonyms?: string;
+  evidence_tier?: string;
+  evidence_note?: string;
+  gentry_producers?: string;
 }
 
 export interface NatsynEntry {

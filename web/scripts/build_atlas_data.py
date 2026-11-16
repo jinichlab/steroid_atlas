@@ -44,7 +44,10 @@ _PROT_COLS = [
     "pubmed_ids", "pubmed_count",
     "umap_1", "umap_2", "cluster",
     "is_literature_recruited", "paper_url",
-    "audit_decision",
+    "audit_decision", "identifier_type",
+    "annotation", "reaction_descriptions", "sequence_source",
+    "putative_role", "cluster_level_evidence",
+    "atlas_inclusion_rationale",
 ]
 _kept = [c for c in _PROT_COLS if c in prot.columns]
 prot = prot[_kept].fillna("")
@@ -71,6 +74,7 @@ _MOL_COLS = [
     "umap_1", "umap_2", "cluster",
     "is_literature_recruited", "paper_url",
     "interacting_protein_accessions",
+    "synonyms", "evidence_tier", "evidence_note", "gentry_producers",
 ]
 mol = mol[[c for c in _MOL_COLS if c in mol.columns]].fillna("")
 for _c in ("umap_1", "umap_2"):

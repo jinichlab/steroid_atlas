@@ -1,1 +1,79 @@
-[{"id": 0, "display_id": 1, "n": 213, "name": "Bile acids \u00b7 66%", "top_go": ""}, {"id": 1, "display_id": 2, "n": 145, "name": "Androgens \u00b7 30%", "top_go": ""}, {"id": 2, "display_id": 3, "n": 96, "name": "Sterols \u00b7 31%", "top_go": ""}, {"id": 3, "display_id": 4, "n": 32, "name": "Bile acids \u00b7 100%", "top_go": ""}, {"id": 4, "display_id": 5, "n": 113, "name": "Androgens \u00b7 19%", "top_go": ""}, {"id": 5, "display_id": 6, "n": 27, "name": "Bile acids \u00b7 63%", "top_go": ""}, {"id": 6, "display_id": 7, "n": 27, "name": "Estrogens \u00b7 100%", "top_go": ""}, {"id": 7, "display_id": 8, "n": 22, "name": "Estrogens \u00b7 100%", "top_go": ""}]
+[
+  {
+    "id": -1,
+    "display_id": 0,
+    "n": 113,
+    "name": "Unclustered / noise",
+    "top_go": ""
+  },
+  {
+    "id": 0,
+    "display_id": 1,
+    "n": 50,
+    "name": "Estranes (C18)",
+    "top_go": ""
+  },
+  {
+    "id": 1,
+    "display_id": 2,
+    "n": 66,
+    "name": "MCBAs (amino acid\u2013BA amidates)",
+    "top_go": ""
+  },
+  {
+    "id": 2,
+    "display_id": 3,
+    "n": 37,
+    "name": "Cholestanes (C27 sterols)",
+    "top_go": ""
+  },
+  {
+    "id": 3,
+    "display_id": 4,
+    "n": 69,
+    "name": "Cholestanes (C27 sterols)",
+    "top_go": ""
+  },
+  {
+    "id": 4,
+    "display_id": 5,
+    "n": 181,
+    "name": "Androstanes (C19)",
+    "top_go": ""
+  },
+  {
+    "id": 5,
+    "display_id": 6,
+    "n": 89,
+    "name": "Cholestanes (C27 sterols)",
+    "top_go": ""
+  },
+  {
+    "id": 6,
+    "display_id": 7,
+    "n": 27,
+    "name": "MCBAs (amino acid\u2013BA amidates)",
+    "top_go": ""
+  },
+  {
+    "id": 7,
+    "display_id": 8,
+    "n": 39,
+    "name": "MCBAs (amino acid\u2013BA amidates) \u00b7 deoxycholate",
+    "top_go": ""
+  },
+  {
+    "id": 8,
+    "display_id": 9,
+    "n": 128,
+    "name": "Cholestanes (C27 sterols)",
+    "top_go": ""
+  },
+  {
+    "id": 9,
+    "display_id": 10,
+    "n": 43,
+    "name": "MCBAs (amino acid\u2013BA amidates) \u00b7 cholate",
+    "top_go": ""
+  }
+]

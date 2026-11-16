@@ -4,13 +4,23 @@ Everything under this directory is provenance for the 14 literature-recruited pr
 
 > The CpBSH/T entry `WP_243289361` (previously attributed to Guzior 2024) was removed on re-audit, dropping the count from 15 → 14. Guzior-side scripts and audit JSONs are retained as historical provenance.
 
+## Where did each recruited molecule come from?
+
+Per-molecule evidence trail — paper DOI, specific figure/table that provides the structural + detection evidence, SI files in this repo, chemistry provenance (SMILES derivation + mass validation), and evidence tier (chemistry-only → cross-cohort validated):
+
+**→ [`literature_recruited_molecules.md`](literature_recruited_molecules.md)**
+
+Entries marked **✓ walked through** have been audited end-to-end (paper figures inspected, SMILES mass-validated, evidence tier assigned from the paper's own evidence hierarchy). Covers Gentry 2023 (168 bile amidates), Mohanty 2024 (17 polyamine amidates), and partial coverage of Lucas 2026 CSBAs.
+
+---
+
 ## Where did each recruited protein come from?
 
 Per-protein evidence trail — paper DOI, specific figure/table that provides the activity evidence, SI file in this repo (if present), and the protein-ID attribution strategy (direct mention vs. strain + annotation inference):
 
-**→ [`data/literature_recruited_proteins.md`](../data/literature_recruited_proteins.md)**
+**→ [`literature_recruited_proteins.md`](literature_recruited_proteins.md)**
 
-Entries marked **✓ walked through** have been audited end-to-end (paper panels inspected, strain/locus-tag/accession attribution verified). Entries marked **pending — not yet walked through** are accepted based on the paper's overall claim but have not yet been audited against the specific SI panel. One entry (`Q8A6H3`) is flagged for paper-attribution re-audit.
+Entries marked **✓ walked through** have been audited end-to-end (paper panels inspected, strain/locus-tag/accession attribution verified). Entries marked **pending — not yet walked through** are accepted based on the paper's overall claim but have not yet been audited against the specific SI panel.
 
 The per-protein sequences are bundled in one place:
 

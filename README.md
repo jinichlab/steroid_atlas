@@ -52,7 +52,6 @@ steroid-atlas/
 │   ├── molecules.csv                      # 677 rows × 10 cols
 │   ├── natural_synthetic_steroids.csv     # 2,889 rows × 7 cols
 │   ├── literature_recruited_proteins.csv  # 15 rows × 12 cols — provenance
-│   ├── literature_recruited_proteins.md   # human-readable version
 │   └── README.md                          # data dictionary
 │
 ├── marimo/                                # original marimo visualizer (Python)
@@ -68,6 +67,7 @@ steroid-atlas/
 │   └── README.md
 │
 ├── literature/                            # provenance materials
+│   ├── literature_recruited_proteins.md   # per-paper evidence trail (walked-through audits)
 │   ├── scripts/                           # audit + fetch + embedding-export scripts
 │   │   └── export_literature_recruited_fasta.py   # regenerates FASTA + manifest from proteins.csv
 │   ├── supplementary/                     # SI Excel files from cited papers

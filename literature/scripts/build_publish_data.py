@@ -83,8 +83,12 @@ import shutil
 shutil.copy2(SRC / "literature_recruited_proteins.csv", DST / "literature_recruited_proteins.csv")
 print(f"  -> {DST/'literature_recruited_proteins.csv'}")
 
-# Also copy the markdown version
-shutil.copy2(SRC / "literature_recruited_proteins.md", DST / "literature_recruited_proteins.md")
-print(f"  -> {DST/'literature_recruited_proteins.md'}")
+# NOTE: literature_recruited_proteins.md is now AUTHORED directly in the atlas
+# repo at literature/literature_recruited_proteins.md (moved out of data/ for
+# organizational clarity). It is no longer synced from the dev-side SRC — doing
+# so would overwrite the hand-curated per-paper walk-throughs. To update the
+# atlas copy, edit it in place.
+# shutil.copy2(SRC / "literature_recruited_proteins.md", DST / "literature_recruited_proteins.md")
+# print(f"  -> {DST/'literature_recruited_proteins.md'}")
 
 print("\nDone.")

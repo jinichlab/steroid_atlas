@@ -107,7 +107,24 @@ export default function ExploreClient({ kind, clusters }: Props) {
   const [rows, setRows] = useState<Row[]>([]);
   const [loading, setLoading] = useState(true);
   const [structIdx, setStructIdx] = useState<StructIndex>({});
-  const [highlight, setHighlight] = useState<number | null>(null);
+  // Multi-select cluster picker — click any cluster row to toggle it in
+  // or out of the highlight set. Empty set = no highlight (show all).
+  const [highlightSet, setHighlightSet] = useState<Set<number>>(new Set());
+  const toggleClusterHighlight = (cid: number) =>
+    setHighlightSet((cur) => {
+      const next = new Set(cur);
+      if (next.has(cid)) next.delete(cid);
+      else next.add(cid);
+      return next;
+    });
+  const clearClusterHighlight = () => setHighlightSet(new Set());
+  // Convenience: single scalar for the old code paths (first selection,
+  // used for cluster-label centroid display). Empty set → null.
+  const highlight = highlightSet.size ? Array.from(highlightSet)[0] : null;
+  const setHighlight = (v: number | null) => {
+    if (v == null) setHighlightSet(new Set());
+    else setHighlightSet(new Set([v]));
+  };
   const [selectionSet, setSelectionSet] = useState<Set<string> | null>(null);
   const [focusedPoint, setFocusedPoint] = useState<Row | null>(null);
   const [focusedCompound, setFocusedCompound] = useState<string | null>(null);
@@ -131,6 +148,19 @@ export default function ExploreClient({ kind, clusters }: Props) {
   // A bumping counter that tells UmapPlot to erase its sticky rectangle
   // when the user hits the top-of-plot "clear" button.
   const [lassoClearSignal, setLassoClearSignal] = useState(0);
+  // Steroid filter — protein view only. When a steroid is picked from
+  // the autocomplete, we highlight proteins whose interacting_chebi_ids
+  // contain that ChEBI id. Populated from molecules.json.
+  const [steroidList, setSteroidList] = useState<
+    { name: string; chebi: string; smiles: string }[]
+  >([]);
+  const [steroidQuery, setSteroidQuery] = useState("");
+  const [pickedSteroid, setPickedSteroid] = useState<{
+    name: string;
+    chebi: string;
+    smiles: string;
+  } | null>(null);
+  const [steroidDropdownOpen, setSteroidDropdownOpen] = useState(false);
 
   useEffect(() => {
     let alive = true;
@@ -158,6 +188,31 @@ export default function ExploreClient({ kind, clusters }: Props) {
       alive = false;
     };
   }, []);
+
+  // Load molecule list once — used to power the steroid filter dropdown
+  // in the protein view. Cheap: ~3 MB JSON, cached by the browser.
+  useEffect(() => {
+    if (kind !== "protein") return;
+    let alive = true;
+    fetch("/atlas/molecules.json")
+      .then((r) => r.json())
+      .then((d: Molecule[]) => {
+        if (!alive) return;
+        const list = d
+          .map((m) => ({
+            name: (m.compound_name || "").trim(),
+            chebi: (m.chebi_id || "").toString().trim(),
+            smiles: (m.smiles || "").trim(),
+          }))
+          .filter((x) => x.name && x.chebi)
+          .sort((a, b) => a.name.localeCompare(b.name));
+        setSteroidList(list);
+      })
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, [kind]);
 
   const structUrl = (name: string, chebi?: string): string | null => {
     const nm = (name || "").toLowerCase();
@@ -275,18 +330,147 @@ export default function ExploreClient({ kind, clusters }: Props) {
     [clusters],
   );
 
+  // ── Per-cluster protein-type classification (runtime) ──────────────────
+  // For each cluster we count how many of its proteins are Enzyme /
+  // Transporter / Receptor / Other, then assign a dominant type when one
+  // class holds ≥60% share. Powers the sidebar sort + filter controls.
+  type ProteinType =
+    | "Enzyme"
+    | "Transporter"
+    | "Receptor"
+    | "Other"
+    | "Mixed";
+  const clusterTypeMap = useMemo<
+    Map<number, { dominant: ProteinType; counts: Record<ProteinType, number> }>
+  >(() => {
+    const m = new Map<
+      number,
+      { dominant: ProteinType; counts: Record<ProteinType, number> }
+    >();
+    if (kind !== "protein" || !rows.length) return m;
+
+    const classify = (r: Protein): ProteinType => {
+      const ec = (r.ec_numbers ?? "").trim();
+      if (ec && /\d/.test(ec)) return "Enzyme";
+      const kw = (r.keyword_labels ?? "").toLowerCase();
+      if (kw.includes("transport") || kw.includes("ion channel") ||
+          kw.includes("symporter") || kw.includes("antiporter")) {
+        return "Transporter";
+      }
+      if (kw.includes("receptor")) return "Receptor";
+      return "Other";
+    };
+
+    const perCluster = new Map<number, Record<ProteinType, number>>();
+    for (const r of rows as Protein[]) {
+      const c = Number((r as any).cluster);
+      const t = classify(r);
+      let e = perCluster.get(c);
+      if (!e) {
+        e = { Enzyme: 0, Transporter: 0, Receptor: 0, Other: 0, Mixed: 0 };
+        perCluster.set(c, e);
+      }
+      e[t] += 1;
+    }
+
+    for (const [cid, counts] of perCluster) {
+      const total = counts.Enzyme + counts.Transporter + counts.Receptor +
+        counts.Other;
+      let dominant: ProteinType = "Mixed";
+      for (const t of ["Enzyme", "Transporter", "Receptor", "Other"] as
+          ProteinType[]) {
+        if (counts[t] / total >= 0.6) {
+          dominant = t;
+          break;
+        }
+      }
+      m.set(cid, { dominant, counts });
+    }
+    return m;
+  }, [rows, kind]);
+
+  // Sidebar controls
+  const [clusterSortMode, setClusterSortMode] = useState<
+    "id" | "size" | "type" | "name"
+  >("id");
+  const [typeFilter, setTypeFilter] = useState<Set<ProteinType>>(
+    new Set(["Enzyme", "Transporter", "Receptor", "Other", "Mixed"]),
+  );
+
+  const TYPE_COLOR: Record<ProteinType, string> = {
+    Enzyme:      "#2563eb",
+    Transporter: "#16a34a",
+    Receptor:    "#ea580c",
+    Other:       "#a855f7",
+    Mixed:       "#64748b",
+  };
+
+  // Compute the sorted + filtered cluster list for the sidebar.
+  const clustersForSidebar = useMemo(() => {
+    let arr = [...clusters];
+    if (kind === "protein" && clusterTypeMap.size) {
+      arr = arr.filter((c) => {
+        const t = clusterTypeMap.get(c.id)?.dominant ?? "Mixed";
+        return typeFilter.has(t);
+      });
+    }
+    if (clusterSortMode === "size") {
+      arr.sort((a, b) => b.n - a.n);
+    } else if (clusterSortMode === "name") {
+      arr.sort((a, b) => (a.name || "").localeCompare(b.name || ""));
+    } else if (clusterSortMode === "type") {
+      const order: Record<ProteinType, number> = {
+        Enzyme: 0, Transporter: 1, Receptor: 2, Other: 3, Mixed: 4,
+      };
+      arr.sort((a, b) => {
+        const ta = clusterTypeMap.get(a.id)?.dominant ?? "Mixed";
+        const tb = clusterTypeMap.get(b.id)?.dominant ?? "Mixed";
+        if (order[ta] !== order[tb]) return order[ta] - order[tb];
+        return b.n - a.n;
+      });
+    } else {
+      arr.sort((a, b) => a.id - b.id);
+    }
+    return arr;
+  }, [clusters, clusterSortMode, typeFilter, clusterTypeMap, kind]);
+
+  // Steroid filter — for each protein, does its interacting_chebi_ids or
+  // interacting_compounds mention the picked steroid? Match is by ChEBI
+  // id first (precise) with a compound-name fallback (for entries that
+  // list the compound by name but not chebi id).
+  const steroidMatchKeys = useMemo<Set<string> | null>(() => {
+    if (kind !== "protein" || !pickedSteroid) return null;
+    const chebi = pickedSteroid.chebi;
+    const nameLower = pickedSteroid.name.toLowerCase();
+    const s = new Set<string>();
+    for (const r of rows as Protein[]) {
+      const chebiField = (r.interacting_chebi_ids ?? "").toString();
+      const compField = (r.interacting_compounds ?? "").toLowerCase();
+      // Match ChEBI id as a stand-alone token (avoid substring collisions
+      // like 46 matching 46000). Look for it between non-digit boundaries.
+      const chebiRe = new RegExp(`(^|[^0-9])${chebi}([^0-9]|$)`);
+      if (chebiRe.test(chebiField) || compField.includes(nameLower)) {
+        s.add(rowKey(kind, r));
+      }
+    }
+    return s;
+  }, [kind, pickedSteroid, rows]);
+
   const pool = useMemo(() => {
+    if (steroidMatchKeys && steroidMatchKeys.size) {
+      return rows.filter((r) => steroidMatchKeys.has(rowKey(kind, r)));
+    }
     if (searchMatchKeys && searchMatchKeys.size) {
       return rows.filter((r) => searchMatchKeys.has(rowKey(kind, r)));
     }
     if (selectionSet && selectionSet.size) {
       return rows.filter((r) => selectionSet.has(rowKey(kind, r)));
     }
-    if (highlight != null) {
-      return rows.filter((r) => Number((r as any).cluster) === highlight);
+    if (highlightSet.size > 0) {
+      return rows.filter((r) => highlightSet.has(Number((r as any).cluster)));
     }
     return [];
-  }, [rows, highlight, selectionSet, searchMatchKeys, kind]);
+  }, [rows, highlightSet, selectionSet, searchMatchKeys, steroidMatchKeys, kind]);
 
   const compoundTiles = useMemo(() => {
     if (kind !== "protein" || !pool.length) return [];
@@ -388,6 +572,160 @@ export default function ExploreClient({ kind, clusters }: Props) {
           )}
         </div>
 
+        {/* Steroid filter — protein view only. Autocomplete over the 677
+            steroid molecules; picking one highlights every protein that
+            interacts with it via ChEBI id or compound-name match. */}
+        {kind === "protein" && (
+          <div className="mb-3 flex flex-wrap items-center gap-2">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder={
+                  pickedSteroid
+                    ? pickedSteroid.name
+                    : "🧬 Filter by steroid — name, ChEBI id, or SMILES…"
+                }
+                value={steroidQuery}
+                onFocus={() => setSteroidDropdownOpen(true)}
+                onChange={(e) => {
+                  setSteroidQuery(e.target.value);
+                  setSteroidDropdownOpen(true);
+                }}
+                className="w-[520px] max-w-full rounded-md border border-amber-300 bg-amber-50 px-3 py-1.5 text-sm shadow-sm focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-100"
+              />
+              {steroidDropdownOpen && steroidQuery.trim().length >= 2 && (
+                <div className="absolute left-0 top-full z-30 mt-1 max-h-[320px] w-[520px] max-w-full overflow-y-auto rounded-md border border-slate-300 bg-white shadow-lg">
+                  {(() => {
+                    const raw = steroidQuery.trim();
+                    const q = raw.toLowerCase();
+                    const isChebi = /^chebi[:_ -]?\d+$/i.test(raw)
+                      || /^\d{2,}$/.test(raw);
+                    const chebiNum = isChebi
+                      ? raw.replace(/[^0-9]/g, "")
+                      : "";
+                    const looksLikeSmiles = /[()=\[\]#\\/]/.test(raw)
+                      || /[A-Z]/.test(raw);
+
+                    // Score each match — lower is better. Sorts so:
+                    // 1) exact name match  (score 0)
+                    // 2) name starts with query at a word boundary (1)
+                    // 3) name starts with query mid-word (2)
+                    // 4) query appears as a whole word (3)
+                    // 5) substring match anywhere (4)
+                    // 6) chebi / smiles matches (5)
+                    // Ties broken by shorter name (parent compound wins).
+                    const score = (s: { name: string; smiles: string; chebi: string }) => {
+                      const lower = s.name.toLowerCase();
+                      if (lower === q) return 0;
+                      // followed by common boundary chars
+                      if (lower.startsWith(q + " ") ||
+                          lower.startsWith(q + "-") ||
+                          lower.startsWith(q + ",") ||
+                          lower.startsWith(q + "(") ||
+                          lower.startsWith(q + "/") ||
+                          lower.startsWith(q + ":")) return 1;
+                      if (lower.startsWith(q)) return 2;
+                      // whole-word match somewhere in the name
+                      const wordRe = new RegExp(
+                        `(?:^|[\\s\\-,/():])${q.replace(
+                          /[-\/\\^$*+?.()|[\]{}]/g, "\\$&")}(?:$|[\\s\\-,/():])`);
+                      if (wordRe.test(lower)) return 3;
+                      if (lower.includes(q)) return 4;
+                      // ChEBI id or SMILES fallback
+                      if (chebiNum && s.chebi === chebiNum) return 5;
+                      if (looksLikeSmiles && s.smiles &&
+                          s.smiles.includes(raw)) return 5;
+                      return 999;
+                    };
+
+                    const matches = steroidList
+                      .map((s) => ({ s, sc: score(s) }))
+                      .filter((x) => x.sc < 999)
+                      .sort((a, b) => {
+                        if (a.sc !== b.sc) return a.sc - b.sc;
+                        // tie-break: shorter names first (parent compound
+                        // usually wins over its acetate/glucuronate)
+                        return a.s.name.length - b.s.name.length;
+                      })
+                      .slice(0, 30)
+                      .map((x) => x.s);
+                    if (matches.length === 0) {
+                      return (
+                        <div className="px-3 py-2 text-xs text-slate-500">
+                          No steroid matches "{steroidQuery}"{" "}
+                          <span className="text-slate-400">
+                            (tried name, ChEBI id, and SMILES substring)
+                          </span>
+                        </div>
+                      );
+                    }
+                    return matches.map((s) => (
+                      <button
+                        key={s.chebi}
+                        onClick={() => {
+                          setPickedSteroid(s);
+                          setSteroidQuery("");
+                          setSteroidDropdownOpen(false);
+                          setHighlight(null);
+                          setFocusedPoint(null);
+                          setFocusedCompound(null);
+                          clearFocusedProteins();
+                        }}
+                        className="flex w-full flex-col gap-0.5 border-b border-slate-100 px-3 py-1.5 text-left text-xs hover:bg-amber-50"
+                      >
+                        <div className="flex items-baseline gap-2">
+                          <span className="text-slate-900">{s.name}</span>
+                          <span className="ml-auto font-mono text-[10px] text-slate-500">
+                            CHEBI:{s.chebi}
+                          </span>
+                        </div>
+                        {s.smiles && (
+                          <div className="truncate font-mono text-[10px] text-slate-500">
+                            {s.smiles}
+                          </div>
+                        )}
+                      </button>
+                    ));
+                  })()}
+                </div>
+              )}
+            </div>
+            {pickedSteroid && (
+              <>
+                <div className="rounded-md border border-amber-500 bg-amber-100 px-2 py-1 text-xs text-amber-800">
+                  🧬 <b>{pickedSteroid.name}</b>
+                  <span className="ml-2 font-mono text-[10px]">
+                    CHEBI:{pickedSteroid.chebi}
+                  </span>
+                  <span className="ml-2 font-semibold">
+                    → {steroidMatchKeys?.size.toLocaleString() ?? 0}{" "}
+                    interacting proteins
+                  </span>
+                </div>
+                <button
+                  className="rounded border border-slate-300 bg-white px-2 py-1 text-xs text-slate-700 hover:bg-slate-100"
+                  onClick={() => setPickedSteroid(null)}
+                >
+                  ✕ clear steroid
+                </button>
+              </>
+            )}
+            {steroidList.length === 0 && !pickedSteroid && (
+              <div className="text-xs text-slate-400">
+                loading steroid list…
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Close the steroid dropdown when clicking elsewhere on the page */}
+        {steroidDropdownOpen && (
+          <div
+            className="fixed inset-0 z-20"
+            onClick={() => setSteroidDropdownOpen(false)}
+          />
+        )}
+
         {/* Above-plot legend */}
         <div className="mb-2 flex flex-wrap items-center gap-4 text-xs text-slate-600">
           <span className="inline-flex items-center gap-1">
@@ -408,7 +746,8 @@ export default function ExploreClient({ kind, clusters }: Props) {
             <span className="inline-block h-3 w-3 rounded-full bg-cyan-500 ring-2 ring-rose-500" />{" "}
             selected dot
           </span>
-          {(highlight != null || focusedPoint || selectionSet || search) && (
+          {(highlight != null || focusedPoint || selectionSet || search ||
+            pickedSteroid) && (
             <button
               className="ml-auto rounded-md border border-slate-300 bg-white px-2 py-1 text-slate-700 hover:bg-slate-100"
               onClick={() => {
@@ -418,6 +757,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
                 setFocusedCompound(null);
                 clearFocusedProteins();
                 setSearch("");
+                setPickedSteroid(null);
                 setLassoClearSignal((n) => n + 1);
               }}
             >
@@ -431,13 +771,22 @@ export default function ExploreClient({ kind, clusters }: Props) {
             <UmapPlot
               points={points}
               clusterLabels={clusterLabels}
-              highlightCluster={highlight}
+              highlightCluster={highlightSet.size === 1 ? highlight : null}
               matchKeys={
-                searchMatchKeys && searchMatchKeys.size
-                  ? searchMatchKeys
-                  : selectionSet && selectionSet.size
-                    ? selectionSet
-                    : null
+                steroidMatchKeys && steroidMatchKeys.size
+                  ? steroidMatchKeys
+                  : searchMatchKeys && searchMatchKeys.size
+                    ? searchMatchKeys
+                    : selectionSet && selectionSet.size
+                      ? selectionSet
+                      : highlightSet.size > 1
+                        ? new Set(
+                            points
+                              .filter((p) => highlightSet.has(p.cluster))
+                              .map((p) => p.key!)
+                              .filter(Boolean),
+                          )
+                        : null
               }
               focusedKey={focusedPointKey}
               darkMode={false}
@@ -478,23 +827,120 @@ export default function ExploreClient({ kind, clusters }: Props) {
                       : ""}
                   </div>
                 )}
+                {kind === "protein" && (focusedPoint as Protein).putative_role && (
+                  <div className="mt-2 inline-flex items-start gap-2 rounded border border-amber-400 bg-amber-50 px-2 py-1 text-xs text-amber-900">
+                    <span className="font-semibold">⚠ Putative:</span>
+                    <span>{(focusedPoint as Protein).putative_role}</span>
+                  </div>
+                )}
+                {kind === "molecule" && (() => {
+                  const m = focusedPoint as Molecule;
+                  const src = structUrl(m.compound_name, m.chebi_id);
+                  return (
+                    <>
+                      <div className="mt-1 text-sm text-slate-600">
+                        {m.chebi_id
+                          ? <span>CHEBI:{m.chebi_id}</span>
+                          : <span className="italic text-slate-500">no canonical ChEBI</span>}
+                        {m.is_literature_recruited
+                          ? <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-800">★ newly recruited</span>
+                          : null}
+                      </div>
+                      {src ? (
+                        <div className="mt-2 flex items-center justify-center rounded-md border border-slate-200 bg-white p-2" style={{maxHeight: 220}}>
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={src} alt={m.compound_name} className="max-h-[200px] max-w-full object-contain" />
+                        </div>
+                      ) : (
+                        <div className="mt-2 rounded-md border border-dashed border-slate-300 bg-slate-50 p-3 text-center text-xs italic text-slate-500">
+                          (no 2D structure image available — SMILES: <span className="font-mono">{(m.smiles || "").slice(0,60)}…</span>)
+                        </div>
+                      )}
+                    </>
+                  );
+                })()}
+                {kind === "molecule" && (focusedPoint as Molecule).evidence_tier && (() => {
+                  const tier = (focusedPoint as Molecule).evidence_tier;
+                  const label =
+                    tier === "1" ? "⚠ Chemistry reference only — no biological detection"
+                    : tier === "2" ? "⚠ MS/MS match in public data (isomer uncertain)"
+                    : tier === "3" ? "✓ Detected in human IBD stool (iHMP2, isomer-resolved)"
+                    : tier === "4-5" ? "✓ Cross-cohort validated in human IBD (iHMP2 + Boland)"
+                    : tier === "5" ? "✓ Produced by gut bacteria in culture"
+                    : "";
+                  const style =
+                    tier === "1" ? "border-red-400 bg-red-50 text-red-900"
+                    : tier === "2" ? "border-amber-400 bg-amber-50 text-amber-900"
+                    : tier === "3" ? "border-sky-400 bg-sky-50 text-sky-900"
+                    : "border-emerald-500 bg-emerald-50 text-emerald-900";
+                  return (
+                    <div className={`mt-2 rounded border px-2 py-1 text-xs ${style}`}>
+                      <div className="font-semibold">{label}</div>
+                      <div className="mt-0.5 italic text-[10px] opacity-75">Suggested classification — see source paper for primary data and methodology.</div>
+                    </div>
+                  );
+                })()}
+                {kind === "molecule" && (focusedPoint as Molecule).gentry_producers && (
+                  <div className="mt-2 rounded border border-slate-200 bg-slate-50 p-2 text-xs text-slate-700">
+                    <div className="font-semibold text-slate-900">Suggested bacterial producers (not definitive):</div>
+                    <div className="mt-0.5">{(focusedPoint as Molecule).gentry_producers?.replace(/;/g, "; ")}</div>
+                    <div className="mt-1 italic text-slate-500">From HMP isolate culture screen — the specific enzyme in each strain is not identified. See source paper for details.</div>
+                  </div>
+                )}
+                {kind === "molecule" && (focusedPoint as Molecule).paper_url && (
+                  <div className="mt-2 text-xs text-slate-600">
+                    <span className="font-semibold">Source paper(s): </span>
+                    {(focusedPoint as Molecule).paper_url.split("|").map((url, i, arr) => {
+                      const u = url.trim();
+                      return u ? (
+                        <a key={i} href={u} target="_blank" className="mr-2 underline text-sky-600 hover:text-sky-800">
+                          paper {arr.length > 1 ? i + 1 : ""} ↗
+                        </a>
+                      ) : null;
+                    })}
+                    <span className="italic text-slate-400"> (see paper for full methodology)</span>
+                  </div>
+                )}
+                {kind === "molecule" && (
+                  <div className="mt-2 text-xs">
+                    {(focusedPoint as Molecule).interacting_protein_accessions ?
+                      <span className="text-slate-700">Linked proteins: {splitList((focusedPoint as Molecule).interacting_protein_accessions ?? "").length}</span> :
+                      <span className="italic text-amber-700">⚠ No proteins associated in the atlas — this compound is listed as a literature-recruited structure without a direct enzyme attribution. For bacterial producer suggestions, see above and consult the source paper.</span>}
+                  </div>
+                )}
                 <div className="mt-2 flex flex-wrap gap-2 text-sm">
                   {kind === "protein" && (
                     <>
-                      <a
-                        className="rounded border border-sky-500 px-2 py-1 text-sky-700 hover:bg-sky-100"
-                        href={`https://www.uniprot.org/uniprotkb/${(focusedPoint as Protein).accession}/entry`}
-                        target="_blank"
-                      >
-                        UniProt
-                      </a>
-                      <a
-                        className="rounded border border-emerald-500 px-2 py-1 text-emerald-700 hover:bg-emerald-100"
-                        href={`https://alphafold.ebi.ac.uk/entry/${(focusedPoint as Protein).accession}`}
-                        target="_blank"
-                      >
-                        AlphaFold
-                      </a>
+                      {(focusedPoint as Protein).identifier_type === "GenBank_Protein" ? (
+                        <a
+                          className="rounded border border-sky-500 px-2 py-1 text-sky-700 hover:bg-sky-100"
+                          href={`https://www.ncbi.nlm.nih.gov/protein/${(focusedPoint as Protein).accession}.1`}
+                          target="_blank"
+                        >
+                          NCBI Protein
+                        </a>
+                      ) : (focusedPoint as Protein).identifier_type === "Locus_Tag" ? (
+                        <span className="rounded border border-slate-300 px-2 py-1 text-xs text-slate-500">
+                          no external DB (locus tag)
+                        </span>
+                      ) : (
+                        <>
+                          <a
+                            className="rounded border border-sky-500 px-2 py-1 text-sky-700 hover:bg-sky-100"
+                            href={`https://www.uniprot.org/uniprotkb/${(focusedPoint as Protein).accession}/entry`}
+                            target="_blank"
+                          >
+                            UniProt
+                          </a>
+                          <a
+                            className="rounded border border-emerald-500 px-2 py-1 text-emerald-700 hover:bg-emerald-100"
+                            href={`https://alphafold.ebi.ac.uk/entry/${(focusedPoint as Protein).accession}`}
+                            target="_blank"
+                          >
+                            AlphaFold
+                          </a>
+                        </>
+                      )}
                       <button
                         className="rounded border border-slate-400 px-2 py-1 text-slate-700 hover:bg-slate-100"
                         onClick={() =>
@@ -518,32 +964,125 @@ export default function ExploreClient({ kind, clusters }: Props) {
             )}
           </div>
 
-          {/* Cluster sidebar */}
+          {/* Cluster sidebar with sort + filter controls */}
           <aside className="rounded-xl border border-slate-200 bg-white shadow-sm">
-            <button
-              onClick={() => setLegendOpen((v) => !v)}
-              className="flex w-full items-center justify-between border-b border-slate-100 p-3 text-left"
-            >
-              <div>
+            <div className="flex items-center justify-between border-b border-slate-100 p-3">
+              <button
+                onClick={() => setLegendOpen((v) => !v)}
+                className="flex-1 text-left"
+              >
                 <div className="text-sm font-semibold text-slate-900">
-                  Clusters ({clusters.length})
+                  Clusters ({clustersForSidebar.length}
+                  {clustersForSidebar.length !== clusters.length
+                    ? ` / ${clusters.length}`
+                    : ""})
+                  {highlightSet.size > 0 && (
+                    <span className="ml-2 rounded-full bg-sky-100 px-2 py-0.5 text-[10px] font-semibold text-sky-800">
+                      {highlightSet.size} selected
+                    </span>
+                  )}
                 </div>
                 <div className="text-xs text-slate-500">
-                  {legendOpen ? "click any row to highlight" : "click to expand"}
+                  {legendOpen
+                    ? highlightSet.size > 0
+                      ? "click a row to add/remove from selection"
+                      : "click any row to highlight (click more to add)"
+                    : "click to expand"}
+                </div>
+              </button>
+              {highlightSet.size > 0 && (
+                <button
+                  onClick={clearClusterHighlight}
+                  title="Clear all selected clusters"
+                  className="ml-2 rounded border border-slate-300 bg-white px-2 py-1 text-[11px] font-semibold text-slate-600 hover:bg-slate-100"
+                >
+                  ✕ clear
+                </button>
+              )}
+              <button
+                onClick={() => setLegendOpen((v) => !v)}
+                className="ml-1 text-slate-500"
+              >
+                {legendOpen ? "▾" : "▸"}
+              </button>
+            </div>
+
+            {/* Sort + filter controls (protein view only — the smaller views
+                 don't have a meaningful type split) */}
+            {legendOpen && kind === "protein" && (
+              <div className="border-b border-slate-100 bg-slate-50 p-2 text-[11px]">
+                <div className="mb-1.5 flex items-center gap-1">
+                  <span className="text-slate-500">Sort:</span>
+                  {(
+                    [
+                      ["id", "cluster id"],
+                      ["size", "size"],
+                      ["type", "function"],
+                      ["name", "name"],
+                    ] as [typeof clusterSortMode, string][]
+                  ).map(([v, label]) => (
+                    <button
+                      key={v}
+                      onClick={() => setClusterSortMode(v)}
+                      className={`rounded border px-1.5 py-0.5 transition ${
+                        clusterSortMode === v
+                          ? "border-sky-500 bg-sky-100 text-sky-800"
+                          : "border-slate-300 bg-white text-slate-600 hover:bg-slate-100"
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+                <div className="flex flex-wrap items-center gap-1">
+                  <span className="text-slate-500">Show:</span>
+                  {(
+                    ["Enzyme", "Transporter", "Receptor", "Other", "Mixed"] as
+                      ProteinType[]
+                  ).map((t) => {
+                    const on = typeFilter.has(t);
+                    return (
+                      <button
+                        key={t}
+                        onClick={() => {
+                          const next = new Set(typeFilter);
+                          if (on) next.delete(t);
+                          else next.add(t);
+                          setTypeFilter(next);
+                        }}
+                        className={`flex items-center gap-1 rounded border px-1.5 py-0.5 transition ${
+                          on
+                            ? "border-slate-800 text-slate-900"
+                            : "border-slate-200 bg-white text-slate-400 line-through"
+                        }`}
+                        style={{
+                          background: on ? TYPE_COLOR[t] + "22" : undefined,
+                        }}
+                      >
+                        <span
+                          className="inline-block h-2 w-2 rounded-full"
+                          style={{ background: TYPE_COLOR[t] }}
+                        />
+                        {t}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
-              <span className="text-slate-500">{legendOpen ? "▾" : "▸"}</span>
-            </button>
+            )}
+
             {legendOpen && (
               <div className="max-h-[540px] overflow-y-auto p-2">
-                {clusters.map((c) => {
-                  const isPick = highlight === c.id;
+                {clustersForSidebar.map((c) => {
+                  const isPick = highlightSet.has(c.id);
                   const clr = swatchFor(c.id);
+                  const typeInfo = clusterTypeMap.get(c.id);
+                  const dom = typeInfo?.dominant;
                   return (
                     <button
                       key={c.id}
                       onClick={() => {
-                        setHighlight(isPick ? null : c.id);
+                        toggleClusterHighlight(c.id);
                         setFocusedCompound(null);
                         clearFocusedProteins();
                       }}
@@ -563,12 +1102,34 @@ export default function ExploreClient({ kind, clusters }: Props) {
                       <span className="flex-1 truncate">
                         {c.name || "(unnamed)"}
                       </span>
+                      {dom && kind === "protein" && (
+                        <span
+                          title={`${dom} · ${
+                            Object.entries(typeInfo!.counts)
+                              .filter(([, n]) => n > 0)
+                              .map(([t, n]) => `${t}: ${n}`)
+                              .join(", ")
+                          }`}
+                          className="flex-shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-semibold"
+                          style={{
+                            background: TYPE_COLOR[dom] + "22",
+                            color: TYPE_COLOR[dom],
+                          }}
+                        >
+                          {dom.slice(0, 3).toUpperCase()}
+                        </span>
+                      )}
                       <span className="flex-shrink-0 text-[10px] text-slate-500">
                         n={c.n.toLocaleString()}
                       </span>
                     </button>
                   );
                 })}
+                {clustersForSidebar.length === 0 && (
+                  <div className="px-2 py-4 text-center text-xs text-slate-400">
+                    No clusters match the current filter
+                  </div>
+                )}
               </div>
             )}
           </aside>
@@ -1059,21 +1620,52 @@ function ProteinDetailCard({
         {protein.length_aa} aa · Cluster {(protein.cluster ?? 0) + 1}
       </div>
 
+      {protein.putative_role && (
+        <div className="mb-3 flex items-start gap-2 rounded-md border border-amber-400 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+          <span className="text-base leading-none">⚠</span>
+          <div>
+            <div className="font-semibold">Putative annotation</div>
+            <div className="text-xs">
+              {protein.putative_role}
+              {protein.cluster_level_evidence === "yes" && (
+                <span className="ml-1 italic">— individual catalytic activity not biochemically confirmed; see paper for details.</span>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="mb-4 flex flex-wrap gap-2 text-sm">
-        <a
-          href={`https://www.uniprot.org/uniprotkb/${protein.accession}/entry`}
-          target="_blank"
-          className="rounded border border-sky-500 px-2 py-1 text-sky-700 hover:bg-sky-50"
-        >
-          UniProt
-        </a>
-        <a
-          href={`https://alphafold.ebi.ac.uk/entry/${protein.accession}`}
-          target="_blank"
-          className="rounded border border-emerald-500 px-2 py-1 text-emerald-700 hover:bg-emerald-50"
-        >
-          AlphaFold
-        </a>
+        {protein.identifier_type === "GenBank_Protein" ? (
+          <a
+            href={`https://www.ncbi.nlm.nih.gov/protein/${protein.accession}.1`}
+            target="_blank"
+            className="rounded border border-sky-500 px-2 py-1 text-sky-700 hover:bg-sky-50"
+          >
+            NCBI Protein
+          </a>
+        ) : protein.identifier_type === "Locus_Tag" ? (
+          <span className="rounded border border-slate-300 px-2 py-1 text-xs text-slate-500">
+            no external DB (locus tag — see paper)
+          </span>
+        ) : (
+          <>
+            <a
+              href={`https://www.uniprot.org/uniprotkb/${protein.accession}/entry`}
+              target="_blank"
+              className="rounded border border-sky-500 px-2 py-1 text-sky-700 hover:bg-sky-50"
+            >
+              UniProt
+            </a>
+            <a
+              href={`https://alphafold.ebi.ac.uk/entry/${protein.accession}`}
+              target="_blank"
+              className="rounded border border-emerald-500 px-2 py-1 text-emerald-700 hover:bg-emerald-50"
+            >
+              AlphaFold
+            </a>
+          </>
+        )}
         {protein.paper_url && protein.paper_url.startsWith("http") && (
           <a
             href={protein.paper_url}
@@ -1084,6 +1676,24 @@ function ProteinDetailCard({
           </a>
         )}
       </div>
+
+      {protein.annotation && (
+        <div className="mb-3 rounded border border-slate-200 bg-slate-50 p-3 text-sm text-slate-800">
+          <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">Curator note</div>
+          <div className="whitespace-pre-wrap">{protein.annotation}</div>
+        </div>
+      )}
+      {protein.reaction_descriptions && (
+        <div className="mb-3 rounded border border-sky-200 bg-sky-50 p-3 text-sm text-sky-900">
+          <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-sky-700">Reaction (paper-grounded)</div>
+          <div className="whitespace-pre-wrap">{protein.reaction_descriptions}</div>
+        </div>
+      )}
+      {protein.sequence_source && (
+        <div className="mb-3 text-xs text-slate-500">
+          <span className="font-semibold">Sequence source:</span> {protein.sequence_source}
+        </div>
+      )}
 
       <div className="grid gap-4 md:grid-cols-2">
         <div>
@@ -1165,6 +1775,14 @@ function ProteinDetailCard({
           <div className="mb-2 text-sm font-semibold text-slate-900">
             Interacting steroids ({compounds.length})
           </div>
+          {compounds.length === 0 && (
+            <div className="mb-3 rounded-md border border-dashed border-amber-400 bg-amber-50 p-3 text-xs text-amber-900">
+              <div className="font-semibold">⚠ No steroids associated with this protein in the atlas.</div>
+              <div className="mt-1">
+                This is unusual for a protein in an atlas whose premise is protein ↔ steroid linkage. Possible reasons: (1) the protein has no documented steroid substrate in Rhea / UniProt, (2) a cited paper has not yet been audited to link it to specific steroid rows, or (3) this is a data gap worth reporting. See <span className="font-semibold">Source paper</span> (above) for the primary activity claim.
+              </div>
+            </div>
+          )}
           <div className="grid grid-cols-3 gap-2">
             {compounds.slice(0, 12).map((nm, i) => {
               const cb = chebis[i] ?? "";

@@ -73,18 +73,18 @@ Total: ~18 MB across ~54 files.
 ```
 steroid_atlas/
 ├── README.md · LICENSE · CITATION.cff · requirements.txt · .gitignore
-├── data/                                    # 4 CSVs + 1 markdown + data dictionary
+├── data/                                    # 4 CSVs + data dictionary
 │   ├── proteins.csv                          (~16 MB — 35,834 proteins × 21 cols)
 │   ├── molecules.csv                         (~3 MB — 681 molecules × 10 cols)
 │   ├── natural_synthetic_steroids.csv        (~3.5 MB — 2,889 rows × 7 cols)
 │   ├── literature_recruited_proteins.csv     (7 KB — 15 rows × 12 cols)
-│   ├── literature_recruited_proteins.md
 │   └── README.md
 ├── app/                                     # visualizer + launcher
 │   ├── visualizer.py
 │   ├── run.sh
 │   └── README.md
 ├── literature/                              # reproducible audit pipeline
+│   ├── literature_recruited_proteins.md       # per-paper evidence trail
 │   ├── scripts/                              (11 Python scripts)
 │   ├── supplementary/                        (Guzior SI xlsx)
 │   ├── sequences/                            (19 FASTAs)

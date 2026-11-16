@@ -18,6 +18,7 @@ Thumbs.db
 # Backup files (from audit passes; kept locally, not pushed)
 *.bak
 *.bak[0-9]*
+*.bak_*
 *.OLD.csv
 *.PRE_*.csv
 *.pre_audit_backup

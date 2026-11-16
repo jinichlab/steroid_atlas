@@ -1,0 +1,1961 @@
+Bile Acid,HMP Species Name,median,mean,max,min,SD
+Ala-CA,Actinomyces viscosus,0,0,0,0,0
+Ala-CA,Bacteroides caccae,0,0,0,0,0
+Ala-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Ala-CA,Bacteroides dorei,0,0,0,0,0
+Ala-CA,Bacteroides eggerthii,0,0,0,0,0
+Ala-CA,Bacteroides finegoldii,0,0,0,0,0
+Ala-CA,Bacteroides fragilis,0,0,0,0,0
+Ala-CA,Bacteroides ovatus,0,0,0,0,0
+Ala-CA,Bacteroides salyersiae,0,0,0,0,0
+Ala-CA,Bacteroides stercoris,0,0,0,0,0
+Ala-CA,Bacteroides vulgatus,0,0,0,0,0
+Ala-CA,Bifidobacterium adolescentis,0,1424.854667,4274.564,0,2467.920676
+Ala-CA,Bifidobacterium angulatum,0,1511.357667,4534.073,0,2617.748267
+Ala-CA,Bifidobacterium breve,0,0,0,0,0
+Ala-CA,Bifidobacterium longum,0,0,0,0,0
+Ala-CA,Catabacter hongkongensis,0,0,0,0,0
+Ala-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Ala-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Ala-CA,Clostridium aldenense,0,0,0,0,0
+Ala-CA,Clostridium cadaveris,0,42838.637,136995.45,0,66581.66565
+Ala-CA,Clostridium symbiosum,0,0,0,0,0
+Ala-CA,Cutibacterium acnes,0,0,0,0,0
+Ala-CA,Enterococcus faecalis,0,0,0,0,0
+Ala-CA,Enterococcus faecium,0,1027.624619,8128.238,0,2346.301788
+Ala-CA,Finegoldia magna,0,0,0,0,0
+Ala-CA,Flavonifractor plautii,0,0,0,0,0
+Ala-CA,Fusobacterium nucleatum,0,0,0,0,0
+Ala-CA,Fusobacterium periodonticum,0,0,0,0,0
+Ala-CA,Fusobacterium ulcerans,0,0,0,0,0
+Ala-CA,Gardnerella vaginalis,0,0,0,0,0
+Ala-CA,Lachnospiraceae bacterium oral taxon 500,0,1921.94,5765.82,0,3328.897729
+Ala-CA,Lactobacillus gasseri,0,0,0,0,0
+Ala-CA,Lactobacillus jensenii,0,0,0,0,0
+Ala-CA,Lactobacillus vaginalis,0,0,0,0,0
+Ala-CA,Mobiluncus mulieris,0,0,0,0,0
+Ala-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Ala-CA,Oribacterium sinus,0,0,0,0,0
+Ala-CA,Parabacteroides,0,0,0,0,0
+Ala-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Ala-CA,Parabacteroides johnsonii,0,0,0,0,0
+Ala-CA,Parabacteroides merdae,0,0,0,0,0
+Ala-CA,Parvimonas micra,0,0,0,0,0
+Ala-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Ala-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Ala-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Ala-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Ala-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Ala-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Ala-CA,Prevotella amnii,0,0,0,0,0
+Ala-CA,Prevotella bivia,0,0,0,0,0
+Ala-CA,Prevotella buccae,0,0,0,0,0
+Ala-CA,Prevotella denticola,0,0,0,0,0
+Ala-CA,Prevotella disiens,0,0,0,0,0
+Ala-CA,Prevotella histicola,0,0,0,0,0
+Ala-CA,Prevotella melaninogenica,0,0,0,0,0
+Ala-CA,Prevotella nigrescens,0,0,0,0,0
+Ala-CA,Prevotella oralis,0,0,0,0,0
+Ala-CA,Prevotella oris,0,0,0,0,0
+Ala-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Ala-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Ala-CA,Prevotella timonensis,0,0,0,0,0
+Ala-CA,Prevotella veroralis,0,0,0,0,0
+Ala-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Ala-CA,Propionibacterium humerusii,0,0,0,0,0
+Ala-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Ala-CA,Selenomonas noxia,0,0,0,0,0
+Ala-CA,Sutterella wadsworthensis,0,0,0,0,0
+Ala-CA,Treponema denticola,0,0,0,0,0
+Ala-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Ala-CA,Veillonella montpellierensis,0,0,0,0,0
+Ala-DCA,Actinomyces viscosus,0,0,0,0,0
+Ala-DCA,Bacteroides caccae,0,0,0,0,0
+Ala-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Ala-DCA,Bacteroides dorei,0,0,0,0,0
+Ala-DCA,Bacteroides eggerthii,0,1351.002667,4053.008,0,2340.00526
+Ala-DCA,Bacteroides finegoldii,0,0,0,0,0
+Ala-DCA,Bacteroides fragilis,0,0,0,0,0
+Ala-DCA,Bacteroides ovatus,0,0,0,0,0
+Ala-DCA,Bacteroides salyersiae,0,0,0,0,0
+Ala-DCA,Bacteroides stercoris,0,0,0,0,0
+Ala-DCA,Bacteroides vulgatus,0,0,0,0,0
+Ala-DCA,Bifidobacterium adolescentis,0,0,0,0,0
+Ala-DCA,Bifidobacterium angulatum,0,0,0,0,0
+Ala-DCA,Bifidobacterium breve,0,0,0,0,0
+Ala-DCA,Bifidobacterium longum,0,0,0,0,0
+Ala-DCA,Catabacter hongkongensis,0,0,0,0,0
+Ala-DCA,Cellulosilyticum lentocellum,15829.417,11121.535,17535.188,0,9669.220198
+Ala-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Ala-DCA,Clostridium aldenense,0,1692.363667,5077.091,0,2931.259856
+Ala-DCA,Clostridium cadaveris,0,14573.84967,49662.184,0,22888.19529
+Ala-DCA,Clostridium symbiosum,5642.287,4488.236667,7822.423,0,4036.886118
+Ala-DCA,Cutibacterium acnes,0,0,0,0,0
+Ala-DCA,Enterococcus faecalis,0,0,0,0,0
+Ala-DCA,Enterococcus faecium,4571.234,8170.741,34431.322,0,9858.685881
+Ala-DCA,Finegoldia magna,0,0,0,0,0
+Ala-DCA,Flavonifractor plautii,0,0,0,0,0
+Ala-DCA,Fusobacterium nucleatum,0,586.3844667,4643.726,0,1550.251926
+Ala-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Ala-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Ala-DCA,Gardnerella vaginalis,0,0,0,0,0
+Ala-DCA,Lachnospiraceae bacterium oral taxon 500,4653.847,8584.481,21099.596,0,11085.38004
+Ala-DCA,Lactobacillus gasseri,0,0,0,0,0
+Ala-DCA,Lactobacillus jensenii,0,0,0,0,0
+Ala-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Ala-DCA,Mobiluncus mulieris,0,0,0,0,0
+Ala-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Ala-DCA,Oribacterium sinus,0,0,0,0,0
+Ala-DCA,Parabacteroides,0,0,0,0,0
+Ala-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Ala-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Ala-DCA,Parabacteroides merdae,0,0,0,0,0
+Ala-DCA,Parvimonas micra,0,0,0,0,0
+Ala-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Ala-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Ala-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Ala-DCA,Peptoniphilus sp. oral taxon 836,0,2563.598667,7690.796,0,4440.283141
+Ala-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Ala-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Ala-DCA,Prevotella amnii,0,0,0,0,0
+Ala-DCA,Prevotella bivia,0,0,0,0,0
+Ala-DCA,Prevotella buccae,0,0,0,0,0
+Ala-DCA,Prevotella denticola,0,0,0,0,0
+Ala-DCA,Prevotella disiens,0,0,0,0,0
+Ala-DCA,Prevotella histicola,0,0,0,0,0
+Ala-DCA,Prevotella melaninogenica,0,0,0,0,0
+Ala-DCA,Prevotella nigrescens,0,0,0,0,0
+Ala-DCA,Prevotella oralis,0,0,0,0,0
+Ala-DCA,Prevotella oris,0,0,0,0,0
+Ala-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Ala-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Ala-DCA,Prevotella timonensis,0,0,0,0,0
+Ala-DCA,Prevotella veroralis,0,0,0,0,0
+Ala-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Ala-DCA,Propionibacterium humerusii,0,0,0,0,0
+Ala-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Ala-DCA,Selenomonas noxia,0,0,0,0,0
+Ala-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Ala-DCA,Treponema denticola,0,0,0,0,0
+Ala-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Ala-DCA,Veillonella montpellierensis,0,0,0,0,0
+Arg-CA,Actinomyces viscosus,0,0,0,0,0
+Arg-CA,Bacteroides caccae,0,0,0,0,0
+Arg-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Arg-CA,Bacteroides dorei,0,0,0,0,0
+Arg-CA,Bacteroides eggerthii,0,0,0,0,0
+Arg-CA,Bacteroides finegoldii,0,0,0,0,0
+Arg-CA,Bacteroides fragilis,0,0,0,0,0
+Arg-CA,Bacteroides ovatus,0,0,0,0,0
+Arg-CA,Bacteroides salyersiae,0,0,0,0,0
+Arg-CA,Bacteroides stercoris,0,0,0,0,0
+Arg-CA,Bacteroides vulgatus,0,0,0,0,0
+Arg-CA,Bifidobacterium adolescentis,5509.63,3938.719333,6306.528,0,3434.223944
+Arg-CA,Bifidobacterium angulatum,0,4188.340667,12565.022,0,7254.418834
+Arg-CA,Bifidobacterium breve,0,2175.161417,11327.956,0,4202.758798
+Arg-CA,Bifidobacterium longum,0,1757.548417,10517.695,0,3434.649266
+Arg-CA,Catabacter hongkongensis,0,0,0,0,0
+Arg-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Arg-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Arg-CA,Clostridium aldenense,0,0,0,0,0
+Arg-CA,Clostridium cadaveris,0,0,0,0,0
+Arg-CA,Clostridium symbiosum,0,0,0,0,0
+Arg-CA,Cutibacterium acnes,0,0,0,0,0
+Arg-CA,Enterococcus faecalis,0,0,0,0,0
+Arg-CA,Enterococcus faecium,0,0,0,0,0
+Arg-CA,Finegoldia magna,0,0,0,0,0
+Arg-CA,Flavonifractor plautii,0,844.7725,5068.635,0,2069.261574
+Arg-CA,Fusobacterium nucleatum,0,0,0,0,0
+Arg-CA,Fusobacterium periodonticum,0,0,0,0,0
+Arg-CA,Fusobacterium ulcerans,0,0,0,0,0
+Arg-CA,Gardnerella vaginalis,0,0,0,0,0
+Arg-CA,Lachnospiraceae bacterium oral taxon 500,0,0,0,0,0
+Arg-CA,Lactobacillus gasseri,0,0,0,0,0
+Arg-CA,Lactobacillus jensenii,0,0,0,0,0
+Arg-CA,Lactobacillus vaginalis,0,0,0,0,0
+Arg-CA,Mobiluncus mulieris,0,0,0,0,0
+Arg-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Arg-CA,Oribacterium sinus,0,0,0,0,0
+Arg-CA,Parabacteroides,0,0,0,0,0
+Arg-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Arg-CA,Parabacteroides johnsonii,0,0,0,0,0
+Arg-CA,Parabacteroides merdae,0,0,0,0,0
+Arg-CA,Parvimonas micra,0,0,0,0,0
+Arg-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Arg-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Arg-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Arg-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Arg-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Arg-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Arg-CA,Prevotella amnii,0,0,0,0,0
+Arg-CA,Prevotella bivia,0,0,0,0,0
+Arg-CA,Prevotella buccae,0,0,0,0,0
+Arg-CA,Prevotella denticola,0,0,0,0,0
+Arg-CA,Prevotella disiens,0,0,0,0,0
+Arg-CA,Prevotella histicola,0,0,0,0,0
+Arg-CA,Prevotella melaninogenica,0,0,0,0,0
+Arg-CA,Prevotella nigrescens,0,0,0,0,0
+Arg-CA,Prevotella oralis,0,0,0,0,0
+Arg-CA,Prevotella oris,0,0,0,0,0
+Arg-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Arg-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Arg-CA,Prevotella timonensis,0,0,0,0,0
+Arg-CA,Prevotella veroralis,0,0,0,0,0
+Arg-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Arg-CA,Propionibacterium humerusii,0,0,0,0,0
+Arg-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Arg-CA,Selenomonas noxia,0,0,0,0,0
+Arg-CA,Sutterella wadsworthensis,0,0,0,0,0
+Arg-CA,Treponema denticola,0,0,0,0,0
+Arg-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Arg-CA,Veillonella montpellierensis,0,0,0,0,0
+Arg-DCA,Actinomyces viscosus,0,0,0,0,0
+Arg-DCA,Bacteroides caccae,7541.747,6464.265,11851.048,0,5998.546513
+Arg-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Arg-DCA,Bacteroides dorei,0,0,0,0,0
+Arg-DCA,Bacteroides eggerthii,0,0,0,0,0
+Arg-DCA,Bacteroides finegoldii,0,0,0,0,0
+Arg-DCA,Bacteroides fragilis,0,0,0,0,0
+Arg-DCA,Bacteroides ovatus,0,0,0,0,0
+Arg-DCA,Bacteroides salyersiae,0,0,0,0,0
+Arg-DCA,Bacteroides stercoris,0,0,0,0,0
+Arg-DCA,Bacteroides vulgatus,0,0,0,0,0
+Arg-DCA,Bifidobacterium adolescentis,12030.502,8879.272667,14607.316,0,7796.86507
+Arg-DCA,Bifidobacterium angulatum,6879.648,5234.023667,8822.423,0,4635.714237
+Arg-DCA,Bifidobacterium breve,0,4813.198833,19713.156,0,7247.667829
+Arg-DCA,Bifidobacterium longum,0,3311.987917,17027.357,0,5523.548482
+Arg-DCA,Catabacter hongkongensis,10644.798,8187.091,13916.475,0,7276.490355
+Arg-DCA,Cellulosilyticum lentocellum,0,0,0,0,0
+Arg-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Arg-DCA,Clostridium aldenense,0,0,0,0,0
+Arg-DCA,Clostridium cadaveris,0,0,0,0,0
+Arg-DCA,Clostridium symbiosum,0,0,0,0,0
+Arg-DCA,Cutibacterium acnes,0,0,0,0,0
+Arg-DCA,Enterococcus faecalis,0,0,0,0,0
+Arg-DCA,Enterococcus faecium,0,0,0,0,0
+Arg-DCA,Finegoldia magna,0,0,0,0,0
+Arg-DCA,Flavonifractor plautii,0,812.3511667,4874.107,0,1989.84585
+Arg-DCA,Fusobacterium nucleatum,0,0,0,0,0
+Arg-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Arg-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Arg-DCA,Gardnerella vaginalis,0,0,0,0,0
+Arg-DCA,Lachnospiraceae bacterium oral taxon 500,0,0,0,0,0
+Arg-DCA,Lactobacillus gasseri,0,0,0,0,0
+Arg-DCA,Lactobacillus jensenii,0,0,0,0,0
+Arg-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Arg-DCA,Mobiluncus mulieris,0,0,0,0,0
+Arg-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Arg-DCA,Oribacterium sinus,0,0,0,0,0
+Arg-DCA,Parabacteroides,0,0,0,0,0
+Arg-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Arg-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Arg-DCA,Parabacteroides merdae,0,0,0,0,0
+Arg-DCA,Parvimonas micra,0,0,0,0,0
+Arg-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Arg-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Arg-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Arg-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Arg-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Arg-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Arg-DCA,Prevotella amnii,0,0,0,0,0
+Arg-DCA,Prevotella bivia,0,0,0,0,0
+Arg-DCA,Prevotella buccae,0,0,0,0,0
+Arg-DCA,Prevotella denticola,0,0,0,0,0
+Arg-DCA,Prevotella disiens,0,0,0,0,0
+Arg-DCA,Prevotella histicola,0,0,0,0,0
+Arg-DCA,Prevotella melaninogenica,0,0,0,0,0
+Arg-DCA,Prevotella nigrescens,0,0,0,0,0
+Arg-DCA,Prevotella oralis,0,0,0,0,0
+Arg-DCA,Prevotella oris,0,0,0,0,0
+Arg-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Arg-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Arg-DCA,Prevotella timonensis,0,0,0,0,0
+Arg-DCA,Prevotella veroralis,0,0,0,0,0
+Arg-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Arg-DCA,Propionibacterium humerusii,0,0,0,0,0
+Arg-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Arg-DCA,Selenomonas noxia,0,0,0,0,0
+Arg-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Arg-DCA,Treponema denticola,0,0,0,0,0
+Arg-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Arg-DCA,Veillonella montpellierensis,0,0,0,0,0
+Asn-CA,Actinomyces viscosus,0,0,0,0,0
+Asn-CA,Bacteroides caccae,0,0,0,0,0
+Asn-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Asn-CA,Bacteroides dorei,0,0,0,0,0
+Asn-CA,Bacteroides eggerthii,0,0,0,0,0
+Asn-CA,Bacteroides finegoldii,0,0,0,0,0
+Asn-CA,Bacteroides fragilis,0,0,0,0,0
+Asn-CA,Bacteroides ovatus,0,0,0,0,0
+Asn-CA,Bacteroides salyersiae,0,0,0,0,0
+Asn-CA,Bacteroides stercoris,0,0,0,0,0
+Asn-CA,Bacteroides vulgatus,0,0,0,0,0
+Asn-CA,Bifidobacterium adolescentis,0,0,0,0,0
+Asn-CA,Bifidobacterium angulatum,0,0,0,0,0
+Asn-CA,Bifidobacterium breve,0,363.2811667,4359.374,0,1258.442876
+Asn-CA,Bifidobacterium longum,0,365.379,4384.548,0,1265.709984
+Asn-CA,Catabacter hongkongensis,0,0,0,0,0
+Asn-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Asn-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Asn-CA,Clostridium aldenense,0,0,0,0,0
+Asn-CA,Clostridium cadaveris,0,0,0,0,0
+Asn-CA,Clostridium symbiosum,0,0,0,0,0
+Asn-CA,Cutibacterium acnes,0,0,0,0,0
+Asn-CA,Enterococcus faecalis,0,0,0,0,0
+Asn-CA,Enterococcus faecium,0,0,0,0,0
+Asn-CA,Finegoldia magna,0,0,0,0,0
+Asn-CA,Flavonifractor plautii,0,0,0,0,0
+Asn-CA,Fusobacterium nucleatum,0,0,0,0,0
+Asn-CA,Fusobacterium periodonticum,0,0,0,0,0
+Asn-CA,Fusobacterium ulcerans,0,0,0,0,0
+Asn-CA,Gardnerella vaginalis,0,0,0,0,0
+Asn-CA,Lachnospiraceae bacterium oral taxon 500,0,0,0,0,0
+Asn-CA,Lactobacillus gasseri,0,0,0,0,0
+Asn-CA,Lactobacillus jensenii,0,0,0,0,0
+Asn-CA,Lactobacillus vaginalis,0,0,0,0,0
+Asn-CA,Mobiluncus mulieris,0,0,0,0,0
+Asn-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Asn-CA,Oribacterium sinus,0,0,0,0,0
+Asn-CA,Parabacteroides,0,0,0,0,0
+Asn-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Asn-CA,Parabacteroides johnsonii,0,0,0,0,0
+Asn-CA,Parabacteroides merdae,0,0,0,0,0
+Asn-CA,Parvimonas micra,0,0,0,0,0
+Asn-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Asn-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Asn-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Asn-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Asn-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Asn-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Asn-CA,Prevotella amnii,0,0,0,0,0
+Asn-CA,Prevotella bivia,0,0,0,0,0
+Asn-CA,Prevotella buccae,0,0,0,0,0
+Asn-CA,Prevotella denticola,0,0,0,0,0
+Asn-CA,Prevotella disiens,0,0,0,0,0
+Asn-CA,Prevotella histicola,0,0,0,0,0
+Asn-CA,Prevotella melaninogenica,0,0,0,0,0
+Asn-CA,Prevotella nigrescens,0,0,0,0,0
+Asn-CA,Prevotella oralis,0,0,0,0,0
+Asn-CA,Prevotella oris,0,0,0,0,0
+Asn-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Asn-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Asn-CA,Prevotella timonensis,0,0,0,0,0
+Asn-CA,Prevotella veroralis,0,0,0,0,0
+Asn-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Asn-CA,Propionibacterium humerusii,0,0,0,0,0
+Asn-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Asn-CA,Selenomonas noxia,0,0,0,0,0
+Asn-CA,Sutterella wadsworthensis,0,0,0,0,0
+Asn-CA,Treponema denticola,0,0,0,0,0
+Asn-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Asn-CA,Veillonella montpellierensis,0,0,0,0,0
+Asn-DCA,Actinomyces viscosus,0,0,0,0,0
+Asn-DCA,Bacteroides caccae,0,0,0,0,0
+Asn-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Asn-DCA,Bacteroides dorei,0,0,0,0,0
+Asn-DCA,Bacteroides eggerthii,0,0,0,0,0
+Asn-DCA,Bacteroides finegoldii,0,0,0,0,0
+Asn-DCA,Bacteroides fragilis,0,0,0,0,0
+Asn-DCA,Bacteroides ovatus,0,0,0,0,0
+Asn-DCA,Bacteroides salyersiae,0,0,0,0,0
+Asn-DCA,Bacteroides stercoris,0,0,0,0,0
+Asn-DCA,Bacteroides vulgatus,0,0,0,0,0
+Asn-DCA,Bifidobacterium adolescentis,0,0,0,0,0
+Asn-DCA,Bifidobacterium angulatum,0,0,0,0,0
+Asn-DCA,Bifidobacterium breve,0,0,0,0,0
+Asn-DCA,Bifidobacterium longum,0,0,0,0,0
+Asn-DCA,Catabacter hongkongensis,0,0,0,0,0
+Asn-DCA,Cellulosilyticum lentocellum,6076.356,4302.093,6829.923,0,3744.725483
+Asn-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Asn-DCA,Clostridium aldenense,0,0,0,0,0
+Asn-DCA,Clostridium cadaveris,0,789.9208333,4739.525,0,1934.902979
+Asn-DCA,Clostridium symbiosum,0,0,0,0,0
+Asn-DCA,Cutibacterium acnes,0,0,0,0,0
+Asn-DCA,Enterococcus faecalis,0,0,0,0,0
+Asn-DCA,Enterococcus faecium,0,2829.16281,16010.283,0,4964.834942
+Asn-DCA,Finegoldia magna,0,0,0,0,0
+Asn-DCA,Flavonifractor plautii,0,0,0,0,0
+Asn-DCA,Fusobacterium nucleatum,0,471.1278667,7066.918,0,1824.670382
+Asn-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Asn-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Asn-DCA,Gardnerella vaginalis,0,0,0,0,0
+Asn-DCA,Lachnospiraceae bacterium oral taxon 500,9146.573,6131.053,9246.586,0,5309.883126
+Asn-DCA,Lactobacillus gasseri,0,0,0,0,0
+Asn-DCA,Lactobacillus jensenii,0,0,0,0,0
+Asn-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Asn-DCA,Mobiluncus mulieris,0,0,0,0,0
+Asn-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Asn-DCA,Oribacterium sinus,0,0,0,0,0
+Asn-DCA,Parabacteroides,0,0,0,0,0
+Asn-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Asn-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Asn-DCA,Parabacteroides merdae,0,0,0,0,0
+Asn-DCA,Parvimonas micra,0,0,0,0,0
+Asn-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Asn-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Asn-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Asn-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Asn-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Asn-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Asn-DCA,Prevotella amnii,0,0,0,0,0
+Asn-DCA,Prevotella bivia,0,0,0,0,0
+Asn-DCA,Prevotella buccae,0,0,0,0,0
+Asn-DCA,Prevotella denticola,0,0,0,0,0
+Asn-DCA,Prevotella disiens,0,0,0,0,0
+Asn-DCA,Prevotella histicola,0,0,0,0,0
+Asn-DCA,Prevotella melaninogenica,0,0,0,0,0
+Asn-DCA,Prevotella nigrescens,0,0,0,0,0
+Asn-DCA,Prevotella oralis,0,0,0,0,0
+Asn-DCA,Prevotella oris,0,0,0,0,0
+Asn-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Asn-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Asn-DCA,Prevotella timonensis,0,0,0,0,0
+Asn-DCA,Prevotella veroralis,0,0,0,0,0
+Asn-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Asn-DCA,Propionibacterium humerusii,0,0,0,0,0
+Asn-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Asn-DCA,Selenomonas noxia,0,0,0,0,0
+Asn-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Asn-DCA,Treponema denticola,0,0,0,0,0
+Asn-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Asn-DCA,Veillonella montpellierensis,0,0,0,0,0
+Asp-CA,Actinomyces viscosus,0,0,0,0,0
+Asp-CA,Bacteroides caccae,0,0,0,0,0
+Asp-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Asp-CA,Bacteroides dorei,0,0,0,0,0
+Asp-CA,Bacteroides eggerthii,0,0,0,0,0
+Asp-CA,Bacteroides finegoldii,0,0,0,0,0
+Asp-CA,Bacteroides fragilis,0,0,0,0,0
+Asp-CA,Bacteroides ovatus,0,0,0,0,0
+Asp-CA,Bacteroides salyersiae,0,0,0,0,0
+Asp-CA,Bacteroides stercoris,0,0,0,0,0
+Asp-CA,Bacteroides vulgatus,0,0,0,0,0
+Asp-CA,Bifidobacterium adolescentis,0,0,0,0,0
+Asp-CA,Bifidobacterium angulatum,0,0,0,0,0
+Asp-CA,Bifidobacterium breve,0,727.91375,4454.923,0,1700.449067
+Asp-CA,Bifidobacterium longum,0,786.1386667,5246.476,0,1849.862052
+Asp-CA,Catabacter hongkongensis,0,0,0,0,0
+Asp-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Asp-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Asp-CA,Clostridium aldenense,0,0,0,0,0
+Asp-CA,Clostridium cadaveris,0,0,0,0,0
+Asp-CA,Clostridium symbiosum,0,0,0,0,0
+Asp-CA,Cutibacterium acnes,0,0,0,0,0
+Asp-CA,Enterococcus faecalis,0,0,0,0,0
+Asp-CA,Enterococcus faecium,0,0,0,0,0
+Asp-CA,Finegoldia magna,0,0,0,0,0
+Asp-CA,Flavonifractor plautii,0,0,0,0,0
+Asp-CA,Fusobacterium nucleatum,0,0,0,0,0
+Asp-CA,Fusobacterium periodonticum,0,0,0,0,0
+Asp-CA,Fusobacterium ulcerans,0,0,0,0,0
+Asp-CA,Gardnerella vaginalis,0,0,0,0,0
+Asp-CA,Lachnospiraceae bacterium oral taxon 500,0,0,0,0,0
+Asp-CA,Lactobacillus gasseri,0,0,0,0,0
+Asp-CA,Lactobacillus jensenii,0,0,0,0,0
+Asp-CA,Lactobacillus vaginalis,0,0,0,0,0
+Asp-CA,Mobiluncus mulieris,0,0,0,0,0
+Asp-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Asp-CA,Oribacterium sinus,0,0,0,0,0
+Asp-CA,Parabacteroides,0,0,0,0,0
+Asp-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Asp-CA,Parabacteroides johnsonii,0,0,0,0,0
+Asp-CA,Parabacteroides merdae,0,0,0,0,0
+Asp-CA,Parvimonas micra,0,0,0,0,0
+Asp-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Asp-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Asp-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Asp-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Asp-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Asp-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Asp-CA,Prevotella amnii,0,0,0,0,0
+Asp-CA,Prevotella bivia,0,0,0,0,0
+Asp-CA,Prevotella buccae,0,0,0,0,0
+Asp-CA,Prevotella denticola,0,0,0,0,0
+Asp-CA,Prevotella disiens,0,0,0,0,0
+Asp-CA,Prevotella histicola,0,0,0,0,0
+Asp-CA,Prevotella melaninogenica,0,0,0,0,0
+Asp-CA,Prevotella nigrescens,0,0,0,0,0
+Asp-CA,Prevotella oralis,0,0,0,0,0
+Asp-CA,Prevotella oris,0,0,0,0,0
+Asp-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Asp-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Asp-CA,Prevotella timonensis,0,0,0,0,0
+Asp-CA,Prevotella veroralis,0,0,0,0,0
+Asp-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Asp-CA,Propionibacterium humerusii,0,0,0,0,0
+Asp-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Asp-CA,Selenomonas noxia,0,0,0,0,0
+Asp-CA,Sutterella wadsworthensis,0,0,0,0,0
+Asp-CA,Treponema denticola,0,0,0,0,0
+Asp-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Asp-CA,Veillonella montpellierensis,0,0,0,0,0
+Cit-DCA,Actinomyces viscosus,0,0,0,0,0
+Cit-DCA,Bacteroides caccae,0,0,0,0,0
+Cit-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Cit-DCA,Bacteroides dorei,0,0,0,0,0
+Cit-DCA,Bacteroides eggerthii,0,0,0,0,0
+Cit-DCA,Bacteroides finegoldii,0,0,0,0,0
+Cit-DCA,Bacteroides fragilis,0,0,0,0,0
+Cit-DCA,Bacteroides ovatus,0,0,0,0,0
+Cit-DCA,Bacteroides salyersiae,0,0,0,0,0
+Cit-DCA,Bacteroides stercoris,0,0,0,0,0
+Cit-DCA,Bacteroides vulgatus,0,0,0,0,0
+Cit-DCA,Bifidobacterium adolescentis,0,0,0,0,0
+Cit-DCA,Bifidobacterium angulatum,0,0,0,0,0
+Cit-DCA,Bifidobacterium breve,0,0,0,0,0
+Cit-DCA,Bifidobacterium longum,0,0,0,0,0
+Cit-DCA,Catabacter hongkongensis,0,0,0,0,0
+Cit-DCA,Cellulosilyticum lentocellum,6677.101,5069.644,8531.831,0,4487.31251
+Cit-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Cit-DCA,Clostridium aldenense,0,0,0,0,0
+Cit-DCA,Clostridium cadaveris,0,0,0,0,0
+Cit-DCA,Clostridium symbiosum,0,0,0,0,0
+Cit-DCA,Cutibacterium acnes,0,0,0,0,0
+Cit-DCA,Enterococcus faecalis,0,0,0,0,0
+Cit-DCA,Enterococcus faecium,4048.984,8132.447476,37420.697,0,11278.98012
+Cit-DCA,Finegoldia magna,0,0,0,0,0
+Cit-DCA,Flavonifractor plautii,0,0,0,0,0
+Cit-DCA,Fusobacterium nucleatum,0,2660.5586,34038.562,0,8811.112601
+Cit-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Cit-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Cit-DCA,Gardnerella vaginalis,0,0,0,0,0
+Cit-DCA,Lachnospiraceae bacterium oral taxon 500,7086.316,5197.068667,8504.89,0,4556.33955
+Cit-DCA,Lactobacillus gasseri,0,0,0,0,0
+Cit-DCA,Lactobacillus jensenii,0,0,0,0,0
+Cit-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Cit-DCA,Mobiluncus mulieris,0,0,0,0,0
+Cit-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Cit-DCA,Oribacterium sinus,0,0,0,0,0
+Cit-DCA,Parabacteroides,0,0,0,0,0
+Cit-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Cit-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Cit-DCA,Parabacteroides merdae,0,0,0,0,0
+Cit-DCA,Parvimonas micra,0,0,0,0,0
+Cit-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Cit-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Cit-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Cit-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Cit-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Cit-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Cit-DCA,Prevotella amnii,0,0,0,0,0
+Cit-DCA,Prevotella bivia,0,0,0,0,0
+Cit-DCA,Prevotella buccae,0,0,0,0,0
+Cit-DCA,Prevotella denticola,0,0,0,0,0
+Cit-DCA,Prevotella disiens,0,0,0,0,0
+Cit-DCA,Prevotella histicola,0,0,0,0,0
+Cit-DCA,Prevotella melaninogenica,0,0,0,0,0
+Cit-DCA,Prevotella nigrescens,0,0,0,0,0
+Cit-DCA,Prevotella oralis,0,0,0,0,0
+Cit-DCA,Prevotella oris,0,0,0,0,0
+Cit-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Cit-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Cit-DCA,Prevotella timonensis,0,0,0,0,0
+Cit-DCA,Prevotella veroralis,0,0,0,0,0
+Cit-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Cit-DCA,Propionibacterium humerusii,0,0,0,0,0
+Cit-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Cit-DCA,Selenomonas noxia,0,0,0,0,0
+Cit-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Cit-DCA,Treponema denticola,0,0,0,0,0
+Cit-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Cit-DCA,Veillonella montpellierensis,0,0,0,0,0
+Cys-CA,Actinomyces viscosus,0,0,0,0,0
+Cys-CA,Bacteroides caccae,0,0,0,0,0
+Cys-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Cys-CA,Bacteroides dorei,0,0,0,0,0
+Cys-CA,Bacteroides eggerthii,0,0,0,0,0
+Cys-CA,Bacteroides finegoldii,0,0,0,0,0
+Cys-CA,Bacteroides fragilis,0,0,0,0,0
+Cys-CA,Bacteroides ovatus,0,0,0,0,0
+Cys-CA,Bacteroides salyersiae,0,0,0,0,0
+Cys-CA,Bacteroides stercoris,0,0,0,0,0
+Cys-CA,Bacteroides vulgatus,0,0,0,0,0
+Cys-CA,Bifidobacterium adolescentis,0,923.7283333,2771.185,0,1599.944406
+Cys-CA,Bifidobacterium angulatum,0,0,0,0,0
+Cys-CA,Bifidobacterium breve,0,1145.719667,6065.531,0,2207.263209
+Cys-CA,Bifidobacterium longum,0,0,0,0,0
+Cys-CA,Catabacter hongkongensis,0,0,0,0,0
+Cys-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Cys-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Cys-CA,Clostridium aldenense,0,0,0,0,0
+Cys-CA,Clostridium cadaveris,0,0,0,0,0
+Cys-CA,Clostridium symbiosum,0,0,0,0,0
+Cys-CA,Cutibacterium acnes,0,0,0,0,0
+Cys-CA,Enterococcus faecalis,0,0,0,0,0
+Cys-CA,Enterococcus faecium,0,0,0,0,0
+Cys-CA,Finegoldia magna,0,0,0,0,0
+Cys-CA,Flavonifractor plautii,0,0,0,0,0
+Cys-CA,Fusobacterium nucleatum,0,0,0,0,0
+Cys-CA,Fusobacterium periodonticum,0,0,0,0,0
+Cys-CA,Fusobacterium ulcerans,0,0,0,0,0
+Cys-CA,Gardnerella vaginalis,0,0,0,0,0
+Cys-CA,Lachnospiraceae bacterium oral taxon 500,0,0,0,0,0
+Cys-CA,Lactobacillus gasseri,0,0,0,0,0
+Cys-CA,Lactobacillus jensenii,0,0,0,0,0
+Cys-CA,Lactobacillus vaginalis,0,0,0,0,0
+Cys-CA,Mobiluncus mulieris,0,0,0,0,0
+Cys-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Cys-CA,Oribacterium sinus,0,0,0,0,0
+Cys-CA,Parabacteroides,0,0,0,0,0
+Cys-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Cys-CA,Parabacteroides johnsonii,0,0,0,0,0
+Cys-CA,Parabacteroides merdae,0,0,0,0,0
+Cys-CA,Parvimonas micra,0,0,0,0,0
+Cys-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Cys-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Cys-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Cys-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Cys-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Cys-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Cys-CA,Prevotella amnii,0,0,0,0,0
+Cys-CA,Prevotella bivia,0,0,0,0,0
+Cys-CA,Prevotella buccae,0,0,0,0,0
+Cys-CA,Prevotella denticola,0,0,0,0,0
+Cys-CA,Prevotella disiens,0,0,0,0,0
+Cys-CA,Prevotella histicola,0,0,0,0,0
+Cys-CA,Prevotella melaninogenica,0,0,0,0,0
+Cys-CA,Prevotella nigrescens,0,0,0,0,0
+Cys-CA,Prevotella oralis,0,0,0,0,0
+Cys-CA,Prevotella oris,0,0,0,0,0
+Cys-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Cys-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Cys-CA,Prevotella timonensis,0,0,0,0,0
+Cys-CA,Prevotella veroralis,0,0,0,0,0
+Cys-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Cys-CA,Propionibacterium humerusii,0,0,0,0,0
+Cys-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Cys-CA,Selenomonas noxia,0,0,0,0,0
+Cys-CA,Sutterella wadsworthensis,0,0,0,0,0
+Cys-CA,Treponema denticola,0,0,0,0,0
+Cys-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Cys-CA,Veillonella montpellierensis,0,0,0,0,0
+Gln-CA,Actinomyces viscosus,0,0,0,0,0
+Gln-CA,Bacteroides caccae,0,0,0,0,0
+Gln-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Gln-CA,Bacteroides dorei,0,0,0,0,0
+Gln-CA,Bacteroides eggerthii,0,0,0,0,0
+Gln-CA,Bacteroides finegoldii,0,0,0,0,0
+Gln-CA,Bacteroides fragilis,0,0,0,0,0
+Gln-CA,Bacteroides ovatus,0,0,0,0,0
+Gln-CA,Bacteroides salyersiae,0,0,0,0,0
+Gln-CA,Bacteroides stercoris,0,0,0,0,0
+Gln-CA,Bacteroides vulgatus,0,0,0,0,0
+Gln-CA,Bifidobacterium adolescentis,0,0,0,0,0
+Gln-CA,Bifidobacterium angulatum,0,3259.996667,9779.99,0,5646.479859
+Gln-CA,Bifidobacterium breve,3695.8775,4966.34,13578.458,0,5448.31879
+Gln-CA,Bifidobacterium longum,0,0,0,0,0
+Gln-CA,Catabacter hongkongensis,0,0,0,0,0
+Gln-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Gln-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Gln-CA,Clostridium aldenense,0,0,0,0,0
+Gln-CA,Clostridium cadaveris,0,0,0,0,0
+Gln-CA,Clostridium symbiosum,0,0,0,0,0
+Gln-CA,Cutibacterium acnes,0,0,0,0,0
+Gln-CA,Enterococcus faecalis,0,0,0,0,0
+Gln-CA,Enterococcus faecium,0,0,0,0,0
+Gln-CA,Finegoldia magna,0,0,0,0,0
+Gln-CA,Flavonifractor plautii,0,0,0,0,0
+Gln-CA,Fusobacterium nucleatum,0,0,0,0,0
+Gln-CA,Fusobacterium periodonticum,0,0,0,0,0
+Gln-CA,Fusobacterium ulcerans,0,0,0,0,0
+Gln-CA,Gardnerella vaginalis,0,0,0,0,0
+Gln-CA,Lachnospiraceae bacterium oral taxon 500,0,0,0,0,0
+Gln-CA,Lactobacillus gasseri,0,0,0,0,0
+Gln-CA,Lactobacillus jensenii,0,0,0,0,0
+Gln-CA,Lactobacillus vaginalis,0,0,0,0,0
+Gln-CA,Mobiluncus mulieris,0,0,0,0,0
+Gln-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Gln-CA,Oribacterium sinus,0,0,0,0,0
+Gln-CA,Parabacteroides,0,0,0,0,0
+Gln-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Gln-CA,Parabacteroides johnsonii,0,0,0,0,0
+Gln-CA,Parabacteroides merdae,0,0,0,0,0
+Gln-CA,Parvimonas micra,0,0,0,0,0
+Gln-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Gln-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Gln-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Gln-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Gln-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Gln-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Gln-CA,Prevotella amnii,0,0,0,0,0
+Gln-CA,Prevotella bivia,0,0,0,0,0
+Gln-CA,Prevotella buccae,0,0,0,0,0
+Gln-CA,Prevotella denticola,0,0,0,0,0
+Gln-CA,Prevotella disiens,0,0,0,0,0
+Gln-CA,Prevotella histicola,0,0,0,0,0
+Gln-CA,Prevotella melaninogenica,0,0,0,0,0
+Gln-CA,Prevotella nigrescens,0,0,0,0,0
+Gln-CA,Prevotella oralis,0,0,0,0,0
+Gln-CA,Prevotella oris,0,0,0,0,0
+Gln-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Gln-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Gln-CA,Prevotella timonensis,0,0,0,0,0
+Gln-CA,Prevotella veroralis,0,0,0,0,0
+Gln-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Gln-CA,Propionibacterium humerusii,0,0,0,0,0
+Gln-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Gln-CA,Selenomonas noxia,0,0,0,0,0
+Gln-CA,Sutterella wadsworthensis,0,0,0,0,0
+Gln-CA,Treponema denticola,0,0,0,0,0
+Gln-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Gln-CA,Veillonella montpellierensis,0,0,0,0,0
+Gln-DCA,Actinomyces viscosus,0,0,0,0,0
+Gln-DCA,Bacteroides caccae,0,0,0,0,0
+Gln-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Gln-DCA,Bacteroides dorei,0,0,0,0,0
+Gln-DCA,Bacteroides eggerthii,0,0,0,0,0
+Gln-DCA,Bacteroides finegoldii,0,0,0,0,0
+Gln-DCA,Bacteroides fragilis,0,0,0,0,0
+Gln-DCA,Bacteroides ovatus,0,0,0,0,0
+Gln-DCA,Bacteroides salyersiae,0,0,0,0,0
+Gln-DCA,Bacteroides stercoris,0,0,0,0,0
+Gln-DCA,Bacteroides vulgatus,0,0,0,0,0
+Gln-DCA,Bifidobacterium adolescentis,0,0,0,0,0
+Gln-DCA,Bifidobacterium angulatum,0,0,0,0,0
+Gln-DCA,Bifidobacterium breve,4465.2825,8648.6045,24163.511,0,9850.747268
+Gln-DCA,Bifidobacterium longum,0,0,0,0,0
+Gln-DCA,Catabacter hongkongensis,38988.534,26278.253,39846.225,0,22761.67489
+Gln-DCA,Cellulosilyticum lentocellum,0,1771.116,5313.348,0,3067.662898
+Gln-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Gln-DCA,Clostridium aldenense,0,0,0,0,0
+Gln-DCA,Clostridium cadaveris,0,0,0,0,0
+Gln-DCA,Clostridium symbiosum,0,0,0,0,0
+Gln-DCA,Cutibacterium acnes,0,0,0,0,0
+Gln-DCA,Enterococcus faecalis,0,0,0,0,0
+Gln-DCA,Enterococcus faecium,0,2034.895048,12685.088,0,4056.596656
+Gln-DCA,Finegoldia magna,0,0,0,0,0
+Gln-DCA,Flavonifractor plautii,0,0,0,0,0
+Gln-DCA,Fusobacterium nucleatum,0,945.0967333,8146.61,0,2525.98099
+Gln-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Gln-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Gln-DCA,Gardnerella vaginalis,0,0,0,0,0
+Gln-DCA,Lachnospiraceae bacterium oral taxon 500,0,7342.145,22026.435,0,12716.96818
+Gln-DCA,Lactobacillus gasseri,0,0,0,0,0
+Gln-DCA,Lactobacillus jensenii,0,0,0,0,0
+Gln-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Gln-DCA,Mobiluncus mulieris,0,0,0,0,0
+Gln-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Gln-DCA,Oribacterium sinus,0,0,0,0,0
+Gln-DCA,Parabacteroides,0,0,0,0,0
+Gln-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Gln-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Gln-DCA,Parabacteroides merdae,0,0,0,0,0
+Gln-DCA,Parvimonas micra,0,0,0,0,0
+Gln-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Gln-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Gln-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Gln-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Gln-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Gln-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Gln-DCA,Prevotella amnii,0,0,0,0,0
+Gln-DCA,Prevotella bivia,0,0,0,0,0
+Gln-DCA,Prevotella buccae,0,0,0,0,0
+Gln-DCA,Prevotella denticola,0,0,0,0,0
+Gln-DCA,Prevotella disiens,0,0,0,0,0
+Gln-DCA,Prevotella histicola,0,0,0,0,0
+Gln-DCA,Prevotella melaninogenica,0,0,0,0,0
+Gln-DCA,Prevotella nigrescens,0,0,0,0,0
+Gln-DCA,Prevotella oralis,0,0,0,0,0
+Gln-DCA,Prevotella oris,0,0,0,0,0
+Gln-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Gln-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Gln-DCA,Prevotella timonensis,0,0,0,0,0
+Gln-DCA,Prevotella veroralis,0,0,0,0,0
+Gln-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Gln-DCA,Propionibacterium humerusii,0,0,0,0,0
+Gln-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Gln-DCA,Selenomonas noxia,0,0,0,0,0
+Gln-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Gln-DCA,Treponema denticola,0,0,0,0,0
+Gln-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Gln-DCA,Veillonella montpellierensis,0,0,0,0,0
+Glu-CA,Actinomyces viscosus,0,0,0,0,0
+Glu-CA,Bacteroides caccae,0,0,0,0,0
+Glu-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Glu-CA,Bacteroides dorei,0,0,0,0,0
+Glu-CA,Bacteroides eggerthii,0,0,0,0,0
+Glu-CA,Bacteroides finegoldii,0,0,0,0,0
+Glu-CA,Bacteroides fragilis,0,0,0,0,0
+Glu-CA,Bacteroides ovatus,0,0,0,0,0
+Glu-CA,Bacteroides salyersiae,0,0,0,0,0
+Glu-CA,Bacteroides stercoris,0,0,0,0,0
+Glu-CA,Bacteroides vulgatus,0,0,0,0,0
+Glu-CA,Bifidobacterium adolescentis,0,3000.275667,9000.827,0,5196.629891
+Glu-CA,Bifidobacterium angulatum,0,1639.358667,4918.076,0,2839.452502
+Glu-CA,Bifidobacterium breve,6556.527,10327.491,29493.904,0,10963.61897
+Glu-CA,Bifidobacterium longum,10052.941,7880.815417,19219.855,0,7558.283594
+Glu-CA,Catabacter hongkongensis,0,0,0,0,0
+Glu-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Glu-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Glu-CA,Clostridium aldenense,0,0,0,0,0
+Glu-CA,Clostridium cadaveris,0,0,0,0,0
+Glu-CA,Clostridium symbiosum,0,0,0,0,0
+Glu-CA,Cutibacterium acnes,0,0,0,0,0
+Glu-CA,Enterococcus faecalis,0,0,0,0,0
+Glu-CA,Enterococcus faecium,0,221.696619,4655.629,0,1015.941538
+Glu-CA,Finegoldia magna,0,0,0,0,0
+Glu-CA,Flavonifractor plautii,0,0,0,0,0
+Glu-CA,Fusobacterium nucleatum,0,0,0,0,0
+Glu-CA,Fusobacterium periodonticum,0,0,0,0,0
+Glu-CA,Fusobacterium ulcerans,0,0,0,0,0
+Glu-CA,Gardnerella vaginalis,0,0,0,0,0
+Glu-CA,Lachnospiraceae bacterium oral taxon 500,0,0,0,0,0
+Glu-CA,Lactobacillus gasseri,0,0,0,0,0
+Glu-CA,Lactobacillus jensenii,0,0,0,0,0
+Glu-CA,Lactobacillus vaginalis,0,0,0,0,0
+Glu-CA,Mobiluncus mulieris,0,0,0,0,0
+Glu-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Glu-CA,Oribacterium sinus,0,0,0,0,0
+Glu-CA,Parabacteroides,0,0,0,0,0
+Glu-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Glu-CA,Parabacteroides johnsonii,0,0,0,0,0
+Glu-CA,Parabacteroides merdae,0,0,0,0,0
+Glu-CA,Parvimonas micra,0,0,0,0,0
+Glu-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Glu-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Glu-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Glu-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Glu-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Glu-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Glu-CA,Prevotella amnii,0,0,0,0,0
+Glu-CA,Prevotella bivia,0,0,0,0,0
+Glu-CA,Prevotella buccae,0,0,0,0,0
+Glu-CA,Prevotella denticola,0,0,0,0,0
+Glu-CA,Prevotella disiens,0,0,0,0,0
+Glu-CA,Prevotella histicola,0,0,0,0,0
+Glu-CA,Prevotella melaninogenica,0,0,0,0,0
+Glu-CA,Prevotella nigrescens,0,0,0,0,0
+Glu-CA,Prevotella oralis,0,0,0,0,0
+Glu-CA,Prevotella oris,0,0,0,0,0
+Glu-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Glu-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Glu-CA,Prevotella timonensis,0,0,0,0,0
+Glu-CA,Prevotella veroralis,0,0,0,0,0
+Glu-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Glu-CA,Propionibacterium humerusii,0,0,0,0,0
+Glu-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Glu-CA,Selenomonas noxia,0,0,0,0,0
+Glu-CA,Sutterella wadsworthensis,0,0,0,0,0
+Glu-CA,Treponema denticola,0,0,0,0,0
+Glu-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Glu-CA,Veillonella montpellierensis,0,0,0,0,0
+Glu-DCA,Actinomyces viscosus,0,0,0,0,0
+Glu-DCA,Bacteroides caccae,0,0,0,0,0
+Glu-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Glu-DCA,Bacteroides dorei,0,0,0,0,0
+Glu-DCA,Bacteroides eggerthii,0,0,0,0,0
+Glu-DCA,Bacteroides finegoldii,0,0,0,0,0
+Glu-DCA,Bacteroides fragilis,0,0,0,0,0
+Glu-DCA,Bacteroides ovatus,0,0,0,0,0
+Glu-DCA,Bacteroides salyersiae,0,0,0,0,0
+Glu-DCA,Bacteroides stercoris,0,0,0,0,0
+Glu-DCA,Bacteroides vulgatus,0,0,0,0,0
+Glu-DCA,Bifidobacterium adolescentis,0,0,0,0,0
+Glu-DCA,Bifidobacterium angulatum,0,0,0,0,0
+Glu-DCA,Bifidobacterium breve,0,3223.224167,16041.252,0,5341.077966
+Glu-DCA,Bifidobacterium longum,6610.0405,6938.309167,15076.957,0,6010.0172
+Glu-DCA,Catabacter hongkongensis,4504.362,3243.194667,5225.222,0,2831.720947
+Glu-DCA,Cellulosilyticum lentocellum,11191.206,7523.891333,11380.468,0,6516.568163
+Glu-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Glu-DCA,Clostridium aldenense,0,0,0,0,0
+Glu-DCA,Clostridium cadaveris,0,0,0,0,0
+Glu-DCA,Clostridium symbiosum,0,0,0,0,0
+Glu-DCA,Cutibacterium acnes,0,0,0,0,0
+Glu-DCA,Enterococcus faecalis,0,0,0,0,0
+Glu-DCA,Enterococcus faecium,0,7134.124952,45352.774,0,11634.61283
+Glu-DCA,Finegoldia magna,0,0,0,0,0
+Glu-DCA,Flavonifractor plautii,0,0,0,0,0
+Glu-DCA,Fusobacterium nucleatum,0,1585.964867,12818.498,0,4199.888732
+Glu-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Glu-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Glu-DCA,Gardnerella vaginalis,0,0,0,0,0
+Glu-DCA,Lachnospiraceae bacterium oral taxon 500,7760.94,8561.874333,17924.683,0,8989.14273
+Glu-DCA,Lactobacillus gasseri,0,0,0,0,0
+Glu-DCA,Lactobacillus jensenii,0,0,0,0,0
+Glu-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Glu-DCA,Mobiluncus mulieris,0,0,0,0,0
+Glu-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Glu-DCA,Oribacterium sinus,0,0,0,0,0
+Glu-DCA,Parabacteroides,0,0,0,0,0
+Glu-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Glu-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Glu-DCA,Parabacteroides merdae,0,0,0,0,0
+Glu-DCA,Parvimonas micra,0,0,0,0,0
+Glu-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Glu-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Glu-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Glu-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Glu-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Glu-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Glu-DCA,Prevotella amnii,0,0,0,0,0
+Glu-DCA,Prevotella bivia,0,0,0,0,0
+Glu-DCA,Prevotella buccae,0,0,0,0,0
+Glu-DCA,Prevotella denticola,0,0,0,0,0
+Glu-DCA,Prevotella disiens,0,0,0,0,0
+Glu-DCA,Prevotella histicola,0,0,0,0,0
+Glu-DCA,Prevotella melaninogenica,0,0,0,0,0
+Glu-DCA,Prevotella nigrescens,0,0,0,0,0
+Glu-DCA,Prevotella oralis,0,0,0,0,0
+Glu-DCA,Prevotella oris,0,0,0,0,0
+Glu-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Glu-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Glu-DCA,Prevotella timonensis,0,0,0,0,0
+Glu-DCA,Prevotella veroralis,0,0,0,0,0
+Glu-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Glu-DCA,Propionibacterium humerusii,0,0,0,0,0
+Glu-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Glu-DCA,Selenomonas noxia,0,0,0,0,0
+Glu-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Glu-DCA,Treponema denticola,0,0,0,0,0
+Glu-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Glu-DCA,Veillonella montpellierensis,0,0,0,0,0
+His-CA,Actinomyces viscosus,0,0,0,0,0
+His-CA,Bacteroides caccae,0,0,0,0,0
+His-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+His-CA,Bacteroides dorei,0,0,0,0,0
+His-CA,Bacteroides eggerthii,0,0,0,0,0
+His-CA,Bacteroides finegoldii,0,0,0,0,0
+His-CA,Bacteroides fragilis,0,0,0,0,0
+His-CA,Bacteroides ovatus,0,0,0,0,0
+His-CA,Bacteroides salyersiae,0,0,0,0,0
+His-CA,Bacteroides stercoris,0,0,0,0,0
+His-CA,Bacteroides vulgatus,0,0,0,0,0
+His-CA,Bifidobacterium adolescentis,24136.106,17516.734,28414.096,0,15319.99599
+His-CA,Bifidobacterium angulatum,4596.672,6683.444,15453.66,0,7935.355372
+His-CA,Bifidobacterium breve,6740.252,16780.84692,67102.457,0,24129.71727
+His-CA,Bifidobacterium longum,0,982.0535833,4789.832,0,1872.434984
+His-CA,Catabacter hongkongensis,0,0,0,0,0
+His-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+His-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+His-CA,Clostridium aldenense,0,0,0,0,0
+His-CA,Clostridium cadaveris,0,0,0,0,0
+His-CA,Clostridium symbiosum,0,0,0,0,0
+His-CA,Cutibacterium acnes,0,0,0,0,0
+His-CA,Enterococcus faecalis,0,0,0,0,0
+His-CA,Enterococcus faecium,0,0,0,0,0
+His-CA,Finegoldia magna,0,0,0,0,0
+His-CA,Flavonifractor plautii,0,0,0,0,0
+His-CA,Fusobacterium nucleatum,0,0,0,0,0
+His-CA,Fusobacterium periodonticum,0,0,0,0,0
+His-CA,Fusobacterium ulcerans,0,0,0,0,0
+His-CA,Gardnerella vaginalis,0,0,0,0,0
+His-CA,Lachnospiraceae bacterium oral taxon 500,0,710.6713333,2132.014,0,1230.918857
+His-CA,Lactobacillus gasseri,0,0,0,0,0
+His-CA,Lactobacillus jensenii,0,0,0,0,0
+His-CA,Lactobacillus vaginalis,0,0,0,0,0
+His-CA,Mobiluncus mulieris,0,0,0,0,0
+His-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+His-CA,Oribacterium sinus,0,0,0,0,0
+His-CA,Parabacteroides,0,0,0,0,0
+His-CA,Parabacteroides goldsteinii,0,0,0,0,0
+His-CA,Parabacteroides johnsonii,0,0,0,0,0
+His-CA,Parabacteroides merdae,0,0,0,0,0
+His-CA,Parvimonas micra,0,0,0,0,0
+His-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+His-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+His-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+His-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+His-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+His-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+His-CA,Prevotella amnii,0,0,0,0,0
+His-CA,Prevotella bivia,0,0,0,0,0
+His-CA,Prevotella buccae,0,0,0,0,0
+His-CA,Prevotella denticola,0,0,0,0,0
+His-CA,Prevotella disiens,0,0,0,0,0
+His-CA,Prevotella histicola,0,0,0,0,0
+His-CA,Prevotella melaninogenica,0,0,0,0,0
+His-CA,Prevotella nigrescens,0,0,0,0,0
+His-CA,Prevotella oralis,0,0,0,0,0
+His-CA,Prevotella oris,0,0,0,0,0
+His-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+His-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+His-CA,Prevotella timonensis,0,0,0,0,0
+His-CA,Prevotella veroralis,0,0,0,0,0
+His-CA,Propionibacterium acidifaciens,0,0,0,0,0
+His-CA,Propionibacterium humerusii,0,0,0,0,0
+His-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+His-CA,Selenomonas noxia,0,0,0,0,0
+His-CA,Sutterella wadsworthensis,0,0,0,0,0
+His-CA,Treponema denticola,0,0,0,0,0
+His-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+His-CA,Veillonella montpellierensis,0,0,0,0,0
+His-DCA,Actinomyces viscosus,0,0,0,0,0
+His-DCA,Bacteroides caccae,0,0,0,0,0
+His-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+His-DCA,Bacteroides dorei,0,0,0,0,0
+His-DCA,Bacteroides eggerthii,0,0,0,0,0
+His-DCA,Bacteroides finegoldii,0,0,0,0,0
+His-DCA,Bacteroides fragilis,0,0,0,0,0
+His-DCA,Bacteroides ovatus,0,0,0,0,0
+His-DCA,Bacteroides salyersiae,0,0,0,0,0
+His-DCA,Bacteroides stercoris,0,0,0,0,0
+His-DCA,Bacteroides vulgatus,0,0,0,0,0
+His-DCA,Bifidobacterium adolescentis,35511.199,31541.96,59114.681,0,29756.55425
+His-DCA,Bifidobacterium angulatum,18033.551,13245.276,21702.277,0,11616.49215
+His-DCA,Bifidobacterium breve,24876.3645,34743.20067,94185.013,0,35512.15587
+His-DCA,Bifidobacterium longum,2339.72,3913.036083,11466.829,0,4536.116711
+His-DCA,Catabacter hongkongensis,0,0,0,0,0
+His-DCA,Cellulosilyticum lentocellum,21361.355,15172.191,24155.218,0,13213.55185
+His-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+His-DCA,Clostridium aldenense,0,0,0,0,0
+His-DCA,Clostridium cadaveris,0,0,0,0,0
+His-DCA,Clostridium symbiosum,0,0,0,0,0
+His-DCA,Cutibacterium acnes,0,0,0,0,0
+His-DCA,Enterococcus faecalis,0,0,0,0,0
+His-DCA,Enterococcus faecium,4033.393,11455.47595,51240.284,0,16289.55024
+His-DCA,Finegoldia magna,0,0,0,0,0
+His-DCA,Flavonifractor plautii,0,0,0,0,0
+His-DCA,Fusobacterium nucleatum,0,2819.5002,22135.442,0,7450.029626
+His-DCA,Fusobacterium periodonticum,0,0,0,0,0
+His-DCA,Fusobacterium ulcerans,0,0,0,0,0
+His-DCA,Gardnerella vaginalis,0,0,0,0,0
+His-DCA,Lachnospiraceae bacterium oral taxon 500,24247.706,17784.001,29104.297,0,15591.65282
+His-DCA,Lactobacillus gasseri,0,0,0,0,0
+His-DCA,Lactobacillus jensenii,0,0,0,0,0
+His-DCA,Lactobacillus vaginalis,0,0,0,0,0
+His-DCA,Mobiluncus mulieris,0,0,0,0,0
+His-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+His-DCA,Oribacterium sinus,0,0,0,0,0
+His-DCA,Parabacteroides,0,0,0,0,0
+His-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+His-DCA,Parabacteroides johnsonii,0,0,0,0,0
+His-DCA,Parabacteroides merdae,0,0,0,0,0
+His-DCA,Parvimonas micra,0,0,0,0,0
+His-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+His-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+His-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+His-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+His-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+His-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+His-DCA,Prevotella amnii,0,0,0,0,0
+His-DCA,Prevotella bivia,0,0,0,0,0
+His-DCA,Prevotella buccae,0,0,0,0,0
+His-DCA,Prevotella denticola,0,0,0,0,0
+His-DCA,Prevotella disiens,0,0,0,0,0
+His-DCA,Prevotella histicola,0,0,0,0,0
+His-DCA,Prevotella melaninogenica,0,0,0,0,0
+His-DCA,Prevotella nigrescens,0,0,0,0,0
+His-DCA,Prevotella oralis,0,0,0,0,0
+His-DCA,Prevotella oris,0,0,0,0,0
+His-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+His-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+His-DCA,Prevotella timonensis,0,0,0,0,0
+His-DCA,Prevotella veroralis,0,0,0,0,0
+His-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+His-DCA,Propionibacterium humerusii,0,0,0,0,0
+His-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+His-DCA,Selenomonas noxia,0,0,0,0,0
+His-DCA,Sutterella wadsworthensis,0,0,0,0,0
+His-DCA,Treponema denticola,0,0,0,0,0
+His-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+His-DCA,Veillonella montpellierensis,0,0,0,0,0
+Ile/Leu-CA,Actinomyces viscosus,0,0,0,0,0
+Ile/Leu-CA,Bacteroides caccae,0,0,0,0,0
+Ile/Leu-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Ile/Leu-CA,Bacteroides dorei,0,0,0,0,0
+Ile/Leu-CA,Bacteroides eggerthii,0,0,0,0,0
+Ile/Leu-CA,Bacteroides finegoldii,0,0,0,0,0
+Ile/Leu-CA,Bacteroides fragilis,0,0,0,0,0
+Ile/Leu-CA,Bacteroides ovatus,0,0,0,0,0
+Ile/Leu-CA,Bacteroides salyersiae,0,0,0,0,0
+Ile/Leu-CA,Bacteroides stercoris,0,0,0,0,0
+Ile/Leu-CA,Bacteroides vulgatus,0,0,0,0,0
+Ile/Leu-CA,Bifidobacterium adolescentis,0,0,0,0,0
+Ile/Leu-CA,Bifidobacterium angulatum,0,0,0,0,0
+Ile/Leu-CA,Bifidobacterium breve,0,0,0,0,0
+Ile/Leu-CA,Bifidobacterium longum,0,0,0,0,0
+Ile/Leu-CA,Catabacter hongkongensis,0,0,0,0,0
+Ile/Leu-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Ile/Leu-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Ile/Leu-CA,Clostridium aldenense,0,0,0,0,0
+Ile/Leu-CA,Clostridium cadaveris,0,10986.22233,36413.299,0,17159.45185
+Ile/Leu-CA,Clostridium symbiosum,0,0,0,0,0
+Ile/Leu-CA,Cutibacterium acnes,0,0,0,0,0
+Ile/Leu-CA,Enterococcus faecalis,0,0,0,0,0
+Ile/Leu-CA,Enterococcus faecium,0,0,0,0,0
+Ile/Leu-CA,Finegoldia magna,0,0,0,0,0
+Ile/Leu-CA,Flavonifractor plautii,0,0,0,0,0
+Ile/Leu-CA,Fusobacterium nucleatum,0,0,0,0,0
+Ile/Leu-CA,Fusobacterium periodonticum,0,0,0,0,0
+Ile/Leu-CA,Fusobacterium ulcerans,0,0,0,0,0
+Ile/Leu-CA,Gardnerella vaginalis,0,0,0,0,0
+Ile/Leu-CA,Lachnospiraceae bacterium oral taxon 500,0,0,0,0,0
+Ile/Leu-CA,Lactobacillus gasseri,0,0,0,0,0
+Ile/Leu-CA,Lactobacillus jensenii,0,0,0,0,0
+Ile/Leu-CA,Lactobacillus vaginalis,0,0,0,0,0
+Ile/Leu-CA,Mobiluncus mulieris,0,0,0,0,0
+Ile/Leu-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Ile/Leu-CA,Oribacterium sinus,0,0,0,0,0
+Ile/Leu-CA,Parabacteroides,0,0,0,0,0
+Ile/Leu-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Ile/Leu-CA,Parabacteroides johnsonii,0,0,0,0,0
+Ile/Leu-CA,Parabacteroides merdae,0,0,0,0,0
+Ile/Leu-CA,Parvimonas micra,0,0,0,0,0
+Ile/Leu-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Ile/Leu-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Ile/Leu-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Ile/Leu-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Ile/Leu-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Ile/Leu-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Ile/Leu-CA,Prevotella amnii,0,0,0,0,0
+Ile/Leu-CA,Prevotella bivia,0,0,0,0,0
+Ile/Leu-CA,Prevotella buccae,0,0,0,0,0
+Ile/Leu-CA,Prevotella denticola,0,0,0,0,0
+Ile/Leu-CA,Prevotella disiens,0,0,0,0,0
+Ile/Leu-CA,Prevotella histicola,0,0,0,0,0
+Ile/Leu-CA,Prevotella melaninogenica,0,0,0,0,0
+Ile/Leu-CA,Prevotella nigrescens,0,0,0,0,0
+Ile/Leu-CA,Prevotella oralis,0,0,0,0,0
+Ile/Leu-CA,Prevotella oris,0,0,0,0,0
+Ile/Leu-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Ile/Leu-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Ile/Leu-CA,Prevotella timonensis,0,0,0,0,0
+Ile/Leu-CA,Prevotella veroralis,0,0,0,0,0
+Ile/Leu-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Ile/Leu-CA,Propionibacterium humerusii,0,0,0,0,0
+Ile/Leu-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Ile/Leu-CA,Selenomonas noxia,0,0,0,0,0
+Ile/Leu-CA,Sutterella wadsworthensis,0,0,0,0,0
+Ile/Leu-CA,Treponema denticola,0,0,0,0,0
+Ile/Leu-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Ile/Leu-CA,Veillonella montpellierensis,0,0,0,0,0
+Ile/Leu-DCA,Actinomyces viscosus,0,0,0,0,0
+Ile/Leu-DCA,Bacteroides caccae,0,0,0,0,0
+Ile/Leu-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Ile/Leu-DCA,Bacteroides dorei,0,0,0,0,0
+Ile/Leu-DCA,Bacteroides eggerthii,0,0,0,0,0
+Ile/Leu-DCA,Bacteroides finegoldii,0,0,0,0,0
+Ile/Leu-DCA,Bacteroides fragilis,0,0,0,0,0
+Ile/Leu-DCA,Bacteroides ovatus,0,0,0,0,0
+Ile/Leu-DCA,Bacteroides salyersiae,0,0,0,0,0
+Ile/Leu-DCA,Bacteroides stercoris,0,0,0,0,0
+Ile/Leu-DCA,Bacteroides vulgatus,0,0,0,0,0
+Ile/Leu-DCA,Bifidobacterium adolescentis,0,0,0,0,0
+Ile/Leu-DCA,Bifidobacterium angulatum,0,1921.78,5765.34,0,3328.620601
+Ile/Leu-DCA,Bifidobacterium breve,0,0,0,0,0
+Ile/Leu-DCA,Bifidobacterium longum,0,0,0,0,0
+Ile/Leu-DCA,Catabacter hongkongensis,8279.612,5981.661333,9665.372,0,5226.402867
+Ile/Leu-DCA,Cellulosilyticum lentocellum,0,0,0,0,0
+Ile/Leu-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Ile/Leu-DCA,Clostridium aldenense,0,0,0,0,0
+Ile/Leu-DCA,Clostridium cadaveris,0,46479.1585,156464.723,0,72806.04427
+Ile/Leu-DCA,Clostridium symbiosum,0,0,0,0,0
+Ile/Leu-DCA,Cutibacterium acnes,0,0,0,0,0
+Ile/Leu-DCA,Enterococcus faecalis,0,0,0,0,0
+Ile/Leu-DCA,Enterococcus faecium,0,573.6660476,6177.131,0,1812.473578
+Ile/Leu-DCA,Finegoldia magna,0,0,0,0,0
+Ile/Leu-DCA,Flavonifractor plautii,0,0,0,0,0
+Ile/Leu-DCA,Fusobacterium nucleatum,0,0,0,0,0
+Ile/Leu-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Ile/Leu-DCA,Fusobacterium ulcerans,18787.593,13719.46533,22370.803,0,12015.72492
+Ile/Leu-DCA,Gardnerella vaginalis,0,0,0,0,0
+Ile/Leu-DCA,Lachnospiraceae bacterium oral taxon 500,0,1804.288667,5412.866,0,3125.119642
+Ile/Leu-DCA,Lactobacillus gasseri,0,0,0,0,0
+Ile/Leu-DCA,Lactobacillus jensenii,0,0,0,0,0
+Ile/Leu-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Ile/Leu-DCA,Mobiluncus mulieris,0,0,0,0,0
+Ile/Leu-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Ile/Leu-DCA,Oribacterium sinus,0,0,0,0,0
+Ile/Leu-DCA,Parabacteroides,0,0,0,0,0
+Ile/Leu-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Ile/Leu-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Ile/Leu-DCA,Parabacteroides merdae,0,0,0,0,0
+Ile/Leu-DCA,Parvimonas micra,0,0,0,0,0
+Ile/Leu-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Ile/Leu-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Ile/Leu-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Ile/Leu-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Ile/Leu-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Ile/Leu-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Ile/Leu-DCA,Prevotella amnii,0,0,0,0,0
+Ile/Leu-DCA,Prevotella bivia,0,0,0,0,0
+Ile/Leu-DCA,Prevotella buccae,0,0,0,0,0
+Ile/Leu-DCA,Prevotella denticola,0,0,0,0,0
+Ile/Leu-DCA,Prevotella disiens,0,0,0,0,0
+Ile/Leu-DCA,Prevotella histicola,0,0,0,0,0
+Ile/Leu-DCA,Prevotella melaninogenica,0,0,0,0,0
+Ile/Leu-DCA,Prevotella nigrescens,0,0,0,0,0
+Ile/Leu-DCA,Prevotella oralis,0,0,0,0,0
+Ile/Leu-DCA,Prevotella oris,0,0,0,0,0
+Ile/Leu-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Ile/Leu-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Ile/Leu-DCA,Prevotella timonensis,0,0,0,0,0
+Ile/Leu-DCA,Prevotella veroralis,0,0,0,0,0
+Ile/Leu-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Ile/Leu-DCA,Propionibacterium humerusii,0,0,0,0,0
+Ile/Leu-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Ile/Leu-DCA,Selenomonas noxia,0,0,0,0,0
+Ile/Leu-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Ile/Leu-DCA,Treponema denticola,0,0,0,0,0
+Ile/Leu-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Ile/Leu-DCA,Veillonella montpellierensis,0,0,0,0,0
+Lys-CA,Actinomyces viscosus,0,0,0,0,0
+Lys-CA,Bacteroides caccae,0,0,0,0,0
+Lys-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Lys-CA,Bacteroides dorei,0,0,0,0,0
+Lys-CA,Bacteroides eggerthii,0,0,0,0,0
+Lys-CA,Bacteroides finegoldii,0,0,0,0,0
+Lys-CA,Bacteroides fragilis,0,0,0,0,0
+Lys-CA,Bacteroides ovatus,0,0,0,0,0
+Lys-CA,Bacteroides salyersiae,0,0,0,0,0
+Lys-CA,Bacteroides stercoris,0,0,0,0,0
+Lys-CA,Bacteroides vulgatus,0,0,0,0,0
+Lys-CA,Bifidobacterium adolescentis,6516.358,4541.408,7107.866,0,3944.079157
+Lys-CA,Bifidobacterium angulatum,0,10393.74433,31181.233,0,18002.49327
+Lys-CA,Bifidobacterium breve,0,5234.864917,25841.896,0,9413.541257
+Lys-CA,Bifidobacterium longum,0,987.68575,7109.009,0,2361.237488
+Lys-CA,Catabacter hongkongensis,0,0,0,0,0
+Lys-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Lys-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Lys-CA,Clostridium aldenense,0,0,0,0,0
+Lys-CA,Clostridium cadaveris,0,0,0,0,0
+Lys-CA,Clostridium symbiosum,0,0,0,0,0
+Lys-CA,Cutibacterium acnes,0,0,0,0,0
+Lys-CA,Enterococcus faecalis,0,0,0,0,0
+Lys-CA,Enterococcus faecium,0,209.8403333,4406.647,0,961.6092114
+Lys-CA,Finegoldia magna,0,0,0,0,0
+Lys-CA,Flavonifractor plautii,0,0,0,0,0
+Lys-CA,Fusobacterium nucleatum,0,0,0,0,0
+Lys-CA,Fusobacterium periodonticum,0,0,0,0,0
+Lys-CA,Fusobacterium ulcerans,0,0,0,0,0
+Lys-CA,Gardnerella vaginalis,0,0,0,0,0
+Lys-CA,Lachnospiraceae bacterium oral taxon 500,0,1372.656,4117.968,0,2377.509933
+Lys-CA,Lactobacillus gasseri,0,0,0,0,0
+Lys-CA,Lactobacillus jensenii,0,0,0,0,0
+Lys-CA,Lactobacillus vaginalis,0,0,0,0,0
+Lys-CA,Mobiluncus mulieris,0,0,0,0,0
+Lys-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Lys-CA,Oribacterium sinus,0,0,0,0,0
+Lys-CA,Parabacteroides,0,0,0,0,0
+Lys-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Lys-CA,Parabacteroides johnsonii,0,0,0,0,0
+Lys-CA,Parabacteroides merdae,0,0,0,0,0
+Lys-CA,Parvimonas micra,0,0,0,0,0
+Lys-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Lys-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Lys-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Lys-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Lys-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Lys-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Lys-CA,Prevotella amnii,0,0,0,0,0
+Lys-CA,Prevotella bivia,0,0,0,0,0
+Lys-CA,Prevotella buccae,0,0,0,0,0
+Lys-CA,Prevotella denticola,0,0,0,0,0
+Lys-CA,Prevotella disiens,0,0,0,0,0
+Lys-CA,Prevotella histicola,0,0,0,0,0
+Lys-CA,Prevotella melaninogenica,0,0,0,0,0
+Lys-CA,Prevotella nigrescens,0,0,0,0,0
+Lys-CA,Prevotella oralis,0,0,0,0,0
+Lys-CA,Prevotella oris,0,0,0,0,0
+Lys-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Lys-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Lys-CA,Prevotella timonensis,0,0,0,0,0
+Lys-CA,Prevotella veroralis,0,0,0,0,0
+Lys-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Lys-CA,Propionibacterium humerusii,0,0,0,0,0
+Lys-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Lys-CA,Selenomonas noxia,0,0,0,0,0
+Lys-CA,Sutterella wadsworthensis,0,0,0,0,0
+Lys-CA,Treponema denticola,0,0,0,0,0
+Lys-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Lys-CA,Veillonella montpellierensis,0,0,0,0,0
+Lys-DCA,Actinomyces viscosus,0,0,0,0,0
+Lys-DCA,Bacteroides caccae,0,0,0,0,0
+Lys-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Lys-DCA,Bacteroides dorei,0,0,0,0,0
+Lys-DCA,Bacteroides eggerthii,0,0,0,0,0
+Lys-DCA,Bacteroides finegoldii,0,0,0,0,0
+Lys-DCA,Bacteroides fragilis,0,0,0,0,0
+Lys-DCA,Bacteroides ovatus,0,0,0,0,0
+Lys-DCA,Bacteroides salyersiae,0,0,0,0,0
+Lys-DCA,Bacteroides stercoris,0,0,0,0,0
+Lys-DCA,Bacteroides vulgatus,0,0,0,0,0
+Lys-DCA,Bifidobacterium adolescentis,11690.874,10128.519,18694.683,0,9444.760875
+Lys-DCA,Bifidobacterium angulatum,8863.532,7179.974667,12676.392,0,6503.729892
+Lys-DCA,Bifidobacterium breve,6968.92,9808.398,30903.574,0,11124.03909
+Lys-DCA,Bifidobacterium longum,0,2810.054917,12139.362,0,4018.141138
+Lys-DCA,Catabacter hongkongensis,14919.394,10123.019,15449.663,0,8770.799938
+Lys-DCA,Cellulosilyticum lentocellum,25662.202,17416.448,26587.142,0,15090.17476
+Lys-DCA,Clostridiales bacterium oral taxon 876,15710.92,11374.67,18413.09,0,9942.975857
+Lys-DCA,Clostridium aldenense,0,0,0,0,0
+Lys-DCA,Clostridium cadaveris,0,8277.902833,25908.241,0,12842.06638
+Lys-DCA,Clostridium symbiosum,0,0,0,0,0
+Lys-DCA,Cutibacterium acnes,0,0,0,0,0
+Lys-DCA,Enterococcus faecalis,0,0,0,0,0
+Lys-DCA,Enterococcus faecium,7406.371,11194.56457,48207.337,0,14043.84466
+Lys-DCA,Finegoldia magna,0,0,0,0,0
+Lys-DCA,Flavonifractor plautii,0,0,0,0,0
+Lys-DCA,Fusobacterium nucleatum,0,3141.738467,23971.884,0,8292.46675
+Lys-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Lys-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Lys-DCA,Gardnerella vaginalis,0,0,0,0,0
+Lys-DCA,Lachnospiraceae bacterium oral taxon 500,28504.645,21962.85567,37383.922,0,19531.65794
+Lys-DCA,Lactobacillus gasseri,0,0,0,0,0
+Lys-DCA,Lactobacillus jensenii,0,0,0,0,0
+Lys-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Lys-DCA,Mobiluncus mulieris,0,0,0,0,0
+Lys-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Lys-DCA,Oribacterium sinus,0,0,0,0,0
+Lys-DCA,Parabacteroides,0,0,0,0,0
+Lys-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Lys-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Lys-DCA,Parabacteroides merdae,0,0,0,0,0
+Lys-DCA,Parvimonas micra,0,0,0,0,0
+Lys-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Lys-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Lys-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Lys-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Lys-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Lys-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Lys-DCA,Prevotella amnii,0,0,0,0,0
+Lys-DCA,Prevotella bivia,0,0,0,0,0
+Lys-DCA,Prevotella buccae,0,0,0,0,0
+Lys-DCA,Prevotella denticola,0,0,0,0,0
+Lys-DCA,Prevotella disiens,0,0,0,0,0
+Lys-DCA,Prevotella histicola,0,0,0,0,0
+Lys-DCA,Prevotella melaninogenica,0,0,0,0,0
+Lys-DCA,Prevotella nigrescens,0,0,0,0,0
+Lys-DCA,Prevotella oralis,0,0,0,0,0
+Lys-DCA,Prevotella oris,0,0,0,0,0
+Lys-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Lys-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Lys-DCA,Prevotella timonensis,0,0,0,0,0
+Lys-DCA,Prevotella veroralis,0,0,0,0,0
+Lys-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Lys-DCA,Propionibacterium humerusii,0,0,0,0,0
+Lys-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Lys-DCA,Selenomonas noxia,0,0,0,0,0
+Lys-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Lys-DCA,Treponema denticola,0,0,0,0,0
+Lys-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Lys-DCA,Veillonella montpellierensis,0,0,0,0,0
+Met-DCA,Actinomyces viscosus,0,0,0,0,0
+Met-DCA,Bacteroides caccae,0,0,0,0,0
+Met-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Met-DCA,Bacteroides dorei,0,0,0,0,0
+Met-DCA,Bacteroides eggerthii,0,0,0,0,0
+Met-DCA,Bacteroides finegoldii,0,0,0,0,0
+Met-DCA,Bacteroides fragilis,0,0,0,0,0
+Met-DCA,Bacteroides ovatus,0,0,0,0,0
+Met-DCA,Bacteroides salyersiae,0,0,0,0,0
+Met-DCA,Bacteroides stercoris,0,0,0,0,0
+Met-DCA,Bacteroides vulgatus,0,0,0,0,0
+Met-DCA,Bifidobacterium adolescentis,0,0,0,0,0
+Met-DCA,Bifidobacterium angulatum,0,0,0,0,0
+Met-DCA,Bifidobacterium breve,0,0,0,0,0
+Met-DCA,Bifidobacterium longum,0,0,0,0,0
+Met-DCA,Catabacter hongkongensis,0,0,0,0,0
+Met-DCA,Cellulosilyticum lentocellum,8546.946,6267.441667,10255.379,0,5494.570467
+Met-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Met-DCA,Clostridium aldenense,0,0,0,0,0
+Met-DCA,Clostridium cadaveris,0,0,0,0,0
+Met-DCA,Clostridium symbiosum,8762.879,6873.049333,11856.269,0,6149.908193
+Met-DCA,Cutibacterium acnes,0,0,0,0,0
+Met-DCA,Enterococcus faecalis,0,0,0,0,0
+Met-DCA,Enterococcus faecium,0,4784.457333,17663.104,0,5919.957579
+Met-DCA,Finegoldia magna,0,0,0,0,0
+Met-DCA,Flavonifractor plautii,0,0,0,0,0
+Met-DCA,Fusobacterium nucleatum,0,869.7049333,6618.188,0,2295.428736
+Met-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Met-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Met-DCA,Gardnerella vaginalis,0,0,0,0,0
+Met-DCA,Lachnospiraceae bacterium oral taxon 500,7345.466,5791.423,10028.803,0,5191.869571
+Met-DCA,Lactobacillus gasseri,0,0,0,0,0
+Met-DCA,Lactobacillus jensenii,0,0,0,0,0
+Met-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Met-DCA,Mobiluncus mulieris,0,0,0,0,0
+Met-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Met-DCA,Oribacterium sinus,0,0,0,0,0
+Met-DCA,Parabacteroides,0,0,0,0,0
+Met-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Met-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Met-DCA,Parabacteroides merdae,0,0,0,0,0
+Met-DCA,Parvimonas micra,0,0,0,0,0
+Met-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Met-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Met-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Met-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Met-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Met-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Met-DCA,Prevotella amnii,0,0,0,0,0
+Met-DCA,Prevotella bivia,0,0,0,0,0
+Met-DCA,Prevotella buccae,0,0,0,0,0
+Met-DCA,Prevotella denticola,0,0,0,0,0
+Met-DCA,Prevotella disiens,0,0,0,0,0
+Met-DCA,Prevotella histicola,0,0,0,0,0
+Met-DCA,Prevotella melaninogenica,0,0,0,0,0
+Met-DCA,Prevotella nigrescens,0,0,0,0,0
+Met-DCA,Prevotella oralis,0,0,0,0,0
+Met-DCA,Prevotella oris,0,0,0,0,0
+Met-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Met-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Met-DCA,Prevotella timonensis,0,0,0,0,0
+Met-DCA,Prevotella veroralis,0,0,0,0,0
+Met-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Met-DCA,Propionibacterium humerusii,0,0,0,0,0
+Met-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Met-DCA,Selenomonas noxia,0,0,0,0,0
+Met-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Met-DCA,Treponema denticola,0,0,0,0,0
+Met-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Met-DCA,Veillonella montpellierensis,0,0,0,0,0
+Orn-DCA,Actinomyces viscosus,0,0,0,0,0
+Orn-DCA,Bacteroides caccae,0,0,0,0,0
+Orn-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Orn-DCA,Bacteroides dorei,0,0,0,0,0
+Orn-DCA,Bacteroides eggerthii,0,0,0,0,0
+Orn-DCA,Bacteroides finegoldii,0,0,0,0,0
+Orn-DCA,Bacteroides fragilis,0,0,0,0,0
+Orn-DCA,Bacteroides ovatus,0,0,0,0,0
+Orn-DCA,Bacteroides salyersiae,0,0,0,0,0
+Orn-DCA,Bacteroides stercoris,0,0,0,0,0
+Orn-DCA,Bacteroides vulgatus,0,0,0,0,0
+Orn-DCA,Bifidobacterium adolescentis,0,0,0,0,0
+Orn-DCA,Bifidobacterium angulatum,0,0,0,0,0
+Orn-DCA,Bifidobacterium breve,0,0,0,0,0
+Orn-DCA,Bifidobacterium longum,0,0,0,0,0
+Orn-DCA,Catabacter hongkongensis,0,0,0,0,0
+Orn-DCA,Cellulosilyticum lentocellum,0,2497.670333,7493.011,0,4326.091918
+Orn-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Orn-DCA,Clostridium aldenense,0,0,0,0,0
+Orn-DCA,Clostridium cadaveris,0,0,0,0,0
+Orn-DCA,Clostridium symbiosum,0,0,0,0,0
+Orn-DCA,Cutibacterium acnes,0,0,0,0,0
+Orn-DCA,Enterococcus faecalis,0,0,0,0,0
+Orn-DCA,Enterococcus faecium,0,1924.539333,16281.917,0,4457.901904
+Orn-DCA,Finegoldia magna,0,0,0,0,0
+Orn-DCA,Flavonifractor plautii,0,0,0,0,0
+Orn-DCA,Fusobacterium nucleatum,0,681.2092,5128.033,0,1797.720814
+Orn-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Orn-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Orn-DCA,Gardnerella vaginalis,0,0,0,0,0
+Orn-DCA,Lachnospiraceae bacterium oral taxon 500,5554.656,5420.433,10706.643,0,5354.583358
+Orn-DCA,Lactobacillus gasseri,0,0,0,0,0
+Orn-DCA,Lactobacillus jensenii,0,0,0,0,0
+Orn-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Orn-DCA,Mobiluncus mulieris,0,0,0,0,0
+Orn-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Orn-DCA,Oribacterium sinus,0,0,0,0,0
+Orn-DCA,Parabacteroides,0,0,0,0,0
+Orn-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Orn-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Orn-DCA,Parabacteroides merdae,0,0,0,0,0
+Orn-DCA,Parvimonas micra,0,0,0,0,0
+Orn-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Orn-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Orn-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Orn-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Orn-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Orn-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Orn-DCA,Prevotella amnii,0,0,0,0,0
+Orn-DCA,Prevotella bivia,0,0,0,0,0
+Orn-DCA,Prevotella buccae,0,0,0,0,0
+Orn-DCA,Prevotella denticola,0,0,0,0,0
+Orn-DCA,Prevotella disiens,0,0,0,0,0
+Orn-DCA,Prevotella histicola,0,0,0,0,0
+Orn-DCA,Prevotella melaninogenica,0,0,0,0,0
+Orn-DCA,Prevotella nigrescens,0,0,0,0,0
+Orn-DCA,Prevotella oralis,0,0,0,0,0
+Orn-DCA,Prevotella oris,0,0,0,0,0
+Orn-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Orn-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Orn-DCA,Prevotella timonensis,0,0,0,0,0
+Orn-DCA,Prevotella veroralis,0,0,0,0,0
+Orn-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Orn-DCA,Propionibacterium humerusii,0,0,0,0,0
+Orn-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Orn-DCA,Selenomonas noxia,0,0,0,0,0
+Orn-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Orn-DCA,Treponema denticola,0,0,0,0,0
+Orn-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Orn-DCA,Veillonella montpellierensis,0,0,0,0,0
+Phe-CA,Actinomyces viscosus,0,0,0,0,0
+Phe-CA,Bacteroides caccae,0,0,0,0,0
+Phe-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Phe-CA,Bacteroides dorei,0,0,0,0,0
+Phe-CA,Bacteroides eggerthii,0,0,0,0,0
+Phe-CA,Bacteroides finegoldii,0,0,0,0,0
+Phe-CA,Bacteroides fragilis,0,0,0,0,0
+Phe-CA,Bacteroides ovatus,0,0,0,0,0
+Phe-CA,Bacteroides salyersiae,0,0,0,0,0
+Phe-CA,Bacteroides stercoris,0,0,0,0,0
+Phe-CA,Bacteroides vulgatus,0,0,0,0,0
+Phe-CA,Bifidobacterium adolescentis,17147.978,13253.844,22613.554,0,11799.00063
+Phe-CA,Bifidobacterium angulatum,4962.368,6581.748667,14782.878,0,7523.308169
+Phe-CA,Bifidobacterium breve,5175.9695,4981.991167,13195.345,0,4383.787799
+Phe-CA,Bifidobacterium longum,0,432.7830833,5193.397,0,1499.204578
+Phe-CA,Catabacter hongkongensis,0,0,0,0,0
+Phe-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Phe-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Phe-CA,Clostridium aldenense,0,0,0,0,0
+Phe-CA,Clostridium cadaveris,0,0,0,0,0
+Phe-CA,Clostridium symbiosum,0,0,0,0,0
+Phe-CA,Cutibacterium acnes,0,0,0,0,0
+Phe-CA,Enterococcus faecalis,0,0,0,0,0
+Phe-CA,Enterococcus faecium,0,1889.642286,16720.387,0,4156.798968
+Phe-CA,Finegoldia magna,0,0,0,0,0
+Phe-CA,Flavonifractor plautii,0,0,0,0,0
+Phe-CA,Fusobacterium nucleatum,0,0,0,0,0
+Phe-CA,Fusobacterium periodonticum,0,0,0,0,0
+Phe-CA,Fusobacterium ulcerans,0,0,0,0,0
+Phe-CA,Gardnerella vaginalis,0,0,0,0,0
+Phe-CA,Lachnospiraceae bacterium oral taxon 500,0,2299.328667,6897.986,0,3982.554074
+Phe-CA,Lactobacillus gasseri,0,0,0,0,0
+Phe-CA,Lactobacillus jensenii,0,0,0,0,0
+Phe-CA,Lactobacillus vaginalis,0,0,0,0,0
+Phe-CA,Mobiluncus mulieris,0,0,0,0,0
+Phe-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Phe-CA,Oribacterium sinus,0,0,0,0,0
+Phe-CA,Parabacteroides,0,0,0,0,0
+Phe-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Phe-CA,Parabacteroides johnsonii,0,0,0,0,0
+Phe-CA,Parabacteroides merdae,0,0,0,0,0
+Phe-CA,Parvimonas micra,0,0,0,0,0
+Phe-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Phe-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Phe-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Phe-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Phe-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Phe-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Phe-CA,Prevotella amnii,0,0,0,0,0
+Phe-CA,Prevotella bivia,0,0,0,0,0
+Phe-CA,Prevotella buccae,0,0,0,0,0
+Phe-CA,Prevotella denticola,0,0,0,0,0
+Phe-CA,Prevotella disiens,0,0,0,0,0
+Phe-CA,Prevotella histicola,0,0,0,0,0
+Phe-CA,Prevotella melaninogenica,0,0,0,0,0
+Phe-CA,Prevotella nigrescens,0,0,0,0,0
+Phe-CA,Prevotella oralis,0,0,0,0,0
+Phe-CA,Prevotella oris,0,0,0,0,0
+Phe-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Phe-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Phe-CA,Prevotella timonensis,0,0,0,0,0
+Phe-CA,Prevotella veroralis,0,0,0,0,0
+Phe-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Phe-CA,Propionibacterium humerusii,0,0,0,0,0
+Phe-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Phe-CA,Selenomonas noxia,0,0,0,0,0
+Phe-CA,Sutterella wadsworthensis,0,0,0,0,0
+Phe-CA,Treponema denticola,0,0,0,0,0
+Phe-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Phe-CA,Veillonella montpellierensis,0,0,0,0,0
+Phe-DCA,Actinomyces viscosus,0,0,0,0,0
+Phe-DCA,Bacteroides caccae,4554.3,3130.765,4837.995,0,2715.029986
+Phe-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Phe-DCA,Bacteroides dorei,0,0,0,0,0
+Phe-DCA,Bacteroides eggerthii,0,0,0,0,0
+Phe-DCA,Bacteroides finegoldii,0,0,0,0,0
+Phe-DCA,Bacteroides fragilis,0,672.4424,5889.44,0,1803.15747
+Phe-DCA,Bacteroides ovatus,0,0,0,0,0
+Phe-DCA,Bacteroides salyersiae,0,0,0,0,0
+Phe-DCA,Bacteroides stercoris,0,0,0,0,0
+Phe-DCA,Bacteroides vulgatus,0,0,0,0,0
+Phe-DCA,Bifidobacterium adolescentis,16100.144,11961.11333,19783.196,0,10521.0452
+Phe-DCA,Bifidobacterium angulatum,6421.692,11184.72867,27132.494,0,14179.49034
+Phe-DCA,Bifidobacterium breve,5775.1435,6116.948833,26256.209,0,7684.458039
+Phe-DCA,Bifidobacterium longum,2062.197,2643.6185,6518.768,0,2836.530708
+Phe-DCA,Catabacter hongkongensis,8140.209,6653.015667,11818.838,0,6048.143593
+Phe-DCA,Cellulosilyticum lentocellum,14206.711,12294.24367,22676.02,0,11458.34278
+Phe-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Phe-DCA,Clostridium aldenense,0,0,0,0,0
+Phe-DCA,Clostridium cadaveris,0,2680.259167,8752.948,0,4176.597755
+Phe-DCA,Clostridium symbiosum,0,0,0,0,0
+Phe-DCA,Cutibacterium acnes,0,0,0,0,0
+Phe-DCA,Enterococcus faecalis,0,0,0,0,0
+Phe-DCA,Enterococcus faecium,11199.923,13094.99752,49501.372,0,15122.48705
+Phe-DCA,Finegoldia magna,0,0,0,0,0
+Phe-DCA,Flavonifractor plautii,0,0,0,0,0
+Phe-DCA,Fusobacterium nucleatum,0,1924.180867,14806.429,0,5079.878932
+Phe-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Phe-DCA,Fusobacterium ulcerans,6748.858,5233.815667,8952.589,0,4664.625109
+Phe-DCA,Gardnerella vaginalis,0,0,0,0,0
+Phe-DCA,Lachnospiraceae bacterium oral taxon 500,15094.255,13942.48167,26733.19,0,13403.7606
+Phe-DCA,Lactobacillus gasseri,0,0,0,0,0
+Phe-DCA,Lactobacillus jensenii,0,0,0,0,0
+Phe-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Phe-DCA,Mobiluncus mulieris,0,0,0,0,0
+Phe-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Phe-DCA,Oribacterium sinus,0,0,0,0,0
+Phe-DCA,Parabacteroides,0,0,0,0,0
+Phe-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Phe-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Phe-DCA,Parabacteroides merdae,0,0,0,0,0
+Phe-DCA,Parvimonas micra,0,0,0,0,0
+Phe-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Phe-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Phe-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Phe-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Phe-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Phe-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Phe-DCA,Prevotella amnii,0,0,0,0,0
+Phe-DCA,Prevotella bivia,0,0,0,0,0
+Phe-DCA,Prevotella buccae,0,0,0,0,0
+Phe-DCA,Prevotella denticola,0,0,0,0,0
+Phe-DCA,Prevotella disiens,0,0,0,0,0
+Phe-DCA,Prevotella histicola,0,0,0,0,0
+Phe-DCA,Prevotella melaninogenica,0,0,0,0,0
+Phe-DCA,Prevotella nigrescens,0,0,0,0,0
+Phe-DCA,Prevotella oralis,0,0,0,0,0
+Phe-DCA,Prevotella oris,0,0,0,0,0
+Phe-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Phe-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Phe-DCA,Prevotella timonensis,0,0,0,0,0
+Phe-DCA,Prevotella veroralis,0,0,0,0,0
+Phe-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Phe-DCA,Propionibacterium humerusii,0,0,0,0,0
+Phe-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Phe-DCA,Selenomonas noxia,0,0,0,0,0
+Phe-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Phe-DCA,Treponema denticola,0,0,0,0,0
+Phe-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Phe-DCA,Veillonella montpellierensis,0,0,0,0,0
+Ser-CA,Actinomyces viscosus,0,0,0,0,0
+Ser-CA,Bacteroides caccae,0,0,0,0,0
+Ser-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Ser-CA,Bacteroides dorei,0,0,0,0,0
+Ser-CA,Bacteroides eggerthii,0,0,0,0,0
+Ser-CA,Bacteroides finegoldii,0,0,0,0,0
+Ser-CA,Bacteroides fragilis,0,0,0,0,0
+Ser-CA,Bacteroides ovatus,0,0,0,0,0
+Ser-CA,Bacteroides salyersiae,0,0,0,0,0
+Ser-CA,Bacteroides stercoris,0,0,0,0,0
+Ser-CA,Bacteroides vulgatus,0,0,0,0,0
+Ser-CA,Bifidobacterium adolescentis,0,0,0,0,0
+Ser-CA,Bifidobacterium angulatum,0,1535.722,4607.166,0,2659.94853
+Ser-CA,Bifidobacterium breve,0,376.679,4520.148,0,1304.854332
+Ser-CA,Bifidobacterium longum,0,0,0,0,0
+Ser-CA,Catabacter hongkongensis,0,0,0,0,0
+Ser-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Ser-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Ser-CA,Clostridium aldenense,0,0,0,0,0
+Ser-CA,Clostridium cadaveris,0,6639.435333,22247.716,0,10390.74127
+Ser-CA,Clostridium symbiosum,0,0,0,0,0
+Ser-CA,Cutibacterium acnes,0,0,0,0,0
+Ser-CA,Enterococcus faecalis,0,0,0,0,0
+Ser-CA,Enterococcus faecium,0,0,0,0,0
+Ser-CA,Finegoldia magna,0,0,0,0,0
+Ser-CA,Flavonifractor plautii,0,0,0,0,0
+Ser-CA,Fusobacterium nucleatum,0,0,0,0,0
+Ser-CA,Fusobacterium periodonticum,0,0,0,0,0
+Ser-CA,Fusobacterium ulcerans,0,0,0,0,0
+Ser-CA,Gardnerella vaginalis,0,0,0,0,0
+Ser-CA,Lachnospiraceae bacterium oral taxon 500,0,0,0,0,0
+Ser-CA,Lactobacillus gasseri,0,0,0,0,0
+Ser-CA,Lactobacillus jensenii,0,0,0,0,0
+Ser-CA,Lactobacillus vaginalis,0,0,0,0,0
+Ser-CA,Mobiluncus mulieris,0,0,0,0,0
+Ser-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Ser-CA,Oribacterium sinus,0,0,0,0,0
+Ser-CA,Parabacteroides,0,0,0,0,0
+Ser-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Ser-CA,Parabacteroides johnsonii,0,0,0,0,0
+Ser-CA,Parabacteroides merdae,0,0,0,0,0
+Ser-CA,Parvimonas micra,0,0,0,0,0
+Ser-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Ser-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Ser-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Ser-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Ser-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Ser-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Ser-CA,Prevotella amnii,0,0,0,0,0
+Ser-CA,Prevotella bivia,0,0,0,0,0
+Ser-CA,Prevotella buccae,0,0,0,0,0
+Ser-CA,Prevotella denticola,0,0,0,0,0
+Ser-CA,Prevotella disiens,0,0,0,0,0
+Ser-CA,Prevotella histicola,0,0,0,0,0
+Ser-CA,Prevotella melaninogenica,0,0,0,0,0
+Ser-CA,Prevotella nigrescens,0,0,0,0,0
+Ser-CA,Prevotella oralis,0,0,0,0,0
+Ser-CA,Prevotella oris,0,0,0,0,0
+Ser-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Ser-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Ser-CA,Prevotella timonensis,0,0,0,0,0
+Ser-CA,Prevotella veroralis,0,0,0,0,0
+Ser-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Ser-CA,Propionibacterium humerusii,0,0,0,0,0
+Ser-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Ser-CA,Selenomonas noxia,0,0,0,0,0
+Ser-CA,Sutterella wadsworthensis,0,0,0,0,0
+Ser-CA,Treponema denticola,0,0,0,0,0
+Ser-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Ser-CA,Veillonella montpellierensis,0,0,0,0,0
+Ser-DCA,Actinomyces viscosus,0,0,0,0,0
+Ser-DCA,Bacteroides caccae,0,0,0,0,0
+Ser-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Ser-DCA,Bacteroides dorei,0,0,0,0,0
+Ser-DCA,Bacteroides eggerthii,0,0,0,0,0
+Ser-DCA,Bacteroides finegoldii,0,0,0,0,0
+Ser-DCA,Bacteroides fragilis,0,0,0,0,0
+Ser-DCA,Bacteroides ovatus,0,0,0,0,0
+Ser-DCA,Bacteroides salyersiae,0,0,0,0,0
+Ser-DCA,Bacteroides stercoris,0,0,0,0,0
+Ser-DCA,Bacteroides vulgatus,0,0,0,0,0
+Ser-DCA,Bifidobacterium adolescentis,0,0,0,0,0
+Ser-DCA,Bifidobacterium angulatum,0,0,0,0,0
+Ser-DCA,Bifidobacterium breve,0,0,0,0,0
+Ser-DCA,Bifidobacterium longum,0,0,0,0,0
+Ser-DCA,Catabacter hongkongensis,0,2070.064,6210.192,0,3585.456023
+Ser-DCA,Cellulosilyticum lentocellum,0,1565.490333,4696.471,0,2711.508796
+Ser-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Ser-DCA,Clostridium aldenense,0,0,0,0,0
+Ser-DCA,Clostridium cadaveris,0,5162.703,16342.286,0,8016.249296
+Ser-DCA,Clostridium symbiosum,0,0,0,0,0
+Ser-DCA,Cutibacterium acnes,0,0,0,0,0
+Ser-DCA,Enterococcus faecalis,0,0,0,0,0
+Ser-DCA,Enterococcus faecium,0,2274.779905,11065.487,0,3593.985808
+Ser-DCA,Finegoldia magna,0,0,0,0,0
+Ser-DCA,Flavonifractor plautii,0,0,0,0,0
+Ser-DCA,Fusobacterium nucleatum,0,443.0358667,4291.947,0,1225.211001
+Ser-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Ser-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Ser-DCA,Gardnerella vaginalis,0,0,0,0,0
+Ser-DCA,Lachnospiraceae bacterium oral taxon 500,0,2273.766667,6821.3,0,3938.279391
+Ser-DCA,Lactobacillus gasseri,0,0,0,0,0
+Ser-DCA,Lactobacillus jensenii,0,0,0,0,0
+Ser-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Ser-DCA,Mobiluncus mulieris,0,0,0,0,0
+Ser-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Ser-DCA,Oribacterium sinus,0,0,0,0,0
+Ser-DCA,Parabacteroides,0,0,0,0,0
+Ser-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Ser-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Ser-DCA,Parabacteroides merdae,0,0,0,0,0
+Ser-DCA,Parvimonas micra,0,0,0,0,0
+Ser-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Ser-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Ser-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Ser-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Ser-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Ser-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Ser-DCA,Prevotella amnii,0,0,0,0,0
+Ser-DCA,Prevotella bivia,0,0,0,0,0
+Ser-DCA,Prevotella buccae,0,0,0,0,0
+Ser-DCA,Prevotella denticola,0,0,0,0,0
+Ser-DCA,Prevotella disiens,0,0,0,0,0
+Ser-DCA,Prevotella histicola,0,0,0,0,0
+Ser-DCA,Prevotella melaninogenica,0,0,0,0,0
+Ser-DCA,Prevotella nigrescens,0,0,0,0,0
+Ser-DCA,Prevotella oralis,0,0,0,0,0
+Ser-DCA,Prevotella oris,0,0,0,0,0
+Ser-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Ser-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Ser-DCA,Prevotella timonensis,0,0,0,0,0
+Ser-DCA,Prevotella veroralis,0,0,0,0,0
+Ser-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Ser-DCA,Propionibacterium humerusii,0,0,0,0,0
+Ser-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Ser-DCA,Selenomonas noxia,0,0,0,0,0
+Ser-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Ser-DCA,Treponema denticola,0,0,0,0,0
+Ser-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Ser-DCA,Veillonella montpellierensis,0,0,0,0,0
+Thr-CA,Actinomyces viscosus,0,0,0,0,0
+Thr-CA,Bacteroides caccae,0,0,0,0,0
+Thr-CA,Bacteroides cellulosilyticus,0,0,0,0,0
+Thr-CA,Bacteroides dorei,0,0,0,0,0
+Thr-CA,Bacteroides eggerthii,0,0,0,0,0
+Thr-CA,Bacteroides finegoldii,0,0,0,0,0
+Thr-CA,Bacteroides fragilis,0,0,0,0,0
+Thr-CA,Bacteroides ovatus,0,0,0,0,0
+Thr-CA,Bacteroides salyersiae,0,0,0,0,0
+Thr-CA,Bacteroides stercoris,0,0,0,0,0
+Thr-CA,Bacteroides vulgatus,0,0,0,0,0
+Thr-CA,Bifidobacterium adolescentis,0,2033.887,6101.661,0,3522.795621
+Thr-CA,Bifidobacterium angulatum,0,2416.702333,7250.107,0,4185.851228
+Thr-CA,Bifidobacterium breve,0,2574.7715,7767.777,0,3258.333349
+Thr-CA,Bifidobacterium longum,7052.1675,6860.36175,15720.598,0,5864.928036
+Thr-CA,Catabacter hongkongensis,0,0,0,0,0
+Thr-CA,Cellulosilyticum lentocellum,0,0,0,0,0
+Thr-CA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Thr-CA,Clostridium aldenense,0,0,0,0,0
+Thr-CA,Clostridium cadaveris,0,2969.337167,10974.366,0,4782.116694
+Thr-CA,Clostridium symbiosum,0,0,0,0,0
+Thr-CA,Cutibacterium acnes,0,0,0,0,0
+Thr-CA,Enterococcus faecalis,0,0,0,0,0
+Thr-CA,Enterococcus faecium,0,0,0,0,0
+Thr-CA,Finegoldia magna,0,0,0,0,0
+Thr-CA,Flavonifractor plautii,0,0,0,0,0
+Thr-CA,Fusobacterium nucleatum,0,0,0,0,0
+Thr-CA,Fusobacterium periodonticum,0,0,0,0,0
+Thr-CA,Fusobacterium ulcerans,0,0,0,0,0
+Thr-CA,Gardnerella vaginalis,0,0,0,0,0
+Thr-CA,Lachnospiraceae bacterium oral taxon 500,0,0,0,0,0
+Thr-CA,Lactobacillus gasseri,0,0,0,0,0
+Thr-CA,Lactobacillus jensenii,0,0,0,0,0
+Thr-CA,Lactobacillus vaginalis,0,0,0,0,0
+Thr-CA,Mobiluncus mulieris,0,0,0,0,0
+Thr-CA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Thr-CA,Oribacterium sinus,0,0,0,0,0
+Thr-CA,Parabacteroides,0,0,0,0,0
+Thr-CA,Parabacteroides goldsteinii,0,0,0,0,0
+Thr-CA,Parabacteroides johnsonii,0,0,0,0,0
+Thr-CA,Parabacteroides merdae,0,0,0,0,0
+Thr-CA,Parvimonas micra,0,0,0,0,0
+Thr-CA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Thr-CA,Peptoniphilus lacrimalis,0,0,0,0,0
+Thr-CA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Thr-CA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Thr-CA,Peptostreptococcus anaerobius,0,0,0,0,0
+Thr-CA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Thr-CA,Prevotella amnii,0,0,0,0,0
+Thr-CA,Prevotella bivia,0,0,0,0,0
+Thr-CA,Prevotella buccae,0,0,0,0,0
+Thr-CA,Prevotella denticola,0,0,0,0,0
+Thr-CA,Prevotella disiens,0,0,0,0,0
+Thr-CA,Prevotella histicola,0,0,0,0,0
+Thr-CA,Prevotella melaninogenica,0,0,0,0,0
+Thr-CA,Prevotella nigrescens,0,0,0,0,0
+Thr-CA,Prevotella oralis,0,0,0,0,0
+Thr-CA,Prevotella oris,0,0,0,0,0
+Thr-CA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Thr-CA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Thr-CA,Prevotella timonensis,0,0,0,0,0
+Thr-CA,Prevotella veroralis,0,0,0,0,0
+Thr-CA,Propionibacterium acidifaciens,0,0,0,0,0
+Thr-CA,Propionibacterium humerusii,0,0,0,0,0
+Thr-CA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Thr-CA,Selenomonas noxia,0,0,0,0,0
+Thr-CA,Sutterella wadsworthensis,0,0,0,0,0
+Thr-CA,Treponema denticola,0,0,0,0,0
+Thr-CA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Thr-CA,Veillonella montpellierensis,0,0,0,0,0
+Thr-DCA,Actinomyces viscosus,0,0,0,0,0
+Thr-DCA,Bacteroides caccae,0,0,0,0,0
+Thr-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Thr-DCA,Bacteroides dorei,0,0,0,0,0
+Thr-DCA,Bacteroides eggerthii,0,0,0,0,0
+Thr-DCA,Bacteroides finegoldii,0,0,0,0,0
+Thr-DCA,Bacteroides fragilis,0,0,0,0,0
+Thr-DCA,Bacteroides ovatus,0,0,0,0,0
+Thr-DCA,Bacteroides salyersiae,0,0,0,0,0
+Thr-DCA,Bacteroides stercoris,0,0,0,0,0
+Thr-DCA,Bacteroides vulgatus,0,0,0,0,0
+Thr-DCA,Bifidobacterium adolescentis,0,0,0,0,0
+Thr-DCA,Bifidobacterium angulatum,0,0,0,0,0
+Thr-DCA,Bifidobacterium breve,0,0,0,0,0
+Thr-DCA,Bifidobacterium longum,2533.2075,3929.287,15562.668,0,4965.991301
+Thr-DCA,Catabacter hongkongensis,0,0,0,0,0
+Thr-DCA,Cellulosilyticum lentocellum,0,0,0,0,0
+Thr-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Thr-DCA,Clostridium aldenense,0,0,0,0,0
+Thr-DCA,Clostridium cadaveris,0,10632.6075,35642.33,0,16641.33877
+Thr-DCA,Clostridium symbiosum,0,0,0,0,0
+Thr-DCA,Cutibacterium acnes,0,0,0,0,0
+Thr-DCA,Enterococcus faecalis,0,0,0,0,0
+Thr-DCA,Enterococcus faecium,0,498.6684286,5280.553,0,1575.018601
+Thr-DCA,Finegoldia magna,0,0,0,0,0
+Thr-DCA,Flavonifractor plautii,0,0,0,0,0
+Thr-DCA,Fusobacterium nucleatum,0,0,0,0,0
+Thr-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Thr-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Thr-DCA,Gardnerella vaginalis,0,0,0,0,0
+Thr-DCA,Lachnospiraceae bacterium oral taxon 500,0,1550.312333,4650.937,0,2685.219729
+Thr-DCA,Lactobacillus gasseri,0,0,0,0,0
+Thr-DCA,Lactobacillus jensenii,0,0,0,0,0
+Thr-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Thr-DCA,Mobiluncus mulieris,0,0,0,0,0
+Thr-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Thr-DCA,Oribacterium sinus,0,0,0,0,0
+Thr-DCA,Parabacteroides,0,0,0,0,0
+Thr-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Thr-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Thr-DCA,Parabacteroides merdae,0,0,0,0,0
+Thr-DCA,Parvimonas micra,0,0,0,0,0
+Thr-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Thr-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Thr-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Thr-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Thr-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Thr-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Thr-DCA,Prevotella amnii,0,0,0,0,0
+Thr-DCA,Prevotella bivia,0,0,0,0,0
+Thr-DCA,Prevotella buccae,0,0,0,0,0
+Thr-DCA,Prevotella denticola,0,0,0,0,0
+Thr-DCA,Prevotella disiens,0,0,0,0,0
+Thr-DCA,Prevotella histicola,0,0,0,0,0
+Thr-DCA,Prevotella melaninogenica,0,0,0,0,0
+Thr-DCA,Prevotella nigrescens,0,0,0,0,0
+Thr-DCA,Prevotella oralis,0,0,0,0,0
+Thr-DCA,Prevotella oris,0,0,0,0,0
+Thr-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Thr-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Thr-DCA,Prevotella timonensis,0,0,0,0,0
+Thr-DCA,Prevotella veroralis,0,0,0,0,0
+Thr-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Thr-DCA,Propionibacterium humerusii,0,0,0,0,0
+Thr-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Thr-DCA,Selenomonas noxia,0,0,0,0,0
+Thr-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Thr-DCA,Treponema denticola,0,0,0,0,0
+Thr-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Thr-DCA,Veillonella montpellierensis,0,0,0,0,0
+Trp-DCA,Actinomyces viscosus,0,0,0,0,0
+Trp-DCA,Bacteroides caccae,0,0,0,0,0
+Trp-DCA,Bacteroides cellulosilyticus,0,0,0,0,0
+Trp-DCA,Bacteroides dorei,0,0,0,0,0
+Trp-DCA,Bacteroides eggerthii,0,0,0,0,0
+Trp-DCA,Bacteroides finegoldii,0,0,0,0,0
+Trp-DCA,Bacteroides fragilis,0,0,0,0,0
+Trp-DCA,Bacteroides ovatus,0,0,0,0,0
+Trp-DCA,Bacteroides salyersiae,0,0,0,0,0
+Trp-DCA,Bacteroides stercoris,0,0,0,0,0
+Trp-DCA,Bacteroides vulgatus,0,0,0,0,0
+Trp-DCA,Bifidobacterium adolescentis,0,0,0,0,0
+Trp-DCA,Bifidobacterium angulatum,0,0,0,0,0
+Trp-DCA,Bifidobacterium breve,0,0,0,0,0
+Trp-DCA,Bifidobacterium longum,0,0,0,0,0
+Trp-DCA,Catabacter hongkongensis,0,0,0,0,0
+Trp-DCA,Cellulosilyticum lentocellum,0,0,0,0,0
+Trp-DCA,Clostridiales bacterium oral taxon 876,0,0,0,0,0
+Trp-DCA,Clostridium aldenense,0,0,0,0,0
+Trp-DCA,Clostridium cadaveris,0,0,0,0,0
+Trp-DCA,Clostridium symbiosum,0,0,0,0,0
+Trp-DCA,Cutibacterium acnes,0,0,0,0,0
+Trp-DCA,Enterococcus faecalis,0,0,0,0,0
+Trp-DCA,Enterococcus faecium,0,243.472381,5112.92,0,1115.730615
+Trp-DCA,Finegoldia magna,0,0,0,0,0
+Trp-DCA,Flavonifractor plautii,0,0,0,0,0
+Trp-DCA,Fusobacterium nucleatum,0,0,0,0,0
+Trp-DCA,Fusobacterium periodonticum,0,0,0,0,0
+Trp-DCA,Fusobacterium ulcerans,0,0,0,0,0
+Trp-DCA,Gardnerella vaginalis,0,0,0,0,0
+Trp-DCA,Lachnospiraceae bacterium oral taxon 500,0,0,0,0,0
+Trp-DCA,Lactobacillus gasseri,0,0,0,0,0
+Trp-DCA,Lactobacillus jensenii,0,0,0,0,0
+Trp-DCA,Lactobacillus vaginalis,0,0,0,0,0
+Trp-DCA,Mobiluncus mulieris,0,0,0,0,0
+Trp-DCA,Olsenella sp. oral taxon 809,0,0,0,0,0
+Trp-DCA,Oribacterium sinus,0,0,0,0,0
+Trp-DCA,Parabacteroides,0,0,0,0,0
+Trp-DCA,Parabacteroides goldsteinii,0,0,0,0,0
+Trp-DCA,Parabacteroides johnsonii,0,0,0,0,0
+Trp-DCA,Parabacteroides merdae,0,0,0,0,0
+Trp-DCA,Parvimonas micra,0,0,0,0,0
+Trp-DCA,Parvimonas sp. oral taxon 110,0,0,0,0,0
+Trp-DCA,Peptoniphilus lacrimalis,0,0,0,0,0
+Trp-DCA,Peptoniphilus sp. oral taxon 386,0,0,0,0,0
+Trp-DCA,Peptoniphilus sp. oral taxon 836,0,0,0,0,0
+Trp-DCA,Peptostreptococcus anaerobius,0,0,0,0,0
+Trp-DCA,Porphyromonas sp. oral taxon 278,0,0,0,0,0
+Trp-DCA,Prevotella amnii,0,0,0,0,0
+Trp-DCA,Prevotella bivia,0,0,0,0,0
+Trp-DCA,Prevotella buccae,0,0,0,0,0
+Trp-DCA,Prevotella denticola,0,0,0,0,0
+Trp-DCA,Prevotella disiens,0,0,0,0,0
+Trp-DCA,Prevotella histicola,0,0,0,0,0
+Trp-DCA,Prevotella melaninogenica,0,0,0,0,0
+Trp-DCA,Prevotella nigrescens,0,0,0,0,0
+Trp-DCA,Prevotella oralis,0,0,0,0,0
+Trp-DCA,Prevotella oris,0,0,0,0,0
+Trp-DCA,Prevotella sp. oral taxon 317,0,0,0,0,0
+Trp-DCA,Prevotella sp. oral taxon 472,0,0,0,0,0
+Trp-DCA,Prevotella timonensis,0,0,0,0,0
+Trp-DCA,Prevotella veroralis,0,0,0,0,0
+Trp-DCA,Propionibacterium acidifaciens,0,0,0,0,0
+Trp-DCA,Propionibacterium humerusii,0,0,0,0,0
+Trp-DCA,Pseudopropionibacterium propionicum,0,0,0,0,0
+Trp-DCA,Selenomonas noxia,0,0,0,0,0
+Trp-DCA,Sutterella wadsworthensis,0,0,0,0,0
+Trp-DCA,Treponema denticola,0,0,0,0,0
+Trp-DCA,unclassified Peptostreptococcaceae (miscellaneous),0,0,0,0,0
+Trp-DCA,Veillonella montpellierensis,0,0,0,0,0
