@@ -2,10 +2,10 @@
 
 An interactive UMAP atlas of steroid- and bile-acid-metabolizing enzymes and their small-molecule substrates, curated from public databases (UniProt, Rhea, ChEBI, NCBI RefSeq) and augmented with hand-audited literature recruitments from recent papers.
 
-- **14,089 protein sequences** — Swiss-Prot annotation-score 5, active in UniProtKB, steroid-associated by either Rhea catalysis or GO / ChEBI / keyword annotation. Each entry carries ProtT5 embeddings, 2D UMAP coordinates, k-means clusters (k = 82, chosen by silhouette + composite score in [50, 95]), and PubMed provenance.
-- **677 steroid small molecules** with SMILES, verified ChEBI IDs, and RDKit-drawn structures
+- **14,087 protein sequences** — Swiss-Prot annotation-score 5, active in UniProtKB, steroid-associated by either Rhea catalysis or GO / ChEBI / keyword annotation. Each entry carries ProtT5 embeddings, 2D UMAP coordinates, k-means clusters (k = 82, chosen by silhouette + composite score in [50, 95]), PubMed provenance, and an `atlas_inclusion_rationale` field documenting *why* each entry is in the atlas (cited back to the specific Rhea / GO / keyword / ChEBI hit).
+- **842 steroid small molecules** with SMILES, verified ChEBI IDs, RDKit-drawn structures, and HDBSCAN-clustered Morgan-fingerprint UMAP (10 chemistry-coherent clusters: MCBAs, Cholestanes, Androstanes, Estranes, Plant/fungal sterols, Alkamines — every molecule assigned, no "noise" bucket). 100% have resolvable structure images and bidirectional protein cross-links.
 - **2,889 natural + synthetic steroid entries** for chemical-space comparison
-- **15 literature-recruited proteins** from 5 audited papers, each with full evidence-based provenance
+- **13 literature-recruited proteins** from 11 audited 2023-2026 papers (Gentry 2023, Mohanty 2024, Rimal 2024, McCurry 2024, Lamichhane 2025, Xue 2025, Jacoby 2025, Aatsinki 2025, Arp 2025, Reilly 2026, Agongo 2026, Lucas 2026), each with full evidence-based provenance, paper URL, and enzyme-confirmation tier
 - **Two visualizers under one roof:**
   - **`marimo/`** — Python + marimo + Altair + RDKit notebook, the original interactive tool: clickable steroid catalogue, per-tile inline protein panels, rich detail cards with GO / keyword chips, PubMed refs, EC / Rhea reactions, UniProt + AlphaFold links.
   - **`web/`** — Next.js 14 + deck.gl web app, a redesigned frontend consuming the same data: WebGL scatter, zoom-conditional cluster labels, marimo-style hover tooltips, multi-column search (name / gene / GO / EC / ChEBI / …), pan-or-select toggle with persistent lasso, structure-thumbnail catalogue tiles, multi-select detail cards.

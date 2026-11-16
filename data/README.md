@@ -30,7 +30,7 @@ One row per protein sequence. Deduplicated (no identical sequences repeated).
 | `identifier_type` | UniProt / RefSeq_WP / Locus_Tag / NCBI_Genome |
 | `atlas_inclusion_rationale` | **One-line summary of WHY this protein is in the Steroid Atlas.** Three patterns: (1) `Literature-recruited {role} → {DOI}` for literature-recruited rows; (2) `Rhea/UniProt enzyme-substrate match (Rhea: XXXX) | GO: …` for base-corpus enzymes with Rhea substrate links; (3) `GO: steroid binding; cholesterol binding | KW: Steroid-binding` for receptors, transporters, binders (no enzymatic substrate link, but inclusion is justified by an explicit steroid-family GO term or UniProt keyword). Coverage: 14,085/14,087 (99.98%). The 2 Prominin-1 rows (CD133) are flagged as `inclusion trigger unclear` — cholesterol-rich-membrane markers without an explicit steroid GO/KW term; manual review candidate. |
 
-## `molecules.csv` — 864 rows × 14 columns
+## `molecules.csv` — 842 rows × 14 columns
 
 One row per steroid/bile-acid small molecule.
 
