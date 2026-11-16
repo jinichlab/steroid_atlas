@@ -96,8 +96,23 @@ function tooltipHtmlFor(kind: ViewKind, r: Row): string {
 }
 function splitList(s: string): string[] {
   if (!s) return [];
+  let txt = String(s).trim();
+  // Defense against Python-list leakage ("['A', 'B', ...]"): strip brackets +
+  // quotes, convert commas to semicolons, THEN apply the normal split.
+  if (txt.startsWith("[") && txt.endsWith("]")) {
+    txt = txt.slice(1, -1);
+    if (txt.includes("'") || txt.includes('"') || txt.includes(",")) {
+      txt = txt.replace(/['"]/g, "").replace(/,/g, ";");
+    }
+  }
   return Array.from(
-    new Set(s.replace(/;/g, "\n").split("\n").map((x) => x.trim()).filter(Boolean)),
+    new Set(
+      txt
+        .replace(/;/g, "\n")
+        .split("\n")
+        .map((x) => x.trim())
+        .filter(Boolean),
+    ),
   );
 }
 
@@ -141,6 +156,20 @@ export default function ExploreClient({ kind, clusters }: Props) {
   const isProteinFocused = (acc: string) =>
     focusedProteins.some((x) => x.accession === acc);
   const clearFocusedProteins = () => setFocusedProteins([]);
+
+  // Same multi-select pattern for molecules in the steroid-centric view.
+  const [focusedMolecules, setFocusedMolecules] = useState<Molecule[]>([]);
+  const molKey = (m: Molecule) => `${m.compound_name}|${m.chebi_id ?? ""}`;
+  const toggleMolecule = (m: Molecule) =>
+    setFocusedMolecules((cur) => {
+      const k = molKey(m);
+      const i = cur.findIndex((x) => molKey(x) === k);
+      if (i >= 0) return [...cur.slice(0, i), ...cur.slice(i + 1)];
+      return [...cur, m];
+    });
+  const isMoleculeFocused = (m: Molecule) =>
+    focusedMolecules.some((x) => molKey(x) === molKey(m));
+  const clearFocusedMolecules = () => setFocusedMolecules([]);
   const [legendOpen, setLegendOpen] = useState(true);
   // Free-text search across names / accessions / gene / GO / EC / keywords /
   // ChEBI / compound / sequence.
@@ -215,10 +244,11 @@ export default function ExploreClient({ kind, clusters }: Props) {
   }, [kind]);
 
   const structUrl = (name: string, chebi?: string): string | null => {
-    const nm = (name || "").toLowerCase();
+    const nm = (name || "").trim().toLowerCase();
     if (nm && structIdx[nm]) return `/atlas/structures/${structIdx[nm]}`;
-    if (chebi && structIdx[`chebi:${chebi}`])
-      return `/atlas/structures/${structIdx[`chebi:${chebi}`]}`;
+    const cb = (chebi || "").toString().trim();
+    if (cb && structIdx[`chebi:${cb}`])
+      return `/atlas/structures/${structIdx[`chebi:${cb}`]}`;
     return null;
   };
 
@@ -901,13 +931,43 @@ export default function ExploreClient({ kind, clusters }: Props) {
                     <span className="italic text-slate-400"> (see paper for full methodology)</span>
                   </div>
                 )}
-                {kind === "molecule" && (
-                  <div className="mt-2 text-xs">
-                    {(focusedPoint as Molecule).interacting_protein_accessions ?
-                      <span className="text-slate-700">Linked proteins: {splitList((focusedPoint as Molecule).interacting_protein_accessions ?? "").length}</span> :
-                      <span className="italic text-amber-700">⚠ No proteins associated in the atlas — this compound is listed as a literature-recruited structure without a direct enzyme attribution. For bacterial producer suggestions, see above and consult the source paper.</span>}
-                  </div>
-                )}
+                {kind === "molecule" && (() => {
+                  const accStr = (focusedPoint as Molecule).interacting_protein_accessions ?? "";
+                  const accs = splitList(accStr);
+                  if (accs.length === 0) {
+                    return (
+                      <div className="mt-2 text-xs">
+                        <span className="italic text-amber-700">⚠ No proteins associated in the atlas — this compound is listed as a literature-recruited structure without a direct enzyme attribution. For bacterial producer suggestions, see above and consult the source paper.</span>
+                      </div>
+                    );
+                  }
+                  return (
+                    <div className="mt-3">
+                      <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                        Linked proteins ({accs.length})
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {accs.slice(0, 40).map((acc) => (
+                          <a
+                            key={acc}
+                            href={`https://www.uniprot.org/uniprotkb/${acc}/entry`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="rounded border border-sky-300 bg-sky-50 px-2 py-0.5 font-mono text-[11px] text-sky-800 hover:border-sky-500 hover:bg-sky-100"
+                            title={`Open ${acc} on UniProt`}
+                          >
+                            {acc}
+                          </a>
+                        ))}
+                        {accs.length > 40 && (
+                          <span className="rounded border border-slate-200 px-2 py-0.5 text-[11px] text-slate-500">
+                            …and {accs.length - 40} more
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })()}
                 <div className="mt-2 flex flex-wrap gap-2 text-sm">
                   {kind === "protein" && (
                     <>
@@ -1147,7 +1207,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
               <div className="text-sm text-slate-500">
                 {pool.length.toLocaleString()} row
                 {pool.length !== 1 ? "s" : ""}
-                {kind === "protein"
+                {(kind === "protein" || kind === "molecule")
                   ? " · tick any row to add its detail card below"
                   : ""}
               </div>
@@ -1209,6 +1269,54 @@ export default function ExploreClient({ kind, clusters }: Props) {
                   })()}
                 </div>
               )}
+              {kind === "molecule" && (
+                <div className="ml-auto flex items-center gap-2">
+                  {(() => {
+                    const MAX = 100;
+                    const targets = (pool as Molecule[]).slice(0, MAX);
+                    const allPicked = targets.every((m) => isMoleculeFocused(m));
+                    return (
+                      <>
+                        <button
+                          onClick={() => {
+                            if (allPicked) {
+                              setFocusedMolecules((cur) =>
+                                cur.filter(
+                                  (x) => !targets.some((t) => molKey(t) === molKey(x)),
+                                ),
+                              );
+                            } else {
+                              setFocusedMolecules((cur) => {
+                                const have = new Set(cur.map(molKey));
+                                return [...cur, ...targets.filter((t) => !have.has(molKey(t)))];
+                              });
+                            }
+                          }}
+                          className={`rounded-md border px-3 py-1 text-xs font-semibold transition ${
+                            allPicked
+                              ? "border-rose-500 bg-rose-50 text-rose-700 hover:bg-rose-100"
+                              : "border-sky-500 bg-sky-50 text-sky-700 hover:bg-sky-100"
+                          }`}
+                        >
+                          {allPicked
+                            ? `☒ Deselect all ${targets.length}`
+                            : `☑ Select all ${targets.length}${
+                                pool.length > MAX ? ` (of ${pool.length})` : ""
+                              }`}
+                        </button>
+                        {pool.length > MAX && !allPicked && (
+                          <span
+                            title="Capped at 100 to keep the browser responsive."
+                            className="cursor-help self-center text-xs text-slate-500"
+                          >
+                            (capped at 100)
+                          </span>
+                        )}
+                      </>
+                    );
+                  })()}
+                </div>
+              )}
             </div>
             <div className="max-h-[360px] overflow-auto rounded-lg border border-slate-200 bg-white">
               <table className="w-full text-[12px]">
@@ -1223,6 +1331,15 @@ export default function ExploreClient({ kind, clusters }: Props) {
                       <th className="px-2 py-1.5 text-right">Cluster</th>
                       <th className="px-2 py-1.5">EC</th>
                       <th className="px-2 py-1.5 text-right">Refs</th>
+                      <th className="px-2 py-1.5">★</th>
+                    </tr>
+                  ) : kind === "molecule" ? (
+                    <tr>
+                      <th className="px-2 py-1.5"></th>
+                      <th className="px-2 py-1.5">Compound</th>
+                      <th className="px-2 py-1.5">ChEBI</th>
+                      <th className="px-2 py-1.5 text-right">Cluster</th>
+                      <th className="px-2 py-1.5 text-right">Proteins</th>
                       <th className="px-2 py-1.5">★</th>
                     </tr>
                   ) : (
@@ -1297,6 +1414,49 @@ export default function ExploreClient({ kind, clusters }: Props) {
                             ) : (
                               ""
                             )}
+                          </td>
+                        </tr>
+                      );
+                    }
+                    if (kind === "molecule") {
+                      const m = r as Molecule;
+                      const isPick = isMoleculeFocused(m);
+                      const nProts = splitList(m.interacting_protein_accessions ?? "").length;
+                      return (
+                        <tr
+                          key={rowKey(kind, r)}
+                          onClick={() => toggleMolecule(m)}
+                          className={`cursor-pointer border-b border-slate-100 transition ${
+                            isPick ? "bg-sky-100" : "hover:bg-slate-50"
+                          }`}
+                        >
+                          <td className="px-2 py-1.5">
+                            <span
+                              className={`inline-block h-3.5 w-3.5 rounded-sm border transition ${
+                                isPick ? "border-sky-600 bg-sky-600" : "border-slate-400 bg-white"
+                              }`}
+                            >
+                              {isPick && (
+                                <span className="block text-center text-[9px] leading-[13px] text-white">✓</span>
+                              )}
+                            </span>
+                          </td>
+                          <td className="px-2 py-1.5 text-slate-900">
+                            {(m.compound_name || "").slice(0, 60)}
+                          </td>
+                          <td className="px-2 py-1.5 font-mono text-[11px] text-slate-500">
+                            {m.chebi_id ? `CHEBI:${String(m.chebi_id).replace(/\.0$/, "")}` : ""}
+                          </td>
+                          <td className="px-2 py-1.5 text-right text-slate-600">
+                            {String((m as any).cluster ?? "")}
+                          </td>
+                          <td className="px-2 py-1.5 text-right text-slate-600">
+                            {nProts > 0 ? nProts : ""}
+                          </td>
+                          <td className="px-2 py-1.5">
+                            {m.is_literature_recruited ? (
+                              <span className="text-amber-500" title="Newly recruited">★</span>
+                            ) : ""}
                           </td>
                         </tr>
                       );
@@ -1483,6 +1643,30 @@ export default function ExploreClient({ kind, clusters }: Props) {
         {/* Molecule / natsyn view — steroid tile grid (each is its OWN
             structure). Shows up when a cluster is picked or the user
             drags to select a region. */}
+        {kind === "molecule" && focusedMolecules.length > 0 && (
+          <div className="mt-6 space-y-4">
+            <div className="flex flex-wrap items-baseline gap-3">
+              <div className="text-lg font-semibold text-slate-900">
+                📄 Detail cards ({focusedMolecules.length})
+              </div>
+              <button
+                className="ml-auto rounded-md border border-slate-300 bg-white px-2 py-1 text-xs text-slate-700 hover:bg-slate-100"
+                onClick={clearFocusedMolecules}
+              >
+                ✕ close all
+              </button>
+            </div>
+            {focusedMolecules.map((m) => (
+              <MoleculeDetailCard
+                key={molKey(m)}
+                molecule={m}
+                structUrl={structUrl}
+                onClose={() => toggleMolecule(m)}
+              />
+            ))}
+          </div>
+        )}
+
         {(kind === "molecule" || kind === "natsyn") && pool.length > 0 && (
           <div className="mt-6">
             <div className="mb-3 flex flex-wrap items-baseline gap-3">
@@ -1574,6 +1758,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
             ))}
           </div>
         )}
+
       </div>
     </div>
   );
@@ -1678,15 +1863,9 @@ function ProteinDetailCard({
       </div>
 
       {protein.annotation && (
-        <div className="mb-3 rounded border border-slate-200 bg-slate-50 p-3 text-sm text-slate-800">
-          <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">Curator note</div>
-          <div className="whitespace-pre-wrap">{protein.annotation}</div>
-        </div>
-      )}
-      {protein.reaction_descriptions && (
-        <div className="mb-3 rounded border border-sky-200 bg-sky-50 p-3 text-sm text-sky-900">
-          <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-sky-700">Reaction (paper-grounded)</div>
-          <div className="whitespace-pre-wrap">{protein.reaction_descriptions}</div>
+        <div className="mb-3 inline-flex items-center gap-2 rounded border border-slate-200 bg-slate-50 px-2 py-1 text-xs text-slate-700">
+          <span className="font-semibold uppercase tracking-wide text-slate-500">UniProt annotation score</span>
+          <span className="font-mono text-slate-900">{protein.annotation}/5</span>
         </div>
       )}
       {protein.sequence_source && (
@@ -1819,6 +1998,185 @@ function ProteinDetailCard({
               </div>
             )}
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function MoleculeDetailCard({
+  molecule,
+  structUrl,
+  onClose,
+}: {
+  molecule: Molecule;
+  structUrl: (n: string, c?: string) => string | null;
+  onClose: () => void;
+}) {
+  const accs = splitList(molecule.interacting_protein_accessions ?? "");
+  const src = structUrl(molecule.compound_name, molecule.chebi_id);
+  const synonyms = splitList(molecule.synonyms ?? "")
+    .map((s) => s.replace(/^aka\s+/i, "").trim())
+    .filter(Boolean)
+    .slice(0, 8);
+  const tier = molecule.evidence_tier;
+  const tierLabel =
+    tier === "1" ? "⚠ Chemistry reference only — no biological detection"
+    : tier === "2" ? "⚠ MS/MS match in public data (isomer uncertain)"
+    : tier === "3" ? "✓ Detected in human IBD stool (iHMP2, isomer-resolved)"
+    : tier === "4-5" ? "✓ Cross-cohort validated in human IBD (iHMP2 + Boland)"
+    : tier === "5" ? "✓ Produced by gut bacteria in culture"
+    : "";
+
+  return (
+    <div className="mt-6 rounded-xl border border-slate-200 bg-white p-5 shadow-md">
+      <div className="mb-3 flex flex-wrap items-baseline gap-3">
+        <div className="text-lg font-bold text-slate-900">
+          {molecule.compound_name}
+        </div>
+        {molecule.is_literature_recruited ? (
+          <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-800">
+            ★ NEW
+          </span>
+        ) : null}
+        <button
+          className="ml-auto rounded-md border border-slate-300 bg-white px-2 py-1 text-xs text-slate-700 hover:bg-slate-100"
+          onClick={onClose}
+        >
+          ✕ close
+        </button>
+      </div>
+      <div className="mb-3 text-sm text-slate-600">
+        {molecule.chebi_id ? (
+          <a
+            href={`https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:${String(molecule.chebi_id).replace(/\.0$/, "")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-sky-700 hover:underline"
+          >
+            CHEBI:{String(molecule.chebi_id).replace(/\.0$/, "")}
+          </a>
+        ) : (
+          <span className="italic text-slate-500">no canonical ChEBI</span>
+        )}
+        {molecule.cluster !== undefined && molecule.cluster !== null && (
+          <span className="ml-3">Cluster {((molecule.cluster as number) ?? 0) + 1}</span>
+        )}
+      </div>
+
+      {tierLabel && (
+        <div className="mb-3 inline-flex items-center gap-2 rounded-md border border-emerald-300 bg-emerald-50 px-2 py-1 text-xs text-emerald-900">
+          <span className="font-semibold">Evidence tier {tier}:</span>
+          <span>{tierLabel}</span>
+        </div>
+      )}
+
+      {molecule.evidence_note && (
+        <div className="mb-3 rounded border border-slate-200 bg-slate-50 p-3 text-sm text-slate-800">
+          <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">Note</div>
+          <div className="whitespace-pre-wrap">{molecule.evidence_note}</div>
+        </div>
+      )}
+
+      {molecule.paper_url && (
+        <div className="mb-3">
+          <a
+            href={molecule.paper_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded border border-sky-500 px-2 py-1 text-xs text-sky-700 hover:bg-sky-50"
+          >
+            📄 Source paper
+          </a>
+        </div>
+      )}
+
+      <div className="grid gap-4 md:grid-cols-2">
+        <div>
+          {src ? (
+            <div className="mb-3 flex items-center justify-center rounded-lg border border-slate-200 bg-white p-3" style={{ minHeight: 260 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={src}
+                alt={molecule.compound_name}
+                className="max-h-[260px] max-w-full object-contain"
+              />
+            </div>
+          ) : (
+            <div className="mb-3 rounded-lg border border-dashed border-slate-300 bg-slate-50 p-5 text-center text-xs italic text-slate-500">
+              no 2D structure image available
+            </div>
+          )}
+          {molecule.smiles && (
+            <div className="mb-2 text-xs text-slate-700">
+              <div className="mb-1 font-semibold uppercase tracking-wide text-slate-500">SMILES</div>
+              <div className="break-all rounded bg-slate-50 px-2 py-1 font-mono text-[11px] text-slate-800">
+                {molecule.smiles}
+              </div>
+            </div>
+          )}
+          {synonyms.length > 0 && (
+            <div className="mb-2 text-sm text-slate-700">
+              <span className="font-semibold text-slate-900">Synonyms:</span>{" "}
+              {synonyms.map((s) => (
+                <span
+                  key={s}
+                  className="mr-1 inline-block rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700"
+                >
+                  {s.slice(0, 40)}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+        <div>
+          <div className="mb-2 text-sm font-semibold text-slate-900">
+            Interacting proteins ({accs.length})
+          </div>
+          {accs.length === 0 ? (
+            <div className="rounded-md border border-dashed border-amber-400 bg-amber-50 p-3 text-xs text-amber-900">
+              <div className="font-semibold">⚠ No proteins associated in the atlas.</div>
+              <div className="mt-1">
+                This compound is in the atlas as a literature-recruited structure but no enzyme in the atlas has a direct substrate attribution to it.
+              </div>
+            </div>
+          ) : (
+            <div className="max-h-[360px] overflow-auto rounded-lg border border-slate-200 bg-white">
+              <table className="w-full text-[12px]">
+                <thead className="sticky top-0 z-10 bg-slate-100 text-left text-[11px] uppercase tracking-wide text-slate-500">
+                  <tr>
+                    <th className="px-2 py-1.5">Accession</th>
+                    <th className="px-2 py-1.5 text-right">Open</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {accs.slice(0, 200).map((acc) => (
+                    <tr key={acc} className="border-b border-slate-100 hover:bg-slate-50">
+                      <td className="px-2 py-1.5 font-mono text-[12px] font-semibold text-sky-800">
+                        {acc}
+                      </td>
+                      <td className="px-2 py-1.5 text-right">
+                        <a
+                          href={`https://www.uniprot.org/uniprotkb/${acc}/entry`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block rounded border border-sky-400 bg-white px-1.5 py-0.5 text-[10px] text-sky-700 hover:bg-sky-50"
+                          title={`Open ${acc} on UniProt`}
+                        >
+                          UniProt ↗
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              {accs.length > 200 && (
+                <div className="border-t border-slate-200 bg-slate-50 px-3 py-1.5 text-xs text-slate-500">
+                  …showing first 200 of {accs.length} proteins
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -8,6 +8,24 @@
  * lightness.
  */
 
+// Hand-curated 12-color categorical palette (Tableau 10 extended) — used
+// for the first 12 clusters so each one gets a visually distinct color.
+// Falls back to the golden-angle algorithm beyond 12.
+const CATEGORICAL_12: Array<[number, number, number]> = [
+  [31, 119, 180],   // blue
+  [255, 127, 14],   // orange
+  [44, 160, 44],    // green
+  [214, 39, 40],    // red
+  [148, 103, 189],  // purple
+  [140, 86, 75],    // brown
+  [227, 119, 194],  // pink
+  [127, 127, 127],  // grey
+  [188, 189, 34],   // olive
+  [23, 190, 207],   // cyan
+  [255, 187, 120],  // light orange
+  [152, 223, 138],  // light green
+];
+
 function hslToRgb(h: number, s: number, l: number): [number, number, number] {
   const k = (n: number) => (n + h * 12) % 12;
   const a = s * Math.min(l, 1 - l);
@@ -25,8 +43,14 @@ function rgbToHex([r, g, b]: [number, number, number]): string {
 }
 
 export function clusterPalette(n: number): string[] {
+  const toHex = (c: number) => c.toString(16).padStart(2, '0');
   const out: string[] = [];
   for (let i = 0; i < n; i++) {
+    if (i < CATEGORICAL_12.length) {
+      const [r,g,b] = CATEGORICAL_12[i];
+      out.push(`#${toHex(r)}${toHex(g)}${toHex(b)}`);
+      continue;
+    }
     const h = ((i * 137.508) / 360) % 1;
     const l = i % 2 === 0 ? 0.62 : 0.36;
     const s = [0.95, 0.72, 0.55][i % 3];
@@ -38,6 +62,10 @@ export function clusterPalette(n: number): string[] {
 export function clusterRgb(n: number): [number, number, number][] {
   const out: [number, number, number][] = [];
   for (let i = 0; i < n; i++) {
+    if (i < CATEGORICAL_12.length) {
+      out.push(CATEGORICAL_12[i]);
+      continue;
+    }
     const h = ((i * 137.508) / 360) % 1;
     const l = i % 2 === 0 ? 0.62 : 0.36;
     const s = [0.95, 0.72, 0.55][i % 3];
