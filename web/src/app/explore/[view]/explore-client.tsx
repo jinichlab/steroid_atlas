@@ -183,6 +183,12 @@ export default function ExploreClient({ kind, clusters }: Props) {
   const [steroidList, setSteroidList] = useState<
     { name: string; chebi: string; smiles: string }[]
   >([]);
+  // Compound-name → all its synonyms (lowercased). Used by the protein-view
+  // search to expand queries: typing "Trp-CA" finds proteins whose
+  // interacting_compounds contains "L-tryptophanocholate".
+  const [compoundSyn, setCompoundSyn] = useState<Map<string, string[]>>(
+    new Map(),
+  );
   const [steroidQuery, setSteroidQuery] = useState("");
   const [pickedSteroid, setPickedSteroid] = useState<{
     name: string;
@@ -236,6 +242,24 @@ export default function ExploreClient({ kind, clusters }: Props) {
           .filter((x) => x.name && x.chebi)
           .sort((a, b) => a.name.localeCompare(b.name));
         setSteroidList(list);
+        // Build synonym map: canonical compound_name (lowercase) → [all synonyms lowercased].
+        // Splits on '|' AND ',' (atlas synonyms often list multiple shorthand forms
+        // comma-separated within a single '|'-delimited entry, e.g. "Trp-CA, tryptophan-CA, tryptophan-cholate").
+        const synMap = new Map<string, string[]>();
+        for (const m of d) {
+          const canon = (m.compound_name || "").toLowerCase().trim();
+          if (!canon) continue;
+          const raw = (m as Molecule & { synonyms?: string }).synonyms ?? "";
+          const expanded: string[] = [];
+          for (const chunk of String(raw).split("|")) {
+            for (const sub of chunk.split(",")) {
+              const t = sub.replace(/^\s*aka\s+/i, "").trim().toLowerCase();
+              if (t && t !== canon) expanded.push(t);
+            }
+          }
+          if (expanded.length) synMap.set(canon, expanded);
+        }
+        setCompoundSyn(synMap);
       })
       .catch(() => {});
     return () => {
@@ -295,13 +319,25 @@ export default function ExploreClient({ kind, clusters }: Props) {
           p.interacting_chebi_ids, p.interacting_compounds,
           p.go_ids, p.go_labels, p.keyword_ids, p.keyword_labels,
         );
+        // Expand each compound in interacting_compounds through the synonym map
+        // so searches for the paper shorthand (e.g. "Trp-CA") find proteins
+        // whose interacting_compounds field uses the canonical name
+        // (e.g. "L-tryptophanocholate").
+        if (compoundSyn.size) {
+          for (const c of splitList(p.interacting_compounds ?? "")) {
+            const syns = compoundSyn.get(c.toLowerCase().trim());
+            if (syns) parts.push(syns.join(" "));
+          }
+        }
       } else if (kind === "molecule") {
         const m = r as Molecule;
         parts.push(m.compound_name, m.chebi_id, m.smiles,
-                   m.interacting_protein_accessions);
+                   m.interacting_protein_accessions,
+                   (m as Molecule & { synonyms?: string }).synonyms);
       } else {
         const n = r as NatsynEntry;
-        parts.push(n.compound_name, n.chebi_id, n.smiles, n.protein_entries);
+        parts.push(n.compound_name, n.chebi_id, n.smiles, n.protein_entries,
+                   (n as NatsynEntry & { synonyms?: string }).synonyms);
       }
       const blob = parts.join("\n").toLowerCase();
       return tokens.every((t) => blob.includes(t));
@@ -309,7 +345,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
     const s = new Set<string>();
     for (const r of rows) if (match(r)) s.add(rowKey(kind, r));
     return s;
-  }, [rows, search, kind]);
+  }, [rows, search, kind, compoundSyn]);
 
   const focusedPointKey = focusedPoint ? rowKey(kind, focusedPoint) : null;
 
