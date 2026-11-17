@@ -159,6 +159,8 @@ export default function ExploreClient({ kind, clusters }: Props) {
 
   // Same multi-select pattern for molecules in the steroid-centric view.
   const [focusedMolecules, setFocusedMolecules] = useState<Molecule[]>([]);
+  // About-the-atlas collapsible legend (molecule / natsyn views only).
+  const [aboutOpen, setAboutOpen] = useState(false);
   const molKey = (m: Molecule) => `${m.compound_name}|${m.chebi_id ?? ""}`;
   const toggleMolecule = (m: Molecule) =>
     setFocusedMolecules((cur) => {
@@ -637,6 +639,114 @@ export default function ExploreClient({ kind, clusters }: Props) {
             </div>
           )}
         </div>
+
+        {/* About the atlas — molecule / natsyn views only. Collapsible. */}
+        {(kind === "molecule" || kind === "natsyn") && (
+          <div className="mb-3 rounded-md border border-slate-200 bg-white shadow-sm">
+            <button
+              onClick={() => setAboutOpen((v) => !v)}
+              className="flex w-full items-center justify-between gap-2 px-3 py-2 text-left text-sm"
+            >
+              <span className="flex flex-wrap items-center gap-2 text-slate-700">
+                <span className="rounded bg-slate-100 px-1.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-slate-600">
+                  About
+                </span>
+                <span className="text-xs text-slate-500">
+                  Tier 1 = standard · Tier 2+ = biologically detected · <span className="font-mono">Trp-CA</span> = tryptophan amide at C24 of cholate
+                </span>
+              </span>
+              <span className="text-xs text-slate-400">{aboutOpen ? "▲ hide" : "▼ show details"}</span>
+            </button>
+            {aboutOpen && (
+              <div className="grid grid-cols-1 gap-4 border-t border-slate-200 px-3 py-3 text-xs text-slate-700 lg:grid-cols-2">
+                <div>
+                  <div className="mb-1 text-sm font-semibold text-slate-800">Evidence tiers</div>
+                  <p className="mb-2 italic leading-relaxed text-slate-600">
+                    Evidence tiers apply only to literature-recruited rows (molecules added from
+                    reverse-metabolomics papers). Pre-existing ChEBI / UniProt entries, which form the
+                    base atlas, carry no tier.
+                  </p>
+                  <ul className="space-y-2 leading-relaxed">
+                    <li>
+                      <div className="font-semibold text-slate-800">Tier 1 — chemistry-only anchor</div>
+                      <div>
+                        Synthetic standard made for MS/MS libraries but not yet detected in any biological
+                        sample. Kept as a negative-space marker for the MCBA chemistry landscape.
+                      </div>
+                    </li>
+                    <li>
+                      <div className="font-semibold text-slate-800">Tiers 2 and higher — biologically detected</div>
+                      <div>
+                        LC-MS/MS retention-time match to an authentic standard in at least one biological
+                        sample. Higher tiers indicate stronger detection (public-data match → cohort
+                        identification → cross-cohort replication → bacterial-culture production). Each
+                        compound card shows the full tier label and source.
+                      </div>
+                    </li>
+                    <li>
+                      <div className="font-semibold text-slate-800">Canonical reference — no tier</div>
+                      <div>
+                        Pre-existing ChEBI / UniProt entries; no evidence tier applies.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="mb-1 text-sm font-semibold text-slate-800">Conjugate naming</div>
+                  <p className="mb-2 leading-relaxed">
+                    Microbially-conjugated bile acids (MCBAs) are named{" "}
+                    <span className="font-mono">Residue-BileAcid</span> — the residue is the amine
+                    nucleophile, the bile-acid is the steroid core.
+                  </p>
+                  <div className="mb-2 rounded border border-slate-200 bg-slate-50 px-3 py-2 font-mono text-[11px] leading-5 text-slate-800">
+                    <div className="mb-1 text-[10px] uppercase tracking-wide text-slate-500">
+                      C24 amide conjugate (most MCBAs)
+                    </div>
+                    <div>R-NH₂ + HO-C(=O)-[core] → R-NH-C(=O)-[core] + H₂O</div>
+                    <div className="mt-2 mb-1 text-[10px] uppercase tracking-wide text-slate-500">
+                      C3 alkamine conjugate (reductive amination)
+                    </div>
+                    <div>R-NH₂ + O=C(C3)-[core] → R-NH-CH(C3)-[core] + H₂O</div>
+                  </div>
+                  <ul className="space-y-1.5 leading-relaxed">
+                    <li>
+                      <span className="font-mono text-slate-900">Trp-CA</span> — R = tryptophan α-amine;
+                      C24 amide on cholate.{" "}
+                      <span className="italic">cholate + L-Trp → N-tryptophanoyl-cholate + H₂O</span>.
+                    </li>
+                    <li>
+                      <span className="font-mono text-slate-900">Put-CA</span> — R = putrescine (polyamine
+                      primary amine); C24 amide on cholate.
+                    </li>
+                    <li>
+                      <span className="font-mono text-slate-900">Cys-CA</span> — R = cysteine α-amine; C24
+                      amide on cholate (thiol stays free).
+                    </li>
+                    <li>
+                      <span className="font-mono text-slate-900">G-3-oxoCA</span> — R = glycine; C24 amide
+                      on a 3-dehydro (3-oxo) cholate core.
+                    </li>
+                    <li>
+                      <span className="font-mono text-slate-900">Phe-C3-DCA</span> — R = phenylalanine
+                      α-amine; C–N bond at the C3 ring carbon of deoxycholate (reductive amination). A
+                      different bond and position from the C24 amide family above.
+                    </li>
+                  </ul>
+                  <div className="mt-2 leading-relaxed">
+                    <span className="font-semibold text-slate-800">BA cores — </span>
+                    <span className="font-mono">CA</span> cholate (3α,7α,12α),{" "}
+                    <span className="font-mono">CDCA</span> chenodeoxycholate (3α,7α),{" "}
+                    <span className="font-mono">DCA</span> deoxycholate (3α,12α),{" "}
+                    <span className="font-mono">UDCA</span> ursodeoxycholate (3α,7β),{" "}
+                    <span className="font-mono">HDCA</span> hyodeoxycholate (3α,6α),{" "}
+                    <span className="font-mono">α/β/γ/ω-MCA</span> muricholate isomers,{" "}
+                    <span className="font-mono">LCA</span> lithocholate (3α).
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Steroid filter — protein view only. Autocomplete over the 677
             steroid molecules; picking one highlights every protein that
