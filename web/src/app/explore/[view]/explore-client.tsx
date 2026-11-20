@@ -1951,6 +1951,29 @@ function ProteinDetailCard({
         {protein.length_aa} aa · Cluster {(protein.cluster ?? 0) + 1}
       </div>
 
+      {/* NCBI Taxonomy lineage — attached at build time from analysis/polish/proteins_ncbi_taxonomy.tsv. */}
+      {(protein.ncbi_kingdom || protein.ncbi_class || protein.ncbi_order || protein.ncbi_family) && (
+        <div className="mb-3 text-xs text-slate-500">
+          <span className="font-semibold text-slate-600">NCBI lineage:</span>{" "}
+          {[protein.ncbi_kingdom, protein.ncbi_phylum, protein.ncbi_class, protein.ncbi_order, protein.ncbi_family, protein.ncbi_genus, protein.ncbi_species]
+            .filter((v) => v && v !== "")
+            .join(" › ")}
+          {protein.ncbi_taxid ? (
+            <>
+              {" · "}
+              <a
+                href={`https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=${protein.ncbi_taxid}`}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-sky-700 hover:underline"
+              >
+                taxid {protein.ncbi_taxid}
+              </a>
+            </>
+          ) : null}
+        </div>
+      )}
+
       {protein.putative_role && (
         <div className="mb-3 flex items-start gap-2 rounded-md border border-amber-400 bg-amber-50 px-3 py-2 text-sm text-amber-900">
           <span className="text-base leading-none">⚠</span>
