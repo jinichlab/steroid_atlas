@@ -29,6 +29,16 @@ export interface Protein {
   annotation?: string;
   reaction_descriptions?: string;
   sequence_source?: string;
+  // NCBI Taxonomy lineage, attached at build time from
+  // analysis/polish/proteins_ncbi_taxonomy.tsv. Empty string when absent.
+  ncbi_taxid?: string | number;
+  ncbi_kingdom?: string;
+  ncbi_phylum?: string;
+  ncbi_class?: string;
+  ncbi_order?: string;
+  ncbi_family?: string;
+  ncbi_genus?: string;
+  ncbi_species?: string;
 }
 
 export interface Molecule {
