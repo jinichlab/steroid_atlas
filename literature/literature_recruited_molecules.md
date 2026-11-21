@@ -627,7 +627,7 @@ Each script:
 3. Validates each product's mass against the source paper's reported m/z
 4. Appends to `data/molecules.csv` with evidence tier + note
 5. Renders 2D structure PNGs into `web/public/atlas/structures/` and updates `structures_index.json`
-6. Rebuilds the atlas JSONs via `web/scripts/build_atlas_data.py`
+6. Rebuilds the atlas JSONs via `scripts/build_atlas_data.py`
 
 Backups of molecules.csv before each ingestion are saved at `data/molecules.csv.bak_before_<paper>`.
 

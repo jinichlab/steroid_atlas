@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ChatWidget from "@/components/ChatWidget";
+import { SelectionProvider } from "@/lib/selection-context";
+import { ApiKeyProvider } from "@/lib/api-key-context";
 
 export const metadata: Metadata = {
   title: "Steroid Atlas",
@@ -15,7 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-slate-50 text-slate-900 antialiased">
-        {children}
+        <ApiKeyProvider>
+          <SelectionProvider>
+            {children}
+            <ChatWidget />
+          </SelectionProvider>
+        </ApiKeyProvider>
       </body>
     </html>
   );

@@ -100,7 +100,7 @@ def main() -> int:
 
     print()
     print("Done. Downstream steps a human still needs to run:")
-    print("  python web/scripts/build_atlas_data.py   # rebuild JSONs")
+    print("  python scripts/build_atlas_data.py   # rebuild JSONs")
     print("  (later) re-project UMAP with 14 recruited proteins")
     return 0
 

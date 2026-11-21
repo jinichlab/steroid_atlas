@@ -18,6 +18,8 @@ export interface Protein {
   umap_1: number;
   umap_2: number;
   cluster: number;
+  /** High-dim k-means cluster (-1 = no embedding); absent until built. */
+  cluster_hd?: number;
   is_literature_recruited: number;
   paper_url: string;
   audit_decision: string;
@@ -36,6 +38,8 @@ export interface Molecule {
   umap_1: number;
   umap_2: number;
   cluster: number;
+  /** High-dim k-means cluster; absent until built. */
+  cluster_hd?: number;
   is_literature_recruited: number;
   paper_url: string;
   interacting_protein_accessions: string;

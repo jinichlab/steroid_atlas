@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased — 2026-11-17 — Web-app features merged in from steroid_atlas_web
+
+- **"Ask the Atlas" chatbot:** floating chat widget (`web/src/components/ChatWidget.tsx`, `/api/chat`, `/api/config`) grounded in a FAISS index of ChEBI / UniProt literature served by `rag/rag_server.py`. Bring-your-own OpenAI key mode. The index lives in gitignored `rag_data/` and replaces the older molecules-only `data/rag_store/` + `data/RAG_train/` and `scripts/build_rag_store.py` / `scripts/small_molecule_scraper.py` (now under `rag/`). Updated for the Nov 2026 literature audit with the new `rag/update_rag_store.py` (incremental): Q8A6H3 and CHEBI:30154 chunks dropped; 6 newly scraped ChEBI compounds plus 233 compounds without a usable ChEBI ID (docs from `molecules.csv` via `rag/build_atlas_compound_docs.py`) added — 168,739 → 169,103 vectors.
+- **Cross-view selection:** a lasso / search / cluster / steroid-filter selection carries over between the protein and steroid views (interacting proteins highlighted) and is shared with the chat.
+- **High-dimensional clustering toggle:** k-means in the full embedding (ProtT5 for proteins, Morgan fingerprints for steroids), same k, via `analysis/scripts/19_highdim_kmeans.py` (ARI vs 2D clusters: proteins 0.647, steroids 0.394).
+- **Explore UI:** clicking a steroid in a protein card opens its interacting proteins; structure tiles page with "show more"; the clicked tile's card (with evidence tier, synonyms, paper, resolved protein names) opens below the grid; Enter in search jumps to the results.
+- **Natural + synthetic set rebuilt from `molecules.csv`:** natural 589 → **826**, the 4 alkaloids dropped in v0.2.1 removed, UMAP refit (`analysis/scripts/18_sync_steroid_sets.py`). Total 2,889 → **3,126**.
+- **Layout:** `analysis/` split into `scripts/`, `results/`, `figures/` and `historical/` (`analysis/polish/` unchanged); `web/scripts/build_*.py` moved to `scripts/`; `scripts/reproduce_analysis.sh` re-runs everything downstream of `data/`. Hugging Face Space deployment: `Dockerfile`, `scripts/deploy_space.sh`, `space/README.md`.
+
 ## v0.2.1 — 2026-07-24 — Alkaloid cleanup
 
 Dropped 4 benzo[c]phenanthridine alkaloids (sanguinarine, dihydrosanguinarine, chelirubine, dihydrochelirubine — `CHEBI:17183`, `CHEBI:17209`, `CHEBI:17031`, `CHEBI:17789`) from `molecules.csv`. These plant secondary metabolites were captured by the permissive sterane substructure filter (their pentacyclic ring system matches sterane after N→C substitution) but are not steroids by any standard biochemical definition. None had associated proteins.

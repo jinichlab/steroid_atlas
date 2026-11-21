@@ -53,3 +53,17 @@ web/next-env.d.ts
 
 # Keep the literature-recruited protein embeddings tracked (small, canonical)
 !literature/embeddings/literature_recruited.h5
+
+# ── RAG chatbot (rag/) — vector store + scraped corpus are large and fully
+# regenerable from the scripts in rag/ (see rag/README.md); never commit
+/rag_data/
+/web/public/atlas/RAG/
+!web/.env.example
+
+# ── analysis (regenerable / large) ────────────────────────────────────────
+analysis/**/*_cache.json
+analysis/results/natsyn_umap.joblib
+analysis/historical/results/tmp_cdhit/
+data/*.pre_*_backup
+# ProtT5 vectors (~160 MB, used by analysis/scripts/19_highdim_kmeans.py) — fetch separately
+data/embeddings/

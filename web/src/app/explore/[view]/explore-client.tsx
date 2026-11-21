@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import type {
@@ -12,6 +12,12 @@ import type {
 } from "@/lib/types";
 import type { UmapPoint, ClusterCentroidLabel } from "@/components/UmapPlot";
 import { clusterPalette, distinctPaletteForCentroids } from "@/lib/palette";
+import { useSelection, type SelectionItem } from "@/lib/selection-context";
+
+// Cap on how many selected items we hand to the chat assistant — keeps the
+// /api/chat payload and prompt size bounded on huge lasso selections.
+const MAX_SELECTION_ITEMS = 80;
+const STEROID_PAGE = 60; // steroid tiles shown per "show more" step
 
 const UmapPlot = dynamic(() => import("@/components/UmapPlot"), { ssr: false });
 
@@ -20,6 +26,37 @@ type Row = Protein | Molecule | NatsynEntry;
 interface Props {
   kind: ViewKind;
   clusters: ClusterMeta[];
+  /** High-dimensional k-means clusters (analysis/scripts/19_highdim_kmeans.py);
+   *  empty when not built — the clustering toggle then stays hidden. */
+  clustersHd: ClusterMeta[];
+}
+
+/** "umap": k-means on the 2D map (published); "hd": k-means in the full
+ *  embedding (ProtT5 for proteins, Morgan fingerprints for steroids). */
+type ClusterMode = "umap" | "hd";
+
+/** A row's cluster id under the active clustering; -1 = no high-dim label. */
+function clusterIdOf(r: Row, mode: ClusterMode): number {
+  const raw = mode === "hd" ? (r as any).cluster_hd : (r as any).cluster;
+  if (typeof raw === "number") return raw;
+  if (typeof raw === "string") return raw === "natural" ? 0 : 1; // natsyn groups
+  return mode === "hd" ? -1 : 0;
+}
+
+function clusterText(r: Row, mode: ClusterMode): string {
+  const c = clusterIdOf(r, mode);
+  const label = mode === "hd" ? "Embedding cluster" : "Cluster";
+  return c < 0 ? `${label} —` : `${label} ${c + 1}`;
+}
+
+/** Human-readable label for a molecule's literature evidence tier. */
+function tierLabelFor(tier?: string): string {
+  return tier === "1" ? "⚠ Chemistry reference only — no biological detection"
+    : tier === "2" ? "⚠ MS/MS match in public data (isomer uncertain)"
+    : tier === "3" ? "✓ Detected in human IBD stool (iHMP2, isomer-resolved)"
+    : tier === "4-5" ? "✓ Cross-cohort validated in human IBD (iHMP2 + Boland)"
+    : tier === "5" ? "✓ Produced by gut bacteria in culture"
+    : "";
 }
 
 const DATA_URL: Record<ViewKind, string> = {
@@ -58,7 +95,7 @@ function esc(s: string): string {
 
 /** Marimo-style multi-line HTML tooltip: name / accession · gene · organism /
  *  EC + ChEBI counts + cluster + newly-recruited badge. */
-function tooltipHtmlFor(kind: ViewKind, r: Row): string {
+function tooltipHtmlFor(kind: ViewKind, r: Row, mode: ClusterMode): string {
   if (kind === "protein") {
     const p = r as Protein;
     const name = esc((p.protein_names ?? "").slice(0, 90));
@@ -66,7 +103,7 @@ function tooltipHtmlFor(kind: ViewKind, r: Row): string {
     const org = esc(p.organism ?? "");
     const acc = esc(p.accession ?? "");
     const ecs = esc((p.ec_numbers ?? "").split(";").slice(0, 2).join(" · "));
-    const cluster = ((p.cluster ?? 0) + 1).toString();
+    const cluster = clusterText(p, mode);
     const star = p.is_literature_recruited
       ? `<span style="color:#f59e0b;font-weight:700;">★ NEW</span> `
       : "";
@@ -81,7 +118,7 @@ function tooltipHtmlFor(kind: ViewKind, r: Row): string {
           <em>${org}</em>
         </div>
         <div style="margin-top:2px;font-size:11px;opacity:.75;">
-          Cluster ${cluster}${ecs ? ` · EC ${ecs}` : ""}
+          ${cluster}${ecs ? ` · EC ${ecs}` : ""}
         </div>
       </div>`;
   }
@@ -116,9 +153,35 @@ function splitList(s: string): string[] {
   );
 }
 
+/** `molecules.json` stores interacting proteins as a Python-list string:
+ *  "['A0A016SKM3', 'A0A016VXS0', …]". */
+function parseAccessionList(s: string): string[] {
+  if (!s) return [];
+  return s
+    .replace(/[[\]'"]/g, "")
+    .split(",")
+    .map((x) => x.trim())
+    .filter(Boolean);
+}
+
+/** "CHEBI:17263", "17263.0", 17263 → "17263"; anything else → "". */
+function chebiNum(c: string | number | null | undefined): string {
+  const s = String(c ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/^chebi:/, "");
+  return /^\d+(\.\d+)?$/.test(s) ? String(parseInt(s, 10)) : "";
+}
+
 type StructIndex = Record<string, string>;
 
-export default function ExploreClient({ kind, clusters }: Props) {
+export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd }: Props) {
+  // Clustering toggle (protein + steroid views, when high-dim labels exist).
+  const hasHd = kind !== "natsyn" && clustersHd.length > 0;
+  const [clusterMode, setClusterMode] = useState<ClusterMode>("umap");
+  const mode: ClusterMode = hasHd ? clusterMode : "umap";
+  const clusters = mode === "hd" ? clustersHd : clustersUmap;
+  const { selection: crossSel, setSelection, clearSelection } = useSelection();
   const [rows, setRows] = useState<Row[]>([]);
   const [loading, setLoading] = useState(true);
   const [structIdx, setStructIdx] = useState<StructIndex>({});
@@ -179,6 +242,24 @@ export default function ExploreClient({ kind, clusters }: Props) {
   // A bumping counter that tells UmapPlot to erase its sticky rectangle
   // when the user hits the top-of-plot "clear" button.
   const [lassoClearSignal, setLassoClearSignal] = useState(0);
+  // Protein view: the interacting-steroid tile the user clicked in a detail card.
+  const [focusedSteroid, setFocusedSteroid] = useState<{
+    name: string;
+    chebi: string;
+  } | null>(null);
+  // Molecule / natsyn views: true when focusedPoint came from a structure tile
+  // (its detail card then renders below the grid instead of under the plot).
+  const [focusFromTile, setFocusFromTile] = useState(false);
+  // The results panels sit far below the plot; after a search (attention is
+  // at the top search bar) the user has no cue they appeared.
+  const resultsRef = useRef<HTMLDivElement | null>(null);
+  const scrollToResults = () =>
+    resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  // The steroid detail card renders below the structure grid, out of view of
+  // the tile that was clicked — scroll to it after a tile click (not after a
+  // map-dot click, which would yank the user away from the plot).
+  const steroidCardRef = useRef<HTMLDivElement | null>(null);
+  const scrollToSteroidCard = useRef(false);
   // Steroid filter — protein view only. When a steroid is picked from
   // the autocomplete, we highlight proteins whose interacting_chebi_ids
   // contain that ChEBI id. Populated from molecules.json.
@@ -269,27 +350,33 @@ export default function ExploreClient({ kind, clusters }: Props) {
     };
   }, [kind]);
 
-  const structUrl = (name: string, chebi?: string): string | null => {
+  const structUrl = (
+    name: string,
+    chebi?: string | number | null,
+  ): string | null => {
+    // compound_name may carry a leading space; chebi_id may be a JSON float
+    // (17263.0) that JSON.parse turns into 17263, while the index may key it
+    // as "chebi:17263.0". Normalise both, and ignore junk chebi ("[]", "nan").
     const nm = (name || "").trim().toLowerCase();
     if (nm && structIdx[nm]) return `/atlas/structures/${structIdx[nm]}`;
-    const cb = (chebi || "").toString().trim();
-    if (cb && structIdx[`chebi:${cb}`])
-      return `/atlas/structures/${structIdx[`chebi:${cb}`]}`;
+
+    const c = String(chebi ?? "")
+      .trim()
+      .toLowerCase()
+      .replace(/^chebi:/, "");
+    if (/^\d+(\.\d+)?$/.test(c)) {
+      const n = String(parseInt(c, 10));
+      for (const key of [`chebi:${c}`, `chebi:${n}`, `chebi:${n}.0`]) {
+        if (structIdx[key]) return `/atlas/structures/${structIdx[key]}`;
+      }
+    }
     return null;
   };
 
   const points: UmapPoint[] = useMemo(
     () =>
       rows.map((r) => {
-        const raw = (r as any).cluster;
-        const clusterNum =
-          typeof raw === "number"
-            ? raw
-            : typeof raw === "string"
-              ? raw === "natural"
-                ? 0
-                : 1
-              : 0;
+        const clusterNum = clusterIdOf(r, mode);
         return {
           x: (r as any).umap_1,
           y: (r as any).umap_2,
@@ -297,10 +384,10 @@ export default function ExploreClient({ kind, clusters }: Props) {
           is_star: (r as any).is_literature_recruited ?? 0,
           label: rowLabel(kind, r),
           key: rowKey(kind, r),
-          tooltipHtml: tooltipHtmlFor(kind, r),
+          tooltipHtml: tooltipHtmlFor(kind, r, mode),
         };
       }),
-    [rows, kind],
+    [rows, kind, mode],
   );
 
   // ── Search — filters into a Set<key> that feeds the same "selection" slot
@@ -335,11 +422,11 @@ export default function ExploreClient({ kind, clusters }: Props) {
         const m = r as Molecule;
         parts.push(m.compound_name, m.chebi_id, m.smiles,
                    m.interacting_protein_accessions,
-                   (m as Molecule & { synonyms?: string }).synonyms);
+                   (m as Molecule & { synonyms?: string }).synonyms ?? "");
       } else {
         const n = r as NatsynEntry;
         parts.push(n.compound_name, n.chebi_id, n.smiles, n.protein_entries,
-                   (n as NatsynEntry & { synonyms?: string }).synonyms);
+                   (n as NatsynEntry & { synonyms?: string }).synonyms ?? "");
       }
       const blob = parts.join("\n").toLowerCase();
       return tokens.every((t) => blob.includes(t));
@@ -356,6 +443,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
   const centroids = useMemo(() => {
     const byCid = new Map<number, { sx: number; sy: number; n: number }>();
     for (const p of points) {
+      if (p.cluster < 0) continue; // no high-dim label
       const e = byCid.get(p.cluster);
       if (e) {
         e.sx += p.x;
@@ -374,7 +462,9 @@ export default function ExploreClient({ kind, clusters }: Props) {
 
   const paletteMap = useMemo(() => {
     if (!centroids.length) return new Map<number, [number, number, number]>();
-    return distinctPaletteForCentroids(centroids);
+    const m = distinctPaletteForCentroids(centroids);
+    m.set(-1, [190, 190, 190]); // entries without a high-dim label: grey
+    return m;
   }, [centroids]);
 
   const paletteFallback = useMemo(
@@ -431,7 +521,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
 
     const perCluster = new Map<number, Record<ProteinType, number>>();
     for (const r of rows as Protein[]) {
-      const c = Number((r as any).cluster);
+      const c = clusterIdOf(r, mode);
       const t = classify(r);
       let e = perCluster.get(c);
       if (!e) {
@@ -455,7 +545,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
       m.set(cid, { dominant, counts });
     }
     return m;
-  }, [rows, kind]);
+  }, [rows, kind, mode]);
 
   // Sidebar controls
   const [clusterSortMode, setClusterSortMode] = useState<
@@ -524,6 +614,116 @@ export default function ExploreClient({ kind, clusters }: Props) {
     return s;
   }, [kind, pickedSteroid, rows]);
 
+  const hasLocalSelection =
+    (steroidMatchKeys?.size ?? 0) > 0 ||
+    (searchMatchKeys?.size ?? 0) > 0 ||
+    (selectionSet?.size ?? 0) > 0 ||
+    highlightSet.size > 0;
+
+  // rowKey → interacting protein accessions, for the molecule / natsyn views.
+  const molAccByKey = useMemo(() => {
+    if (kind === "protein") return null;
+    const map = new Map<string, string[]>();
+    for (const r of rows) {
+      // natsyn.json stores the same Python-list string under a different key.
+      const raw =
+        kind === "natsyn"
+          ? (r as NatsynEntry).protein_entries
+          : (r as Molecule).interacting_protein_accessions;
+      map.set(rowKey(kind, r), parseAccessionList(raw ?? ""));
+    }
+    return map;
+  }, [rows, kind]);
+
+  // Protein view: compound → proteins that interact with it, inverted from
+  // each protein's interacting_compounds / interacting_chebi_ids.
+  const proteinsByCompound = useMemo(() => {
+    if (kind !== "protein") return null;
+    const map = new Map<string, Protein[]>();
+    const add = (k: string, p: Protein) => {
+      const cur = map.get(k);
+      if (cur) cur.push(p);
+      else map.set(k, [p]);
+    };
+    for (const r of rows) {
+      const p = r as Protein;
+      for (const nm of splitList(p.interacting_compounds ?? ""))
+        add(`n:${nm.toLowerCase()}`, p);
+      for (const c of splitList(p.interacting_chebi_ids ?? "")) {
+        const n = chebiNum(c);
+        if (n) add(`c:${n}`, p);
+      }
+    }
+    return map;
+  }, [rows, kind]);
+
+  // Molecule / natsyn views: accession → Protein, fetched lazily the first
+  // time a steroid card needs protein names.
+  const [proteinByAcc, setProteinByAcc] = useState<Map<string, Protein> | null>(
+    null,
+  );
+  const proteinFetchStarted = useRef(false);
+  useEffect(() => {
+    if (kind === "protein" || !focusedPoint || proteinFetchStarted.current)
+      return;
+    proteinFetchStarted.current = true;
+    fetch(DATA_URL.protein)
+      .then((r) => r.json())
+      .then((d: Protein[]) =>
+        setProteinByAcc(new Map(d.map((p) => [p.accession, p]))),
+      )
+      .catch(() => {
+        proteinFetchStarted.current = false;
+      });
+  }, [kind, focusedPoint]);
+
+  // ── Cross-view highlight ──────────────────────────────────────────────
+  // The keys this view should light up given a selection made in another
+  // view (protein ↔ molecule via interacting-protein accessions). Purely
+  // derived — never written back to the context.
+  const incomingKeys = useMemo<Set<string> | null>(() => {
+    // A live local selection overrides anything carried in from another view;
+    // returning null here also keeps `pool` referentially stable (no re-render
+    // loop with the context-publish effect below).
+    if (hasLocalSelection) return null;
+    if (!rows.length || !crossSel.view) return null;
+
+    const isCrossView = crossSel.view !== kind;
+    const accSet = new Set(crossSel.proteinAccessions);
+    const s = new Set<string>();
+
+    if (kind === "protein") {
+      for (const r of rows) {
+        if (accSet.has((r as Protein).accession)) s.add(rowKey(kind, r));
+      }
+    } else if (crossSel.view === kind) {
+      // returning to the view that owns the selection — restore it exactly
+      const mk = new Set(crossSel.moleculeKeys);
+      for (const r of rows) {
+        const k = rowKey(kind, r);
+        if (mk.has(k)) s.add(k);
+      }
+    } else if (kind === "molecule" && crossSel.view === "protein" && molAccByKey) {
+      for (const r of rows) {
+        const k = rowKey(kind, r);
+        if ((molAccByKey.get(k) ?? []).some((a) => accSet.has(a))) s.add(k);
+      }
+    } else {
+      return null; // e.g. natsyn ← protein: no interaction data
+    }
+
+    if (s.size) return s;
+    // Nothing here matches the other view's selection. For a real cross-view
+    // carry-over of a non-empty selection, return the EMPTY set so the plot
+    // greys everything ("interacts with nothing in this view"); for a failed
+    // same-view restore, fall back to null (leave the plot untouched).
+    return isCrossView && crossSel.total > 0 ? s : null;
+  }, [rows, kind, crossSel, molAccByKey, hasLocalSelection]);
+
+  // Cross-view highlight is showing (no local edit in this view yet).
+  const showingIncoming = !!incomingKeys && crossSel.view !== kind;
+  const incomingEmpty = showingIncoming && incomingKeys?.size === 0;
+
   const pool = useMemo(() => {
     if (steroidMatchKeys && steroidMatchKeys.size) {
       return rows.filter((r) => steroidMatchKeys.has(rowKey(kind, r)));
@@ -535,10 +735,91 @@ export default function ExploreClient({ kind, clusters }: Props) {
       return rows.filter((r) => selectionSet.has(rowKey(kind, r)));
     }
     if (highlightSet.size > 0) {
-      return rows.filter((r) => highlightSet.has(Number((r as any).cluster)));
+      return rows.filter((r) => highlightSet.has(clusterIdOf(r, mode)));
+    }
+    if (incomingKeys && incomingKeys.size) {
+      return rows.filter((r) => incomingKeys.has(rowKey(kind, r)));
     }
     return [];
-  }, [rows, highlightSet, selectionSet, searchMatchKeys, steroidMatchKeys, kind]);
+  }, [rows, highlightSet, selectionSet, searchMatchKeys, steroidMatchKeys, incomingKeys, kind, mode]);
+
+  // Steroid tile grid shows STEROID_PAGE tiles at a time (each loads a
+  // structure image); "show more" extends it. Reset whenever the pool changes.
+  const [steroidLimit, setSteroidLimit] = useState(STEROID_PAGE);
+  useEffect(() => setSteroidLimit(STEROID_PAGE), [pool]);
+
+  // ── Publish a *local* selection to the shared context (chat + other views).
+  //  Incoming cross-view highlights are display-only and never written back.
+  useEffect(() => {
+    if (!hasLocalSelection) return;
+    const origin =
+      steroidMatchKeys && steroidMatchKeys.size
+        ? "steroid"
+        : searchMatchKeys && searchMatchKeys.size
+          ? "search"
+          : selectionSet && selectionSet.size
+            ? "lasso"
+            : "cluster";
+    const items: SelectionItem[] = pool
+      .slice(0, MAX_SELECTION_ITEMS)
+      .map((r) => {
+        if (kind === "protein") {
+          const p = r as Protein;
+          return {
+            kind: "protein",
+            name: p.protein_names || p.accession,
+            accession: p.accession,
+            gene: p.gene_names || null,
+            organism: p.organism || null,
+            cluster: clusterIdOf(p, mode),
+          };
+        }
+        const m = r as Molecule & NatsynEntry;
+        return {
+          kind: "molecule",
+          name: m.compound_name,
+          chebi: m.chebi_id || null,
+          smiles: m.smiles || null,
+          cluster: clusterIdOf(m, mode),
+        };
+      });
+    const proteinAccessions =
+      kind === "protein"
+        ? (pool as Protein[]).map((p) => p.accession)
+        : Array.from(
+            new Set(
+              pool.flatMap((r) =>
+                molAccByKey?.get(rowKey(kind, r)) ?? [],
+              ),
+            ),
+          );
+    const moleculeKeys =
+      kind === "protein" ? [] : pool.map((r) => rowKey(kind, r));
+    setSelection({
+      view: kind,
+      origin,
+      items,
+      total: pool.length,
+      proteinAccessions,
+      moleculeKeys,
+    });
+  }, [
+    pool,
+    kind,
+    hasLocalSelection,
+    steroidMatchKeys,
+    searchMatchKeys,
+    selectionSet,
+    molAccByKey,
+    setSelection,
+    mode,
+  ]);
+
+  useEffect(() => {
+    if (!focusedPoint || !scrollToSteroidCard.current) return;
+    scrollToSteroidCard.current = false;
+    steroidCardRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [focusedPoint]);
 
   const compoundTiles = useMemo(() => {
     if (kind !== "protein" || !pool.length) return [];
@@ -575,8 +856,11 @@ export default function ExploreClient({ kind, clusters }: Props) {
     return t?.prots ?? [];
   }, [compoundTiles, focusedCompound]);
 
+  // Clear the open detail cards when the user jumps to a different cluster
+  // or steroid.
   useEffect(() => {
     clearFocusedProteins();
+    setFocusedSteroid(null);
   }, [focusedCompound, highlight]);
 
   return (
@@ -610,28 +894,35 @@ export default function ExploreClient({ kind, clusters }: Props) {
           </div>
         </div>
 
-        {/* Search bar */}
+        {/* Search bar — molecule / natsyn views only; the protein view uses
+            the steroid filter below instead. */}
+        {kind !== "protein" && (
         <div className="mb-3 flex flex-wrap items-center gap-2">
           <input
             type="text"
-            placeholder={
-              kind === "protein"
-                ? "Search — name, gene, accession, GO, EC, ChEBI, Rhea, keyword, sequence…"
-                : kind === "molecule"
-                  ? "Search — compound name, ChEBI, SMILES…"
-                  : "Search — compound name, ChEBI, SMILES…"
-            }
+            placeholder="Search — compound name, ChEBI, SMILES…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") scrollToResults();
+            }}
             className="w-full max-w-2xl rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm shadow-sm focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-100"
           />
           {search && (
-            <div className="text-xs text-slate-500">
-              {searchMatchKeys
-                ? `${searchMatchKeys.size.toLocaleString()} matches`
-                : ""}
+            <div className="flex items-center gap-2 text-xs text-slate-500">
+              {searchMatchKeys && searchMatchKeys.size > 0 ? (
+                <button
+                  className="rounded border border-sky-300 bg-sky-50 px-2 py-0.5 font-medium text-sky-700 hover:bg-sky-100"
+                  onClick={scrollToResults}
+                >
+                  ⌄ {searchMatchKeys.size.toLocaleString()}{" "}
+                  structures
+                </button>
+              ) : (
+                <span>no matches</span>
+              )}
               <button
-                className="ml-2 rounded border border-slate-300 bg-white px-2 py-0.5 text-slate-700 hover:bg-slate-100"
+                className="rounded border border-slate-300 bg-white px-2 py-0.5 text-slate-700 hover:bg-slate-100"
                 onClick={() => setSearch("")}
               >
                 ✕ clear
@@ -639,6 +930,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
             </div>
           )}
         </div>
+        )}
 
         {/* About the atlas — molecule / natsyn views only. Collapsible. */}
         {(kind === "molecule" || kind === "natsyn") && (
@@ -923,7 +1215,10 @@ export default function ExploreClient({ kind, clusters }: Props) {
             selected dot
           </span>
           {(highlight != null || focusedPoint || selectionSet || search ||
-            pickedSteroid) && (
+            pickedSteroid ||
+            // any carried-over selection, incl. one restored when returning
+            // to the view that made it (not just cross-view highlights)
+            !!incomingKeys) && (
             <button
               className="ml-auto rounded-md border border-slate-300 bg-white px-2 py-1 text-slate-700 hover:bg-slate-100"
               onClick={() => {
@@ -934,13 +1229,55 @@ export default function ExploreClient({ kind, clusters }: Props) {
                 clearFocusedProteins();
                 setSearch("");
                 setPickedSteroid(null);
+                setFocusedSteroid(null);
                 setLassoClearSignal((n) => n + 1);
+                clearSelection();
               }}
             >
               ✕ clear
             </button>
           )}
         </div>
+
+        {showingIncoming && (
+          <div
+            className={`mb-3 flex flex-wrap items-center gap-2 rounded-md border px-3 py-2 text-xs ${
+              incomingEmpty
+                ? "border-amber-200 bg-amber-50 text-amber-800"
+                : "border-sky-200 bg-sky-50 text-sky-800"
+            }`}
+          >
+            <span>
+              {incomingEmpty ? (
+                <>
+                  None of the {kind === "protein" ? "proteins" : "steroids"} in
+                  this view interact with the{" "}
+                  <b>
+                    {crossSel.total.toLocaleString()}{" "}
+                    {crossSel.view === "protein" ? "proteins" : "steroids"}
+                  </b>{" "}
+                  selected in {VIEW_LABELS[crossSel.view as ViewKind]} view —
+                  everything is greyed out.
+                </>
+              ) : (
+                <>
+                  Highlighting{" "}
+                  <b>
+                    {(incomingKeys?.size ?? 0).toLocaleString()}{" "}
+                    {kind === "protein" ? "proteins" : "steroids"}
+                  </b>{" "}
+                  that interact with the{" "}
+                  <b>
+                    {crossSel.total.toLocaleString()}{" "}
+                    {crossSel.view === "protein" ? "proteins" : "steroids"}
+                  </b>{" "}
+                  selected in {VIEW_LABELS[crossSel.view as ViewKind]} view.
+                  Lasso or search to refine.
+                </>
+              )}
+            </span>
+          </div>
+        )}
 
         <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_260px]">
           <div>
@@ -962,7 +1299,9 @@ export default function ExploreClient({ kind, clusters }: Props) {
                               .map((p) => p.key!)
                               .filter(Boolean),
                           )
-                        : null
+                        : // incomingKeys may be an EMPTY set on purpose (cross-view
+                          // selection that matches nothing here) → grey everything.
+                          (incomingKeys ?? null)
               }
               focusedKey={focusedPointKey}
               darkMode={false}
@@ -970,7 +1309,10 @@ export default function ExploreClient({ kind, clusters }: Props) {
               clearLassoSignal={lassoClearSignal}
               onClickPoint={(p) => {
                 const r = rows.find((r) => rowKey(kind, r) === p.key);
-                if (r) setFocusedPoint(r);
+                if (r) {
+                  setFocusFromTile(false);
+                  setFocusedPoint(r);
+                }
               }}
               onLassoSelect={(pts) => {
                 const s = new Set(pts.map((p) => p.key!).filter(Boolean));
@@ -982,7 +1324,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
               }}
               height={640}
             />
-            {focusedPoint && (
+            {focusedPoint && !(kind !== "protein" && focusFromTile) && (
               <div className="mt-3 rounded-xl border-2 border-sky-500 bg-sky-50 p-4">
                 <div className="text-xs uppercase tracking-wide text-sky-700">
                   {kind === "protein" ? "Selected protein" : "Selected"}
@@ -996,8 +1338,8 @@ export default function ExploreClient({ kind, clusters }: Props) {
                   <div className="mt-1 text-sm text-slate-600">
                     {(focusedPoint as Protein).gene_names} ·{" "}
                     <em>{(focusedPoint as Protein).organism}</em> ·{" "}
-                    {(focusedPoint as Protein).length_aa} aa · Cluster{" "}
-                    {((focusedPoint as Protein).cluster ?? 0) + 1}
+                    {(focusedPoint as Protein).length_aa} aa ·{" "}
+                    {clusterText(focusedPoint, mode)}
                     {(focusedPoint as Protein).is_literature_recruited
                       ? " · ★ newly recruited"
                       : ""}
@@ -1037,13 +1379,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
                 })()}
                 {kind === "molecule" && (focusedPoint as Molecule).evidence_tier && (() => {
                   const tier = (focusedPoint as Molecule).evidence_tier;
-                  const label =
-                    tier === "1" ? "⚠ Chemistry reference only — no biological detection"
-                    : tier === "2" ? "⚠ MS/MS match in public data (isomer uncertain)"
-                    : tier === "3" ? "✓ Detected in human IBD stool (iHMP2, isomer-resolved)"
-                    : tier === "4-5" ? "✓ Cross-cohort validated in human IBD (iHMP2 + Boland)"
-                    : tier === "5" ? "✓ Produced by gut bacteria in culture"
-                    : "";
+                  const label = tierLabelFor(tier);
                   const style =
                     tier === "1" ? "border-red-400 bg-red-50 text-red-900"
                     : tier === "2" ? "border-amber-400 bg-amber-50 text-amber-900"
@@ -1172,6 +1508,41 @@ export default function ExploreClient({ kind, clusters }: Props) {
 
           {/* Cluster sidebar with sort + filter controls */}
           <aside className="rounded-xl border border-slate-200 bg-white shadow-sm">
+            {hasHd && (
+              <div className="border-b border-slate-100 p-3">
+                <div className="mb-1.5 text-xs font-medium text-slate-500">
+                  Clustering
+                </div>
+                <div className="flex rounded-md border border-slate-200 p-0.5 text-xs">
+                  {(
+                    [
+                      ["umap", kind === "molecule" ? "2D clustering" : "2D map"],
+                      ["hd", kind === "molecule" ? "Fingerprint clustering" : "Full embedding"],
+                    ] as const
+                  ).map(([m, label]) => (
+                    <button
+                      key={m}
+                      onClick={() => {
+                        setClusterMode(m);
+                        clearClusterHighlight(); // cluster ids differ between modes
+                      }}
+                      className={`flex-1 rounded px-2 py-1 transition ${
+                        mode === m
+                          ? "bg-slate-900 text-white"
+                          : "text-slate-600 hover:bg-slate-100"
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+                <div className="mt-1.5 text-[11px] leading-snug text-slate-500">
+                  {mode === "hd"
+                    ? `k-means in the full ${kind === "protein" ? "ProtT5 embedding" : "fingerprint space"}, same k. Dots stay at their map positions.`
+                    : "k-means on the 2D map coordinates (published clusters)."}
+                </div>
+              </div>
+            )}
             <div className="flex items-center justify-between border-b border-slate-100 p-3">
               <button
                 onClick={() => setLegendOpen((v) => !v)}
@@ -1345,7 +1716,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
             cluster, or search). Same-shape data as the marimo table.
             Includes a Select-all-N-proteins button. */}
         {pool.length > 0 && (
-          <div className="mt-6">
+          <div className="mt-6 scroll-mt-4" ref={resultsRef}>
             <div className="mb-2 flex flex-wrap items-baseline gap-3">
               <div className="text-lg font-semibold text-slate-900">
                 📋 Selected entries
@@ -1537,7 +1908,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
                             {(p.organism || "").slice(0, 32)}
                           </td>
                           <td className="px-2 py-1.5 text-right text-slate-600">
-                            {((p.cluster ?? 0) + 1).toString()}
+                            {clusterIdOf(p, mode) < 0 ? "—" : clusterIdOf(p, mode) + 1}
                           </td>
                           <td className="px-2 py-1.5 font-mono text-[11px] text-slate-500">
                             {(p.ec_numbers || "")
@@ -1594,7 +1965,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
                             {m.chebi_id ? `CHEBI:${String(m.chebi_id).replace(/\.0$/, "")}` : ""}
                           </td>
                           <td className="px-2 py-1.5 text-right text-slate-600">
-                            {String((m as any).cluster ?? "")}
+                            {clusterIdOf(m, mode) < 0 ? "—" : clusterIdOf(m, mode) + 1}
                           </td>
                           <td className="px-2 py-1.5 text-right text-slate-600">
                             {nProts > 0 ? nProts : ""}
@@ -1611,7 +1982,10 @@ export default function ExploreClient({ kind, clusters }: Props) {
                     return (
                       <tr
                         key={rowKey(kind, r)}
-                        onClick={() => setFocusedPoint(r)}
+                        onClick={() => {
+                          setFocusFromTile(false);
+                          setFocusedPoint(r);
+                        }}
                         className="cursor-pointer border-b border-slate-100 hover:bg-slate-50"
                       >
                         <td className="px-2 py-1.5 text-slate-900">
@@ -1825,7 +2199,7 @@ export default function ExploreClient({ kind, clusters }: Props) {
             </div>
             <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
               {(pool as (Molecule | NatsynEntry)[])
-                .slice(0, 60)
+                .slice(0, steroidLimit)
                 .map((m) => {
                   const nm = m.compound_name;
                   const cb = m.chebi_id;
@@ -1837,7 +2211,11 @@ export default function ExploreClient({ kind, clusters }: Props) {
                   return (
                     <button
                       key={rowKey(kind, m as any)}
-                      onClick={() => setFocusedPoint(m as any)}
+                      onClick={() => {
+                        setFocusFromTile(true);
+                        setFocusedPoint(m as any);
+                        scrollToSteroidCard.current = true;
+                      }}
                       className={`overflow-hidden rounded-xl border bg-white p-3 text-left text-xs transition ${
                         isPick
                           ? "border-sky-500 ring-2 ring-sky-400"
@@ -1873,11 +2251,43 @@ export default function ExploreClient({ kind, clusters }: Props) {
                   );
                 })}
             </div>
-            {pool.length > 60 && (
-              <div className="mt-2 text-xs text-slate-500">
-                …and {pool.length - 60} more compounds
+            {pool.length > steroidLimit && (
+              <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-slate-500">
+                <span>
+                  showing {steroidLimit.toLocaleString()} of{" "}
+                  {pool.length.toLocaleString()} compounds
+                </span>
+                <button
+                  className="rounded-md border border-slate-300 bg-white px-2 py-1 text-slate-700 hover:bg-slate-100"
+                  onClick={() => setSteroidLimit((n) => n + STEROID_PAGE)}
+                >
+                  show {Math.min(STEROID_PAGE, pool.length - steroidLimit)} more
+                </button>
+                <button
+                  className="rounded-md border border-slate-300 bg-white px-2 py-1 text-slate-700 hover:bg-slate-100"
+                  onClick={() => setSteroidLimit(pool.length)}
+                >
+                  show all {pool.length.toLocaleString()}
+                </button>
               </div>
             )}
+          </div>
+        )}
+
+        {/* Molecule / natsyn view — a structure tile's detail card sits below
+            the whole grid (map-dot clicks use the card under the plot). */}
+        {focusedPoint && kind !== "protein" && focusFromTile && (
+          <div ref={steroidCardRef} className="mt-6 scroll-mt-4">
+            <SteroidDetailCard
+              name={(focusedPoint as Molecule).compound_name}
+              chebi={(focusedPoint as Molecule).chebi_id}
+              smiles={(focusedPoint as Molecule).smiles}
+              molecule={kind === "molecule" ? (focusedPoint as Molecule) : undefined}
+              structUrl={structUrl}
+              accessions={molAccByKey?.get(rowKey(kind, focusedPoint)) ?? []}
+              proteinByAcc={proteinByAcc}
+              onClose={() => setFocusedPoint(null)}
+            />
           </div>
         )}
 
@@ -1900,8 +2310,30 @@ export default function ExploreClient({ kind, clusters }: Props) {
                 protein={p}
                 structUrl={structUrl}
                 onClose={() => toggleProtein(p)}
+                onPickSteroid={(name, chebi) => setFocusedSteroid({ name, chebi })}
+                clusterLabel={clusterText(p, mode)}
               />
             ))}
+          </div>
+        )}
+
+        {kind === "protein" && focusedSteroid && (
+          <div className="mt-6">
+            <SteroidDetailCard
+              name={focusedSteroid.name}
+              chebi={focusedSteroid.chebi}
+              structUrl={structUrl}
+              proteins={
+                proteinsByCompound?.get(
+                  `n:${focusedSteroid.name.trim().toLowerCase()}`,
+                ) ??
+                proteinsByCompound?.get(`c:${chebiNum(focusedSteroid.chebi)}`) ??
+                []
+              }
+              isProteinOpen={isProteinFocused}
+              onPickProtein={toggleProtein}
+              onClose={() => setFocusedSteroid(null)}
+            />
           </div>
         )}
 
@@ -1915,10 +2347,14 @@ function ProteinDetailCard({
   protein,
   structUrl,
   onClose,
+  onPickSteroid,
+  clusterLabel,
 }: {
   protein: Protein;
   structUrl: (n: string, c?: string) => string | null;
   onClose: () => void;
+  onPickSteroid: (name: string, chebi: string) => void;
+  clusterLabel: string;
 }) {
   const compounds = splitList(protein.interacting_compounds ?? "");
   const chebis = splitList(protein.interacting_chebi_ids ?? "");
@@ -1948,7 +2384,7 @@ function ProteinDetailCard({
       <div className="mb-3 text-sm text-slate-600">
         <span className="font-mono text-sky-700">{protein.accession}</span> ·{" "}
         {protein.gene_names || "—"} · <em>{protein.organism}</em> ·{" "}
-        {protein.length_aa} aa · Cluster {(protein.cluster ?? 0) + 1}
+        {protein.length_aa} aa · {clusterLabel}
       </div>
 
       {protein.putative_role && (
@@ -2113,9 +2549,11 @@ function ProteinDetailCard({
               const cb = chebis[i] ?? "";
               const src = structUrl(nm, cb);
               return (
-                <div
+                <button
                   key={nm + i}
-                  className="overflow-hidden rounded-md border border-slate-200 bg-white p-2 text-center text-[10px]"
+                  onClick={() => onPickSteroid(nm, cb)}
+                  title="Show proteins that interact with this steroid"
+                  className="overflow-hidden rounded-md border border-slate-200 bg-white p-2 text-center text-[10px] transition hover:border-sky-400 hover:shadow-md"
                 >
                   <div
                     className="flex items-center justify-center"
@@ -2135,7 +2573,7 @@ function ProteinDetailCard({
                   <div className="mt-1 line-clamp-2 min-h-[2.2em] text-slate-700">
                     {nm.slice(0, 40)}
                   </div>
-                </div>
+                </button>
               );
             })}
             {compounds.length > 12 && (
@@ -2166,13 +2604,7 @@ function MoleculeDetailCard({
     .filter(Boolean)
     .slice(0, 8);
   const tier = molecule.evidence_tier;
-  const tierLabel =
-    tier === "1" ? "⚠ Chemistry reference only — no biological detection"
-    : tier === "2" ? "⚠ MS/MS match in public data (isomer uncertain)"
-    : tier === "3" ? "✓ Detected in human IBD stool (iHMP2, isomer-resolved)"
-    : tier === "4-5" ? "✓ Cross-cohort validated in human IBD (iHMP2 + Boland)"
-    : tier === "5" ? "✓ Produced by gut bacteria in culture"
-    : "";
+  const tierLabel = tierLabelFor(tier);
 
   return (
     <div className="mt-6 rounded-xl border border-slate-200 bg-white p-5 shadow-md">
@@ -2321,6 +2753,233 @@ function MoleculeDetailCard({
                   …showing first 200 of {accs.length} proteins
                 </div>
               )}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
+/** Steroid detail: structure, ChEBI / SMILES, and the proteins it interacts
+ *  with. Pass `proteins` when they're already resolved (protein view), or
+ *  `accessions` + `proteinByAcc` (molecule / natsyn views, where the protein
+ *  table loads lazily — bare accessions show until it arrives). In the
+ *  molecule view, `molecule` adds its evidence tier, synonyms and paper. */
+function SteroidDetailCard({
+  name,
+  chebi,
+  smiles,
+  molecule,
+  structUrl,
+  proteins,
+  accessions,
+  proteinByAcc,
+  isProteinOpen,
+  onPickProtein,
+  onClose,
+}: {
+  name: string;
+  chebi?: string | number | null;
+  smiles?: string | null;
+  molecule?: Molecule;
+  structUrl: (n: string, c?: string) => string | null;
+  proteins?: Protein[];
+  accessions?: string[];
+  proteinByAcc?: Map<string, Protein> | null;
+  isProteinOpen?: (acc: string) => boolean;
+  onPickProtein?: (p: Protein) => void;
+  onClose: () => void;
+}) {
+  const LIMIT = 50;
+  const cb = chebiNum(chebi);
+  const src = structUrl(name, cb);
+  const list: { acc: string; p?: Protein }[] = proteins
+    ? proteins.map((p) => ({ acc: p.accession, p }))
+    : (accessions ?? []).map((acc) => ({ acc, p: proteinByAcc?.get(acc) }));
+  const loadingNames = !proteins && list.length > 0 && !proteinByAcc;
+  const tier = molecule?.evidence_tier;
+  const tierLabel = tierLabelFor(tier);
+  const synonyms = splitList(molecule?.synonyms ?? "")
+    .map((s) => s.replace(/^aka\s+/i, "").trim())
+    .filter(Boolean)
+    .slice(0, 8);
+  const papers = (molecule?.paper_url ?? "")
+    .split("|")
+    .map((u) => u.trim())
+    .filter((u) => u.startsWith("http"));
+
+  return (
+    <div className="mt-3 rounded-xl border-2 border-sky-500 bg-white p-5 shadow-md">
+      <div className="mb-3 flex flex-wrap items-baseline gap-3">
+        <div className="text-xs uppercase tracking-wide text-sky-700">
+          Selected steroid
+        </div>
+        <div className="text-lg font-bold text-slate-900">{name.trim()}</div>
+        {molecule?.is_literature_recruited ? (
+          <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-800">
+            ★ NEW
+          </span>
+        ) : null}
+        <button
+          className="ml-auto rounded-md border border-slate-300 bg-white px-2 py-1 text-xs text-slate-700 hover:bg-slate-100"
+          onClick={onClose}
+        >
+          ✕ close
+        </button>
+      </div>
+
+      {(tierLabel || synonyms.length > 0 || papers.length > 0) && (
+        <div className="mb-3 space-y-2 text-xs">
+          {tierLabel && (
+            <div className="inline-flex items-center gap-2 rounded-md border border-emerald-300 bg-emerald-50 px-2 py-1 text-emerald-900">
+              <span className="font-semibold">Evidence tier {tier}:</span>
+              <span>{tierLabel}</span>
+            </div>
+          )}
+          {synonyms.length > 0 && (
+            <div className="text-slate-700">
+              <span className="font-semibold text-slate-900">Synonyms:</span>{" "}
+              {synonyms.map((s) => (
+                <span
+                  key={s}
+                  className="mr-1 inline-block rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700"
+                >
+                  {s.slice(0, 40)}
+                </span>
+              ))}
+            </div>
+          )}
+          {papers.length > 0 && (
+            <div className="text-slate-600">
+              <span className="font-semibold">Source paper(s): </span>
+              {papers.map((u, i) => (
+                <a
+                  key={u}
+                  href={u}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mr-2 text-sky-600 underline hover:text-sky-800"
+                >
+                  paper {papers.length > 1 ? i + 1 : ""} ↗
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      <div className="grid gap-4 md:grid-cols-[220px_1fr]">
+        <div>
+          <div
+            className="flex items-center justify-center rounded-lg border border-slate-200 bg-white"
+            style={{ height: 200, padding: 6 }}
+          >
+            {src ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={src}
+                alt={name}
+                className="max-h-full max-w-full object-contain"
+              />
+            ) : (
+              <span className="text-[11px] text-slate-400">no structure</span>
+            )}
+          </div>
+          {cb && (
+            <a
+              href={`https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:${cb}`}
+              target="_blank"
+              className="mt-2 inline-block rounded border border-sky-500 px-2 py-1 text-xs text-sky-700 hover:bg-sky-50"
+            >
+              ChEBI:{cb}
+            </a>
+          )}
+          {smiles && (
+            <div
+              className="mt-2 break-all font-mono text-[10px] text-slate-500"
+              title={smiles}
+            >
+              {smiles.length > 160 ? `${smiles.slice(0, 160)}…` : smiles}
+            </div>
+          )}
+        </div>
+
+        <div>
+          <div className="mb-2 text-sm font-semibold text-slate-900">
+            Interacting proteins ({list.length.toLocaleString()})
+            {loadingNames && (
+              <span className="ml-2 text-xs font-normal text-slate-400">
+                loading names…
+              </span>
+            )}
+            {onPickProtein && list.length > 0 && (
+              <span className="ml-2 text-xs font-normal text-slate-500">
+                click one to open its detail card
+              </span>
+            )}
+          </div>
+          {list.length === 0 ? (
+            <div className="text-sm text-slate-500">
+              No known interacting proteins.
+            </div>
+          ) : (
+            <div className="max-h-[320px] overflow-y-auto rounded-lg border border-slate-200">
+              {list.slice(0, LIMIT).map(({ acc, p }) => {
+                const open = isProteinOpen?.(acc) ?? false;
+                const body = (
+                  <>
+                    <span className="font-mono font-semibold text-sky-700">
+                      {acc}
+                    </span>
+                    {p && (
+                      <>
+                        <span className="text-slate-900">
+                          {(p.protein_names || "").slice(0, 70)}
+                        </span>
+                        <span className="text-slate-500">
+                          · <em>{(p.organism || "").slice(0, 34)}</em> · cl{" "}
+                          {(p.cluster ?? 0) + 1}
+                        </span>
+                      </>
+                    )}
+                  </>
+                );
+                return (
+                  <div
+                    key={acc}
+                    className={`flex items-baseline gap-2 border-b border-slate-100 px-3 py-1.5 text-[12px] ${
+                      open ? "bg-sky-100" : ""
+                    }`}
+                  >
+                    {onPickProtein && p ? (
+                      <button
+                        onClick={() => onPickProtein(p)}
+                        className="flex flex-1 flex-wrap items-baseline gap-x-2 text-left hover:underline"
+                      >
+                        {body}
+                      </button>
+                    ) : (
+                      <div className="flex flex-1 flex-wrap items-baseline gap-x-2">
+                        {body}
+                      </div>
+                    )}
+                    <a
+                      href={`https://www.uniprot.org/uniprotkb/${acc}/entry`}
+                      target="_blank"
+                      className="flex-shrink-0 text-[11px] text-sky-700 hover:underline"
+                    >
+                      UniProt ↗
+                    </a>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+          {list.length > LIMIT && (
+            <div className="mt-1 text-xs text-slate-500">
+              …and {(list.length - LIMIT).toLocaleString()} more
             </div>
           )}
         </div>

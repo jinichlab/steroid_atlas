@@ -2,7 +2,7 @@
 
 A **Next.js + deck.gl** frontend for the [Steroid Atlas](https://github.com/jinichlab/steroid_atlas):
 an interactive UMAP of **14,087 steroid-interacting proteins**, **842 steroid
-molecules**, and **2,889 natural + synthetic steroid entries**, curated from
+molecules**, and **3,126 natural + synthetic steroid entries**, curated from
 UniProt, Rhea, ChEBI, RefSeq, and hand-audited 2024–2026 literature
 recruitments.
 
@@ -64,7 +64,7 @@ ssh -N -L 3000:localhost:3000 <user>@<server>
 | `/`                  | Landing — stats + three view cards                   |
 | `/explore/protein`   | UMAP + catalogue for the 14,089-protein view         |
 | `/explore/molecule`  | UMAP + catalogue for the 677-steroid view            |
-| `/explore/natsyn`    | UMAP + catalogue for the 2,889 nat + syn entries     |
+| `/explore/natsyn`    | UMAP + catalogue for the 3,126 nat + syn entries     |
 
 ## Repo layout
 
@@ -84,32 +84,37 @@ public/
   atlas/
     proteins.json                   14,089 rows  (~23 MB)
     molecules.json                    677 rows   (~3 MB)
-    natsyn.json                     2,889 rows   (~4 MB)
+    natsyn.json                     3,126 rows   (~4 MB)
     protein_clusters.json              82 clusters (fingerprint stems + top GO)
     molecule_clusters.json              8 clusters (Bile acids, Estrogens, …)
     natsyn_clusters.json                2 clusters (natural / synthetic)
     structures/                    ~2,441 pre-rendered 260×260 PNGs
     structures_index.json          name / CHEBI → PNG filename lookup
     summary.json                   Landing-page counts
-scripts/
+../scripts/
   build_atlas_data.py              CSV → JSON pre-processing
   build_structures.py              RDKit renders 2D structure PNGs
 ```
 
 ## Rebuilding the data
 
-The bundled JSON + PNGs are regenerated from the marimo repo's CSVs whenever
-they change. Clone both repos side-by-side and run:
+The JSON + PNGs in `public/atlas/` are generated from `../data/*.csv` and
+`../analysis/results/`. From the repo root:
 
 ```bash
-# from steroid_atlas_web/
-LD_LIBRARY_PATH=~/miniconda3/lib ~/miniconda3/bin/python3 scripts/build_atlas_data.py
-LD_LIBRARY_PATH=~/miniconda3/lib ~/miniconda3/bin/python3 scripts/build_structures.py
+sh scripts/reproduce_analysis.sh            # analyses + web data
+python3 scripts/build_atlas_data.py         # web JSON only
+python3 scripts/build_structures.py         # structure PNGs (needs RDKit)
 ```
 
-`build_atlas_data.py` reads from `../steroid_atlas/data/` and writes to
-`public/atlas/`; `build_structures.py` needs RDKit (available in the
-project's miniconda env).
+## Chatbot / RAG
+
+"Ask the Atlas" (floating widget, bottom-right) answers questions grounded in a
+prebuilt corpus of ChEBI compound records and UniProt protein literature, and
+sees the current Explore selection (lasso / search / cluster / steroid filter).
+`cp .env.example .env.local`, set `OPENAI_API_KEY`, then run `npm run dev:rag`
+(retrieval sidecar, loads `../rag_data/rag_store/`) next to `npm run dev`.
+See `../rag/README.md`.
 
 ## UMAP interactions
 
@@ -136,7 +141,7 @@ project's miniconda env).
 
 - [`jinichlab/steroid_atlas`](https://github.com/jinichlab/steroid_atlas) —
   canonical data, marimo visualizer, analysis scripts. All data changes
-  happen there first; this repo re-imports via `scripts/build_atlas_data.py`.
+  happen in `data/`; the web data is regenerated via `scripts/build_atlas_data.py`.
 
 ## License
 

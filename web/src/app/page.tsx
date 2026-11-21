@@ -1,6 +1,7 @@
 import Link from "next/link";
 import summary from "@/../public/atlas/summary.json";
 import type { Summary } from "@/lib/types";
+import ApiKeyGate from "@/components/ApiKeyGate";
 
 const S = summary as Summary;
 
@@ -18,6 +19,8 @@ export default function Home() {
         and their small-molecule substrates, curated from public databases
         (UniProt, Rhea, ChEBI, RefSeq) and hand-audited literature recruitments.
       </p>
+
+      <ApiKeyGate />
 
       <div className="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
         {[
@@ -55,7 +58,7 @@ export default function Home() {
         <ViewCard
           href="/explore/natsyn"
           title="Natural + synthetic"
-          desc="Compare 2,889 natural and synthetic steroid entries in one shared chemical space."
+          desc="Compare 2,976 natural and synthetic steroid entries in one shared chemical space."
           accent="from-emerald-500 to-lime-400"
         />
       </div>

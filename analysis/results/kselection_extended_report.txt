@@ -1,0 +1,32 @@
+=== Extended k-selection sweep on 35,349-protein atlas UMAP ===
+
+Search range: k ∈ [10, 200]
+Silhouette computed on 5,000 sampled points per k
+Davies-Bouldin computed on all points
+
+Silhouette argmax:      k = 194   (silhouette = 0.6898)
+Davies-Bouldin argmin:  k = 188   (D-B = 0.4030)
+
+Silhouette values near the argmax (compare with the currently deployed k=95):
+  k= 179  sil=0.6702  DB=0.4421
+  k= 180  sil=0.6764  DB=0.4352
+  k= 181  sil=0.6755  DB=0.4381
+  k= 182  sil=0.6837  DB=0.4065
+  k= 183  sil=0.6852  DB=0.4283
+  k= 184  sil=0.6690  DB=0.4396
+  k= 185  sil=0.6827  DB=0.4150
+  k= 186  sil=0.6737  DB=0.4245
+  k= 187  sil=0.6624  DB=0.4372
+  k= 188  sil=0.6895  DB=0.4030
+  k= 189  sil=0.6810  DB=0.4164
+  k= 190  sil=0.6759  DB=0.4173
+  k= 191  sil=0.6814  DB=0.4057
+  k= 192  sil=0.6837  DB=0.4087
+  k= 193  sil=0.6678  DB=0.4296
+  k= 194  sil=0.6898  DB=0.4074  ← argmax
+  k= 195  sil=0.6744  DB=0.4084
+  k= 196  sil=0.6763  DB=0.4278
+  k= 197  sil=0.6756  DB=0.4110
+  k= 198  sil=0.6741  DB=0.4168
+  k= 199  sil=0.6745  DB=0.4258
+  k= 200  sil=0.6740  DB=0.4191

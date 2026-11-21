@@ -124,7 +124,7 @@ Captures proteins with annotated steroid-binding function that may not catalyze 
 
 **231 entries (208 DROP_VITD + 23 DROP_NONE) were removed**, and every retained entry carries a `binder_evidence` string that records the exact keyword(s), GO term(s), and any specific ligand ChEBI ids that qualified it.
 
-The audit pipeline is implemented in `analysis/04_validate_binder_annotations.py` and `analysis/05_apply_curation.py`; per-entry decisions are in `analysis/binder_audit.tsv`.
+The audit pipeline is implemented in `analysis/historical/scripts/04_validate_binder_annotations.py` and `analysis/historical/scripts/05_apply_curation.py`; per-entry decisions are in `analysis/historical/results/binder_audit.tsv`.
 
 ### Union
 
