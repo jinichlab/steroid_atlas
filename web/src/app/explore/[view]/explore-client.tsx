@@ -272,6 +272,12 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
   const [compoundSyn, setCompoundSyn] = useState<Map<string, string[]>>(
     new Map(),
   );
+  // Compound-name / ChEBI id (lowercased) → SMILES. Lets the protein-view
+  // search match a SMILES (or fragment) against the proteins' interacting
+  // compounds, since protein rows carry no structures of their own.
+  const [compoundSmiles, setCompoundSmiles] = useState<Map<string, string>>(
+    new Map(),
+  );
   const [steroidQuery, setSteroidQuery] = useState("");
   const [pickedSteroid, setPickedSteroid] = useState<{
     name: string;
@@ -343,6 +349,16 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
           if (expanded.length) synMap.set(canon, expanded);
         }
         setCompoundSyn(synMap);
+        const smiMap = new Map<string, string>();
+        for (const m of d) {
+          const smi = (m.smiles || "").trim();
+          if (!smi) continue;
+          const nm = (m.compound_name || "").toLowerCase().trim();
+          const ch = String(m.chebi_id ?? "").trim().replace(/\.0$/, "");
+          if (nm) smiMap.set(nm, smi);
+          if (ch) smiMap.set(`chebi:${ch}`, smi);
+        }
+        setCompoundSmiles(smiMap);
       })
       .catch(() => {});
     return () => {
@@ -416,6 +432,14 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
           for (const c of splitList(p.interacting_compounds ?? "")) {
             const syns = compoundSyn.get(c.toLowerCase().trim());
             if (syns) parts.push(syns.join(" "));
+            const smi = compoundSmiles.get(c.toLowerCase().trim());
+            if (smi) parts.push(smi);
+          }
+        }
+        if (compoundSmiles.size) {
+          for (const id of String(p.interacting_chebi_ids ?? "").match(/\d+/g) ?? []) {
+            const smi = compoundSmiles.get(`chebi:${id}`);
+            if (smi) parts.push(smi);
           }
         }
       } else if (kind === "molecule") {
@@ -434,7 +458,7 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
     const s = new Set<string>();
     for (const r of rows) if (match(r)) s.add(rowKey(kind, r));
     return s;
-  }, [rows, search, kind, compoundSyn]);
+  }, [rows, search, kind, compoundSyn, compoundSmiles]);
 
   const focusedPointKey = focusedPoint ? rowKey(kind, focusedPoint) : null;
 
@@ -894,13 +918,16 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
           </div>
         </div>
 
-        {/* Search bar — molecule / natsyn views only; the protein view uses
-            the steroid filter below instead. */}
-        {kind !== "protein" && (
+        {/* Search bar — all views. The protein view also gets the steroid
+            filter below it. */}
         <div className="mb-3 flex flex-wrap items-center gap-2">
           <input
             type="text"
-            placeholder="Search — compound name, ChEBI, SMILES…"
+            placeholder={
+              kind === "protein"
+                ? "Search: protein name, gene, accession, organism, EC, GO, steroid name, ChEBI, SMILES…"
+                : "Search: compound name, ChEBI, SMILES…"
+            }
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             onKeyDown={(e) => {
@@ -915,8 +942,8 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
                   className="rounded border border-sky-300 bg-sky-50 px-2 py-0.5 font-medium text-sky-700 hover:bg-sky-100"
                   onClick={scrollToResults}
                 >
-                  ⌄ {searchMatchKeys.size.toLocaleString()}{" "}
-                  structures
+                  {searchMatchKeys.size.toLocaleString()}{" "}
+                  {kind === "protein" ? "proteins" : "structures"} ↓
                 </button>
               ) : (
                 <span>no matches</span>
@@ -930,7 +957,6 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
             </div>
           )}
         </div>
-        )}
 
         {/* About the atlas — molecule / natsyn views only. Collapsible. */}
         {(kind === "molecule" || kind === "natsyn") && (
@@ -1051,7 +1077,7 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
                 placeholder={
                   pickedSteroid
                     ? pickedSteroid.name
-                    : "🧬 Filter by steroid — name, ChEBI id, or SMILES…"
+                    : "Or filter by steroid: name, ChEBI id, or SMILES…"
                 }
                 value={steroidQuery}
                 onFocus={() => setSteroidDropdownOpen(true)}
@@ -1161,7 +1187,7 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
             {pickedSteroid && (
               <>
                 <div className="rounded-md border border-amber-500 bg-amber-100 px-2 py-1 text-xs text-amber-800">
-                  🧬 <b>{pickedSteroid.name}</b>
+                  <b>{pickedSteroid.name}</b>
                   <span className="ml-2 font-mono text-[10px]">
                     CHEBI:{pickedSteroid.chebi}
                   </span>
@@ -1719,7 +1745,7 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
           <div className="mt-6 scroll-mt-4" ref={resultsRef}>
             <div className="mb-2 flex flex-wrap items-baseline gap-3">
               <div className="text-lg font-semibold text-slate-900">
-                📋 Selected entries
+                Selected entries
               </div>
               <div className="text-sm text-slate-500">
                 {pool.length.toLocaleString()} row
@@ -2016,7 +2042,7 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
           <div className="mt-6">
             <div className="mb-3 flex flex-wrap items-baseline gap-3">
               <div className="text-lg font-semibold text-slate-900">
-                🧬 Steroids in this pool
+                Steroids in this pool
               </div>
               <div className="text-sm text-slate-500">
                 {compoundTiles.length.toLocaleString()} compounds across{" "}
@@ -2167,7 +2193,7 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
           <div className="mt-6 space-y-4">
             <div className="flex flex-wrap items-baseline gap-3">
               <div className="text-lg font-semibold text-slate-900">
-                📄 Detail cards ({focusedMolecules.length})
+                Detail cards ({focusedMolecules.length})
               </div>
               <button
                 className="ml-auto rounded-md border border-slate-300 bg-white px-2 py-1 text-xs text-slate-700 hover:bg-slate-100"
@@ -2191,7 +2217,7 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
           <div className="mt-6">
             <div className="mb-3 flex flex-wrap items-baseline gap-3">
               <div className="text-lg font-semibold text-slate-900">
-                🧬 Steroids in this selection
+                Steroids in this selection
               </div>
               <div className="text-sm text-slate-500">
                 {pool.length.toLocaleString()} compounds
@@ -2295,7 +2321,7 @@ export default function ExploreClient({ kind, clusters: clustersUmap, clustersHd
           <div className="mt-6 space-y-4">
             <div className="flex flex-wrap items-baseline gap-3">
               <div className="text-lg font-semibold text-slate-900">
-                📄 Detail cards ({focusedProteins.length})
+                Detail cards ({focusedProteins.length})
               </div>
               <button
                 className="ml-auto rounded-md border border-slate-300 bg-white px-2 py-1 text-xs text-slate-700 hover:bg-slate-100"
@@ -2687,7 +2713,7 @@ function MoleculeDetailCard({
             rel="noopener noreferrer"
             className="inline-block rounded border border-sky-500 px-2 py-1 text-xs text-sky-700 hover:bg-sky-50"
           >
-            📄 Source paper
+            Source paper
           </a>
         </div>
       )}

@@ -17,8 +17,8 @@ export default function ApiKeyGate() {
     >
       <div className="mb-2 text-sm font-semibold text-slate-900">
         {hasKey
-          ? "🔑 Ask the Atlas is enabled"
-          : "🔑 Add an OpenAI API key to enable Ask the Atlas"}
+          ? "Ask the Atlas is enabled"
+          : "Add an OpenAI API key to enable Ask the Atlas"}
       </div>
       <p className="mb-3 text-sm text-slate-600">
         {mode === "user" ? (

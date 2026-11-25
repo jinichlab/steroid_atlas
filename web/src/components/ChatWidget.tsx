@@ -102,8 +102,8 @@ export default function ChatWidget() {
         <div className="border-b bg-amber-50 p-2 text-xs text-amber-800">
           <div className="mb-1">
             {mode === "user"
-              ? "🔑 Add your OpenAI API key to use the chat. It stays in this tab and is never stored on the server."
-              : "🔑 Chat is disabled — no OpenAI API key is configured."}
+              ? "Add your OpenAI API key to use the chat. It stays in this tab and is never stored on the server."
+              : "Chat is disabled — no OpenAI API key is configured."}
           </div>
           <ApiKeyForm compact />
         </div>

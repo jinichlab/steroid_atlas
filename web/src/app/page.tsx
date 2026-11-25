@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-14">
       <div className="mb-3 flex items-center gap-3 text-sm font-medium text-slate-500">
-        <span className="text-lg">🧭</span> STEROID ATLAS
+        STEROID ATLAS
       </div>
       <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
         Explore steroids and the proteins they interact with.

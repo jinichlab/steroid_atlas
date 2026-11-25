@@ -41,8 +41,8 @@ export default function ApiKeyForm({ compact = false }: { compact?: boolean }) {
     return (
       <div className={`${text} text-slate-600`}>
         {hasKey
-          ? `🔑 Key configured by the site admin (${hint}).`
-          : "🔑 No key configured. Ask the site admin to set OPENAI_API_KEY."}
+          ? `Key configured by the site admin (${hint}).`
+          : "No key configured. Ask the site admin to set OPENAI_API_KEY."}
       </div>
     );
   }
