@@ -1,0 +1,7 @@
+compound_name	lucas_evidence_tier	smiles	molecular_formula	computed_mz_M+H	ref_mz_M+H_lucas	delta_ppm	mass_pass_10ppm	note
+G-3-oxoCA	LU-2	C[C@H](CCC(=O)NCC(=O)O)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4CC(=O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C	C26H41NO6	464.3007	464.30	+1.4	yes	3-oxo-CA conjugated to glycine (C26H41NO6)
+G-3-oxoCDCA	LU-2	C[C@H](CCC(=O)NCC(=O)O)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C	C26H41NO5	448.3058	448.31	-9.5	yes	3-oxo-CDCA conjugated to glycine (C26H41NO5)
+Glycine-7-oxoLCA	LU-1	C[C@H](CCC(=O)NCC(=O)O)[C@H]1CC[C@H]2[C@@H]3C(=O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3CC[C@]12C	C26H41NO5	448.3058	448.31	-9.5	yes	7-oxo-LCA conjugated to glycine; authentic standard synthesized by Lucas (LU-1 tier)
+Glycine-7-oxoDCA	LU-2	C[C@H](CCC(=O)NCC(=O)O)[C@H]1CC[C@H]2[C@@H]3C(=O)C[C@@H]4CC(O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C	C26H41NO6	464.3007	464.30	+1.4	yes	7-oxo-DCA conjugated to glycine (LU-2 surrogate-calibrated)
+Taurine-7-oxoLCA	LU-2	C[C@H](CCC(=O)NCCS(=O)(=O)O)[C@H]1CC[C@H]2[C@@H]3C(=O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3CC[C@]12C	C26H43NO6S	498.2884	498.29	-3.2	yes	7-oxo-LCA conjugated to taurine (LU-2 surrogate-calibrated)
+Taurine-7-oxoDCA	LU-2	C[C@H](CCC(=O)NCCS(=O)(=O)O)[C@H]1CC[C@H]2[C@@H]3C(=O)C[C@@H]4CC(O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C	C26H43NO7S	514.2833	514.28	+6.4	yes	7-oxo-DCA conjugated to taurine (LU-2 surrogate-calibrated)

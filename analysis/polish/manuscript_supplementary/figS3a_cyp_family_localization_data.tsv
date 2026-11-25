@@ -1,0 +1,6 @@
+cid	disp	subfamily	desc	n	n_subfamily_total	confinement_pct	Mammals	Birds	Reptiles	Amphibians	Fish	Other vertebrates	Invertebrates	Plants	Fungi	Bacteria	Other
+19	20	CYP1A	Cytochrome P450 1A	441	486	90.7	441	0	0	0	0	0	0	0	0	0	0
+28	29	CYP51A	Lanosterol 14α-DM	158	194	81.4	157	0	1	0	0	0	0	0	0	0	0
+45	46	CYP17A	Steroid 17α-OH	127	177	71.8	127	0	0	0	0	0	0	0	0	0	0
+46	47	BR-path	Plant brassinosteroid P450s	11	11	100.0	0	0	0	0	0	0	0	11	0	0	0
+56	57	CYP3A	Cytochrome P450 3A	51	78	65.4	51	0	0	0	0	0	0	0	0	0	0

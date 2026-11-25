@@ -1,0 +1,18 @@
+Evidence tier code,Source paper,Meaning
+1,Gentry 2023,Chemistry reference standard only (no biological detection)
+2,Gentry 2023,"MASST match in public metabolomics data (isomer uncertain, MSI Level 2/3)"
+3,Gentry 2023,Isomer-resolved detection in iHMP2 IBD cohort (RT + MS/MS)
+4-5,Gentry 2023,Cross-cohort detection (iHMP2 + Boland/PRISM IBD cohorts)
+5,Gentry 2023,Produced by HMP bacterial isolate(s) in culture (highest confidence)
+M-1,Mohanty 2024,Synthetic standard + RT/MS/MS match in BOTH mice and lion feces (strongest)
+M-2,Mohanty 2024,Synthetic standard + RT/MS/MS match in mice only
+M-3,Mohanty 2024,Synthetic standard + RT/MS/MS match in lion only
+M-4,Mohanty 2024,Same-mass peak detected but RT did not match standard (related isomer in vivo)
+L-1,Lamichhane 2025,Targeted LC-MS/MS detection in 303-sample DIABIMMUNE cohort + statistically significant association with islet autoimmunity
+L-2,Lamichhane 2025,Part of 110-MCBA targeted panel in DIABIMMUNE cohort (no significant clinical association)
+LU-1,Lucas 2026,Authentic synthesized standard + detection in bacterial culture (highest Lucas confidence)
+LU-2,Lucas 2026,LC-MS/MS detection in bacterial culture; quantified via surrogate-standard calibration curve
+AG-1,Agongo 2026,Level-1 identification (MS/MS + RT match to synthetic standard) + ion-mobility drift-time match
+AG-2,Agongo 2026,Level-1 identification (MS/MS + RT match to synthetic standard; no ion mobility)
+biochem-substrate,Various (biochem studies),Tool compound used as an enzyme substrate in a biochemical assay
+(empty),Rimal / Guzior / Arp / McCurry / etc.,Pre-audit curation pass — no paper-specific tier assigned
